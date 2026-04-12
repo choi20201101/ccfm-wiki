@@ -145,3 +145,69 @@ Rules:
 - Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
 - If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
 - After modifying code files in this session, run `python3 -c "from graphify.watch import _rebuild_code; from pathlib import Path; _rebuild_code(Path('.'))"` to keep the graph current
+
+## 세컨브레인 자동 동작 규칙 (이 위키를 사용하는 모든 세션에 적용)
+
+이 위키에서 Claude 세션이 시작되면 아래 4가지가 **자연스럽게 자동으로** 이루어져야 한다. 사용자가 따로 지시하지 않아도 행동에 편입시킬 것.
+
+### 1. 캡처 우선 (Quick Capture)
+사용자가 정리되지 않은 생각/아이디어/링크/메모를 던지면:
+- 즉시 `raw/inbox/YYYY-MM-DD-{slug}.md` 로 저장 (덮어쓰기 금지, 새 파일)
+- 프런트매터: `type: raw`, `captured_at: <오늘 날짜>`
+- 저장 후 한 줄 확인만: "raw/inbox/...md 에 캡처함"
+- 정리는 나중 — **지금은 기록이 최우선**
+- 트리거 문구 예시: "이거 기록해둬", "메모", "나중에 볼 거", "아이디어", "생각났는데", 그냥 긴 붙여넣기 텍스트
+
+### 2. 암묵지 자동 추출
+대화 중 아래 패턴이 **감지되면 사용자에게 물어보지 말고** 해당 `wiki/tacit/*.md`에 append:
+- "경험상~", "보통 ~하면 ~됨", "~할 때는 ~해야 해"
+- "예전에 ~했다가 ~됐다" (실패 교훈)
+- "~하면 ~신호야" (사람 읽기/협상)
+- "~한 사람은 ~함" (사람 읽기)
+- 의사결정 이유 설명 ("왜 X 선택?" → 답변 내용)
+
+카테고리 매핑 (CLAUDE.md 위쪽 표 참조):
+`decision-rule` / `negotiation` / `people` / `market` / `lesson` / `operation` / `creative` / `viral` / `coding` / `psychology`
+
+암묵지 append 포맷:
+```markdown
+### [YYYY-MM-DD] {한 줄 요약}
+- 관찰: {구체 내용}
+- 조건: {언제 적용되나}
+- 출처: 대화 / 실제 경험 / 추론
+- confidence: low (1회) | medium (2-4회) | high (5회+)
+```
+저장 후 한 줄 알림: "wiki/tacit/xxx.md 에 추가함 (confidence: low)"
+
+모순 발견 시 ⚠️ 마커 + 양쪽 병기 (덮어쓰기 금지).
+
+### 3. 세션 시작 시 리포트 점검 제안 (주 1회 트리거)
+세션이 시작될 때 `graphify-out/GRAPH_REPORT.md`의 mtime을 확인:
+- **7일 이상 점검 안 됐으면** 첫 응답에 한 줄 덧붙이기:
+  > "💡 GRAPH_REPORT 점검한 지 N일 됐음. 고아 노드·의외 연결 같이 볼까?"
+- 사용자가 "응/그래/봐줘" 계열로 답하면:
+  1. god nodes 변동 (추가/삭제/엣지수 변화)
+  2. 인바운드 0인 고아 노드 나열 → 카테고리 누락 후보
+  3. Surprising Connections 최신 3개 → 검증 혹은 tacit 승격 제안
+  4. cohesion 낮은 커뮤니티 → 분해/재라벨 제안
+- 점검 후 `log.md`에 엔트리 추가: `## [YYYY-MM-DD] graph-review | {주요 발견}`
+
+### 4. 질의 결과를 그래프에 되먹이기
+`/graphify query`, `/graphify path`, `/graphify explain` 실행 후 **반드시** 답변을 save:
+```bash
+py -m graphify save-result --question "..." --answer "..." --type query --nodes NODE1 NODE2
+```
+가치 있는 답변(사용자가 "좋다", "맞아", "저장해" 등으로 확인한 경우)은 **추가로** 요약본을 `wiki/`의 적절한 위치에도 새 페이지/append로 보존.
+
+### 자동 커밋 정책
+위 1~4 동작으로 파일이 수정·추가됐을 때:
+- **즉시 자동 커밋하지 말 것** — 세션 종료 시점 또는 사용자가 마무리 신호를 줄 때 일괄 커밋
+- 커밋 메시지는 한 커밋에 하나의 주제 (캡처는 캡처끼리, 암묵지는 암묵지끼리)
+- push는 사용자가 명시적으로 요청할 때만
+- 커밋 후 post-commit hook이 그래프를 자동 리빌드함 (손댈 필요 없음)
+
+### 기기 간 충돌 방지
+세션 시작 시 자동 확인:
+- `git fetch` → ahead/behind 상태 체크
+- behind가 있으면 "원격에 새 변경이 N개 있음. `git pull` 먼저 할까?"
+- ahead + behind 동시면 "충돌 가능성. rebase 진행할까?" 먼저 물어보기
