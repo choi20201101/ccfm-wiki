@@ -37,6 +37,9 @@ CCFM(콘크리트파머스) CEO 최재명의 비즈니스 지식 베이스.
 | 실패 교훈 | "인도네시아 크로스보더 시도 → 배송 7일 → 반품률 40%" | 실패 복기 시 | wiki/tacit/lessons-learned.md |
 | 운영 노하우 | "쿠팡 로켓그로스 전환 시 최소 2주 재고 확보" | 운영 판단 시 | wiki/tacit/operational-heuristics.md |
 | 크리에이티브 감각 | "릴스 1초컷 + 상단자막이 CTR 2배" | DA 리뷰 시 | wiki/tacit/creative-patterns.md |
+| 바이럴 감각 | "댓글 유도형 훅이 공유율 3배" | 바이럴 복기 시 | wiki/tacit/viral-patterns.md |
+| 코딩/자동화 교훈 | "LaMa보다 OpenCV가 나은 조건" | 기술 비교 시 | wiki/tacit/coding-lessons.md |
+| 심리/설득 원칙 | "B&A에서 Before 어둡게 → 손실회피 자극" | 심리 적용 시 | wiki/tacit/psychology-insights.md |
 
 #### 암묵지 추출 규칙
 - 대화 중 "~하면 ~해야 해", "보통 ~하면 ~됨", "경험상~" 패턴 감지 시 자동 추출
@@ -48,7 +51,7 @@ CCFM(콘크리트파머스) CEO 최재명의 비즈니스 지식 베이스.
 #### 암묵지 페이지 프런트매터
 ---
 type: tacit
-category: decision-rule | negotiation | people | market | lesson | operation | creative
+category: decision-rule | negotiation | people | market | lesson | operation | creative | viral | coding | psychology
 confidence: high (5회+ 검증) | medium (2-4회) | low (1회, 가설)
 first_observed: YYYY-MM-DD
 last_confirmed: YYYY-MM-DD
@@ -58,7 +61,7 @@ contradiction: none | 충돌하는 암묵지 링크
 ## 페이지 프런트매터 (형식지)
 ---
 type: entity | domain | decision | source | concept
-domain: taiwan | sea | japan | ma | org | ai | marketing | brand
+domain: taiwan | sea | japan | ma | org | ai | marketing | brand | vibe-coding | marketing-automation | finance | hr-admin | viral | psychology | content-ai | da-creative
 confidence: high | medium | low
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
@@ -89,13 +92,30 @@ sources: []
 - 암묵지 중 confidence: low가 90일 이상 미검증 시 플래그
 
 ## 도메인 구조
+
+### 시장/사업 (Markets & Business)
 - taiwan-market : TFDA, 샵라인, 홍콩법인, Merable TW
 - sea-tiktok : 동남아 틱톡샵, BPOM, 할랄
 - japan-market : Q10 메가세일, X채널
 - ma-exit : 스마일게이트 딜, SPA, 네이버 계약 승계
+
+### 조직/경영 (Organization & Management)
 - org-restructure : A→Y/Z 모델, AI Cell, 4단계 롤아웃
+- finance : 경영/재무/회계, 다법인 세무, 이전가격
+- hr-admin : 인사/총무, 보상구조, 조직운영
+
+### 기술/자동화 (Tech & Automation)
+- vibe-coding : 바이브코딩, Claude Code 스킬 파이프라인, 프롬프트 엔지니어링
 - ai-automation : 스킬 파이프라인(bob/dd/harness/eval/learnings), DA 자동화
+- content-ai-automation : 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서
+- marketing-automation : 광고 플랫폼 자동화, 리포트, CRM, 크롤링
+
+### 크리에이티브/마케팅 (Creative & Marketing)
 - da-creative : 세이프존, 1초컷, 프롬프트 DB, Gemini/Kling
+- viral : 바이럴 메커니즘, 밈 구조, 시딩 전략, 알고리즘
+
+### 인문/심리 (Human & Psychology)
+- psychology : 소비자 심리, 설득, 조직심리, 인간 본질, 행동경제학
 
 ## 스킬 파이프라인 연결
 - 스킬 경로: ~/.claude/skills/user/
