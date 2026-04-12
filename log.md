@@ -26,3 +26,5 @@
 - 업데이트: wiki/domains/ai-automation.md (로고 제거 섹션 추가)
 - 생성: wiki/tacit/lessons-learned.md (LaMa vs OpenCV 교훈)
 - 업데이트: wiki/index.md
+
+## [2026-04-13] ingest | 네이버 카페 크롤링 모듈 지식화

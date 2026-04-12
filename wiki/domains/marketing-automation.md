@@ -38,3 +38,6 @@ _내용 추가 예정_
 - [[ai-automation]]
 - [[da-creative]]
 - [[content-ai-automation]]
+
+### 크롤링 도구
+- [[src-cafe-crawler]] — 네이버 카페 로그인/가입/크롤링 자동화 (Selenium + iframe JS 접근 + 수동 캡차 루프, 키워드 확장으로 10k+ 게시글 수집 & 키워드/감정 집계 리포트)
