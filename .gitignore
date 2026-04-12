@@ -3,3 +3,9 @@
 .obsidian/plugins/obsidian-git/data.json
 .trash/
 .DS_Store
+
+# graphify: commit graph output for multi-machine sync, but ignore cache/logs
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/cost.json
+.graphify_*.json
