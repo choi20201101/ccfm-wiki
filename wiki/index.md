@@ -7,6 +7,7 @@
 - [[ma-exit]] — M&A Exit: 스마일게이트 딜, SPA, 네이버 계약 승계
 - [[org-restructure]] — 조직개편: A→Y/Z 모델, AI Cell, 4단계 롤아웃
 - [[ai-automation]] — AI 자동화: 스킬 파이프라인, DA 자동화
+- [[content-ai-automation]] — 콘텐츠 AI 자동화: 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서
 - [[da-creative]] — DA 크리에이티브: 세이프존, 1초컷, 프롬프트 DB
 
 ## 엔티티 (Entities)
