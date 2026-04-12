@@ -26,3 +26,4 @@ _아직 없음_
 - wiki/tacit/lessons-learned.md — 실패 교훈
 - wiki/tacit/operational-heuristics.md — 운영 노하우
 - wiki/tacit/creative-patterns.md — 크리에이티브 감각 (8건: 1초컷CTR, 얼굴리텐션, B&A보정, 세이프존, 지역별 등)
+- [[src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점, 비교 예정)

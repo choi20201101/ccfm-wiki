@@ -1,4 +1,4 @@
-﻿# CCFM Wiki Schema
+# CCFM Wiki Schema
 @"
 # CCFM Wiki Schema
 
