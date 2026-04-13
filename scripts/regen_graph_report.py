@@ -28,7 +28,8 @@ REPORT_PATH = ROOT / "graphify-out" / "GRAPH_REPORT.md"
 
 LABEL_RULES: list[tuple[str, list[str]]] = [
     ("해외 시장 (대만/일본/동남아)", ["Merable", "TFDA", "BPOM", "대만", "일본", "동남아", "틱톡샵", "샵라인", "Q10"]),
-    ("AI 자동화 & 스킬 파이프라인", ["바이브코딩", "AI 자동화", "FFmpeg", "Whisper", "ElevenLabs", "bob", "스킬 파이프라인", "Rhubarb", "Gemini Vision"]),
+    ("콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)", ["FFmpeg", "Whisper", "ElevenLabs", "Rhubarb", "Gemini Vision", "콘텐츠 AI", "TTS", "After Effects", "서브매직"]),
+    ("바이브코딩 & 에이전트 스택", ["바이브코딩", "bob", "dd", "harness", "eval", "learnings", "스킬 파이프라인", "DD Plan", "나노바나나", "Veo3", "Midjourney", "Higgsfield", "Seedream", "AKOOL"]),
     ("M&A Exit & 재무", ["M&A", "SPA", "스마일게이트", "이전가격", "Transfer Pricing", "Dual Engine", "HK 법인", "경영/재무"]),
     ("조직개편 & HR", ["AI Cell", "신동협", "A→Y", "조직개편", "인사", "CD", "Day1"]),
     ("크리에이티브 & 심리 패턴", ["DA 크리에이티브", "릴스", "썸네일", "1초컷", "B&A", "CTR"]),
@@ -38,6 +39,7 @@ LABEL_RULES: list[tuple[str, list[str]]] = [
     ("QSCV 문서 추출 코드", ["extract_and_chunk", "slugify", "docx", "chunk_and_write", "QSCV"]),
     ("루솔브 퍼포먼스 캔버스 코드", ["export_canvas_rusolve", "style_section", "Rusolve", "퍼포먼스 캔버스"]),
     ("그래프 인덱싱 스크립트", ["regen_graph_report", "graph.json", "community_label"]),
+    ("iboss 201건 지식베이스 (최재명)", ["iboss", "근육돌이", "나노바나나", "롤링발칸", "정육점", "40부작", "USP", "공감", "설득 9요소", "2,500억"]),
 ]
 
 

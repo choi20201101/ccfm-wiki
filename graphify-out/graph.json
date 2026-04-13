@@ -53,7 +53,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "raw_qscv_extract_and_chunk_py"
     },
@@ -62,7 +62,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L21",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_slugify"
     },
@@ -71,7 +71,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L27",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_iter_block_items"
     },
@@ -80,7 +80,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L41",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_paragraph_text"
     },
@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L64",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_table_to_md"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L76",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_extract"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L92",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_chunk_and_write"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L118",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_main"
     },
@@ -125,7 +125,7 @@
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 3,
+      "community": 5,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_rationale_1"
     },
@@ -134,16 +134,25 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 10,
+      "community": 9,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "scripts_regen_graph_report_py"
+    },
+    {
+      "label": "pick_label()",
+      "file_type": "code",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L44",
+      "community": 9,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_pick_label"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
-      "source_location": "L44",
-      "community": 10,
+      "source_location": "L60",
+      "community": 9,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_main"
     },
@@ -152,7 +161,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 10,
+      "community": 9,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_rationale_1"
     },
@@ -165,8 +174,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "entity_ccfm"
     },
     {
@@ -178,8 +187,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "person_choi_jaemyung"
     },
     {
@@ -191,8 +200,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable"
     },
     {
@@ -204,8 +213,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_rusolve"
     },
     {
@@ -217,7 +226,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "entity_smilegate"
     },
@@ -230,7 +239,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "entity_naver"
     },
@@ -243,7 +252,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "person_baek_youngmoo"
     },
@@ -256,7 +265,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "person_shin_donghyup"
     },
@@ -269,7 +278,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "person_kang_yonggil"
     },
@@ -282,7 +291,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "person_han_taeyoung"
     },
@@ -295,7 +304,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "person_yoon_jimin"
     },
@@ -308,8 +317,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_hk"
     },
     {
@@ -321,7 +330,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_tw"
     },
@@ -334,7 +343,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "entity_wooyoung_acc"
     },
@@ -347,7 +356,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_tfda"
     },
@@ -360,7 +369,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_bpom"
     },
@@ -373,7 +382,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_halal"
     },
@@ -386,7 +395,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_shopline"
     },
@@ -399,7 +408,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_q10"
     },
@@ -412,7 +421,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_xchannel"
     },
@@ -425,7 +434,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_tiktokshop"
     },
@@ -438,8 +447,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_coupang"
     },
     {
@@ -451,8 +460,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_naver_gfa"
     },
     {
@@ -464,7 +473,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "concept_spa"
     },
@@ -477,8 +486,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_transfer_pricing"
     },
     {
@@ -490,8 +499,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_dual_engine"
     },
     {
@@ -503,7 +512,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "concept_ayz_model"
     },
@@ -516,7 +525,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "concept_ai_cell"
     },
@@ -529,7 +538,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "concept_marketing_team1"
     },
@@ -542,7 +551,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_taiwan_market"
     },
@@ -555,7 +564,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_sea_tiktok"
     },
@@ -568,7 +577,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_japan_market"
     },
@@ -581,7 +590,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "domain_ma_exit"
     },
@@ -594,7 +603,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "domain_org_restructure"
     },
@@ -607,8 +616,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_finance"
     },
     {
@@ -620,7 +629,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "community_label": "조직개편 & HR",
       "id": "domain_hr_admin"
     },
@@ -633,8 +642,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_vibe_coding"
     },
     {
@@ -646,8 +655,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_ai_automation"
     },
     {
@@ -659,8 +668,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "domain_content_ai"
     },
     {
@@ -672,8 +681,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "domain_marketing_automation"
     },
     {
@@ -685,7 +694,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_da_creative"
     },
@@ -698,7 +707,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_viral"
     },
@@ -711,7 +720,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_psychology"
     },
@@ -724,8 +733,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_ffmpeg"
     },
     {
@@ -737,8 +746,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_gemini_vision"
     },
     {
@@ -750,8 +759,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_elevenlabs"
     },
     {
@@ -763,8 +772,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_whisper"
     },
     {
@@ -776,8 +785,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_kling"
     },
     {
@@ -789,8 +798,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_omnihuman"
     },
     {
@@ -802,8 +811,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_creatify_aurora"
     },
     {
@@ -815,8 +824,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_rhubarb"
     },
     {
@@ -828,8 +837,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_fal_ai"
     },
     {
@@ -867,8 +876,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_afx"
     },
     {
@@ -880,8 +889,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "skill_pipeline"
     },
     {
@@ -906,7 +915,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_1sec_cut"
     },
@@ -919,7 +928,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_first_frame_face"
     },
@@ -932,8 +941,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_tts_speed"
     },
     {
@@ -945,7 +954,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_ba_correction"
     },
@@ -958,8 +967,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_product_bottom_third"
     },
     {
@@ -971,8 +980,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_safezone_remeasure"
     },
     {
@@ -984,7 +993,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_indo_hijab"
     },
@@ -997,7 +1006,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_jp_gothic"
     },
@@ -1023,8 +1032,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_hk_margin"
     },
     {
@@ -1036,8 +1045,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_universal_safezone"
     },
     {
@@ -1049,8 +1058,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_bob_dd_plan"
     },
     {
@@ -1062,7 +1071,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_product_avoidance"
     },
@@ -1075,8 +1084,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 2,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_7element_extraction"
     },
     {
@@ -1088,8 +1097,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "decision_rusolve_launch_2026"
     },
     {
@@ -1114,8 +1123,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_marketing_subscription"
     },
     {
@@ -1127,8 +1136,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_distribution_subscription"
     },
     {
@@ -1140,9 +1149,399 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_brand_business"
+    },
+    {
+      "label": "i-boss 게시판 (근육돌이)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "source_iboss_wiki"
+    },
+    {
+      "label": "iboss 201건 인덱스 (2017-2026)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_index_201"
+    },
+    {
+      "label": "마케팅 핵심 이해 40부작 (2022)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_40부작"
+    },
+    {
+      "label": "100억 쇼핑몰 10부작 (2023)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_100억_10부작"
+    },
+    {
+      "label": "구글애즈 60억 10부작 (2023)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_구글애즈_60억"
+    },
+    {
+      "label": "강남 정육점 인사이트 (2024)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_정육점"
+    },
+    {
+      "label": "공감 콘텐츠 5부작 (2017-2020)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_공감콘텐츠"
+    },
+    {
+      "label": "스토어팜 억대 매출 8부작 (2018-2019)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_스토어팜"
+    },
+    {
+      "label": "AI 자동화 시리즈 (2025-2026)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "iboss_series_ai_automation"
+    },
+    {
+      "label": "나노바나나 (Gemini Image Pro)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_nanobanana"
+    },
+    {
+      "label": "Veo3",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_veo3"
+    },
+    {
+      "label": "Midjourney 7",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_midjourney"
+    },
+    {
+      "label": "Higgsfield (사실적 인물)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_higgsfield"
+    },
+    {
+      "label": "Seedream 4.0",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_seedream"
+    },
+    {
+      "label": "AKOOL (AI 모델)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_akool"
+    },
+    {
+      "label": "USP = 욕구 (기능 아님)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_usp_desire"
+    },
+    {
+      "label": "공감 마케팅 7요소",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_empathy_7"
+    },
+    {
+      "label": "롤링발칸 (월 500~2500 소재 테스트)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 6,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "concept_rolling_balkan"
+    },
+    {
+      "label": "설득 9요소 (상호성·희소성·권위 등)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 6,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "concept_persuasion_9"
+    },
+    {
+      "label": "제품>상세>소재>타겟>매체 우선순위",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_priority_5step"
+    },
+    {
+      "label": "공감 > 퀄리티 (CPA 10배 차이)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_empathy_over_quality"
+    },
+    {
+      "label": "재구매·CRM > 신규 획득",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_repurchase_over_newacq"
+    },
+    {
+      "label": "AI 실행 격차 10~100배 (2026-2027 변곡)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "concept_ai_execution_gap"
+    },
+    {
+      "label": "암묵지 추출 = AI 협업 엔진",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "concept_tacit_ai_collab"
+    },
+    {
+      "label": "강남 정육점 재구매율 86% 일매출 8억",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "case_jeongyukjeom_rebuy"
+    },
+    {
+      "label": "AI 무중단 스튜디오 일매출 8천만",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 4,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "case_ai_studio_8000"
+    },
+    {
+      "label": "누적 광고비 2,500억 집행 경험",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "case_ad_spend_2500"
+    },
+    {
+      "label": "구글애즈 (PMax·Discovery·Video)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_google_ads"
+    },
+    {
+      "label": "메타 광고 (페이스북·인스타)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_meta_ads"
+    },
+    {
+      "label": "숏폼 (틱톡·릴스·쇼츠)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_shortform"
     }
   ],
   "links": [
@@ -1381,6 +1780,18 @@
       "source_location": "L44",
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
+      "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
+      "source": "scripts_regen_graph_report_py",
+      "target": "regen_graph_report_pick_label"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_main",
       "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
@@ -1397,6 +1808,18 @@
       "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
       "target": "regen_graph_report_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "regen_graph_report_main",
+      "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
+      "source": "regen_graph_report_pick_label",
+      "target": "regen_graph_report_main"
     },
     {
       "relation": "led_by",
@@ -1457,6 +1880,18 @@
       "_tgt": "source_gemini_logo_remover",
       "source": "person_choi_jaemyung",
       "target": "source_gemini_logo_remover"
+    },
+    {
+      "relation": "authored",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_choi_jaemyung",
+      "_tgt": "source_iboss_wiki",
+      "confidence_score": 1.0,
+      "source": "person_choi_jaemyung",
+      "target": "source_iboss_wiki"
     },
     {
       "relation": "part_of",
@@ -1819,6 +2254,18 @@
       "target": "domain_marketing_automation"
     },
     {
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_naver_gfa",
+      "_tgt": "iboss_index_201",
+      "confidence_score": 1.0,
+      "source": "platform_naver_gfa",
+      "target": "iboss_index_201"
+    },
+    {
       "relation": "part_of",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2143,6 +2590,42 @@
       "target": "source_gemini_logo_remover"
     },
     {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_ai_execution_gap",
+      "_tgt": "domain_ai_automation",
+      "confidence_score": 1.0,
+      "source": "domain_ai_automation",
+      "target": "concept_ai_execution_gap"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_tacit_ai_collab",
+      "_tgt": "domain_ai_automation",
+      "confidence_score": 1.0,
+      "source": "domain_ai_automation",
+      "target": "concept_tacit_ai_collab"
+    },
+    {
+      "relation": "example_for",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "domain_ai_automation",
+      "confidence_score": 1.0,
+      "source": "domain_ai_automation",
+      "target": "case_ai_studio_8000"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2275,6 +2758,30 @@
       "target": "domain_da_creative"
     },
     {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_repurchase_over_newacq",
+      "_tgt": "domain_marketing_automation",
+      "confidence_score": 1.0,
+      "source": "domain_marketing_automation",
+      "target": "concept_repurchase_over_newacq"
+    },
+    {
+      "relation": "example_for",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_jeongyukjeom_rebuy",
+      "_tgt": "domain_marketing_automation",
+      "confidence_score": 1.0,
+      "source": "domain_marketing_automation",
+      "target": "case_jeongyukjeom_rebuy"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2359,6 +2866,42 @@
       "target": "concept_product_avoidance"
     },
     {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_usp_desire",
+      "_tgt": "domain_da_creative",
+      "confidence_score": 1.0,
+      "source": "domain_da_creative",
+      "target": "concept_usp_desire"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_empathy_over_quality",
+      "_tgt": "domain_da_creative",
+      "confidence_score": 1.0,
+      "source": "domain_da_creative",
+      "target": "concept_empathy_over_quality"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_rolling_balkan",
+      "_tgt": "domain_da_creative",
+      "confidence_score": 1.0,
+      "source": "domain_da_creative",
+      "target": "concept_rolling_balkan"
+    },
+    {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -2381,6 +2924,18 @@
       "_tgt": "tacit_ba_correction",
       "source": "domain_psychology",
       "target": "tacit_ba_correction"
+    },
+    {
+      "relation": "applies_to",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_persuasion_9",
+      "_tgt": "domain_psychology",
+      "confidence_score": 1.0,
+      "source": "domain_psychology",
+      "target": "concept_persuasion_9"
     },
     {
       "relation": "uses",
@@ -2622,6 +3177,366 @@
       "_tgt": "decision_opencv_over_lama",
       "source": "tacit_lama_vs_opencv",
       "target": "decision_opencv_over_lama"
+    },
+    {
+      "relation": "indexes",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "source_iboss_wiki",
+      "_tgt": "iboss_index_201",
+      "confidence_score": 1.0,
+      "source": "source_iboss_wiki",
+      "target": "iboss_index_201"
+    },
+    {
+      "relation": "credibility_for",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ad_spend_2500",
+      "_tgt": "source_iboss_wiki",
+      "confidence_score": 1.0,
+      "source": "source_iboss_wiki",
+      "target": "case_ad_spend_2500"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_40부작",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_40부작"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_100억_10부작",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_100억_10부작"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_구글애즈_60억",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_구글애즈_60억"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_정육점",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_정육점"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_공감콘텐츠",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_공감콘텐츠"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_스토어팜",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_스토어팜"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_ai_automation",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_ai_automation"
+    },
+    {
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_meta_ads",
+      "_tgt": "iboss_index_201",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "platform_meta_ads"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_40부작",
+      "_tgt": "concept_priority_5step",
+      "confidence_score": 1.0,
+      "source": "iboss_series_40부작",
+      "target": "concept_priority_5step"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_40부작",
+      "_tgt": "concept_usp_desire",
+      "confidence_score": 1.0,
+      "source": "iboss_series_40부작",
+      "target": "concept_usp_desire"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_100억_10부작",
+      "_tgt": "concept_repurchase_over_newacq",
+      "confidence_score": 1.0,
+      "source": "iboss_series_100억_10부작",
+      "target": "concept_repurchase_over_newacq"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_100억_10부작",
+      "_tgt": "concept_priority_5step",
+      "confidence_score": 1.0,
+      "source": "iboss_series_100억_10부작",
+      "target": "concept_priority_5step"
+    },
+    {
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_google_ads",
+      "_tgt": "iboss_series_구글애즈_60억",
+      "confidence_score": 1.0,
+      "source": "iboss_series_구글애즈_60억",
+      "target": "platform_google_ads"
+    },
+    {
+      "relation": "evidences",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_구글애즈_60억",
+      "_tgt": "case_ad_spend_2500",
+      "confidence_score": 1.0,
+      "source": "iboss_series_구글애즈_60억",
+      "target": "case_ad_spend_2500"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_정육점",
+      "_tgt": "case_jeongyukjeom_rebuy",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "case_jeongyukjeom_rebuy"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_정육점",
+      "_tgt": "concept_repurchase_over_newacq",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "concept_repurchase_over_newacq"
+    },
+    {
+      "relation": "amplifies",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_shortform",
+      "_tgt": "iboss_series_정육점",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "platform_shortform"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_공감콘텐츠",
+      "_tgt": "concept_empathy_over_quality",
+      "confidence_score": 1.0,
+      "source": "iboss_series_공감콘텐츠",
+      "target": "concept_empathy_over_quality"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_공감콘텐츠",
+      "_tgt": "concept_empathy_7",
+      "confidence_score": 1.0,
+      "source": "iboss_series_공감콘텐츠",
+      "target": "concept_empathy_7"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "concept_ai_execution_gap",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "concept_ai_execution_gap"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "concept_tacit_ai_collab",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "concept_tacit_ai_collab"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "case_ai_studio_8000",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_nanobanana",
+      "confidence_score": 1.0,
+      "source": "tool_nanobanana",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_veo3",
+      "confidence_score": 1.0,
+      "source": "tool_veo3",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_midjourney",
+      "confidence_score": 1.0,
+      "source": "tool_midjourney",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_higgsfield",
+      "confidence_score": 1.0,
+      "source": "tool_higgsfield",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_seedream",
+      "confidence_score": 1.0,
+      "source": "tool_seedream",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_akool",
+      "confidence_score": 1.0,
+      "source": "tool_akool",
+      "target": "case_ai_studio_8000"
     }
   ]
 }
