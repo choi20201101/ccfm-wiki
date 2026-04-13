@@ -15,11 +15,11 @@ sources: [C:\Users\Administrator\Desktop\market-research-package\modules\communi
 ## 대상 사이트 (5종)
 | 사이트 | 접근 | 검증된 수집량 | 제목 | 본문 | 댓글 |
 | --- | --- | --- | --- | --- | --- |
-| 네이트판 | requests + BS4 | 15,000~30,000건 | ✅ | ✅(2026-04-13 추가, 셀렉터 검증 필요) | ✅(2026-04-13, 검증 필요) |
-| 인스티즈 | requests | 3,000~20,000건 | ✅ | ⚠️ 동일 | ⚠️ 동일 |
-| 더쿠 | cloudscraper (CF 우회) | 10,000~30,000건 | ✅ | ⚠️ XE 표준 기반 추정 | ⚠️ 동일 |
-| 보배드림 | requests | 50~500건 | ✅ | ⚠️ 동일 | ⚠️ 동일 |
-| 다음카페(쭉빵/여시/소울드레서) | 카카오 search API + 페이지 | 10,000~30,000건 | ✅ + content 200자 | ❌ 로그인벽(대부분) | ❌ 동일 |
+| 네이트판 | requests + BS4 | 15,000~30,000건 | ✅ | ✅ `#contentArea` 검증 (2026-04-13) | ✅ `dl.cmt_item` 검증 |
+| 인스티즈 | requests | 3,000~20,000건 | ✅ | ✅ `#memo_content_1` 검증 | ✅ `table#ajax_table tr.cmt_view` 검증 (likes 미노출) |
+| 더쿠 | cloudscraper (CF 우회) | 10,000~30,000건 | ✅ | ✅ `.rd_body .xe_content` 검증 | ⚠️ AJAX 로드 — 정적 요청 불가, 별도 endpoint 호출 필요 |
+| 보배드림 | requests | 50~500건 | ✅ | ✅ `div.bodyCont` 검증 (인코딩 자동 교정 추가) | ✅ `#cmt_list li` 검증 |
+| 다음카페(쭉빵/여시/소울드레서) | 카카오 search API + 페이지 | 10,000~30,000건 | ✅ + content 200자 | ❌ 로그인벽 (스킵) | ❌ 동일 |
 
 검증 실적: 기미 95,588건 / 탈모 40,643건 / 전체 병합 **119,647건** (제목 기반, 2026-04 이전).
 
