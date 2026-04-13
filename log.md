@@ -92,3 +92,8 @@
 - 향후: 사용자가 베이스라인 위에 실무 변경·암묵지 증분 업데이트
 
 ## [2026-04-13] skills-ingest | 로드된 스킬 전수 조사 → content-ai-automation §8 (영상 자동화 파이프라인 교훈 12개) 추가
+
+## [2026-04-13] ingest | 릴스 zh-TW 번역/더빙 작업 암묵지
+- 출처: DW1X3RRk_7Q 세션 (자막 OCR 신뢰 실패 → STT 교정, 번체 번역, ElevenLabs v3 Yun 보이스)
+- coding-lessons.md: STT 검증, whisper 모델 크기, ElevenLabs v3 우위, 중국어 네이티브 보이스, atempo fit, malgunbd 폰트
+- creative-patterns.md: 세로 자막 위치 20% 상향, 다국어 CTA 노란색 유지

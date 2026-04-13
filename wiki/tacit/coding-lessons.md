@@ -429,3 +429,45 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 조건: Kling `iss`=access_key, `exp`=now+1800, `nbf`=now-5, HS256 고정
 - 출처: 1시간+ 폴링 시나리오
 - confidence: high
+
+### [2026-04-13] 자막 작업 시 subtitle_data.json 믿지 말고 실제 오디오 STT 돌려라
+- 관찰: step-07 TTS 파이프라인은 `voice_scene_02.mp3` 하나만 뽑았는데 실제 `final_with_audio.mp4`의 더빙은 6개 세그먼트로 완전히 다른 내용 ("관리의 중요성", "2014년 31세", ...)이었음. subtitle_data.json의 타이밍/텍스트를 그대로 쓰면 엉뚱한 자막이 붙음.
+- 조건: 자막 입히기 전에 **반드시** final 영상 오디오를 추출해 faster-whisper로 재전사. word_timestamps=True 로 단어별 타이밍까지 확보 → ffmpeg drawtext enable 구간에 그대로 매핑 가능.
+- 출처: DW1X3RRk_7Q 자막 재작업 (초안 1회 실패 → STT로 교정)
+- confidence: high
+
+### [2026-04-13] faster-whisper는 small로 한국어 짧은 클립 신뢰 금지, medium 이상 써라
+- 관찰: 1.36초짜리 한국어 클립을 `small` 모델로 전사하니 "침이" → "열심히"로 오인식. `medium` + `vad_filter=True`로는 정확.
+- 조건: 한국어, 3초 미만 짧은 클립. beam_size=5 추천. 긴 오디오(10초+)는 small도 괜찮지만 짧을수록 모델 크기 민감.
+- 출처: 동일 세션에서 small/medium 비교
+- confidence: medium
+
+### [2026-04-13] ElevenLabs 모델 자연스러움 서열 — v3 > multilingual_v2 > turbo/flash v2.5
+- 관찰: 사용자가 `eleven_multilingual_v2`로 생성한 중국어 TTS를 "너무 인위적"이라고 평가. `eleven_v3`로 바꾸니 OK. Turbo/Flash 시리즈는 속도용(실시간)이고 품질은 뒤짐.
+- 조건: 품질 우선이면 `eleven_v3`. 실시간 스트리밍/낮은 지연 필요할 때만 turbo_v2_5. 다국어 지원은 v3/multilingual_v2 둘 다 OK.
+- 출처: DW1X3RRk_7Q zh-TW 더빙 재작업
+- confidence: high
+
+### [2026-04-13] ElevenLabs 중국어는 영어 네이티브 보이스 쓰지 말고 shared library에서 zh 네이티브 골라라
+- 관찰: `Sarah (EXAVITQu4vr4xnSDxMaL)`는 영어 네이티브인데 multilingual_v2로 중국어 가능 — 그래도 발음 억양이 부자연스러움. `c.voices.get_shared(language='zh', gender='female', age='middle_aged')`로 찾은 `Yun (YxbjaPemDJV2xlfvkiIG)` 같은 네이티브가 훨씬 자연스러움.
+- 조건: 중국어/일본어 등 톤 성조가 있는 언어. 영어/스페인어는 multilingual 네이티브 아니어도 무난.
+- 출처: zh-TW 더빙 비교
+- confidence: high
+
+### [2026-04-13] shared voice library 직접 TTS 가능 — add_sharing_voice 호출 불필요
+- 관찰: `c.voices.add_sharing_voice(...)`는 Python SDK 2.36.1에서 AttributeError. 대신 `text_to_speech.convert(voice_id='<public shared id>', ...)`에 shared voice_id를 바로 넣으면 동작.
+- 조건: ElevenLabs Python SDK `elevenlabs==2.36.1`
+- 출처: Yun voice 연결 과정
+- confidence: medium
+
+### [2026-04-13] TTS 세그먼트 슬롯 fit은 atempo 1.0~1.5가 자연스러움 한계선
+- 관찰: 번역된 문장 길이가 달라 TTS가 슬롯보다 길면 `atempo=dur/slot`으로 속도 조절. 1.3~1.5배까지는 자연스럽게 빨라질 뿐인데 1.5 이상은 로봇 느낌.
+- 조건: 슬롯/TTS 비율 1.5 초과면 자막 타이밍 자체를 재조정하거나 번역문을 더 짧게 다듬어야 함. ffmpeg 단일 atempo는 0.5~2.0 허용, 그 밖은 체이닝 필요.
+- 출처: 6세그먼트 zh-TW 더빙 (atempo 1.00~1.49)
+- confidence: medium
+
+### [2026-04-13] ffmpeg drawtext로 한글+CJK 번체 동시 커버 폰트 = malgunbd.ttf
+- 관찰: `C:/Windows/Fonts/malgunbd.ttf` (맑은고딕 Bold) 하나로 한국어 + 번체 중국어(保養的重要性, 歲 등) 모두 렌더됨. 나눔고딕Bold에는 CJK 번체 글리프 없음.
+- 조건: Windows 환경. 나눔고딕을 1순위로 하되 fallback을 malgunbd로. drawtext fontfile path는 `C\:/...`로 콜론 이스케이프.
+- 출처: zh-TW 자막 burn-in
+- confidence: high
