@@ -130,6 +130,33 @@
       "id": "extract_and_chunk_rationale_1"
     },
     {
+      "label": "regen_graph_report.py",
+      "file_type": "code",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L1",
+      "community": 10,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "scripts_regen_graph_report_py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L44",
+      "community": 10,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_main"
+    },
+    {
+      "label": "Re-generate GRAPH_REPORT.md using the semantic community labels stored on each n",
+      "file_type": "rationale",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L1",
+      "community": 10,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_rationale_1"
+    },
+    {
       "label": "CCFM 콘크리트파머스",
       "file_type": "document",
       "source_file": "CLAUDE.md",
@@ -164,8 +191,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "해외 시장 (대만/일본/동남아)",
+      "community": 4,
+      "community_label": "M&A Exit & 재무",
       "id": "entity_merable"
     },
     {
@@ -177,8 +204,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "해외 시장 (대만/일본/동남아)",
+      "community": 4,
+      "community_label": "M&A Exit & 재무",
       "id": "entity_rusolve"
     },
     {
@@ -190,8 +217,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "entity_smilegate"
     },
     {
@@ -203,8 +230,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "entity_naver"
     },
     {
@@ -216,8 +243,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "person_baek_youngmoo"
     },
     {
@@ -229,7 +256,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "person_shin_donghyup"
     },
@@ -242,7 +269,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "person_kang_yonggil"
     },
@@ -255,7 +282,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "person_han_taeyoung"
     },
@@ -268,7 +295,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "person_yoon_jimin"
     },
@@ -281,7 +308,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "community_label": "M&A Exit & 재무",
       "id": "entity_merable_hk"
     },
@@ -294,7 +321,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_tw"
     },
@@ -307,8 +334,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "entity_wooyoung_acc"
     },
     {
@@ -320,7 +347,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_tfda"
     },
@@ -333,7 +360,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_bpom"
     },
@@ -346,7 +373,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_halal"
     },
@@ -359,7 +386,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_shopline"
     },
@@ -372,7 +399,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_q10"
     },
@@ -385,7 +412,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_xchannel"
     },
@@ -398,7 +425,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_tiktokshop"
     },
@@ -437,8 +464,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "concept_spa"
     },
     {
@@ -450,7 +477,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "community_label": "M&A Exit & 재무",
       "id": "concept_transfer_pricing"
     },
@@ -463,7 +490,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "community_label": "M&A Exit & 재무",
       "id": "concept_dual_engine"
     },
@@ -476,7 +503,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "concept_ayz_model"
     },
@@ -489,7 +516,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "concept_ai_cell"
     },
@@ -502,7 +529,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "concept_marketing_team1"
     },
@@ -515,7 +542,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_taiwan_market"
     },
@@ -528,7 +555,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_sea_tiktok"
     },
@@ -541,7 +568,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_japan_market"
     },
@@ -554,8 +581,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "M&A Exit & 재무",
+      "community": 1,
+      "community_label": "조직개편 & HR",
       "id": "domain_ma_exit"
     },
     {
@@ -567,7 +594,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "domain_org_restructure"
     },
@@ -580,7 +607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "community_label": "M&A Exit & 재무",
       "id": "domain_finance"
     },
@@ -593,7 +620,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 1,
       "community_label": "조직개편 & HR",
       "id": "domain_hr_admin"
     },
@@ -606,7 +633,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "domain_vibe_coding"
     },
@@ -619,7 +646,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "domain_ai_automation"
     },
@@ -632,7 +659,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "domain_content_ai"
     },
@@ -697,7 +724,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tool_ffmpeg"
     },
@@ -710,7 +737,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tool_gemini_vision"
     },
@@ -723,7 +750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tool_elevenlabs"
     },
@@ -736,7 +763,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tool_whisper"
     },
@@ -788,8 +815,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "community": 9,
+      "community_label": "AI 아바타/영상 툴",
       "id": "tool_rhubarb"
     },
     {
@@ -840,7 +867,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tool_afx"
     },
@@ -853,7 +880,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "skill_pipeline"
     },
@@ -905,7 +932,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tacit_tts_speed"
     },
@@ -931,7 +958,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tacit_product_bottom_third"
     },
@@ -944,7 +971,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "tacit_safezone_remeasure"
     },
@@ -957,7 +984,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_indo_hijab"
     },
@@ -970,7 +997,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 2,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_jp_gothic"
     },
@@ -996,7 +1023,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "community_label": "M&A Exit & 재무",
       "id": "tacit_hk_margin"
     },
@@ -1009,7 +1036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "concept_universal_safezone"
     },
@@ -1022,7 +1049,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "concept_bob_dd_plan"
     },
@@ -1048,7 +1075,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "AI 자동화 & 스킬 파이프라인",
       "id": "concept_7element_extraction"
     },
@@ -1061,8 +1088,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "해외 시장 (대만/일본/동남아)",
+      "community": 4,
+      "community_label": "M&A Exit & 재무",
       "id": "decision_rusolve_launch_2026"
     },
     {
@@ -1113,8 +1140,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "해외 시장 (대만/일본/동남아)",
+      "community": 4,
+      "community_label": "M&A Exit & 재무",
       "id": "concept_brand_business"
     }
   ],
@@ -1346,6 +1373,30 @@
       "confidence_score": 1.0,
       "source": "extract_and_chunk_chunk_and_write",
       "target": "extract_and_chunk_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "scripts_regen_graph_report_py",
+      "_tgt": "regen_graph_report_main",
+      "confidence_score": 1.0,
+      "source": "scripts_regen_graph_report_py",
+      "target": "regen_graph_report_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\regen_graph_report.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "regen_graph_report_rationale_1",
+      "_tgt": "scripts_regen_graph_report_py",
+      "confidence_score": 1.0,
+      "source": "scripts_regen_graph_report_py",
+      "target": "regen_graph_report_rationale_1"
     },
     {
       "relation": "led_by",
