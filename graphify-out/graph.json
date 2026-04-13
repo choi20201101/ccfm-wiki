@@ -5,7 +5,7 @@
     "hyperedges": [
       {
         "id": "overseas_markets",
-        "label": "\ud574\uc678\uc2dc\uc7a5 \ub3d9\uc2dc \uc804\uac1c (\ub300\ub9cc/\ub3d9\ub0a8\uc544/\uc77c\ubcf8)",
+        "label": "해외시장 동시 전개 (대만/동남아/일본)",
         "nodes": [
           "domain_taiwan_market",
           "domain_sea_tiktok",
@@ -18,7 +18,7 @@
       },
       {
         "id": "ma_org_triad",
-        "label": "M&A Exit-\uc870\uc9c1\uac1c\ud3b8-\uc7ac\ubb34 3\uc911 \uc5f0\ub3d9",
+        "label": "M&A Exit-조직개편-재무 3중 연동",
         "nodes": [
           "domain_ma_exit",
           "domain_org_restructure",
@@ -31,7 +31,7 @@
       },
       {
         "id": "ai_avatar_stack",
-        "label": "AI \uc544\ubc14\ud0c0 \ud30c\uc774\ud504\ub77c\uc778 \uc2a4\ud0dd",
+        "label": "AI 아바타 파이프라인 스택",
         "nodes": [
           "tool_elevenlabs",
           "tool_omnihuman",
@@ -46,19 +46,133 @@
   },
   "nodes": [
     {
-      "label": "CCFM \ucf58\ud06c\ub9ac\ud2b8\ud30c\uba38\uc2a4",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "entity_ccfm",
-      "community": 5
+      "label": "_export_canvas_rusolve.py",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L1",
+      "community": 7,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
+      "id": "raw_qscv_export_canvas_rusolve_py"
     },
     {
-      "label": "\ucd5c\uc7ac\uba85 (CEO)",
+      "label": "style_section()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L25",
+      "community": 7,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
+      "id": "export_canvas_rusolve_style_section"
+    },
+    {
+      "label": "put()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L35",
+      "community": 7,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
+      "id": "export_canvas_rusolve_put"
+    },
+    {
+      "label": "kv()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L60",
+      "community": 7,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
+      "id": "export_canvas_rusolve_kv"
+    },
+    {
+      "label": "루솔브 퍼포먼스 캔버스 v1 → xlsx (바탕화면 출력)",
+      "file_type": "rationale",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L1",
+      "community": 7,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
+      "id": "export_canvas_rusolve_rationale_1"
+    },
+    {
+      "label": "_extract_and_chunk.py",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L1",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "raw_qscv_extract_and_chunk_py"
+    },
+    {
+      "label": "slugify()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L21",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_slugify"
+    },
+    {
+      "label": "iter_block_items()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L27",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_iter_block_items"
+    },
+    {
+      "label": "paragraph_text()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L41",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_paragraph_text"
+    },
+    {
+      "label": "table_to_md()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L64",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_table_to_md"
+    },
+    {
+      "label": "extract()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L76",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_extract"
+    },
+    {
+      "label": "chunk_and_write()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L92",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_chunk_and_write"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L118",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_main"
+    },
+    {
+      "label": "QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG] 플",
+      "file_type": "rationale",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L1",
+      "community": 3,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_rationale_1"
+    },
+    {
+      "label": "CCFM 콘크리트파머스",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -66,8 +180,22 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_choi_jaemyung",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "entity_ccfm"
+    },
+    {
+      "label": "최재명 (CEO)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "person_choi_jaemyung"
     },
     {
       "label": "Merable",
@@ -78,8 +206,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_merable",
-      "community": 2
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "entity_merable"
     },
     {
       "label": "Rusolve",
@@ -90,11 +219,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_rusolve",
-      "community": 2
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "entity_rusolve"
     },
     {
-      "label": "\uc2a4\ub9c8\uc77c\uac8c\uc774\ud2b8",
+      "label": "스마일게이트",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -102,11 +232,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_smilegate",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "entity_smilegate"
     },
     {
-      "label": "\ub124\uc774\ubc84",
+      "label": "네이버",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -114,11 +245,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_naver",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "entity_naver"
     },
     {
-      "label": "\ubc31\uc601\ubb34 (\ub124\uc774\ubc84 \ucc44\ub110\ucee8\uc124\ud305)",
+      "label": "백영무 (네이버 채널컨설팅)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -126,11 +258,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_baek_youngmoo",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "person_baek_youngmoo"
     },
     {
-      "label": "\uc2e0\ub3d9\ud611 (AI Cell \ub9ac\ub354 \ud6c4\ubcf4)",
+      "label": "신동협 (AI Cell 리더 후보)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -138,11 +271,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_shin_donghyup",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "person_shin_donghyup"
     },
     {
-      "label": "\uac15\uc6a9\uae38 (\ucef4\ud50c\ub77c\uc774\uc5b8\uc2a4)",
+      "label": "강용길 (컴플라이언스)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -150,11 +284,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_kang_yonggil",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "person_kang_yonggil"
     },
     {
-      "label": "\ud55c\ud0dc\uc601 CD",
+      "label": "한태영 CD",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -162,11 +297,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_han_taeyoung",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "person_han_taeyoung"
     },
     {
-      "label": "\uc724\uc9c0\ubbfc CD",
+      "label": "윤지민 CD",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -174,11 +310,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "person_yoon_jimin",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "person_yoon_jimin"
     },
     {
-      "label": "Merable HK (\ud64d\ucf69\ubc95\uc778)",
+      "label": "Merable HK (홍콩법인)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -186,8 +323,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_merable_hk",
-      "community": 2
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "entity_merable_hk"
     },
     {
       "label": "Merable TW",
@@ -198,11 +336,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_merable_tw",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "entity_merable_tw"
     },
     {
-      "label": "\uc6b0\uc601\ud68c\uacc4\ubc95\uc778",
+      "label": "우영회계법인",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -210,11 +349,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "entity_wooyoung_acc",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "entity_wooyoung_acc"
     },
     {
-      "label": "TFDA (\ub300\ub9cc \uaddc\uc81c)",
+      "label": "TFDA (대만 규제)",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -222,11 +362,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "regulation_tfda",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "regulation_tfda"
     },
     {
-      "label": "BPOM (\uc778\ub3c4\ub124\uc2dc\uc544 \uaddc\uc81c)",
+      "label": "BPOM (인도네시아 규제)",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -234,11 +375,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "regulation_bpom",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "regulation_bpom"
     },
     {
-      "label": "\ud560\ub784 \uc778\uc99d",
+      "label": "할랄 인증",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -246,11 +388,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "regulation_halal",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "regulation_halal"
     },
     {
-      "label": "\uc0f5\ub77c\uc778 (Shopline)",
+      "label": "샵라인 (Shopline)",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -258,11 +401,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_shopline",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "platform_shopline"
     },
     {
-      "label": "Q10 \uba54\uac00\uc138\uc77c",
+      "label": "Q10 메가세일",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -270,11 +414,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_q10",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "platform_q10"
     },
     {
-      "label": "X\ucc44\ub110 (\uc77c\ubcf8)",
+      "label": "X채널 (일본)",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -282,11 +427,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_xchannel",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "platform_xchannel"
     },
     {
-      "label": "\ud2f1\ud1a1\uc0f5",
+      "label": "틱톡샵",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -294,11 +440,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_tiktokshop",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "platform_tiktokshop"
     },
     {
-      "label": "\ucfe0\ud321",
+      "label": "쿠팡",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -306,11 +453,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_coupang",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "platform_coupang"
     },
     {
-      "label": "\ub124\uc774\ubc84 GFA",
+      "label": "네이버 GFA",
       "file_type": "document",
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
@@ -318,11 +466,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "platform_naver_gfa",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "platform_naver_gfa"
     },
     {
-      "label": "SPA \uacc4\uc57d",
+      "label": "SPA 계약",
       "file_type": "document",
       "source_file": "wiki/domains/ma-exit.md",
       "source_location": null,
@@ -330,11 +479,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_spa",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "concept_spa"
     },
     {
-      "label": "\uc774\uc804\uac00\uaca9 (Transfer Pricing)",
+      "label": "이전가격 (Transfer Pricing)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -342,8 +492,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_transfer_pricing",
-      "community": 2
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "concept_transfer_pricing"
     },
     {
       "label": "Dual Engine Model",
@@ -354,11 +505,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_dual_engine",
-      "community": 2
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "concept_dual_engine"
     },
     {
-      "label": "A\u2192Y/Z \uc870\uc9c1 \ubaa8\ub378",
+      "label": "A→Y/Z 조직 모델",
       "file_type": "document",
       "source_file": "wiki/domains/org-restructure.md",
       "source_location": null,
@@ -366,8 +518,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ayz_model",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "concept_ayz_model"
     },
     {
       "label": "AI Cell",
@@ -378,11 +531,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ai_cell",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "concept_ai_cell"
     },
     {
-      "label": "\ub9c8\ucf00\ud3051\ud300 (100% AI \ud30c\uc77c\ub7ff)",
+      "label": "마케팅1팀 (100% AI 파일럿)",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -390,11 +544,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_marketing_team1",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "concept_marketing_team1"
     },
     {
-      "label": "\ub300\ub9cc \uc2dc\uc7a5",
+      "label": "대만 시장",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -402,11 +557,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_taiwan_market",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "domain_taiwan_market"
     },
     {
-      "label": "\ub3d9\ub0a8\uc544 \ud2f1\ud1a1\uc0f5",
+      "label": "동남아 틱톡샵",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -414,11 +570,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_sea_tiktok",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "domain_sea_tiktok"
     },
     {
-      "label": "\uc77c\ubcf8 \uc2dc\uc7a5",
+      "label": "일본 시장",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -426,8 +583,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_japan_market",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "domain_japan_market"
     },
     {
       "label": "M&A Exit",
@@ -438,11 +596,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_ma_exit",
-      "community": 6
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "domain_ma_exit"
     },
     {
-      "label": "\uc870\uc9c1\uac1c\ud3b8",
+      "label": "조직개편",
       "file_type": "document",
       "source_file": "wiki/domains/org-restructure.md",
       "source_location": null,
@@ -450,11 +609,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_org_restructure",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "domain_org_restructure"
     },
     {
-      "label": "\uacbd\uc601/\uc7ac\ubb34/\ud68c\uacc4",
+      "label": "경영/재무/회계",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -462,11 +622,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_finance",
-      "community": 2
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "domain_finance"
     },
     {
-      "label": "\uc778\uc0ac/\ucd1d\ubb34",
+      "label": "인사/총무",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -474,11 +635,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_hr_admin",
-      "community": 3
+      "community": 4,
+      "community_label": "조직개편 & HR",
+      "id": "domain_hr_admin"
     },
     {
-      "label": "\ubc14\uc774\ube0c\ucf54\ub529",
+      "label": "바이브코딩",
       "file_type": "document",
       "source_file": "wiki/domains/vibe-coding.md",
       "source_location": null,
@@ -486,11 +648,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_vibe_coding",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "domain_vibe_coding"
     },
     {
-      "label": "AI \uc790\ub3d9\ud654",
+      "label": "AI 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/ai-automation.md",
       "source_location": null,
@@ -498,11 +661,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_ai_automation",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "domain_ai_automation"
     },
     {
-      "label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654",
+      "label": "콘텐츠 AI 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -510,11 +674,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_content_ai",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "domain_content_ai"
     },
     {
-      "label": "\ub9c8\ucf00\ud305 \uc790\ub3d9\ud654",
+      "label": "마케팅 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
@@ -522,11 +687,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_marketing_automation",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "domain_marketing_automation"
     },
     {
-      "label": "DA \ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c",
+      "label": "DA 크리에이티브",
       "file_type": "document",
       "source_file": "wiki/domains/da-creative.md",
       "source_location": null,
@@ -534,11 +700,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_da_creative",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "domain_da_creative"
     },
     {
-      "label": "\ubc14\uc774\ub7f4",
+      "label": "바이럴",
       "file_type": "document",
       "source_file": "wiki/domains/viral.md",
       "source_location": null,
@@ -546,11 +713,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_viral",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "domain_viral"
     },
     {
-      "label": "\uc2ec\ub9ac\ud559",
+      "label": "심리학",
       "file_type": "document",
       "source_file": "wiki/domains/psychology.md",
       "source_location": null,
@@ -558,8 +726,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "domain_psychology",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "domain_psychology"
     },
     {
       "label": "FFmpeg",
@@ -570,8 +739,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_ffmpeg",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_ffmpeg"
     },
     {
       "label": "Gemini Vision",
@@ -582,8 +752,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_gemini_vision",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_gemini_vision"
     },
     {
       "label": "ElevenLabs TTS",
@@ -594,8 +765,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_elevenlabs",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_elevenlabs"
     },
     {
       "label": "Whisper STT",
@@ -606,8 +778,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_whisper",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_whisper"
     },
     {
       "label": "Kling i2v / Avatar Pro",
@@ -618,8 +791,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_kling",
-      "community": 8
+      "community": 9,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "tool_kling"
     },
     {
       "label": "OmniHuman v1.5 (ByteDance)",
@@ -630,8 +804,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_omnihuman",
-      "community": 8
+      "community": 9,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "tool_omnihuman"
     },
     {
       "label": "Creatify Aurora",
@@ -642,8 +817,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_creatify_aurora",
-      "community": 8
+      "community": 9,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "tool_creatify_aurora"
     },
     {
       "label": "Rhubarb Lip Sync",
@@ -654,8 +830,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_rhubarb",
-      "community": 8
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_rhubarb"
     },
     {
       "label": "fal.ai",
@@ -666,8 +843,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_fal_ai",
-      "community": 8
+      "community": 9,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "tool_fal_ai"
     },
     {
       "label": "OpenCV TELEA+NS",
@@ -678,8 +856,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_opencv",
-      "community": 7
+      "community": 8,
+      "community_label": "로고 제거 기술",
+      "id": "tool_opencv"
     },
     {
       "label": "LaMa / simple-lama-inpainting",
@@ -690,8 +869,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_lama",
-      "community": 7
+      "community": 8,
+      "community_label": "로고 제거 기술",
+      "id": "tool_lama"
     },
     {
       "label": "After Effects (AE)",
@@ -702,11 +882,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tool_afx",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tool_afx"
     },
     {
-      "label": "bob\u2192dd\u2192harness\u2192eval\u2192learnings \ud30c\uc774\ud504\ub77c\uc778",
+      "label": "bob→dd→harness→eval→learnings 파이프라인",
       "file_type": "document",
       "source_file": "wiki/domains/vibe-coding.md",
       "source_location": null,
@@ -714,8 +895,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "skill_pipeline",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "skill_pipeline"
     },
     {
       "label": "src-gemini-logo-remover",
@@ -726,11 +908,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "source_gemini_logo_remover",
-      "community": 7
+      "community": 8,
+      "community_label": "로고 제거 기술",
+      "id": "source_gemini_logo_remover"
     },
     {
-      "label": "1\ucd08\ucef7 + \uc0c1\ub2e8\uc790\ub9c9 = CTR 2\ubc30",
+      "label": "1초컷 + 상단자막 = CTR 2배",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -738,11 +921,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_1sec_cut",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "tacit_1sec_cut"
     },
     {
-      "label": "\uccab \ud504\ub808\uc784 \uc5bc\uad74 = \ub9ac\ud150\uc158 30%\u2191",
+      "label": "첫 프레임 얼굴 = 리텐션 30%↑",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -750,11 +934,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_first_frame_face",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "tacit_first_frame_face"
     },
     {
-      "label": "TTS 1.1x \ucd5c\uc801 \uc18d\ub3c4",
+      "label": "TTS 1.1x 최적 속도",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -762,11 +947,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_tts_speed",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tacit_tts_speed"
     },
     {
-      "label": "B&A Before \uc5b4\ub461\uac8c / After \ubc1d\uac8c",
+      "label": "B&A Before 어둡게 / After 밝게",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -774,11 +960,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_ba_correction",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "tacit_ba_correction"
     },
     {
-      "label": "\uc138\ub85c\uc601\uc0c1 \uc81c\ud488 \ud558\ub2e8 1/3 \ubc30\uce58",
+      "label": "세로영상 제품 하단 1/3 배치",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -786,11 +973,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_product_bottom_third",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tacit_product_bottom_third"
     },
     {
-      "label": "\uc138\uc774\ud504\uc874 \ud50c\ub7ab\ud3fc\ub9c8\ub2e4 \uc7ac\uce21\uc815 \ud544\uc218",
+      "label": "세이프존 플랫폼마다 재측정 필수",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -798,11 +986,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_safezone_remeasure",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "tacit_safezone_remeasure"
     },
     {
-      "label": "\uc778\ub3c4\ub124\uc2dc\uc544 \ud788\uc7a1 \ubaa8\ub378 \ud544\uc218",
+      "label": "인도네시아 히잡 모델 필수",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -810,11 +999,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_indo_hijab",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "tacit_indo_hijab"
     },
     {
-      "label": "\uc77c\ubcf8 \uace0\ub515\uccb4 vs \ud55c\uad6d \ub465\uadfc\uccb4 \uc790\ub9c9",
+      "label": "일본 고딕체 vs 한국 둥근체 자막",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -822,11 +1012,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_jp_gothic",
-      "community": 1
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "tacit_jp_gothic"
     },
     {
-      "label": "LaMa\uac00 \ud56d\uc0c1 OpenCV\ubcf4\ub2e4 \uc88b\uc9c4 \uc54a\ub2e4",
+      "label": "LaMa가 항상 OpenCV보다 좋진 않다",
       "file_type": "document",
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
@@ -834,11 +1025,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_lama_vs_opencv",
-      "community": 7
+      "community": 8,
+      "community_label": "로고 제거 기술",
+      "id": "tacit_lama_vs_opencv"
     },
     {
-      "label": "HK \uc601\uc5c5\ub9c8\uc9c4 ~4% \ud0c0\uac9f (\uc774\uc804\uac00\uaca9)",
+      "label": "HK 영업마진 ~4% 타겟 (이전가격)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -846,11 +1038,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "tacit_hk_margin",
-      "community": 2
+      "community": 2,
+      "community_label": "M&A Exit & 재무",
+      "id": "tacit_hk_margin"
     },
     {
-      "label": "\uc720\ub2c8\ubc84\uc124 \uc138\uc774\ud504\uc874 900\u00d71120",
+      "label": "유니버설 세이프존 900×1120",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -858,11 +1051,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_universal_safezone",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "concept_universal_safezone"
     },
     {
-      "label": "bob 10\ub2e8\uacc4 DD Plan",
+      "label": "bob 10단계 DD Plan",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -870,11 +1064,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_bob_dd_plan",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "concept_bob_dd_plan"
     },
     {
-      "label": "\uc81c\ud488 \ud68c\ud53c \ubc30\uce58 \ub85c\uc9c1",
+      "label": "제품 회피 배치 로직",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -882,11 +1077,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_product_avoidance",
-      "community": 4
+      "community": 5,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "concept_product_avoidance"
     },
     {
-      "label": "1\ucd08\ub2e8\uc704 7\uc694\uc18c \ucd94\ucd9c \uc2a4\ud0a4\ub9c8",
+      "label": "1초단위 7요소 추출 스키마",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -894,11 +1090,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_7element_extraction",
-      "community": 0
+      "community": 1,
+      "community_label": "AI 자동화 & 스킬 파이프라인",
+      "id": "concept_7element_extraction"
     },
     {
-      "label": "Rusolve 2026 \ub7f0\uce6d",
+      "label": "Rusolve 2026 런칭",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -906,11 +1103,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "decision_rusolve_launch_2026",
-      "community": 2
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "decision_rusolve_launch_2026"
     },
     {
-      "label": "\ub85c\uace0 \uc81c\uac70\uc5d0 OpenCV \ucc44\ud0dd",
+      "label": "로고 제거에 OpenCV 채택",
       "file_type": "document",
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
@@ -918,11 +1116,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "decision_opencv_over_lama",
-      "community": 7
+      "community": 8,
+      "community_label": "로고 제거 기술",
+      "id": "decision_opencv_over_lama"
     },
     {
-      "label": "\ub9c8\ucf00\ud305 \uad6c\ub3c5 \uc0ac\uc5c5",
+      "label": "마케팅 구독 사업",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -930,11 +1129,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_marketing_subscription",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "concept_marketing_subscription"
     },
     {
-      "label": "\uc720\ud1b5 \uad6c\ub3c5 \uc0ac\uc5c5",
+      "label": "유통 구독 사업",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -942,11 +1142,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_distribution_subscription",
-      "community": 5
+      "community": 6,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "concept_distribution_subscription"
     },
     {
-      "label": "\ube0c\ub79c\ub4dc \uc0ac\uc5c5",
+      "label": "브랜드 사업",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -954,11 +1155,240 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_brand_business",
-      "community": 2
+      "community": 0,
+      "community_label": "해외 시장 (대만/일본/동남아)",
+      "id": "concept_brand_business"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_src": "raw_qscv_export_canvas_rusolve_py",
+      "_tgt": "export_canvas_rusolve_style_section",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_export_canvas_rusolve_py",
+      "target": "export_canvas_rusolve_style_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "raw_qscv_export_canvas_rusolve_py",
+      "_tgt": "export_canvas_rusolve_put",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_export_canvas_rusolve_py",
+      "target": "export_canvas_rusolve_put"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "raw_qscv_export_canvas_rusolve_py",
+      "_tgt": "export_canvas_rusolve_kv",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_export_canvas_rusolve_py",
+      "target": "export_canvas_rusolve_kv"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "export_canvas_rusolve_rationale_1",
+      "_tgt": "raw_qscv_export_canvas_rusolve_py",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_export_canvas_rusolve_py",
+      "target": "export_canvas_rusolve_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_src": "export_canvas_rusolve_kv",
+      "_tgt": "export_canvas_rusolve_put",
+      "confidence_score": 1.0,
+      "source": "export_canvas_rusolve_put",
+      "target": "export_canvas_rusolve_kv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_slugify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_iter_block_items"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_paragraph_text"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_table_to_md"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_extract"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_chunk_and_write"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "raw_qscv_extract_and_chunk_py",
+      "_tgt": "extract_and_chunk_main",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_rationale_1",
+      "_tgt": "raw_qscv_extract_and_chunk_py",
+      "confidence_score": 1.0,
+      "source": "raw_qscv_extract_and_chunk_py",
+      "target": "extract_and_chunk_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_main",
+      "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_slugify",
+      "target": "extract_and_chunk_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_extract",
+      "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_iter_block_items",
+      "target": "extract_and_chunk_extract"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_extract",
+      "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_paragraph_text",
+      "target": "extract_and_chunk_extract"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_extract",
+      "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_table_to_md",
+      "target": "extract_and_chunk_extract"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_main",
+      "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_extract",
+      "target": "extract_and_chunk_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\qscv\\_extract_and_chunk.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_src": "extract_and_chunk_main",
+      "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
+      "source": "extract_and_chunk_chunk_and_write",
+      "target": "extract_and_chunk_main"
+    },
     {
       "relation": "led_by",
       "confidence": "EXTRACTED",
@@ -1098,8 +1528,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "decision_rusolve_launch_2026",
-      "_tgt": "entity_rusolve",
+      "_src": "entity_rusolve",
+      "_tgt": "decision_rusolve_launch_2026",
       "source": "entity_rusolve",
       "target": "decision_rusolve_launch_2026"
     },
@@ -1122,8 +1552,8 @@
       "source_file": "wiki/index.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ma_exit",
-      "_tgt": "entity_smilegate",
+      "_src": "entity_smilegate",
+      "_tgt": "domain_ma_exit",
       "source": "entity_smilegate",
       "target": "domain_ma_exit"
     },
@@ -1146,8 +1576,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "person_baek_youngmoo",
-      "_tgt": "entity_naver",
+      "_src": "entity_naver",
+      "_tgt": "person_baek_youngmoo",
       "source": "entity_naver",
       "target": "person_baek_youngmoo"
     },
@@ -1362,8 +1792,8 @@
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "platform_naver_gfa",
-      "_tgt": "platform_coupang",
+      "_src": "platform_coupang",
+      "_tgt": "platform_naver_gfa",
       "source": "platform_coupang",
       "target": "platform_naver_gfa"
     },
@@ -1398,8 +1828,8 @@
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_hk_margin",
-      "_tgt": "concept_transfer_pricing",
+      "_src": "concept_transfer_pricing",
+      "_tgt": "tacit_hk_margin",
       "source": "concept_transfer_pricing",
       "target": "tacit_hk_margin"
     },
@@ -1458,8 +1888,8 @@
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_marketing_team1",
-      "_tgt": "concept_ai_cell",
+      "_src": "concept_ai_cell",
+      "_tgt": "concept_marketing_team1",
       "source": "concept_ai_cell",
       "target": "concept_marketing_team1"
     },
@@ -1494,8 +1924,8 @@
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_finance",
-      "_tgt": "domain_taiwan_market",
+      "_src": "domain_taiwan_market",
+      "_tgt": "domain_finance",
       "source": "domain_taiwan_market",
       "target": "domain_finance"
     },
@@ -1518,8 +1948,8 @@
       "source_file": "wiki/domains/viral.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_viral",
-      "_tgt": "domain_sea_tiktok",
+      "_src": "domain_sea_tiktok",
+      "_tgt": "domain_viral",
       "source": "domain_sea_tiktok",
       "target": "domain_viral"
     },
@@ -1530,8 +1960,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_indo_hijab",
-      "_tgt": "domain_sea_tiktok",
+      "_src": "domain_sea_tiktok",
+      "_tgt": "tacit_indo_hijab",
       "source": "domain_sea_tiktok",
       "target": "tacit_indo_hijab"
     },
@@ -1542,8 +1972,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_jp_gothic",
-      "_tgt": "domain_japan_market",
+      "_src": "domain_japan_market",
+      "_tgt": "tacit_jp_gothic",
       "source": "domain_japan_market",
       "target": "tacit_jp_gothic"
     },
@@ -1566,8 +1996,8 @@
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_finance",
-      "_tgt": "domain_ma_exit",
+      "_src": "domain_ma_exit",
+      "_tgt": "domain_finance",
       "source": "domain_ma_exit",
       "target": "domain_finance"
     },
@@ -1590,8 +2020,8 @@
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_hr_admin",
-      "_tgt": "domain_org_restructure",
+      "_src": "domain_org_restructure",
+      "_tgt": "domain_hr_admin",
       "source": "domain_org_restructure",
       "target": "domain_hr_admin"
     },
@@ -1602,8 +2032,8 @@
       "source_file": "wiki/domains/psychology.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_psychology",
-      "_tgt": "domain_org_restructure",
+      "_src": "domain_org_restructure",
+      "_tgt": "domain_psychology",
       "source": "domain_org_restructure",
       "target": "domain_psychology"
     },
@@ -1614,8 +2044,8 @@
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_hr_admin",
-      "_tgt": "domain_finance",
+      "_src": "domain_finance",
+      "_tgt": "domain_hr_admin",
       "source": "domain_finance",
       "target": "domain_hr_admin"
     },
@@ -1650,8 +2080,8 @@
       "source_file": "wiki/domains/vibe-coding.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "skill_pipeline",
-      "_tgt": "domain_vibe_coding",
+      "_src": "domain_vibe_coding",
+      "_tgt": "skill_pipeline",
       "source": "domain_vibe_coding",
       "target": "skill_pipeline"
     },
@@ -1662,8 +2092,8 @@
       "source_file": "wiki/domains/da-creative.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "domain_ai_automation",
+      "_src": "domain_ai_automation",
+      "_tgt": "domain_da_creative",
       "source": "domain_ai_automation",
       "target": "domain_da_creative"
     },
@@ -1674,8 +2104,8 @@
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "domain_ai_automation",
+      "_src": "domain_ai_automation",
+      "_tgt": "domain_marketing_automation",
       "source": "domain_ai_automation",
       "target": "domain_marketing_automation"
     },
@@ -1686,8 +2116,8 @@
       "source_file": "wiki/domains/ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "skill_pipeline",
-      "_tgt": "domain_ai_automation",
+      "_src": "domain_ai_automation",
+      "_tgt": "skill_pipeline",
       "source": "domain_ai_automation",
       "target": "skill_pipeline"
     },
@@ -1698,8 +2128,8 @@
       "source_file": "wiki/sources/src-gemini-logo-remover.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "source_gemini_logo_remover",
-      "_tgt": "domain_ai_automation",
+      "_src": "domain_ai_automation",
+      "_tgt": "source_gemini_logo_remover",
       "source": "domain_ai_automation",
       "target": "source_gemini_logo_remover"
     },
@@ -1710,8 +2140,8 @@
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "domain_marketing_automation",
       "source": "domain_content_ai",
       "target": "domain_marketing_automation"
     },
@@ -1722,8 +2152,8 @@
       "source_file": "wiki/domains/viral.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_viral",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "domain_viral",
       "source": "domain_content_ai",
       "target": "domain_viral"
     },
@@ -1734,8 +2164,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_ffmpeg",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_ffmpeg",
       "source": "domain_content_ai",
       "target": "tool_ffmpeg"
     },
@@ -1746,8 +2176,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_gemini_vision",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_gemini_vision",
       "source": "domain_content_ai",
       "target": "tool_gemini_vision"
     },
@@ -1758,8 +2188,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_elevenlabs",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_elevenlabs",
       "source": "domain_content_ai",
       "target": "tool_elevenlabs"
     },
@@ -1770,8 +2200,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_whisper",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_whisper",
       "source": "domain_content_ai",
       "target": "tool_whisper"
     },
@@ -1782,8 +2212,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_afx",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_afx",
       "source": "domain_content_ai",
       "target": "tool_afx"
     },
@@ -1794,8 +2224,8 @@
       "source_file": "wiki/AI-Avatar-Automation-Guide.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_rhubarb",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "tool_rhubarb",
       "source": "domain_content_ai",
       "target": "tool_rhubarb"
     },
@@ -1806,8 +2236,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_universal_safezone",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "concept_universal_safezone",
       "source": "domain_content_ai",
       "target": "concept_universal_safezone"
     },
@@ -1818,8 +2248,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_bob_dd_plan",
-      "_tgt": "domain_content_ai",
+      "_src": "domain_content_ai",
+      "_tgt": "concept_bob_dd_plan",
       "source": "domain_content_ai",
       "target": "concept_bob_dd_plan"
     },
@@ -1842,8 +2272,8 @@
       "source_file": "wiki/domains/viral.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_viral",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "domain_viral",
       "source": "domain_da_creative",
       "target": "domain_viral"
     },
@@ -1854,8 +2284,8 @@
       "source_file": "wiki/domains/psychology.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_psychology",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "domain_psychology",
       "source": "domain_da_creative",
       "target": "domain_psychology"
     },
@@ -1866,8 +2296,8 @@
       "source_file": "wiki/domains/da-creative.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_kling",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "tool_kling",
       "source": "domain_da_creative",
       "target": "tool_kling"
     },
@@ -1878,8 +2308,8 @@
       "source_file": "wiki/sources/src-gemini-logo-remover.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "source_gemini_logo_remover",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "source_gemini_logo_remover",
       "source": "domain_da_creative",
       "target": "source_gemini_logo_remover"
     },
@@ -1890,8 +2320,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_1sec_cut",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "tacit_1sec_cut",
       "source": "domain_da_creative",
       "target": "tacit_1sec_cut"
     },
@@ -1902,8 +2332,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_first_frame_face",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "tacit_first_frame_face",
       "source": "domain_da_creative",
       "target": "tacit_first_frame_face"
     },
@@ -1914,8 +2344,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_product_avoidance",
-      "_tgt": "domain_da_creative",
+      "_src": "domain_da_creative",
+      "_tgt": "concept_product_avoidance",
       "source": "domain_da_creative",
       "target": "concept_product_avoidance"
     },
@@ -1938,8 +2368,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_ba_correction",
-      "_tgt": "domain_psychology",
+      "_src": "domain_psychology",
+      "_tgt": "tacit_ba_correction",
       "source": "domain_psychology",
       "target": "tacit_ba_correction"
     },
@@ -1950,8 +2380,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_7element_extraction",
-      "_tgt": "tool_gemini_vision",
+      "_src": "tool_gemini_vision",
+      "_tgt": "concept_7element_extraction",
       "source": "tool_gemini_vision",
       "target": "concept_7element_extraction"
     },
@@ -1962,8 +2392,8 @@
       "source_file": "wiki/AI-Avatar-Automation-Guide.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_omnihuman",
-      "_tgt": "tool_elevenlabs",
+      "_src": "tool_elevenlabs",
+      "_tgt": "tool_omnihuman",
       "source": "tool_elevenlabs",
       "target": "tool_omnihuman"
     },
@@ -1974,8 +2404,8 @@
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_tts_speed",
-      "_tgt": "tool_elevenlabs",
+      "_src": "tool_elevenlabs",
+      "_tgt": "tacit_tts_speed",
       "source": "tool_elevenlabs",
       "target": "tacit_tts_speed"
     },
@@ -1986,8 +2416,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_whisper",
-      "_tgt": "tool_elevenlabs",
+      "_src": "tool_elevenlabs",
+      "_tgt": "tool_whisper",
       "source": "tool_elevenlabs",
       "target": "tool_whisper"
     },
@@ -2010,8 +2440,8 @@
       "source_file": "wiki/AI-Avatar-Automation-Guide.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_omnihuman",
-      "_tgt": "tool_kling",
+      "_src": "tool_kling",
+      "_tgt": "tool_omnihuman",
       "source": "tool_kling",
       "target": "tool_omnihuman"
     },
@@ -2046,8 +2476,8 @@
       "source_file": "wiki/AI-Avatar-Automation-Guide.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_rhubarb",
-      "_tgt": "tool_omnihuman",
+      "_src": "tool_omnihuman",
+      "_tgt": "tool_rhubarb",
       "source": "tool_omnihuman",
       "target": "tool_rhubarb"
     },
@@ -2083,8 +2513,8 @@
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "decision_opencv_over_lama",
-      "_tgt": "tool_opencv",
+      "_src": "tool_opencv",
+      "_tgt": "decision_opencv_over_lama",
       "source": "tool_opencv",
       "target": "decision_opencv_over_lama"
     },
@@ -2107,8 +2537,8 @@
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "decision_opencv_over_lama",
-      "_tgt": "tool_lama",
+      "_src": "tool_lama",
+      "_tgt": "decision_opencv_over_lama",
       "source": "tool_lama",
       "target": "decision_opencv_over_lama"
     },
@@ -2119,8 +2549,8 @@
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "concept_bob_dd_plan",
-      "_tgt": "skill_pipeline",
+      "_src": "skill_pipeline",
+      "_tgt": "concept_bob_dd_plan",
       "source": "skill_pipeline",
       "target": "concept_bob_dd_plan"
     },
@@ -2131,8 +2561,8 @@
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tacit_lama_vs_opencv",
-      "_tgt": "source_gemini_logo_remover",
+      "_src": "source_gemini_logo_remover",
+      "_tgt": "tacit_lama_vs_opencv",
       "source": "source_gemini_logo_remover",
       "target": "tacit_lama_vs_opencv"
     },
@@ -2183,47 +2613,6 @@
       "_tgt": "decision_opencv_over_lama",
       "source": "tacit_lama_vs_opencv",
       "target": "decision_opencv_over_lama"
-    }
-  ],
-  "hyperedges": [
-    {
-      "id": "overseas_markets",
-      "label": "\ud574\uc678\uc2dc\uc7a5 \ub3d9\uc2dc \uc804\uac1c (\ub300\ub9cc/\ub3d9\ub0a8\uc544/\uc77c\ubcf8)",
-      "nodes": [
-        "domain_taiwan_market",
-        "domain_sea_tiktok",
-        "domain_japan_market"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md"
-    },
-    {
-      "id": "ma_org_triad",
-      "label": "M&A Exit-\uc870\uc9c1\uac1c\ud3b8-\uc7ac\ubb34 3\uc911 \uc5f0\ub3d9",
-      "nodes": [
-        "domain_ma_exit",
-        "domain_org_restructure",
-        "domain_finance"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "CLAUDE.md"
-    },
-    {
-      "id": "ai_avatar_stack",
-      "label": "AI \uc544\ubc14\ud0c0 \ud30c\uc774\ud504\ub77c\uc778 \uc2a4\ud0dd",
-      "nodes": [
-        "tool_elevenlabs",
-        "tool_omnihuman",
-        "tool_fal_ai"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "wiki/AI-Avatar-Automation-Guide.md"
     }
   ]
 }
