@@ -1,5 +1,16 @@
 # CCFM Wiki Log
 
+## [2026-04-13] ingest | 최재명 대표 i-boss 201건 구조화
+- 소스: `Desktop/iboss.txt` (201개 URL, 2017-05-22 ~ 2026-04-12) — i-boss.co.kr ab-6141 (근육돌이 게시판)
+- 집행 경험 누적: 광고비 2,500억+, 팀 100명+
+- 신규 생성: `raw/inbox/2026-04-13-iboss-choi-jaemyeong-201articles.md` (불변 인덱스)
+- 신규 생성: `wiki/sources/src-iboss-choi-jaemyeong.md` (소스 메타)
+- 신규 생성: `wiki/domains/marketing.md` (퍼포먼스 마케팅 도메인 — 부재 상태였음)
+- append: `wiki/domains/ai-automation.md` · `psychology.md` · `viral.md` (iboss 섹션)
+- 암묵지 9개 파일 신규/append: decision-rules, psychology-insights, viral-patterns, market-intuition, operational-heuristics, people-dynamics, creative-patterns, lessons-learned, coding-lessons
+- 업데이트: `wiki/index.md` — marketing 도메인 + src-iboss 소스 링크
+- 핵심 사상 10개 추출: 제품>콘텐츠>타겟>매체 / 공감>퀄리티 / 대량테스트+롤링발칸 / USP=욕구 / 무의식+통념+권위 / 재구매>신규 / AI실행격차10~100배 / 암묵지+문제정의 / 측정·복기 / 기본기>트렌드
+
 ## [2026-04-13] ingest | Desktop/MD 시행착오 + 바이브코딩 v2.0 반영
 - 소스: `C:/Users/gguy/Desktop/MD/` 다수(gemini-imagegen / PSDSKILL·PSD Replace / 메타 세팅 자동화 / TTS·다이어트 릴스 / 바이브코딩_AI협업_지침_v2.0.md)
 - 업데이트: wiki/tacit/coding-lessons.md — "Desktop/MD 멀티 프로젝트 시행착오 모음" append (Gemini, PSD, Meta, TTS, Diet, 바이브코딩, 크로스 프로젝트 공통, TODO 7섹션)

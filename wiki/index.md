@@ -20,6 +20,7 @@
 - [[marketing-automation]] — 마케팅 자동화 AI: 광고 플랫폼, 리포트, CRM, 크롤링
 
 ### 크리에이티브/마케팅 (Creative & Marketing)
+- [[marketing]] — 퍼포먼스 마케팅: 최재명 대표 i-boss 201건 기반 (USP·공감·CRM·매체)
 - [[da-creative]] — DA 크리에이티브: 세이프존, 1초컷, 프롬프트 DB
 - [[viral]] — 바이럴 지식: 밈 구조, 시딩 전략, 알고리즘 해킹
 
@@ -38,6 +39,7 @@ _아직 없음_
 
 ## 소스 (Sources)
 - [[src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
+- [[src-iboss-choi-jaemyeong]] — 최재명 대표 i-boss 게시판 201건 (2017~2026, 광고 2,500억 집행 경험)
 
 ## 의사결정 (Decisions)
 _아직 없음_
