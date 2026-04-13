@@ -1,0 +1,66 @@
+{
+  "project_name": "gguy_sample",
+  "input": {
+    "before_image": "examples/gguy_sample/before.png",
+    "after_image": "examples/gguy_sample/after.png",
+    "scale_before_image": "examples/gguy_sample/scale_before.png",
+    "scale_after_image": "examples/gguy_sample/scale_after.png"
+  },
+  "copy": {
+    "title": "160cm / 골격 스트레이트",
+    "label_before": "Before",
+    "label_after": "After",
+    "date_before": "2025년 12월",
+    "date_after": "2026년 3월"
+  },
+  "face_box": {
+    "x": 325,
+    "y": 405,
+    "w": 112,
+    "h": 125,
+    "auto": false
+  },
+  "audio": {
+    "v1": "audio/instagram_DUX2DY0EZxW.mp3",
+    "v2": "audio/instagram_DW3BhZxEQLo.mp3",
+    "v3": "audio/instagram_DWnms5UEf-H.mp3"
+  },
+  "kling": {
+    "api_keyfile": "api.txt",
+    "model": "kling-v1-6",
+    "mode": "std",
+    "aspect_ratio": "9:16",
+    "duration_v1": "10",
+    "duration_v23": "5",
+    "endpoints": [
+      "https://api-singapore.klingai.com",
+      "https://api.klingai.com"
+    ]
+  },
+  "layout": {
+    "target_w": 1080,
+    "target_h": 1920,
+    "v1": {
+      "scale_center_left": [270, 370],
+      "scale_center_right": [810, 370],
+      "scale_width": 310,
+      "label_y": 165,
+      "title_bottom_pad": 80
+    },
+    "v2": {
+      "scale_center": [780, 430],
+      "scale_width": 400,
+      "date_xy": [625, 125]
+    },
+    "v3": {
+      "scale_center": [260, 430],
+      "scale_width": 380,
+      "date_xy": [105, 130]
+    },
+    "cut_seconds": 4.0,
+    "after_len_seconds": 6.0,
+    "dance_speed": 1.2,
+    "mosaic_block_div": 22
+  },
+  "output_dir": "output"
+}

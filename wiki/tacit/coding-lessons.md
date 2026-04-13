@@ -392,3 +392,40 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 ### n8n + Claude 자동화 경제학
 - 월 10~20만원 투자로 이미지 리사이즈·경쟁사 모니터링·자금일보 해결
 - 20분 → 2분 과제부터 시작, 전사 반복업무 전담 AX팀 신설
+
+### [2026-04-13] Windows Python에서 em-dash(—) 쓰면 cp949로 write_text 크래시
+- 관찰: Kling 프롬프트에 `—` 문자 넣은 채 `Path.write_text(json.dumps(...))` 호출 시 `UnicodeEncodeError: 'cp949' codec can't encode character '\u2014'`
+- 조건: Windows 10/11 기본 로케일(cp949), Python 3.13. `write_text(..., encoding="utf-8")` 명시 or 프롬프트에서 em-dash → `:` / `,` / `-` 로 치환
+- 출처: 실제 프로덕션 크래시 2회 연속 (A3_thin 제출 중단, state 파일 파손)
+- confidence: high
+- 대응 규칙: [[src-diet-b2a-skill]] harness/RULES.md R3
+
+### [2026-04-13] Kling image2video: 10s 모드가 5s보다 포즈 초 단위 지시 준수율 높음
+- 관찰: 프롬프트에 `0-1s ..., 1-2s ..., 2-3s ...` 식으로 쓰면 10s 모드는 대체로 지켜짐. 5s는 한두 포즈만 찍고 지나감
+- 조건: std 모드 기준. pro 모드는 비용이 큼. 재현성 필요한 동기화(두 클립 같은 시점 같은 포즈) 확보에 필수
+- 출처: A3 쌍(10s 1-2-3 카운트) vs B3 쌍(5s 팔 크로스) 비교
+- confidence: medium
+
+### [2026-04-13] ffmpeg xfade보다 "같은 포즈 매칭 하드컷"이 자연스럽다
+- 관찰: B/A 전환 시 xfade 0.3s 는 흐리게 섞이기만 함. 양쪽 클립의 같은 포즈 프레임 지점에서 `concat`으로 하드컷하면 "몸만 변한" 효과
+- 조건: 두 클립의 포즈 타이밍을 프롬프트에서 확정해야 가능 (없으면 xfade 대안)
+- 출처: diet-b2a 영상2/3 반복
+- confidence: medium
+
+### [2026-04-13] filter_complex에서 한 스트림을 여러 번 쓰려면 split 필수
+- 관찰: 같은 `[m1]`을 두 번 concat 입력으로 쓰면 "stream already used" 에러. `split=2[a][b]; [a][b]concat=n=2` 패턴으로 loop 구현
+- 조건: `trim=0:X, setpts=PTS-STARTPTS` 조합으로 루프 길이 제어
+- 출처: 후반 1.2× + 루프로 6초 유지 구현
+- confidence: high
+
+### [2026-04-13] 폴링 루프의 멱등성은 상태파일 + 파일크기 이중 체크
+- 관찰: `tasks.json`에 task_id만 있고 mp4 다운로드 직전에 크래시하면 다음 실행에서 재다운로드 필요. `raw/<key>.mp4` 존재 + stat > 100KB 로 판정
+- 조건: 파일 크기 하한은 노이즈 회피. Kling 5s std는 2~5MB 정도라 100KB는 넉넉한 하한
+- 출처: diet-b2a scripts/kling_client.py
+- confidence: high
+
+### [2026-04-13] Kling JWT는 매 주요 루프마다 재발급
+- 관찰: JWT exp 30분이라 폴링 중 만료 가능. `token = make_token(ak, sk)` 을 각 key 폴링 진입마다 호출
+- 조건: Kling `iss`=access_key, `exp`=now+1800, `nbf`=now-5, HS256 고정
+- 출처: 1시간+ 폴링 시나리오
+- confidence: high

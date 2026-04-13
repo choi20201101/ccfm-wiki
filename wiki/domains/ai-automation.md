@@ -64,3 +64,9 @@ _내용 추가 예정_
 - bob(설계) → dd(분해) → harness(강제) → eval(평가) → learnings(피드백)
 - 산출물 품질은 "강제 규칙(린터·하네스)" 유무가 결정
 - → [[wiki/tacit/coding-lessons]] 2026-04-13 엔트리 교차 저장
+
+### bdh 완주 사례: diet-b2a (2026-04-13)
+- [[src-diet-b2a-skill]] — bob(PLAN.md) → dd(steps/00~05) → harness(RULES.md 10개) 완주한 첫 프로덕션 스킬
+- Kling image2video + ffmpeg filter_complex 조합으로 **이미지 4장 + config 5줄 → 10초 릴스 3본** 자동화
+- 재사용 벡터: config 5슬롯만 편집 → 새 인물/프로젝트. 중간 실패 시 멱등 재개.
+- 교훈 누적: [[creative-patterns]] (전→후 하드컷 매칭 포즈), [[coding-lessons]] (cp949 em-dash 이슈, Kling 10s > 5s 포즈 준수율), [[psychology-insights]] (전반 억제 → 후반 폭발 해방감)

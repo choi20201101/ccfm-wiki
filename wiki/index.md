@@ -40,6 +40,7 @@ _아직 없음_
 ## 소스 (Sources)
 - [[src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[src-iboss-choi-jaemyeong]] — 최재명 대표 i-boss 게시판 201건 (2017~2026, 광고 2,500억 집행 경험) · 글별 상세: [[raw/iboss/INDEX]]
+- [[src-diet-b2a-skill]] — 다이어트 Before/After 릴스 3종 자동 생성 스킬 (Kling+ffmpeg, bdh 완주) · 2026-04-13
 
 ## 의사결정 (Decisions)
 _아직 없음_

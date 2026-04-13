@@ -1,5 +1,18 @@
 # CCFM Wiki Log
 
+## [2026-04-13] ingest | diet-b2a 스킬 — 다이어트 B/A 릴스 3종 자동화 (bdh 완주 사례)
+- 원본: `raw/skills/diet-b2a/` (트리 전부) + `raw/skills/diet-b2a/diet-b2a-skill.zip` (35KB)
+- 스킬 위치: 사용자 바탕화면 `C:\Users\gguy\Desktop\diet-b2a-skill.zip`, 소스는 `C:\Users\gguy\Desktop\dance\diet-b2a-skill\`
+- 신규 소스 페이지: [[src-diet-b2a-skill]] (SKILL/PLAN/HOOK/ARCHITECTURE/USAGE 요약 + 관련 페이지 링크)
+- 도메인 append: [[content-ai-automation]] §9, [[da-creative]] 레이아웃 레퍼런스, [[ai-automation]] bdh 완주 사례
+- 암묵지 신규:
+  - [[creative-patterns]] 5건 (하드컷 매칭 포즈, 전반억제→후반폭발, 모자이크 범위, 자막-박스 여백, 1-2-3 시퀀스)
+  - [[coding-lessons]] 6건 (cp949 em-dash, Kling 10s>5s 포즈 준수, xfade vs 매칭컷, split=2 loop, 멱등 이중체크, JWT 재발급)
+  - [[psychology-insights]] 2건 (억제→해방 릴스 구조, 모자이크 과다 시 몰입 저하)
+- index.md Sources 섹션에 링크 추가
+- 파이프라인 의의: bob(PLAN.md) → dd(steps/00~05) → harness(RULES.md 10조) 3단 완주한 **첫 프로덕션 스킬** — 향후 B/A 류 콘텐츠 스킬 제작의 레퍼런스
+- 재사용 벡터: `config/default.json` 의 5개 슬롯(이미지 4 + 카피 5 + face_box + audio 3 + kling 설정)만 편집하면 새 인물 프로젝트
+
 ## [2026-04-13] plan | 루솔브 퍼포먼스 캔버스 v1 초안 (데이터 전 가설 베이스라인)
 - 산출물: `wiki/qscv/canvas-rusolve-v1.md` (Part 7 캔버스 프레임 준용)
 - 입력: 없음 (집행 전) — 전 항목 가설, USP·임상·근거는 ⏳ 수집 대기

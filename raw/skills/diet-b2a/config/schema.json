@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "diet-b2a config",
+  "type": "object",
+  "required": ["project_name", "input", "copy", "face_box", "kling", "layout"],
+  "properties": {
+    "project_name": {"type": "string", "minLength": 1},
+    "input": {
+      "type": "object",
+      "required": ["before_image", "after_image", "scale_before_image", "scale_after_image"],
+      "additionalProperties": false,
+      "properties": {
+        "before_image":       {"type": "string"},
+        "after_image":        {"type": "string"},
+        "scale_before_image": {"type": "string"},
+        "scale_after_image":  {"type": "string"}
+      }
+    },
+    "copy": {
+      "type": "object",
+      "required": ["title", "label_before", "label_after", "date_before", "date_after"],
+      "additionalProperties": false,
+      "properties": {
+        "title":        {"type": "string", "minLength": 1},
+        "label_before": {"type": "string", "minLength": 1},
+        "label_after":  {"type": "string", "minLength": 1},
+        "date_before":  {"type": "string", "minLength": 1},
+        "date_after":   {"type": "string", "minLength": 1}
+      }
+    },
+    "face_box": {
+      "type": "object",
+      "required": ["x", "y", "w", "h"],
+      "properties": {
+        "x": {"type": "integer", "minimum": 0},
+        "y": {"type": "integer", "minimum": 0},
+        "w": {"type": "integer", "minimum": 20},
+        "h": {"type": "integer", "minimum": 20},
+        "auto": {"type": "boolean"}
+      }
+    },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "v1": {"type": "string"},
+        "v2": {"type": "string"},
+        "v3": {"type": "string"}
+      }
+    },
+    "kling": {
+      "type": "object",
+      "required": ["api_keyfile", "model", "mode", "duration_v1", "duration_v23"],
+      "properties": {
+        "api_keyfile": {"type": "string"},
+        "model":       {"type": "string"},
+        "mode":        {"enum": ["std", "pro"]},
+        "aspect_ratio":{"enum": ["9:16", "16:9", "1:1"]},
+        "duration_v1": {"enum": ["5", "10"]},
+        "duration_v23":{"enum": ["5", "10"]},
+        "endpoints":   {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "layout": {"type": "object"},
+    "output_dir": {"type": "string"}
+  }
+}
