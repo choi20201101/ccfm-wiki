@@ -51,5 +51,5 @@ _아직 없음_
 - wiki/tacit/operational-heuristics.md — 운영 노하우
 - wiki/tacit/creative-patterns.md — 크리에이티브 감각 (8건)
 - wiki/tacit/viral-patterns.md — 바이럴 감각
-- wiki/tacit/coding-lessons.md — 코딩/자동화 교훈
+- wiki/tacit/coding-lessons.md — 코딩/자동화 교훈 (네이버 크롤링·시장조사 + Desktop/MD 멀티 프로젝트 시행착오)
 - wiki/tacit/psychology-insights.md — 심리/설득 원칙

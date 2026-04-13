@@ -1,5 +1,12 @@
 # CCFM Wiki Log
 
+## [2026-04-13] ingest | Desktop/MD 시행착오 + 바이브코딩 v2.0 반영
+- 소스: `C:/Users/gguy/Desktop/MD/` 다수(gemini-imagegen / PSDSKILL·PSD Replace / 메타 세팅 자동화 / TTS·다이어트 릴스 / 바이브코딩_AI협업_지침_v2.0.md)
+- 업데이트: wiki/tacit/coding-lessons.md — "Desktop/MD 멀티 프로젝트 시행착오 모음" append (Gemini, PSD, Meta, TTS, Diet, 바이브코딩, 크로스 프로젝트 공통, TODO 7섹션)
+- 업데이트: wiki/domains/vibe-coding.md — 스켈레톤 → v2.0 지침 반영본(5대 원인↔해법, 8-Phase, Phase별 규칙, DDD 관통, bob 순환형, /insight, 시행착오)
+- 업데이트: wiki/tacit/lessons-learned.md — last_confirmed 2026-04-13
+- 성격: 성공 결과가 아닌 **실패·우회·재시도·재현 불가 케이스**만 필터링해 지식화
+
 ## [2026-04-13] restructure | 도메인 카테고리 확장 (7→14)
 - 신규 도메인 7개 생성:
   - vibe-coding (바이브코딩 & 클로드 스킬)
