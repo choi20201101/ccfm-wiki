@@ -1,7 +1,7 @@
 # Graph Report - .  (2026-04-13)
 
 ## Corpus Check
-- Large corpus: 318 files · ~201,999 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- Large corpus: 318 files · ~201,997 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
 - 90 nodes · 121 edges · 10 communities detected
@@ -43,11 +43,6 @@
   CLAUDE.md → wiki/domains/finance.md
 - `스마일게이트` --counterparty--> `M&A Exit`  [EXTRACTED]
   CLAUDE.md → wiki/domains/ma-exit.md
-
-## Hyperedges (group relationships)
-- **해외시장 동시 전개 (대만/동남아/일본)** — domain_taiwan_market, domain_sea_tiktok, domain_japan_market [EXTRACTED 1.00]
-- **M&A Exit-조직개편-재무 3중 연동** — domain_ma_exit, domain_org_restructure, domain_finance [INFERRED 0.85]
-- **AI 아바타 파이프라인 스택** — tool_elevenlabs, tool_omnihuman, tool_fal_ai [EXTRACTED 1.00]
 
 ## Communities
 

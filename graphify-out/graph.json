@@ -1,49 +1,7 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "overseas_markets",
-        "label": "해외시장 동시 전개 (대만/동남아/일본)",
-        "nodes": [
-          "domain_taiwan_market",
-          "domain_sea_tiktok",
-          "domain_japan_market"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "CLAUDE.md"
-      },
-      {
-        "id": "ma_org_triad",
-        "label": "M&A Exit-조직개편-재무 3중 연동",
-        "nodes": [
-          "domain_ma_exit",
-          "domain_org_restructure",
-          "domain_finance"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "CLAUDE.md"
-      },
-      {
-        "id": "ai_avatar_stack",
-        "label": "AI 아바타 파이프라인 스택",
-        "nodes": [
-          "tool_elevenlabs",
-          "tool_omnihuman",
-          "tool_fal_ai"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "wiki/AI-Avatar-Automation-Guide.md"
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
       "label": "_export_canvas_rusolve.py",
