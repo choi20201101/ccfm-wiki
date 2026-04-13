@@ -48,6 +48,10 @@
 - 업데이트: wiki/domains/vibe-coding.md — 스켈레톤 → v2.0 지침 반영본(5대 원인↔해법, 8-Phase, Phase별 규칙, DDD 관통, bob 순환형, /insight, 시행착오)
 - 업데이트: wiki/tacit/lessons-learned.md — last_confirmed 2026-04-13
 - 성격: 성공 결과가 아닌 **실패·우회·재시도·재현 불가 케이스**만 필터링해 지식화
+## [2026-04-13] ingest | community 모듈 본문/댓글 수집 추가 + 지식화
+- 신규: `market-research-package/modules/community/detail_fetcher.py` (5개 사이트 opt-in fetcher)
+- 변경: `crawler.py`(`_enrich_detail` 훅), `config.py`(`FETCH_DETAIL`), `run.py`(`--with-detail`), `README.md`
+- 위키: `wiki/sources/src-community.md` 신규, `wiki/tacit/coding-lessons.md` append, `domains/marketing-automation.md`·`viral.md` 링크 추가
 
 ## [2026-04-13] restructure | 도메인 카테고리 확장 (7→14)
 - 신규 도메인 7개 생성:
@@ -103,3 +107,5 @@
 - coding-lessons.md: 자막/STT/ElevenLabs/atempo/폰트 7개 Q 체크리스트로 재작성
 - creative-patterns.md: 자막 위치/CTA 컬러/다국어 스타일 3개 Q로 재작성
 - decision-rules.md: 메타 원칙("영상 작업은 규칙화 금지, 질문 체크리스트화") 추가
+## [2026-04-13] ingest | youtube 모듈 지식화
+## [2026-04-13] ingest | instar 모듈 지식화
