@@ -26,6 +26,13 @@
 ### 인문/심리 (Human & Psychology)
 - [[psychology]] — 심리학 & 인간의 본질: 소비자 심리, 설득, 조직심리, 행동경제학
 
+### QSCV — 서비스 품질 매뉴얼 (2025-07 베이스라인)
+- [[qscv/index|qscv]] — 마케팅 서비스 품질 표준 (14개 문서 / 47 청크)
+  - 고객여정: [[qscv/design-customer-journey|디자인본부]] · [[qscv/media-customer-journey|미디어본부]]
+  - 매체 매뉴얼: [[qscv/media-meta|META]] · [[qscv/media-google|Google]] · [[qscv/media-gfa|GFA]] · [[qscv/media-search-ads|검색광고]]
+  - 사고 프레임: [[qscv/performance-thinking|퍼포먼스 사고 확장 가이드]]
+  - Appendix: [[qscv/appendix-aov|객단가]] · [[qscv/appendix-landing|랜딩]] · [[qscv/appendix-detail-page|상세페이지]] · [[qscv/appendix-video-planning|영상기획]] · [[qscv/appendix-image-planning|이미지기획]] · [[qscv/appendix-content-guide|콘텐츠기획]] · [[qscv/appendix-canvas-reupdate|캔버스재기획]]
+
 ## 엔티티 (Entities)
 _아직 없음_
 

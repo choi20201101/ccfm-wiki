@@ -30,3 +30,14 @@
 ## [2026-04-13] ingest | 네이버 카페 크롤링 모듈 지식화
 
 ## [2026-04-13] ingest | naverapi (네이버 검색광고 + Meta 광고) 모듈 지식화
+
+## [2026-04-13] ingest | QSCV 마케팅 서비스 품질 매뉴얼 14종 구조화
+- 소스: C:\Users\gguy\Desktop\QSCV\*.docx (2025-04~ 생성, 2025-07 베이스라인)
+- 추출: raw/qscv/*.md (14개) + raw/qscv/chunks/*__chunkNNN.md (47개, 200줄 단위)
+- 생성: wiki/qscv/ (index + 14페이지)
+  - 본부별 고객여정: design-customer-journey / media-customer-journey
+  - 매체 매뉴얼: media-meta / media-google / media-gfa / media-search-ads
+  - 사고 프레임: performance-thinking
+  - Appendix 7종: aov / landing / detail-page / video-planning / image-planning / content-guide / canvas-reupdate
+- 업데이트: wiki/index.md 에 QSCV 섹션 추가
+- 향후: 사용자가 베이스라인 위에 실무 변경·암묵지 증분 업데이트
