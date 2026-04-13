@@ -1,5 +1,14 @@
 # CCFM Wiki Log
 
+## [2026-04-13] ingest | i-boss 201건 글별 상세 요약 수집 완료 (2차)
+- 1차 구조화(카테고리·tacit·도메인)에서 부재했던 **글별 개별 요약**을 전량 수집
+- 방식: 8개 서브에이전트 병렬 디스패치 (각 ~25건), WebFetch 201회 전량 성공 (실패 0)
+- 신규: `raw/iboss/ab-6141-{번호}.md` × 201건 (프런트매터: article_id·date·category + 핵심 인사이트 5~10개)
+- 신규: `raw/iboss/INDEX.md` — 카테고리·연도 분포 + 연도별 글 목록(최신순)
+- 카테고리 재집계: marketing 54 · operation 43 · ai-automation 34 · psychology 22 · creative 15 · viral 14 · lesson 10 · decision-rule 7
+- 연도 재집계: 2017-19(17) · 2020-21(21) · 2022(37) · 2023(33) · 2024(39) · 2025-26(54)
+- 효과: "2024-07 글 요지?" 같은 글 단위 질의 가능. on-demand WebFetch 불필요
+
 ## [2026-04-13] ingest | 최재명 대표 i-boss 201건 구조화
 - 소스: `Desktop/iboss.txt` (201개 URL, 2017-05-22 ~ 2026-04-12) — i-boss.co.kr ab-6141 (근육돌이 게시판)
 - 집행 경험 누적: 광고비 2,500억+, 팀 100명+

@@ -119,4 +119,4 @@ date_range: 2017-05-22 ~ 2026-04-12
 - wiki/domains/psychology.md: (append)
 - wiki/domains/viral.md: (append)
 
-> 각 글의 상세 요약은 Desktop/iboss.txt의 URL을 WebFetch 재실행하면 복원 가능. 이 raw 파일은 카테고리 분포·핵심 사상 요약·파일 매핑 인덱스 역할.
+> **2026-04-13 업데이트**: 개별 글 요약을 모두 저장 완료. 글별 MD 파일은 `raw/iboss/ab-6141-{번호}.md`, 마스터 인덱스는 [[raw/iboss/INDEX]] 참조. 이 파일은 201건 횡단 요약·카테고리 분포 전용.

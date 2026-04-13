@@ -14,7 +14,7 @@ sources: [i-boss.co.kr/ab-6141]
 - **플랫폼**: i-boss.co.kr 마케터 커뮤니티, 게시판 ID `ab-6141`
 - **글 수**: 201개 (2017-05-22 ~ 2026-04-12)
 - **집행 경험 누적**: 광고비 2,500억+, 팀 100명+
-- **위치**: 원본 URL은 `C:/Users/gguy/Desktop/iboss.txt`, 인덱스는 `raw/inbox/2026-04-13-iboss-choi-jaemyeong-201articles.md`
+- **위치**: 원본 URL은 `C:/Users/gguy/Desktop/iboss.txt`, 횡단 요약은 `raw/inbox/2026-04-13-iboss-choi-jaemyeong-201articles.md`, **글별 상세 요약 201건은 `raw/iboss/ab-6141-{번호}.md` + 마스터 인덱스 `raw/iboss/INDEX.md`**
 
 ## 콘텐츠 구성 변천
 - **2017-2020**: 페북·스토어팜 시대. "공감 콘텐츠" 5부작 / 스토어팜 매출 억대 시리즈 / SNS 바이럴 법칙
