@@ -97,3 +97,9 @@
 - 출처: DW1X3RRk_7Q 세션 (자막 OCR 신뢰 실패 → STT 교정, 번체 번역, ElevenLabs v3 Yun 보이스)
 - coding-lessons.md: STT 검증, whisper 모델 크기, ElevenLabs v3 우위, 중국어 네이티브 보이스, atempo fit, malgunbd 폰트
 - creative-patterns.md: 세로 자막 위치 20% 상향, 다국어 CTA 노란색 유지
+
+## [2026-04-13] refactor | 다국어 릴스 교훈을 규칙→질문 체크리스트로 재구성
+- 사용자 피드백: "영상마다 변수가 달라서 무조건 규칙화 금지, 질문 체크리스트로 저장"
+- coding-lessons.md: 자막/STT/ElevenLabs/atempo/폰트 7개 Q 체크리스트로 재작성
+- creative-patterns.md: 자막 위치/CTA 컬러/다국어 스타일 3개 Q로 재작성
+- decision-rules.md: 메타 원칙("영상 작업은 규칙화 금지, 질문 체크리스트화") 추가
