@@ -469,4 +469,10 @@ bob PLAN.md  →  dd steps 00~05  →  harness RULES  →  output/영상{1,2,3}.
 2. 시드·체중계·로고·자막·BGM·모자이크까지 전부 스크립트 파라미터. 사람은 styles.json만 터치.
 3. 거부/안전 필터 자동 우회(AI 캐릭터 명시, 의상 완화, safe fallback)로 실전 운영 가능.
 
+### 10-7. 파이프라인 스크립트 인덱스 (graphify 통합)
+모두 [[src-diet-b2a-v2]] 하위. 각 파일이 이 도메인의 구성원이며 서로 순차 의존:
+- `lib.py` · `gemini_client.py` · `logo_remover.py` · `detect_faces.py` · `build_sets.py` (공용 라이브러리)
+- `analyze_bgm.py` → `build_prompts.py` → `check_session.py` → `gen_seeds.py` → `gen_scales.py` → `gen_kling.py` → `compose.py` (스텝 00→06 순차 실행)
+- 공용 라이브러리는 스텝 여러 개가 import 함 → graphify 그래프에서 **hub 노드** 로 자리잡음
+
 *추가: 2026-04-14 (§10 diet-b2a-v2, [[src-diet-b2a-v2]])*
