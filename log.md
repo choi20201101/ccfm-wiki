@@ -1,5 +1,16 @@
 # CCFM Wiki Log
 
+## [2026-04-14] update | goglecc — Gemini 직호출 기본값 확립 (vs fal/Flux)
+- 동일 ref + 동일 한국어 프롬프트로 A/B: Gemini API 직호출이 fal-ai/nano-banana/edit 압승
+  - fal은 얼굴 완전 다르게 바뀜·배경 렌더 느낌
+  - Gemini는 얼굴 보존·실사 질감·배경 자연스러움
+- Flux+커스텀LoRA+XLabs Realism 스택은 AI sheen 완전 제거 불가 (구조적 한계)
+- [[src-goglecc-seed-curation]] 섹션 7·8 추가 (API 비교표 + 재사용 체크리스트 업데이트)
+- [[tacit/coding-lessons]] 4건 추가: Gemini 직호출 우선, Flux 한계, key.txt 라벨 파서
+- [[tacit/creative-patterns]] 1건 추가: 실사 인플루언서는 Gemini 직호출 기본값
+- [[da-creative]] API 선택 원칙 추가
+- 규칙: 인물 실사 생성 목표면 무조건 Google AI Studio 키로 `gemini-2.5-flash-image` 직호출
+
 ## [2026-04-14] ingest | goglecc — 씨드 이미지 수집·큐레이션 파이프라인
 - 원본: `C:/Users/gguy/Desktop/goglecc/` (BDH 구조, bing scraper + negative curation + fal LoRA 준비)
 - 신규 소스: [[src-goglecc-seed-curation]]

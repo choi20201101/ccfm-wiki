@@ -57,6 +57,16 @@ contradiction: none
 - **is_style=True** (fal flux-lora-fast-training 파라미터)
 - confidence: medium (업계 관행 + 이론적 뒷받침, 자체 학습 1회)
 
+### [2026-04-14] 실사 인플루언서 생성 — Gemini 직호출이 기본값, fal/Flux는 fallback
+- **문제**: 광고 소재용 "AI 같지 않은" 인플루언서 사진이 필요할 때 경로 선택
+- **검증 결과**:
+  - ✅ **Gemini API 직호출**(`gemini-2.5-flash-image` via `google-genai` SDK, 한국어 자연 프롬프트) → 챗 수준 실사
+  - ❌ fal-ai/nano-banana/edit → 얼굴 바뀜·렌더 느낌 섞임
+  - ❌ Flux + 커스텀 LoRA + 실사 LoRA 스택 → AI sheen 잔존
+- **규칙**: 인플루언서/인물 사실적 생성이 목표면 **Gemini 직호출 먼저**, 어차피 비용 차이 거의 없음
+- **프롬프트**: 한국어 + 촬영 맥락 풍부하게 (예: "친구가 핸드폰으로 찍어준 듯한 캔디드 스냅, 보정 없음, 피부 모공과 결점 그대로, 약간 필름 그레인")
+- confidence: high (A/B 검증)
+
 ### [2026-04-14] Higgsfield vs Nano Banana — 철학 차이
 - **Higgsfield**: Flux + 캐릭터당 LoRA 학습 + IP-Adapter + 자체 비디오 모델 (stack 방식, 학습 필수, 캐릭터 일관성 강함)
 - **Nano Banana**: 단일 frozen 모델, multi-image reference 기반 (학습 불필요, 같은 인물 N회 생성 시 미세 변동)

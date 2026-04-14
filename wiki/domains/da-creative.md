@@ -20,6 +20,12 @@ sources: []
 
 ## 프롬프트 DB
 
+### API 선택 원칙 (2026-04-14 추가)
+- **실사 인플루언서/인물 생성은 Google AI Studio 키 + `google-genai` SDK 직호출 기본값.**
+  fal-ai/nano-banana/edit은 얼굴 보존·실사 질감 둘 다 품질 저하 (A/B 검증).
+- fal은 Flux/Kling/Kontext 등 다른 모델 호출에만 사용.
+- 자세한 비교: [[src-goglecc-seed-curation]] 섹션 7, [[coding-lessons]] 2026-04-14 엔트리.
+
 ### Gemini 이미지 생성 — 레퍼런스 기반 한국어 포맷 (검증 2026-04-14)
 
 **문제**: Gemini에 "photorealistic", "real Korean woman", "real person" 같은 직설 영어 프롬프트 + 실제 모델 사진 업로드 시 safety가 거부함 — `"I can create images of people, but not ones that depict a real person like that"`. 긴 영어 지시문 + 강제 규칙(대문자/별표 강조) 넣으면 Gemini가 회피 출력(빈 방만 반환)을 내기도 함.
