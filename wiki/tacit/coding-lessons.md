@@ -718,3 +718,45 @@ Gemini 이미지 생성(웹 자동화)에서 "photorealistic East Asian woman", 
 - 구글 계정 스위칭도 효과 있음 (safety 프로필이 계정별로 다름)
 - Playwright `.session` 점유 충돌 주의: 다른 Chrome 인스턴스가 같은 user_data_dir 잡고 있으면 lock 풀어야 — `wmic process where "name='chrome.exe'" get commandline` 으로 PID 확인 후 kill + `lockfile`/`LOCK`/`SingletonLock` rm
 - 상세 템플릿/예시: [[da-creative#프롬프트-db]]
+
+## [2026-04-14] Gemini 직호출 > fal 프록시 — 얼굴 보존·실사감 모두 우위
+
+출처: goglecc `compare_gemini_vs_fal.py` A/B 테스트 → [[src-goglecc-seed-curation]] 섹션 7.
+
+### 관찰
+동일 레퍼런스 + 동일 한국어 프롬프트:
+- **Google AI Studio 키 + `google-genai` + `gemini-2.5-flash-image` 직호출**: 얼굴 보존 ✓, 실사 챗 수준 ✓
+- **`fal-ai/nano-banana/edit`**: 얼굴이 완전 다른 인물로 바뀌는 사례 빈번, 배경에 렌더 느낌
+
+### 조건
+- Nano Banana/Gemini 이미지 모델은 **무조건 Google 직호출**
+- 원인(추정): fal 측 래핑/파라미터/프롬프트 전처리 차이
+
+### confidence: medium (1회 A/B, 효과 크기 큼)
+
+## [2026-04-14] Flux LoRA + 후처리 스택으로도 AI tell 완전 제거는 불가
+
+### 관찰
+XLabs RealismLora 0.75 + guidance 1.8 + 센서노이즈·언샤프·JPEG 재압축 후처리까지 쌓아도 일부 이미지에 "완벽한 미인" sheen 잔존.
+
+### 조건
+- Flux 베이스의 구조적 한계. 실사 최우선이면 Gemini/Imagen 계열로 전환
+- aesthetic LoRA는 스타일 변환/일관성 용도로만 남김
+
+### confidence: medium
+
+## [2026-04-14] key.txt 라벨 파서 관례 (멀티 API 키)
+
+### 관찰
+한 프로젝트에서 fal + Gemini 등 여러 키 필요할 때:
+```
+fal ai=41c...216
+제미나이=AIz...6OI
+```
+라벨 파서: `split("=", 1)[1].strip()`, 라벨은 부분 문자열 + lower() 대소문자 무시.
+
+### 조건
+- `.gitignore`에 `key.txt` 반드시 포함
+- 새 API 추가 시 줄만 추가, 코드 수정 불필요
+
+### confidence: medium
