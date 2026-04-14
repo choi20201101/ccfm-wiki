@@ -130,3 +130,8 @@
 - decision-rules.md: 메타 원칙("영상 작업은 규칙화 금지, 질문 체크리스트화") 추가
 ## [2026-04-13] ingest | youtube 모듈 지식화
 ## [2026-04-13] ingest | instar 모듈 지식화
+
+## [2026-04-14] ingest | Gemini 레퍼런스 기반 프롬프트 포맷 (실사 질감 + safety 우회)
+- [[da-creative]] 프롬프트 DB 섹션에 템플릿·예시·운용팁 추가
+- [[coding-lessons]] 2026-04-14 엔트리 추가 (confidence: medium)
+- 출처: diet-b2a-v2 실전 검증 + 사용자 스크린샷 (20260414_142011.png)

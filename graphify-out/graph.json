@@ -8,71 +8,79 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "id": "raw_qscv_extract_and_chunk_py",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "raw_qscv_extract_and_chunk_py"
     },
     {
       "label": "slugify()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L21",
-      "id": "extract_and_chunk_slugify",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_slugify"
     },
     {
       "label": "iter_block_items()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L27",
-      "id": "extract_and_chunk_iter_block_items",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_iter_block_items"
     },
     {
       "label": "paragraph_text()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L41",
-      "id": "extract_and_chunk_paragraph_text",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_paragraph_text"
     },
     {
       "label": "table_to_md()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L64",
-      "id": "extract_and_chunk_table_to_md",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_table_to_md"
     },
     {
       "label": "extract()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L76",
-      "id": "extract_and_chunk_extract",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_extract"
     },
     {
       "label": "chunk_and_write()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L92",
-      "id": "extract_and_chunk_chunk_and_write",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_chunk_and_write"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L118",
-      "id": "extract_and_chunk_main",
-      "community": 8
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_main"
     },
     {
       "label": "QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG] 플",
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 8,
+      "community": 9,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_rationale_1"
     },
@@ -81,40 +89,45 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_compose_py",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "raw_skills_diet_b2a_scripts_compose_py"
     },
     {
       "label": "mosaic()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L60",
-      "id": "compose_mosaic",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_mosaic"
     },
     {
       "label": "video1()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L22",
-      "id": "compose_video1",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_video1"
     },
     {
       "label": "video_23()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L71",
-      "id": "compose_video_23",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_video_23"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L189",
-      "id": "compose_main",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_main"
     },
     {
       "label": "Step 03 — ffmpeg filter_complex compose: mosaic + overlays + audio → 3 mp4s.",
@@ -130,31 +143,34 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "community": 16
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "raw_skills_diet_b2a_scripts_detect_face_py"
     },
     {
       "label": "try_opencv_detect()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L16",
-      "id": "detect_face_try_opencv_detect",
-      "community": 16
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "detect_face_try_opencv_detect"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L40",
-      "id": "detect_face_main",
-      "community": 16
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "detect_face_main"
     },
     {
       "label": "Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 16,
+      "community": 17,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_rationale_1"
     },
@@ -163,23 +179,25 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_export_py",
-      "community": 22
+      "community": 23,
+      "community_label": "기타: export.py",
+      "id": "raw_skills_diet_b2a_scripts_export_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L26",
-      "id": "export_main",
-      "community": 22
+      "community": 23,
+      "community_label": "기타: export.py",
+      "id": "export_main"
     },
     {
       "label": "Step 05 — thumbnails + captions + zip.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 23,
       "community_label": "기타: export.py",
       "id": "export_rationale_1"
     },
@@ -188,71 +206,79 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "raw_skills_diet_b2a_scripts_kling_client_py"
     },
     {
       "label": "read_keys()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L24",
-      "id": "kling_client_read_keys",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_read_keys"
     },
     {
       "label": "token()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L36",
-      "id": "kling_client_token",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_token"
     },
     {
       "label": "submit()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L43",
-      "id": "kling_client_submit",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_submit"
     },
     {
       "label": "poll()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L69",
-      "id": "kling_client_poll",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_poll"
     },
     {
       "label": "download()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L95",
-      "id": "kling_client_download",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_download"
     },
     {
       "label": "save_state()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L104",
-      "id": "kling_client_save_state",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_save_state"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L108",
-      "id": "kling_client_main",
-      "community": 9
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_main"
     },
     {
       "label": "Step 02 — Kling image2video: JWT, submit, poll, download, resume.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "community": 9,
+      "community": 10,
       "community_label": "AI 아바타/영상 툴",
       "id": "kling_client_rationale_1"
     },
@@ -261,63 +287,70 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_lib_py",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "raw_skills_diet_b2a_scripts_lib_py"
     },
     {
       "label": "skill_root()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L9",
-      "id": "lib_skill_root",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_skill_root"
     },
     {
       "label": "load_config()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L13",
-      "id": "lib_load_config",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_load_config"
     },
     {
       "label": "rel()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L20",
-      "id": "lib_rel",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_rel"
     },
     {
       "label": "out_dir()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L28",
-      "id": "lib_out_dir",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_out_dir"
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L34",
-      "id": "lib_run",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_run"
     },
     {
       "label": "ffprobe_duration()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L39",
-      "id": "lib_ffprobe_duration",
-      "community": 10
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_ffprobe_duration"
     },
     {
       "label": "Shared helpers: config loading, path resolution, ffmpeg runner.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "community": 10,
+      "community": 11,
       "community_label": "기타: lib.py",
       "id": "lib_rationale_1"
     },
@@ -326,7 +359,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L21",
-      "community": 10,
+      "community": 11,
       "community_label": "기타: lib.py",
       "id": "lib_rationale_21"
     },
@@ -335,31 +368,34 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "community": 17
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "raw_skills_diet_b2a_scripts_make_overlays_py"
     },
     {
       "label": "stroked()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L13",
-      "id": "make_overlays_stroked",
-      "community": 17
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "make_overlays_stroked"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L31",
-      "id": "make_overlays_main",
-      "community": 17
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "make_overlays_main"
     },
     {
       "label": "Step 01 — generate stroked text PNG overlays from config.copy.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 17,
+      "community": 18,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_rationale_1"
     },
@@ -368,31 +404,34 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "community": 18
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "raw_skills_diet_b2a_scripts_qa_check_py"
     },
     {
       "label": "probe()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L11",
-      "id": "qa_check_probe",
-      "community": 18
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "qa_check_probe"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L20",
-      "id": "qa_check_main",
-      "community": 18
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "qa_check_main"
     },
     {
       "label": "Step 04 — quality checks on the 3 output mp4s.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 18,
+      "community": 19,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_rationale_1"
     },
@@ -401,23 +440,25 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_run_all_py",
-      "community": 23
+      "community": 24,
+      "community_label": "기타: run_all.py",
+      "id": "raw_skills_diet_b2a_scripts_run_all_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L20",
-      "id": "run_all_main",
-      "community": 23
+      "community": 24,
+      "community_label": "기타: run_all.py",
+      "id": "run_all_main"
     },
     {
       "label": "Orchestrator — run steps 00→05 idempotently.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 23,
+      "community": 24,
       "community_label": "기타: run_all.py",
       "id": "run_all_rationale_1"
     },
@@ -426,23 +467,25 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "community": 24
+      "community": 25,
+      "community_label": "기타: validate_input.py",
+      "id": "raw_skills_diet_b2a_scripts_validate_input_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L12",
-      "id": "validate_input_main",
-      "community": 24
+      "community": 25,
+      "community_label": "기타: validate_input.py",
+      "id": "validate_input_main"
     },
     {
       "label": "Step 00 — validate inputs and config.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "community_label": "기타: validate_input.py",
       "id": "validate_input_rationale_1"
     },
@@ -451,15 +494,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
-      "community": 27
+      "community": 29,
+      "community_label": "기타: build_sets.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
     },
     {
       "label": "Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 27,
+      "community": 29,
       "community_label": "기타: build_sets.py",
       "id": "build_sets_rationale_1"
     },
@@ -468,55 +512,61 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py"
     },
     {
       "label": "_pick_best_face()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L24",
-      "id": "detect_faces_pick_best_face",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_pick_best_face"
     },
     {
       "label": "_extract_frame()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L35",
-      "id": "detect_faces_extract_frame",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_extract_frame"
     },
     {
       "label": "_detect_in_clip()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L47",
-      "id": "detect_faces_detect_in_clip",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_detect_in_clip"
     },
     {
       "label": "detect_for_set()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L68",
-      "id": "detect_faces_detect_for_set",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_detect_for_set"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L84",
-      "id": "detect_faces_main",
-      "community": 11
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_main"
     },
     {
       "label": "Detect faces in each set's seed images, store per-set mosaic box.  The seed be",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L1",
-      "community": 11,
+      "community": 12,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_1"
     },
@@ -525,7 +575,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L48",
-      "community": 11,
+      "community": 12,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_48"
     },
@@ -534,7 +584,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L69",
-      "community": 11,
+      "community": 12,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_69"
     },
@@ -543,47 +593,52 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "community": 13
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py"
     },
     {
       "label": "new_client()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L23",
-      "id": "gemini_client_new_client",
-      "community": 13
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_new_client"
     },
     {
       "label": "select_thinking_model()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L45",
-      "id": "gemini_client_select_thinking_model",
-      "community": 13
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_select_thinking_model"
     },
     {
       "label": "clean_logo()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L109",
-      "id": "gemini_client_clean_logo",
-      "community": 13
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_clean_logo"
     },
     {
       "label": "generate()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L118",
-      "id": "gemini_client_generate",
-      "community": 13
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_generate"
     },
     {
       "label": "Thin wrapper around gemini-imagegen/gemini_auto.GeminiImageGen. Always applies",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L1",
-      "community": 13,
+      "community": 14,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_1"
     },
@@ -592,7 +647,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L46",
-      "community": 13,
+      "community": 14,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_46"
     },
@@ -601,7 +656,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L110",
-      "community": 13,
+      "community": 14,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_110"
     },
@@ -610,48 +665,53 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "community": 14
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py"
     },
     {
       "label": "make_corner_masks()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L47",
-      "id": "logo_remover_make_corner_masks",
-      "community": 14
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_make_corner_masks"
     },
     {
       "label": "remove_logo()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L61",
-      "id": "logo_remover_remove_logo",
-      "community": 14
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_remove_logo"
     },
     {
       "label": "process_image()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L90",
-      "id": "logo_remover_process_image",
-      "community": 14
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_process_image"
     },
     {
       "label": "batch_process()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L109",
-      "id": "logo_remover_batch_process",
-      "community": 14
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_batch_process"
     },
     {
       "label": "하단 좌/우 코너에 타원형 마스크 생성",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L48",
-      "community": 14,
-      "community_label": "로고 제거 기술",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
       "id": "logo_remover_rationale_48"
     },
     {
@@ -659,8 +719,8 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L62",
-      "community": 14,
-      "community_label": "로고 제거 기술",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
       "id": "logo_remover_rationale_62"
     },
     {
@@ -668,31 +728,34 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "community": 19
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py"
     },
     {
       "label": "analyze()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L13",
-      "id": "analyze_bgm_analyze",
-      "community": 19
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "analyze_bgm_analyze"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L57",
-      "id": "analyze_bgm_main",
-      "community": 19
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "analyze_bgm_main"
     },
     {
       "label": "Analyze 3 reference BGM tracks: BPM, drop (onset max energy) second, first-choru",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 19,
+      "community": 20,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_rationale_1"
     },
@@ -701,23 +764,25 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "community": 25
+      "community": 26,
+      "community_label": "기타: build_prompts.py",
+      "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py"
     },
     {
       "label": "write()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L21",
-      "id": "build_prompts_write",
-      "community": 25
+      "community": 26,
+      "community_label": "기타: build_prompts.py",
+      "id": "build_prompts_write"
     },
     {
       "label": "Generate 20 Kling prompt files (5 sets × 4 keys) from styles.json.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 26,
       "community_label": "기타: build_prompts.py",
       "id": "build_prompts_rationale_1"
     },
@@ -726,23 +791,25 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "community": 26
+      "community": 27,
+      "community_label": "기타: check_session.py",
+      "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L13",
-      "id": "check_session_main",
-      "community": 26
+      "community": 27,
+      "community_label": "기타: check_session.py",
+      "id": "check_session_main"
     },
     {
       "label": "Verify Gemini session is still valid. Non-headless to allow user to see state.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "community_label": "기타: check_session.py",
       "id": "check_session_rationale_1"
     },
@@ -751,63 +818,70 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py"
     },
     {
       "label": "page_text()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L61",
-      "id": "gen_seeds_page_text",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_page_text"
     },
     {
       "label": "was_refused()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L68",
-      "id": "gen_seeds_was_refused",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_was_refused"
     },
     {
       "label": "_try()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L73",
-      "id": "gen_seeds_try",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_try"
     },
     {
       "label": "_with_fallback()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L81",
-      "id": "gen_seeds_with_fallback",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_with_fallback"
     },
     {
       "label": "run_one()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L91",
-      "id": "gen_seeds_run_one",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_run_one"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L139",
-      "id": "gen_seeds_main",
-      "community": 7
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_main"
     },
     {
       "label": "Generate before/after seeds for 5 sets via Gemini + auto logo removal.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L1",
-      "community": 7,
+      "community": 8,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_1"
     },
@@ -816,7 +890,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L74",
-      "community": 7,
+      "community": 8,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_74"
     },
@@ -825,7 +899,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L82",
-      "community": 7,
+      "community": 8,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_82"
     },
@@ -834,31 +908,34 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "community": 20
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py"
     },
     {
       "label": "run_one()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L27",
-      "id": "gen_scales_run_one",
-      "community": 20
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "gen_scales_run_one"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L58",
-      "id": "gen_scales_main",
-      "community": 20
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "gen_scales_main"
     },
     {
       "label": "Generate per-set scale images with varied kg via Gemini + auto logo removal.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_rationale_1"
     },
@@ -867,71 +944,79 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py"
     },
     {
       "label": "read_keys()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L35",
-      "id": "gen_kling_read_keys",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_read_keys"
     },
     {
       "label": "token()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L45",
-      "id": "gen_kling_token",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_token"
     },
     {
       "label": "submit()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L52",
-      "id": "gen_kling_submit",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_submit"
     },
     {
       "label": "poll()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L77",
-      "id": "gen_kling_poll",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_poll"
     },
     {
       "label": "download()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L102",
-      "id": "gen_kling_download",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_download"
     },
     {
       "label": "save_state()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L110",
-      "id": "gen_kling_save_state",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_save_state"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L114",
-      "id": "gen_kling_main",
-      "community": 12
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_main"
     },
     {
       "label": "Kling image2video batch for all sets × 4 keys. Resume-safe.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L1",
-      "community": 12,
+      "community": 13,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_rationale_1"
     },
@@ -940,56 +1025,63 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
     {
       "label": "get_boxes()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L29",
-      "id": "compose_get_boxes",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_get_boxes"
     },
     {
       "label": "stroked()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L42",
-      "id": "compose_stroked",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_stroked"
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L71",
-      "id": "compose_run",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_run"
     },
     {
       "label": "build_overlays()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L76",
-      "id": "compose_build_overlays",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_build_overlays"
     },
     {
       "label": "compose_v1()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L95",
-      "id": "compose_compose_v1",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_compose_v1"
     },
     {
       "label": "compose_v23()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L135",
-      "id": "compose_compose_v23",
-      "community": 4
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_compose_v23"
     },
     {
       "label": "Return (before_box, after_box). Accept both legacy (flat dict per set)     and",
@@ -1001,43 +1093,74 @@
       "id": "compose_rationale_30"
     },
     {
+      "label": "inject_diet_b2a_v2_aliases.py",
+      "file_type": "code",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "scripts_inject_diet_b2a_v2_aliases_py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L46",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "inject_diet_b2a_v2_aliases_main"
+    },
+    {
+      "label": "Inject Korean alias nodes for diet-b2a-v2 into the graphify graph.json.  Rationa",
+      "file_type": "rationale",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "inject_diet_b2a_v2_aliases_rationale_1"
+    },
+    {
       "label": "inject_iboss_entities.py",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "id": "scripts_inject_iboss_entities_py",
-      "community": 15
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "scripts_inject_iboss_entities_py"
     },
     {
       "label": "make_node()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L119",
-      "id": "inject_iboss_entities_make_node",
-      "community": 15
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_make_node"
     },
     {
       "label": "make_edge()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L134",
-      "id": "inject_iboss_entities_make_edge",
-      "community": 15
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_make_edge"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L149",
-      "id": "inject_iboss_entities_main",
-      "community": 15
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_main"
     },
     {
       "label": "Inject iboss (최재명 i-boss 201건) entities into the knowledge graph.  Why: graphi",
       "file_type": "rationale",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "community": 15,
+      "community": 16,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "inject_iboss_entities_rationale_1"
     },
@@ -1046,31 +1169,34 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "id": "scripts_regen_graph_report_py",
-      "community": 21
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "scripts_regen_graph_report_py"
     },
     {
       "label": "pick_label()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L46",
-      "id": "regen_graph_report_pick_label",
-      "community": 21
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_pick_label"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L62",
-      "id": "regen_graph_report_main",
-      "community": 21
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_main"
     },
     {
       "label": "Re-generate GRAPH_REPORT.md using the semantic community labels stored on each n",
       "file_type": "rationale",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 21,
+      "community": 22,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_rationale_1"
     },
@@ -1079,7 +1205,7 @@
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
       "source_location": "L1",
-      "community": 28,
+      "community": 30,
       "community_label": "루솔브 퍼포먼스 캔버스 코드",
       "id": "export_canvas_rusolve_rationale_1"
     },
@@ -1092,7 +1218,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "entity_ccfm"
     },
@@ -1105,7 +1231,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "person_choi_jaemyung"
     },
@@ -1118,7 +1244,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable"
     },
@@ -1131,7 +1257,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_rusolve"
     },
@@ -1196,7 +1322,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "person_kang_yonggil"
     },
@@ -1235,7 +1361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_hk"
     },
@@ -1248,7 +1374,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_tw"
     },
@@ -1274,7 +1400,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_tfda"
     },
@@ -1287,7 +1413,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_bpom"
     },
@@ -1300,7 +1426,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_halal"
     },
@@ -1313,7 +1439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_shopline"
     },
@@ -1326,7 +1452,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_q10"
     },
@@ -1339,7 +1465,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_xchannel"
     },
@@ -1352,7 +1478,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_tiktokshop"
     },
@@ -1365,7 +1491,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_coupang"
     },
@@ -1378,7 +1504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_naver_gfa"
     },
@@ -1404,7 +1530,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_transfer_pricing"
     },
@@ -1417,7 +1543,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_dual_engine"
     },
@@ -1469,7 +1595,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_taiwan_market"
     },
@@ -1482,7 +1608,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_sea_tiktok"
     },
@@ -1495,7 +1621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_japan_market"
     },
@@ -1534,7 +1660,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_finance"
     },
@@ -1586,7 +1712,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "domain_content_ai"
     },
@@ -1599,7 +1725,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "domain_marketing_automation"
     },
@@ -1612,8 +1738,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_da_creative"
     },
     {
@@ -1625,8 +1751,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_viral"
     },
     {
@@ -1638,8 +1764,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_psychology"
     },
     {
@@ -1651,7 +1777,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_ffmpeg"
     },
@@ -1664,7 +1790,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_gemini_vision"
     },
@@ -1677,7 +1803,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_elevenlabs"
     },
@@ -1690,7 +1816,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_whisper"
     },
@@ -1703,7 +1829,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_kling"
     },
@@ -1716,7 +1842,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_omnihuman"
     },
@@ -1729,7 +1855,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_creatify_aurora"
     },
@@ -1742,7 +1868,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_rhubarb"
     },
@@ -1755,7 +1881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_fal_ai"
     },
@@ -1768,8 +1894,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tool_opencv"
     },
     {
@@ -1781,8 +1907,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tool_lama"
     },
     {
@@ -1794,7 +1920,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_afx"
     },
@@ -1820,8 +1946,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "source_gemini_logo_remover"
     },
     {
@@ -1833,8 +1959,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_1sec_cut"
     },
     {
@@ -1846,8 +1972,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_first_frame_face"
     },
     {
@@ -1859,7 +1985,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_tts_speed"
     },
@@ -1872,8 +1998,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_ba_correction"
     },
     {
@@ -1885,7 +2011,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_product_bottom_third"
     },
@@ -1898,7 +2024,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_safezone_remeasure"
     },
@@ -1911,7 +2037,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_indo_hijab"
     },
@@ -1924,7 +2050,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_jp_gothic"
     },
@@ -1937,8 +2063,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_lama_vs_opencv"
     },
     {
@@ -1950,7 +2076,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_hk_margin"
     },
@@ -1963,7 +2089,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_universal_safezone"
     },
@@ -1989,8 +2115,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_product_avoidance"
     },
     {
@@ -2002,7 +2128,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_7element_extraction"
     },
@@ -2015,7 +2141,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "decision_rusolve_launch_2026"
     },
@@ -2028,8 +2154,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "decision_opencv_over_lama"
     },
     {
@@ -2041,7 +2167,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_marketing_subscription"
     },
@@ -2054,7 +2180,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_distribution_subscription"
     },
@@ -2067,7 +2193,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_brand_business"
     },
@@ -2080,7 +2206,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "source_iboss_wiki"
     },
@@ -2093,7 +2219,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_index_201"
     },
@@ -2106,7 +2232,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_40부작"
     },
@@ -2119,7 +2245,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_100억_10부작"
     },
@@ -2132,7 +2258,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_구글애즈_60억"
     },
@@ -2145,7 +2271,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_정육점"
     },
@@ -2158,8 +2284,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_공감콘텐츠"
     },
     {
@@ -2171,7 +2297,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_스토어팜"
     },
@@ -2275,7 +2401,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_usp_desire"
     },
@@ -2288,8 +2414,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_empathy_7"
     },
     {
@@ -2301,8 +2427,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_rolling_balkan"
     },
     {
@@ -2314,8 +2440,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_persuasion_9"
     },
     {
@@ -2327,7 +2453,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_priority_5step"
     },
@@ -2340,8 +2466,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 2,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_empathy_over_quality"
     },
     {
@@ -2353,7 +2479,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_repurchase_over_newacq"
     },
@@ -2392,7 +2518,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_jeongyukjeom_rebuy"
     },
@@ -2418,7 +2544,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_ad_spend_2500"
     },
@@ -2431,7 +2557,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_google_ads"
     },
@@ -2444,7 +2570,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_meta_ads"
     },
@@ -2457,7 +2583,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_shortform"
     },
@@ -2471,7 +2597,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_ko_main"
     },
     {
@@ -2484,7 +2610,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_ko_factory"
     },
     {
@@ -2497,7 +2623,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_ko_b2a_auto"
     },
     {
@@ -2510,7 +2636,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_ko_weightloss"
     },
     {
@@ -2523,7 +2649,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_pipeline"
     },
     {
@@ -2536,7 +2662,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_multilang"
     },
     {
@@ -2549,7 +2675,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_short"
     },
     {
@@ -2562,7 +2688,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_bdh"
     },
     {
@@ -2575,7 +2701,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_diet"
     },
     {
@@ -2588,7 +2714,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_b2a"
     },
     {
@@ -2601,7 +2727,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_reels"
     },
     {
@@ -2614,7 +2740,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_shorts"
     },
     {
@@ -2627,7 +2753,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_transform"
     },
     {
@@ -2640,7 +2766,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_weightloss"
     },
     {
@@ -2653,7 +2779,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_loss"
     },
     {
@@ -2666,7 +2792,7 @@
       "author": null,
       "contributor": null,
       "community": 3,
-      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "diet_b2a_v2_alias_word_ba"
     }
   ],
@@ -2679,9 +2805,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_slugify",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_slugify"
     },
     {
       "relation": "contains",
@@ -2691,9 +2817,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_iter_block_items",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_iter_block_items"
     },
     {
       "relation": "contains",
@@ -2703,9 +2829,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_paragraph_text",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_paragraph_text"
     },
     {
       "relation": "contains",
@@ -2715,9 +2841,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_table_to_md",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_table_to_md"
     },
     {
       "relation": "contains",
@@ -2727,9 +2853,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "contains",
@@ -2739,9 +2865,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_chunk_and_write",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_chunk_and_write"
     },
     {
       "relation": "contains",
@@ -2751,9 +2877,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_main",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "rationale_for",
@@ -2763,9 +2889,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_rationale_1",
       "_tgt": "raw_qscv_extract_and_chunk_py",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_rationale_1",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_rationale_1"
     },
     {
       "relation": "calls",
@@ -2775,9 +2901,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_slugify",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "calls",
@@ -2787,9 +2913,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_iter_block_items",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2799,9 +2925,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_paragraph_text",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2811,9 +2937,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_table_to_md",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2823,9 +2949,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_extract",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "calls",
@@ -2835,9 +2961,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_chunk_and_write",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "contains",
@@ -2847,9 +2973,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_mosaic",
-      "confidence_score": 1.0
+      "target": "compose_mosaic"
     },
     {
       "relation": "contains",
@@ -2859,9 +2985,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video1",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video1",
-      "confidence_score": 1.0
+      "target": "compose_video1"
     },
     {
       "relation": "contains",
@@ -2871,9 +2997,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video_23",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video_23",
-      "confidence_score": 1.0
+      "target": "compose_video_23"
     },
     {
       "relation": "contains",
@@ -2883,9 +3009,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
     },
     {
       "relation": "rationale_for",
@@ -2895,9 +3021,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_compose_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_rationale_1",
-      "confidence_score": 1.0
+      "target": "compose_rationale_1"
     },
     {
       "relation": "calls",
@@ -2907,9 +3033,9 @@
       "weight": 1.0,
       "_src": "compose_video1",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video1",
-      "confidence_score": 1.0
+      "target": "compose_video1"
     },
     {
       "relation": "calls",
@@ -2919,9 +3045,9 @@
       "weight": 1.0,
       "_src": "compose_video_23",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video_23",
-      "confidence_score": 1.0
+      "target": "compose_video_23"
     },
     {
       "relation": "contains",
@@ -2931,9 +3057,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "confidence_score": 1.0
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
     {
       "relation": "calls",
@@ -2943,9 +3069,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_compose_v1",
-      "confidence_score": 1.0
+      "target": "compose_compose_v1"
     },
     {
       "relation": "calls",
@@ -2955,9 +3081,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_compose_v23",
-      "confidence_score": 1.0
+      "target": "compose_compose_v23"
     },
     {
       "relation": "calls",
@@ -2967,9 +3093,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video1",
+      "confidence_score": 1.0,
       "source": "compose_video1",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
     },
     {
       "relation": "calls",
@@ -2979,9 +3105,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video_23",
+      "confidence_score": 1.0,
       "source": "compose_video_23",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
     },
     {
       "relation": "contains",
@@ -2991,9 +3117,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_main",
+      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "confidence_score": 1.0
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
     {
       "relation": "calls",
@@ -3003,9 +3129,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_build_overlays",
+      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_build_overlays",
-      "confidence_score": 1.0
+      "target": "compose_build_overlays"
     },
     {
       "relation": "calls",
@@ -3015,9 +3141,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_compose_v1",
+      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_compose_v1",
-      "confidence_score": 1.0
+      "target": "compose_compose_v1"
     },
     {
       "relation": "calls",
@@ -3027,9 +3153,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_compose_v23",
+      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_compose_v23",
-      "confidence_score": 1.0
+      "target": "compose_compose_v23"
     },
     {
       "relation": "rationale_for",
@@ -3039,9 +3165,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "confidence_score": 1.0,
       "source": "compose_rationale_1",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "confidence_score": 1.0
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
     {
       "relation": "contains",
@@ -3051,9 +3177,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_try_opencv_detect",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_try_opencv_detect",
-      "confidence_score": 1.0
+      "target": "detect_face_try_opencv_detect"
     },
     {
       "relation": "contains",
@@ -3063,9 +3189,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_main",
-      "confidence_score": 1.0
+      "target": "detect_face_main"
     },
     {
       "relation": "rationale_for",
@@ -3075,9 +3201,9 @@
       "weight": 1.0,
       "_src": "detect_face_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_detect_face_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_rationale_1",
-      "confidence_score": 1.0
+      "target": "detect_face_rationale_1"
     },
     {
       "relation": "calls",
@@ -3087,9 +3213,9 @@
       "weight": 1.0,
       "_src": "detect_face_main",
       "_tgt": "detect_face_try_opencv_detect",
+      "confidence_score": 1.0,
       "source": "detect_face_try_opencv_detect",
-      "target": "detect_face_main",
-      "confidence_score": 1.0
+      "target": "detect_face_main"
     },
     {
       "relation": "contains",
@@ -3099,9 +3225,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_export_py",
       "_tgt": "export_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_main",
-      "confidence_score": 1.0
+      "target": "export_main"
     },
     {
       "relation": "rationale_for",
@@ -3111,9 +3237,9 @@
       "weight": 1.0,
       "_src": "export_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_export_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_rationale_1",
-      "confidence_score": 1.0
+      "target": "export_rationale_1"
     },
     {
       "relation": "contains",
@@ -3123,9 +3249,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_read_keys",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_read_keys",
-      "confidence_score": 1.0
+      "target": "kling_client_read_keys"
     },
     {
       "relation": "contains",
@@ -3135,9 +3261,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_token",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_token",
-      "confidence_score": 1.0
+      "target": "kling_client_token"
     },
     {
       "relation": "contains",
@@ -3147,9 +3273,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_submit",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_submit",
-      "confidence_score": 1.0
+      "target": "kling_client_submit"
     },
     {
       "relation": "contains",
@@ -3159,9 +3285,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_poll",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_poll",
-      "confidence_score": 1.0
+      "target": "kling_client_poll"
     },
     {
       "relation": "contains",
@@ -3171,9 +3297,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_download",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_download",
-      "confidence_score": 1.0
+      "target": "kling_client_download"
     },
     {
       "relation": "contains",
@@ -3183,9 +3309,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_save_state",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_save_state",
-      "confidence_score": 1.0
+      "target": "kling_client_save_state"
     },
     {
       "relation": "contains",
@@ -3195,9 +3321,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "rationale_for",
@@ -3207,9 +3333,9 @@
       "weight": 1.0,
       "_src": "kling_client_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_kling_client_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_rationale_1",
-      "confidence_score": 1.0
+      "target": "kling_client_rationale_1"
     },
     {
       "relation": "calls",
@@ -3219,9 +3345,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_read_keys",
+      "confidence_score": 1.0,
       "source": "kling_client_read_keys",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -3231,9 +3357,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_token",
+      "confidence_score": 1.0,
       "source": "kling_client_token",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -3243,9 +3369,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_submit",
+      "confidence_score": 1.0,
       "source": "kling_client_submit",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -3255,9 +3381,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_poll",
+      "confidence_score": 1.0,
       "source": "kling_client_poll",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -3267,9 +3393,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_download",
+      "confidence_score": 1.0,
       "source": "kling_client_download",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -3279,9 +3405,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_save_state",
+      "confidence_score": 1.0,
       "source": "kling_client_save_state",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "contains",
@@ -3291,9 +3417,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_skill_root",
-      "confidence_score": 1.0
+      "target": "lib_skill_root"
     },
     {
       "relation": "contains",
@@ -3303,9 +3429,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_load_config",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_load_config",
-      "confidence_score": 1.0
+      "target": "lib_load_config"
     },
     {
       "relation": "contains",
@@ -3315,9 +3441,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rel",
-      "confidence_score": 1.0
+      "target": "lib_rel"
     },
     {
       "relation": "contains",
@@ -3327,9 +3453,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_out_dir",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_out_dir",
-      "confidence_score": 1.0
+      "target": "lib_out_dir"
     },
     {
       "relation": "contains",
@@ -3339,9 +3465,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_run",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_run",
-      "confidence_score": 1.0
+      "target": "lib_run"
     },
     {
       "relation": "contains",
@@ -3351,9 +3477,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_ffprobe_duration",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_ffprobe_duration",
-      "confidence_score": 1.0
+      "target": "lib_ffprobe_duration"
     },
     {
       "relation": "rationale_for",
@@ -3363,9 +3489,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_lib_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rationale_1",
-      "confidence_score": 1.0
+      "target": "lib_rationale_1"
     },
     {
       "relation": "calls",
@@ -3375,9 +3501,9 @@
       "weight": 1.0,
       "_src": "lib_load_config",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_load_config",
-      "confidence_score": 1.0
+      "target": "lib_load_config"
     },
     {
       "relation": "calls",
@@ -3387,9 +3513,9 @@
       "weight": 1.0,
       "_src": "lib_rel",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_rel",
-      "confidence_score": 1.0
+      "target": "lib_rel"
     },
     {
       "relation": "calls",
@@ -3399,9 +3525,9 @@
       "weight": 1.0,
       "_src": "lib_out_dir",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_out_dir",
-      "confidence_score": 1.0
+      "target": "lib_out_dir"
     },
     {
       "relation": "rationale_for",
@@ -3411,9 +3537,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_21",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_rationale_21",
-      "confidence_score": 1.0
+      "target": "lib_rationale_21"
     },
     {
       "relation": "calls",
@@ -3423,9 +3549,9 @@
       "weight": 1.0,
       "_src": "lib_ffprobe_duration",
       "_tgt": "lib_run",
+      "confidence_score": 1.0,
       "source": "lib_run",
-      "target": "lib_ffprobe_duration",
-      "confidence_score": 1.0
+      "target": "lib_ffprobe_duration"
     },
     {
       "relation": "contains",
@@ -3435,9 +3561,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_stroked",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_stroked",
-      "confidence_score": 1.0
+      "target": "make_overlays_stroked"
     },
     {
       "relation": "contains",
@@ -3447,9 +3573,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_main",
-      "confidence_score": 1.0
+      "target": "make_overlays_main"
     },
     {
       "relation": "rationale_for",
@@ -3459,9 +3585,9 @@
       "weight": 1.0,
       "_src": "make_overlays_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_make_overlays_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_rationale_1",
-      "confidence_score": 1.0
+      "target": "make_overlays_rationale_1"
     },
     {
       "relation": "calls",
@@ -3471,9 +3597,9 @@
       "weight": 1.0,
       "_src": "make_overlays_main",
       "_tgt": "make_overlays_stroked",
+      "confidence_score": 1.0,
       "source": "make_overlays_stroked",
-      "target": "make_overlays_main",
-      "confidence_score": 1.0
+      "target": "make_overlays_main"
     },
     {
       "relation": "contains",
@@ -3483,9 +3609,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_probe",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_probe",
-      "confidence_score": 1.0
+      "target": "qa_check_probe"
     },
     {
       "relation": "contains",
@@ -3495,9 +3621,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_main",
-      "confidence_score": 1.0
+      "target": "qa_check_main"
     },
     {
       "relation": "rationale_for",
@@ -3507,9 +3633,9 @@
       "weight": 1.0,
       "_src": "qa_check_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_qa_check_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_rationale_1",
-      "confidence_score": 1.0
+      "target": "qa_check_rationale_1"
     },
     {
       "relation": "calls",
@@ -3519,9 +3645,9 @@
       "weight": 1.0,
       "_src": "qa_check_main",
       "_tgt": "qa_check_probe",
+      "confidence_score": 1.0,
       "source": "qa_check_probe",
-      "target": "qa_check_main",
-      "confidence_score": 1.0
+      "target": "qa_check_main"
     },
     {
       "relation": "contains",
@@ -3531,9 +3657,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_run_all_py",
       "_tgt": "run_all_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_main",
-      "confidence_score": 1.0
+      "target": "run_all_main"
     },
     {
       "relation": "rationale_for",
@@ -3543,9 +3669,9 @@
       "weight": 1.0,
       "_src": "run_all_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_run_all_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_rationale_1",
-      "confidence_score": 1.0
+      "target": "run_all_rationale_1"
     },
     {
       "relation": "contains",
@@ -3555,9 +3681,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_validate_input_py",
       "_tgt": "validate_input_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_main",
-      "confidence_score": 1.0
+      "target": "validate_input_main"
     },
     {
       "relation": "rationale_for",
@@ -3567,9 +3693,9 @@
       "weight": 1.0,
       "_src": "validate_input_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_validate_input_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_rationale_1",
-      "confidence_score": 1.0
+      "target": "validate_input_rationale_1"
     },
     {
       "relation": "rationale_for",
@@ -3579,9 +3705,9 @@
       "weight": 1.0,
       "_src": "build_sets_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
-      "target": "build_sets_rationale_1",
-      "confidence_score": 1.0
+      "target": "build_sets_rationale_1"
     },
     {
       "relation": "contains",
@@ -3591,9 +3717,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_pick_best_face",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_pick_best_face",
-      "confidence_score": 1.0
+      "target": "detect_faces_pick_best_face"
     },
     {
       "relation": "contains",
@@ -3603,9 +3729,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_extract_frame",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_extract_frame",
-      "confidence_score": 1.0
+      "target": "detect_faces_extract_frame"
     },
     {
       "relation": "contains",
@@ -3615,9 +3741,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0
+      "target": "detect_faces_detect_in_clip"
     },
     {
       "relation": "contains",
@@ -3627,9 +3753,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_detect_for_set",
-      "confidence_score": 1.0
+      "target": "detect_faces_detect_for_set"
     },
     {
       "relation": "contains",
@@ -3639,9 +3765,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_main",
-      "confidence_score": 1.0
+      "target": "detect_faces_main"
     },
     {
       "relation": "rationale_for",
@@ -3651,9 +3777,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_rationale_1",
-      "confidence_score": 1.0
+      "target": "detect_faces_rationale_1"
     },
     {
       "relation": "calls",
@@ -3663,9 +3789,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_in_clip",
       "_tgt": "detect_faces_pick_best_face",
+      "confidence_score": 1.0,
       "source": "detect_faces_pick_best_face",
-      "target": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0
+      "target": "detect_faces_detect_in_clip"
     },
     {
       "relation": "calls",
@@ -3675,9 +3801,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_in_clip",
       "_tgt": "detect_faces_extract_frame",
+      "confidence_score": 1.0,
       "source": "detect_faces_extract_frame",
-      "target": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0
+      "target": "detect_faces_detect_in_clip"
     },
     {
       "relation": "calls",
@@ -3687,9 +3813,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_for_set",
       "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
       "source": "detect_faces_detect_in_clip",
-      "target": "detect_faces_detect_for_set",
-      "confidence_score": 1.0
+      "target": "detect_faces_detect_for_set"
     },
     {
       "relation": "rationale_for",
@@ -3699,9 +3825,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_48",
       "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
       "source": "detect_faces_detect_in_clip",
-      "target": "detect_faces_rationale_48",
-      "confidence_score": 1.0
+      "target": "detect_faces_rationale_48"
     },
     {
       "relation": "calls",
@@ -3711,9 +3837,9 @@
       "weight": 1.0,
       "_src": "detect_faces_main",
       "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
       "source": "detect_faces_detect_for_set",
-      "target": "detect_faces_main",
-      "confidence_score": 1.0
+      "target": "detect_faces_main"
     },
     {
       "relation": "rationale_for",
@@ -3723,9 +3849,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_69",
       "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
       "source": "detect_faces_detect_for_set",
-      "target": "detect_faces_rationale_69",
-      "confidence_score": 1.0
+      "target": "detect_faces_rationale_69"
     },
     {
       "relation": "contains",
@@ -3735,9 +3861,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_new_client",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_new_client",
-      "confidence_score": 1.0
+      "target": "gemini_client_new_client"
     },
     {
       "relation": "contains",
@@ -3747,9 +3873,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_select_thinking_model",
-      "confidence_score": 1.0
+      "target": "gemini_client_select_thinking_model"
     },
     {
       "relation": "contains",
@@ -3759,9 +3885,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_clean_logo",
-      "confidence_score": 1.0
+      "target": "gemini_client_clean_logo"
     },
     {
       "relation": "contains",
@@ -3771,9 +3897,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_generate",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_generate",
-      "confidence_score": 1.0
+      "target": "gemini_client_generate"
     },
     {
       "relation": "rationale_for",
@@ -3783,9 +3909,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_rationale_1",
-      "confidence_score": 1.0
+      "target": "gemini_client_rationale_1"
     },
     {
       "relation": "calls",
@@ -3795,9 +3921,9 @@
       "weight": 1.0,
       "_src": "gemini_client_generate",
       "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
       "source": "gemini_client_select_thinking_model",
-      "target": "gemini_client_generate",
-      "confidence_score": 1.0
+      "target": "gemini_client_generate"
     },
     {
       "relation": "rationale_for",
@@ -3807,9 +3933,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_46",
       "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
       "source": "gemini_client_select_thinking_model",
-      "target": "gemini_client_rationale_46",
-      "confidence_score": 1.0
+      "target": "gemini_client_rationale_46"
     },
     {
       "relation": "calls",
@@ -3819,9 +3945,9 @@
       "weight": 1.0,
       "_src": "gemini_client_generate",
       "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
       "source": "gemini_client_clean_logo",
-      "target": "gemini_client_generate",
-      "confidence_score": 1.0
+      "target": "gemini_client_generate"
     },
     {
       "relation": "rationale_for",
@@ -3831,9 +3957,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_110",
       "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
       "source": "gemini_client_clean_logo",
-      "target": "gemini_client_rationale_110",
-      "confidence_score": 1.0
+      "target": "gemini_client_rationale_110"
     },
     {
       "relation": "contains",
@@ -3843,9 +3969,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_make_corner_masks",
-      "confidence_score": 1.0
+      "target": "logo_remover_make_corner_masks"
     },
     {
       "relation": "contains",
@@ -3855,9 +3981,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_remove_logo",
-      "confidence_score": 1.0
+      "target": "logo_remover_remove_logo"
     },
     {
       "relation": "contains",
@@ -3867,9 +3993,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_process_image",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_process_image",
-      "confidence_score": 1.0
+      "target": "logo_remover_process_image"
     },
     {
       "relation": "contains",
@@ -3879,9 +4005,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_batch_process",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_batch_process",
-      "confidence_score": 1.0
+      "target": "logo_remover_batch_process"
     },
     {
       "relation": "calls",
@@ -3891,9 +4017,9 @@
       "weight": 1.0,
       "_src": "logo_remover_remove_logo",
       "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
       "source": "logo_remover_make_corner_masks",
-      "target": "logo_remover_remove_logo",
-      "confidence_score": 1.0
+      "target": "logo_remover_remove_logo"
     },
     {
       "relation": "rationale_for",
@@ -3903,9 +4029,9 @@
       "weight": 1.0,
       "_src": "logo_remover_rationale_48",
       "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
       "source": "logo_remover_make_corner_masks",
-      "target": "logo_remover_rationale_48",
-      "confidence_score": 1.0
+      "target": "logo_remover_rationale_48"
     },
     {
       "relation": "calls",
@@ -3915,9 +4041,9 @@
       "weight": 1.0,
       "_src": "logo_remover_process_image",
       "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
       "source": "logo_remover_remove_logo",
-      "target": "logo_remover_process_image",
-      "confidence_score": 1.0
+      "target": "logo_remover_process_image"
     },
     {
       "relation": "rationale_for",
@@ -3927,9 +4053,9 @@
       "weight": 1.0,
       "_src": "logo_remover_rationale_62",
       "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
       "source": "logo_remover_remove_logo",
-      "target": "logo_remover_rationale_62",
-      "confidence_score": 1.0
+      "target": "logo_remover_rationale_62"
     },
     {
       "relation": "calls",
@@ -3939,9 +4065,9 @@
       "weight": 1.0,
       "_src": "logo_remover_batch_process",
       "_tgt": "logo_remover_process_image",
+      "confidence_score": 1.0,
       "source": "logo_remover_process_image",
-      "target": "logo_remover_batch_process",
-      "confidence_score": 1.0
+      "target": "logo_remover_batch_process"
     },
     {
       "relation": "contains",
@@ -3951,9 +4077,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
       "_tgt": "analyze_bgm_analyze",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_analyze",
-      "confidence_score": 1.0
+      "target": "analyze_bgm_analyze"
     },
     {
       "relation": "contains",
@@ -3963,9 +4089,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
       "_tgt": "analyze_bgm_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_main",
-      "confidence_score": 1.0
+      "target": "analyze_bgm_main"
     },
     {
       "relation": "rationale_for",
@@ -3975,9 +4101,9 @@
       "weight": 1.0,
       "_src": "analyze_bgm_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_rationale_1",
-      "confidence_score": 1.0
+      "target": "analyze_bgm_rationale_1"
     },
     {
       "relation": "calls",
@@ -3987,9 +4113,9 @@
       "weight": 1.0,
       "_src": "analyze_bgm_main",
       "_tgt": "analyze_bgm_analyze",
+      "confidence_score": 1.0,
       "source": "analyze_bgm_analyze",
-      "target": "analyze_bgm_main",
-      "confidence_score": 1.0
+      "target": "analyze_bgm_main"
     },
     {
       "relation": "contains",
@@ -3999,9 +4125,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
       "_tgt": "build_prompts_write",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "target": "build_prompts_write",
-      "confidence_score": 1.0
+      "target": "build_prompts_write"
     },
     {
       "relation": "rationale_for",
@@ -4011,9 +4137,9 @@
       "weight": 1.0,
       "_src": "build_prompts_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "target": "build_prompts_rationale_1",
-      "confidence_score": 1.0
+      "target": "build_prompts_rationale_1"
     },
     {
       "relation": "contains",
@@ -4023,9 +4149,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
       "_tgt": "check_session_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "target": "check_session_main",
-      "confidence_score": 1.0
+      "target": "check_session_main"
     },
     {
       "relation": "rationale_for",
@@ -4035,9 +4161,9 @@
       "weight": 1.0,
       "_src": "check_session_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "target": "check_session_rationale_1",
-      "confidence_score": 1.0
+      "target": "check_session_rationale_1"
     },
     {
       "relation": "contains",
@@ -4047,9 +4173,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_page_text",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_page_text",
-      "confidence_score": 1.0
+      "target": "gen_seeds_page_text"
     },
     {
       "relation": "contains",
@@ -4059,9 +4185,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_was_refused",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_was_refused",
-      "confidence_score": 1.0
+      "target": "gen_seeds_was_refused"
     },
     {
       "relation": "contains",
@@ -4071,9 +4197,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_try",
-      "confidence_score": 1.0
+      "target": "gen_seeds_try"
     },
     {
       "relation": "contains",
@@ -4083,9 +4209,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_with_fallback",
-      "confidence_score": 1.0
+      "target": "gen_seeds_with_fallback"
     },
     {
       "relation": "contains",
@@ -4095,9 +4221,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_run_one",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_run_one",
-      "confidence_score": 1.0
+      "target": "gen_seeds_run_one"
     },
     {
       "relation": "contains",
@@ -4107,9 +4233,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_main",
-      "confidence_score": 1.0
+      "target": "gen_seeds_main"
     },
     {
       "relation": "rationale_for",
@@ -4119,9 +4245,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_rationale_1",
-      "confidence_score": 1.0
+      "target": "gen_seeds_rationale_1"
     },
     {
       "relation": "calls",
@@ -4131,9 +4257,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_was_refused",
       "_tgt": "gen_seeds_page_text",
+      "confidence_score": 1.0,
       "source": "gen_seeds_page_text",
-      "target": "gen_seeds_was_refused",
-      "confidence_score": 1.0
+      "target": "gen_seeds_was_refused"
     },
     {
       "relation": "calls",
@@ -4143,9 +4269,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_with_fallback",
       "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
       "source": "gen_seeds_try",
-      "target": "gen_seeds_with_fallback",
-      "confidence_score": 1.0
+      "target": "gen_seeds_with_fallback"
     },
     {
       "relation": "rationale_for",
@@ -4155,9 +4281,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_74",
       "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
       "source": "gen_seeds_try",
-      "target": "gen_seeds_rationale_74",
-      "confidence_score": 1.0
+      "target": "gen_seeds_rationale_74"
     },
     {
       "relation": "calls",
@@ -4167,9 +4293,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_run_one",
       "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
       "source": "gen_seeds_with_fallback",
-      "target": "gen_seeds_run_one",
-      "confidence_score": 1.0
+      "target": "gen_seeds_run_one"
     },
     {
       "relation": "rationale_for",
@@ -4179,9 +4305,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_82",
       "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
       "source": "gen_seeds_with_fallback",
-      "target": "gen_seeds_rationale_82",
-      "confidence_score": 1.0
+      "target": "gen_seeds_rationale_82"
     },
     {
       "relation": "calls",
@@ -4191,9 +4317,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_main",
       "_tgt": "gen_seeds_run_one",
+      "confidence_score": 1.0,
       "source": "gen_seeds_run_one",
-      "target": "gen_seeds_main",
-      "confidence_score": 1.0
+      "target": "gen_seeds_main"
     },
     {
       "relation": "contains",
@@ -4203,9 +4329,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
       "_tgt": "gen_scales_run_one",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_run_one",
-      "confidence_score": 1.0
+      "target": "gen_scales_run_one"
     },
     {
       "relation": "contains",
@@ -4215,9 +4341,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
       "_tgt": "gen_scales_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_main",
-      "confidence_score": 1.0
+      "target": "gen_scales_main"
     },
     {
       "relation": "rationale_for",
@@ -4227,9 +4353,9 @@
       "weight": 1.0,
       "_src": "gen_scales_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_rationale_1",
-      "confidence_score": 1.0
+      "target": "gen_scales_rationale_1"
     },
     {
       "relation": "calls",
@@ -4239,9 +4365,9 @@
       "weight": 1.0,
       "_src": "gen_scales_main",
       "_tgt": "gen_scales_run_one",
+      "confidence_score": 1.0,
       "source": "gen_scales_run_one",
-      "target": "gen_scales_main",
-      "confidence_score": 1.0
+      "target": "gen_scales_main"
     },
     {
       "relation": "contains",
@@ -4251,9 +4377,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_read_keys",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_read_keys",
-      "confidence_score": 1.0
+      "target": "gen_kling_read_keys"
     },
     {
       "relation": "contains",
@@ -4263,9 +4389,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_token",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_token",
-      "confidence_score": 1.0
+      "target": "gen_kling_token"
     },
     {
       "relation": "contains",
@@ -4275,9 +4401,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_submit",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_submit",
-      "confidence_score": 1.0
+      "target": "gen_kling_submit"
     },
     {
       "relation": "contains",
@@ -4287,9 +4413,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_poll",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_poll",
-      "confidence_score": 1.0
+      "target": "gen_kling_poll"
     },
     {
       "relation": "contains",
@@ -4299,9 +4425,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_download",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_download",
-      "confidence_score": 1.0
+      "target": "gen_kling_download"
     },
     {
       "relation": "contains",
@@ -4311,9 +4437,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_save_state",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_save_state",
-      "confidence_score": 1.0
+      "target": "gen_kling_save_state"
     },
     {
       "relation": "contains",
@@ -4323,9 +4449,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "rationale_for",
@@ -4335,9 +4461,9 @@
       "weight": 1.0,
       "_src": "gen_kling_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_rationale_1",
-      "confidence_score": 1.0
+      "target": "gen_kling_rationale_1"
     },
     {
       "relation": "calls",
@@ -4347,9 +4473,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_read_keys",
+      "confidence_score": 1.0,
       "source": "gen_kling_read_keys",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "calls",
@@ -4359,9 +4485,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_token",
+      "confidence_score": 1.0,
       "source": "gen_kling_token",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "calls",
@@ -4371,9 +4497,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_submit",
+      "confidence_score": 1.0,
       "source": "gen_kling_submit",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "calls",
@@ -4383,9 +4509,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_poll",
+      "confidence_score": 1.0,
       "source": "gen_kling_poll",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "calls",
@@ -4395,9 +4521,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_download",
+      "confidence_score": 1.0,
       "source": "gen_kling_download",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "calls",
@@ -4407,9 +4533,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_save_state",
+      "confidence_score": 1.0,
       "source": "gen_kling_save_state",
-      "target": "gen_kling_main",
-      "confidence_score": 1.0
+      "target": "gen_kling_main"
     },
     {
       "relation": "contains",
@@ -4419,9 +4545,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_get_boxes",
-      "confidence_score": 1.0
+      "target": "compose_get_boxes"
     },
     {
       "relation": "contains",
@@ -4431,9 +4557,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_stroked",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_stroked",
-      "confidence_score": 1.0
+      "target": "compose_stroked"
     },
     {
       "relation": "contains",
@@ -4443,9 +4569,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_run",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_run",
-      "confidence_score": 1.0
+      "target": "compose_run"
     },
     {
       "relation": "contains",
@@ -4455,9 +4581,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_build_overlays",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_build_overlays",
-      "confidence_score": 1.0
+      "target": "compose_build_overlays"
     },
     {
       "relation": "contains",
@@ -4467,9 +4593,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_compose_v1",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_compose_v1",
-      "confidence_score": 1.0
+      "target": "compose_compose_v1"
     },
     {
       "relation": "contains",
@@ -4479,9 +4605,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_compose_v23",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_compose_v23",
-      "confidence_score": 1.0
+      "target": "compose_compose_v23"
     },
     {
       "relation": "calls",
@@ -4491,9 +4617,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_compose_v1",
-      "confidence_score": 1.0
+      "target": "compose_compose_v1"
     },
     {
       "relation": "calls",
@@ -4503,9 +4629,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_compose_v23",
-      "confidence_score": 1.0
+      "target": "compose_compose_v23"
     },
     {
       "relation": "rationale_for",
@@ -4515,9 +4641,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_30",
       "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_rationale_30",
-      "confidence_score": 1.0
+      "target": "compose_rationale_30"
     },
     {
       "relation": "calls",
@@ -4527,9 +4653,9 @@
       "weight": 1.0,
       "_src": "compose_build_overlays",
       "_tgt": "compose_stroked",
+      "confidence_score": 1.0,
       "source": "compose_stroked",
-      "target": "compose_build_overlays",
-      "confidence_score": 1.0
+      "target": "compose_build_overlays"
     },
     {
       "relation": "calls",
@@ -4539,9 +4665,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_run",
+      "confidence_score": 1.0,
       "source": "compose_run",
-      "target": "compose_compose_v1",
-      "confidence_score": 1.0
+      "target": "compose_compose_v1"
     },
     {
       "relation": "calls",
@@ -4551,9 +4677,33 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_run",
+      "confidence_score": 1.0,
       "source": "compose_run",
-      "target": "compose_compose_v23",
-      "confidence_score": 1.0
+      "target": "compose_compose_v23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "scripts_inject_diet_b2a_v2_aliases_py",
+      "_tgt": "inject_diet_b2a_v2_aliases_main",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_diet_b2a_v2_aliases_py",
+      "target": "inject_diet_b2a_v2_aliases_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "inject_diet_b2a_v2_aliases_rationale_1",
+      "_tgt": "scripts_inject_diet_b2a_v2_aliases_py",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_diet_b2a_v2_aliases_py",
+      "target": "inject_diet_b2a_v2_aliases_rationale_1"
     },
     {
       "relation": "contains",
@@ -4563,9 +4713,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_node",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_node",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_make_node"
     },
     {
       "relation": "contains",
@@ -4575,9 +4725,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_edge",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_edge",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_make_edge"
     },
     {
       "relation": "contains",
@@ -4587,9 +4737,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_main",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "rationale_for",
@@ -4599,9 +4749,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_rationale_1",
       "_tgt": "scripts_inject_iboss_entities_py",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_rationale_1",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_rationale_1"
     },
     {
       "relation": "calls",
@@ -4611,9 +4761,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_node",
+      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_node",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "calls",
@@ -4623,9 +4773,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_edge",
+      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_edge",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "contains",
@@ -4635,9 +4785,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_pick_label",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_pick_label"
     },
     {
       "relation": "contains",
@@ -4647,9 +4797,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_main",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_main",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_main"
     },
     {
       "relation": "rationale_for",
@@ -4659,9 +4809,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_rationale_1",
       "_tgt": "scripts_regen_graph_report_py",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_rationale_1",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_rationale_1"
     },
     {
       "relation": "calls",
@@ -4671,9 +4821,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_main",
       "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
       "source": "regen_graph_report_pick_label",
-      "target": "regen_graph_report_main",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_main"
     },
     {
       "relation": "led_by",
@@ -5449,8 +5599,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "concept_ai_execution_gap",
+      "_src": "concept_ai_execution_gap",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "concept_ai_execution_gap"
@@ -5461,8 +5611,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "concept_tacit_ai_collab",
+      "_src": "concept_tacit_ai_collab",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "concept_tacit_ai_collab"
@@ -5473,8 +5623,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "case_ai_studio_8000"
@@ -5617,8 +5767,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "concept_repurchase_over_newacq",
+      "_src": "concept_repurchase_over_newacq",
+      "_tgt": "domain_marketing_automation",
       "confidence_score": 1.0,
       "source": "domain_marketing_automation",
       "target": "concept_repurchase_over_newacq"
@@ -5629,8 +5779,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "case_jeongyukjeom_rebuy",
+      "_src": "case_jeongyukjeom_rebuy",
+      "_tgt": "domain_marketing_automation",
       "confidence_score": 1.0,
       "source": "domain_marketing_automation",
       "target": "case_jeongyukjeom_rebuy"
@@ -5725,8 +5875,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_usp_desire",
+      "_src": "concept_usp_desire",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_usp_desire"
@@ -5737,8 +5887,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_empathy_over_quality",
+      "_src": "concept_empathy_over_quality",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_empathy_over_quality"
@@ -5749,8 +5899,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_rolling_balkan",
+      "_src": "concept_rolling_balkan",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_rolling_balkan"
@@ -5785,8 +5935,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_psychology",
-      "_tgt": "concept_persuasion_9",
+      "_src": "concept_persuasion_9",
+      "_tgt": "domain_psychology",
       "confidence_score": 1.0,
       "source": "domain_psychology",
       "target": "concept_persuasion_9"
@@ -6050,8 +6200,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "source_iboss_wiki",
-      "_tgt": "case_ad_spend_2500",
+      "_src": "case_ad_spend_2500",
+      "_tgt": "source_iboss_wiki",
       "confidence_score": 1.0,
       "source": "source_iboss_wiki",
       "target": "case_ad_spend_2500"
@@ -6146,8 +6296,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_index_201",
-      "_tgt": "platform_meta_ads",
+      "_src": "platform_meta_ads",
+      "_tgt": "iboss_index_201",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
       "target": "platform_meta_ads"
@@ -6206,8 +6356,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_구글애즈_60억",
-      "_tgt": "platform_google_ads",
+      "_src": "platform_google_ads",
+      "_tgt": "iboss_series_구글애즈_60억",
       "confidence_score": 1.0,
       "source": "iboss_series_구글애즈_60억",
       "target": "platform_google_ads"
@@ -6254,8 +6404,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_정육점",
-      "_tgt": "platform_shortform",
+      "_src": "platform_shortform",
+      "_tgt": "iboss_series_정육점",
       "confidence_score": 1.0,
       "source": "iboss_series_정육점",
       "target": "platform_shortform"
@@ -6326,8 +6476,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_nanobanana",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_nanobanana",
       "confidence_score": 1.0,
       "source": "tool_nanobanana",
       "target": "case_ai_studio_8000"
@@ -6338,8 +6488,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_veo3",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_veo3",
       "confidence_score": 1.0,
       "source": "tool_veo3",
       "target": "case_ai_studio_8000"
@@ -6350,8 +6500,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_midjourney",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_midjourney",
       "confidence_score": 1.0,
       "source": "tool_midjourney",
       "target": "case_ai_studio_8000"
@@ -6362,8 +6512,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_higgsfield",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_higgsfield",
       "confidence_score": 1.0,
       "source": "tool_higgsfield",
       "target": "case_ai_studio_8000"
@@ -6374,8 +6524,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_seedream",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_seedream",
       "confidence_score": 1.0,
       "source": "tool_seedream",
       "target": "case_ai_studio_8000"
@@ -6386,124 +6536,171 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_akool",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_akool",
       "confidence_score": 1.0,
       "source": "tool_akool",
       "target": "case_ai_studio_8000"
     },
     {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_main",
+      "confidence_score": 1.0,
       "source": "diet_b2a_v2_alias_ko_main",
-      "target": "diet_b2a_v2_alias_ko_main",
-      "relation": "alias_for",
-      "confidence": 1.0,
-      "extraction_source": "manual"
+      "target": "diet_b2a_v2_alias_ko_main"
     },
     {
-      "source": "diet_b2a_v2_alias_ko_factory",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_factory",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_factory"
     },
     {
-      "source": "diet_b2a_v2_alias_ko_b2a_auto",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_b2a_auto",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_b2a_auto"
     },
     {
-      "source": "diet_b2a_v2_alias_ko_weightloss",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_weightloss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_weightloss"
     },
     {
-      "source": "diet_b2a_v2_alias_pipeline",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_pipeline",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_pipeline"
     },
     {
-      "source": "diet_b2a_v2_alias_multilang",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_multilang",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_multilang"
     },
     {
-      "source": "diet_b2a_v2_alias_short",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_short",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_short"
     },
     {
-      "source": "diet_b2a_v2_alias_bdh",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_bdh",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_bdh"
     },
     {
-      "source": "diet_b2a_v2_alias_word_diet",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_diet",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_diet"
     },
     {
-      "source": "diet_b2a_v2_alias_word_b2a",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_b2a",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_b2a"
     },
     {
-      "source": "diet_b2a_v2_alias_word_reels",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_reels",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_reels"
     },
     {
-      "source": "diet_b2a_v2_alias_word_shorts",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_shorts",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_shorts"
     },
     {
-      "source": "diet_b2a_v2_alias_word_transform",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_transform",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_transform"
     },
     {
-      "source": "diet_b2a_v2_alias_word_weightloss",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_weightloss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_weightloss"
     },
     {
-      "source": "diet_b2a_v2_alias_word_loss",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_loss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_loss"
     },
     {
-      "source": "diet_b2a_v2_alias_word_ba",
-      "target": "diet_b2a_v2_alias_ko_main",
       "relation": "alias_for",
       "confidence": 1.0,
-      "extraction_source": "manual"
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_ba",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_ba"
     }
-  ],
-  "hyperedges": []
+  ]
 }
