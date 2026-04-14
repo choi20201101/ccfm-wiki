@@ -35,9 +35,34 @@ contradiction: none
 - **confidence: high**
 - 세로 영상에서 제품은 하단 1/3에 놓아야 자막과 겹치지 않음
 
-### 세이프존 값은 플랫폼마다 재측정 필수
+### 세이프존 값은 고정이 아님. 플랫폼 업데이트마다 재측정해야 함
 - **confidence: high**
-- 세이프존 값은 고정이 아님. 플랫폼 업데이트마다 재측정해야 함
+
+## AI 이미지 생성
+
+### [2026-04-14] AI tell(생성물 티) 제거 프롬프트 스택
+출처: goglecc (씨드→Flux LoRA 파이프라인) → [[src-goglecc-seed-curation]]
+- **realness cue**: `skin pores, slight film grain, casual snapshot, no retouching, shot on iPhone, slightly underexposed, candid, natural imperfection`
+- **negative cue**: `smooth skin, plastic, cgi, 3d render, octane, hyperreal, symmetric face, airbrushed, overprocessed, hdr`
+- **guidance scale**: Flux는 **2.5~3.0** (높을수록 AI 느낌 강해짐 — prompt-aligned 과도)
+- **후처리**: 가우시안 노이즈 1~3% 얹으면 grain 추가로 실사성 상승
+- confidence: medium (가설 단계, goglecc 검증 예정)
+
+### [2026-04-14] Reference 누수 → subject LoRA가 아니라 aesthetic LoRA로 해결
+- **문제**: Nano Banana 같은 reference-based 호출은 배경까지 복제 → "베낀 티"
+- **해법**: **같은 무드, 다른 사람/장소 30~50장**으로 학습한 aesthetic LoRA
+  - 모델이 "내용(인물/장소)"은 못 외우고 **질감·조명·그레인·색감·프레이밍**만 학습
+  - Civitai "iPhone candid", "film grain" 류 LoRA가 이 방식
+- **콘텐츠 다양성 필수**: 같은 장소/인물 사진은 학습 셋에 1~2장만 (pHash 클러스터로 자동 배제)
+- **is_style=True** (fal flux-lora-fast-training 파라미터)
+- confidence: medium (업계 관행 + 이론적 뒷받침, 자체 학습 1회)
+
+### [2026-04-14] Higgsfield vs Nano Banana — 철학 차이
+- **Higgsfield**: Flux + 캐릭터당 LoRA 학습 + IP-Adapter + 자체 비디오 모델 (stack 방식, 학습 필수, 캐릭터 일관성 강함)
+- **Nano Banana**: 단일 frozen 모델, multi-image reference 기반 (학습 불필요, 같은 인물 N회 생성 시 미세 변동)
+- 용도 분기: 같은 인물 100컷 → Higgsfield, 변주 다양 → Nano Banana
+- **공통**: 둘 다 **씨드 이미지 품질이 결과 좌우** → 사전 큐레이션 파이프라인이 입력 자산
+- confidence: medium
 
 ## 지역별 크리에이티브
 

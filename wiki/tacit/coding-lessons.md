@@ -659,3 +659,30 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 인스티즈·네이트판·보배드림 댓글이 **lazy load(AJAX)**일 가능성 — requests로 안 잡히면 내부 `/ajax/comment?srl=` 엔드포인트 조사 필요.
 - 크롤링 중 `_add()` 실패(중복)한 post에 detail fetch를 도는 실수 금지 — 반드시 `if self._add(post): self._enrich_detail(post)` 순서.
 - `--with-detail` 켜면 총 요청량이 2배 → target 10만건이면 실질 6~10시간 이상 소요.
+
+## [2026-04-14] Google 이미지 → Bing 우회 & Negative Curation
+
+출처: goglecc 프로젝트 (씨드 이미지 수집 파이프라인) → [[src-goglecc-seed-curation]]
+
+### Google Images는 headless에서 차단됨
+- 관찰: `google.com/search?udm=2` + Playwright headless → **reCAPTCHA "비정상 트래픽" 페이지**로 리다이렉트, `<img>` 0개
+- 조건: IP 단위 봇 탐지. User-Agent 위장으로 우회 안 됨
+- 해법: **Bing Images** (`bing.com/images/search?q=KW&form=HDRSC2`)
+- 핵심 selector: `a.iusc[m]` (속성 `m`이 JSON, `murl` 키에 원본 URL)
+- confidence: medium (2026-04-14 1회 재현)
+
+### Negative curation이 Positive보다 데이터 효율적
+- 관찰: 사용자에게 "좋은 10장 골라" 시키는 것보다 "안 좋은 것만 `aa/`에 모아"가 훨씬 빠르고 기준이 정량화됨
+- 안 좋은 이미지의 정량 시그니처가 뚜렷함 (saturation_std>0.17, aspect≈1.55, low-res 등)
+- 출처: 대화 / 실제 경험
+- confidence: low (1회, 하지만 매우 뚜렷한 사용자 선호)
+
+### 이미지 수집 키워드 표현 → bad률 상관
+- 관찰: 명확 단일명사("여자연예인" bad 4%) vs 어색한 합성어("인플루언서여성" bad 59%, "여자동안" bad 91%)
+- 조건: 검색어가 실제 구어 네이티브 표현일 때 수집 품질 높음
+- confidence: medium (goglecc 7개 키워드 비교)
+
+### pHash 블랙리스트가 중복/유사 제거에 충분
+- 관찰: `imagehash.phash(size=16)` → Hamming distance ≤ 12면 실사용상 동일/유사 판정 타당
+- 조건: 라운드 누적하면 블랙리스트가 자동 성장해 같은 스톡/썸네일 재수집 방지
+- confidence: medium

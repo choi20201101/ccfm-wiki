@@ -1,5 +1,17 @@
 # CCFM Wiki Log
 
+## [2026-04-14] ingest | goglecc — 씨드 이미지 수집·큐레이션 파이프라인
+- 원본: `C:/Users/gguy/Desktop/goglecc/` (BDH 구조, bing scraper + negative curation + fal LoRA 준비)
+- 신규 소스: [[src-goglecc-seed-curation]]
+  - Google 차단 → Bing 우회 (`a.iusc[m].murl`)
+  - Negative curation (aa/ 폴더 학습) > Positive (10장 선별)
+  - 안 좋은 이미지 정량 시그니처: saturation_std>0.17, aspect≈1.55, width<556, phash Hamming≤12
+  - 키워드 bad률 상관: 단일명사 4% vs 합성어 59~91%
+- tacit 신규:
+  - [[coding-lessons]] 4건: Google 차단/Bing 우회, Negative curation 효율성, 키워드 품질 상관, pHash 블랙리스트
+  - [[creative-patterns]] 3건: AI tell 제거 프롬프트 스택, aesthetic LoRA vs subject LoRA, Higgsfield/Nano Banana 철학 차이
+- 의의: 다이어트 B&A v2의 씨드 입력 자산을 체계적으로 확보하는 선행 파이프라인. "인플루언서 씨드 가져와줘" 류 요청에 재사용.
+
 ## [2026-04-14] ingest | diet-b2a-v2 — 대량생산·다국어 확장 (60영상, Gemini+Kling+ffmpeg bdh)
 - 원본: `raw/skills/diet-b2a-v2/` + `diet-b2a-v2-skill.zip` (140KB), 바탕화면 동일본
 - 신규 소스: [[src-diet-b2a-v2]] (10세트·2언어 파이프라인, 스텝별 bdh 구조)
