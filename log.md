@@ -1,5 +1,14 @@
 # CCFM Wiki Log
 
+## [2026-04-14] ingest | diet-b2a-v2 — 대량생산·다국어 확장 (60영상, Gemini+Kling+ffmpeg bdh)
+- 원본: `raw/skills/diet-b2a-v2/` + `diet-b2a-v2-skill.zip` (140KB), 바탕화면 동일본
+- 신규 소스: [[src-diet-b2a-v2]] (10세트·2언어 파이프라인, 스텝별 bdh 구조)
+- domains 업데이트: [[content-ai-automation]] · [[da-creative]] · [[ai-automation]] (v2 추가)
+- tacit 신규 9건:
+  - [[creative-patterns]] 3건: before/after 각각 박스 필수, 유행 댄스명 고유명사 박기, 영문 자막 → 한국어 자극 훅
+  - [[coding-lessons]] 5건: Gemini Thinking 강제 선택, after 시드에 before 입력 금지, Gemini 거부 우회 3패턴(AI캐릭터/의상완화/safe fallback), OpenCV haarcascade 오검출 패턴, 프롬프트 짧게(40~60s vs 3분+타임아웃)
+- 의의: v1 스킬 실전 대량 운영시 나타난 품질/세션/안전 이슈를 체계화. 직원 공유 가능한 압축 패키지.
+
 ## [2026-04-13] ingest | diet-b2a 스킬 — 다이어트 B/A 릴스 3종 자동화 (bdh 완주 사례)
 - 원본: `raw/skills/diet-b2a/` (트리 전부) + `raw/skills/diet-b2a/diet-b2a-skill.zip` (35KB)
 - 스킬 위치: 사용자 바탕화면 `C:\Users\gguy\Desktop\diet-b2a-skill.zip`, 소스는 `C:\Users\gguy\Desktop\dance\diet-b2a-skill\`

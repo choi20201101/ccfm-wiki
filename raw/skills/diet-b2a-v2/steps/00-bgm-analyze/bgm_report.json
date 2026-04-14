@@ -1,0 +1,41 @@
+{
+  "instagram_DUX2DY0EZxW": {
+    "file": "C:\\Users\\gguy\\Desktop\\dance\\downloads\\audio\\instagram_DUX2DY0EZxW.mp3",
+    "duration": 9.405487528344672,
+    "bpm": 95.703125,
+    "drop_peak_sec": 2.74,
+    "top3_rms_peaks_sec": [
+      5.53,
+      6.78,
+      8.8
+    ],
+    "first_beat_sec": 0.09,
+    "beat_count": 9
+  },
+  "instagram_DW3BhZxEQLo": {
+    "file": "C:\\Users\\gguy\\Desktop\\dance\\downloads\\audio\\instagram_DW3BhZxEQLo.mp3",
+    "duration": 10.102086167800454,
+    "bpm": 129.19921875,
+    "drop_peak_sec": 4.85,
+    "top3_rms_peaks_sec": [
+      1.42,
+      4.62,
+      6.01
+    ],
+    "first_beat_sec": 0.72,
+    "beat_count": 20
+  },
+  "instagram_DWnms5UEf-H": {
+    "file": "C:\\Users\\gguy\\Desktop\\dance\\downloads\\audio\\instagram_DWnms5UEf-H.mp3",
+    "duration": 9.777006802721088,
+    "bpm": 95.703125,
+    "drop_peak_sec": 2.51,
+    "top3_rms_peaks_sec": [
+      2.53,
+      6.5,
+      8.99
+    ],
+    "first_beat_sec": 0.3,
+    "beat_count": 15
+  }
+}

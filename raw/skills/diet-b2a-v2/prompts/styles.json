@@ -1,0 +1,125 @@
+{
+  "sets": [
+    {
+      "id": "set1",
+      "name": "NewJeans Super Shy",
+      "hook_title": "살 뺐더니 친구가 몰라봄ㅋㅋ",
+      "hook_title_tw": "瘦了之後朋友都認不出來",
+      "tiktok_tag": "#superShy #소극적포즈",
+      "v1_motion": "10s sequence: 0-3s both hands on cheeks making shy/embarrassed 'cheek-cupping' pose, 3-6s lower hands, cute side-to-side small steps, 6-10s point both index fingers at camera with playful smile",
+      "v23_before": "arms relaxed hanging at sides, tiny shy head tilt, very small rhythm sway, NO dancing, NO arm raising, embarrassed subdued vibe, ends with arms still at sides neutral standing",
+      "v23_after": "starts with arms at sides in neutral, then bursts into NewJeans-style cute pop dance: hands flutter to cheeks shyly then open outward, cute side-to-side hop steps, finger hearts thrown at camera, confident happy vibe"
+    },
+    {
+      "id": "set2",
+      "name": "Apple Challenge (Meduza)",
+      "hook_title": "세달만에 옷장 싹 갈아치움",
+      "hook_title_tw": "三個月把衣櫃全換新",
+      "tiktok_tag": "#appleDance #appleChallenge",
+      "v1_motion": "10s sequence: 0-3s right hand on top of head like balancing an apple, left hand on hip, 3-6s switch hands, 6-10s both arms cross in front of chest in X shape then open wide",
+      "v23_before": "arms hanging at sides, small shoulder shrugs to the beat, subtle head nods, NO choreography, NO hand raising, shy intro vibe, ends arms-at-sides neutral",
+      "v23_after": "immediately starts the viral TikTok 'Apple dance': right hand taps top of head, left hand on opposite hip, then swaps sides in rhythm, then arms cross in front of chest, then side steps with hip sway, energetic trending vibe"
+    },
+    {
+      "id": "set3",
+      "name": "aespa Supernova Chacha",
+      "hook_title": "체중계가 더 놀란 거 같음",
+      "hook_title_tw": "體重計比我還震驚",
+      "tiktok_tag": "#supernova #chachachallenge",
+      "v1_motion": "10s sequence: 0-3s finger-heart made above head with both hands, 3-6s cute chacha hip-shake left-right twice, 6-10s one hand on waist, other hand makes a small wink gesture at camera",
+      "v23_before": "arms relaxed, small rhythmic hip sway only, no arms up, no footwork, neutral look, ends with arms hanging",
+      "v23_after": "starts neutral then immediately performs K-pop aespa-style chacha choreography: sharp hip chachacha with both hands slicing air outward, arm slice across chest, confident sharp pose turn, K-pop power vibe"
+    },
+    {
+      "id": "set4",
+      "name": "Hot To Go (Chappell Roan)",
+      "hook_title": "거울 보고 내가 더 놀람",
+      "hook_title_tw": "照鏡子連我自己都嚇到",
+      "tiktok_tag": "#hottogo #letterpose",
+      "v1_motion": "10s sequence of forming letters with body: 0-2.5s both arms straight up in V shape making 'H', 2.5-5s arms form circle above head making 'O', 5-7.5s one arm horizontal + one vertical making 'T', 7.5-10s both arms open wide making 'G'",
+      "v23_before": "arms at sides, tiny weight shift between feet, embarrassed shy vibe, absolutely no arm raising, ends neutral standing",
+      "v23_after": "starts from neutral then explodes into the viral 'Hot To Go' letter choreography: arms up for H, round O above head, crossed T, open-wide G, big confident energy with hip pops between letters"
+    },
+    {
+      "id": "set5",
+      "name": "Confident Flex (Bbl Drizzy)",
+      "hook_title": "이 언니 원래 이렇지 않았음",
+      "hook_title_tw": "這位姐姐本來不是這樣的",
+      "tiktok_tag": "#flex #confidencedance",
+      "v1_motion": "10s sequence: 0-3s right hand fanning self playfully like cooling off, 3-6s both thumbs up proudly, 6-10s one hand on hip other hand twirling hair with sassy expression",
+      "v23_before": "arms relaxed, shoulder roll every beat but no arms raising, subdued reluctant vibe, ends arms-at-sides neutral",
+      "v23_after": "starts neutral then bursts into sassy confident freestyle: shoulder shimmies, hip pops left-right, arm pumps above head, hair flip, finger point at camera with a confident 'I told you' smirk, celebratory flex vibe"
+    },
+    {
+      "id": "set6",
+      "name": "Jiggle Jiggle (Duffer Brothers)",
+      "hook_title": "소개팅 취소당하고 결심한 결과",
+      "hook_title_tw": "被拒絕相親後下定決心的成果",
+      "tiktok_tag": "#jigglejiggle #viraldance",
+      "v1_motion": "10s sequence: 0-3s both hands at waist level doing small jiggle side-to-side motion, 3-6s point both index fingers forward rhythmically, 6-10s hands on hips with playful head bobs",
+      "v23_before": "arms relaxed, minimal weight shift, small shoulder bounce to beat, NO big moves, ends at sides",
+      "v23_after": "starts neutral then explodes into iconic Jiggle Jiggle dance: rhythmic hand jiggles at waist, fun shoulder bounces, playful finger gun poses, big smile energy"
+    },
+    {
+      "id": "set7",
+      "name": "ITZY Midzy Flick",
+      "hook_title": "45kg 뺀 거 저도 못 믿음",
+      "hook_title_tw": "減了45公斤我自己都不敢信",
+      "tiktok_tag": "#itzy #midzyflick",
+      "v1_motion": "10s sequence: 0-3s right arm whipping from shoulder to opposite hip in flick motion, 3-6s left arm does the same, 6-10s both arms cross in front then fly open to V pose",
+      "v23_before": "arms at sides, slight body sway only, subdued vibe, ends neutral",
+      "v23_after": "bursts into ITZY-style K-pop flick choreography: sharp arm whips, quick pivots, crisp footwork, final power pose with pointed finger, intense idol energy"
+    },
+    {
+      "id": "set8",
+      "name": "Oh Nanana",
+      "hook_title": "다이어트 N회차 드디어 성공",
+      "hook_title_tw": "減肥N次終於成功了",
+      "tiktok_tag": "#ohnanana #tiktokdance",
+      "v1_motion": "10s sequence: 0-3s both hands up slow wave like ocean motion, 3-6s hip circle clockwise twice, 6-10s one arm behind head like model pose, other hand on waist",
+      "v23_before": "arms relaxed, small hip sway only, reserved vibe, ends at sides",
+      "v23_after": "bursts into Oh Nanana dance: rolling hips, smooth arm waves, body rolls, sultry final pose hand brushing hair, confident dancer vibe"
+    },
+    {
+      "id": "set9",
+      "name": "Runway Model Walk",
+      "hook_title": "살이 어디로 증발함?",
+      "hook_title_tw": "肉到底蒸發到哪去了",
+      "tiktok_tag": "#runwaywalk #modelchallenge",
+      "v1_motion": "10s sequence: 0-3s tilt head confidently with hands on hips, 3-6s shift weight dramatically to one leg, 6-10s slow 90-degree turn left then back, looking over shoulder",
+      "v23_before": "arms at sides, slight swaying only, shy stance, ends neutral",
+      "v23_after": "starts neutral then performs a fashion runway model strut in place: dramatic weight shifts, hair flip, cat walk turn, final fierce pose with pout, high-fashion energy"
+    },
+    {
+      "id": "set10",
+      "name": "Crazy In Love Body Roll",
+      "hook_title": "보정 아니고 실제 모습입니다",
+      "hook_title_tw": "沒修圖真的就是本人",
+      "tiktok_tag": "#bodyroll #beyonce",
+      "v1_motion": "10s sequence: 0-3s both hands behind head with hip sway, 3-6s slow full body roll from shoulders to hips, 6-10s sassy snap with fingers, hand on hip",
+      "v23_before": "arms at sides, small bounce to beat, shy vibe, ends neutral",
+      "v23_after": "bursts into Beyonce-style body roll routine: full body waves, fierce hip movements, hair whip, snap poses, queen vibe"
+    }
+  ],
+  "outfit_before": "loose oversized gray t-shirt and baggy black shorts",
+  "outfit_after": "fitted beige crop top and denim hot shorts",
+  "scale_kg": [
+    {"before": "85.3", "after": "42.1"},
+    {"before": "87.8", "after": "43.5"},
+    {"before": "82.4", "after": "41.7"},
+    {"before": "88.9", "after": "44.2"},
+    {"before": "86.5", "after": "40.8"},
+    {"before": "84.1", "after": "41.3"},
+    {"before": "90.2", "after": "45.6"},
+    {"before": "83.5", "after": "42.9"},
+    {"before": "89.4", "after": "43.8"},
+    {"before": "85.8", "after": "40.5"}
+  ],
+  "set_pairing": {
+    "set6": {"model_idx": 1, "bg_idx": 2},
+    "set7": {"model_idx": 2, "bg_idx": 3},
+    "set8": {"model_idx": 3, "bg_idx": 4},
+    "set9": {"model_idx": 4, "bg_idx": 5},
+    "set10": {"model_idx": 5, "bg_idx": 1}
+  }
+}

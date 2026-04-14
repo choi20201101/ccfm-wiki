@@ -173,3 +173,22 @@ contradiction: none
 - 고려 변수: 타겟 국가 플랫폼 관행(대만 IG, 동남아 틱톡 등), 타겟 연령대.
 - 선택지: (a) 원본 스타일 복제 / (b) 현지 관행 반영 / (c) 하이브리드
 - confidence: low
+
+### [2026-04-14] B/A 얼굴 모자이크는 **before/after 각각** 박스를 잡아야 한다
+- 관찰: Kling image2video가 같은 시드에서 before/after를 생성해도 카메라 거리·얼굴 높이가 미세하게 다름. 단일 박스로 덮으면 한쪽은 얼굴·한쪽은 턱/가슴이 덮여 품질 저하.
+- 조건: 세로 9:16 전신샷 기반 B/A 릴스. 자동 검출 불안정 시 수동 2-box 튜닝 필수.
+- 구조: `face_boxes.json` 에 `{"setN": {"before": {...}, "after": {...}}}` 저장. compose에서 서로 다른 박스 적용.
+- 출처: diet-b2a-v2 프로젝트 반복 ([[src-diet-b2a-v2]])
+- confidence: high (사용자 명시 피드백 3회 이상)
+
+### [2026-04-14] 유행 댄스명은 **프롬프트에 고유명사로 박기**
+- 관찰: Kling v1-6 에게 "K-pop 춤" 보다 "NewJeans Super Shy dance", "Apple Challenge (Meduza)", "Hot To Go letter choreography" 처럼 고유명사를 직접 넣으면 재현율 상승.
+- 조건: 틱톡/릴스에서 이미 바이럴된 댄스. 2024~2026 트렌드.
+- 출처: 10세트 춤 스타일 다양화 세션 ([[src-diet-b2a-v2]])
+- confidence: medium
+
+### [2026-04-14] 영문 댄스명을 **자막에 그대로 쓰면 조회수 손해**
+- 관찰: "165cm / NewJeans Super Shy" 같은 자막은 한국 사용자에게 "남 얘기" 느낌. 한국어 자극 훅(예: "살 뺐더니 친구가 몰라봄ㅋㅋ", "45kg 뺀 거 저도 못 믿음")으로 교체 시 공감 상승.
+- 조건: 한국어권 타겟. 번체/영어 버전은 해당 언어 관용어구로.
+- 출처: diet-b2a-v2 카피 교정 ([[src-diet-b2a-v2]], [[HOOK]])
+- confidence: high

@@ -428,3 +428,38 @@ bob PLAN.md  →  dd steps 00~05  →  harness RULES  →  output/영상{1,2,3}.
 - "프롬프트에 em-dash 쓰면 Windows cp949에서 state 저장 크래시" → [[coding-lessons]]
 
 *추가: 2026-04-13 (§9 diet-b2a)*
+
+---
+
+## 10. diet-b2a-v2 — 대량생산·다국어 B/A 공장 (2026-04-14)
+
+→ 상세: [[src-diet-b2a-v2]]
+
+### 10-1. 스케일 확장
+- 세트 1 → **10**, 언어 1 → **2 (ko + 번체)**, 영상 3 → **60개** 한 파이프라인.
+- 모델 5 × 배경 5 × 춤 10 × kg 랜덤 × 2언어 조합.
+
+### 10-2. 시드 자동화 (Gemini Chrome)
+- Playwright persistent context + `.session/` 재사용.
+- 매 new_chat 후 **Thinking 모델 강제 선택** (Fast는 지시 무시).
+- **체중계 숫자까지 Gemini로 랜덤 치환** (외관·로고·테두리 유지, 숫자만).
+- 생성 후 자동 로고 제거: [[src-gemini-logo-remover]] 통합.
+
+### 10-3. 얼굴 모자이크 — **before/after 각각** 박스 (v2 차이점)
+- v1은 단일 박스. v2에서 Kling 결과 얼굴 위치가 before/after 서로 다름이 확인되어 `face_boxes.json`을 `{sid: {before:{}, after:{}}}` 구조로 확장.
+- OpenCV haarcascade는 30%+ 오검출 → **수동 검토 루프** 필수. 프레임 추출 후 눈으로 확인.
+
+### 10-4. 카피 로컬라이제이션
+- 영문 댄스명(NewJeans Super Shy 등) → 한국어 자극 훅(살 뺐더니 친구가 몰라봄ㅋㅋ 등) + 번체 자극 훅(瘦了之後朋友都認不出來) 각 10종 등재.
+- 날짜 자막 `2025년 12월 ↔ 2025年12月` 언어별 자동 치환.
+
+### 10-5. Kling 40 클립 배치
+- 10s × 20 + 5s × 20 순차 submit. code 1303(parallel limit) → 30/60/120s 백오프.
+- `raw/tasks.json` 멱등: task_id 있고 mp4 100KB+ 면 skip.
+
+### 10-6. 이 섹션이 주는 직원 공유 포인트
+1. "스킬 한번 만들면 10개 콘텐츠 하루만에" 가능한 수준으로 공정화된 첫 B/A 스킬.
+2. 시드·체중계·로고·자막·BGM·모자이크까지 전부 스크립트 파라미터. 사람은 styles.json만 터치.
+3. 거부/안전 필터 자동 우회(AI 캐릭터 명시, 의상 완화, safe fallback)로 실전 운영 가능.
+
+*추가: 2026-04-14 (§10 diet-b2a-v2, [[src-diet-b2a-v2]])*
