@@ -1,0 +1,123 @@
+# 20 diverse videos — unique persona + unique script angle each
+# Product: Melable RubyRN PicoShot Cream (melasma / 10-year / PDRN)
+
+variants:
+  - id: v001
+    persona: "20대 초반 흑인 trans_masc Y2K, 호텔방 침대, 셀피"
+    voice: uk_man2
+    hook: "10년 기미가 7일만에 녹아내린 한국 크림"
+    top_copy: ["피부과 300만원 쓰고도", "10년 기미 못 지운 언니들 주목"]
+
+  - id: v002
+    persona: "20대 후반 백인 female 에너제틱 뷰티, 뉴욕 길거리 걷는 셀피"
+    voice: ai_shatang
+    hook: "피부과 의사가 말 안해주는 한국 비밀"
+    top_copy: ["피부과 의사도 모르는", "한국 PDRN 비밀 크림"]
+
+  - id: v003
+    persona: "30대 초반 라틴 trans_femme 소프트 에스테틱, 파스텔 카페 창가"
+    voice: chat1_female_new-3
+    hook: "$3000 썼는데 이거 하나가 다 해결함"
+    top_copy: ["3천 불 태워본 언니만", "이 크림의 가치를 안다"]
+
+  - id: v004
+    persona: "30대 초반 황인(한국계) female 시크 패션 에디터, 호텔 루프탑 야경"
+    voice: girlfriend_1_speech02
+    hook: "POV: 진짜 다 써봤는데 안 됐던 너"
+    top_copy: ["다 써봤다 포기한 언니", "마지막으로 이거 한 번만"]
+
+  - id: v005
+    persona: "20대 후반 흑인 female 드래그 퀸 에너지, 화장대 거울"
+    voice: uk_boy1
+    hook: "Korean beauty 틱톡이 난리난 한 가지"
+    top_copy: ["한국 뷰티 틱톡 발칵", "연예인들 다 쓰는 그 크림"]
+
+  - id: v006
+    persona: "30대 후반 백인 male 힙한 Y2K, 욕실 거울 셀피"
+    voice: uk_man2
+    hook: "내 기미 글로우업 10점 만점에 몇 점"
+    top_copy: ["기미 글로우업 챌린지", "Day 1 vs Day 7 결과는"]
+
+  - id: v007
+    persona: "20대 후반 황인(동남아) non_binary 오타쿠 스킨케어, 책상 앞 삼각대"
+    voice: ai_kaiya
+    hook: "성분 덕후가 분석한 솔직 리뷰"
+    top_copy: ["성분 덕후가 분석했다", "이 크림이 진짜인 이유"]
+
+  - id: v008
+    persona: "30대 초반 혼혈(흑백) female 샤이 ASMR, 호텔 침대 따뜻한 조명"
+    voice: chat1_female_new-3
+    hook: "왜 나만 이걸 늦게 알았지"
+    top_copy: ["왜 나만 몰랐지", "친구들한테 다 알렸어요"]
+
+  - id: v009
+    persona: "20대 후반 중동계 female 에너제틱 뷰티, 엘리베이터 거울"
+    voice: ai_shatang
+    hook: "한국 연예인들 숨긴 비밀 폭로함"
+    top_copy: ["한국 연예인 피부 비밀", "이 크림 하나였다"]
+
+  - id: v010
+    persona: "20대 후반 라틴 male 헬스 브로, 호텔 복도 걷는 샷"
+    voice: uk_boy1
+    hook: "피부과에 돈 그만 태우라고"
+    top_copy: ["피부과 돈 태우지 마", "한국 크림이 다 한다"]
+
+  - id: v011
+    persona: "30대 초반 황인(한국계) male 사사한 GRWM 유튜버, 화장대 앞"
+    voice: uk_man2
+    hook: "기미 있으면 꼭 알아야 할 위험 신호"
+    top_copy: ["기미 있는 사람만", "무조건 봐야 하는 영상"]
+
+  - id: v012
+    persona: "20대 후반 백인 lesbian 힙한 Y2K, 차 운전석 셀피"
+    voice: girlfriend_1_speech02
+    hook: "뷰티 인플루언서가 털어놓는 비밀"
+    top_copy: ["인플루언서가 털어놓는", "진짜 효과 본 크림 하나"]
+
+  - id: v013
+    persona: "30대 초반 흑인 male 에너제틱 뷰티, 공원 벤치 골든아워"
+    voice: oversea_male1
+    hook: "엄마가 사라고 했는데 진짜였음"
+    top_copy: ["엄마가 강추한 크림", "써보니 진짜 엄마 말이 맞았다"]
+
+  - id: v014
+    persona: "20대 초반 혼혈(아시아-백인) female 시크 패션 에디터, 파리 발코니"
+    voice: tianmeixuemei-v1
+    hook: "친구들한테 소문내고 있는 한 가지"
+    top_copy: ["친구들한테 다 소문냄", "이 크림 덕분에 생긴 자신감"]
+
+  - id: v015
+    persona: "30대 후반 황인(동남아) female 카페 창가 파스텔"
+    voice: chat1_female_new-3
+    hook: "스킨케어 루틴 0% vs 100%"
+    top_copy: ["스킨케어 0점이던 내가", "이 크림 하나로 100점됨"]
+
+  - id: v016
+    persona: "20대 초반 흑인 non_binary 도쿄 시부야 건널목"
+    voice: ai_kaiya
+    hook: "소프트걸 기미 졸업 영상"
+    top_copy: ["소프트걸 되려면", "이 크림부터 시작하세요"]
+
+  - id: v017
+    persona: "20대 후반 라틴 female 해변 선셋 (호텔 발코니)"
+    voice: ai_shatang
+    hook: "약사 친구가 추천한 크림"
+    top_copy: ["약사 친구가 강추", "성분 진짜라고 인정"]
+
+  - id: v018
+    persona: "30대 후반 백인 trans_masc 호텔 루프탑 야경"
+    voice: uk_oldman3
+    hook: "24번 완판에는 이유가 있다"
+    top_copy: ["24번 완판된 크림", "이유 보면 납득되는 이유"]
+
+  - id: v019
+    persona: "20대 후반 혼혈 gay_male 욕실 거울 셀피"
+    voice: uk_boy1
+    hook: "하나만 고르라면 무조건 이거"
+    top_copy: ["딱 하나만 고르라면", "무조건 이 크림이다"]
+
+  - id: v020
+    persona: "20대 초반 황인(한국계) female 공원 벤치 골든아워"
+    voice: tianmeixuemei-v1
+    hook: "한국 약국 신상 크림 난리났음"
+    top_copy: ["한국 약국 신상 히트", "외국인들 사이 난리난 그것"]

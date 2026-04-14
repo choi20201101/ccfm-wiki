@@ -16,7 +16,7 @@
 ### 기술/자동화 (Tech & Automation)
 - [[vibe-coding]] — 바이브코딩 & 클로드 스킬: 스킬 파이프라인, 프롬프트 엔지니어링, 환경설정
 - [[ai-automation]] — AI 자동화: 스킬 파이프라인, DA 자동화
-- [[content-ai-automation]] — 콘텐츠 AI 자동화: 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서, **§10 IG릴스 자동업로드(instagrapi, 검증됨 2026-04-13)**
+- [[content-ai-automation]] — 콘텐츠 AI 자동화: 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서, §10 diet-b2a-v2, §11-12 IG릴스 자동업로드(instarup), **§13 외국인 인플루언서 리뷰 33편(fal.ai+Kling Avatar v2 Pro, 2026-04-13~14)**
 - [[marketing-automation]] — 마케팅 자동화 AI: 광고 플랫폼, 리포트, CRM, 크롤링
 
 ### 크리에이티브/마케팅 (Creative & Marketing)
@@ -41,6 +41,10 @@ _아직 없음_
 - [[src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[src-iboss-choi-jaemyeong]] — 최재명 대표 i-boss 게시판 201건 (2017~2026, 광고 2,500억 집행 경험) · 글별 상세: [[raw/iboss/INDEX]]
 - [[src-diet-b2a-skill]] — 다이어트 Before/After 릴스 3종 자동 생성 스킬 (Kling+ffmpeg, bdh 완주) · 2026-04-13
+- [[src-diet-b2a-v2]] — **v2 대량 생산·다국어** (Gemini 시드 자동, 10세트 × 3 × 2언어 = 60영상) · 2026-04-14
+- [[src-goglecc-seed-curation]] — 인플루언서 씨드 이미지 수집·큐레이션 파이프라인 (Bing 우회 + Negative curation + Flux LoRA) · 2026-04-14
+- [[src-instarup]] — 인스타 릴스 자동 업로드 (instagrapi + accounts.xlsx + APScheduler, 업로드 검증 완료) · 2026-04-13
+- [[src-foreign-influencer-guide]] — 외국인 인플루언서 리뷰 영상 33편 자동화 (fal.ai + Kling Avatar v2 Pro + Gemini, 메라블 피코샷) · 2026-04-13~14
 
 ## 의사결정 (Decisions)
 _아직 없음_
@@ -55,4 +59,5 @@ _아직 없음_
 - wiki/tacit/creative-patterns.md — 크리에이티브 감각 (8건)
 - wiki/tacit/viral-patterns.md — 바이럴 감각
 - wiki/tacit/coding-lessons.md — 코딩/자동화 교훈 (네이버 크롤링·시장조사 + Desktop/MD 멀티 프로젝트 시행착오)
+- wiki/tacit/video-gen-lessons.md — 영상 생성 교훈 (Kling/Gemini/ffmpeg 실전 이슈 259줄)
 - wiki/tacit/psychology-insights.md — 심리/설득 원칙

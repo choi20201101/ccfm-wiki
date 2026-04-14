@@ -434,18 +434,69 @@ bob PLAN.md  →  dd steps 00~05  →  harness RULES  →  output/영상{1,2,3}.
 ## 관련 소스
 - [[src-youtube]] — yt-dlp 대량 수집 + Claude CLI 서브에이전트 4개 병렬 분석 (자막 풀텍스트)
 - [[src-instar]] — 인스타 릴스 yt-dlp 익명 추출 + Claude Vision 프롬프트 자동화
+- [[src-diet-b2a-v2]] — 대량생산·다국어 B/A 공장 (아래 §10)
+- [[src-instarup]] — 인스타 릴스 자동 업로드 파이프라인 (아래 §11, §12)
 
 ---
 
-## 10. Instagram 릴스 자동 업로드 (검증됨, 2026-04-13)
+## 10. diet-b2a-v2 — 다이어트 비포애프터 릴스 대량생산·다국어 공장 (2026-04-14)
 
-### 10-1. 검증된 업로드 파이프라인
+### 검색 별칭
+- 다이어트 영상 자동화
+- 비포애프터 릴스 스킬
+- 다이어트 변신 쇼츠
+- 체중감량 릴스 대량
+- B/A 10세트 60영상
+- Kling Gemini 파이프라인
+
+→ 상세: [[src-diet-b2a-v2]]
+
+### 10-1. 스케일 확장
+- 세트 1 → **10**, 언어 1 → **2 (ko + 번체)**, 영상 3 → **60개** 한 파이프라인.
+- 모델 5 × 배경 5 × 춤 10 × kg 랜덤 × 2언어 조합.
+
+### 10-2. 시드 자동화 (Gemini Chrome)
+- Playwright persistent context + `.session/` 재사용.
+- 매 new_chat 후 **Thinking 모델 강제 선택** (Fast는 지시 무시).
+- **체중계 숫자까지 Gemini로 랜덤 치환** (외관·로고·테두리 유지, 숫자만).
+- 생성 후 자동 로고 제거: [[src-gemini-logo-remover]] 통합.
+
+### 10-3. 얼굴 모자이크 — **before/after 각각** 박스 (v2 차이점)
+- v1은 단일 박스. v2에서 Kling 결과 얼굴 위치가 before/after 서로 다름이 확인되어 `face_boxes.json`을 `{sid: {before:{}, after:{}}}` 구조로 확장.
+- OpenCV haarcascade는 30%+ 오검출 → **수동 검토 루프** 필수. 프레임 추출 후 눈으로 확인.
+
+### 10-4. 카피 로컬라이제이션
+- 영문 댄스명(NewJeans Super Shy 등) → 한국어 자극 훅(살 뺐더니 친구가 몰라봄ㅋㅋ 등) + 번체 자극 훅(瘦了之後朋友都認不出來) 각 10종 등재.
+- 날짜 자막 `2025년 12월 ↔ 2025年12月` 언어별 자동 치환.
+
+### 10-5. Kling 40 클립 배치
+- 10s × 20 + 5s × 20 순차 submit. code 1303(parallel limit) → 30/60/120s 백오프.
+- `raw/tasks.json` 멱등: task_id 있고 mp4 100KB+ 면 skip.
+
+### 10-6. 이 섹션이 주는 직원 공유 포인트
+1. "스킬 한번 만들면 10개 콘텐츠 하루만에" 가능한 수준으로 공정화된 첫 B/A 스킬.
+2. 시드·체중계·로고·자막·BGM·모자이크까지 전부 스크립트 파라미터. 사람은 styles.json만 터치.
+3. 거부/안전 필터 자동 우회(AI 캐릭터 명시, 의상 완화, safe fallback)로 실전 운영 가능.
+
+### 10-7. 파이프라인 스크립트 인덱스 (graphify 통합)
+모두 [[src-diet-b2a-v2]] 하위. 각 파일이 이 도메인의 구성원이며 서로 순차 의존:
+- `lib.py` · `gemini_client.py` · `logo_remover.py` · `detect_faces.py` · `build_sets.py` (공용 라이브러리)
+- `analyze_bgm.py` → `build_prompts.py` → `check_session.py` → `gen_seeds.py` → `gen_scales.py` → `gen_kling.py` → `compose.py` (스텝 00→06 순차 실행)
+- 공용 라이브러리는 스텝 여러 개가 import 함 → graphify 그래프에서 **hub 노드** 로 자리잡음
+
+*추가: 2026-04-14 (§10 diet-b2a-v2, [[src-diet-b2a-v2]])*
+
+---
+
+## 11. Instagram 릴스 자동 업로드 (검증됨, 2026-04-13)
+
+### 11-1. 검증된 업로드 파이프라인
 
 > confidence: high (실제 테스트 업로드 2건 성공 — 계정 `jmtw.12345`, 3MB mp4, 대만시장 번체중문 캡션)
 
 **결론**: 공식 Graph API 대신 `instagrapi` (비공식 Private API, ID/PW 로그인)가 **현실적으로 가장 빠른 구현**. 단, ToS 위반 & 계정 밴 리스크 감수.
 
-### 10-2. 최소 동작 코드 (약 40줄)
+### 11-2. 최소 동작 코드 (약 40줄)
 
 ```python
 from instagrapi import Client
@@ -464,14 +515,14 @@ media = cli.clip_upload(path=video_path, caption=caption_with_hashtags)
 # 삭제: cli.media_delete(media.pk)
 ```
 
-### 10-3. 실전 교훈 (테스트에서 검증)
+### 11-3. 실전 교훈 (테스트에서 검증)
 
 - **로그인 → 업로드 총 소요: 38초** (신규 세션, 3MB 영상 기준). 세션 재사용 시 업로드만 ~28초
 - `clip_upload` 내부에서 moviepy로 썸네일 자동 생성 — ffmpeg 바이너리 PATH 필수 아님 (imageio-ffmpeg 번들)
 - 캡션에 해시태그 같이 넣음 (별도 필드 없음). 2200자·30해시태그 제한
 - 업로드 직후 `media_delete(pk)` 즉시 먹힘 → 테스트 후 정리 용이
 
-### 10-4. 멀티계정 운영 (50~100개) 아키텍처
+### 11-4. 멀티계정 운영 (50~100개) 아키텍처
 
 - **accounts.xlsx 단일 파일**로 계정 관리. 필수 컬럼: username, password. 나머지(account_name, session_file, status, daily_limit, proxy, note)는 빈칸 허용, 첫 실행 시 자동 채움
 - account_name 자동 생성: username의 특수문자(`.`, `+` 등) → `_` 치환
@@ -482,13 +533,13 @@ media = cli.clip_upload(path=video_path, caption=caption_with_hashtags)
   - 계정별 고유 device_settings 고정 (`cli.set_device()`)
   - proxy 계정별로 분산 강력 권장 (IP 분산)
 
-### 10-5. 예외 처리 패턴
+### 11-5. 예외 처리 패턴
 
 - `LoginRequired`, `ChallengeRequired`, `PleaseWaitFewMinutes` → 해당 계정 status=paused + 알림
 - 챌린지/2FA 발생 시 `instarup relogin --account <n>` 대화형으로 해결
 - 세션 만료(`get_timeline_feed` 실패) → 자동 재로그인 + 세션 덮어쓰기
 
-### 10-6. 워크플로우 설계 (BDH 스킬로 검증)
+### 11-6. 워크플로우 설계 (BDH 스킬로 검증)
 
 ```
 videos/{account}/pending/   ← 사용자 투입
@@ -505,24 +556,24 @@ videos/{account}/failed/    ← 실패 이동 + 로그
 - **검토 게이트 필수** (status=draft → approved 수동 변경)
 - **A/B 캡션 자동 제안** + custom_caption 수기 오버라이드 옵션 (감성톤/직관톤 2개)
 
-### 10-7. AI 캡션 생성 비용 절감 패턴
+### 11-7. AI 캡션 생성 비용 절감 패턴
 
 - **anthropic SDK 직접 호출 금지** → Claude Code 서브에이전트(Agent 툴)로 대체
 - Python 코드는 ffmpeg로 영상당 5프레임(10/30/50/70/90% 지점) 추출만 담당
 - Claude Code 스킬이 서브에이전트 10개 병렬 디스패치 → 프레임 Read → 캡션 생성 → 엑셀 기록
 - 이유: (a) API 비용 제거 (구독에 포함), (b) 서브에이전트 병렬성 활용, (c) 아키텍처 단순화
 
-### 10-8. 관련 소스
+### 11-8. 관련 소스
 - [[src-instarup]] — 프로젝트 경로: `C:\Users\Administrator\Desktop\instarup\`
 - BDH 스킬로 Spec v5까지 반복 구체화 후 step-00/01 구현 + E2E 업로드 검증 완료
 
 ---
 
-## 11. instarup 확장 스펙 — 백엔드·UI·배포 (2026-04-13)
+## 12. instarup 확장 스펙 — 백엔드·UI·배포 (2026-04-13)
 
 > confidence: high — 실제 구현·테스트 완료 부분 + medium — 배포 계획 부분
 
-### 11-1. 완성된 백엔드 구조 (BDH 파이프라인 결과물)
+### 12-1. 완성된 백엔드 구조 (BDH 파이프라인 결과물)
 
 ```
 src/instarup/
@@ -539,7 +590,7 @@ src/instarup/
 - **핵심 교훈**: 엑셀을 "컨트롤 패널"로 쓰면 사용자가 대량 편집(50~100행 복붙)을 엑셀로 할 수 있어 UX 압승. 데몬은 60초 폴링으로 엑셀 변경을 자동 반영
 - **테스트**: pytest 13/13 통과 (accounts/state/scanner/config)
 
-### 11-2. Streamlit UI 스택 (한국 커뮤니티 표준)
+### 12-2. Streamlit UI 스택 (한국 커뮤니티 표준)
 
 - **streamlit-option-menu** 패키지 사용 — Bootstrap 아이콘 내장, 한글 라벨 자연스러움
 - 상단 수평 메뉴 (`orientation="horizontal"`) + 사이드바는 `collapsed` 기본값
@@ -563,7 +614,7 @@ selected = option_menu(
 - **데몬 제어 패턴**: `subprocess.Popen([sys.executable, "-m", "mod.cli", "run"])` + `st.session_state.daemon_proc` 으로 UI 내 시작/중지 버튼
 - **로그 tail**: `log_path.read_text().splitlines()[-200:]` → `st.code(..., language="log")`
 
-### 11-3. Windows 패키징 3-배치 패턴
+### 12-3. Windows 패키징 3-배치 패턴
 
 1. `install.bat` — `py -m pip install -e .` + 템플릿 생성 (최초 1회)
 2. `start_ui.bat` — `py -m streamlit run app.py` (브라우저 자동 오픈)
@@ -571,7 +622,7 @@ selected = option_menu(
 
 모두 `cd /d "%~dp0"` + `set PYTHONPATH=%~dp0src` 헤더로 src-layout 해결.
 
-### 11-4. Vercel 배포의 현실 (모바일 친화 질문 시 대답 템플릿)
+### 12-4. Vercel 배포의 현실 (모바일 친화 질문 시 대답 템플릿)
 
 > **Vercel은 이 종류 자동화에 절반만 맞음**. 반드시 설명해야 할 제약:
 
@@ -603,7 +654,7 @@ Vercel (Next.js mobile UI) ──HTTPS──▶ Backend (always-on)
 2. Phase 2: Vercel(프론트) + Railway/PC터널(백엔드) 배포
 3. Phase 3: 인증(단순 비밀번호 or NextAuth)
 
-### 11-5. 재사용 가능한 결정 체크리스트 (IG 자동화 신규 프로젝트 시)
+### 12-5. 재사용 가능한 결정 체크리스트 (IG 자동화 신규 프로젝트 시)
 
 - [ ] 업로드 라이브러리: **instagrapi** (Graph API보다 빠른 구현, ToS 위반 감수)
 - [ ] 계정 레지스트리: **accounts.xlsx 단일 파일** (username/password만 필수)
@@ -618,7 +669,61 @@ Vercel (Next.js mobile UI) ──HTTPS──▶ Backend (always-on)
 - [ ] AI 캡션: **Claude Code 서브에이전트** (anthropic SDK 직접 호출 금지)
 - [ ] Harness: **Level 3** (ruff + mypy strict + pre-commit + 커스텀 훅)
 
-### 11-6. 관련 링크
+### 12-6. 관련 링크
 - [[src-instarup]] — 프로젝트 레퍼런스
-- [[content-ai-automation#10. Instagram 릴스 자동 업로드]] — §10 검증된 스니펫
+- [[content-ai-automation#11. Instagram 릴스 자동 업로드]] — §11 검증된 스니펫
 - 지식 체인: BDH(bob+dd+harness) 파이프라인 적용 사례. Spec v1→v5 진화 전체 기록이 `dev/active/insta-autopost/state.md`
+
+*추가: 2026-04-13 (§11 instarup 업로드, §12 백엔드·UI·배포, [[src-instarup]])*
+
+---
+
+## 13. 외국인 인플루언서 리뷰 영상 자동화 (fal.ai·Kling Avatar v2 Pro, 2026-04-13~14)
+
+> confidence: high — 33편 완성본 실제 제작 (메라블 루비알엔 피코샷, 기미 타겟 / 40~60대 여성) · 상세: [[src-foreign-influencer-guide]]
+
+### 13-1. 핵심 스택 선택 (재사용 권장)
+- **Kling 직통 API 비활성 (code 1003)** → **fal.ai 프록시로 Avatar v2 Pro / i2v 2.1 Pro / TTS 전부 우회**. 계약 전 API 호출 테스트 1회 의무화.
+- 립싱크 = **Kling AI Avatar v2 Pro** (fal), 모션 B-roll = Kling i2v 2.1 Pro, 시드·B&A·B-roll 시드 = Gemini 2.5 Flash Image (제품 라벨 유지 reference), TTS = Kling TTS(EN) + ElevenLabs(KO), 편집 = FFmpeg + ASS.
+- 자동 QC = Gemini 2.5 Flash Vision (거울 반사·크림 입가·Q-tip·변형 수지 감지 → 해당 B-roll만 재생성 1회).
+
+### 13-2. 실측 비용·시간 (1편 = 40초)
+- **$7.90/편** (Avatar $4.60 + i2v×4 $2.00 + Gemini×7 $0.21 + TTS×11 $1.10). 33편 실측 $340.
+- 10~15분/편 (Avatar 2~5분 병목). 29편 순차 5~7h.
+- 재렌더(자막만): **1~2분/편** — Avatar 재사용, ffmpeg만 재실행. 비싼 자산은 disk cache로 멱등화.
+
+### 13-3. 포맷 표준 (9:16 세로 1080×1920)
+- 길이 30~45초, 구조 **HOOK(0-4) → PAIN(4-10) → PRODUCT(10-20) → PROOF(20-30) → CTA(30-35)**.
+- 메인 립싱크 아바타 + PAIN/PRODUCT/APPLY/CTA 씬 **B-roll 4개** 오버레이.
+- 한/영 이중 자막 (KO 크게 위, EN 작게 노랑 이탤릭 아래) + 검정 바 520px 상단 2줄 카피.
+
+### 13-4. 할루시네이션 회피 프롬프트 표준
+- 메인 시드: `Exactly ONE person, no mirror reflections` **필수**. 거울 셀피 페르소나는 무한반사로 무조건 실패 → 평면 벽 배경 강제.
+- i2v negative prompt 공통 세트: `multiple people, mirror reflection, extra arms, deformed face, cream in mouth, eating cream, licking product, jar near mouth, cotton swab, applicator wand, Q-tip near face`.
+- **이미지 AI에 한글 baked-in 금지** — 한글은 깨진 글자로 렌더. `Korean text`/`Korean numbers` 같은 qualifier까지 제거. 한국어 카피는 전부 ASS 후처리 자막으로.
+
+### 13-5. FFmpeg filter_complex 재사용 교훈
+- `scale=1080:1080,pad=1080:1920:0:520:black,setsar=1` 로 Avatar 1440² → 9:16 (상/하 검정 520px).
+- 오버레이 체인 `overlay=0:520:enable='between(t,start,end)'[vN]` 누적 → 마지막에 `ass='subs.ass'[v]` (자막은 항상 최상단, 안 가리게).
+- **필터 인덱스 동적 계산 필수**: `n = len(broll_specs); sb_idx = n+1` — 하드코딩 시 입력 개수 변동에 파싱 실패.
+- `force_original_aspect_ratio=cover` 값 없음 → `increase` 또는 `decrease`만.
+
+### 13-6. 중년(40~60대) 한국어 자막 규칙
+- AI 번역 → 그대로 쓰면 "소프트걸 불가능", "풀스택 미백", "ㅋㅋ", "고고" 등 Z세대 슬랭 혼입 → **수동 교정 필수** (금지어 리스트 운영).
+- EN 서브큐는 오디오 **실제 문장을 쉼표/마침표로 분할**, KO는 EN 청크의 의미 번역. 시간 = 씬 duration × (청크 char / 총 char).
+- PIP y좌표 540 (상단 카피 아래) — 하단 자막 safe zone(y~1500) 침범 금지.
+
+### 13-7. 배치 운영 체크리스트 (다음 제품 재사용 시)
+- [ ] 시드 이미지 1장으로 페르소나 identity 고정 (Gemini reference)
+- [ ] 각 단계 파일 존재 시 skip — Avatar $4×N 재생성 방지
+- [ ] 백그라운드 배치는 `| head` 금지 (SIGPIPE 사망), `> log.txt 2>&1` redirect
+- [ ] subprocess 실패 시 `e.stderr.decode()[-300:]` 반드시 로그
+- [ ] 배치 마지막에 `DONE: X/Y` 명시 로그 — 프로세스 exit ≠ 논리 완료
+- [ ] 레퍼런스 영상 1:1 복제 불가 (Avatar v2 Pro는 오디오 길이만 맞춤) → 기획 단계에서 "느낌" 모방 + 변주 허용
+
+### 13-8. 관련 소스
+- [[src-foreign-influencer-guide]] — 7개 문서 + scripts(personas/creative_scripts/mashups/USP) 전체 원본
+- raw 백업: `raw/foreign-influencer-guide/` (README·01 계획·02 훅·03 파이프라인·04 자막·05 레퍼런스·06 실패·07 비용)
+- 프로젝트 코드: `C:/Users/Administrator/Desktop/klinginter/src/` (fal_kling/gemini/subtitle/batch_20/batch_mashup/fix_subs_c)
+
+*추가: 2026-04-15 (§13 외국인 인플루언서 Kling Avatar 파이프라인, [[src-foreign-influencer-guide]])*

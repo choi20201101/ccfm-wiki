@@ -1,5 +1,37 @@
 # CCFM Wiki Log
 
+## [2026-04-14] update | goglecc — Gemini 직호출 기본값 확립 (vs fal/Flux)
+- 동일 ref + 동일 한국어 프롬프트로 A/B: Gemini API 직호출이 fal-ai/nano-banana/edit 압승
+  - fal은 얼굴 완전 다르게 바뀜·배경 렌더 느낌
+  - Gemini는 얼굴 보존·실사 질감·배경 자연스러움
+- Flux+커스텀LoRA+XLabs Realism 스택은 AI sheen 완전 제거 불가 (구조적 한계)
+- [[src-goglecc-seed-curation]] 섹션 7·8 추가 (API 비교표 + 재사용 체크리스트 업데이트)
+- [[tacit/coding-lessons]] 4건 추가: Gemini 직호출 우선, Flux 한계, key.txt 라벨 파서
+- [[tacit/creative-patterns]] 1건 추가: 실사 인플루언서는 Gemini 직호출 기본값
+- [[da-creative]] API 선택 원칙 추가
+- 규칙: 인물 실사 생성 목표면 무조건 Google AI Studio 키로 `gemini-2.5-flash-image` 직호출
+
+## [2026-04-14] ingest | goglecc — 씨드 이미지 수집·큐레이션 파이프라인
+- 원본: `C:/Users/gguy/Desktop/goglecc/` (BDH 구조, bing scraper + negative curation + fal LoRA 준비)
+- 신규 소스: [[src-goglecc-seed-curation]]
+  - Google 차단 → Bing 우회 (`a.iusc[m].murl`)
+  - Negative curation (aa/ 폴더 학습) > Positive (10장 선별)
+  - 안 좋은 이미지 정량 시그니처: saturation_std>0.17, aspect≈1.55, width<556, phash Hamming≤12
+  - 키워드 bad률 상관: 단일명사 4% vs 합성어 59~91%
+- tacit 신규:
+  - [[coding-lessons]] 4건: Google 차단/Bing 우회, Negative curation 효율성, 키워드 품질 상관, pHash 블랙리스트
+  - [[creative-patterns]] 3건: AI tell 제거 프롬프트 스택, aesthetic LoRA vs subject LoRA, Higgsfield/Nano Banana 철학 차이
+- 의의: 다이어트 B&A v2의 씨드 입력 자산을 체계적으로 확보하는 선행 파이프라인. "인플루언서 씨드 가져와줘" 류 요청에 재사용.
+
+## [2026-04-14] ingest | diet-b2a-v2 — 대량생산·다국어 확장 (60영상, Gemini+Kling+ffmpeg bdh)
+- 원본: `raw/skills/diet-b2a-v2/` + `diet-b2a-v2-skill.zip` (140KB), 바탕화면 동일본
+- 신규 소스: [[src-diet-b2a-v2]] (10세트·2언어 파이프라인, 스텝별 bdh 구조)
+- domains 업데이트: [[content-ai-automation]] · [[da-creative]] · [[ai-automation]] (v2 추가)
+- tacit 신규 9건:
+  - [[creative-patterns]] 3건: before/after 각각 박스 필수, 유행 댄스명 고유명사 박기, 영문 자막 → 한국어 자극 훅
+  - [[coding-lessons]] 5건: Gemini Thinking 강제 선택, after 시드에 before 입력 금지, Gemini 거부 우회 3패턴(AI캐릭터/의상완화/safe fallback), OpenCV haarcascade 오검출 패턴, 프롬프트 짧게(40~60s vs 3분+타임아웃)
+- 의의: v1 스킬 실전 대량 운영시 나타난 품질/세션/안전 이슈를 체계화. 직원 공유 가능한 압축 패키지.
+
 ## [2026-04-13] ingest | diet-b2a 스킬 — 다이어트 B/A 릴스 3종 자동화 (bdh 완주 사례)
 - 원본: `raw/skills/diet-b2a/` (트리 전부) + `raw/skills/diet-b2a/diet-b2a-skill.zip` (35KB)
 - 스킬 위치: 사용자 바탕화면 `C:\Users\gguy\Desktop\diet-b2a-skill.zip`, 소스는 `C:\Users\gguy\Desktop\dance\diet-b2a-skill\`
@@ -109,3 +141,8 @@
 - decision-rules.md: 메타 원칙("영상 작업은 규칙화 금지, 질문 체크리스트화") 추가
 ## [2026-04-13] ingest | youtube 모듈 지식화
 ## [2026-04-13] ingest | instar 모듈 지식화
+
+## [2026-04-14] ingest | Gemini 레퍼런스 기반 프롬프트 포맷 (실사 질감 + safety 우회)
+- [[da-creative]] 프롬프트 DB 섹션에 템플릿·예시·운용팁 추가
+- [[coding-lessons]] 2026-04-14 엔트리 추가 (confidence: medium)
+- 출처: diet-b2a-v2 실전 검증 + 사용자 스크린샷 (20260414_142011.png)

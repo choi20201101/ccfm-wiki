@@ -1,0 +1,649 @@
+# 19 creative scripts (v002-v020), witty, non-overlapping.
+# Shared: Melable RubyRN PicoShot (PDRN melasma cream). Personas defined in batch_20.yaml.
+# Each script: distinct narrative structure/tone. 30-45s when voiced.
+# Schema: scenes[].en = TTS text, scenes[].lines[] = multi-cue sub displays {ko,en}
+# ba_self goes at the scene with "ba_cue: spot1". ba_clinical PIP at next proof scene.
+
+v002:
+  # POV skit: roasting her own dermatologist
+  top_copy: ["피부과 쌤이 모르는", "10년 기미 7일 해결법"]
+  voice: ai_shatang
+  tone: sassy-roast
+  scenes:
+    - en: "POV: I walk into my derm office one more time with the same damn spots."
+      lines: [{ko: "POV 피부과 또 오는 나", en: "POV: me at derma again"}, {ko: "같은 기미 들고", en: "same spots same me"}]
+    - en: "She goes 'babe, it's genetics.' I said 'babe, it's a Korean cream now.'"
+      lines: [{ko: "쌤: 유전이에요~", en: "Doc: it's genetics babe"}, {ko: "나: 한국 크림이요", en: "Me: it's a Korean cream"}]
+    - en: "Three grand later, my face was still giving dalmatian."
+      lines: [{ko: "3천 불 태웠는데", en: "$3K gone"}, {ko: "얼굴은 달마시안", en: "Face still dalmatian"}]
+    - en: "Then a Seoul bestie DMed me Melable RubyRN PicoShot."
+      lines: [{ko: "서울 친구가 DM", en: "Seoul bestie DM'd"}, {ko: "메라블 루비알엔", en: "Melable RubyRN"}]
+    - en: "Ruby PDRN, goldfilm tech, niacinamide, tranexamic — the whole whitening cartel."
+      lines: [{ko: "루비 PDRN 골드필름", en: "Ruby PDRN + goldfilm"}, {ko: "미백 카르텔 성분", en: "The whitening cartel"}]
+    - en: "Day 1 versus day 7. Baby, the audacity."
+      ba_cue: spot1
+      lines: [{ko: "1일차 vs 7일차", en: "Day 1 vs Day 7"}, {ko: "이 뻔뻔한 효과", en: "The audacity"}]
+    - en: "98 of 100 women saw their spots fade. Ninety-eight."
+      lines: [{ko: "100명 중 98명 효과", en: "98 of 100 fading"}, {ko: "구십팔… 아니 98명", en: "Ninety eight"}]
+    - en: "Derms hate her. Link in bio. Sold out 24 times. Run, don't walk."
+      lines: [{ko: "쌤들이 싫어하는 그것", en: "Derms hate this"}, {ko: "24번 완판 달려", en: "Sold out 24x RUN"}]
+
+v003:
+  # text-thread reveal: friend recommends
+  top_copy: ["3천 불 피부과 썼어도", "이 DM 하나로 해결됐다"]
+  voice: chat1_female_new-3
+  tone: confessional-storytime
+  scenes:
+    - en: "Okay story time. Last month I was literally crying in the Sephora parking lot."
+      lines: [{ko: "스토리 시작", en: "Story time babes"}, {ko: "세포라 주차장에서 울었음", en: "Cried in Sephora lot"}]
+    - en: "Ten-year melasma, three grand at the derm, nothing worked."
+      lines: [{ko: "10년 기미 3천 불", en: "10-yr spots, $3K gone"}, {ko: "아무것도 안 먹힘", en: "Nothing worked"}]
+    - en: "My Korean aunt texts me, 'download this Korean brand, Melable.'"
+      lines: [{ko: "이모: 이거 써봐", en: "Aunt: try this"}, {ko: "메라블 한 단어로", en: "'Melable' — one word"}]
+    - en: "RubyRN PicoShot. PDRN inside, gold-film tech outside."
+      lines: [{ko: "루비알엔 피코샷", en: "RubyRN PicoShot"}, {ko: "PDRN + 골드필름", en: "PDRN + goldfilm"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin — the tea is real."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴", en: "alpha-arbutin"}]
+    - en: "One week later my reflection did that."
+      ba_cue: spot1
+      lines: [{ko: "1주일 뒤 거울 충격", en: "Reflection did THAT"}]
+    - en: "Ninety-eight out of a hundred women. And I'm now one of them."
+      lines: [{ko: "100명 중 98명 효과", en: "98 of 100 women"}, {ko: "나도 그 98명", en: "Now I'm one of 'em"}]
+    - en: "Tell your group chat. Link in bio."
+      lines: [{ko: "단톡에 퍼뜨려", en: "Tell the groupchat"}, {ko: "링크 프로필에", en: "Link in bio"}]
+
+v004:
+  # sceptic-to-believer skit
+  top_copy: ["안 믿던 내가", "7일만에 털린 이유"]
+  voice: girlfriend_1_speech02
+  tone: sceptic-flip
+  scenes:
+    - en: "I don't trust TikTok skincare. I really don't."
+      lines: [{ko: "난 틱톡 스킨케어 안 믿음", en: "I don't trust TikTok skincare"}]
+    - en: "But my cousin kept pushing this pink jar like it was her job."
+      lines: [{ko: "사촌이 계속 들이밈", en: "Cousin kept pushing"}, {ko: "이 핑크 통을", en: "this pink jar"}]
+    - en: "Ten-year melasma. Three-thousand-dollar clinic. Zero results."
+      lines: [{ko: "10년 기미 3천불 클리닉", en: "10-yr spots, $3K clinic"}, {ko: "결과는 0", en: "Zero results"}]
+    - en: "Fine. Melable RubyRN PicoShot. Week one, let's see what we got."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "1주 실험 시작", en: "Week one begins"}]
+    - en: "Ruby PDRN and goldfilm push the actives where pills can't."
+      lines: [{ko: "루비 PDRN + 골드필름", en: "Ruby PDRN + goldfilm"}, {ko: "유효성분 침투", en: "drives actives deep"}]
+    - en: "Plus niacinamide, tranexamic, alpha-arbutin. A whitening pyramid scheme, but legal."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "합법적 미백 피라미드", en: "Legal whitening pyramid"}]
+    - en: "Day 7. Mirror. Mouth open. Me calling my cousin to apologize."
+      ba_cue: spot1
+      lines: [{ko: "7일차 거울 앞 충격", en: "Day 7 mirror shock"}, {ko: "사촌한테 전화 사과", en: "Called cousin to say sorry"}]
+    - en: "98 out of 100 women. I was the sceptical one. Now I'm the ad."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "의심쟁이가 광고됨", en: "Sceptic became the ad"}]
+    - en: "Stop scrolling. Run. Link in bio."
+      lines: [{ko: "스크롤 그만", en: "Stop scrolling"}, {ko: "링크 프로필 고 고", en: "Link in bio GO"}]
+
+v005:
+  # scientific breakdown / ingredient geek
+  top_copy: ["성분 덕후가 뜯어본", "10년 기미 잡는 분자"]
+  voice: uk_boy1
+  tone: nerdy-geek
+  scenes:
+    - en: "Skincare nerd alert. I'm about to ruin your FYP."
+      lines: [{ko: "성분 덕후 등판", en: "Skincare nerd alert"}, {ko: "피드 폭격 예고", en: "Ruining your FYP"}]
+    - en: "Melasma is a pigment war under the surface. Most creams fight above it."
+      lines: [{ko: "기미는 피부 속 전쟁", en: "Melasma: pigment war"}, {ko: "크림은 위만 공격", en: "Most creams miss"}]
+    - en: "Melable's trick: Ruby PDRN repairs the barrier, goldfilm delivers under it."
+      lines: [{ko: "루비 PDRN 복구", en: "Ruby PDRN repairs"}, {ko: "골드필름 침투", en: "goldfilm delivers deep"}]
+    - en: "Then niacinamide calms, tranexamic blocks melanin, alpha-arbutin fades it."
+      lines: [{ko: "나이아신 진정", en: "Niacinamide calms"}, {ko: "트라넥사믹 멜라닌 차단", en: "Tranexamic blocks"}, {ko: "알파아르부틴 페이드", en: "Alpha-arbutin fades"}]
+    - en: "I gave it 7 days. My T-zone cooperated for the first time ever."
+      lines: [{ko: "7일 실험", en: "7-day experiment"}, {ko: "티존 처음으로 순응함", en: "T-zone finally cooperated"}]
+    - en: "Day one, day seven. The data speaks."
+      ba_cue: spot1
+      lines: [{ko: "1일차 vs 7일차", en: "Day 1 vs Day 7"}, {ko: "데이터가 말해줌", en: "Data speaks"}]
+    - en: "Ninety-eight percent satisfaction rate. That's basically chemistry, not luck."
+      lines: [{ko: "만족률 98%", en: "98% satisfaction"}, {ko: "운 아닌 화학", en: "Chemistry, not luck"}]
+    - en: "Stop guessing. Link in bio. Nerds out."
+      lines: [{ko: "찍지 말고 써", en: "Stop guessing"}, {ko: "링크 프로필", en: "Link in bio"}]
+
+v006:
+  # glow-up rating challenge
+  top_copy: ["1일차 vs 7일차", "몇점짜리 글로우업?"]
+  voice: ai_shatang
+  tone: playful-challenge
+  scenes:
+    - en: "Rate this glow-up 1 to 10. Loser buys coffee."
+      lines: [{ko: "글로우업 몇점?", en: "Rate 1 to 10"}, {ko: "진 사람 커피 쏨", en: "Loser buys coffee"}]
+    - en: "Starting roster: ten years of melasma, three grand burned at the derm."
+      lines: [{ko: "10년 기미", en: "10-yr melasma"}, {ko: "피부과에 3천 불", en: "$3K at derma"}]
+    - en: "Enter the challenger: Melable RubyRN PicoShot."
+      lines: [{ko: "등장: 메라블", en: "Enter the challenger"}, {ko: "루비알엔 피코샷", en: "RubyRN PicoShot"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin. Stacked roster."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN + goldfilm"}, {ko: "미백 포메이션 완성", en: "Stacked whitening roster"}]
+    - en: "Seven days later. Comment your score."
+      ba_cue: spot1
+      lines: [{ko: "7일차 점수 댓글", en: "Day 7 — drop score"}]
+    - en: "98 of 100 women said eight or higher. Personal best."
+      lines: [{ko: "98명이 8점 이상", en: "98 rated 8+"}, {ko: "내 기록 경신", en: "Personal best"}]
+    - en: "Link in bio. Don't lowball me, girls."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "짠돌이 점수 노노", en: "No lowball scores"}]
+
+v007:
+  # insider confession from 'beauty editor'
+  top_copy: ["뷰티 에디터가 진짜", "쟁여둔 크림 공개"]
+  voice: girlfriend_1_speech02
+  tone: insider-confession
+  scenes:
+    - en: "I'm a beauty editor. I've tested hundreds of creams. I gatekeep maybe one."
+      lines: [{ko: "나는 뷰티 에디터", en: "Beauty editor here"}, {ko: "딱 하나 숨겨둠", en: "I gatekeep just one"}]
+    - en: "Ten-year melasma. Three-thousand-dollar clinic. Every luxury jar. Nothing."
+      lines: [{ko: "10년 기미 3천 불", en: "10-yr spots $3K"}, {ko: "명품도 다 실패", en: "All luxury failed"}]
+    - en: "Then Korea launched Melable RubyRN PicoShot and my inbox exploded."
+      lines: [{ko: "한국 발 메라블", en: "From Korea: Melable"}, {ko: "에디터 인박스 폭발", en: "Inbox exploded"}]
+    - en: "Ruby PDRN plus goldfilm tech. Not drugstore magic — pharma-grade delivery."
+      lines: [{ko: "루비 PDRN 골드필름", en: "Ruby PDRN + goldfilm"}, {ko: "약국급 전달력", en: "Pharma-grade delivery"}]
+    - en: "Stack it with niacinamide, tranexamic, alpha-arbutin. Discontinued in my other creams."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴", en: "alpha-arbutin"}]
+    - en: "Seven days. I'm photographing myself again."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 다시 셀카", en: "7 days, selfies again"}, {ko: "자신감 컴백", en: "Confidence back"}]
+    - en: "98 of 100 women. I'm quitting my gatekeep."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "잠수 탈 안 할게", en: "Quitting the gatekeep"}]
+    - en: "Link is in bio. Don't tell my editor."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "에디터한텐 비밀", en: "Don't tell my editor"}]
+
+v008:
+  # FOMO - why am I last to know
+  top_copy: ["나만 몰랐던", "한국 기미 크림 대박"]
+  voice: chat1_female_new-3
+  tone: fomo-reveal
+  scenes:
+    - en: "Why am I ALWAYS the last one to know?"
+      lines: [{ko: "왜 나만 맨 끝에 알지", en: "Why am I ALWAYS last"}]
+    - en: "Half my group chat had glowing skin. Nobody said a word."
+      lines: [{ko: "단톡 반은 피부 광채", en: "Half the chat glowed"}, {ko: "아무도 안 알려줌", en: "Nobody told me"}]
+    - en: "Melable RubyRN PicoShot. Ruby PDRN plus goldfilm tech. The group-chat secret."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "단톡 비밀 아이템", en: "The groupchat secret"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin — a Korean ingredient party."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "한국 성분 파티", en: "K-ingredient party"}]
+    - en: "One week on my ten-year melasma and I'm pressed."
+      ba_cue: spot1
+      lines: [{ko: "10년 기미 1주", en: "10-yr spots, 1 week"}, {ko: "열받음 ㅋㅋ", en: "Girl I'm pressed"}]
+    - en: "98 out of 100 women. I was number 99 until last week."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "나 99번 탈출", en: "Was #99 til now"}]
+    - en: "Telling everyone. Link in bio. No more gatekeeping."
+      lines: [{ko: "모두에게 알림", en: "Telling everyone"}, {ko: "링크 프로필", en: "Link in bio"}]
+
+v009:
+  # celebrity expose
+  top_copy: ["한국 배우들 피부 비결", "딱 이 한 통이었다"]
+  voice: ai_shatang
+  tone: tea-spilling
+  scenes:
+    - en: "Ever wondered why every Korean actress looks like a lit candle?"
+      lines: [{ko: "한국 배우 피부", en: "Why Korean actresses"}, {ko: "왜 빛나는지 궁금?", en: "glow like candles?"}]
+    - en: "Spoiler: it's not 'good genetics.' It's a 60-dollar pink jar."
+      lines: [{ko: "유전자 아닙니다", en: "Not 'genetics'"}, {ko: "60불짜리 핑크 통", en: "A $60 pink jar"}]
+    - en: "Melable RubyRN PicoShot. Ruby PDRN plus goldfilm delivery."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "루비 PDRN 골드필름", en: "Ruby PDRN + goldfilm"}]
+    - en: "Niacinamide. Tranexamic acid. Alpha-arbutin. The K-idol stack."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴 K-아이돌 스택", en: "Alpha-arbutin K-idol stack"}]
+    - en: "Seven days on my stubborn melasma. Compare and be scared."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 비교", en: "7 days compare"}, {ko: "무서울 정도", en: "Scary results"}]
+    - en: "98 percent of users. And now they're running out again."
+      lines: [{ko: "유저 98% 효과", en: "98% users effect"}, {ko: "또 품절 임박", en: "Sold out again"}]
+    - en: "Link in bio. Before the agents buy it all."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "기획사가 쓸기 전", en: "Before agents buy out"}]
+
+v010:
+  # no-BS direct call-out
+  top_copy: ["피부과에 돈 태우지 마", "이 크림 하나로 끝"]
+  voice: uk_oldman3
+  tone: blunt-dad-energy
+  scenes:
+    - en: "Listen. If you're still funding your derm's yacht, we need to talk."
+      lines: [{ko: "얘기 좀 하자", en: "We need to talk"}, {ko: "쌤 요트 후원 그만", en: "Stop funding derm yacht"}]
+    - en: "Melasma doesn't care about your fancy clinic. I know because I tried."
+      lines: [{ko: "기미는 클리닉 무시", en: "Melasma ignores clinics"}, {ko: "내가 다 해봄", en: "I tried them all"}]
+    - en: "Ruby PDRN plus goldfilm. That's what finally hit the actual problem."
+      lines: [{ko: "루비 PDRN 골드필름", en: "Ruby PDRN + goldfilm"}, {ko: "문제를 찌름", en: "Hits the real spot"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin. Melable RubyRN PicoShot."
+      lines: [{ko: "성분 3종 세트", en: "Whitening trio"}, {ko: "메라블 루비알엔", en: "Melable RubyRN"}]
+    - en: "Seven days. Ten years of spots, gone. Don't thank me, thank Korea."
+      ba_cue: spot1
+      lines: [{ko: "7일 10년 기미 제거", en: "7d — 10y spots gone"}, {ko: "한국에 감사", en: "Thank Korea, not me"}]
+    - en: "98 out of 100. Numbers don't lie, babes."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "숫자는 거짓말 안 해", en: "Numbers don't lie"}]
+    - en: "Link in bio. Derm can keep the yacht."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "쌤 요트는 유지", en: "Derm keeps yacht"}]
+
+v011:
+  # educational red flags list
+  top_copy: ["기미 있으면 필독", "지금 당장 체크 3가지"]
+  voice: uk_man2
+  tone: teacher-mode
+  scenes:
+    - en: "If you have melasma, stop everything. Three signs you need this."
+      lines: [{ko: "기미 있으면 정지", en: "Melasma? STOP"}, {ko: "이거 필요한 3가지", en: "3 signs you need this"}]
+    - en: "Sign one: your spots are darker in sunlight and come back after lasers."
+      lines: [{ko: "1. 햇빛에 진해짐", en: "#1 darker in sun"}, {ko: "레이저 후 재발", en: "returns after laser"}]
+    - en: "Sign two: you've spent more than a thousand dollars with zero lasting fix."
+      lines: [{ko: "2. 천 불 이상 씀", en: "#2 spent $1K+"}, {ko: "지속 효과 없음", en: "no lasting fix"}]
+    - en: "Sign three: you want results in a week, not six months."
+      lines: [{ko: "3. 1주 효과 원함", en: "#3 want 1-week results"}, {ko: "6개월 못 기다림", en: "not 6 months"}]
+    - en: "Answer: Melable RubyRN PicoShot. Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "정답: 메라블 피코샷", en: "Answer: Melable"}, {ko: "성분 풀 스택", en: "Full stack"}]
+    - en: "Homework: seven days, one jar, one selfie. Grade yourself."
+      ba_cue: spot1
+      lines: [{ko: "숙제: 7일 한 통", en: "HW: 7 days, 1 jar"}, {ko: "셀프 채점", en: "Grade yourself"}]
+    - en: "98 out of 100 students pass. Link in bio."
+      lines: [{ko: "100명 중 98명 합격", en: "98 of 100 pass"}, {ko: "링크 프로필", en: "Link in bio"}]
+
+v012:
+  # dramatic reveal comedy
+  top_copy: ["인플루언서 언니가", "절대 알리지 않은 이거"]
+  voice: tianmeixuemei-v1
+  tone: dramatic-sister
+  scenes:
+    - en: "Okay I'm going to say the thing all my influencer friends will kill me for."
+      lines: [{ko: "언니 입 무거운데", en: "Lips were sealed"}, {ko: "오늘은 다 말함", en: "today I spill"}]
+    - en: "Every glowy Korean inspired girl you follow? Same damn jar."
+      lines: [{ko: "광채 언니들 정답", en: "All the glowy girls"}, {ko: "다 같은 통", en: "same damn jar"}]
+    - en: "Melable RubyRN PicoShot. Ruby PDRN and goldfilm tech."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "PDRN + 골드필름", en: "PDRN + goldfilm"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin. Not drugstore. K-derm grade."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "K-피부과급", en: "K-derm grade"}]
+    - en: "My ten-year melasma met its match in seven days."
+      ba_cue: spot1
+      lines: [{ko: "10년 기미 vs 7일", en: "10y vs 7d"}, {ko: "완패", en: "Total knockout"}]
+    - en: "98 of 100 women. They'll sue me later, it's fine."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "나 고소당함 ㅇㅈ", en: "I'll get sued lol"}]
+    - en: "Link in bio. Save this now before I deleet — I mean, delete."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "삭제 전에 저장", en: "Save before I delete"}]
+
+v013:
+  # emotional - mom's recommendation
+  top_copy: ["엄마가 보내준 크림이", "내 자존감 살림"]
+  voice: oversea_male1
+  tone: tender-emotional
+  scenes:
+    - en: "Last month my mom sent me a package. Just a pink jar."
+      lines: [{ko: "엄마가 보낸 상자", en: "Mom sent a box"}, {ko: "핑크 통 하나", en: "Just a pink jar"}]
+    - en: "Note said: 'stop crying in the mirror. Try this.'"
+      lines: [{ko: "거울 앞에서 울지 마", en: "Stop crying in mirror"}, {ko: "이거 써봐", en: "Try this — Mom"}]
+    - en: "Ten years. Three thousand dollars. And mom solved it in one DM."
+      lines: [{ko: "10년 3천 불 수고", en: "10y, $3K wasted"}, {ko: "엄마 DM 한 통", en: "Mom's one DM"}]
+    - en: "Melable RubyRN PicoShot. Ruby PDRN plus goldfilm tech."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "PDRN + 골드필름", en: "PDRN + goldfilm"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin. She did the research."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "엄마가 리서치 함", en: "Mom did research"}]
+    - en: "Seven days. I cried again. But this time, a good cry."
+      ba_cue: spot1
+      lines: [{ko: "7일 뒤 또 울음", en: "Cried again Day 7"}, {ko: "이번엔 감동 눈물", en: "but happy tears"}]
+    - en: "98 of 100 women. Mom, you were right. Again."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "엄마가 또 맞음", en: "Mom was right. Again."}]
+    - en: "Link in bio. Text your mom thanks."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "엄마한테 고마워 문자", en: "Text 'thanks mom'"}]
+
+v014:
+  # gossip - 'spill the tea'
+  top_copy: ["티 퍼옴", "이거 안 쓰면 바보"]
+  voice: chat1_female_new-3
+  tone: gossip-session
+  scenes:
+    - en: "Sit down. I am spilling the tea the skincare industry doesn't want me spilling."
+      lines: [{ko: "앉아 봐 티 나옴", en: "Sit. Spilling tea"}, {ko: "스킨 업계 금지 주제", en: "Banned by industry"}]
+    - en: "Melasma costs you three grand at the derm. Did for me."
+      lines: [{ko: "기미에 3천 불", en: "$3K at derma"}, {ko: "나도 그랬음", en: "I paid it"}]
+    - en: "Then some Korean pharmacist friend handed me a pink jar."
+      lines: [{ko: "약사 친구가 줌", en: "Korean pharmacist friend"}, {ko: "핑크 통 하나", en: "handed me a pink jar"}]
+    - en: "Melable RubyRN PicoShot. PDRN and goldfilm — Korean biohack."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "한국 바이오핵", en: "Korean biohack"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin — full tea."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴 풀 티", en: "Full tea stack"}]
+    - en: "Day 1, day 7. I'm not drinking tea, I'm serving it."
+      ba_cue: spot1
+      lines: [{ko: "티 마시는 게 아니라", en: "Not drinking tea"}, {ko: "서빙 중", en: "I'm serving it"}]
+    - en: "98 out of 100 agreed. The stats are sipping."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "통계도 홀짝", en: "Stats are sipping"}]
+    - en: "Link in bio. Don't be the 2 percent."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "2%가 되지 마", en: "Don't be the 2%"}]
+
+v015:
+  # 0-to-100 transformation
+  top_copy: ["스킨 0점 언니가", "100점 인증하는 이유"]
+  voice: ai_kaiya
+  tone: before-after-hype
+  scenes:
+    - en: "Rating my old skin routine zero out of a hundred. Deserved."
+      lines: [{ko: "예전 루틴 0점", en: "Old routine: 0/100"}, {ko: "인정함", en: "Deserved it"}]
+    - en: "Now I wake up and my ten-year melasma is… gone."
+      lines: [{ko: "지금은 일어나면", en: "Now I wake up"}, {ko: "10년 기미 사라짐", en: "10-yr melasma GONE"}]
+    - en: "Melable RubyRN PicoShot. Pink jar, Korean magic."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "한국 마법 핑크 통", en: "Pink jar, K-magic"}]
+    - en: "Ruby PDRN and goldfilm tech. Niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "PDRN + 골드필름", en: "PDRN + goldfilm"}, {ko: "미백 3종 세트", en: "Whitening trio"}]
+    - en: "Day one versus day seven. My grade went from F to S-tier."
+      ba_cue: spot1
+      lines: [{ko: "1일차 F에서", en: "F grade Day 1"}, {ko: "7일차 S 티어", en: "S-tier Day 7"}]
+    - en: "98 out of 100. Even the curve failed us."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "커브도 실패", en: "Even curve failed"}]
+    - en: "Link in bio. Upgrade your skincare GPA."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "스킨 GPA 업글", en: "Upgrade skin GPA"}]
+
+v016:
+  # aesthetic soft-girl era
+  top_copy: ["소프트걸 된 비결", "핑크 통 하나"]
+  voice: tianmeixuemei-v1
+  tone: aesthetic-whisper
+  scenes:
+    - en: "I'm in my soft-girl era. Quiet. Minimal. Glowing."
+      lines: [{ko: "소프트걸 이어 중", en: "Soft-girl era"}, {ko: "조용 심플 광채", en: "Quiet, minimal, glow"}]
+    - en: "You can't soft-girl with ten years of melasma staring back. I tried."
+      lines: [{ko: "기미는 소프트 금지", en: "Melasma blocks soft"}, {ko: "내가 해봄", en: "I tried"}]
+    - en: "Enter Melable RubyRN PicoShot. Quietly doing the most."
+      lines: [{ko: "등장: 메라블", en: "Enter Melable"}, {ko: "조용히 다 해내는 통", en: "Quietly does it all"}]
+    - en: "Ruby PDRN, goldfilm. Niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "루비 PDRN 골드필름", en: "Ruby PDRN + goldfilm"}, {ko: "나이아신 트라넥사믹", en: "niacinamide tranexamic"}]
+    - en: "Seven days of ritual. My reflection whispered back."
+      ba_cue: spot1
+      lines: [{ko: "7일의 의식", en: "7-day ritual"}, {ko: "거울이 속삭임", en: "Mirror whispered back"}]
+    - en: "98 of 100 women. Soft girls don't yell, they just glow."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "소프트걸은 빛남", en: "Soft girls glow"}]
+    - en: "Link in bio. Stay quiet. Stay glowing."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "조용히 빛나자", en: "Quiet glow era"}]
+
+v017:
+  # pharmacist friend expert
+  top_copy: ["약사 친구가 추천", "성분 진짜 인정"]
+  voice: ai_shatang
+  tone: expert-friend
+  scenes:
+    - en: "My pharmacist bestie never lies about creams. She said only this one works."
+      lines: [{ko: "약사 친구는 거짓 안 해", en: "Pharmacist bestie don't lie"}, {ko: "이거 하나만 된다고 함", en: "Only this one works"}]
+    - en: "Melable RubyRN PicoShot. Ruby PDRN plus goldfilm delivery."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "PDRN 골드필름 전달", en: "PDRN + goldfilm"}]
+    - en: "Niacinamide calms. Tranexamic blocks pigment. Alpha-arbutin fades."
+      lines: [{ko: "나이아신 진정", en: "Niacinamide calms"}, {ko: "트라넥사믹 차단", en: "Tranexamic blocks"}, {ko: "알파아르부틴 페이드", en: "Alpha-arbutin fades"}]
+    - en: "I did seven days exactly like she prescribed."
+      lines: [{ko: "7일 정량 사용", en: "7 days as prescribed"}]
+    - en: "Now my melasma of ten years is a memory."
+      ba_cue: spot1
+      lines: [{ko: "10년 기미 역사 속으로", en: "10-y melasma — history"}]
+    - en: "98 of 100 women. Even the pharmacists are running out."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "약사들도 품절", en: "Pharmacists sold out"}]
+    - en: "Link in bio. Tell your pharmacist hi."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "약사한테 안부 전해", en: "Say hi to your pharmacist"}]
+
+v018:
+  # social proof / sold-out urgency
+  top_copy: ["24번 완판된 이유", "1개 리뷰가 증명함"]
+  voice: uk_boy1
+  tone: urgency-hype
+  scenes:
+    - en: "Twenty-four times sold out. Let that marinate."
+      lines: [{ko: "24번 완판", en: "Sold out 24x"}, {ko: "생각해봐", en: "Let that marinate"}]
+    - en: "You can't fake that with ads. That's a riot."
+      lines: [{ko: "광고로 불가능", en: "Ads can't fake this"}, {ko: "폭동 수준", en: "That's a riot"}]
+    - en: "Melable RubyRN PicoShot. The jar causing the riot."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "폭동의 주범", en: "The riot jar"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin. Enough said."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN + goldfilm"}, {ko: "미백 풀 스택", en: "Whitening full stack"}]
+    - en: "Seven days destroyed ten years of my melasma."
+      ba_cue: spot1
+      lines: [{ko: "7일이 10년 날림", en: "7d wiped 10y"}]
+    - en: "98 out of 100. Next restock will not last past noon."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "재입고 점심 전 품절", en: "Restock gone by noon"}]
+    - en: "Link in bio. Set an alarm. You know the drill."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "알람 설정 필수", en: "Set the alarm"}]
+
+v019:
+  # minimalist - one product only
+  top_copy: ["단 하나 고르라면", "무조건 이 크림"]
+  voice: uk_boy1
+  tone: minimalist-clean
+  scenes:
+    - en: "Skincare shelf down to one jar. I'm serious."
+      lines: [{ko: "스킨 선반 1개로 줄임", en: "Shelf down to 1 jar"}, {ko: "진짜임", en: "Dead serious"}]
+    - en: "Ten-year melasma made me a maximalist. Three grand at the derm taught me wrong."
+      lines: [{ko: "10년 기미 맥시멀", en: "10y spots = maximalist"}, {ko: "3천 불 날린 교훈", en: "$3K taught me wrong"}]
+    - en: "Melable RubyRN PicoShot replaced the entire routine."
+      lines: [{ko: "메라블이 루틴 통합", en: "Melable replaced routine"}]
+    - en: "Ruby PDRN and goldfilm. Niacinamide, tranexamic, alpha-arbutin — stacked inside one pink jar."
+      lines: [{ko: "한 통에 다 있음", en: "All in one jar"}, {ko: "PDRN 골드필름", en: "PDRN + goldfilm"}]
+    - en: "Day 1 and day 7. Tell me what else I need."
+      ba_cue: spot1
+      lines: [{ko: "1일차 vs 7일차", en: "Day 1 vs Day 7"}, {ko: "뭐가 더 필요해?", en: "What else do I need?"}]
+    - en: "98 out of 100 agreed. Simplicity scales."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "심플이 정답", en: "Simplicity wins"}]
+    - en: "Link in bio. Downsize your routine, upgrade your skin."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "루틴 다이어트", en: "Routine diet — upgrade"}]
+
+v020:
+  # news flash / breaking
+  top_copy: ["한국 약국 신상", "외국인 사이 난리남"]
+  voice: tianmeixuemei-v1
+  tone: news-anchor-bit
+  scenes:
+    - en: "Breaking: Korean pharmacy shelves raided. Suspect: one pink jar."
+      lines: [{ko: "속보 한국 약국 털림", en: "BREAKING: K-pharma raid"}, {ko: "용의자 핑크 통", en: "Suspect: pink jar"}]
+    - en: "Foreigners flying in, buying twenty at a time. Customs confused."
+      lines: [{ko: "외국인이 쓸어감", en: "Foreigners buying 20x"}, {ko: "세관도 당황", en: "Customs confused"}]
+    - en: "Suspect identified: Melable RubyRN PicoShot."
+      lines: [{ko: "용의자 확정", en: "Suspect ID'd"}, {ko: "메라블 루비알엔", en: "Melable RubyRN"}]
+    - en: "Ruby PDRN plus goldfilm tech. Weaponized melanin fighter."
+      lines: [{ko: "PDRN + 골드필름", en: "PDRN + goldfilm"}, {ko: "멜라닌 파이터", en: "Weaponized fighter"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin. Tested on ten-year melasma."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "10년 기미에 테스트", en: "Tested on 10y spots"}]
+    - en: "Day 1, day 7. Now we know why the riot."
+      ba_cue: spot1
+      lines: [{ko: "7일 결과 공개", en: "Day 7 evidence"}, {ko: "폭동 원인 확인", en: "Riot reason confirmed"}]
+    - en: "98 out of 100 women. Back to you in the studio."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "스튜디오로 돌려요", en: "Back to studio"}]
+    - en: "Link in bio. Stay tuned. More at eleven."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "11시 뉴스 업데이트", en: "More at 11"}]
+
+v021:
+  top_copy: ["피부 속 1mm 혁명", "3D로 보는 기미 붕괴"]
+  voice: uk_boy1
+  tone: science-viz
+  scenes:
+    - en: "Zoom one millimeter into your face. That's where the war is."
+      lines: [{ko: "피부 1mm 확대", en: "Zoom 1mm in"}, {ko: "기미의 전쟁터", en: "Where war happens"}]
+    - en: "Melasma lives in the dermis. Most creams never get there."
+      lines: [{ko: "기미는 진피층 거주", en: "Melasma lives deep"}, {ko: "크림 대부분 못 감", en: "Most creams never reach"}]
+    - en: "Goldfilm technology carries Ruby PDRN past the barrier."
+      lines: [{ko: "골드필름이 운반체", en: "Goldfilm as carrier"}, {ko: "루비 PDRN 침투", en: "Ruby PDRN penetrates"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin. Three-pronged attack."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴 공격", en: "Alpha-arbutin strikes"}]
+    - en: "Seven days and the pigment map flips."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 색소 지도 뒤집힘", en: "Pigment map flipped"}]
+    - en: "98 of 100 users see it. Data is not vibes."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "데이터는 감 아님", en: "Data is not vibes"}]
+    - en: "Link in bio. Skin science, unlocked."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "피부 과학 언락", en: "Skin science unlocked"}]
+
+v022:
+  top_copy: ["레이저 vs 크림", "7일 후 결과는?"]
+  voice: uk_man2
+  tone: versus-debate
+  scenes:
+    - en: "Laser versus cream. Pick a side. I lost on team laser."
+      lines: [{ko: "레이저 vs 크림", en: "Laser vs cream"}, {ko: "레이저 팀 패배", en: "Team laser lost"}]
+    - en: "Three sessions, three grand. Still blotchy."
+      lines: [{ko: "3회 3천불", en: "3 sessions 3K"}, {ko: "여전히 얼룩", en: "Still blotchy"}]
+    - en: "Switched sides. Melable RubyRN PicoShot."
+      lines: [{ko: "팀 변경 메라블", en: "Switched to Melable"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin. No numbing required."
+      lines: [{ko: "PDRN 골드필름 미백 3종", en: "PDRN goldfilm trio"}, {ko: "마취 없음", en: "No numbing"}]
+    - en: "Seven days. The scoreboard shifted hard."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 스코어 역전", en: "Scoreboard flipped"}]
+    - en: "98 out of 100. Team laser can keep the membership."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "레이저 멤버십 반납", en: "Laser membership bye"}]
+    - en: "Link in bio. Choose wisely."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "현명한 선택", en: "Choose wisely"}]
+
+v023:
+  top_copy: ["메이크업 안 바르고", "거울 보는 용기"]
+  voice: chat1_female_new-3
+  tone: self-love
+  scenes:
+    - en: "I have not left home barefaced in ten years. Ten."
+      lines: [{ko: "10년간 노메이크업 불가", en: "10 years never barefaced"}, {ko: "진짜 10년", en: "TEN years"}]
+    - en: "Every morning was a concealer burial."
+      lines: [{ko: "매일 컨실러 장례식", en: "Daily concealer burial"}]
+    - en: "Melable RubyRN PicoShot changed my mornings."
+      lines: [{ko: "메라블이 아침을 바꿈", en: "Melable changed mornings"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN goldfilm"}, {ko: "미백 풀 포메이션", en: "Full whitening lineup"}]
+    - en: "Seven days and I posted a no-filter selfie."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 노필터 셀카", en: "Day 7 no-filter"}]
+    - en: "98 out of 100 women found their reflection again."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "거울을 되찾음", en: "Got reflection back"}]
+    - en: "Link in bio. Leave the concealer."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "컨실러는 두고 가", en: "Leave the concealer"}]
+
+v024:
+  top_copy: ["매장 판매원이", "마지막에 속삭인 말"]
+  voice: ai_kaiya
+  tone: retail-insider
+  scenes:
+    - en: "I worked the Sephora counter for years. Most creams lie."
+      lines: [{ko: "세포라 알바 출신", en: "Ex-Sephora staff"}, {ko: "크림 대부분 거짓말", en: "Most creams lie"}]
+    - en: "One day my Korean manager leaned over and whispered a name."
+      lines: [{ko: "한국인 매니저 속삭임", en: "K-manager whispered"}, {ko: "이름 하나", en: "One name"}]
+    - en: "Melable RubyRN PicoShot. Not on any shelf, yet."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "매대엔 없음", en: "Not on shelves yet"}]
+    - en: "Ruby PDRN plus goldfilm. And the whole whitening stack."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN goldfilm"}, {ko: "미백 풀 스택", en: "Full stack"}]
+    - en: "Seven days. My store discount couldn't beat this."
+      ba_cue: spot1
+      lines: [{ko: "7일 결과", en: "7-day result"}, {ko: "직원 할인도 못 이김", en: "Staff discount lost"}]
+    - en: "98 of 100 women. Insider intel confirmed."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "내부자 확인", en: "Insider confirmed"}]
+    - en: "Link in bio. Retail is not ready."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "매장은 준비 안 됨", en: "Retail is not ready"}]
+
+v025:
+  top_copy: ["10년 기미 1통 만에", "우는 엄마 영상"]
+  voice: oversea_male1
+  tone: family-emotional
+  scenes:
+    - en: "My mom cried when she saw my face at Sunday dinner."
+      lines: [{ko: "일요일 저녁 엄마 울음", en: "Sunday dinner tears"}, {ko: "내 얼굴 보고", en: "seeing my face"}]
+    - en: "Ten years of melasma. Three grand burned at clinics."
+      lines: [{ko: "10년 기미 3천 불", en: "10y spots 3K"}, {ko: "클리닉 다 실패", en: "All clinics failed"}]
+    - en: "Melable RubyRN PicoShot arrived from my aunt in Seoul."
+      lines: [{ko: "서울 이모가 보낸", en: "Seoul aunt sent"}, {ko: "메라블 루비알엔", en: "Melable RubyRN"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "PDRN 골드필름 미백 3종", en: "PDRN goldfilm trio"}]
+    - en: "Seven days. Sunday dinner. Mom cried the good kind."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 엄마 감동 눈물", en: "Day 7 mom happy tears"}]
+    - en: "98 of 100 women. Call your mom."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "엄마한테 전화해", en: "Call your mom"}]
+    - en: "Link in bio. Love letter from Korea."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "한국발 러브레터", en: "Korean love letter"}]
+
+v026:
+  top_copy: ["피부 3D 스캔 결과", "기미 98% 삭제됨"]
+  voice: uk_boy1
+  tone: pseudo-clinical-report
+  scenes:
+    - en: "Skin 3D scan report, day zero. Red zones everywhere."
+      lines: [{ko: "3D 스캔 리포트", en: "3D scan report"}, {ko: "Day 0 적색 지대", en: "Day 0 red zones"}]
+    - en: "Melasma depth dermal. Protocol Melable RubyRN PicoShot."
+      lines: [{ko: "기미 깊이 진피", en: "Depth dermal"}, {ko: "프로토콜 메라블", en: "Protocol Melable"}]
+    - en: "Active ingredients deployed. Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin."
+      lines: [{ko: "유효성분 배치 완료", en: "Actives deployed"}]
+    - en: "Scan re-run at day seven. Red zones retreating."
+      ba_cue: spot1
+      lines: [{ko: "7일 재스캔", en: "Rescan Day 7"}, {ko: "적색 지대 후퇴", en: "Red zones retreat"}]
+    - en: "Patient satisfaction 98 of 100."
+      lines: [{ko: "만족도 98 100", en: "Satisfaction 98 100"}]
+    - en: "Link in bio. File closed."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "파일 종결", en: "Case closed"}]
+
+v027:
+  top_copy: ["안 써본 언니를 위한", "3분 체험 가이드"]
+  voice: ai_shatang
+  tone: tutorial-walkthrough
+  scenes:
+    - en: "Never tried it? Three minutes of your life, right now."
+      lines: [{ko: "안 써본 언니에게", en: "For first-timers"}, {ko: "3분만 투자", en: "Give 3 min"}]
+    - en: "Step one. Double cleanse. Step two. This jar."
+      lines: [{ko: "1 이중 세안", en: "#1 double cleanse"}, {ko: "2 이 통", en: "#2 this jar"}]
+    - en: "Melable RubyRN PicoShot. Fingertip dab, cheeks and forehead."
+      lines: [{ko: "메라블 루비알엔", en: "Melable RubyRN"}, {ko: "볼과 이마에 톡톡", en: "Dab cheeks forehead"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin do the rest."
+      lines: [{ko: "성분이 알아서 일함", en: "Actives do the rest"}]
+    - en: "Check in on day seven. Prepare for whiplash."
+      ba_cue: spot1
+      lines: [{ko: "7일차 확인", en: "Check Day 7"}, {ko: "충격 대비", en: "Prepare whiplash"}]
+    - en: "98 of 100 women completed the tutorial successfully."
+      lines: [{ko: "튜토리얼 합격률 98", en: "98% pass rate"}]
+    - en: "Link in bio. Graduated."
+      lines: [{ko: "링크 프로필 졸업", en: "Graduated link in bio"}]
+
+v028:
+  top_copy: ["24번 완판된 이유", "레이저보다 빠른 결과"]
+  voice: uk_oldman3
+  tone: straight-shooter
+  scenes:
+    - en: "Twenty-four sold-outs. Ten-year melasma. One cream. Math checks out."
+      lines: [{ko: "24번 완판", en: "24 sellouts"}, {ko: "10년 기미 1개 크림", en: "10y spots 1 cream"}]
+    - en: "Melable RubyRN PicoShot is not marketing, it is Korean pharma-grade."
+      lines: [{ko: "마케팅 아님 약국급", en: "Not marketing pharma"}]
+    - en: "Ruby PDRN and goldfilm tech bypass the guesswork."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN goldfilm"}, {ko: "추측 생략", en: "No guesswork"}]
+    - en: "Niacinamide, tranexamic, alpha-arbutin do the fade."
+      lines: [{ko: "나이아신 트라넥사믹", en: "Niacinamide tranexamic"}, {ko: "알파아르부틴 페이드", en: "alpha-arbutin fade"}]
+    - en: "Seven days later, side-by-side speaks."
+      ba_cue: spot1
+      lines: [{ko: "7일 후 비교", en: "7-day side by side"}]
+    - en: "98 of 100. Next restock disappears fast."
+      lines: [{ko: "100명 중 98명", en: "98 of 100"}, {ko: "재입고 순삭", en: "Restock vanishes"}]
+    - en: "Link in bio. Do not whine when it is gone."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "품절나면 징징 금지", en: "No whining if sold out"}]
+
+v029:
+  top_copy: ["멜라닌 피부 주목", "기미 타입별 공략법"]
+  voice: uk_boy1
+  tone: community-specific
+  scenes:
+    - en: "If you have melanin-rich skin, listen up. Most creams make it worse."
+      lines: [{ko: "멜라닌 많은 피부 주목", en: "Melanin-rich listen up"}, {ko: "대부분 크림 악화", en: "Most creams worsen"}]
+    - en: "Ten years of melasma. Countless trial and error."
+      lines: [{ko: "10년 기미 무수한 실패", en: "10y spots endless fail"}]
+    - en: "Melable RubyRN PicoShot was built for pigmented skin types."
+      lines: [{ko: "색소 피부 최적화", en: "Built for pigmented skin"}]
+    - en: "Ruby PDRN stabilises, goldfilm delivers, niacinamide calms, tranexamic and alpha-arbutin fade."
+      lines: [{ko: "PDRN 안정 골드필름 전달", en: "PDRN stabilise goldfilm deliver"}, {ko: "나이아신 진정 페이드", en: "niacinamide calm fade"}]
+    - en: "Seven days. No rebound, no inflammation."
+      ba_cue: spot1
+      lines: [{ko: "7일 반동 없음", en: "7d no rebound"}, {ko: "염증 없음", en: "no inflammation"}]
+    - en: "98 of 100 across all skin tones."
+      lines: [{ko: "모든 피부톤 98", en: "98 all tones"}]
+    - en: "Link in bio. Inclusive by chemistry."
+      lines: [{ko: "링크 프로필", en: "Link in bio"}, {ko: "화학으로 포용", en: "Inclusive by chemistry"}]
+
+v030:
+  top_copy: ["여행 파우치 필수템", "한국에서 가져오세요"]
+  voice: tianmeixuemei-v1
+  tone: travel-haul
+  scenes:
+    - en: "Flying to Seoul? Your carry-on needs one thing."
+      lines: [{ko: "서울 가시나요", en: "Flying to Seoul"}, {ko: "캐리온 필수템", en: "Carry-on essential"}]
+    - en: "Every pharmacy, first shelf, Melable RubyRN PicoShot."
+      lines: [{ko: "약국 첫 선반", en: "First pharmacy shelf"}, {ko: "메라블 루비알엔", en: "Melable RubyRN"}]
+    - en: "Buy five. Thank me later. Customs will look the other way."
+      lines: [{ko: "5개 사 오세요", en: "Buy five"}, {ko: "세관도 봐줌", en: "Customs looks away"}]
+    - en: "Ruby PDRN, goldfilm, niacinamide, tranexamic, alpha-arbutin. Travel-proof."
+      lines: [{ko: "PDRN 골드필름", en: "PDRN goldfilm"}, {ko: "여행용 강자", en: "Travel-proof stack"}]
+    - en: "Ten-year melasma survived Asia jet lag. Gone in seven days."
+      ba_cue: spot1
+      lines: [{ko: "10년 기미 7일 소멸", en: "10y spots 7d gone"}]
+    - en: "98 out of 100 travellers re-bought."
+      lines: [{ko: "재구매율 98", en: "98 rebought"}]
+    - en: "Link in bio. Or grab it at Incheon duty-free."
+      lines: [{ko: "링크 또는 인천 면세", en: "Link or Incheon duty-free"}]

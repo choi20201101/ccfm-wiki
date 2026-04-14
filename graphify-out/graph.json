@@ -8,72 +8,80 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "id": "raw_qscv_extract_and_chunk_py",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "raw_qscv_extract_and_chunk_py"
     },
     {
       "label": "slugify()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L21",
-      "id": "extract_and_chunk_slugify",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_slugify"
     },
     {
       "label": "iter_block_items()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L27",
-      "id": "extract_and_chunk_iter_block_items",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_iter_block_items"
     },
     {
       "label": "paragraph_text()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L41",
-      "id": "extract_and_chunk_paragraph_text",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_paragraph_text"
     },
     {
       "label": "table_to_md()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L64",
-      "id": "extract_and_chunk_table_to_md",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_table_to_md"
     },
     {
       "label": "extract()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L76",
-      "id": "extract_and_chunk_extract",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_extract"
     },
     {
       "label": "chunk_and_write()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L92",
-      "id": "extract_and_chunk_chunk_and_write",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_chunk_and_write"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L118",
-      "id": "extract_and_chunk_main",
-      "community": 6
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
+      "id": "extract_and_chunk_main"
     },
     {
-      "label": "QSCV docx \u2192 raw/qscv/ \uc6d0\ubcf8 md + chunk/ 200\uc904 \uccad\ud06c \ubd84\ud560 - \ud45c \uc140\ub3c4 \ud14d\uc2a4\ud2b8\ub85c \ucd94\ucd9c - \uc774\ubbf8\uc9c0/\ub3c4\ud615\uc740 [IMG] \ud50c",
+      "label": "QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG] 플",
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 6,
-      "community_label": "QSCV \ubb38\uc11c \ucd94\ucd9c \ucf54\ub4dc",
+      "community": 9,
+      "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_rationale_1"
     },
     {
@@ -81,445 +89,1128 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_compose_py",
-      "community": 9
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "raw_skills_diet_b2a_scripts_compose_py"
     },
     {
       "label": "mosaic()",
       "file_type": "code",
-      "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
-      "source_location": "L12",
-      "id": "compose_mosaic",
-      "community": 9
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L60",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_mosaic"
     },
     {
       "label": "video1()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L22",
-      "id": "compose_video1",
-      "community": 9
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_video1"
     },
     {
       "label": "video_23()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L71",
-      "id": "compose_video_23",
-      "community": 9
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_video_23"
     },
     {
       "label": "main()",
       "file_type": "code",
-      "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
-      "source_location": "L131",
-      "id": "compose_main",
-      "community": 9
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L189",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_main"
     },
     {
-      "label": "Step 03 \u2014 ffmpeg filter_complex compose: mosaic + overlays + audio \u2192 3 mp4s.",
+      "label": "Step 03 — ffmpeg filter_complex compose: mosaic + overlays + audio → 3 mp4s.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "id": "compose_rationale_1",
-      "community": 9
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_rationale_1"
     },
     {
       "label": "detect_face.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "community": 12
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "raw_skills_diet_b2a_scripts_detect_face_py"
     },
     {
       "label": "try_opencv_detect()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L16",
-      "id": "detect_face_try_opencv_detect",
-      "community": 12
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "detect_face_try_opencv_detect"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L40",
-      "id": "detect_face_main",
-      "community": 12
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "detect_face_main"
     },
     {
-      "label": "Step 01b (optional) \u2014 detect face in after.png and save face_box.json.  Uses O",
+      "label": "Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "id": "detect_face_rationale_1",
-      "community": 12
+      "community": 17,
+      "community_label": "기타: detect_face.py",
+      "id": "detect_face_rationale_1"
     },
     {
       "label": "export.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_export_py",
-      "community": 16
+      "community": 23,
+      "community_label": "기타: export.py",
+      "id": "raw_skills_diet_b2a_scripts_export_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L26",
-      "id": "export_main",
-      "community": 16
+      "community": 23,
+      "community_label": "기타: export.py",
+      "id": "export_main"
     },
     {
-      "label": "Step 05 \u2014 thumbnails + captions + zip.",
+      "label": "Step 05 — thumbnails + captions + zip.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "id": "export_rationale_1",
-      "community": 16
+      "community": 23,
+      "community_label": "기타: export.py",
+      "id": "export_rationale_1"
     },
     {
       "label": "kling_client.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "raw_skills_diet_b2a_scripts_kling_client_py"
     },
     {
       "label": "read_keys()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L24",
-      "id": "kling_client_read_keys",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_read_keys"
     },
     {
       "label": "token()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L36",
-      "id": "kling_client_token",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_token"
     },
     {
       "label": "submit()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L43",
-      "id": "kling_client_submit",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_submit"
     },
     {
       "label": "poll()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L69",
-      "id": "kling_client_poll",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_poll"
     },
     {
       "label": "download()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L95",
-      "id": "kling_client_download",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_download"
     },
     {
       "label": "save_state()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L104",
-      "id": "kling_client_save_state",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_save_state"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L108",
-      "id": "kling_client_main",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_main"
     },
     {
-      "label": "Step 02 \u2014 Kling image2video: JWT, submit, poll, download, resume.",
+      "label": "Step 02 — Kling image2video: JWT, submit, poll, download, resume.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "id": "kling_client_rationale_1",
-      "community": 7
+      "community": 10,
+      "community_label": "AI 아바타/영상 툴",
+      "id": "kling_client_rationale_1"
     },
     {
       "label": "lib.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_lib_py",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "raw_skills_diet_b2a_scripts_lib_py"
     },
     {
       "label": "skill_root()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L9",
-      "id": "lib_skill_root",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_skill_root"
     },
     {
       "label": "load_config()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L13",
-      "id": "lib_load_config",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_load_config"
     },
     {
       "label": "rel()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L20",
-      "id": "lib_rel",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_rel"
     },
     {
       "label": "out_dir()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L28",
-      "id": "lib_out_dir",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_out_dir"
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L34",
-      "id": "lib_run",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_run"
     },
     {
       "label": "ffprobe_duration()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L39",
-      "id": "lib_ffprobe_duration",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_ffprobe_duration"
     },
     {
       "label": "Shared helpers: config loading, path resolution, ffmpeg runner.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "id": "lib_rationale_1",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_rationale_1"
     },
     {
       "label": "Resolve a path relative to skill root.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L21",
-      "id": "lib_rationale_21",
-      "community": 8
+      "community": 11,
+      "community_label": "기타: lib.py",
+      "id": "lib_rationale_21"
     },
     {
       "label": "make_overlays.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "community": 13
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "raw_skills_diet_b2a_scripts_make_overlays_py"
     },
     {
       "label": "stroked()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L13",
-      "id": "make_overlays_stroked",
-      "community": 13
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "make_overlays_stroked"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L31",
-      "id": "make_overlays_main",
-      "community": 13
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "make_overlays_main"
     },
     {
-      "label": "Step 01 \u2014 generate stroked text PNG overlays from config.copy.",
+      "label": "Step 01 — generate stroked text PNG overlays from config.copy.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "id": "make_overlays_rationale_1",
-      "community": 13
+      "community": 18,
+      "community_label": "기타: make_overlays.py",
+      "id": "make_overlays_rationale_1"
     },
     {
       "label": "qa_check.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "community": 14
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "raw_skills_diet_b2a_scripts_qa_check_py"
     },
     {
       "label": "probe()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L11",
-      "id": "qa_check_probe",
-      "community": 14
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "qa_check_probe"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L20",
-      "id": "qa_check_main",
-      "community": 14
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "qa_check_main"
     },
     {
-      "label": "Step 04 \u2014 quality checks on the 3 output mp4s.",
+      "label": "Step 04 — quality checks on the 3 output mp4s.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "id": "qa_check_rationale_1",
-      "community": 14
+      "community": 19,
+      "community_label": "기타: qa_check.py",
+      "id": "qa_check_rationale_1"
     },
     {
       "label": "run_all.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_run_all_py",
-      "community": 17
+      "community": 24,
+      "community_label": "기타: run_all.py",
+      "id": "raw_skills_diet_b2a_scripts_run_all_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L20",
-      "id": "run_all_main",
-      "community": 17
+      "community": 24,
+      "community_label": "기타: run_all.py",
+      "id": "run_all_main"
     },
     {
-      "label": "Orchestrator \u2014 run steps 00\u219205 idempotently.",
+      "label": "Orchestrator — run steps 00→05 idempotently.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "id": "run_all_rationale_1",
-      "community": 17
+      "community": 24,
+      "community_label": "기타: run_all.py",
+      "id": "run_all_rationale_1"
     },
     {
       "label": "validate_input.py",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "id": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "community": 18
+      "community": 25,
+      "community_label": "기타: validate_input.py",
+      "id": "raw_skills_diet_b2a_scripts_validate_input_py"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L12",
-      "id": "validate_input_main",
-      "community": 18
+      "community": 25,
+      "community_label": "기타: validate_input.py",
+      "id": "validate_input_main"
     },
     {
-      "label": "Step 00 \u2014 validate inputs and config.",
+      "label": "Step 00 — validate inputs and config.",
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "id": "validate_input_rationale_1",
-      "community": 18
+      "community": 25,
+      "community_label": "기타: validate_input.py",
+      "id": "validate_input_rationale_1"
+    },
+    {
+      "label": "build_sets.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
+      "source_location": "L1",
+      "community": 29,
+      "community_label": "기타: build_sets.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
+    },
+    {
+      "label": "Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
+      "source_location": "L1",
+      "community": 29,
+      "community_label": "기타: build_sets.py",
+      "id": "build_sets_rationale_1"
+    },
+    {
+      "label": "detect_faces.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L1",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py"
+    },
+    {
+      "label": "_pick_best_face()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L24",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_pick_best_face"
+    },
+    {
+      "label": "_extract_frame()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L35",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_extract_frame"
+    },
+    {
+      "label": "_detect_in_clip()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L47",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_detect_in_clip"
+    },
+    {
+      "label": "detect_for_set()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L68",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_detect_for_set"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L84",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_main"
+    },
+    {
+      "label": "Detect faces in each set's seed images, store per-set mosaic box.  The seed be",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L1",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_rationale_1"
+    },
+    {
+      "label": "Sample multiple frames, pick the largest/median face box.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L48",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_rationale_48"
+    },
+    {
+      "label": "Detect faces SEPARATELY for before and after clips.     CRITICAL: Kling generat",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L69",
+      "community": 12,
+      "community_label": "기타: detect_faces.py",
+      "id": "detect_faces_rationale_69"
+    },
+    {
+      "label": "gemini_client.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L1",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py"
+    },
+    {
+      "label": "new_client()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L23",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_new_client"
+    },
+    {
+      "label": "select_thinking_model()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L45",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_select_thinking_model"
+    },
+    {
+      "label": "clean_logo()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L109",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_clean_logo"
+    },
+    {
+      "label": "generate()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L118",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_generate"
+    },
+    {
+      "label": "Thin wrapper around gemini-imagegen/gemini_auto.GeminiImageGen. Always applies",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L1",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_rationale_1"
+    },
+    {
+      "label": "Click the top model-picker and choose '2.5 Pro' / Thinking mode.     Gemini web",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L46",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_rationale_46"
+    },
+    {
+      "label": "In-place replace the image with logo-stripped version.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L110",
+      "community": 14,
+      "community_label": "기타: gemini_client.py",
+      "id": "gemini_client_rationale_110"
+    },
+    {
+      "label": "logo_remover.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L1",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py"
+    },
+    {
+      "label": "make_corner_masks()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L47",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_make_corner_masks"
+    },
+    {
+      "label": "remove_logo()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L61",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_remove_logo"
+    },
+    {
+      "label": "process_image()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L90",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_process_image"
+    },
+    {
+      "label": "batch_process()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L109",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_batch_process"
+    },
+    {
+      "label": "하단 좌/우 코너에 타원형 마스크 생성",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L48",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_rationale_48"
+    },
+    {
+      "label": "양쪽 하단 코너를 인페인팅하여 로고 제거      1. TELEA 알고리즘: 빠른 행진 기반 (텍스처에 강함)     2. NS 알고리즘:",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L62",
+      "community": 15,
+      "community_label": "기타: logo_remover.py",
+      "id": "logo_remover_rationale_62"
+    },
+    {
+      "label": "analyze_bgm.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L1",
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py"
+    },
+    {
+      "label": "analyze()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L13",
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "analyze_bgm_analyze"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L57",
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "analyze_bgm_main"
+    },
+    {
+      "label": "Analyze 3 reference BGM tracks: BPM, drop (onset max energy) second, first-choru",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L1",
+      "community": 20,
+      "community_label": "기타: analyze_bgm.py",
+      "id": "analyze_bgm_rationale_1"
+    },
+    {
+      "label": "build_prompts.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
+      "source_location": "L1",
+      "community": 26,
+      "community_label": "기타: build_prompts.py",
+      "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py"
+    },
+    {
+      "label": "write()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
+      "source_location": "L21",
+      "community": 26,
+      "community_label": "기타: build_prompts.py",
+      "id": "build_prompts_write"
+    },
+    {
+      "label": "Generate 20 Kling prompt files (5 sets × 4 keys) from styles.json.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
+      "source_location": "L1",
+      "community": 26,
+      "community_label": "기타: build_prompts.py",
+      "id": "build_prompts_rationale_1"
+    },
+    {
+      "label": "check_session.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
+      "source_location": "L1",
+      "community": 27,
+      "community_label": "기타: check_session.py",
+      "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
+      "source_location": "L13",
+      "community": 27,
+      "community_label": "기타: check_session.py",
+      "id": "check_session_main"
+    },
+    {
+      "label": "Verify Gemini session is still valid. Non-headless to allow user to see state.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
+      "source_location": "L1",
+      "community": 27,
+      "community_label": "기타: check_session.py",
+      "id": "check_session_rationale_1"
+    },
+    {
+      "label": "gen_seeds.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L1",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py"
+    },
+    {
+      "label": "page_text()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L61",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_page_text"
+    },
+    {
+      "label": "was_refused()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L68",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_was_refused"
+    },
+    {
+      "label": "_try()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L73",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_try"
+    },
+    {
+      "label": "_with_fallback()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L81",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_with_fallback"
+    },
+    {
+      "label": "run_one()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L91",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_run_one"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L139",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_main"
+    },
+    {
+      "label": "Generate before/after seeds for 5 sets via Gemini + auto logo removal.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L1",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_rationale_1"
+    },
+    {
+      "label": "Attempt a single generation; return path or None.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L74",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_rationale_74"
+    },
+    {
+      "label": "Run primary; if no image (refusal), retry with safe prompt and fewer uploads.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L82",
+      "community": 8,
+      "community_label": "기타: gen_seeds.py",
+      "id": "gen_seeds_rationale_82"
+    },
+    {
+      "label": "gen_scales.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L1",
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py"
+    },
+    {
+      "label": "run_one()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L27",
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "gen_scales_run_one"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L58",
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "gen_scales_main"
+    },
+    {
+      "label": "Generate per-set scale images with varied kg via Gemini + auto logo removal.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L1",
+      "community": 21,
+      "community_label": "기타: gen_scales.py",
+      "id": "gen_scales_rationale_1"
+    },
+    {
+      "label": "gen_kling.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L1",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py"
+    },
+    {
+      "label": "read_keys()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L35",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_read_keys"
+    },
+    {
+      "label": "token()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L45",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_token"
+    },
+    {
+      "label": "submit()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L52",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_submit"
+    },
+    {
+      "label": "poll()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L77",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_poll"
+    },
+    {
+      "label": "download()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L102",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_download"
+    },
+    {
+      "label": "save_state()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L110",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_save_state"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L114",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_main"
+    },
+    {
+      "label": "Kling image2video batch for all sets × 4 keys. Resume-safe.",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L1",
+      "community": 13,
+      "community_label": "기타: gen_kling.py",
+      "id": "gen_kling_rationale_1"
+    },
+    {
+      "label": "compose.py",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L1",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+    },
+    {
+      "label": "get_boxes()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L29",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_get_boxes"
+    },
+    {
+      "label": "stroked()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L42",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_stroked"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L71",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_run"
+    },
+    {
+      "label": "build_overlays()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L76",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_build_overlays"
+    },
+    {
+      "label": "compose_v1()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L95",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_compose_v1"
+    },
+    {
+      "label": "compose_v23()",
+      "file_type": "code",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L135",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_compose_v23"
+    },
+    {
+      "label": "Return (before_box, after_box). Accept both legacy (flat dict per set)     and",
+      "file_type": "rationale",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L30",
+      "community": 4,
+      "community_label": "기타: compose.py",
+      "id": "compose_rationale_30"
+    },
+    {
+      "label": "inject_diet_b2a_v2_aliases.py",
+      "file_type": "code",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "scripts_inject_diet_b2a_v2_aliases_py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L46",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "inject_diet_b2a_v2_aliases_main"
+    },
+    {
+      "label": "Inject Korean alias nodes for diet-b2a-v2 into the graphify graph.json.  Rationa",
+      "file_type": "rationale",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "community": 28,
+      "community_label": "기타: inject_diet_b2a_v2_aliases.py",
+      "id": "inject_diet_b2a_v2_aliases_rationale_1"
     },
     {
       "label": "inject_iboss_entities.py",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "id": "scripts_inject_iboss_entities_py",
-      "community": 10
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "scripts_inject_iboss_entities_py"
     },
     {
       "label": "make_node()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L119",
-      "id": "inject_iboss_entities_make_node",
-      "community": 10
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_make_node"
     },
     {
       "label": "make_edge()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L134",
-      "id": "inject_iboss_entities_make_edge",
-      "community": 10
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_make_edge"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L149",
-      "id": "inject_iboss_entities_main",
-      "community": 10
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_main"
     },
     {
-      "label": "Inject iboss (\ucd5c\uc7ac\uba85 i-boss 201\uac74) entities into the knowledge graph.  Why: graphi",
+      "label": "Inject iboss (최재명 i-boss 201건) entities into the knowledge graph.  Why: graphi",
       "file_type": "rationale",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "id": "inject_iboss_entities_rationale_1",
-      "community": 10
+      "community": 16,
+      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
+      "id": "inject_iboss_entities_rationale_1"
     },
     {
       "label": "regen_graph_report.py",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "id": "scripts_regen_graph_report_py",
-      "community": 15
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "scripts_regen_graph_report_py"
     },
     {
       "label": "pick_label()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L46",
-      "id": "regen_graph_report_pick_label",
-      "community": 15
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_pick_label"
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L62",
-      "id": "regen_graph_report_main",
-      "community": 15
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
+      "id": "regen_graph_report_main"
     },
     {
       "label": "Re-generate GRAPH_REPORT.md using the semantic community labels stored on each n",
       "file_type": "rationale",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 15,
-      "community_label": "\uadf8\ub798\ud504 \uc778\ub371\uc2f1 \uc2a4\ud06c\ub9bd\ud2b8",
+      "community": 22,
+      "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_rationale_1"
     },
     {
-      "label": "\ub8e8\uc194\ube0c \ud37c\ud3ec\uba3c\uc2a4 \uce94\ubc84\uc2a4 v1 \u2192 xlsx (\ubc14\ud0d5\ud654\uba74 \ucd9c\ub825)",
+      "label": "루솔브 퍼포먼스 캔버스 v1 → xlsx (바탕화면 출력)",
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
       "source_location": "L1",
-      "community": 19,
-      "community_label": "\ub8e8\uc194\ube0c \ud37c\ud3ec\uba3c\uc2a4 \uce94\ubc84\uc2a4 \ucf54\ub4dc",
+      "community": 30,
+      "community_label": "루솔브 퍼포먼스 캔버스 코드",
       "id": "export_canvas_rusolve_rationale_1"
     },
     {
-      "label": "CCFM \ucf58\ud06c\ub9ac\ud2b8\ud30c\uba38\uc2a4",
+      "label": "CCFM 콘크리트파머스",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -527,12 +1218,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "entity_ccfm"
     },
     {
-      "label": "\ucd5c\uc7ac\uba85 (CEO)",
+      "label": "최재명 (CEO)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -540,8 +1231,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "person_choi_jaemyung"
     },
     {
@@ -553,8 +1244,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable"
     },
     {
@@ -566,12 +1257,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_rusolve"
     },
     {
-      "label": "\uc2a4\ub9c8\uc77c\uac8c\uc774\ud2b8",
+      "label": "스마일게이트",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -579,12 +1270,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "entity_smilegate"
     },
     {
-      "label": "\ub124\uc774\ubc84",
+      "label": "네이버",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -592,12 +1283,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "entity_naver"
     },
     {
-      "label": "\ubc31\uc601\ubb34 (\ub124\uc774\ubc84 \ucc44\ub110\ucee8\uc124\ud305)",
+      "label": "백영무 (네이버 채널컨설팅)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -605,12 +1296,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "person_baek_youngmoo"
     },
     {
-      "label": "\uc2e0\ub3d9\ud611 (AI Cell \ub9ac\ub354 \ud6c4\ubcf4)",
+      "label": "신동협 (AI Cell 리더 후보)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -618,12 +1309,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "person_shin_donghyup"
     },
     {
-      "label": "\uac15\uc6a9\uae38 (\ucef4\ud50c\ub77c\uc774\uc5b8\uc2a4)",
+      "label": "강용길 (컴플라이언스)",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -631,12 +1322,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "person_kang_yonggil"
     },
     {
-      "label": "\ud55c\ud0dc\uc601 CD",
+      "label": "한태영 CD",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -644,12 +1335,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "person_han_taeyoung"
     },
     {
-      "label": "\uc724\uc9c0\ubbfc CD",
+      "label": "윤지민 CD",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -657,12 +1348,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "person_yoon_jimin"
     },
     {
-      "label": "Merable HK (\ud64d\ucf69\ubc95\uc778)",
+      "label": "Merable HK (홍콩법인)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -670,8 +1361,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_hk"
     },
     {
@@ -683,12 +1374,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_tw"
     },
     {
-      "label": "\uc6b0\uc601\ud68c\uacc4\ubc95\uc778",
+      "label": "우영회계법인",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -696,12 +1387,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "entity_wooyoung_acc"
     },
     {
-      "label": "TFDA (\ub300\ub9cc \uaddc\uc81c)",
+      "label": "TFDA (대만 규제)",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -709,12 +1400,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_tfda"
     },
     {
-      "label": "BPOM (\uc778\ub3c4\ub124\uc2dc\uc544 \uaddc\uc81c)",
+      "label": "BPOM (인도네시아 규제)",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -722,12 +1413,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_bpom"
     },
     {
-      "label": "\ud560\ub784 \uc778\uc99d",
+      "label": "할랄 인증",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -735,12 +1426,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_halal"
     },
     {
-      "label": "\uc0f5\ub77c\uc778 (Shopline)",
+      "label": "샵라인 (Shopline)",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -748,12 +1439,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_shopline"
     },
     {
-      "label": "Q10 \uba54\uac00\uc138\uc77c",
+      "label": "Q10 메가세일",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -761,12 +1452,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_q10"
     },
     {
-      "label": "X\ucc44\ub110 (\uc77c\ubcf8)",
+      "label": "X채널 (일본)",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -774,12 +1465,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_xchannel"
     },
     {
-      "label": "\ud2f1\ud1a1\uc0f5",
+      "label": "틱톡샵",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -787,12 +1478,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_tiktokshop"
     },
     {
-      "label": "\ucfe0\ud321",
+      "label": "쿠팡",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -800,12 +1491,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_coupang"
     },
     {
-      "label": "\ub124\uc774\ubc84 GFA",
+      "label": "네이버 GFA",
       "file_type": "document",
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
@@ -813,12 +1504,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_naver_gfa"
     },
     {
-      "label": "SPA \uacc4\uc57d",
+      "label": "SPA 계약",
       "file_type": "document",
       "source_file": "wiki/domains/ma-exit.md",
       "source_location": null,
@@ -826,12 +1517,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "concept_spa"
     },
     {
-      "label": "\uc774\uc804\uac00\uaca9 (Transfer Pricing)",
+      "label": "이전가격 (Transfer Pricing)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -839,8 +1530,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_transfer_pricing"
     },
     {
@@ -852,12 +1543,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_dual_engine"
     },
     {
-      "label": "A\u2192Y/Z \uc870\uc9c1 \ubaa8\ub378",
+      "label": "A→Y/Z 조직 모델",
       "file_type": "document",
       "source_file": "wiki/domains/org-restructure.md",
       "source_location": null,
@@ -865,8 +1556,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "concept_ayz_model"
     },
     {
@@ -878,12 +1569,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "concept_ai_cell"
     },
     {
-      "label": "\ub9c8\ucf00\ud3051\ud300 (100% AI \ud30c\uc77c\ub7ff)",
+      "label": "마케팅1팀 (100% AI 파일럿)",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -891,12 +1582,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "concept_marketing_team1"
     },
     {
-      "label": "\ub300\ub9cc \uc2dc\uc7a5",
+      "label": "대만 시장",
       "file_type": "document",
       "source_file": "wiki/domains/taiwan-market.md",
       "source_location": null,
@@ -904,12 +1595,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_taiwan_market"
     },
     {
-      "label": "\ub3d9\ub0a8\uc544 \ud2f1\ud1a1\uc0f5",
+      "label": "동남아 틱톡샵",
       "file_type": "document",
       "source_file": "wiki/domains/sea-tiktok.md",
       "source_location": null,
@@ -917,12 +1608,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_sea_tiktok"
     },
     {
-      "label": "\uc77c\ubcf8 \uc2dc\uc7a5",
+      "label": "일본 시장",
       "file_type": "document",
       "source_file": "wiki/domains/japan-market.md",
       "source_location": null,
@@ -930,8 +1621,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_japan_market"
     },
     {
@@ -943,12 +1634,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "domain_ma_exit"
     },
     {
-      "label": "\uc870\uc9c1\uac1c\ud3b8",
+      "label": "조직개편",
       "file_type": "document",
       "source_file": "wiki/domains/org-restructure.md",
       "source_location": null,
@@ -956,12 +1647,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "domain_org_restructure"
     },
     {
-      "label": "\uacbd\uc601/\uc7ac\ubb34/\ud68c\uacc4",
+      "label": "경영/재무/회계",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -969,12 +1660,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_finance"
     },
     {
-      "label": "\uc778\uc0ac/\ucd1d\ubb34",
+      "label": "인사/총무",
       "file_type": "document",
       "source_file": "wiki/domains/hr-admin.md",
       "source_location": null,
@@ -982,12 +1673,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "\uc870\uc9c1\uac1c\ud3b8 & HR",
+      "community": 5,
+      "community_label": "조직개편 & HR",
       "id": "domain_hr_admin"
     },
     {
-      "label": "\ubc14\uc774\ube0c\ucf54\ub529",
+      "label": "바이브코딩",
       "file_type": "document",
       "source_file": "wiki/domains/vibe-coding.md",
       "source_location": null,
@@ -995,12 +1686,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_vibe_coding"
     },
     {
-      "label": "AI \uc790\ub3d9\ud654",
+      "label": "AI 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/ai-automation.md",
       "source_location": null,
@@ -1008,12 +1699,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_ai_automation"
     },
     {
-      "label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654",
+      "label": "콘텐츠 AI 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -1022,11 +1713,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "domain_content_ai"
     },
     {
-      "label": "\ub9c8\ucf00\ud305 \uc790\ub3d9\ud654",
+      "label": "마케팅 자동화",
       "file_type": "document",
       "source_file": "wiki/domains/marketing-automation.md",
       "source_location": null,
@@ -1034,12 +1725,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "domain_marketing_automation"
     },
     {
-      "label": "DA \ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c",
+      "label": "DA 크리에이티브",
       "file_type": "document",
       "source_file": "wiki/domains/da-creative.md",
       "source_location": null,
@@ -1047,12 +1738,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_da_creative"
     },
     {
-      "label": "\ubc14\uc774\ub7f4",
+      "label": "바이럴",
       "file_type": "document",
       "source_file": "wiki/domains/viral.md",
       "source_location": null,
@@ -1060,12 +1751,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_viral"
     },
     {
-      "label": "\uc2ec\ub9ac\ud559",
+      "label": "심리학",
       "file_type": "document",
       "source_file": "wiki/domains/psychology.md",
       "source_location": null,
@@ -1073,8 +1764,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "domain_psychology"
     },
     {
@@ -1087,7 +1778,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_ffmpeg"
     },
     {
@@ -1100,7 +1791,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_gemini_vision"
     },
     {
@@ -1113,7 +1804,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_elevenlabs"
     },
     {
@@ -1126,7 +1817,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_whisper"
     },
     {
@@ -1139,7 +1830,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_kling"
     },
     {
@@ -1152,7 +1843,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_omnihuman"
     },
     {
@@ -1165,7 +1856,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_creatify_aurora"
     },
     {
@@ -1178,7 +1869,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_rhubarb"
     },
     {
@@ -1191,7 +1882,7 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_fal_ai"
     },
     {
@@ -1203,8 +1894,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
-      "community_label": "\ub85c\uace0 \uc81c\uac70 \uae30\uc220",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tool_opencv"
     },
     {
@@ -1216,8 +1907,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
-      "community_label": "\ub85c\uace0 \uc81c\uac70 \uae30\uc220",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tool_lama"
     },
     {
@@ -1230,11 +1921,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_afx"
     },
     {
-      "label": "bob\u2192dd\u2192harness\u2192eval\u2192learnings \ud30c\uc774\ud504\ub77c\uc778",
+      "label": "bob→dd→harness→eval→learnings 파이프라인",
       "file_type": "document",
       "source_file": "wiki/domains/vibe-coding.md",
       "source_location": null,
@@ -1242,8 +1933,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "skill_pipeline"
     },
     {
@@ -1255,12 +1946,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
-      "community_label": "\ub85c\uace0 \uc81c\uac70 \uae30\uc220",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "source_gemini_logo_remover"
     },
     {
-      "label": "1\ucd08\ucef7 + \uc0c1\ub2e8\uc790\ub9c9 = CTR 2\ubc30",
+      "label": "1초컷 + 상단자막 = CTR 2배",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1268,12 +1959,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_1sec_cut"
     },
     {
-      "label": "\uccab \ud504\ub808\uc784 \uc5bc\uad74 = \ub9ac\ud150\uc158 30%\u2191",
+      "label": "첫 프레임 얼굴 = 리텐션 30%↑",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1281,12 +1972,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_first_frame_face"
     },
     {
-      "label": "TTS 1.1x \ucd5c\uc801 \uc18d\ub3c4",
+      "label": "TTS 1.1x 최적 속도",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1295,11 +1986,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_tts_speed"
     },
     {
-      "label": "B&A Before \uc5b4\ub461\uac8c / After \ubc1d\uac8c",
+      "label": "B&A Before 어둡게 / After 밝게",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1307,12 +1998,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_ba_correction"
     },
     {
-      "label": "\uc138\ub85c\uc601\uc0c1 \uc81c\ud488 \ud558\ub2e8 1/3 \ubc30\uce58",
+      "label": "세로영상 제품 하단 1/3 배치",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1321,11 +2012,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_product_bottom_third"
     },
     {
-      "label": "\uc138\uc774\ud504\uc874 \ud50c\ub7ab\ud3fc\ub9c8\ub2e4 \uc7ac\uce21\uc815 \ud544\uc218",
+      "label": "세이프존 플랫폼마다 재측정 필수",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1334,11 +2025,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_safezone_remeasure"
     },
     {
-      "label": "\uc778\ub3c4\ub124\uc2dc\uc544 \ud788\uc7a1 \ubaa8\ub378 \ud544\uc218",
+      "label": "인도네시아 히잡 모델 필수",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1346,12 +2037,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_indo_hijab"
     },
     {
-      "label": "\uc77c\ubcf8 \uace0\ub515\uccb4 vs \ud55c\uad6d \ub465\uadfc\uccb4 \uc790\ub9c9",
+      "label": "일본 고딕체 vs 한국 둥근체 자막",
       "file_type": "document",
       "source_file": "wiki/tacit/creative-patterns.md",
       "source_location": null,
@@ -1359,12 +2050,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_jp_gothic"
     },
     {
-      "label": "LaMa\uac00 \ud56d\uc0c1 OpenCV\ubcf4\ub2e4 \uc88b\uc9c4 \uc54a\ub2e4",
+      "label": "LaMa가 항상 OpenCV보다 좋진 않다",
       "file_type": "document",
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
@@ -1372,12 +2063,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
-      "community_label": "\ub85c\uace0 \uc81c\uac70 \uae30\uc220",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "tacit_lama_vs_opencv"
     },
     {
-      "label": "HK \uc601\uc5c5\ub9c8\uc9c4 ~4% \ud0c0\uac9f (\uc774\uc804\uac00\uaca9)",
+      "label": "HK 영업마진 ~4% 타겟 (이전가격)",
       "file_type": "document",
       "source_file": "wiki/domains/finance.md",
       "source_location": null,
@@ -1385,12 +2076,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_hk_margin"
     },
     {
-      "label": "\uc720\ub2c8\ubc84\uc124 \uc138\uc774\ud504\uc874 900\u00d71120",
+      "label": "유니버설 세이프존 900×1120",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -1399,11 +2090,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_universal_safezone"
     },
     {
-      "label": "bob 10\ub2e8\uacc4 DD Plan",
+      "label": "bob 10단계 DD Plan",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -1411,12 +2102,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_bob_dd_plan"
     },
     {
-      "label": "\uc81c\ud488 \ud68c\ud53c \ubc30\uce58 \ub85c\uc9c1",
+      "label": "제품 회피 배치 로직",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -1424,12 +2115,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_product_avoidance"
     },
     {
-      "label": "1\ucd08\ub2e8\uc704 7\uc694\uc18c \ucd94\ucd9c \uc2a4\ud0a4\ub9c8",
+      "label": "1초단위 7요소 추출 스키마",
       "file_type": "document",
       "source_file": "wiki/domains/content-ai-automation.md",
       "source_location": null,
@@ -1438,11 +2129,11 @@
       "author": null,
       "contributor": null,
       "community": 2,
-      "community_label": "\ucf58\ud150\uce20 AI \uc790\ub3d9\ud654 (FFmpeg\u00b7Whisper\u00b7TTS)",
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_7element_extraction"
     },
     {
-      "label": "Rusolve 2026 \ub7f0\uce6d",
+      "label": "Rusolve 2026 런칭",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -1450,12 +2141,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "decision_rusolve_launch_2026"
     },
     {
-      "label": "\ub85c\uace0 \uc81c\uac70\uc5d0 OpenCV \ucc44\ud0dd",
+      "label": "로고 제거에 OpenCV 채택",
       "file_type": "document",
       "source_file": "wiki/tacit/lessons-learned.md",
       "source_location": null,
@@ -1463,38 +2154,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 11,
-      "community_label": "\ub85c\uace0 \uc81c\uac70 \uae30\uc220",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "decision_opencv_over_lama"
     },
     {
-      "label": "\ub9c8\ucf00\ud305 \uad6c\ub3c5 \uc0ac\uc5c5",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "concept_marketing_subscription"
-    },
-    {
-      "label": "\uc720\ud1b5 \uad6c\ub3c5 \uc0ac\uc5c5",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "concept_distribution_subscription"
-    },
-    {
-      "label": "\ube0c\ub79c\ub4dc \uc0ac\uc5c5",
+      "label": "마케팅 구독 사업",
       "file_type": "document",
       "source_file": "CLAUDE.md",
       "source_location": null,
@@ -1503,137 +2168,163 @@
       "author": null,
       "contributor": null,
       "community": 0,
-      "community_label": "\ud574\uc678 \uc2dc\uc7a5 (\ub300\ub9cc/\uc77c\ubcf8/\ub3d9\ub0a8\uc544)",
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_marketing_subscription"
+    },
+    {
+      "label": "유통 구독 사업",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_distribution_subscription"
+    },
+    {
+      "label": "브랜드 사업",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_brand_business"
     },
     {
-      "label": "i-boss \uac8c\uc2dc\ud310 (\uadfc\uc721\ub3cc\uc774)",
+      "label": "i-boss 게시판 (근육돌이)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "source_iboss_wiki"
     },
     {
-      "label": "iboss 201\uac74 \uc778\ub371\uc2a4 (2017-2026)",
+      "label": "iboss 201건 인덱스 (2017-2026)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_index_201"
     },
     {
-      "label": "\ub9c8\ucf00\ud305 \ud575\uc2ec \uc774\ud574 40\ubd80\uc791 (2022)",
+      "label": "마케팅 핵심 이해 40부작 (2022)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_40\ubd80\uc791"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_40부작"
     },
     {
-      "label": "100\uc5b5 \uc1fc\ud551\ubab0 10\ubd80\uc791 (2023)",
+      "label": "100억 쇼핑몰 10부작 (2023)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_100\uc5b5_10\ubd80\uc791"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_100억_10부작"
     },
     {
-      "label": "\uad6c\uae00\uc560\uc988 60\uc5b5 10\ubd80\uc791 (2023)",
+      "label": "구글애즈 60억 10부작 (2023)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_구글애즈_60억"
     },
     {
-      "label": "\uac15\ub0a8 \uc815\uc721\uc810 \uc778\uc0ac\uc774\ud2b8 (2024)",
+      "label": "강남 정육점 인사이트 (2024)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_\uc815\uc721\uc810"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_정육점"
     },
     {
-      "label": "\uacf5\uac10 \ucf58\ud150\uce20 5\ubd80\uc791 (2017-2020)",
+      "label": "공감 콘텐츠 5부작 (2017-2020)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 5,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_공감콘텐츠"
     },
     {
-      "label": "\uc2a4\ud1a0\uc5b4\ud31c \uc5b5\ub300 \ub9e4\ucd9c 8\ubd80\uc791 (2018-2019)",
+      "label": "스토어팜 억대 매출 8부작 (2018-2019)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
-      "id": "iboss_series_\uc2a4\ud1a0\uc5b4\ud31c"
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_스토어팜"
     },
     {
-      "label": "AI \uc790\ub3d9\ud654 \uc2dc\ub9ac\uc988 (2025-2026)",
+      "label": "AI 자동화 시리즈 (2025-2026)",
       "file_type": "document",
       "source_file": "raw/iboss/INDEX.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "iboss_series_ai_automation"
     },
     {
-      "label": "\ub098\ub178\ubc14\ub098\ub098 (Gemini Image Pro)",
+      "label": "나노바나나 (Gemini Image Pro)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_nanobanana"
     },
     {
@@ -1643,10 +2334,10 @@
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_veo3"
     },
     {
@@ -1656,23 +2347,23 @@
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_midjourney"
     },
     {
-      "label": "Higgsfield (\uc0ac\uc2e4\uc801 \uc778\ubb3c)",
+      "label": "Higgsfield (사실적 인물)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_higgsfield"
     },
     {
@@ -1682,219 +2373,427 @@
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_seedream"
     },
     {
-      "label": "AKOOL (AI \ubaa8\ub378)",
+      "label": "AKOOL (AI 모델)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_akool"
     },
     {
-      "label": "USP = \uc695\uad6c (\uae30\ub2a5 \uc544\ub2d8)",
+      "label": "USP = 욕구 (기능 아님)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_usp_desire"
     },
     {
-      "label": "\uacf5\uac10 \ub9c8\ucf00\ud305 7\uc694\uc18c",
+      "label": "공감 마케팅 7요소",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 5,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_empathy_7"
     },
     {
-      "label": "\ub864\ub9c1\ubc1c\uce78 (\uc6d4 500~2500 \uc18c\uc7ac \ud14c\uc2a4\ud2b8)",
+      "label": "롤링발칸 (월 500~2500 소재 테스트)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_rolling_balkan"
     },
     {
-      "label": "\uc124\ub4dd 9\uc694\uc18c (\uc0c1\ud638\uc131\u00b7\ud76c\uc18c\uc131\u00b7\uad8c\uc704 \ub4f1)",
+      "label": "설득 9요소 (상호성·희소성·권위 등)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 5,
-      "community_label": "\ud06c\ub9ac\uc5d0\uc774\ud2f0\ube0c & \uc2ec\ub9ac \ud328\ud134",
+      "community": 7,
+      "community_label": "로고 제거 기술",
       "id": "concept_persuasion_9"
     },
     {
-      "label": "\uc81c\ud488>\uc0c1\uc138>\uc18c\uc7ac>\ud0c0\uac9f>\ub9e4\uccb4 \uc6b0\uc120\uc21c\uc704",
+      "label": "제품>상세>소재>타겟>매체 우선순위",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_priority_5step"
     },
     {
-      "label": "\uacf5\uac10 > \ud004\ub9ac\ud2f0 (CPA 10\ubc30 \ucc28\uc774)",
+      "label": "공감 > 퀄리티 (CPA 10배 차이)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 5,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_empathy_over_quality"
     },
     {
-      "label": "\uc7ac\uad6c\ub9e4\u00b7CRM > \uc2e0\uaddc \ud68d\ub4dd",
+      "label": "재구매·CRM > 신규 획득",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_repurchase_over_newacq"
     },
     {
-      "label": "AI \uc2e4\ud589 \uaca9\ucc28 10~100\ubc30 (2026-2027 \ubcc0\uace1)",
+      "label": "AI 실행 격차 10~100배 (2026-2027 변곡)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_ai_execution_gap"
     },
     {
-      "label": "\uc554\ubb35\uc9c0 \ucd94\ucd9c = AI \ud611\uc5c5 \uc5d4\uc9c4",
+      "label": "암묵지 추출 = AI 협업 엔진",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_tacit_ai_collab"
     },
     {
-      "label": "\uac15\ub0a8 \uc815\uc721\uc810 \uc7ac\uad6c\ub9e4\uc728 86% \uc77c\ub9e4\ucd9c 8\uc5b5",
+      "label": "강남 정육점 재구매율 86% 일매출 8억",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_jeongyukjeom_rebuy"
     },
     {
-      "label": "AI \ubb34\uc911\ub2e8 \uc2a4\ud29c\ub514\uc624 \uc77c\ub9e4\ucd9c 8\ucc9c\ub9cc",
+      "label": "AI 무중단 스튜디오 일매출 8천만",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 4,
-      "community_label": "\ubc14\uc774\ube0c\ucf54\ub529 & \uc5d0\uc774\uc804\ud2b8 \uc2a4\ud0dd",
+      "community": 6,
+      "community_label": "바이브코딩 & 에이전트 스택",
       "id": "case_ai_studio_8000"
     },
     {
-      "label": "\ub204\uc801 \uad11\uace0\ube44 2,500\uc5b5 \uc9d1\ud589 \uacbd\ud5d8",
+      "label": "누적 광고비 2,500억 집행 경험",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_ad_spend_2500"
     },
     {
-      "label": "\uad6c\uae00\uc560\uc988 (PMax\u00b7Discovery\u00b7Video)",
+      "label": "구글애즈 (PMax·Discovery·Video)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_google_ads"
     },
     {
-      "label": "\uba54\ud0c0 \uad11\uace0 (\ud398\uc774\uc2a4\ubd81\u00b7\uc778\uc2a4\ud0c0)",
+      "label": "메타 광고 (페이스북·인스타)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_meta_ads"
     },
     {
-      "label": "\uc20f\ud3fc (\ud2f1\ud1a1\u00b7\ub9b4\uc2a4\u00b7\uc1fc\uce20)",
+      "label": "숏폼 (틱톡·릴스·쇼츠)",
       "file_type": "document",
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "source_url": null,
       "captured_at": "2026-04-13",
-      "author": "\ucd5c\uc7ac\uba85 (\uadfc\uc721\ub3cc\uc774)",
+      "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 1,
-      "community_label": "iboss 201\uac74 \uc9c0\uc2dd\ubca0\uc774\uc2a4 (\ucd5c\uc7ac\uba85)",
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_shortform"
+    },
+    {
+      "label": "다이어트 비포애프터 릴스 자동 생성 스킬",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_ko_main"
+    },
+    {
+      "label": "다이어트 변신 릴스 공장",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_ko_factory"
+    },
+    {
+      "label": "비포애프터 영상 자동화",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_ko_b2a_auto"
+    },
+    {
+      "label": "체중감량 쇼츠 릴스",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_ko_weightloss"
+    },
+    {
+      "label": "Kling Gemini 비포애프터 파이프라인",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_pipeline"
+    },
+    {
+      "label": "다국어 다이어트 릴스 (한국어·번체)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_multilang"
+    },
+    {
+      "label": "다이어트 B2A v2",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_short"
+    },
+    {
+      "label": "bdh 파이프라인 B/A 스킬",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_bdh"
+    },
+    {
+      "label": "다이어트",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_diet"
+    },
+    {
+      "label": "비포애프터",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_b2a"
+    },
+    {
+      "label": "릴스",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_reels"
+    },
+    {
+      "label": "쇼츠",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_shorts"
+    },
+    {
+      "label": "변신",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_transform"
+    },
+    {
+      "label": "체중감량",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_weightloss"
+    },
+    {
+      "label": "감량",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_loss"
+    },
+    {
+      "label": "B/A",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "크리에이티브 & 심리 패턴",
+      "id": "diet_b2a_v2_alias_word_ba"
     }
   ],
   "links": [
@@ -1906,9 +2805,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_slugify",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_slugify"
     },
     {
       "relation": "contains",
@@ -1918,9 +2817,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_iter_block_items",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_iter_block_items"
     },
     {
       "relation": "contains",
@@ -1930,9 +2829,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_paragraph_text",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_paragraph_text"
     },
     {
       "relation": "contains",
@@ -1942,9 +2841,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_table_to_md",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_table_to_md"
     },
     {
       "relation": "contains",
@@ -1954,9 +2853,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "contains",
@@ -1966,9 +2865,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_chunk_and_write",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_chunk_and_write"
     },
     {
       "relation": "contains",
@@ -1978,9 +2877,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_main",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "rationale_for",
@@ -1990,9 +2889,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_rationale_1",
       "_tgt": "raw_qscv_extract_and_chunk_py",
+      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_rationale_1",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_rationale_1"
     },
     {
       "relation": "calls",
@@ -2002,9 +2901,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_slugify",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_slugify",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "calls",
@@ -2014,9 +2913,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_iter_block_items",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2026,9 +2925,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_paragraph_text",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2038,9 +2937,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_table_to_md",
-      "target": "extract_and_chunk_extract",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_extract"
     },
     {
       "relation": "calls",
@@ -2050,9 +2949,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_extract",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_extract",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "calls",
@@ -2062,9 +2961,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0,
       "source": "extract_and_chunk_chunk_and_write",
-      "target": "extract_and_chunk_main",
-      "confidence_score": 1.0
+      "target": "extract_and_chunk_main"
     },
     {
       "relation": "contains",
@@ -2074,9 +2973,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_mosaic",
-      "confidence_score": 1.0
+      "target": "compose_mosaic"
     },
     {
       "relation": "contains",
@@ -2086,9 +2985,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video1",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video1",
-      "confidence_score": 1.0
+      "target": "compose_video1"
     },
     {
       "relation": "contains",
@@ -2098,9 +2997,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video_23",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video_23",
-      "confidence_score": 1.0
+      "target": "compose_video_23"
     },
     {
       "relation": "contains",
@@ -2110,9 +3009,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
     },
     {
       "relation": "rationale_for",
@@ -2122,9 +3021,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_compose_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_rationale_1",
-      "confidence_score": 1.0
+      "target": "compose_rationale_1"
     },
     {
       "relation": "calls",
@@ -2134,9 +3033,9 @@
       "weight": 1.0,
       "_src": "compose_video1",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video1",
-      "confidence_score": 1.0
+      "target": "compose_video1"
     },
     {
       "relation": "calls",
@@ -2146,9 +3045,45 @@
       "weight": 1.0,
       "_src": "compose_video_23",
       "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video_23",
-      "confidence_score": 1.0
+      "target": "compose_video_23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
+      "source": "compose_mosaic",
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_src": "compose_compose_v1",
+      "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
+      "source": "compose_mosaic",
+      "target": "compose_compose_v1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_src": "compose_compose_v23",
+      "_tgt": "compose_mosaic",
+      "confidence_score": 1.0,
+      "source": "compose_mosaic",
+      "target": "compose_compose_v23"
     },
     {
       "relation": "calls",
@@ -2158,9 +3093,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video1",
+      "confidence_score": 1.0,
       "source": "compose_video1",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
     },
     {
       "relation": "calls",
@@ -2170,9 +3105,69 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video_23",
+      "confidence_score": 1.0,
       "source": "compose_video_23",
-      "target": "compose_main",
-      "confidence_score": 1.0
+      "target": "compose_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_main",
+      "confidence_score": 1.0,
+      "source": "compose_main",
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_src": "compose_main",
+      "_tgt": "compose_build_overlays",
+      "confidence_score": 1.0,
+      "source": "compose_main",
+      "target": "compose_build_overlays"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L220",
+      "weight": 1.0,
+      "_src": "compose_main",
+      "_tgt": "compose_compose_v1",
+      "confidence_score": 1.0,
+      "source": "compose_main",
+      "target": "compose_compose_v1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_src": "compose_main",
+      "_tgt": "compose_compose_v23",
+      "confidence_score": 1.0,
+      "source": "compose_main",
+      "target": "compose_compose_v23"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "compose_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "confidence_score": 1.0,
+      "source": "compose_rationale_1",
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
     {
       "relation": "contains",
@@ -2182,9 +3177,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_try_opencv_detect",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_try_opencv_detect",
-      "confidence_score": 1.0
+      "target": "detect_face_try_opencv_detect"
     },
     {
       "relation": "contains",
@@ -2194,9 +3189,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_main",
-      "confidence_score": 1.0
+      "target": "detect_face_main"
     },
     {
       "relation": "rationale_for",
@@ -2206,9 +3201,9 @@
       "weight": 1.0,
       "_src": "detect_face_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_detect_face_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_rationale_1",
-      "confidence_score": 1.0
+      "target": "detect_face_rationale_1"
     },
     {
       "relation": "calls",
@@ -2218,9 +3213,9 @@
       "weight": 1.0,
       "_src": "detect_face_main",
       "_tgt": "detect_face_try_opencv_detect",
+      "confidence_score": 1.0,
       "source": "detect_face_try_opencv_detect",
-      "target": "detect_face_main",
-      "confidence_score": 1.0
+      "target": "detect_face_main"
     },
     {
       "relation": "contains",
@@ -2230,9 +3225,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_export_py",
       "_tgt": "export_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_main",
-      "confidence_score": 1.0
+      "target": "export_main"
     },
     {
       "relation": "rationale_for",
@@ -2242,9 +3237,9 @@
       "weight": 1.0,
       "_src": "export_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_export_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_rationale_1",
-      "confidence_score": 1.0
+      "target": "export_rationale_1"
     },
     {
       "relation": "contains",
@@ -2254,9 +3249,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_read_keys",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_read_keys",
-      "confidence_score": 1.0
+      "target": "kling_client_read_keys"
     },
     {
       "relation": "contains",
@@ -2266,9 +3261,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_token",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_token",
-      "confidence_score": 1.0
+      "target": "kling_client_token"
     },
     {
       "relation": "contains",
@@ -2278,9 +3273,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_submit",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_submit",
-      "confidence_score": 1.0
+      "target": "kling_client_submit"
     },
     {
       "relation": "contains",
@@ -2290,9 +3285,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_poll",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_poll",
-      "confidence_score": 1.0
+      "target": "kling_client_poll"
     },
     {
       "relation": "contains",
@@ -2302,9 +3297,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_download",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_download",
-      "confidence_score": 1.0
+      "target": "kling_client_download"
     },
     {
       "relation": "contains",
@@ -2314,9 +3309,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_save_state",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_save_state",
-      "confidence_score": 1.0
+      "target": "kling_client_save_state"
     },
     {
       "relation": "contains",
@@ -2326,9 +3321,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "rationale_for",
@@ -2338,9 +3333,9 @@
       "weight": 1.0,
       "_src": "kling_client_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_kling_client_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_rationale_1",
-      "confidence_score": 1.0
+      "target": "kling_client_rationale_1"
     },
     {
       "relation": "calls",
@@ -2350,9 +3345,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_read_keys",
+      "confidence_score": 1.0,
       "source": "kling_client_read_keys",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -2362,9 +3357,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_token",
+      "confidence_score": 1.0,
       "source": "kling_client_token",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -2374,9 +3369,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_submit",
+      "confidence_score": 1.0,
       "source": "kling_client_submit",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -2386,9 +3381,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_poll",
+      "confidence_score": 1.0,
       "source": "kling_client_poll",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -2398,9 +3393,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_download",
+      "confidence_score": 1.0,
       "source": "kling_client_download",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "calls",
@@ -2410,9 +3405,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_save_state",
+      "confidence_score": 1.0,
       "source": "kling_client_save_state",
-      "target": "kling_client_main",
-      "confidence_score": 1.0
+      "target": "kling_client_main"
     },
     {
       "relation": "contains",
@@ -2422,9 +3417,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_skill_root",
-      "confidence_score": 1.0
+      "target": "lib_skill_root"
     },
     {
       "relation": "contains",
@@ -2434,9 +3429,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_load_config",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_load_config",
-      "confidence_score": 1.0
+      "target": "lib_load_config"
     },
     {
       "relation": "contains",
@@ -2446,9 +3441,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rel",
-      "confidence_score": 1.0
+      "target": "lib_rel"
     },
     {
       "relation": "contains",
@@ -2458,9 +3453,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_out_dir",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_out_dir",
-      "confidence_score": 1.0
+      "target": "lib_out_dir"
     },
     {
       "relation": "contains",
@@ -2470,9 +3465,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_run",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_run",
-      "confidence_score": 1.0
+      "target": "lib_run"
     },
     {
       "relation": "contains",
@@ -2482,9 +3477,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_ffprobe_duration",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_ffprobe_duration",
-      "confidence_score": 1.0
+      "target": "lib_ffprobe_duration"
     },
     {
       "relation": "rationale_for",
@@ -2494,9 +3489,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_lib_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rationale_1",
-      "confidence_score": 1.0
+      "target": "lib_rationale_1"
     },
     {
       "relation": "calls",
@@ -2506,9 +3501,9 @@
       "weight": 1.0,
       "_src": "lib_load_config",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_load_config",
-      "confidence_score": 1.0
+      "target": "lib_load_config"
     },
     {
       "relation": "calls",
@@ -2518,9 +3513,9 @@
       "weight": 1.0,
       "_src": "lib_rel",
       "_tgt": "lib_skill_root",
+      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_rel",
-      "confidence_score": 1.0
+      "target": "lib_rel"
     },
     {
       "relation": "calls",
@@ -2530,9 +3525,9 @@
       "weight": 1.0,
       "_src": "lib_out_dir",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_out_dir",
-      "confidence_score": 1.0
+      "target": "lib_out_dir"
     },
     {
       "relation": "rationale_for",
@@ -2542,9 +3537,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_21",
       "_tgt": "lib_rel",
+      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_rationale_21",
-      "confidence_score": 1.0
+      "target": "lib_rationale_21"
     },
     {
       "relation": "calls",
@@ -2554,9 +3549,9 @@
       "weight": 1.0,
       "_src": "lib_ffprobe_duration",
       "_tgt": "lib_run",
+      "confidence_score": 1.0,
       "source": "lib_run",
-      "target": "lib_ffprobe_duration",
-      "confidence_score": 1.0
+      "target": "lib_ffprobe_duration"
     },
     {
       "relation": "contains",
@@ -2566,9 +3561,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_stroked",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_stroked",
-      "confidence_score": 1.0
+      "target": "make_overlays_stroked"
     },
     {
       "relation": "contains",
@@ -2578,9 +3573,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_main",
-      "confidence_score": 1.0
+      "target": "make_overlays_main"
     },
     {
       "relation": "rationale_for",
@@ -2590,9 +3585,9 @@
       "weight": 1.0,
       "_src": "make_overlays_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_make_overlays_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_rationale_1",
-      "confidence_score": 1.0
+      "target": "make_overlays_rationale_1"
     },
     {
       "relation": "calls",
@@ -2602,9 +3597,9 @@
       "weight": 1.0,
       "_src": "make_overlays_main",
       "_tgt": "make_overlays_stroked",
+      "confidence_score": 1.0,
       "source": "make_overlays_stroked",
-      "target": "make_overlays_main",
-      "confidence_score": 1.0
+      "target": "make_overlays_main"
     },
     {
       "relation": "contains",
@@ -2614,9 +3609,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_probe",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_probe",
-      "confidence_score": 1.0
+      "target": "qa_check_probe"
     },
     {
       "relation": "contains",
@@ -2626,9 +3621,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_main",
-      "confidence_score": 1.0
+      "target": "qa_check_main"
     },
     {
       "relation": "rationale_for",
@@ -2638,9 +3633,9 @@
       "weight": 1.0,
       "_src": "qa_check_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_qa_check_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_rationale_1",
-      "confidence_score": 1.0
+      "target": "qa_check_rationale_1"
     },
     {
       "relation": "calls",
@@ -2650,9 +3645,9 @@
       "weight": 1.0,
       "_src": "qa_check_main",
       "_tgt": "qa_check_probe",
+      "confidence_score": 1.0,
       "source": "qa_check_probe",
-      "target": "qa_check_main",
-      "confidence_score": 1.0
+      "target": "qa_check_main"
     },
     {
       "relation": "contains",
@@ -2662,9 +3657,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_run_all_py",
       "_tgt": "run_all_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_main",
-      "confidence_score": 1.0
+      "target": "run_all_main"
     },
     {
       "relation": "rationale_for",
@@ -2674,9 +3669,9 @@
       "weight": 1.0,
       "_src": "run_all_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_run_all_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_rationale_1",
-      "confidence_score": 1.0
+      "target": "run_all_rationale_1"
     },
     {
       "relation": "contains",
@@ -2686,9 +3681,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_validate_input_py",
       "_tgt": "validate_input_main",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_main",
-      "confidence_score": 1.0
+      "target": "validate_input_main"
     },
     {
       "relation": "rationale_for",
@@ -2698,9 +3693,1017 @@
       "weight": 1.0,
       "_src": "validate_input_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_validate_input_py",
+      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_rationale_1",
-      "confidence_score": 1.0
+      "target": "validate_input_rationale_1"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "build_sets_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
+      "target": "build_sets_rationale_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "_tgt": "detect_faces_pick_best_face",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_pick_best_face"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "_tgt": "detect_faces_extract_frame",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_extract_frame"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_detect_in_clip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_detect_for_set"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "_tgt": "detect_faces_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "detect_faces_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "target": "detect_faces_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "detect_faces_detect_in_clip",
+      "_tgt": "detect_faces_pick_best_face",
+      "confidence_score": 1.0,
+      "source": "detect_faces_pick_best_face",
+      "target": "detect_faces_detect_in_clip"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_src": "detect_faces_detect_in_clip",
+      "_tgt": "detect_faces_extract_frame",
+      "confidence_score": 1.0,
+      "source": "detect_faces_extract_frame",
+      "target": "detect_faces_detect_in_clip"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "detect_faces_detect_for_set",
+      "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
+      "source": "detect_faces_detect_in_clip",
+      "target": "detect_faces_detect_for_set"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "detect_faces_rationale_48",
+      "_tgt": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0,
+      "source": "detect_faces_detect_in_clip",
+      "target": "detect_faces_rationale_48"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "detect_faces_main",
+      "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
+      "source": "detect_faces_detect_for_set",
+      "target": "detect_faces_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "detect_faces_rationale_69",
+      "_tgt": "detect_faces_detect_for_set",
+      "confidence_score": 1.0,
+      "source": "detect_faces_detect_for_set",
+      "target": "detect_faces_rationale_69"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "_tgt": "gemini_client_new_client",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "target": "gemini_client_new_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "target": "gemini_client_select_thinking_model"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "target": "gemini_client_clean_logo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "_tgt": "gemini_client_generate",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "target": "gemini_client_generate"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "gemini_client_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "target": "gemini_client_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_src": "gemini_client_generate",
+      "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
+      "source": "gemini_client_select_thinking_model",
+      "target": "gemini_client_generate"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "gemini_client_rationale_46",
+      "_tgt": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0,
+      "source": "gemini_client_select_thinking_model",
+      "target": "gemini_client_rationale_46"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_src": "gemini_client_generate",
+      "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
+      "source": "gemini_client_clean_logo",
+      "target": "gemini_client_generate"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_src": "gemini_client_rationale_110",
+      "_tgt": "gemini_client_clean_logo",
+      "confidence_score": 1.0,
+      "source": "gemini_client_clean_logo",
+      "target": "gemini_client_rationale_110"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "target": "logo_remover_make_corner_masks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "target": "logo_remover_remove_logo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "_tgt": "logo_remover_process_image",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "target": "logo_remover_process_image"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "_tgt": "logo_remover_batch_process",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "target": "logo_remover_batch_process"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_src": "logo_remover_remove_logo",
+      "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
+      "source": "logo_remover_make_corner_masks",
+      "target": "logo_remover_remove_logo"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "logo_remover_rationale_48",
+      "_tgt": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0,
+      "source": "logo_remover_make_corner_masks",
+      "target": "logo_remover_rationale_48"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_src": "logo_remover_process_image",
+      "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
+      "source": "logo_remover_remove_logo",
+      "target": "logo_remover_process_image"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_src": "logo_remover_rationale_62",
+      "_tgt": "logo_remover_remove_logo",
+      "confidence_score": 1.0,
+      "source": "logo_remover_remove_logo",
+      "target": "logo_remover_rationale_62"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_src": "logo_remover_batch_process",
+      "_tgt": "logo_remover_process_image",
+      "confidence_score": 1.0,
+      "source": "logo_remover_process_image",
+      "target": "logo_remover_batch_process"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "_tgt": "analyze_bgm_analyze",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "target": "analyze_bgm_analyze"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "_tgt": "analyze_bgm_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "target": "analyze_bgm_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "analyze_bgm_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "target": "analyze_bgm_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_src": "analyze_bgm_main",
+      "_tgt": "analyze_bgm_analyze",
+      "confidence_score": 1.0,
+      "source": "analyze_bgm_analyze",
+      "target": "analyze_bgm_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "_tgt": "build_prompts_write",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "target": "build_prompts_write"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "build_prompts_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "target": "build_prompts_rationale_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "_tgt": "check_session_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "target": "check_session_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "check_session_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "target": "check_session_rationale_1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_page_text",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_page_text"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_was_refused",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_was_refused"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_try"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_with_fallback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_run_one",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_run_one"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "_tgt": "gen_seeds_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "gen_seeds_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "target": "gen_seeds_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_src": "gen_seeds_was_refused",
+      "_tgt": "gen_seeds_page_text",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_page_text",
+      "target": "gen_seeds_was_refused"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_src": "gen_seeds_with_fallback",
+      "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_try",
+      "target": "gen_seeds_with_fallback"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "gen_seeds_rationale_74",
+      "_tgt": "gen_seeds_try",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_try",
+      "target": "gen_seeds_rationale_74"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_src": "gen_seeds_run_one",
+      "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_with_fallback",
+      "target": "gen_seeds_run_one"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_src": "gen_seeds_rationale_82",
+      "_tgt": "gen_seeds_with_fallback",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_with_fallback",
+      "target": "gen_seeds_rationale_82"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_src": "gen_seeds_main",
+      "_tgt": "gen_seeds_run_one",
+      "confidence_score": 1.0,
+      "source": "gen_seeds_run_one",
+      "target": "gen_seeds_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "_tgt": "gen_scales_run_one",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "target": "gen_scales_run_one"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "_tgt": "gen_scales_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "target": "gen_scales_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "gen_scales_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "target": "gen_scales_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "gen_scales_main",
+      "_tgt": "gen_scales_run_one",
+      "confidence_score": 1.0,
+      "source": "gen_scales_run_one",
+      "target": "gen_scales_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_read_keys",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_read_keys"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_token",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_token"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_submit",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_submit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_poll",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_poll"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_download",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_download"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_save_state",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_save_state"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "_tgt": "gen_kling_main",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "gen_kling_rationale_1",
+      "_tgt": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "target": "gen_kling_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_read_keys",
+      "confidence_score": 1.0,
+      "source": "gen_kling_read_keys",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_token",
+      "confidence_score": 1.0,
+      "source": "gen_kling_token",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_submit",
+      "confidence_score": 1.0,
+      "source": "gen_kling_submit",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_poll",
+      "confidence_score": 1.0,
+      "source": "gen_kling_poll",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_download",
+      "confidence_score": 1.0,
+      "source": "gen_kling_download",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_src": "gen_kling_main",
+      "_tgt": "gen_kling_save_state",
+      "confidence_score": 1.0,
+      "source": "gen_kling_save_state",
+      "target": "gen_kling_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_get_boxes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_stroked",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_stroked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_run",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_run"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_build_overlays",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_build_overlays"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_compose_v1",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_compose_v1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "_tgt": "compose_compose_v23",
+      "confidence_score": 1.0,
+      "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "target": "compose_compose_v23"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_src": "compose_compose_v1",
+      "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
+      "source": "compose_get_boxes",
+      "target": "compose_compose_v1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_src": "compose_compose_v23",
+      "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
+      "source": "compose_get_boxes",
+      "target": "compose_compose_v23"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "compose_rationale_30",
+      "_tgt": "compose_get_boxes",
+      "confidence_score": 1.0,
+      "source": "compose_get_boxes",
+      "target": "compose_rationale_30"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_src": "compose_build_overlays",
+      "_tgt": "compose_stroked",
+      "confidence_score": 1.0,
+      "source": "compose_stroked",
+      "target": "compose_build_overlays"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_src": "compose_compose_v1",
+      "_tgt": "compose_run",
+      "confidence_score": 1.0,
+      "source": "compose_run",
+      "target": "compose_compose_v1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_src": "compose_compose_v23",
+      "_tgt": "compose_run",
+      "confidence_score": 1.0,
+      "source": "compose_run",
+      "target": "compose_compose_v23"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_src": "scripts_inject_diet_b2a_v2_aliases_py",
+      "_tgt": "inject_diet_b2a_v2_aliases_main",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_diet_b2a_v2_aliases_py",
+      "target": "inject_diet_b2a_v2_aliases_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "inject_diet_b2a_v2_aliases_rationale_1",
+      "_tgt": "scripts_inject_diet_b2a_v2_aliases_py",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_diet_b2a_v2_aliases_py",
+      "target": "inject_diet_b2a_v2_aliases_rationale_1"
     },
     {
       "relation": "contains",
@@ -2710,9 +4713,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_node",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_node",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_make_node"
     },
     {
       "relation": "contains",
@@ -2722,9 +4725,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_edge",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_edge",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_make_edge"
     },
     {
       "relation": "contains",
@@ -2734,9 +4737,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_main",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "rationale_for",
@@ -2746,9 +4749,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_rationale_1",
       "_tgt": "scripts_inject_iboss_entities_py",
+      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_rationale_1",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_rationale_1"
     },
     {
       "relation": "calls",
@@ -2758,9 +4761,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_node",
+      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_node",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "calls",
@@ -2770,9 +4773,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_edge",
+      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_edge",
-      "target": "inject_iboss_entities_main",
-      "confidence_score": 1.0
+      "target": "inject_iboss_entities_main"
     },
     {
       "relation": "contains",
@@ -2782,9 +4785,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_pick_label",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_pick_label"
     },
     {
       "relation": "contains",
@@ -2794,9 +4797,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_main",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_main",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_main"
     },
     {
       "relation": "rationale_for",
@@ -2806,9 +4809,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_rationale_1",
       "_tgt": "scripts_regen_graph_report_py",
+      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_rationale_1",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_rationale_1"
     },
     {
       "relation": "calls",
@@ -2818,9 +4821,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_main",
       "_tgt": "regen_graph_report_pick_label",
+      "confidence_score": 1.0,
       "source": "regen_graph_report_pick_label",
-      "target": "regen_graph_report_main",
-      "confidence_score": 1.0
+      "target": "regen_graph_report_main"
     },
     {
       "relation": "led_by",
@@ -3596,8 +5599,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "concept_ai_execution_gap",
+      "_src": "concept_ai_execution_gap",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "concept_ai_execution_gap"
@@ -3608,8 +5611,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "concept_tacit_ai_collab",
+      "_src": "concept_tacit_ai_collab",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "concept_tacit_ai_collab"
@@ -3620,8 +5623,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_ai_automation",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "domain_ai_automation",
       "confidence_score": 1.0,
       "source": "domain_ai_automation",
       "target": "case_ai_studio_8000"
@@ -3764,8 +5767,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "concept_repurchase_over_newacq",
+      "_src": "concept_repurchase_over_newacq",
+      "_tgt": "domain_marketing_automation",
       "confidence_score": 1.0,
       "source": "domain_marketing_automation",
       "target": "concept_repurchase_over_newacq"
@@ -3776,8 +5779,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_marketing_automation",
-      "_tgt": "case_jeongyukjeom_rebuy",
+      "_src": "case_jeongyukjeom_rebuy",
+      "_tgt": "domain_marketing_automation",
       "confidence_score": 1.0,
       "source": "domain_marketing_automation",
       "target": "case_jeongyukjeom_rebuy"
@@ -3872,8 +5875,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_usp_desire",
+      "_src": "concept_usp_desire",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_usp_desire"
@@ -3884,8 +5887,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_empathy_over_quality",
+      "_src": "concept_empathy_over_quality",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_empathy_over_quality"
@@ -3896,8 +5899,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_da_creative",
-      "_tgt": "concept_rolling_balkan",
+      "_src": "concept_rolling_balkan",
+      "_tgt": "domain_da_creative",
       "confidence_score": 1.0,
       "source": "domain_da_creative",
       "target": "concept_rolling_balkan"
@@ -3932,8 +5935,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "domain_psychology",
-      "_tgt": "concept_persuasion_9",
+      "_src": "concept_persuasion_9",
+      "_tgt": "domain_psychology",
       "confidence_score": 1.0,
       "source": "domain_psychology",
       "target": "concept_persuasion_9"
@@ -4197,8 +6200,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "source_iboss_wiki",
-      "_tgt": "case_ad_spend_2500",
+      "_src": "case_ad_spend_2500",
+      "_tgt": "source_iboss_wiki",
       "confidence_score": 1.0,
       "source": "source_iboss_wiki",
       "target": "case_ad_spend_2500"
@@ -4210,10 +6213,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_40\ubd80\uc791",
+      "_tgt": "iboss_series_40부작",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_40\ubd80\uc791"
+      "target": "iboss_series_40부작"
     },
     {
       "relation": "contains",
@@ -4222,10 +6225,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_100\uc5b5_10\ubd80\uc791",
+      "_tgt": "iboss_series_100억_10부작",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_100\uc5b5_10\ubd80\uc791"
+      "target": "iboss_series_100억_10부작"
     },
     {
       "relation": "contains",
@@ -4234,10 +6237,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5",
+      "_tgt": "iboss_series_구글애즈_60억",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5"
+      "target": "iboss_series_구글애즈_60억"
     },
     {
       "relation": "contains",
@@ -4246,10 +6249,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_\uc815\uc721\uc810",
+      "_tgt": "iboss_series_정육점",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_\uc815\uc721\uc810"
+      "target": "iboss_series_정육점"
     },
     {
       "relation": "contains",
@@ -4258,10 +6261,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20",
+      "_tgt": "iboss_series_공감콘텐츠",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20"
+      "target": "iboss_series_공감콘텐츠"
     },
     {
       "relation": "contains",
@@ -4270,10 +6273,10 @@
       "source_location": null,
       "weight": 1.0,
       "_src": "iboss_index_201",
-      "_tgt": "iboss_series_\uc2a4\ud1a0\uc5b4\ud31c",
+      "_tgt": "iboss_series_스토어팜",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
-      "target": "iboss_series_\uc2a4\ud1a0\uc5b4\ud31c"
+      "target": "iboss_series_스토어팜"
     },
     {
       "relation": "contains",
@@ -4293,8 +6296,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_index_201",
-      "_tgt": "platform_meta_ads",
+      "_src": "platform_meta_ads",
+      "_tgt": "iboss_index_201",
       "confidence_score": 1.0,
       "source": "iboss_index_201",
       "target": "platform_meta_ads"
@@ -4305,10 +6308,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_40\ubd80\uc791",
+      "_src": "iboss_series_40부작",
       "_tgt": "concept_priority_5step",
       "confidence_score": 1.0,
-      "source": "iboss_series_40\ubd80\uc791",
+      "source": "iboss_series_40부작",
       "target": "concept_priority_5step"
     },
     {
@@ -4317,10 +6320,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_40\ubd80\uc791",
+      "_src": "iboss_series_40부작",
       "_tgt": "concept_usp_desire",
       "confidence_score": 1.0,
-      "source": "iboss_series_40\ubd80\uc791",
+      "source": "iboss_series_40부작",
       "target": "concept_usp_desire"
     },
     {
@@ -4329,10 +6332,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_100\uc5b5_10\ubd80\uc791",
+      "_src": "iboss_series_100억_10부작",
       "_tgt": "concept_repurchase_over_newacq",
       "confidence_score": 1.0,
-      "source": "iboss_series_100\uc5b5_10\ubd80\uc791",
+      "source": "iboss_series_100억_10부작",
       "target": "concept_repurchase_over_newacq"
     },
     {
@@ -4341,10 +6344,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_100\uc5b5_10\ubd80\uc791",
+      "_src": "iboss_series_100억_10부작",
       "_tgt": "concept_priority_5step",
       "confidence_score": 1.0,
-      "source": "iboss_series_100\uc5b5_10\ubd80\uc791",
+      "source": "iboss_series_100억_10부작",
       "target": "concept_priority_5step"
     },
     {
@@ -4353,10 +6356,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5",
-      "_tgt": "platform_google_ads",
+      "_src": "platform_google_ads",
+      "_tgt": "iboss_series_구글애즈_60억",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5",
+      "source": "iboss_series_구글애즈_60억",
       "target": "platform_google_ads"
     },
     {
@@ -4365,10 +6368,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5",
+      "_src": "iboss_series_구글애즈_60억",
       "_tgt": "case_ad_spend_2500",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uad6c\uae00\uc560\uc988_60\uc5b5",
+      "source": "iboss_series_구글애즈_60억",
       "target": "case_ad_spend_2500"
     },
     {
@@ -4377,10 +6380,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uc815\uc721\uc810",
+      "_src": "iboss_series_정육점",
       "_tgt": "case_jeongyukjeom_rebuy",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uc815\uc721\uc810",
+      "source": "iboss_series_정육점",
       "target": "case_jeongyukjeom_rebuy"
     },
     {
@@ -4389,10 +6392,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uc815\uc721\uc810",
+      "_src": "iboss_series_정육점",
       "_tgt": "concept_repurchase_over_newacq",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uc815\uc721\uc810",
+      "source": "iboss_series_정육점",
       "target": "concept_repurchase_over_newacq"
     },
     {
@@ -4401,10 +6404,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uc815\uc721\uc810",
-      "_tgt": "platform_shortform",
+      "_src": "platform_shortform",
+      "_tgt": "iboss_series_정육점",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uc815\uc721\uc810",
+      "source": "iboss_series_정육점",
       "target": "platform_shortform"
     },
     {
@@ -4413,10 +6416,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20",
+      "_src": "iboss_series_공감콘텐츠",
       "_tgt": "concept_empathy_over_quality",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20",
+      "source": "iboss_series_공감콘텐츠",
       "target": "concept_empathy_over_quality"
     },
     {
@@ -4425,10 +6428,10 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20",
+      "_src": "iboss_series_공감콘텐츠",
       "_tgt": "concept_empathy_7",
       "confidence_score": 1.0,
-      "source": "iboss_series_\uacf5\uac10\ucf58\ud150\uce20",
+      "source": "iboss_series_공감콘텐츠",
       "target": "concept_empathy_7"
     },
     {
@@ -4473,8 +6476,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_nanobanana",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_nanobanana",
       "confidence_score": 1.0,
       "source": "tool_nanobanana",
       "target": "case_ai_studio_8000"
@@ -4485,8 +6488,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_veo3",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_veo3",
       "confidence_score": 1.0,
       "source": "tool_veo3",
       "target": "case_ai_studio_8000"
@@ -4497,8 +6500,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_midjourney",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_midjourney",
       "confidence_score": 1.0,
       "source": "tool_midjourney",
       "target": "case_ai_studio_8000"
@@ -4509,8 +6512,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_higgsfield",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_higgsfield",
       "confidence_score": 1.0,
       "source": "tool_higgsfield",
       "target": "case_ai_studio_8000"
@@ -4521,8 +6524,8 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_seedream",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_seedream",
       "confidence_score": 1.0,
       "source": "tool_seedream",
       "target": "case_ai_studio_8000"
@@ -4533,12 +6536,171 @@
       "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "tool_akool",
-      "_tgt": "case_ai_studio_8000",
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_akool",
       "confidence_score": 1.0,
       "source": "tool_akool",
       "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_main",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_main"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_factory",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_factory"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_b2a_auto",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_b2a_auto"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_ko_weightloss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_weightloss"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_pipeline",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_pipeline"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_multilang",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_multilang"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_short",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_short"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_bdh",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_bdh"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_diet",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_diet"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_b2a",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_b2a"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_reels",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_reels"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_shorts",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_shorts"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_transform",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_transform"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_weightloss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_weightloss"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_loss",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_loss"
+    },
+    {
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual",
+      "_src": "diet_b2a_v2_alias_ko_main",
+      "_tgt": "diet_b2a_v2_alias_word_ba",
+      "confidence_score": 1.0,
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_word_ba"
     }
-  ],
-  "hyperedges": []
+  ]
 }

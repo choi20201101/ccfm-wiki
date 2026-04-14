@@ -1,0 +1,94 @@
+# Relay-style mashups — ONE coherent sentence split across multiple influencers
+# Each segment is a short phrase. Combined = full message.
+# Uses existing seeds from products/melable_picoshot/seeds/v*_seed.png as distinct faces.
+
+m001:
+  top_copy: ["여러 나라 인플루언서가 인증", "10년 기미 7일 해결"]
+  voice: uk_man2
+  segments:
+    - en: "Ten years of stubborn melasma..."
+      ko: "10년 묵은 진한 기미가"
+    - en: "...spent three thousand dollars at the clinic..."
+      ko: "피부과에 3천불 써도"
+    - en: "...nothing worked until I found..."
+      ko: "아무것도 안 먹혔어요"
+    - en: "...Melable RubyRN PicoShot."
+      ko: "메라블 루비알엔 피코샷"
+    - en: "Day one, day seven, the spots were gone."
+      ko: "7일만에 진짜 사라짐"
+    - en: "Ninety-eight of a hundred women agreed. Link in bio."
+      ko: "100명 중 98명 인증"
+
+m002:
+  top_copy: ["세계 각국 언니들이 말하는", "한국 PDRN 크림의 진실"]
+  voice: ai_shatang
+  segments:
+    - en: "So you have melasma..."
+      ko: "기미 있으신가요"
+    - en: "...you have tried the lasers, the serums, everything..."
+      ko: "레이저 세럼 다 해봤죠"
+    - en: "...let me tell you about a Korean cream..."
+      ko: "한국 크림 하나 소개할게요"
+    - en: "...with Ruby PDRN and goldfilm technology..."
+      ko: "루비 PDRN 골드필름 기술"
+    - en: "...that destroyed my ten-year pigmentation..."
+      ko: "10년 기미 없애줌"
+    - en: "...in exactly seven days. Seriously."
+      ko: "진짜 딱 7일만에"
+    - en: "Melable RubyRN PicoShot. Link in bio."
+      ko: "메라블 루비알엔 피코샷"
+
+m003:
+  top_copy: ["전 세계 98명이 인증한", "7일 기미 소멸 크림"]
+  voice: uk_boy1
+  segments:
+    - en: "I thought it was a scam..."
+      ko: "처음엔 사기인 줄 알았어요"
+    - en: "...I thought my genetics were the problem..."
+      ko: "유전 탓인 줄 알았고"
+    - en: "...I thought I would never find a fix..."
+      ko: "해결 못한다고 믿었죠"
+    - en: "...then Melable RubyRN PicoShot arrived..."
+      ko: "메라블 루비알엔 등장"
+    - en: "...and seven days later, ten years of melasma were gone."
+      ko: "7일만에 10년 기미 소멸"
+    - en: "Ninety-eight out of a hundred women. Link in bio."
+      ko: "100중 98명 효과, 링크 프로필"
+
+m004:
+  top_copy: ["단 한줄 리뷰로 끝내는", "한국산 피코샷 리얼 체험"]
+  voice: tianmeixuemei-v1
+  segments:
+    - en: "Korean beauty secret..."
+      ko: "한국 뷰티의 비밀"
+    - en: "...Ruby PDRN plus goldfilm tech..."
+      ko: "루비 PDRN 골드필름"
+    - en: "...niacinamide, tranexamic, alpha-arbutin..."
+      ko: "나이아신 트라넥사믹 알파아르부틴"
+    - en: "...a melanin-fading weapon..."
+      ko: "멜라닌 분해 무기"
+    - en: "...seven days, visible results, ninety-eight percent satisfied..."
+      ko: "7일만에 98% 만족"
+    - en: "...this is Melable RubyRN PicoShot."
+      ko: "이게 메라블 피코샷"
+    - en: "Link in bio."
+      ko: "링크는 프로필에"
+
+m005:
+  top_copy: ["1문장 1인플루언서 릴레이", "메라블 피코샷 공식 후기"]
+  voice: chat1_female_new-3
+  segments:
+    - en: "Every girl I know with great skin..."
+      ko: "피부 좋은 언니들"
+    - en: "...uses one cream..."
+      ko: "공통점은 한 크림"
+    - en: "...made in Korea..."
+      ko: "한국산"
+    - en: "...sold out twenty-four times..."
+      ko: "24번 완판"
+    - en: "...with Ruby PDRN and goldfilm..."
+      ko: "PDRN 골드필름"
+    - en: "...and results in seven days..."
+      ko: "7일 결과 보장"
+    - en: "Melable RubyRN PicoShot. Stop waiting. Link in bio."
+      ko: "메라블 피코샷 링크 프로필"

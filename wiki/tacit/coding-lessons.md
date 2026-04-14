@@ -3,11 +3,12 @@ type: tacit
 category: coding
 confidence: medium
 first_observed: 2026-04-13
-last_confirmed: 2026-04-13
+last_confirmed: 2026-04-14
 sources:
   - C:/Users/gguy/Desktop/MD (멀티 프로젝트 MD/스킬 시행착오 회고)
   - 협업 메뉴얼/바이브 코딩시행착오 케이스 CCFM.pdf
   - 협업 메뉴얼/바이브코딩_AI협업_지침_v2.0.md
+  - C:/Users/gguy/Desktop/dance (diet-b2a-v2 Gemini 프롬프트 실전 검증 2026-04-14)
 ---
 
 # 코딩/자동화 교훈
@@ -474,6 +475,58 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 배경: Python SDK 2.36.1에서 `voices.add_sharing_voice`가 AttributeError. 하지만 `text_to_speech.convert(voice_id=<public id>)`는 바로 동작.
 - 물어볼 타이밍: SDK 버전 바뀌거나 shared voice 처음 쓸 때. SDK 업데이트 시 재확인 필요.
 - confidence: low (SDK 버전 의존, 향후 변동 가능)
+
+### [2026-04-14] Gemini **"Thinking" 모델을 강제로 선택**해야 이미지 생성 품질 나옴
+- 관찰: Gemini 웹 UI 기본 모델("Fast")에서는 이미지 생성 프롬프트를 자주 무시하거나 텍스트로만 응답. Thinking(2.5 Pro)에서는 정상 생성.
+- 구현: 매 new_chat 직후 `button[data-test-id="bard-mode-menu-button"]` 클릭 → `[role="menuitem"]:has-text("사고")` 선택. 매 대화마다 재선택 필요(세션이 Fast로 리셋됨).
+- 출처: [[src-diet-b2a-v2]] gemini_client.select_thinking_model
+- confidence: high
+
+### [2026-04-14] Gemini after 시드 프롬프트는 **before 결과를 입력에 포함하지 말 것**
+- 관찰: `[model.png, before_seed.png]`로 after 요청하면 Gemini가 before를 그대로 복사. 체중·환경 전환 지시가 무시됨. 원본 배경 이미지(`bg.png`)로 교체하면 극적 대비 프롬프트가 작동.
+- 조건: diet B/A 시드 생성. "극적 변화" 요구가 있을 때.
+- 대응: 입력은 `[model.png, bg.png]` 공통, 프롬프트만 before/after로 구분.
+- 출처: [[src-diet-b2a-v2]] step-03 gen_seeds.py
+- confidence: high
+
+### [2026-04-14] Gemini 이미지 생성 거부(선정성/실사) 우회 3패턴
+- **AI 가상 캐릭터 명시**: "AI 가상 캐릭터 이미지 생성" 접두로 실사 인물 탐지 회피.
+- **의상 덜 노출**: 크롭탑·핫팬츠 → 흰 티 + 청바지 + 운동화.
+- **자극 표현 제거**: "복근·허벅지 갭·탄탄한 몸" → "건강한 날씬한 체형".
+- **Safe fallback**: 1차 실패 시 인물 사진 업로드 없이 배경만 + 순수 일러스트 톤 요청.
+- 출처: [[src-diet-b2a-v2]] after 생성 거부 사례
+- confidence: high
+
+### [2026-04-14] OpenCV haarcascade는 세로 전신샷에서 **턱/복부를 얼굴로 오인**함
+- 관찰: `haarcascade_frontalface_default.xml` 로 720×1280 전신샷에서 얼굴 검출 시, y 좌표가 얼굴 실제 위치보다 크게 아래(턱·가슴·복부) 잡히는 경우가 30% 이상.
+- 휴리스틱: 검출 박스 y > 400 이면 거의 오검출로 간주. y > 0.35 × height 시 수동 검토 요망.
+- 대응: 스텝별 프레임 수동 검토 + `face_boxes.json` 재작성. 자동 검출은 "초안" 수준으로만 신뢰.
+- 출처: [[src-diet-b2a-v2]] detect_faces.py 경험
+- confidence: high
+
+### [2026-04-14] 프롬프트 길면 Gemini Thinking 타임아웃·크래시 유발
+- 관찰: 5문장 이상 길고 상세한 영문 프롬프트 → Thinking이 3분 이상 소비 후 멈춤. 2~3줄 짧은 한국어 프롬프트로 바꾸니 40~60초에 생성 완료.
+- 조건: Gemini 웹 UI (API 아님). 복잡 지시 많을 때.
+- 대응: 핵심 요구 3가지 이내로 1차 시도 → 실패 시 safe 프롬프트 fallback.
+- 출처: [[src-diet-b2a-v2]] gen_seeds 프롬프트 튜닝
+- confidence: medium
+
+### [2026-04-14] 다국어 자막 렌더링 시 **언어별 폰트 매핑 필수**
+- 관찰: Windows 기본 맑은 고딕(malgunbd.ttf)은 한국어·영어·일본어 일부까지 커버하지만 번체 전용자("哪","嚇" 등) 에서 tofu(□). Microsoft JhengHei(msjhbd.ttc)로 교체하면 해결.
+- 대응: Pillow `ImageFont.truetype`에 lang=zh-tw 시 다른 폰트 경로 주입. fallback 체인: 타겟 폰트 → malgunbd → 일반 sans.
+- 사전 체크: 샘플 텍스트로 `d.textbbox` 호출해 "□" 픽셀 검출하면 폰트 미지원 감지 가능.
+- 출처: [[src-diet-b2a-v2]] tw 버전 합성
+- confidence: high
+- 교차: [[creative-patterns]]
+
+### [2026-04-14] before/after 얼굴 위치 편차 기준 **y ±30px 초과면 박스 분리**
+- 관찰: Kling image2video는 같은 시드로 생성해도 before/after 카메라 높이·얼굴 위치가 ±50px 움직이는 경우가 빈번. 단일 박스로 덮으면 한쪽은 얼굴·한쪽은 목/가슴이 덮임.
+- 의사결정 룰: before의 얼굴 중심 y와 after의 얼굴 중심 y 차이 > 30px 이면 세트 설정을 `{before: {...}, after: {...}}` 구조로 분리.
+- 자동 감지 한계: OpenCV haarcascade는 전신샷에서 상위 30%+ 확률로 가슴/복부를 얼굴로 오인 → **수동 프레임 확인이 최종 게이트**.
+- 구현: `compose.get_boxes(sid)` 가 두 구조 모두 수용하도록 설계.
+- 출처: [[src-diet-b2a-v2]] set2/9/10 반복 교정
+- confidence: high
+
 ## [2026-04-13] YouTube 대규모 수집 + Claude 서브에이전트 패턴
 
 ### A. yt-dlp 2단계: flat-playlist → enrich
@@ -607,3 +660,103 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 인스티즈·네이트판·보배드림 댓글이 **lazy load(AJAX)**일 가능성 — requests로 안 잡히면 내부 `/ajax/comment?srl=` 엔드포인트 조사 필요.
 - 크롤링 중 `_add()` 실패(중복)한 post에 detail fetch를 도는 실수 금지 — 반드시 `if self._add(post): self._enrich_detail(post)` 순서.
 - `--with-detail` 켜면 총 요청량이 2배 → target 10만건이면 실질 6~10시간 이상 소요.
+
+## [2026-04-14] Google 이미지 → Bing 우회 & Negative Curation
+
+출처: goglecc 프로젝트 (씨드 이미지 수집 파이프라인) → [[src-goglecc-seed-curation]]
+
+### Google Images는 headless에서 차단됨
+- 관찰: `google.com/search?udm=2` + Playwright headless → **reCAPTCHA "비정상 트래픽" 페이지**로 리다이렉트, `<img>` 0개
+- 조건: IP 단위 봇 탐지. User-Agent 위장으로 우회 안 됨
+- 해법: **Bing Images** (`bing.com/images/search?q=KW&form=HDRSC2`)
+- 핵심 selector: `a.iusc[m]` (속성 `m`이 JSON, `murl` 키에 원본 URL)
+- confidence: medium (2026-04-14 1회 재현)
+
+### Negative curation이 Positive보다 데이터 효율적
+- 관찰: 사용자에게 "좋은 10장 골라" 시키는 것보다 "안 좋은 것만 `aa/`에 모아"가 훨씬 빠르고 기준이 정량화됨
+- 안 좋은 이미지의 정량 시그니처가 뚜렷함 (saturation_std>0.17, aspect≈1.55, low-res 등)
+- 출처: 대화 / 실제 경험
+- confidence: low (1회, 하지만 매우 뚜렷한 사용자 선호)
+
+### 이미지 수집 키워드 표현 → bad률 상관
+- 관찰: 명확 단일명사("여자연예인" bad 4%) vs 어색한 합성어("인플루언서여성" bad 59%, "여자동안" bad 91%)
+- 조건: 검색어가 실제 구어 네이티브 표현일 때 수집 품질 높음
+- confidence: medium (goglecc 7개 키워드 비교)
+
+### pHash 블랙리스트가 중복/유사 제거에 충분
+- 관찰: `imagehash.phash(size=16)` → Hamming distance ≤ 12면 실사용상 동일/유사 판정 타당
+- 조건: 라운드 누적하면 블랙리스트가 자동 성장해 같은 스톡/썸네일 재수집 방지
+- confidence: medium
+
+## [2026-04-14] Gemini 이미지 생성 safety 우회 — 레퍼런스 기반 한국어 프롬프트
+
+### 관찰
+Gemini 이미지 생성(웹 자동화)에서 "photorealistic East Asian woman", "real Korean fitness influencer" 같은 영어 직설 프롬프트 + 실제 모델 사진 업로드 시 `"I can create images of people, but not ones that depict a real person like that"` 거부 빈발. 긴 영어 지시문(별표/대문자 강조 + 10줄 이상) 넣으면 Gemini가 회피 출력(입력 배경 이미지를 그대로 반환, 인물 합성 생략)을 내기도 함.
+
+대신 한국어 2줄 간접 표현 + 레퍼런스 이미지 2장으로 바꾸면 safety 통과 + 실사 품질 확보:
+```
+1번 {배경}을 [변경 내용]으로 변경하고
+2번 {모델} 느낌을 그대로 살려서 [체형+복장]으로 서있는 장면. 세로 9:16 전신샷.
+```
+
+### 조건
+- Gemini web (gemini.google.com) + Playwright 자동화 환경
+- 실제 인물 사진을 스타일 레퍼런스로 쓸 때 (AI 생성 캐릭터로 prompt해도 safety 발동)
+- Before/After, 체형 변신, 복장 변화 등 인물 합성 작업 전반
+
+### 출처
+- 대화 (사용자가 스크린샷으로 검증 결과 공유, `C:\Users\gguy\Desktop\20260414_142011.png`)
+- diet-b2a-v2 파이프라인 (`C:\Users\gguy\Desktop\dance\v2\steps\03-gemini-seeds\gen_seeds.py`) 실전 적용
+- Kling API는 image2video 인풋으로 이 시드를 그대로 사용하므로 시드 품질이 최종 영상 품질 결정
+
+### confidence: medium
+- 사용자 직접 검증 (1회 확정) + 긴 영어 프롬프트가 실패했던 반증 사례(set14_after, set15_after 다회 거부) 존재 → 방향성은 확실
+- 재현성은 100%가 아니므로 2~3회 재시도 여지 필요
+
+### 운용 팁
+- 거부 시 **모델 레퍼런스만 다른 사진으로 교체**하면 상당수 통과 (동일 인물 다른 컷)
+- 구글 계정 스위칭도 효과 있음 (safety 프로필이 계정별로 다름)
+- Playwright `.session` 점유 충돌 주의: 다른 Chrome 인스턴스가 같은 user_data_dir 잡고 있으면 lock 풀어야 — `wmic process where "name='chrome.exe'" get commandline` 으로 PID 확인 후 kill + `lockfile`/`LOCK`/`SingletonLock` rm
+- 상세 템플릿/예시: [[da-creative#프롬프트-db]]
+
+## [2026-04-14] Gemini 직호출 > fal 프록시 — 얼굴 보존·실사감 모두 우위
+
+출처: goglecc `compare_gemini_vs_fal.py` A/B 테스트 → [[src-goglecc-seed-curation]] 섹션 7.
+
+### 관찰
+동일 레퍼런스 + 동일 한국어 프롬프트:
+- **Google AI Studio 키 + `google-genai` + `gemini-2.5-flash-image` 직호출**: 얼굴 보존 ✓, 실사 챗 수준 ✓
+- **`fal-ai/nano-banana/edit`**: 얼굴이 완전 다른 인물로 바뀌는 사례 빈번, 배경에 렌더 느낌
+
+### 조건
+- Nano Banana/Gemini 이미지 모델은 **무조건 Google 직호출**
+- 원인(추정): fal 측 래핑/파라미터/프롬프트 전처리 차이
+
+### confidence: medium (1회 A/B, 효과 크기 큼)
+
+## [2026-04-14] Flux LoRA + 후처리 스택으로도 AI tell 완전 제거는 불가
+
+### 관찰
+XLabs RealismLora 0.75 + guidance 1.8 + 센서노이즈·언샤프·JPEG 재압축 후처리까지 쌓아도 일부 이미지에 "완벽한 미인" sheen 잔존.
+
+### 조건
+- Flux 베이스의 구조적 한계. 실사 최우선이면 Gemini/Imagen 계열로 전환
+- aesthetic LoRA는 스타일 변환/일관성 용도로만 남김
+
+### confidence: medium
+
+## [2026-04-14] key.txt 라벨 파서 관례 (멀티 API 키)
+
+### 관찰
+한 프로젝트에서 fal + Gemini 등 여러 키 필요할 때:
+```
+fal ai=41c...216
+제미나이=AIz...6OI
+```
+라벨 파서: `split("=", 1)[1].strip()`, 라벨은 부분 문자열 + lower() 대소문자 무시.
+
+### 조건
+- `.gitignore`에 `key.txt` 반드시 포함
+- 새 API 추가 시 줄만 추가, 코드 수정 불필요
+
+### confidence: medium

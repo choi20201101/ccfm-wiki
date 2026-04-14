@@ -35,9 +35,44 @@ contradiction: none
 - **confidence: high**
 - 세로 영상에서 제품은 하단 1/3에 놓아야 자막과 겹치지 않음
 
-### 세이프존 값은 플랫폼마다 재측정 필수
+### 세이프존 값은 고정이 아님. 플랫폼 업데이트마다 재측정해야 함
 - **confidence: high**
-- 세이프존 값은 고정이 아님. 플랫폼 업데이트마다 재측정해야 함
+
+## AI 이미지 생성
+
+### [2026-04-14] AI tell(생성물 티) 제거 프롬프트 스택
+출처: goglecc (씨드→Flux LoRA 파이프라인) → [[src-goglecc-seed-curation]]
+- **realness cue**: `skin pores, slight film grain, casual snapshot, no retouching, shot on iPhone, slightly underexposed, candid, natural imperfection`
+- **negative cue**: `smooth skin, plastic, cgi, 3d render, octane, hyperreal, symmetric face, airbrushed, overprocessed, hdr`
+- **guidance scale**: Flux는 **2.5~3.0** (높을수록 AI 느낌 강해짐 — prompt-aligned 과도)
+- **후처리**: 가우시안 노이즈 1~3% 얹으면 grain 추가로 실사성 상승
+- confidence: medium (가설 단계, goglecc 검증 예정)
+
+### [2026-04-14] Reference 누수 → subject LoRA가 아니라 aesthetic LoRA로 해결
+- **문제**: Nano Banana 같은 reference-based 호출은 배경까지 복제 → "베낀 티"
+- **해법**: **같은 무드, 다른 사람/장소 30~50장**으로 학습한 aesthetic LoRA
+  - 모델이 "내용(인물/장소)"은 못 외우고 **질감·조명·그레인·색감·프레이밍**만 학습
+  - Civitai "iPhone candid", "film grain" 류 LoRA가 이 방식
+- **콘텐츠 다양성 필수**: 같은 장소/인물 사진은 학습 셋에 1~2장만 (pHash 클러스터로 자동 배제)
+- **is_style=True** (fal flux-lora-fast-training 파라미터)
+- confidence: medium (업계 관행 + 이론적 뒷받침, 자체 학습 1회)
+
+### [2026-04-14] 실사 인플루언서 생성 — Gemini 직호출이 기본값, fal/Flux는 fallback
+- **문제**: 광고 소재용 "AI 같지 않은" 인플루언서 사진이 필요할 때 경로 선택
+- **검증 결과**:
+  - ✅ **Gemini API 직호출**(`gemini-2.5-flash-image` via `google-genai` SDK, 한국어 자연 프롬프트) → 챗 수준 실사
+  - ❌ fal-ai/nano-banana/edit → 얼굴 바뀜·렌더 느낌 섞임
+  - ❌ Flux + 커스텀 LoRA + 실사 LoRA 스택 → AI sheen 잔존
+- **규칙**: 인플루언서/인물 사실적 생성이 목표면 **Gemini 직호출 먼저**, 어차피 비용 차이 거의 없음
+- **프롬프트**: 한국어 + 촬영 맥락 풍부하게 (예: "친구가 핸드폰으로 찍어준 듯한 캔디드 스냅, 보정 없음, 피부 모공과 결점 그대로, 약간 필름 그레인")
+- confidence: high (A/B 검증)
+
+### [2026-04-14] Higgsfield vs Nano Banana — 철학 차이
+- **Higgsfield**: Flux + 캐릭터당 LoRA 학습 + IP-Adapter + 자체 비디오 모델 (stack 방식, 학습 필수, 캐릭터 일관성 강함)
+- **Nano Banana**: 단일 frozen 모델, multi-image reference 기반 (학습 불필요, 같은 인물 N회 생성 시 미세 변동)
+- 용도 분기: 같은 인물 100컷 → Higgsfield, 변주 다양 → Nano Banana
+- **공통**: 둘 다 **씨드 이미지 품질이 결과 좌우** → 사전 큐레이션 파이프라인이 입력 자산
+- confidence: medium
 
 ## 지역별 크리에이티브
 
@@ -173,3 +208,38 @@ contradiction: none
 - 고려 변수: 타겟 국가 플랫폼 관행(대만 IG, 동남아 틱톡 등), 타겟 연령대.
 - 선택지: (a) 원본 스타일 복제 / (b) 현지 관행 반영 / (c) 하이브리드
 - confidence: low
+
+### [2026-04-14] B/A 얼굴 모자이크는 **before/after 각각** 박스를 잡아야 한다
+- 관찰: Kling image2video가 같은 시드에서 before/after를 생성해도 카메라 거리·얼굴 높이가 미세하게 다름. 단일 박스로 덮으면 한쪽은 얼굴·한쪽은 턱/가슴이 덮여 품질 저하.
+- 조건: 세로 9:16 전신샷 기반 B/A 릴스. 자동 검출 불안정 시 수동 2-box 튜닝 필수.
+- 구조: `face_boxes.json` 에 `{"setN": {"before": {...}, "after": {...}}}` 저장. compose에서 서로 다른 박스 적용.
+- 출처: diet-b2a-v2 프로젝트 반복 ([[src-diet-b2a-v2]])
+- confidence: high (사용자 명시 피드백 3회 이상)
+
+### [2026-04-14] 유행 댄스명은 **프롬프트에 고유명사로 박기**
+- 관찰: Kling v1-6 에게 "K-pop 춤" 보다 "NewJeans Super Shy dance", "Apple Challenge (Meduza)", "Hot To Go letter choreography" 처럼 고유명사를 직접 넣으면 재현율 상승.
+- 조건: 틱톡/릴스에서 이미 바이럴된 댄스. 2024~2026 트렌드.
+- 출처: 10세트 춤 스타일 다양화 세션 ([[src-diet-b2a-v2]])
+- confidence: medium
+
+### [2026-04-14] 영문 댄스명을 **자막에 그대로 쓰면 조회수 손해**
+- 관찰: "165cm / NewJeans Super Shy" 같은 자막은 한국 사용자에게 "남 얘기" 느낌. 한국어 자극 훅(예: "살 뺐더니 친구가 몰라봄ㅋㅋ", "45kg 뺀 거 저도 못 믿음")으로 교체 시 공감 상승.
+- 조건: 한국어권 타겟. 번체/영어 버전은 해당 언어 관용어구로.
+- 출처: diet-b2a-v2 카피 교정 ([[src-diet-b2a-v2]], [[HOOK]])
+- confidence: high
+
+### [2026-04-14] 얼굴 박스 **같은 선상이면 1개 OK, 다르면 반드시 각각**
+- 규칙: before/after 인물의 얼굴 높이가 비슷(±20px)하면 박스 1개 공유 가능. 카메라 거리/포즈 다르면 2개 박스 필수.
+- 판단: 각 세트 Kling 생성 직후 before.mp4 / after.mp4 프레임 1장씩 뽑아 눈으로 비교. y 편차 > 30px면 분리.
+- 자동 감지는 참고만 — haarcascade 오검출률 30%+이므로 수동 확인 루프 필수.
+- 구조: `face_boxes.json` `{sid: {before:{...}, after:{...}}}` 또는 `{sid: {x,y,w,h}}` 단일 형태 둘 다 지원하도록 compose.get_boxes() 설계.
+- 출처: [[src-diet-b2a-v2]] set2/9/10 반복 교정 경험
+- confidence: high
+
+### [2026-04-14] 번체 중국어 자막은 **Microsoft JhengHei** (msjhbd.ttc) 사용
+- 관찰: 맑은 고딕(malgunbd.ttf)으로 번체 렌더링 시 "哪" 같은 중국어 전용 한자가 □(tofu)로 깨짐. set9 "肉到底蒸發到哪去了" → "肉到底蒸發到□去了".
+- 대응: 언어별 폰트 매핑 (`ko → malgunbd`, `zh-tw → msjhbd` 또는 `taipei` 등).
+- 조건: Windows 환경, Pillow TrueType 렌더링.
+- 출처: [[src-diet-b2a-v2]] 대만어 영상 렌더링 이슈
+- confidence: high
+- 교차: [[coding-lessons]]
