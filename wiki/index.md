@@ -16,7 +16,7 @@
 ### 기술/자동화 (Tech & Automation)
 - [[vibe-coding]] — 바이브코딩 & 클로드 스킬: 스킬 파이프라인, 프롬프트 엔지니어링, 환경설정
 - [[ai-automation]] — AI 자동화: 스킬 파이프라인, DA 자동화
-- [[content-ai-automation]] — 콘텐츠 AI 자동화: 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서
+- [[content-ai-automation]] — 콘텐츠 AI 자동화: 컷편집, 비전분석, Whisper, 자막레이아웃, bob계획서, **§10 IG릴스 자동업로드(instagrapi, 검증됨 2026-04-13)**
 - [[marketing-automation]] — 마케팅 자동화 AI: 광고 플랫폼, 리포트, CRM, 크롤링
 
 ### 크리에이티브/마케팅 (Creative & Marketing)

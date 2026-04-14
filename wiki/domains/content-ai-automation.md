@@ -434,3 +434,191 @@ bob PLAN.md  →  dd steps 00~05  →  harness RULES  →  output/영상{1,2,3}.
 ## 관련 소스
 - [[src-youtube]] — yt-dlp 대량 수집 + Claude CLI 서브에이전트 4개 병렬 분석 (자막 풀텍스트)
 - [[src-instar]] — 인스타 릴스 yt-dlp 익명 추출 + Claude Vision 프롬프트 자동화
+
+---
+
+## 10. Instagram 릴스 자동 업로드 (검증됨, 2026-04-13)
+
+### 10-1. 검증된 업로드 파이프라인
+
+> confidence: high (실제 테스트 업로드 2건 성공 — 계정 `jmtw.12345`, 3MB mp4, 대만시장 번체중문 캡션)
+
+**결론**: 공식 Graph API 대신 `instagrapi` (비공식 Private API, ID/PW 로그인)가 **현실적으로 가장 빠른 구현**. 단, ToS 위반 & 계정 밴 리스크 감수.
+
+### 10-2. 최소 동작 코드 (약 40줄)
+
+```python
+from instagrapi import Client
+cli = Client()
+# 세션 재사용 (재로그인 최소화 — 밴 방어 핵심)
+if session_file.exists():
+    cli.load_settings(session_file)
+    cli.login(username, password)  # 세션 있어도 login 호출 필요
+    cli.get_timeline_feed()  # 세션 유효성 검증
+else:
+    cli.login(username, password)
+    cli.dump_settings(session_file)
+# 릴스 업로드
+media = cli.clip_upload(path=video_path, caption=caption_with_hashtags)
+# → media.pk, media.code 반환. URL: instagram.com/reel/{code}/
+# 삭제: cli.media_delete(media.pk)
+```
+
+### 10-3. 실전 교훈 (테스트에서 검증)
+
+- **로그인 → 업로드 총 소요: 38초** (신규 세션, 3MB 영상 기준). 세션 재사용 시 업로드만 ~28초
+- `clip_upload` 내부에서 moviepy로 썸네일 자동 생성 — ffmpeg 바이너리 PATH 필수 아님 (imageio-ffmpeg 번들)
+- 캡션에 해시태그 같이 넣음 (별도 필드 없음). 2200자·30해시태그 제한
+- 업로드 직후 `media_delete(pk)` 즉시 먹힘 → 테스트 후 정리 용이
+
+### 10-4. 멀티계정 운영 (50~100개) 아키텍처
+
+- **accounts.xlsx 단일 파일**로 계정 관리. 필수 컬럼: username, password. 나머지(account_name, session_file, status, daily_limit, proxy, note)는 빈칸 허용, 첫 실행 시 자동 채움
+- account_name 자동 생성: username의 특수문자(`.`, `+` 등) → `_` 치환
+- 계정당 고유 `sessions/{account_name}.json` → 재로그인 횟수 최소화
+- **밴 방어 파라미터** (검증 전이지만 합리적 기본값):
+  - daily_limit 5건/계정 (신규 3건)
+  - 업로드 사이 랜덤 60~180초 지터 (고정 간격 금지)
+  - 계정별 고유 device_settings 고정 (`cli.set_device()`)
+  - proxy 계정별로 분산 강력 권장 (IP 분산)
+
+### 10-5. 예외 처리 패턴
+
+- `LoginRequired`, `ChallengeRequired`, `PleaseWaitFewMinutes` → 해당 계정 status=paused + 알림
+- 챌린지/2FA 발생 시 `instarup relogin --account <n>` 대화형으로 해결
+- 세션 만료(`get_timeline_feed` 실패) → 자동 재로그인 + 세션 덮어쓰기
+
+### 10-6. 워크플로우 설계 (BDH 스킬로 검증)
+
+```
+videos/{account}/pending/   ← 사용자 투입
+   ↓ analyze (Claude Code 서브에이전트 병렬, A/B 캡션 생성)
+drafts/{account}.xlsx       ← 사람이 엑셀로 검토·승인 (yaml 아닌 엑셀이 훨씬 편함)
+   ↓ plan (일정 할당)
+schedule/{account}.xlsx     ← 예약 큐
+   ↓ run (APScheduler 데몬)
+videos/{account}/uploaded/  ← 성공 자동 이동
+videos/{account}/failed/    ← 실패 이동 + 로그
+```
+
+- **엑셀 > yaml** (50~100 계정 규모에서 검토 UX 차이 큼)
+- **검토 게이트 필수** (status=draft → approved 수동 변경)
+- **A/B 캡션 자동 제안** + custom_caption 수기 오버라이드 옵션 (감성톤/직관톤 2개)
+
+### 10-7. AI 캡션 생성 비용 절감 패턴
+
+- **anthropic SDK 직접 호출 금지** → Claude Code 서브에이전트(Agent 툴)로 대체
+- Python 코드는 ffmpeg로 영상당 5프레임(10/30/50/70/90% 지점) 추출만 담당
+- Claude Code 스킬이 서브에이전트 10개 병렬 디스패치 → 프레임 Read → 캡션 생성 → 엑셀 기록
+- 이유: (a) API 비용 제거 (구독에 포함), (b) 서브에이전트 병렬성 활용, (c) 아키텍처 단순화
+
+### 10-8. 관련 소스
+- [[src-instarup]] — 프로젝트 경로: `C:\Users\Administrator\Desktop\instarup\`
+- BDH 스킬로 Spec v5까지 반복 구체화 후 step-00/01 구현 + E2E 업로드 검증 완료
+
+---
+
+## 11. instarup 확장 스펙 — 백엔드·UI·배포 (2026-04-13)
+
+> confidence: high — 실제 구현·테스트 완료 부분 + medium — 배포 계획 부분
+
+### 11-1. 완성된 백엔드 구조 (BDH 파이프라인 결과물)
+
+```
+src/instarup/
+  accounts.py    # accounts.xlsx R/W (username/password만 필수, 나머지 자동)
+  config.py     # config.yaml (upload_delay_min/max, daily_limit, paths, limits)
+  state.py      # state/processed.json (account+hash 키, count_today)
+  scanner.py    # videos/{account}/{pending,uploaded,failed}/ 상태머신
+  uploader.py   # instagrapi Client + 세션 재사용 + _move 폴더 이동
+  planner.py    # schedule/{account}.xlsx R/W, due_rows(now)
+  scheduler.py  # APScheduler BlockingScheduler + 랜덤 지터(60~180s) + daily_limit
+  cli.py        # status / schedule add|list / run / upload-now
+```
+
+- **핵심 교훈**: 엑셀을 "컨트롤 패널"로 쓰면 사용자가 대량 편집(50~100행 복붙)을 엑셀로 할 수 있어 UX 압승. 데몬은 60초 폴링으로 엑셀 변경을 자동 반영
+- **테스트**: pytest 13/13 통과 (accounts/state/scanner/config)
+
+### 11-2. Streamlit UI 스택 (한국 커뮤니티 표준)
+
+- **streamlit-option-menu** 패키지 사용 — Bootstrap 아이콘 내장, 한글 라벨 자연스러움
+- 상단 수평 메뉴 (`orientation="horizontal"`) + 사이드바는 `collapsed` 기본값
+- 커스텀 CSS로 MainMenu/footer 숨김, 카드형 UI(그림자+테두리+pill)
+- 인스타 브랜드 컬러 `#E1306C` (primary) — `.streamlit/config.toml`에 테마 지정
+
+```python
+# 한국 Streamlit 프로젝트에 복붙용 스니펫
+from streamlit_option_menu import option_menu
+selected = option_menu(
+    menu_title=None,
+    options=["대시보드", "업로드", "큐", "계정", "로그"],
+    icons=["grid-fill", "cloud-upload-fill", "list-task", "person-circle", "terminal"],
+    orientation="horizontal",
+    styles={
+        "nav-link-selected": {"background-color": "#FDF2F6", "color": "#E1306C"},
+    },
+)
+```
+
+- **데몬 제어 패턴**: `subprocess.Popen([sys.executable, "-m", "mod.cli", "run"])` + `st.session_state.daemon_proc` 으로 UI 내 시작/중지 버튼
+- **로그 tail**: `log_path.read_text().splitlines()[-200:]` → `st.code(..., language="log")`
+
+### 11-3. Windows 패키징 3-배치 패턴
+
+1. `install.bat` — `py -m pip install -e .` + 템플릿 생성 (최초 1회)
+2. `start_ui.bat` — `py -m streamlit run app.py` (브라우저 자동 오픈)
+3. `start_daemon.bat` — UI 없이 데몬만 (서버 스타일)
+
+모두 `cd /d "%~dp0"` + `set PYTHONPATH=%~dp0src` 헤더로 src-layout 해결.
+
+### 11-4. Vercel 배포의 현실 (모바일 친화 질문 시 대답 템플릿)
+
+> **Vercel은 이 종류 자동화에 절반만 맞음**. 반드시 설명해야 할 제약:
+
+- ❌ APScheduler 데몬 실행 불가 (서버리스 = 항상 켜진 프로세스 없음)
+- ❌ instagrapi 세션 파일 저장 불가 (디스크 휘발성)
+- ❌ 긴 업로드 작업 불가 (함수 타임아웃 10~60초)
+- ❌ 영상 파일 임시 저장 불가
+- ✅ 모바일 UI(Next.js)는 완벽
+
+**권장 2-tier 아키텍처**:
+```
+Vercel (Next.js mobile UI) ──HTTPS──▶ Backend (always-on)
+                                       - FastAPI
+                                       - APScheduler daemon
+                                       - instagrapi sessions
+                                       - 영상 저장소
+```
+
+**백엔드 호스팅 옵션 티어표**:
+| 옵션 | 비용 | 항상 켜짐 | 난이도 |
+|---|---|---|---|
+| A. 본인 PC + Cloudflare Tunnel | 무료 | PC 켜진 동안만 | 쉬움 |
+| B. Railway | ~$5/월 | ✅ | 쉬움(깃푸시) |
+| C. Fly.io 무료 티어 | 무료 | ✅ | 중간 |
+| D. Oracle 무료 VPS | 무료 | ✅ | 어려움 |
+
+**Phase 접근법** (대화 시 제안 템플릿):
+1. Phase 1: FastAPI로 백엔드 재구성(현 Python 80% 재사용) + Next.js 모바일 UI — 로컬 테스트
+2. Phase 2: Vercel(프론트) + Railway/PC터널(백엔드) 배포
+3. Phase 3: 인증(단순 비밀번호 or NextAuth)
+
+### 11-5. 재사용 가능한 결정 체크리스트 (IG 자동화 신규 프로젝트 시)
+
+- [ ] 업로드 라이브러리: **instagrapi** (Graph API보다 빠른 구현, ToS 위반 감수)
+- [ ] 계정 레지스트리: **accounts.xlsx 단일 파일** (username/password만 필수)
+- [ ] 세션 재사용: **`sessions/{account}.json`** dump/load (밴 방어 핵심)
+- [ ] 검토 UX: **엑셀 기반** (yaml/JSON 버림 — 50~100건 스케일에서 엑셀 압승)
+- [ ] 예약 큐: **schedule/{account}.xlsx** 계정별 분리
+- [ ] 폴더 상태머신: **pending → uploaded/failed** (삭제 금지, 이동만)
+- [ ] 데몬: **APScheduler BlockingScheduler + IntervalTrigger(60s)**
+- [ ] 지터: **랜덤 60~180s** (고정 간격 금지 — 봇 패턴 회피)
+- [ ] daily_limit: **신규 3건 / 숙성 5~10건**
+- [ ] UI: **Streamlit + streamlit-option-menu** (로컬) / **Next.js** (모바일·원격)
+- [ ] AI 캡션: **Claude Code 서브에이전트** (anthropic SDK 직접 호출 금지)
+- [ ] Harness: **Level 3** (ruff + mypy strict + pre-commit + 커스텀 훅)
+
+### 11-6. 관련 링크
+- [[src-instarup]] — 프로젝트 레퍼런스
+- [[content-ai-automation#10. Instagram 릴스 자동 업로드]] — §10 검증된 스니펫
+- 지식 체인: BDH(bob+dd+harness) 파이프라인 적용 사례. Spec v1→v5 진화 전체 기록이 `dev/active/insta-autopost/state.md`
