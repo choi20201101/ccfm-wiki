@@ -8,72 +8,64 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "raw_qscv_extract_and_chunk_py"
+      "id": "raw_qscv_extract_and_chunk_py",
+      "community": 8
     },
     {
       "label": "slugify()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L21",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_slugify"
+      "id": "extract_and_chunk_slugify",
+      "community": 8
     },
     {
       "label": "iter_block_items()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L27",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_iter_block_items"
+      "id": "extract_and_chunk_iter_block_items",
+      "community": 8
     },
     {
       "label": "paragraph_text()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L41",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_paragraph_text"
+      "id": "extract_and_chunk_paragraph_text",
+      "community": 8
     },
     {
       "label": "table_to_md()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L64",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_table_to_md"
+      "id": "extract_and_chunk_table_to_md",
+      "community": 8
     },
     {
       "label": "extract()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L76",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_extract"
+      "id": "extract_and_chunk_extract",
+      "community": 8
     },
     {
       "label": "chunk_and_write()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L92",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_chunk_and_write"
+      "id": "extract_and_chunk_chunk_and_write",
+      "community": 8
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L118",
-      "community": 8,
-      "community_label": "QSCV 문서 추출 코드",
-      "id": "extract_and_chunk_main"
+      "id": "extract_and_chunk_main",
+      "community": 8
     },
     {
       "label": "QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG] 플",
@@ -89,45 +81,40 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "raw_skills_diet_b2a_scripts_compose_py"
+      "id": "raw_skills_diet_b2a_scripts_compose_py",
+      "community": 4
     },
     {
       "label": "mosaic()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L60",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_mosaic"
+      "id": "compose_mosaic",
+      "community": 4
     },
     {
       "label": "video1()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L22",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_video1"
+      "id": "compose_video1",
+      "community": 4
     },
     {
       "label": "video_23()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L71",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_video_23"
+      "id": "compose_video_23",
+      "community": 4
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L189",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_main"
+      "id": "compose_main",
+      "community": 4
     },
     {
       "label": "Step 03 — ffmpeg filter_complex compose: mosaic + overlays + audio → 3 mp4s.",
@@ -143,27 +130,24 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 16,
-      "community_label": "기타: detect_face.py",
-      "id": "raw_skills_diet_b2a_scripts_detect_face_py"
+      "id": "raw_skills_diet_b2a_scripts_detect_face_py",
+      "community": 16
     },
     {
       "label": "try_opencv_detect()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L16",
-      "community": 16,
-      "community_label": "기타: detect_face.py",
-      "id": "detect_face_try_opencv_detect"
+      "id": "detect_face_try_opencv_detect",
+      "community": 16
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L40",
-      "community": 16,
-      "community_label": "기타: detect_face.py",
-      "id": "detect_face_main"
+      "id": "detect_face_main",
+      "community": 16
     },
     {
       "label": "Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O",
@@ -179,18 +163,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 22,
-      "community_label": "기타: export.py",
-      "id": "raw_skills_diet_b2a_scripts_export_py"
+      "id": "raw_skills_diet_b2a_scripts_export_py",
+      "community": 22
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L26",
-      "community": 22,
-      "community_label": "기타: export.py",
-      "id": "export_main"
+      "id": "export_main",
+      "community": 22
     },
     {
       "label": "Step 05 — thumbnails + captions + zip.",
@@ -206,72 +188,64 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "raw_skills_diet_b2a_scripts_kling_client_py"
+      "id": "raw_skills_diet_b2a_scripts_kling_client_py",
+      "community": 9
     },
     {
       "label": "read_keys()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L24",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_read_keys"
+      "id": "kling_client_read_keys",
+      "community": 9
     },
     {
       "label": "token()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L36",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_token"
+      "id": "kling_client_token",
+      "community": 9
     },
     {
       "label": "submit()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L43",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_submit"
+      "id": "kling_client_submit",
+      "community": 9
     },
     {
       "label": "poll()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L69",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_poll"
+      "id": "kling_client_poll",
+      "community": 9
     },
     {
       "label": "download()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L95",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_download"
+      "id": "kling_client_download",
+      "community": 9
     },
     {
       "label": "save_state()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L104",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_save_state"
+      "id": "kling_client_save_state",
+      "community": 9
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L108",
-      "community": 9,
-      "community_label": "AI 아바타/영상 툴",
-      "id": "kling_client_main"
+      "id": "kling_client_main",
+      "community": 9
     },
     {
       "label": "Step 02 — Kling image2video: JWT, submit, poll, download, resume.",
@@ -287,63 +261,56 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "raw_skills_diet_b2a_scripts_lib_py"
+      "id": "raw_skills_diet_b2a_scripts_lib_py",
+      "community": 10
     },
     {
       "label": "skill_root()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L9",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_skill_root"
+      "id": "lib_skill_root",
+      "community": 10
     },
     {
       "label": "load_config()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L13",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_load_config"
+      "id": "lib_load_config",
+      "community": 10
     },
     {
       "label": "rel()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L20",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_rel"
+      "id": "lib_rel",
+      "community": 10
     },
     {
       "label": "out_dir()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L28",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_out_dir"
+      "id": "lib_out_dir",
+      "community": 10
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L34",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_run"
+      "id": "lib_run",
+      "community": 10
     },
     {
       "label": "ffprobe_duration()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L39",
-      "community": 10,
-      "community_label": "기타: lib.py",
-      "id": "lib_ffprobe_duration"
+      "id": "lib_ffprobe_duration",
+      "community": 10
     },
     {
       "label": "Shared helpers: config loading, path resolution, ffmpeg runner.",
@@ -368,27 +335,24 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 17,
-      "community_label": "기타: make_overlays.py",
-      "id": "raw_skills_diet_b2a_scripts_make_overlays_py"
+      "id": "raw_skills_diet_b2a_scripts_make_overlays_py",
+      "community": 17
     },
     {
       "label": "stroked()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L13",
-      "community": 17,
-      "community_label": "기타: make_overlays.py",
-      "id": "make_overlays_stroked"
+      "id": "make_overlays_stroked",
+      "community": 17
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L31",
-      "community": 17,
-      "community_label": "기타: make_overlays.py",
-      "id": "make_overlays_main"
+      "id": "make_overlays_main",
+      "community": 17
     },
     {
       "label": "Step 01 — generate stroked text PNG overlays from config.copy.",
@@ -404,27 +368,24 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 18,
-      "community_label": "기타: qa_check.py",
-      "id": "raw_skills_diet_b2a_scripts_qa_check_py"
+      "id": "raw_skills_diet_b2a_scripts_qa_check_py",
+      "community": 18
     },
     {
       "label": "probe()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L11",
-      "community": 18,
-      "community_label": "기타: qa_check.py",
-      "id": "qa_check_probe"
+      "id": "qa_check_probe",
+      "community": 18
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L20",
-      "community": 18,
-      "community_label": "기타: qa_check.py",
-      "id": "qa_check_main"
+      "id": "qa_check_main",
+      "community": 18
     },
     {
       "label": "Step 04 — quality checks on the 3 output mp4s.",
@@ -440,18 +401,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 23,
-      "community_label": "기타: run_all.py",
-      "id": "raw_skills_diet_b2a_scripts_run_all_py"
+      "id": "raw_skills_diet_b2a_scripts_run_all_py",
+      "community": 23
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L20",
-      "community": 23,
-      "community_label": "기타: run_all.py",
-      "id": "run_all_main"
+      "id": "run_all_main",
+      "community": 23
     },
     {
       "label": "Orchestrator — run steps 00→05 idempotently.",
@@ -467,18 +426,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 24,
-      "community_label": "기타: validate_input.py",
-      "id": "raw_skills_diet_b2a_scripts_validate_input_py"
+      "id": "raw_skills_diet_b2a_scripts_validate_input_py",
+      "community": 24
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L12",
-      "community": 24,
-      "community_label": "기타: validate_input.py",
-      "id": "validate_input_main"
+      "id": "validate_input_main",
+      "community": 24
     },
     {
       "label": "Step 00 — validate inputs and config.",
@@ -494,9 +451,8 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 27,
-      "community_label": "기타: build_sets.py",
-      "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
+      "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
+      "community": 27
     },
     {
       "label": "Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.",
@@ -512,54 +468,48 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L1",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py"
+      "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
+      "community": 11
     },
     {
       "label": "_pick_best_face()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L24",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "detect_faces_pick_best_face"
+      "id": "detect_faces_pick_best_face",
+      "community": 11
     },
     {
       "label": "_extract_frame()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L35",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "detect_faces_extract_frame"
+      "id": "detect_faces_extract_frame",
+      "community": 11
     },
     {
       "label": "_detect_in_clip()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L47",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "detect_faces_detect_in_clip"
+      "id": "detect_faces_detect_in_clip",
+      "community": 11
     },
     {
       "label": "detect_for_set()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L68",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "detect_faces_detect_for_set"
+      "id": "detect_faces_detect_for_set",
+      "community": 11
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L84",
-      "community": 11,
-      "community_label": "기타: detect_faces.py",
-      "id": "detect_faces_main"
+      "id": "detect_faces_main",
+      "community": 11
     },
     {
       "label": "Detect faces in each set's seed images, store per-set mosaic box.  The seed be",
@@ -593,45 +543,40 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L1",
-      "community": 13,
-      "community_label": "기타: gemini_client.py",
-      "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py"
+      "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
+      "community": 13
     },
     {
       "label": "new_client()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L23",
-      "community": 13,
-      "community_label": "기타: gemini_client.py",
-      "id": "gemini_client_new_client"
+      "id": "gemini_client_new_client",
+      "community": 13
     },
     {
       "label": "select_thinking_model()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L45",
-      "community": 13,
-      "community_label": "기타: gemini_client.py",
-      "id": "gemini_client_select_thinking_model"
+      "id": "gemini_client_select_thinking_model",
+      "community": 13
     },
     {
       "label": "clean_logo()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L109",
-      "community": 13,
-      "community_label": "기타: gemini_client.py",
-      "id": "gemini_client_clean_logo"
+      "id": "gemini_client_clean_logo",
+      "community": 13
     },
     {
       "label": "generate()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L118",
-      "community": 13,
-      "community_label": "기타: gemini_client.py",
-      "id": "gemini_client_generate"
+      "id": "gemini_client_generate",
+      "community": 13
     },
     {
       "label": "Thin wrapper around gemini-imagegen/gemini_auto.GeminiImageGen. Always applies",
@@ -665,45 +610,40 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L1",
-      "community": 14,
-      "community_label": "로고 제거 기술",
-      "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py"
+      "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
+      "community": 14
     },
     {
       "label": "make_corner_masks()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L47",
-      "community": 14,
-      "community_label": "로고 제거 기술",
-      "id": "logo_remover_make_corner_masks"
+      "id": "logo_remover_make_corner_masks",
+      "community": 14
     },
     {
       "label": "remove_logo()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L61",
-      "community": 14,
-      "community_label": "로고 제거 기술",
-      "id": "logo_remover_remove_logo"
+      "id": "logo_remover_remove_logo",
+      "community": 14
     },
     {
       "label": "process_image()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L90",
-      "community": 14,
-      "community_label": "로고 제거 기술",
-      "id": "logo_remover_process_image"
+      "id": "logo_remover_process_image",
+      "community": 14
     },
     {
       "label": "batch_process()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L109",
-      "community": 14,
-      "community_label": "로고 제거 기술",
-      "id": "logo_remover_batch_process"
+      "id": "logo_remover_batch_process",
+      "community": 14
     },
     {
       "label": "하단 좌/우 코너에 타원형 마스크 생성",
@@ -728,27 +668,24 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 19,
-      "community_label": "기타: analyze_bgm.py",
-      "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py"
+      "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
+      "community": 19
     },
     {
       "label": "analyze()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L13",
-      "community": 19,
-      "community_label": "기타: analyze_bgm.py",
-      "id": "analyze_bgm_analyze"
+      "id": "analyze_bgm_analyze",
+      "community": 19
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L57",
-      "community": 19,
-      "community_label": "기타: analyze_bgm.py",
-      "id": "analyze_bgm_main"
+      "id": "analyze_bgm_main",
+      "community": 19
     },
     {
       "label": "Analyze 3 reference BGM tracks: BPM, drop (onset max energy) second, first-choru",
@@ -764,18 +701,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 25,
-      "community_label": "기타: build_prompts.py",
-      "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py"
+      "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
+      "community": 25
     },
     {
       "label": "write()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L21",
-      "community": 25,
-      "community_label": "기타: build_prompts.py",
-      "id": "build_prompts_write"
+      "id": "build_prompts_write",
+      "community": 25
     },
     {
       "label": "Generate 20 Kling prompt files (5 sets × 4 keys) from styles.json.",
@@ -791,18 +726,16 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 26,
-      "community_label": "기타: check_session.py",
-      "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py"
+      "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
+      "community": 26
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L13",
-      "community": 26,
-      "community_label": "기타: check_session.py",
-      "id": "check_session_main"
+      "id": "check_session_main",
+      "community": 26
     },
     {
       "label": "Verify Gemini session is still valid. Non-headless to allow user to see state.",
@@ -818,63 +751,56 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L1",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py"
+      "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
+      "community": 7
     },
     {
       "label": "page_text()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L61",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_page_text"
+      "id": "gen_seeds_page_text",
+      "community": 7
     },
     {
       "label": "was_refused()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L68",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_was_refused"
+      "id": "gen_seeds_was_refused",
+      "community": 7
     },
     {
       "label": "_try()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L73",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_try"
+      "id": "gen_seeds_try",
+      "community": 7
     },
     {
       "label": "_with_fallback()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L81",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_with_fallback"
+      "id": "gen_seeds_with_fallback",
+      "community": 7
     },
     {
       "label": "run_one()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L91",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_run_one"
+      "id": "gen_seeds_run_one",
+      "community": 7
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L139",
-      "community": 7,
-      "community_label": "기타: gen_seeds.py",
-      "id": "gen_seeds_main"
+      "id": "gen_seeds_main",
+      "community": 7
     },
     {
       "label": "Generate before/after seeds for 5 sets via Gemini + auto logo removal.",
@@ -908,27 +834,24 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 20,
-      "community_label": "기타: gen_scales.py",
-      "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py"
+      "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
+      "community": 20
     },
     {
       "label": "run_one()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L27",
-      "community": 20,
-      "community_label": "기타: gen_scales.py",
-      "id": "gen_scales_run_one"
+      "id": "gen_scales_run_one",
+      "community": 20
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L58",
-      "community": 20,
-      "community_label": "기타: gen_scales.py",
-      "id": "gen_scales_main"
+      "id": "gen_scales_main",
+      "community": 20
     },
     {
       "label": "Generate per-set scale images with varied kg via Gemini + auto logo removal.",
@@ -944,72 +867,64 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L1",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py"
+      "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
+      "community": 12
     },
     {
       "label": "read_keys()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L35",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_read_keys"
+      "id": "gen_kling_read_keys",
+      "community": 12
     },
     {
       "label": "token()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L45",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_token"
+      "id": "gen_kling_token",
+      "community": 12
     },
     {
       "label": "submit()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L52",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_submit"
+      "id": "gen_kling_submit",
+      "community": 12
     },
     {
       "label": "poll()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L77",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_poll"
+      "id": "gen_kling_poll",
+      "community": 12
     },
     {
       "label": "download()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L102",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_download"
+      "id": "gen_kling_download",
+      "community": 12
     },
     {
       "label": "save_state()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L110",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_save_state"
+      "id": "gen_kling_save_state",
+      "community": 12
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L114",
-      "community": 12,
-      "community_label": "기타: gen_kling.py",
-      "id": "gen_kling_main"
+      "id": "gen_kling_main",
+      "community": 12
     },
     {
       "label": "Kling image2video batch for all sets × 4 keys. Resume-safe.",
@@ -1025,63 +940,56 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L1",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+      "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "community": 4
     },
     {
       "label": "get_boxes()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L29",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_get_boxes"
+      "id": "compose_get_boxes",
+      "community": 4
     },
     {
       "label": "stroked()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L42",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_stroked"
+      "id": "compose_stroked",
+      "community": 4
     },
     {
       "label": "run()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L71",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_run"
+      "id": "compose_run",
+      "community": 4
     },
     {
       "label": "build_overlays()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L76",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_build_overlays"
+      "id": "compose_build_overlays",
+      "community": 4
     },
     {
       "label": "compose_v1()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L95",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_compose_v1"
+      "id": "compose_compose_v1",
+      "community": 4
     },
     {
       "label": "compose_v23()",
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L135",
-      "community": 4,
-      "community_label": "기타: compose.py",
-      "id": "compose_compose_v23"
+      "id": "compose_compose_v23",
+      "community": 4
     },
     {
       "label": "Return (before_box, after_box). Accept both legacy (flat dict per set)     and",
@@ -1097,36 +1005,32 @@
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "community": 15,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
-      "id": "scripts_inject_iboss_entities_py"
+      "id": "scripts_inject_iboss_entities_py",
+      "community": 15
     },
     {
       "label": "make_node()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L119",
-      "community": 15,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
-      "id": "inject_iboss_entities_make_node"
+      "id": "inject_iboss_entities_make_node",
+      "community": 15
     },
     {
       "label": "make_edge()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L134",
-      "community": 15,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
-      "id": "inject_iboss_entities_make_edge"
+      "id": "inject_iboss_entities_make_edge",
+      "community": 15
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L149",
-      "community": 15,
-      "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
-      "id": "inject_iboss_entities_main"
+      "id": "inject_iboss_entities_main",
+      "community": 15
     },
     {
       "label": "Inject iboss (최재명 i-boss 201건) entities into the knowledge graph.  Why: graphi",
@@ -1142,27 +1046,24 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 21,
-      "community_label": "그래프 인덱싱 스크립트",
-      "id": "scripts_regen_graph_report_py"
+      "id": "scripts_regen_graph_report_py",
+      "community": 21
     },
     {
       "label": "pick_label()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L46",
-      "community": 21,
-      "community_label": "그래프 인덱싱 스크립트",
-      "id": "regen_graph_report_pick_label"
+      "id": "regen_graph_report_pick_label",
+      "community": 21
     },
     {
       "label": "main()",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L62",
-      "community": 21,
-      "community_label": "그래프 인덱싱 스크립트",
-      "id": "regen_graph_report_main"
+      "id": "regen_graph_report_main",
+      "community": 21
     },
     {
       "label": "Re-generate GRAPH_REPORT.md using the semantic community labels stored on each n",
@@ -2559,6 +2460,214 @@
       "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_shortform"
+    },
+    {
+      "label": "다이어트 비포애프터 릴스 자동 생성 스킬",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_ko_main"
+    },
+    {
+      "label": "다이어트 변신 릴스 공장",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_ko_factory"
+    },
+    {
+      "label": "비포애프터 영상 자동화",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_ko_b2a_auto"
+    },
+    {
+      "label": "체중감량 쇼츠 릴스",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_ko_weightloss"
+    },
+    {
+      "label": "Kling Gemini 비포애프터 파이프라인",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_pipeline"
+    },
+    {
+      "label": "다국어 다이어트 릴스 (한국어·번체)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_multilang"
+    },
+    {
+      "label": "다이어트 B2A v2",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_short"
+    },
+    {
+      "label": "bdh 파이프라인 B/A 스킬",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_bdh"
+    },
+    {
+      "label": "다이어트",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_diet"
+    },
+    {
+      "label": "비포애프터",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_b2a"
+    },
+    {
+      "label": "릴스",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_reels"
+    },
+    {
+      "label": "쇼츠",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_shorts"
+    },
+    {
+      "label": "변신",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_transform"
+    },
+    {
+      "label": "체중감량",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_weightloss"
+    },
+    {
+      "label": "감량",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_loss"
+    },
+    {
+      "label": "B/A",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-diet-b2a-v2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-14",
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
+      "id": "diet_b2a_v2_alias_word_ba"
     }
   ],
   "links": [
@@ -2570,9 +2679,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_slugify",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_slugify"
+      "target": "extract_and_chunk_slugify",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2582,9 +2691,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_iter_block_items",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_iter_block_items"
+      "target": "extract_and_chunk_iter_block_items",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2594,9 +2703,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_paragraph_text",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_paragraph_text"
+      "target": "extract_and_chunk_paragraph_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2606,9 +2715,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_table_to_md",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_table_to_md"
+      "target": "extract_and_chunk_table_to_md",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2618,9 +2727,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_extract",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_extract"
+      "target": "extract_and_chunk_extract",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2630,9 +2739,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_chunk_and_write",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_chunk_and_write"
+      "target": "extract_and_chunk_chunk_and_write",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2642,9 +2751,9 @@
       "weight": 1.0,
       "_src": "raw_qscv_extract_and_chunk_py",
       "_tgt": "extract_and_chunk_main",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_main"
+      "target": "extract_and_chunk_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2654,9 +2763,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_rationale_1",
       "_tgt": "raw_qscv_extract_and_chunk_py",
-      "confidence_score": 1.0,
       "source": "raw_qscv_extract_and_chunk_py",
-      "target": "extract_and_chunk_rationale_1"
+      "target": "extract_and_chunk_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2666,9 +2775,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_slugify",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_slugify",
-      "target": "extract_and_chunk_main"
+      "target": "extract_and_chunk_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2678,9 +2787,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_iter_block_items",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_iter_block_items",
-      "target": "extract_and_chunk_extract"
+      "target": "extract_and_chunk_extract",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2690,9 +2799,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_paragraph_text",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_paragraph_text",
-      "target": "extract_and_chunk_extract"
+      "target": "extract_and_chunk_extract",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2702,9 +2811,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_extract",
       "_tgt": "extract_and_chunk_table_to_md",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_table_to_md",
-      "target": "extract_and_chunk_extract"
+      "target": "extract_and_chunk_extract",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2714,9 +2823,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_extract",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_extract",
-      "target": "extract_and_chunk_main"
+      "target": "extract_and_chunk_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2726,9 +2835,9 @@
       "weight": 1.0,
       "_src": "extract_and_chunk_main",
       "_tgt": "extract_and_chunk_chunk_and_write",
-      "confidence_score": 1.0,
       "source": "extract_and_chunk_chunk_and_write",
-      "target": "extract_and_chunk_main"
+      "target": "extract_and_chunk_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2738,9 +2847,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_mosaic"
+      "target": "compose_mosaic",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2750,9 +2859,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video1",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video1"
+      "target": "compose_video1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2762,9 +2871,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_video_23",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_video_23"
+      "target": "compose_video_23",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2774,9 +2883,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_compose_py",
       "_tgt": "compose_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_main"
+      "target": "compose_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2786,9 +2895,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_compose_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_compose_py",
-      "target": "compose_rationale_1"
+      "target": "compose_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2798,9 +2907,9 @@
       "weight": 1.0,
       "_src": "compose_video1",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video1"
+      "target": "compose_video1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2810,9 +2919,9 @@
       "weight": 1.0,
       "_src": "compose_video_23",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_video_23"
+      "target": "compose_video_23",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2822,9 +2931,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2834,9 +2943,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_compose_v1"
+      "target": "compose_compose_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2846,9 +2955,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_mosaic",
-      "confidence_score": 1.0,
       "source": "compose_mosaic",
-      "target": "compose_compose_v23"
+      "target": "compose_compose_v23",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2858,9 +2967,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video1",
-      "confidence_score": 1.0,
       "source": "compose_video1",
-      "target": "compose_main"
+      "target": "compose_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2870,9 +2979,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_video_23",
-      "confidence_score": 1.0,
       "source": "compose_video_23",
-      "target": "compose_main"
+      "target": "compose_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2882,9 +2991,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_main",
-      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2894,9 +3003,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_build_overlays",
-      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_build_overlays"
+      "target": "compose_build_overlays",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2906,9 +3015,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_compose_v1",
-      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_compose_v1"
+      "target": "compose_compose_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2918,9 +3027,9 @@
       "weight": 1.0,
       "_src": "compose_main",
       "_tgt": "compose_compose_v23",
-      "confidence_score": 1.0,
       "source": "compose_main",
-      "target": "compose_compose_v23"
+      "target": "compose_compose_v23",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2930,9 +3039,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "confidence_score": 1.0,
       "source": "compose_rationale_1",
-      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
+      "target": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2942,9 +3051,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_try_opencv_detect",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_try_opencv_detect"
+      "target": "detect_face_try_opencv_detect",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2954,9 +3063,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_detect_face_py",
       "_tgt": "detect_face_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_main"
+      "target": "detect_face_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -2966,9 +3075,9 @@
       "weight": 1.0,
       "_src": "detect_face_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_detect_face_py",
-      "target": "detect_face_rationale_1"
+      "target": "detect_face_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -2978,9 +3087,9 @@
       "weight": 1.0,
       "_src": "detect_face_main",
       "_tgt": "detect_face_try_opencv_detect",
-      "confidence_score": 1.0,
       "source": "detect_face_try_opencv_detect",
-      "target": "detect_face_main"
+      "target": "detect_face_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2990,9 +3099,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_export_py",
       "_tgt": "export_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_main"
+      "target": "export_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3002,9 +3111,9 @@
       "weight": 1.0,
       "_src": "export_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_export_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_export_py",
-      "target": "export_rationale_1"
+      "target": "export_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3014,9 +3123,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_read_keys",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_read_keys"
+      "target": "kling_client_read_keys",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3026,9 +3135,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_token",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_token"
+      "target": "kling_client_token",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3038,9 +3147,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_submit",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_submit"
+      "target": "kling_client_submit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3050,9 +3159,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_poll",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_poll"
+      "target": "kling_client_poll",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3062,9 +3171,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_download",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_download"
+      "target": "kling_client_download",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3074,9 +3183,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_save_state",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_save_state"
+      "target": "kling_client_save_state",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3086,9 +3195,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_kling_client_py",
       "_tgt": "kling_client_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3098,9 +3207,9 @@
       "weight": 1.0,
       "_src": "kling_client_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_kling_client_py",
-      "target": "kling_client_rationale_1"
+      "target": "kling_client_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3110,9 +3219,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_read_keys",
-      "confidence_score": 1.0,
       "source": "kling_client_read_keys",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3122,9 +3231,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_token",
-      "confidence_score": 1.0,
       "source": "kling_client_token",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3134,9 +3243,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_submit",
-      "confidence_score": 1.0,
       "source": "kling_client_submit",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3146,9 +3255,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_poll",
-      "confidence_score": 1.0,
       "source": "kling_client_poll",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3158,9 +3267,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_download",
-      "confidence_score": 1.0,
       "source": "kling_client_download",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3170,9 +3279,9 @@
       "weight": 1.0,
       "_src": "kling_client_main",
       "_tgt": "kling_client_save_state",
-      "confidence_score": 1.0,
       "source": "kling_client_save_state",
-      "target": "kling_client_main"
+      "target": "kling_client_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3182,9 +3291,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_skill_root",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_skill_root"
+      "target": "lib_skill_root",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3194,9 +3303,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_load_config",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_load_config"
+      "target": "lib_load_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3206,9 +3315,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_rel",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rel"
+      "target": "lib_rel",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3218,9 +3327,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_out_dir",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_out_dir"
+      "target": "lib_out_dir",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3230,9 +3339,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_run",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_run"
+      "target": "lib_run",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3242,9 +3351,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_lib_py",
       "_tgt": "lib_ffprobe_duration",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_ffprobe_duration"
+      "target": "lib_ffprobe_duration",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3254,9 +3363,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_lib_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_lib_py",
-      "target": "lib_rationale_1"
+      "target": "lib_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3266,9 +3375,9 @@
       "weight": 1.0,
       "_src": "lib_load_config",
       "_tgt": "lib_skill_root",
-      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_load_config"
+      "target": "lib_load_config",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3278,9 +3387,9 @@
       "weight": 1.0,
       "_src": "lib_rel",
       "_tgt": "lib_skill_root",
-      "confidence_score": 1.0,
       "source": "lib_skill_root",
-      "target": "lib_rel"
+      "target": "lib_rel",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3290,9 +3399,9 @@
       "weight": 1.0,
       "_src": "lib_out_dir",
       "_tgt": "lib_rel",
-      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_out_dir"
+      "target": "lib_out_dir",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3302,9 +3411,9 @@
       "weight": 1.0,
       "_src": "lib_rationale_21",
       "_tgt": "lib_rel",
-      "confidence_score": 1.0,
       "source": "lib_rel",
-      "target": "lib_rationale_21"
+      "target": "lib_rationale_21",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3314,9 +3423,9 @@
       "weight": 1.0,
       "_src": "lib_ffprobe_duration",
       "_tgt": "lib_run",
-      "confidence_score": 1.0,
       "source": "lib_run",
-      "target": "lib_ffprobe_duration"
+      "target": "lib_ffprobe_duration",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3326,9 +3435,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_stroked",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_stroked"
+      "target": "make_overlays_stroked",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3338,9 +3447,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_make_overlays_py",
       "_tgt": "make_overlays_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_main"
+      "target": "make_overlays_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3350,9 +3459,9 @@
       "weight": 1.0,
       "_src": "make_overlays_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_make_overlays_py",
-      "target": "make_overlays_rationale_1"
+      "target": "make_overlays_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3362,9 +3471,9 @@
       "weight": 1.0,
       "_src": "make_overlays_main",
       "_tgt": "make_overlays_stroked",
-      "confidence_score": 1.0,
       "source": "make_overlays_stroked",
-      "target": "make_overlays_main"
+      "target": "make_overlays_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3374,9 +3483,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_probe",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_probe"
+      "target": "qa_check_probe",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3386,9 +3495,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_qa_check_py",
       "_tgt": "qa_check_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_main"
+      "target": "qa_check_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3398,9 +3507,9 @@
       "weight": 1.0,
       "_src": "qa_check_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_qa_check_py",
-      "target": "qa_check_rationale_1"
+      "target": "qa_check_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3410,9 +3519,9 @@
       "weight": 1.0,
       "_src": "qa_check_main",
       "_tgt": "qa_check_probe",
-      "confidence_score": 1.0,
       "source": "qa_check_probe",
-      "target": "qa_check_main"
+      "target": "qa_check_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3422,9 +3531,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_run_all_py",
       "_tgt": "run_all_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_main"
+      "target": "run_all_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3434,9 +3543,9 @@
       "weight": 1.0,
       "_src": "run_all_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_run_all_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_run_all_py",
-      "target": "run_all_rationale_1"
+      "target": "run_all_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3446,9 +3555,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_scripts_validate_input_py",
       "_tgt": "validate_input_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_main"
+      "target": "validate_input_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3458,9 +3567,9 @@
       "weight": 1.0,
       "_src": "validate_input_rationale_1",
       "_tgt": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_scripts_validate_input_py",
-      "target": "validate_input_rationale_1"
+      "target": "validate_input_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3470,9 +3579,9 @@
       "weight": 1.0,
       "_src": "build_sets_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_build_sets_py",
-      "target": "build_sets_rationale_1"
+      "target": "build_sets_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3482,9 +3591,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_pick_best_face",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_pick_best_face"
+      "target": "detect_faces_pick_best_face",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3494,9 +3603,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_extract_frame",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_extract_frame"
+      "target": "detect_faces_extract_frame",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3506,9 +3615,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_detect_in_clip"
+      "target": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3518,9 +3627,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_detect_for_set",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_detect_for_set"
+      "target": "detect_faces_detect_for_set",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3530,9 +3639,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
       "_tgt": "detect_faces_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_main"
+      "target": "detect_faces_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3542,9 +3651,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_detect_faces_py",
-      "target": "detect_faces_rationale_1"
+      "target": "detect_faces_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3554,9 +3663,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_in_clip",
       "_tgt": "detect_faces_pick_best_face",
-      "confidence_score": 1.0,
       "source": "detect_faces_pick_best_face",
-      "target": "detect_faces_detect_in_clip"
+      "target": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3566,9 +3675,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_in_clip",
       "_tgt": "detect_faces_extract_frame",
-      "confidence_score": 1.0,
       "source": "detect_faces_extract_frame",
-      "target": "detect_faces_detect_in_clip"
+      "target": "detect_faces_detect_in_clip",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3578,9 +3687,9 @@
       "weight": 1.0,
       "_src": "detect_faces_detect_for_set",
       "_tgt": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0,
       "source": "detect_faces_detect_in_clip",
-      "target": "detect_faces_detect_for_set"
+      "target": "detect_faces_detect_for_set",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3590,9 +3699,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_48",
       "_tgt": "detect_faces_detect_in_clip",
-      "confidence_score": 1.0,
       "source": "detect_faces_detect_in_clip",
-      "target": "detect_faces_rationale_48"
+      "target": "detect_faces_rationale_48",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3602,9 +3711,9 @@
       "weight": 1.0,
       "_src": "detect_faces_main",
       "_tgt": "detect_faces_detect_for_set",
-      "confidence_score": 1.0,
       "source": "detect_faces_detect_for_set",
-      "target": "detect_faces_main"
+      "target": "detect_faces_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3614,9 +3723,9 @@
       "weight": 1.0,
       "_src": "detect_faces_rationale_69",
       "_tgt": "detect_faces_detect_for_set",
-      "confidence_score": 1.0,
       "source": "detect_faces_detect_for_set",
-      "target": "detect_faces_rationale_69"
+      "target": "detect_faces_rationale_69",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3626,9 +3735,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_new_client",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_new_client"
+      "target": "gemini_client_new_client",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3638,9 +3747,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_select_thinking_model",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_select_thinking_model"
+      "target": "gemini_client_select_thinking_model",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3650,9 +3759,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_clean_logo",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_clean_logo"
+      "target": "gemini_client_clean_logo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3662,9 +3771,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
       "_tgt": "gemini_client_generate",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_generate"
+      "target": "gemini_client_generate",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3674,9 +3783,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_gemini_client_py",
-      "target": "gemini_client_rationale_1"
+      "target": "gemini_client_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3686,9 +3795,9 @@
       "weight": 1.0,
       "_src": "gemini_client_generate",
       "_tgt": "gemini_client_select_thinking_model",
-      "confidence_score": 1.0,
       "source": "gemini_client_select_thinking_model",
-      "target": "gemini_client_generate"
+      "target": "gemini_client_generate",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3698,9 +3807,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_46",
       "_tgt": "gemini_client_select_thinking_model",
-      "confidence_score": 1.0,
       "source": "gemini_client_select_thinking_model",
-      "target": "gemini_client_rationale_46"
+      "target": "gemini_client_rationale_46",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3710,9 +3819,9 @@
       "weight": 1.0,
       "_src": "gemini_client_generate",
       "_tgt": "gemini_client_clean_logo",
-      "confidence_score": 1.0,
       "source": "gemini_client_clean_logo",
-      "target": "gemini_client_generate"
+      "target": "gemini_client_generate",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3722,9 +3831,9 @@
       "weight": 1.0,
       "_src": "gemini_client_rationale_110",
       "_tgt": "gemini_client_clean_logo",
-      "confidence_score": 1.0,
       "source": "gemini_client_clean_logo",
-      "target": "gemini_client_rationale_110"
+      "target": "gemini_client_rationale_110",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3734,9 +3843,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_make_corner_masks",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_make_corner_masks"
+      "target": "logo_remover_make_corner_masks",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3746,9 +3855,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_remove_logo",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_remove_logo"
+      "target": "logo_remover_remove_logo",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3758,9 +3867,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_process_image",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_process_image"
+      "target": "logo_remover_process_image",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3770,9 +3879,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
       "_tgt": "logo_remover_batch_process",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_scripts_logo_remover_py",
-      "target": "logo_remover_batch_process"
+      "target": "logo_remover_batch_process",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3782,9 +3891,9 @@
       "weight": 1.0,
       "_src": "logo_remover_remove_logo",
       "_tgt": "logo_remover_make_corner_masks",
-      "confidence_score": 1.0,
       "source": "logo_remover_make_corner_masks",
-      "target": "logo_remover_remove_logo"
+      "target": "logo_remover_remove_logo",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3794,9 +3903,9 @@
       "weight": 1.0,
       "_src": "logo_remover_rationale_48",
       "_tgt": "logo_remover_make_corner_masks",
-      "confidence_score": 1.0,
       "source": "logo_remover_make_corner_masks",
-      "target": "logo_remover_rationale_48"
+      "target": "logo_remover_rationale_48",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3806,9 +3915,9 @@
       "weight": 1.0,
       "_src": "logo_remover_process_image",
       "_tgt": "logo_remover_remove_logo",
-      "confidence_score": 1.0,
       "source": "logo_remover_remove_logo",
-      "target": "logo_remover_process_image"
+      "target": "logo_remover_process_image",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3818,9 +3927,9 @@
       "weight": 1.0,
       "_src": "logo_remover_rationale_62",
       "_tgt": "logo_remover_remove_logo",
-      "confidence_score": 1.0,
       "source": "logo_remover_remove_logo",
-      "target": "logo_remover_rationale_62"
+      "target": "logo_remover_rationale_62",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3830,9 +3939,9 @@
       "weight": 1.0,
       "_src": "logo_remover_batch_process",
       "_tgt": "logo_remover_process_image",
-      "confidence_score": 1.0,
       "source": "logo_remover_process_image",
-      "target": "logo_remover_batch_process"
+      "target": "logo_remover_batch_process",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3842,9 +3951,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
       "_tgt": "analyze_bgm_analyze",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_analyze"
+      "target": "analyze_bgm_analyze",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3854,9 +3963,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
       "_tgt": "analyze_bgm_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_main"
+      "target": "analyze_bgm_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3866,9 +3975,9 @@
       "weight": 1.0,
       "_src": "analyze_bgm_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py",
-      "target": "analyze_bgm_rationale_1"
+      "target": "analyze_bgm_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3878,9 +3987,9 @@
       "weight": 1.0,
       "_src": "analyze_bgm_main",
       "_tgt": "analyze_bgm_analyze",
-      "confidence_score": 1.0,
       "source": "analyze_bgm_analyze",
-      "target": "analyze_bgm_main"
+      "target": "analyze_bgm_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3890,9 +3999,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
       "_tgt": "build_prompts_write",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "target": "build_prompts_write"
+      "target": "build_prompts_write",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3902,9 +4011,9 @@
       "weight": 1.0,
       "_src": "build_prompts_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py",
-      "target": "build_prompts_rationale_1"
+      "target": "build_prompts_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3914,9 +4023,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
       "_tgt": "check_session_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "target": "check_session_main"
+      "target": "check_session_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -3926,9 +4035,9 @@
       "weight": 1.0,
       "_src": "check_session_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py",
-      "target": "check_session_rationale_1"
+      "target": "check_session_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3938,9 +4047,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_page_text",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_page_text"
+      "target": "gen_seeds_page_text",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3950,9 +4059,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_was_refused",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_was_refused"
+      "target": "gen_seeds_was_refused",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3962,9 +4071,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_try",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_try"
+      "target": "gen_seeds_try",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3974,9 +4083,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_with_fallback",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_with_fallback"
+      "target": "gen_seeds_with_fallback",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3986,9 +4095,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_run_one",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_run_one"
+      "target": "gen_seeds_run_one",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3998,9 +4107,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
       "_tgt": "gen_seeds_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_main"
+      "target": "gen_seeds_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4010,9 +4119,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py",
-      "target": "gen_seeds_rationale_1"
+      "target": "gen_seeds_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4022,9 +4131,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_was_refused",
       "_tgt": "gen_seeds_page_text",
-      "confidence_score": 1.0,
       "source": "gen_seeds_page_text",
-      "target": "gen_seeds_was_refused"
+      "target": "gen_seeds_was_refused",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4034,9 +4143,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_with_fallback",
       "_tgt": "gen_seeds_try",
-      "confidence_score": 1.0,
       "source": "gen_seeds_try",
-      "target": "gen_seeds_with_fallback"
+      "target": "gen_seeds_with_fallback",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4046,9 +4155,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_74",
       "_tgt": "gen_seeds_try",
-      "confidence_score": 1.0,
       "source": "gen_seeds_try",
-      "target": "gen_seeds_rationale_74"
+      "target": "gen_seeds_rationale_74",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4058,9 +4167,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_run_one",
       "_tgt": "gen_seeds_with_fallback",
-      "confidence_score": 1.0,
       "source": "gen_seeds_with_fallback",
-      "target": "gen_seeds_run_one"
+      "target": "gen_seeds_run_one",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4070,9 +4179,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_rationale_82",
       "_tgt": "gen_seeds_with_fallback",
-      "confidence_score": 1.0,
       "source": "gen_seeds_with_fallback",
-      "target": "gen_seeds_rationale_82"
+      "target": "gen_seeds_rationale_82",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4082,9 +4191,9 @@
       "weight": 1.0,
       "_src": "gen_seeds_main",
       "_tgt": "gen_seeds_run_one",
-      "confidence_score": 1.0,
       "source": "gen_seeds_run_one",
-      "target": "gen_seeds_main"
+      "target": "gen_seeds_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4094,9 +4203,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
       "_tgt": "gen_scales_run_one",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_run_one"
+      "target": "gen_scales_run_one",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4106,9 +4215,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
       "_tgt": "gen_scales_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_main"
+      "target": "gen_scales_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4118,9 +4227,9 @@
       "weight": 1.0,
       "_src": "gen_scales_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py",
-      "target": "gen_scales_rationale_1"
+      "target": "gen_scales_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4130,9 +4239,9 @@
       "weight": 1.0,
       "_src": "gen_scales_main",
       "_tgt": "gen_scales_run_one",
-      "confidence_score": 1.0,
       "source": "gen_scales_run_one",
-      "target": "gen_scales_main"
+      "target": "gen_scales_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4142,9 +4251,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_read_keys",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_read_keys"
+      "target": "gen_kling_read_keys",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4154,9 +4263,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_token",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_token"
+      "target": "gen_kling_token",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4166,9 +4275,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_submit",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_submit"
+      "target": "gen_kling_submit",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4178,9 +4287,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_poll",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_poll"
+      "target": "gen_kling_poll",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4190,9 +4299,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_download",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_download"
+      "target": "gen_kling_download",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4202,9 +4311,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_save_state",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_save_state"
+      "target": "gen_kling_save_state",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4214,9 +4323,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
       "_tgt": "gen_kling_main",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4226,9 +4335,9 @@
       "weight": 1.0,
       "_src": "gen_kling_rationale_1",
       "_tgt": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py",
-      "target": "gen_kling_rationale_1"
+      "target": "gen_kling_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4238,9 +4347,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_read_keys",
-      "confidence_score": 1.0,
       "source": "gen_kling_read_keys",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4250,9 +4359,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_token",
-      "confidence_score": 1.0,
       "source": "gen_kling_token",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4262,9 +4371,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_submit",
-      "confidence_score": 1.0,
       "source": "gen_kling_submit",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4274,9 +4383,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_poll",
-      "confidence_score": 1.0,
       "source": "gen_kling_poll",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4286,9 +4395,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_download",
-      "confidence_score": 1.0,
       "source": "gen_kling_download",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4298,9 +4407,9 @@
       "weight": 1.0,
       "_src": "gen_kling_main",
       "_tgt": "gen_kling_save_state",
-      "confidence_score": 1.0,
       "source": "gen_kling_save_state",
-      "target": "gen_kling_main"
+      "target": "gen_kling_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4310,9 +4419,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_get_boxes",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_get_boxes"
+      "target": "compose_get_boxes",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4322,9 +4431,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_stroked",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_stroked"
+      "target": "compose_stroked",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4334,9 +4443,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_run",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_run"
+      "target": "compose_run",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4346,9 +4455,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_build_overlays",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_build_overlays"
+      "target": "compose_build_overlays",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4358,9 +4467,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_compose_v1",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_compose_v1"
+      "target": "compose_compose_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4370,9 +4479,9 @@
       "weight": 1.0,
       "_src": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
       "_tgt": "compose_compose_v23",
-      "confidence_score": 1.0,
       "source": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py",
-      "target": "compose_compose_v23"
+      "target": "compose_compose_v23",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4382,9 +4491,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_get_boxes",
-      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_compose_v1"
+      "target": "compose_compose_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4394,9 +4503,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_get_boxes",
-      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_compose_v23"
+      "target": "compose_compose_v23",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4406,9 +4515,9 @@
       "weight": 1.0,
       "_src": "compose_rationale_30",
       "_tgt": "compose_get_boxes",
-      "confidence_score": 1.0,
       "source": "compose_get_boxes",
-      "target": "compose_rationale_30"
+      "target": "compose_rationale_30",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4418,9 +4527,9 @@
       "weight": 1.0,
       "_src": "compose_build_overlays",
       "_tgt": "compose_stroked",
-      "confidence_score": 1.0,
       "source": "compose_stroked",
-      "target": "compose_build_overlays"
+      "target": "compose_build_overlays",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4430,9 +4539,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v1",
       "_tgt": "compose_run",
-      "confidence_score": 1.0,
       "source": "compose_run",
-      "target": "compose_compose_v1"
+      "target": "compose_compose_v1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4442,9 +4551,9 @@
       "weight": 1.0,
       "_src": "compose_compose_v23",
       "_tgt": "compose_run",
-      "confidence_score": 1.0,
       "source": "compose_run",
-      "target": "compose_compose_v23"
+      "target": "compose_compose_v23",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4454,9 +4563,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_node",
-      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_node"
+      "target": "inject_iboss_entities_make_node",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4466,9 +4575,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_make_edge",
-      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_make_edge"
+      "target": "inject_iboss_entities_make_edge",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4478,9 +4587,9 @@
       "weight": 1.0,
       "_src": "scripts_inject_iboss_entities_py",
       "_tgt": "inject_iboss_entities_main",
-      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_main"
+      "target": "inject_iboss_entities_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4490,9 +4599,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_rationale_1",
       "_tgt": "scripts_inject_iboss_entities_py",
-      "confidence_score": 1.0,
       "source": "scripts_inject_iboss_entities_py",
-      "target": "inject_iboss_entities_rationale_1"
+      "target": "inject_iboss_entities_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4502,9 +4611,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_node",
-      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_node",
-      "target": "inject_iboss_entities_main"
+      "target": "inject_iboss_entities_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4514,9 +4623,9 @@
       "weight": 1.0,
       "_src": "inject_iboss_entities_main",
       "_tgt": "inject_iboss_entities_make_edge",
-      "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_edge",
-      "target": "inject_iboss_entities_main"
+      "target": "inject_iboss_entities_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4526,9 +4635,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_pick_label",
-      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_pick_label"
+      "target": "regen_graph_report_pick_label",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4538,9 +4647,9 @@
       "weight": 1.0,
       "_src": "scripts_regen_graph_report_py",
       "_tgt": "regen_graph_report_main",
-      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_main"
+      "target": "regen_graph_report_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -4550,9 +4659,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_rationale_1",
       "_tgt": "scripts_regen_graph_report_py",
-      "confidence_score": 1.0,
       "source": "scripts_regen_graph_report_py",
-      "target": "regen_graph_report_rationale_1"
+      "target": "regen_graph_report_rationale_1",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -4562,9 +4671,9 @@
       "weight": 1.0,
       "_src": "regen_graph_report_main",
       "_tgt": "regen_graph_report_pick_label",
-      "confidence_score": 1.0,
       "source": "regen_graph_report_pick_label",
-      "target": "regen_graph_report_main"
+      "target": "regen_graph_report_main",
+      "confidence_score": 1.0
     },
     {
       "relation": "led_by",
@@ -6282,6 +6391,119 @@
       "confidence_score": 1.0,
       "source": "tool_akool",
       "target": "case_ai_studio_8000"
+    },
+    {
+      "source": "diet_b2a_v2_alias_ko_main",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_ko_factory",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_ko_b2a_auto",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_ko_weightloss",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_pipeline",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_multilang",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_short",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_bdh",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_diet",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_b2a",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_reels",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_shorts",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_transform",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_weightloss",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_loss",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
+    },
+    {
+      "source": "diet_b2a_v2_alias_word_ba",
+      "target": "diet_b2a_v2_alias_ko_main",
+      "relation": "alias_for",
+      "confidence": 1.0,
+      "extraction_source": "manual"
     }
-  ]
+  ],
+  "hyperedges": []
 }
