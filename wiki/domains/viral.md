@@ -64,6 +64,9 @@ _내용 추가 예정_
 - 1초 훅 + 자막 + BGM — 3요소 조합이 알고리즘 반응 결정
 
 → [[wiki/tacit/viral-patterns]] 상세 엔트리 참조
+## 관련 소스
+- 패턴 사전 출처: [[src-youtube]] (훅 7종 / 페인포인트 / 권위 / 통념 regex)
+- 데이터 원료: [[src-community]] — 5개 커뮤니티 통합 수집
 
 ## 관련 페이지
 - [[src-iboss-choi-jaemyeong]]

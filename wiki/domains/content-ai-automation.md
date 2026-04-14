@@ -428,6 +428,13 @@ bob PLAN.md  →  dd steps 00~05  →  harness RULES  →  output/영상{1,2,3}.
 - "프롬프트에 em-dash 쓰면 Windows cp949에서 state 저장 크래시" → [[coding-lessons]]
 
 *추가: 2026-04-13 (§9 diet-b2a)*
+*추출 완료: 2026-04-12*
+*대화 소스: 15+ 스레드*
+
+## 관련 소스
+- [[src-youtube]] — yt-dlp 대량 수집 + Claude CLI 서브에이전트 4개 병렬 분석 (자막 풀텍스트)
+- [[src-instar]] — 인스타 릴스 yt-dlp 익명 추출 + Claude Vision 프롬프트 자동화
+- [[src-diet-b2a-v2]] — 대량생산·다국어 B/A 공장 (아래 §10)
 
 ---
 

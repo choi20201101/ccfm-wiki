@@ -509,3 +509,137 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 대응: 핵심 요구 3가지 이내로 1차 시도 → 실패 시 safe 프롬프트 fallback.
 - 출처: [[src-diet-b2a-v2]] gen_seeds 프롬프트 튜닝
 - confidence: medium
+
+## [2026-04-13] YouTube 대규모 수집 + Claude 서브에이전트 패턴
+
+### A. yt-dlp 2단계: flat-playlist → enrich
+- 배경: ytsearch + flat-playlist 는 빠르지만 like/comment count 빠짐
+- 패턴: 1단계 ID 수집 → 2단계 개별 enrich (병목이지만 정확)
+- 재사용: 다른 SNS·동영상 플랫폼 대규모 수집
+
+### B. Claude CLI 병렬 호출 (Windows)
+- `shutil.which("claude.cmd")` 로 경로 확보
+- multi-line 프롬프트는 **인자가 아니라 stdin** 으로 전달 (인자 첫 줄만 사용됨)
+- subprocess.Popen + Pipe + 병렬 N개
+- 재사용: 어떤 LLM CLI 든 동일 패턴
+
+### C. Claude 컨텍스트 안전 번들 (150KB)
+- 입력이 큰 분석 작업: 컨텍스트 길이 미리 계산 후 번들 분할
+- 단순한 char 카운트로 충분 (정확한 토큰 카운트 불필요)
+- 경계: 영상 단위로 자르기, 영상 중간 자르지 않기
+- 재사용: 임의 LLM 의 long-context 안전 마진 패턴
+
+### D. 서브에이전트 프롬프트 톤
+- ❌ "당신은 ~ 전문가입니다" — 무겁고 토큰 낭비
+- ✅ "지금 즉시 ~ 하세요. 출력 형식: ..." — 명령문 + 출력 스키마
+- 재사용: 모든 LLM 디스패치 프롬프트 작성 원칙
+
+### E. 자막 2-pass (manual → auto fallback)
+- yt-dlp `--write-sub` 먼저 시도, 없으면 `--write-auto-sub`
+- 결과에 `subtitle_source` 필드 기록 (분석 단계에서 신뢰도 가중치 차이)
+- 재사용: 다단 fallback 데이터 수집 패턴
+
+### F. 10만뷰+ 가중치 1~5배
+- 고성과 샘플 패턴이 평균 패턴보다 5배 더 의미있음 — regex 카운트에 가중
+- 재사용: 분포 skewed한 데이터(바이럴/광고)에서 패턴 추출 시
+
+### G. 체크포인트 + rate limit
+- 50키워드마다 중간 저장 → 장시간 작업 재개 가능
+- 1.5~3초 random sleep
+- 재사용: 모든 장시간 크롤링 파이프라인 기본값
+
+### H. 한글 비율 15%+ 필터
+- 한국어 콘텐츠만 분리 시 가장 단순한 휴리스틱
+- 재사용: 다국어 콘텐츠 분류기
+
+### I. Windows cp949 보일러플레이트
+- `sys.stdout.reconfigure(encoding='utf-8')` + `print = functools.partial(print, flush=True)`
+- 한글 출력/실시간 로그 다 해결
+- 재사용: Windows 파이썬 CLI 도구 전반
+
+### 함정
+- 자막 1000자 미만 필터로 실제 분석량이 수집의 5~10% 까지 줄 수 있음
+- regex 패턴 사전은 도메인 종속 (탈모/기미 튜닝됨) — 다른 도메인 확장 시 재튜닝
+
+## [2026-04-13] 인스타 릴스 수집 + 표준 envelope 패턴
+
+### A. 공식 API 차단 시 yt-dlp 익명 추출 우회
+- 배경: 인스타 공식 API 폐쇄적·승인 어려움
+- 패턴: `py -m yt_dlp -j {URL}` 서브프로세스로 메타 JSON 추출, 영상/썸네일은 별도 옵션
+- 재사용: 다른 SNS(틱톡 등) 차단 우회에도 동일 적용 가능
+- 함정: yt-dlp 버전·인스타 변경에 민감 → 버전 고정 필수
+
+### B. 한/영 자동 감지 + 언어별 stopwords
+- 한글:영어 비율로 언어 판별 (`detect_language`)
+- 각 언어 stopwords 사전 분리 적용
+- 재사용: 다국어 콘텐츠 키워드 분석 범용
+
+### C. 표준 JSON envelope 계약
+- 모듈 간 데이터 전달 규약: `{meta, reels|data, failures}`
+- `io_schema.py`에 REEL_FIELDS, validate_reel, empty_reel 정의
+- 재사용: 모든 ETL/파이프라인의 모듈 경계
+- 함정: 신규 필드 추가 시 schema 함수도 같이 갱신
+
+### D. 순수 함수 필터 조합
+- `by_date / by_views / by_likes / by_comments / by_engagement_rate`
+- 각각 `(reels: list[dict], threshold) -> list[dict]`
+- 체이닝 가능, 단위 테스트 쉬움
+- 재사용: 모든 데이터 필터링 코드의 기본 형태
+
+### E. LLM Vision 프롬프트 템플릿화
+- 메타데이터를 프롬프트에 주입 → 11 장면 카테고리 + 훅 텍스트 + 성공요소 3가지 JSON 스키마
+- LLM 응답 스키마 사전 정의 = 후처리 안정성
+- 재사용: 모든 Vision/LLM 배치 분석
+
+### F. CLI 종료 코드 규약
+- 0 정상 / 1 일반오류 / 2 사용자취소 / 3 부분실패
+- 자동화(cron, n8n)에서 분기 처리 가능
+- 재사용: 모든 CLI 도구
+
+### G. CLAUDE.md "실수 누적 섹션"
+- Playwright 폐기, /api/v1/ 404 등 실패 경로를 모듈 CLAUDE.md에 명시
+- 다음 세션이 같은 길 반복하지 않도록
+- 재사용: 모든 도구의 운영 메모
+
+### 함정
+- 인스타 ToS 위반 소지 (연구/내부용 한정)
+- 봇 계정 장시간 사용 시 차단
+- yt-dlp 버전 업데이트 시 깨질 가능성
+
+## [2026-04-13] 한국 커뮤니티 통합 크롤링 + 본문/댓글 추가 패턴
+
+출처: `market-research-package/modules/community/` 모듈. 자세한 소스는 [[src-community]].
+
+### 5개 사이트별 접근 방식 매트릭스
+| 사이트 | 핵심 기법 | 함정 |
+| --- | --- | --- |
+| 네이트판 | requests + BS4, `/search/talk?q=&page=` 페이지네이션. 목록은 단순 `a[href*="/talk/\d+"]` | 429 받으면 30초 sleep. 제목 앞 3자 미만은 스킵(노이즈). |
+| 인스티즈 | `#mboard tr.mouseover_td` + `.listsubject a` + `.cmt3`. `sfl=subject_and_content&stx={kw}` 로 서버 검색 위임 | 빈 결과면 break — 안 하면 50페이지 헛돎. |
+| 더쿠 | **cloudscraper로 CF 우회** (XE 표준 `table.bd_lst tbody tr:not(.notice)`). 검색 API는 CF가 막음 → 게시판 순회로만 가능 | scraper 재초기화 비용 크므로 세션 공유. 50페이지마다 5~10초 긴 휴식. |
+| 보배드림 | `s_key=subject&s_value={kw}` 서버 검색. 댓글수는 제목 뒤 `\((\d+)\)` 정규식 | 테이블 구조가 보드별 미세하게 다름 — `td[-1]`/`td[-3]` 인덱싱 방어. |
+| 다음카페 | **카카오 search API** (`dapi.kakao.com/v2/search/cafe`) — 직접 크롤 ToS 회피 | content는 200자 HTML-stripped 미리보기만. 본문 풀텍스트는 페이지 직접 진입이 필요하나 대부분 **로그인 벽** → 실패 허용. |
+
+### 본문+댓글 opt-in 추가 패턴 (재사용 가능)
+- 기본은 메타데이터만 — detail fetch는 `FETCH_DETAIL` flag + `--with-detail` CLI로 분리. OFF가 디폴트여야 기존 워크플로우가 깨지지 않는다.
+- `detail_fetcher.py` 모듈로 분리 → `crawler.py` 복잡도 증가 방지. 디스패처(`fetch_detail_for(post)`)가 `post["community"]` 보고 라우팅.
+- **필드 이름 충돌 주의**: 기존 `comments`는 '댓글 수 문자열'. 이걸 리스트로 덮어쓰면 analyzer가 깨짐. 새 필드 `body`·`comments_detail`로 분리.
+- 셀렉터 실패해도 `{"body": "", "comments": []}` 반환 + warning log. 메인 크롤링 루프는 멈추지 말 것. `try/except` 삼중 방어 (모듈 import, fetch, 개별 댓글 파싱).
+- detail fetch도 동일 rate limit(1.5~3초) 재사용 — 사이트당 요청량이 목록 순회 대비 ~2배가 된다는 점 README에 명시.
+- cloudscraper는 생성 비용이 크므로 메인 크롤러의 scraper를 detail에도 재주입(`self._theqoo_scraper`).
+
+### 셀렉터 신뢰도 계층화 패턴
+가이드 문서(`docs/crawling-guide/`)는 **목록 페이지만** 검증됨. 상세 페이지 셀렉터는 없음 → 관용 패턴(XE 표준 `.rd_body`, 범용 `#contentArea` 등)으로 추정하고 각 함수에 `# TODO: selector 확인 필요 (YYYY-MM-DD)` 주석. 실크롤로 검증 전까지 '⚠️ 추정' 상태 유지. README와 src 페이지의 테이블에도 동일하게 ⚠️ 표기.
+
+### 재사용 가능한 조각
+1. 사이트별 detail_fetcher 분리 (전략 패턴) — 신규 사이트 추가 시 함수 하나 + 디스패처 등록이면 끝.
+2. 본문/댓글 스키마 고정: `{body: str, comments: [{author, text, likes}]}`. likes는 `re.search(r"\d+", txt)` 로 방어적 파싱.
+3. 미검증 셀렉터 마커: `# TODO: selector 확인 필요 (YYYY-MM-DD)` — grep 가능한 일관 포맷.
+4. opt-in flag 3단 (환경변수 → config → CLI arg override) — `fetch_detail=None`이면 config 따름, `True/False`면 강제.
+
+### 함정
+- 각 사이트 셀렉터가 UI 개편 시 동시 다발로 깨질 수 있음 → **월 1회 샘플 URL로 smoke test 필요**.
+- 더쿠는 CF 대기(5초 챌린지) 때문에 403 → 즉시 재시도 패턴 필수.
+- 다음카페 본문 URL은 `cafe.daum.net` 리다이렉트 후 `Daum 로그인` 페이지로 튕김 → 빈 dict 반환이 정상.
+- 인스티즈·네이트판·보배드림 댓글이 **lazy load(AJAX)**일 가능성 — requests로 안 잡히면 내부 `/ajax/comment?srl=` 엔드포인트 조사 필요.
+- 크롤링 중 `_add()` 실패(중복)한 post에 detail fetch를 도는 실수 금지 — 반드시 `if self._add(post): self._enrich_detail(post)` 순서.
+- `--with-detail` 켜면 총 요청량이 2배 → target 10만건이면 실질 6~10시간 이상 소요.
