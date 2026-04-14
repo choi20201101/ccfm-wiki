@@ -510,6 +510,22 @@ Desktop/MD 하위 프로젝트(스킬·스펙 포함) 10여 개의 MD/스킬 문
 - 출처: [[src-diet-b2a-v2]] gen_seeds 프롬프트 튜닝
 - confidence: medium
 
+### [2026-04-14] 다국어 자막 렌더링 시 **언어별 폰트 매핑 필수**
+- 관찰: Windows 기본 맑은 고딕(malgunbd.ttf)은 한국어·영어·일본어 일부까지 커버하지만 번체 전용자("哪","嚇" 등) 에서 tofu(□). Microsoft JhengHei(msjhbd.ttc)로 교체하면 해결.
+- 대응: Pillow `ImageFont.truetype`에 lang=zh-tw 시 다른 폰트 경로 주입. fallback 체인: 타겟 폰트 → malgunbd → 일반 sans.
+- 사전 체크: 샘플 텍스트로 `d.textbbox` 호출해 "□" 픽셀 검출하면 폰트 미지원 감지 가능.
+- 출처: [[src-diet-b2a-v2]] tw 버전 합성
+- confidence: high
+- 교차: [[creative-patterns]]
+
+### [2026-04-14] before/after 얼굴 위치 편차 기준 **y ±30px 초과면 박스 분리**
+- 관찰: Kling image2video는 같은 시드로 생성해도 before/after 카메라 높이·얼굴 위치가 ±50px 움직이는 경우가 빈번. 단일 박스로 덮으면 한쪽은 얼굴·한쪽은 목/가슴이 덮임.
+- 의사결정 룰: before의 얼굴 중심 y와 after의 얼굴 중심 y 차이 > 30px 이면 세트 설정을 `{before: {...}, after: {...}}` 구조로 분리.
+- 자동 감지 한계: OpenCV haarcascade는 전신샷에서 상위 30%+ 확률로 가슴/복부를 얼굴로 오인 → **수동 프레임 확인이 최종 게이트**.
+- 구현: `compose.get_boxes(sid)` 가 두 구조 모두 수용하도록 설계.
+- 출처: [[src-diet-b2a-v2]] set2/9/10 반복 교정
+- confidence: high
+
 ## [2026-04-13] YouTube 대규모 수집 + Claude 서브에이전트 패턴
 
 ### A. yt-dlp 2단계: flat-playlist → enrich

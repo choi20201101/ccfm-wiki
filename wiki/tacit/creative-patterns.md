@@ -192,3 +192,19 @@ contradiction: none
 - 조건: 한국어권 타겟. 번체/영어 버전은 해당 언어 관용어구로.
 - 출처: diet-b2a-v2 카피 교정 ([[src-diet-b2a-v2]], [[HOOK]])
 - confidence: high
+
+### [2026-04-14] 얼굴 박스 **같은 선상이면 1개 OK, 다르면 반드시 각각**
+- 규칙: before/after 인물의 얼굴 높이가 비슷(±20px)하면 박스 1개 공유 가능. 카메라 거리/포즈 다르면 2개 박스 필수.
+- 판단: 각 세트 Kling 생성 직후 before.mp4 / after.mp4 프레임 1장씩 뽑아 눈으로 비교. y 편차 > 30px면 분리.
+- 자동 감지는 참고만 — haarcascade 오검출률 30%+이므로 수동 확인 루프 필수.
+- 구조: `face_boxes.json` `{sid: {before:{...}, after:{...}}}` 또는 `{sid: {x,y,w,h}}` 단일 형태 둘 다 지원하도록 compose.get_boxes() 설계.
+- 출처: [[src-diet-b2a-v2]] set2/9/10 반복 교정 경험
+- confidence: high
+
+### [2026-04-14] 번체 중국어 자막은 **Microsoft JhengHei** (msjhbd.ttc) 사용
+- 관찰: 맑은 고딕(malgunbd.ttf)으로 번체 렌더링 시 "哪" 같은 중국어 전용 한자가 □(tofu)로 깨짐. set9 "肉到底蒸發到哪去了" → "肉到底蒸發到□去了".
+- 대응: 언어별 폰트 매핑 (`ko → malgunbd`, `zh-tw → msjhbd` 또는 `taipei` 등).
+- 조건: Windows 환경, Pillow TrueType 렌더링.
+- 출처: [[src-diet-b2a-v2]] 대만어 영상 렌더링 이슈
+- confidence: high
+- 교차: [[coding-lessons]]
