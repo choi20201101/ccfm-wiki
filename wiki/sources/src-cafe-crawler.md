@@ -25,7 +25,6 @@ sources: [C:\Users\Administrator\Desktop\market-research-package\modules\cafe]
 | `src/join/batch_join.py` | 7개 카페 일괄 가입, `cafe_join_log.json` 으로 재실행 시 스킵 |
 | `src/rankings/collect.py` | 카테고리 4종 × ArticlePaginate 전체 순회 → `cafes_{카테고리}.json` |
 | `src/rankings/report.py` | 나무등급 이상 필터 + MD 카페 리스트 |
-| `src/posts/collect.py` | 통합검색(`search.naver.com?where=article`) 기반 게시글 대량 수집, CLI 파라미터화 (`--title --seed --queries --target`), 증분 저장 |
 | `src/analysis/video_plan.py` | 페르소나 + 퍼포먼스 영상 기획 (8종 광고 요소) |
 
 ## 의존성
@@ -48,11 +47,7 @@ PYTHONIOENCODING=utf-8 python src/rankings/report.py
 # 3. 일괄 가입
 PYTHONIOENCODING=utf-8 python src/join/batch_join.py
 
-# 4. 게시글 대량 수집 (시드 키워드 → 자동 쿼리 확장)
-PYTHONIOENCODING=utf-8 python src/posts/collect.py \
-    --title 기미 --seed 기미 --target 10000
-
-# 5. 영상 기획 분석
+# 4. 영상 기획 분석
 PYTHONIOENCODING=utf-8 python src/analysis/video_plan.py
 ```
 
