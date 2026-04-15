@@ -1,5 +1,14 @@
 # CCFM Wiki Log
 
+## [2026-04-15] update | goglecc — 다이어트 B/A "예쁜 얼굴 + 통통 몸" V15 확정
+- 사용자 승인: "만족스러운 결과가 나왔어" (15회 반복 후)
+- 최종 파이프라인: Higgsfield Soul (strength 0.85 After + 0.6 Before_raw) + `fal-ai/face-swap`
+- [[src-goglecc-seed-curation]] §9 (V15 아키텍처·엔드포인트·프롬프트·비용) + §10 (실패 경로 금지 리스트) 추가
+- [[tacit/creative-patterns]]: "예쁜 얼굴+통통 몸" 레시피 (confidence high)
+- [[tacit/coding-lessons]] 2건: (1) Gemini preserved-face body 부피 증가 거부 확정, (2) Higgsfield Soul API 실전 스펙(hf-api-key/hf-secret 헤더, /v1/custom-references, /higgsfield-ai/soul/standard)
+- 핵심 인사이트: 한 AI 툴로는 목적 달성 불가 → **Higgsfield(몸 생성) + fal face-swap(얼굴 합성)** 파이프라인이 유일 해법
+- 비용: ~$0.10/세트, 10세트 ~$1
+
 ## [2026-04-13] prune | 통합검색 크롤링(posts/collect.py) 레퍼런스 제거
 - 사용자 지시: 통합검색 크롤링 불필요 → 위키에서 삭제
 - 영향 파일: wiki/sources/src-cafe-crawler.md, wiki/tacit/coding-lessons.md

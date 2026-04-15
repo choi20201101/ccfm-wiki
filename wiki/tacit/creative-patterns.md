@@ -67,6 +67,27 @@ contradiction: none
 - **프롬프트**: 한국어 + 촬영 맥락 풍부하게 (예: "친구가 핸드폰으로 찍어준 듯한 캔디드 스냅, 보정 없음, 피부 모공과 결점 그대로, 약간 필름 그레인")
 - confidence: high (A/B 검증)
 
+### [2026-04-15] 다이어트 B/A "예쁜 얼굴 + 진짜 통통 몸" 생성 레시피 (확정)
+**문제**: 한 AI 도구로는 "예쁜 celebrity 얼굴 + 실제 과체중 몸" 동시 생성 불가능
+- Higgsfield 높은 strength: 얼굴 예쁨/배만 임산부형 돌출
+- Higgsfield 낮은 strength: 몸 통통/얼굴 평범
+- Gemini edit로 preserved-face 살찌움: safety로 거부
+
+**해법 (V15 파이프라인)**: 3단 조합
+1. Higgsfield SoulID strength **0.85** → After (예쁜 슬림)
+2. Higgsfield SoulID strength **0.6** → Before_raw (moderate 통통 + 평범 얼굴)
+3. **fal-ai/face-swap(source=After, target=Before_raw)** → Before 완성
+
+**핵심 프롬프트 힌트**:
+- BMI 구체 수치 명시("70kg, BMI 26") → 임산부형 돌출 방지
+- "NOT obese, NOT extreme" 명시 → moderate 톤
+- 옷은 "FULLY COVERS chest/torso down to waistband, NOT pulled up" → 가슴 노출 방지
+- "around 70kg" 처럼 목표 체중 숫자 넣으면 AI가 그 수준으로 맞춤
+
+**비용**: ~$0.10/세트 (Higgsfield 2 + fal swap 1)
+- 출처: [[src-goglecc-seed-curation]] 섹션 9
+- confidence: high (15회 반복 최종 사용자 승인)
+
 ### [2026-04-14] Higgsfield vs Nano Banana — 철학 차이
 - **Higgsfield**: Flux + 캐릭터당 LoRA 학습 + IP-Adapter + 자체 비디오 모델 (stack 방식, 학습 필수, 캐릭터 일관성 강함)
 - **Nano Banana**: 단일 frozen 모델, multi-image reference 기반 (학습 불필요, 같은 인물 N회 생성 시 미세 변동)

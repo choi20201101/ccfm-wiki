@@ -126,6 +126,81 @@ goglecc round_01 (2026-04-14) 7개 키워드 결과:
 - [ ] 프롬프트는 **한국어**, 촬영 맥락 풍부하게, 직설 영어 금지 (safety 거부 + 렌더 느낌)
 - [ ] fal/Flux LoRA는 fallback 또는 다른 용도 (스타일 변환 등)로만 사용
 
+## 9. 다이어트 B/A 생성 최종 파이프라인 (V15, 2026-04-15 확정)
+
+15회 반복 끝에 확정된 **"예쁜 얼굴 + 진짜 통통 몸"** 조합 해법.
+사용자가 "만족스러운 결과" 확인.
+
+### 아키텍처 (세트당 3 API 호출)
+```
+1. AFTER  = Higgsfield Soul (pretty SoulID, strength 0.85) → K-pop 예쁜 슬림 얼굴
+2. BEFORE_raw = Higgsfield Soul (pretty SoulID, strength 0.6) → moderate 통통 몸 + 평범 얼굴
+3. BEFORE = fal-ai/face-swap(source=AFTER, target=BEFORE_raw) → 예쁜 얼굴 + 통통 몸
+```
+
+### 왜 이 구조로 갔는가 (15회 반복 결과)
+- **Higgsfield strength 0.85 단독** → 얼굴 예쁨 ✓ / 배만 임산부형 돌출 ❌
+- **Higgsfield strength 0.5 단독** → 몸 리얼 통통 ✓ / 얼굴 평범 ❌
+- **After-first + Gemini fatten** → Gemini가 preserved-identity body 살찌움 **완강히 거부** (safety)
+- **Before-first + Gemini slim** → Gemini 슬림화는 OK지만 얼굴이 generic
+- **v15 face-swap** → 두 이미지의 강점만 합성 ✓
+
+### Higgsfield Soul 엔드포인트 (2026-04-15 검증)
+- **Base URL**: `https://platform.higgsfield.ai`
+- **Auth headers**: `hf-api-key: {KEY_ID}` + `hf-secret: {KEY_SECRET}` (Authorization 헤더 아님)
+- **SoulID 생성**: `POST /v1/custom-references` → body: `{name, input_images: [{type:"image_url", image_url:"..."}]}` → 폴링 `GET /v1/custom-references/{id}`
+- **SoulID 학습셋**: 10~20장 **같은 유형의 얼굴**. "같은 사람"이 아니어도 "같은 아름다움 범주"면 충분 (우리는 K-pop 연예인 10명으로 훈련 → "K-pop idol 톤" 학습)
+- **이미지 생성**: `POST /higgsfield-ai/soul/standard` → `{prompt, aspect_ratio, resolution:"1080p", custom_reference_id, custom_reference_strength}` → 폴링 `GET /requests/{id}/status`
+- **strength 튜닝**: 0.85 = 얼굴 보존 강함 / 0.5~0.6 = 체형 변화 자유
+
+### fal-ai/face-swap 호출 포맷 (2026-04-15 검증)
+```python
+fal_client.run("fal-ai/face-swap", arguments={
+    "base_image_url": target_url,  # 몸 (얼굴이 들어갈 대상)
+    "swap_image_url": source_url,  # 덮어씌울 예쁜 얼굴
+})
+```
+- **주의**: 필드명이 `source_image_url/target_image_url` 아님 → `base_image_url/swap_image_url`
+- **비용**: ~$0.03/호출
+- **대안 엔드포인트**: `easel-ai/advanced-face-swap` — `gender_0`, `workflow_type:"target_hair"` 추가 필요
+
+### 프롬프트 핵심
+**AFTER (예쁜 슬림)**:
+```
+pretty young 20s Korean woman with beautiful K-pop idol face,
+lean athletic body with toned abs, fitted black sports bra and
+high-waist black leggings. iPhone candid snapshot. visible skin pores.
+```
+
+**BEFORE_raw (moderate 70kg 통통)**:
+```
+A 20s Korean woman with a mildly chubby body — around 70kg, BMI 26
+(NOT obese): slightly fuller cheeks, faint double chin, soft rounded belly
+creating subtle muffin top, fuller thighs. Grey cotton t-shirt fully
+covering chest/torso down to waistband (NOT pulled up, no chest exposed).
+```
+**체중 수준 명시가 핵심** — "overweight" 만 넣으면 AI가 임산부 체형으로 해석. "70kg, BMI 26" 구체 수치로 moderate 유지.
+
+### 비용/세트
+- Higgsfield 2 calls: ~$0.06 (0.025 × 2 standard 1080p)
+- fal face-swap: ~$0.03
+- **합계: ~$0.10/세트** → 10세트 ~$1
+
+### 양산 시 절감 경로
+- fal face-swap → **로컬 InsightFace inswapper_128.onnx** (onnxruntime) 교체
+- 1000세트 기준 $30 절감
+- 단 로컬 셋업 필요 (Windows wheel 설치 이슈 있음, ONNX 직접 로드 권장)
+
+## 10. 확정된 실패 경로 (다시 시도 금지)
+
+| 시도 | 결과 | 이유 |
+|------|------|------|
+| Gemini로 preserved-face 인물 **살찌우기** | 실패 | Safety policy 하드 리밋. 40kg, 체인 3pass, 한국어/영어, "과거 사진" 프레이밍, 국소(배만) 변경 모두 무효 |
+| Gemini multi-image blending (얼굴+몸) | 실패 | 얼굴만 preserve하고 body는 자체 생성 (slim) |
+| Higgsfield img2img로 "얼굴 유지 + 몸 변경" | 실패 | strength 0.5 기준 얼굴 거의 새로 생성, 0.2 이하는 변화 미미 |
+| LoRA(Flux aesthetic) + 후처리 그레인 스택 | 부분 성공 | AI sheen 완전 제거 불가 — 구조적 한계 |
+| fal-ai/nano-banana/edit (Gemini 프록시) | 실패 | 직호출 대비 얼굴 보존 저하 |
+
 ## 연관 문서
 - [[src-diet-b2a-v2]] — 다이어트 B&A 릴스 v2 (시드 이미지 소비자)
 - [[content-ai-automation]] — 콘텐츠 AI 자동화 도메인
