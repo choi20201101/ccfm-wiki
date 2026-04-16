@@ -44,3 +44,13 @@
 ## [2026-04-13] ingest | 네이버 카페 크롤링 모듈 지식화
 
 ## [2026-04-13] ingest | naverapi (네이버 검색광고 + Meta 광고) 모듈 지식화
+
+## [2026-04-16] ingest | talmo 탈모 B/A 파이프라인 (루솔브 런칭용)
+- 소스: `C:\Users\gguy\Desktop\talmo\` 전체 트리 (v1 완성: 1세트 검증 통과)
+- 생성: wiki/sources/src-talmo-b2a.md (전체 파이프라인 + 교훈 + 스크립트 맵)
+- 업데이트: wiki/domains/content-ai-automation.md §14 talmo (신설)
+- 업데이트: wiki/tacit/creative-patterns.md (+6 항목 — 정수리위젯/조명대비/전환카드/2박스카피/계절의상/후킹핏)
+- 업데이트: wiki/tacit/coding-lessons.md (+5 항목 — Haar 3단방어/Gemini합성표현/phone_look/HAIR_COLOR/cp949)
+- 업데이트: wiki/tacit/psychology-insights.md (+4 항목 — 정수리공포/3개월시간축/쓸어올림제스처/조명대비)
+- 업데이트: wiki/index.md (sources 목록에 src-talmo-b2a 추가)
+- 핵심 결정: burst(고무줄 폭발) 씬 실험 후 폐기 → 3씬 + 헤어플립 엔딩으로 확정

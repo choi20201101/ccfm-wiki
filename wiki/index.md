@@ -85,6 +85,7 @@ Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
 - [[sources/src-iboss-choi-jaemyeong]] — i-boss 201건 (2017~2026) · 글별 상세: [[raw/iboss/INDEX]]
 - [[sources/src-goglecc-seed-curation]] — 씨드 이미지 수집·큐레이션 (Bing+Flux LoRA)
 - [[sources/src-diet-b2a-v2]] — B/A v2 대량생산 (60영상)
+- [[sources/src-talmo-b2a]] — **탈모 루솔브 B/A 릴스** (3씬 + 정수리줌 + phone_look, 2026-04-16)
 - [[sources/src-foreign-influencer-guide]] — 외국인 인플루언서 33편 (fal.ai+Kling)
 - [[sources/src-diet-b2a-skill]] — B/A v1 스킬 (Kling+ffmpeg)
 - [[sources/src-instarup]] — IG 자동 업로드 (instagrapi+APScheduler)

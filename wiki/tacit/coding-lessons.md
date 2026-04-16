@@ -804,3 +804,109 @@ fal ai=41c...216
 - 새 API 추가 시 줄만 추가, 코드 수정 불필요
 
 ### confidence: medium
+
+## [2026-04-16] Haar cascade 얼굴 스티커 3단 방어 (손·팔·몸통 오검출 해결)
+
+### 관찰
+`haarcascade_frontalface_default.xml`은 v2 다이어트 때부터 알려진 대로 티셔츠·어두운 얼룩을 얼굴로 오검출. talmo v1에서 새로 추가된 이슈는 **손·팔 올린 자세(헤어플립)** 에서 손을 얼굴로 오인하는 패턴.
+
+### 해결 (3단)
+1. **검출 영역 상단 55% 크롭** — `gray_top = gray[:int(img_h * 0.55)]` 에만 `detectMultiScale` 돌려 몸통/바지 오검출 원천 차단
+2. **가장 큰 박스 선택** — 상단 제한 하에서 보통 얼굴이 가장 큼 (손은 작음)
+3. **중간값 기반 이상치 필터** — 모든 프레임 검출의 median (cx, cy) 계산 → **`max(med_w, med_h) * 1.2` 초과 벗어난 검출 제거**. talmo 테스트에서 153개 중 5개 필터됨 (헤어플립 손 검출분)
+4. **스티커 크기 고정** — 프레임별 검출 크기 대신 **median 크기 × scale_factor** 를 모든 프레임에 사용. 기울어진 머리에서 박스 작아져도 스티커 일정 크기 유지
+
+### 파라미터 확정값
+- `scale_factor = 1.25` (얼굴 크기의 125% 스티커)
+- `pad_y_ratio = 0.12` (스티커 살짝 아래로 → 이마 노출)
+- 상단 크롭 비율 `0.55` (탈모 B/A 전신샷 기준)
+
+### 조건
+- 전신 포트레이트 (얼굴 상단에 위치하는 구도). 가로 포즈나 누운 포즈에는 상단 크롭 가정 깨짐
+- 얼굴이 프레임 면적 대비 지나치게 작으면 (예: 1/10 미만) minSize 조정 필요
+
+### 출처
+[[src-talmo-b2a]] `scripts/face_cover.py` — 2026-04-16 해결
+### confidence: high (v1 talmo 최종 영상 모든 프레임 얼굴 정확히 커버 확인)
+
+## [2026-04-16] Gemini "합성해줘" 프롬프트는 인위적 합성감 발생
+
+### 관찰
+`"1번 인물 2번 배경에 합성해줘"` 표현은 Gemini가 **literally 두 이미지를 paste 하는 것처럼** 조명/원근감 불일치 결과물 생성. 명시적으로 "합성 아님" 알려야 함.
+
+### 해결 (확정 표현)
+```
+"2번 사진의 방 분위기와 색감만 참고해서 (똑같이 복제하지 말고 비슷한 느낌의 방으로),
+처음부터 하나의 장면으로 새로운 실사 사진을 생성해줘.
+합성하지 말고, 이 인물이 실제로 이런 방에 있는 것처럼
+조명 방향/그림자/원근감이 자연스럽게 통일된 사진."
+```
+
+### A/B/C 비교 결과
+- A (모델만 업로드 + 배경 텍스트): 자연스러우나 원본 배경 참조 불가
+- B (둘 다 업로드 + "분위기만 참고"): **확정** ⭐
+- C (영문 "shot on iPhone" 추가): 인물 누락, 비율 이상 → 실패
+
+### 출처
+[[src-talmo-b2a]] `steps/03-gemini-seeds/gen_seeds.py` PROMPT_BEFORE/AFTER
+### confidence: high (3안 비교 검증)
+
+## [2026-04-16] phone_look.py — AI 이미지 "핸드폰 찍은 느낌" 후보정 공식
+
+### 관찰
+Gemini 생성 이미지는 **과선명·과채도·너무 깨끗** 으로 AI 티가 확연. 프롬프트로 "iPhone 촬영" 지시해도 약함 (C안 실패). **생성 후 후보정이 확실**.
+
+### 레시피 (scripts/phone_look.py)
+1. **가우시안 블러 radius=1.0** — AI 선명함 감쇠
+2. **Sharpness 0.85** — 엣지 부드럽게
+3. **Color 0.92** — 채도 소폭 감소 (AI 과채도 제거)
+4. **따뜻한 색온도 (R+6, B-3)** — 백열등 느낌
+5. **필름 그레인 intensity=10.0** — 가우시안 노이즈
+6. **비네팅 strength=0.25** — 모서리 소폭 어둡게
+7. **JPEG quality=85 재압축** — 압축 아티팩트 도입
+
+### 조건
+- Gemini (또는 유사 이미지 생성기) 출력에 적용
+- 실사 인물 기준 (일러스트/그래픽에는 부적합)
+
+### 출처
+[[src-talmo-b2a]] 2026-04-16
+### confidence: high (CEO 육안 심사 통과)
+
+## [2026-04-16] B/A 시드 머리카락 색 불일치 — HAIR_COLOR_SPEC 공통 블록
+
+### 관찰
+Before/After를 별도 프롬프트로 생성하면 Gemini가 머리카락 색 랜덤 변동 (조명 차이 때문에 더 악화). 동일 인물 전제 위반.
+
+### 해결
+```python
+HAIR_COLOR_SPEC = (
+    "헤어 컬러는 자연스러운 다크 브라운/검정 (near-black dark brown, #2a1f1a 톤). "
+    "Before와 After는 완전히 동일한 머리카락 색이어야 하며, "
+    "조명 때문에 색이 달라 보이면 안 됨 — 염색하지 않은 동일 인물. "
+    "차이는 오직 머리숱/스타일링만. "
+)
+PROMPT_BEFORE = "... " + HAIR_COLOR_SPEC + "..."
+PROMPT_AFTER  = "... " + HAIR_COLOR_SPEC + "..."
+```
+
+구체 hex 코드 (#2a1f1a) 까지 박아넣으면 Gemini가 톤 고정.
+
+### 출처
+[[src-talmo-b2a]] gen_seeds.py
+### confidence: high
+
+## [2026-04-16] Windows cp949 인코딩 — Python print em-dash 금지
+
+### 관찰
+Windows 기본 콘솔 인코딩 cp949는 **em-dash (—, U+2014)** 를 인코딩 못함. Python 스크립트 print 문에 em-dash 쓰면 `UnicodeEncodeError: 'cp949' codec can't encode character '\u2014'` 발생해 **스크립트 전체 크래시**.
+
+### 해결
+- Python print 문에서 em-dash 금지, 하이픈 2개 "--" 또는 "→" 사용
+- 시작 시 `sys.stdout.reconfigure(encoding="utf-8")` 강제 (Python 3.7+)
+- 영향받는 범위: print 로그, raise Exception 메시지
+
+### 출처
+[[src-talmo-b2a]] talmo v1 compare_ab.py에서 실제 크래시 경험
+### confidence: high
+

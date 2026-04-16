@@ -727,3 +727,43 @@ Vercel (Next.js mobile UI) ──HTTPS──▶ Backend (always-on)
 - 프로젝트 코드: `C:/Users/Administrator/Desktop/klinginter/src/` (fal_kling/gemini/subtitle/batch_20/batch_mashup/fix_subs_c)
 
 *추가: 2026-04-15 (§13 외국인 인플루언서 Kling Avatar 파이프라인, [[src-foreign-influencer-guide]])*
+
+---
+
+## 14. talmo — 탈모(루솔브) B/A 릴스 자동 생산 파이프라인 (2026-04-16)
+
+### 14-1. 포지셔닝
+[[src-diet-b2a-v2]]의 탈모 도메인 포팅 + 구조 정제. 루솔브(Rusolve) 2026 런칭 준비 콘텐츠 엔진.
+3씬 구조 (Before → Card → After) + 헤어플립 엔딩 + **정수리 확대 플로팅 위젯** + **phone_look 후보정**.
+
+### 14-2. 다이어트 v2 대비 핵심 변경
+- **burst(고무줄 폭발) 씬 실험 후 폐기** — Kling 모션 어색. 헤어플립 엔딩으로 대체
+- **phone_look.py**: AI 과선명 제거 (블러+그레인+비네팅+따뜻톤+JPEG)
+- **B안 확정**: 배경 "분위기만 참고" + "처음부터 하나의 장면으로" (합성 표현 금지)
+- **조명 대비 전략**: Before 저녁 실내 vs After 낮 자연광
+- **계절감 명시**: 4월 20-30도 의상 스펙 (오버사이즈 니트 금지)
+
+### 14-3. 얼굴 스티커 검출 강화
+v2에서 이어진 Haar 오검출 이슈를 **3단 방어**로 해결:
+1. 검출 범위 상단 55% 제한 → 티셔츠/몸통 오검출 제거
+2. 여러 검출 중 가장 큰 박스 선택 (상단제한 하에서)
+3. **중간값 위치 기준 120% 이내만 유효** → 손/팔 오검출 제거
+4. 스티커 크기는 **중간값 고정** (프레임별 변동 무시)
+
+### 14-4. 파이프라인
+```
+00 bgm-pick → 01 prompts → 02 session → 03 seeds+phone_look
+ → 04 kling 2clips → 05 compose (3scenes + 4overlays)
+```
+
+### 14-5. 10세트 배치 도구
+- `gen_face_refs.py`: 10명 다양한 얼굴 레퍼런스 자동 생성
+- `setup_batch.py`: set2..setN config.json 생성 (모델×배경 순환)
+- `run_batch.sh`: 전체 파이프라인 순차 실행
+
+### 14-6. 관련 소스
+→ 상세: [[src-talmo-b2a]]
+- 브랜드 캔버스: [[canvas-rusolve-v1]]
+- 부모 파이프라인: [[src-diet-b2a-v2]]
+
+*추가: 2026-04-16 (§14 talmo 탈모 B/A 파이프라인, [[src-talmo-b2a]])*
