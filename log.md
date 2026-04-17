@@ -54,3 +54,10 @@
 - 업데이트: wiki/tacit/psychology-insights.md (+4 항목 — 정수리공포/3개월시간축/쓸어올림제스처/조명대비)
 - 업데이트: wiki/index.md (sources 목록에 src-talmo-b2a 추가)
 - 핵심 결정: burst(고무줄 폭발) 씬 실험 후 폐기 → 3씬 + 헤어플립 엔딩으로 확정
+
+## [2026-04-17] ingest | Multi-LLM Orchestrator v2.0.1 패치
+- 소스: `C:\Users\gguy\Desktop\multi-llm-orchestrator-v2` (v1 API → v2 CLI subprocess 전환 + 4종 함정 패치)
+- 업데이트: wiki/domains/ai-automation.md (Multi-LLM Orchestrator 섹션 신설)
+- 업데이트: wiki/tacit/coding-lessons.md (+3 항목 — Windows .cmd 멀티라인 인자 함정 / CLI 플래그 변경 대응 / exit code+json-output 자동화 계약)
+- 핵심 발견: Codex/Gemini 자체 SKILL.md 리뷰로 P0 가드레일 도출 (description 과잉 트리거 제거, 자동화 계약, 첫 실행 실패 차단)
+- 영향 스킬: ~/.claude/skills/multi-llm-orchestrator/ + ~/.claude/commands/{askall,ask-all}.md

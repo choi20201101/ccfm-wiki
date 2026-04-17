@@ -70,3 +70,42 @@ _내용 추가 예정_
 - Kling image2video + ffmpeg filter_complex 조합으로 **이미지 4장 + config 5줄 → 10초 릴스 3본** 자동화
 - 재사용 벡터: config 5슬롯만 편집 → 새 인물/프로젝트. 중간 실패 시 멱등 재개.
 - 교훈 누적: [[creative-patterns]] (전→후 하드컷 매칭 포즈), [[coding-lessons]] (cp949 em-dash 이슈, Kling 10s > 5s 포즈 준수율), [[psychology-insights]] (전반 억제 → 후반 폭발 해방감)
+
+
+## Multi-LLM Orchestrator v2.0.1 (2026-04-17 추가)
+
+### 위치 / 구조
+- 설치본: `~/.claude/skills/multi-llm-orchestrator/`
+- 소스 미러: `C:/Users/gguy/Desktop/multi-llm-orchestrator-v2/`
+- 스크립트: `scripts/cli_bridge.py` (CLI 래퍼) + `scripts/orchestrator.py` (5모드 명령)
+- 슬래시 커맨드: `/ask-all`, `/askall` (그 외 `mllm-review/fix/debate/consensus`)
+
+### 5모드
+| 모드 | 동작 | 모델 간 상호 참조 |
+|------|------|-------|
+| ask | 병렬 답변 + (선택) 교차검증 + 종합 | parallel/cross/full |
+| review | 파일 코드 리뷰 (patch 미생성) | 없음 |
+| fix | 멀티 수정안 → Merger 모델 통합 (원본 자동 덮어쓰기 X) | Merger 단계만 |
+| debate | A/B 3R 반박 + Judge 판정 | 있음 (쟁점 노출) |
+| consensus | N R 상호 참조 → 합의안 | 있음 (수렴) |
+
+### 인증
+CLI 로그인(`codex login`/`gemini` 첫 실행/`claude login`) 또는 환경변수(`OPENAI_API_KEY`, `GEMINI_API_KEY`, `ANTHROPIC_API_KEY`) — **둘 중 하나만**. 우선순위: 로그인 세션 > 환경변수.
+
+### v2.0.1 (2026-04-17) 패치 4종 — 실측 디버그 산물
+1. Codex `--skip-git-check` → `--skip-git-repo-check` (CLI 자체 변경)
+2. Windows `.cmd` shim FileNotFoundError → `shutil.which()` 절대경로 해석
+3. `cp949` UnicodeEncodeError → 모듈 시작 시 `sys.stdout.reconfigure("utf-8")` 강제
+4. **Gemini "Hello! I'm ready..." 함정** → Windows `.cmd` 가 멀티라인(`\n`) 인자를 명령 구분자로 오해 → 인터랙티브 폴백. 해결: Gemini만 `transport: "stdin"` + `args_template` 끝에 `"-p", ""` (자세히는 [[tacit/coding-lessons]] 2026-04-17 항목)
+
+### 자동화 인터페이스
+- Exit code: 0/1/2/3/4/5/6/130 (스크립트 실행 결과 후속 동작 분기)
+- `--json-output PATH`: 메타데이터 JSON emit (모델별 success/elapsed/raw 경로)
+- `--quiet`: CI 로그 노이즈 감소
+
+### 다른 스킬과의 위치
+- `eval` 스킬의 상위 버전으로 사용 가능 (평가자 1명 → 진짜 다른 모델 2~3명)
+- `bob → dd → harness → eval(=mllm) → learnings` 파이프라인의 eval 단계
+
+### 관련 페이지
+- [[tacit/coding-lessons]] 2026-04-17 항목 3개 (Windows .cmd shim, CLI 플래그 변경, 자동화 인터페이스)

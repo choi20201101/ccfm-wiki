@@ -910,3 +910,74 @@ Windows 기본 콘솔 인코딩 cp949는 **em-dash (—, U+2014)** 를 인코딩
 [[src-talmo-b2a]] talmo v1 compare_ab.py에서 실제 크래시 경험
 ### confidence: high
 
+
+## [2026-04-17] Windows `.cmd` shim 이 멀티라인 인자를 명령 구분자로 오해 → 인터랙티브 모드 폴백
+
+### 관찰
+멀티 LLM 오케스트레이터(v2.0)에서 Gemini CLI 가 답 대신 `"Hello! I'm ready to help..."` 같은 **인터랙티브 환영 메시지**만 반환. 직접 셸에서 `gemini -p "long prompt"` 호출은 정상.
+- Codex/Claude 와 동시 호출하지만 두 모델은 정상, Gemini만 망가짐.
+- 동일 프롬프트를 `cli_bridge.py` 단독으로 호출하면 정상.
+- 차이: `[SYSTEM]\n...\n\n[USER]\n...` 같은 **`\n` 포함 멀티라인 인자**를 `transport: "arg"` 로 넘기는 경우.
+
+### 원인
+- npm 글로벌 CLI(gemini, codex, claude)는 Windows 에서 `.cmd` shim 으로 설치됨.
+- Python `asyncio.create_subprocess_exec` 가 `.cmd` 호출 시 cmd.exe 를 거치는데, 인자에 `\n` 이 있으면 cmd.exe 가 **명령 구분자로 해석**해 인자 잘림.
+- Gemini 는 `-p VALUE` 가 잘리면 positional query 로 폴백 → **인터랙티브 모드 진입** → "Hello! I'm ready..." 만 stdout 으로 흘림.
+
+### 해결 (3중 방어)
+1. **Gemini 프로파일은 `transport: "stdin"` 강제**
+   - args_template = `["-m", "gemini-X", "--yolo", "-p", ""]` (빈 -p 로 non-interactive 트리거)
+   - 본문 프롬프트는 stdin pipe (Gemini docs: "Appended to input on stdin (if any)")
+2. `shutil.which()` 로 `.cmd` 절대경로 해석 (FileNotFoundError 별건)
+3. `sys.stdout.reconfigure(encoding="utf-8")` 모듈 시작 시 강제 (cp949 한글 깨짐 방지)
+
+### 디버깅 패턴 (재현)
+풀 체인 vs 단일 호출 분리 검증:
+```python
+# cli_bridge 단독 호출 — 직접 가서 동작 확인
+asyncio.run(run_cli(DEFAULT_CLI_PROFILES['gemini'], multiline_prompt))
+# 결과 stdout 에 'Hello! I'm ready' 가 보이면 → arg 잘림 확정
+```
+
+### 다른 CLI 영향
+- Codex: `-c` 로 stdin 받으므로 영향 없음
+- Claude: `-p` 받지만 짧은 프롬프트 위주라 안 터지는 듯 (긴 멀티라인 호출하면 동일 함정 가능, 예방적으로 stdin 추천)
+
+### 출처
+[[src-multi-llm-orchestrator-v2]] (2026-04-17 Codex/Gemini 자체 리뷰 → 실측 디버그)
+### confidence: high
+
+## [2026-04-17] CLI 의 인자 플래그명 / 모델명 변경에 대비한 config.json 분리
+
+### 관찰
+- Codex CLI 가 어느 시점부터 `--skip-git-check` → `--skip-git-repo-check` 로 변경됨. 코드에 하드코딩된 곳은 즉시 깨짐 (`unexpected argument`).
+- Gemini 모델명도 `gemini-3.1-pro-preview` 같은 preview suffix 가 정식 이름으로 바뀌면 호출 실패.
+
+### 해결
+- `cli_bridge.py` 의 `DEFAULT_CLI_PROFILES` 는 minimum default. 실 운영은 **`config.json` override** 로 한다.
+- `--config` 플래그로 외부 파일 지정. 플래그 변경 시 코드 수정 없이 JSON 수정만으로 복구.
+- 새 CLI 도입 시 첫 동작 확인은 `<cli> --version` + `<cli> exec --help` (또는 `--help-all`) 로 플래그명 확인 후 args_template 작성.
+
+### 출처
+[[src-multi-llm-orchestrator-v2]]
+### confidence: medium
+
+## [2026-04-17] 자동화 친화 스크립트 = exit code 약속 + `--json-output` 메타
+
+### 관찰
+오케스트레이터/배치 스크립트를 hook/CI 에서 호출하려면 사람용 텍스트 출력만으로는 부족. 후속 동작이 success/partial/failure 를 못 갈음함.
+
+### 해결 (계약 3종)
+1. **Exit code 약속** — 프로젝트 단일 표 (예: 0 ok / 1 usage / 2 binary missing / 3 auth / 5 all failed / 6 partial)
+2. `--json-output PATH` — 마지막에 메타 JSON emit. 스키마: `{mode, exit_code, status, output_dir, models: {<key>: {success, elapsed, raw_file, error}}, args}`
+3. `--quiet` — 사람용 진행 출력 끄기 (CI 로그 노이즈 감소)
+
+### hook/CI 후처리
+```bash
+jq '.models | to_entries | map(select(.value.success | not)) | .[].key' meta.json
+# → 실패한 모델 키 추출
+```
+
+### 출처
+[[src-multi-llm-orchestrator-v2]] orchestrator.py v2.0.1
+### confidence: medium
