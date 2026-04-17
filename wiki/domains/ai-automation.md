@@ -74,9 +74,23 @@ _내용 추가 예정_
 
 ## Multi-LLM Orchestrator v2.0.1 (2026-04-17 추가)
 
-### 위치 / 구조
+### 저장소 (GitHub)
+- **Repo**: https://github.com/choi20201101/multi-llm-orchestrator
+- 새 기기 셋업 (3분):
+  ```bash
+  git clone https://github.com/choi20201101/multi-llm-orchestrator.git \
+    ~/.claude/skills/multi-llm-orchestrator
+  cp ~/.claude/skills/multi-llm-orchestrator/commands/ask-all.md ~/.claude/commands/
+  cp ~/.claude/skills/multi-llm-orchestrator/commands/ask-all.md ~/.claude/commands/askall.md
+  npm install -g @openai/codex @google/gemini-cli @anthropic-ai/claude-code
+  codex login && claude login && gemini   # gemini 는 첫 실행으로 로그인 자동 트리거
+  python ~/.claude/skills/multi-llm-orchestrator/scripts/cli_bridge.py
+  ```
+  자세한 셋업/트러블슈팅은 repo 의 README.md 참조.
+
+### 위치 / 구조 (gguy 데스크탑 기준)
 - 설치본: `~/.claude/skills/multi-llm-orchestrator/`
-- 소스 미러: `C:/Users/gguy/Desktop/multi-llm-orchestrator-v2/`
+- 소스 미러: `C:/Users/gguy/Desktop/multi-llm-orchestrator-v2/` (= GitHub repo 의 origin)
 - 스크립트: `scripts/cli_bridge.py` (CLI 래퍼) + `scripts/orchestrator.py` (5모드 명령)
 - 슬래시 커맨드: `/ask-all`, `/askall` (그 외 `mllm-review/fix/debate/consensus`)
 
