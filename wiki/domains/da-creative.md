@@ -105,3 +105,22 @@ _내용 추가 예정_
 
 *추가: 2026-04-13 ([[src-diet-b2a-skill]])*
 - 숏폼 레퍼런스 수집: [[src-instar]]
+
+---
+
+## 볼륨필인 자동생성 파이프라인 (2026-04-20)
+
+ChatGPT web UI 자동화로 광고 소재 대량 생산한 성공 사례. 전체 기획·기술·규칙 체계화됨.
+
+- 상세: [[src-volumefill-pipeline-2026-04-20]]
+- 파이프라인: 분석(Gemini) → 카피(Gemini+규칙) → 이미지(ChatGPT Chrome+Playwright) → 리사이즈
+- GFA 심의 회피 규칙 48 금지어 + 12가지 B/A 우회 + O 마스킹
+- 11종 민족 × 14 페르소나 × 7 얼굴형 × 180+ 후킹 아이디어
+- Supervisor 야간 무인 운영 (8분 stall 자동 재기동, rate limit 30분 캡)
+- 재사용 템플릿: `projects/<new>/` 복제 후 규칙 MD 6종 제품별 맞춤
+
+### 핵심 인사이트 (tacit 추출 완료)
+- 레퍼런스 충실도: 첨부 1번 위치 + TOP·BOTTOM 양쪽 배너 강조 → [[coding-lessons]]
+- 얼굴형 타입 진단형 후킹이 먹힘 → [[creative-patterns]]
+- "시X" 마스킹 대신 "시O" (ㅅㅂ 연상 회피) → [[creative-patterns]]
+- B/A 직접 비교 12가지 위트 우회 → [[creative-patterns]]

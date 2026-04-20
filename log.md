@@ -61,3 +61,10 @@
 - 업데이트: wiki/tacit/coding-lessons.md (+3 항목 — Windows .cmd 멀티라인 인자 함정 / CLI 플래그 변경 대응 / exit code+json-output 자동화 계약)
 - 핵심 발견: Codex/Gemini 자체 SKILL.md 리뷰로 P0 가드레일 도출 (description 과잉 트리거 제거, 자동화 계약, 첫 실행 실패 차단)
 - 영향 스킬: ~/.claude/skills/multi-llm-orchestrator/ + ~/.claude/commands/{askall,ask-all}.md
+
+## [2026-04-20] ingest | 볼륨필인 앰플 광고 소재 자동생성 파이프라인 성공사례
+- `wiki/sources/src-volumefill-pipeline-2026-04-20.md` 생성 (전체 케이스 스터디)
+- `wiki/domains/da-creative.md` 에 링크·요약 추가
+- `wiki/tacit/creative-patterns.md` 에 6개 패턴 추가 (타입 진단형 후킹, B/A 우회 12종, 나이 단정 회피, 시각 템플릿 선언, O 마스킹, 인종 강제)
+- `wiki/tacit/coding-lessons.md` 에 6개 교훈 추가 (gpt-image 첫입력 fidelity, 백그라운드 조기종료, bash rm 영구삭제, rate limit 30분캡, Codex 크로스리뷰, 라운드로빈 정렬)
+- 결과: 다음 프로젝트 시작 시 `projects/<new>/` 템플릿 복제 + 규칙 MD 6종 제품별 맞춤 → 동일 퀄리티 유지 가능

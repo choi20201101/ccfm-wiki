@@ -981,3 +981,42 @@ jq '.models | to_entries | map(select(.value.success | not)) | .[].key' meta.jso
 ### 출처
 [[src-multi-llm-orchestrator-v2]] orchestrator.py v2.0.1
 ### confidence: medium
+
+## 광고 이미지 자동 생성 파이프라인 교훈 (볼륨필인 2026-04-20)
+
+### [2026-04-20] gpt-image는 첫 입력 이미지를 더 높은 fidelity로 보존
+- 관찰: OpenAI 공식문서상 gpt-image-1/mini는 첫 번째 입력 이미지, gpt-image-1.5는 처음 5장이 더 높은 fidelity로 보존됨. 레퍼런스 레이아웃 재현이 목표면 ref를 **첨부 1번**으로 두는 게 맞음
+- 조건: ChatGPT web UI 이미지 생성 + 레퍼런스 fidelity 우선 과제
+- 출처: OpenAI 이미지 가이드 + Codex 리뷰
+- confidence: high
+
+### [2026-04-20] Claude Code 백그라운드 태스크는 조용히 종료될 수 있음
+- 관찰: `run_in_background: true` 로 돌린 장시간 Python 프로세스가 이유 없이 조용히 종료되는 경우 관측됨 (exit 0, 에러 로그 없음). 야간 무인 운영하려면 Supervisor 프로세스 필수
+- 조건: 수 시간 지속되는 워커 프로세스 + Claude Code 세션 컨텍스트
+- 출처: volumefill 워커 반복 조기 종료 경험
+- confidence: high (여러 번 재현됨)
+
+### [2026-04-20] bash rm -f는 Windows 휴지통을 거치지 않음
+- 관찰: Windows에서 bash 셸의 `rm -f` 는 Unix rm 의미대로 영구 삭제. 휴지통 안 거침. 생성물 삭제할 땐 archive 폴더로 이동 필수
+- 조건: Windows + Git Bash / WSL
+- 출처: 볼륨필인 세션 clean restart 로 이전 생성물 영구 삭제 경험
+- confidence: high
+
+### [2026-04-20] ChatGPT rate limit "17시간 대기" 메시지는 과장
+- 관찰: ChatGPT가 "N시간 대기하세요" 메시지를 띄워도 실제로는 20~30분 후 풀림. 워커 백오프 로직은 **최대 30분으로 캡**하고 rate limit 기본 백오프 25분으로 조정하면 충분
+- 조건: ChatGPT web UI 이미지 생성 반복 호출
+- 출처: 사용자 직접 관찰 ("17시간 대기 멘트 나오는데 한 20~30분 이따가 하면 되더라")
+- confidence: high (사용자 경험 기반)
+
+### [2026-04-20] multi-llm-orchestrator(Codex) 코드 리뷰로 추측 실수 방지
+- 관찰: 규칙 MD·코드 수정 시 혼자 판단으로 진행하면 사실 확인 없는 추측 오류 발생 (제품 뚜껑 색 '골드/화이트'라고 추측해서 썼다가 실물 확인 후 '메탈릭 퍼플' 정정). Codex 크로스 리뷰 거치면 이런 실수 줄어듦
+- 조건: 규칙 MD·프롬프트·로직 수정
+- 출처: 볼륨필인 실수 복기
+- confidence: high
+- 사용 스킬: multi-llm-orchestrator (ask/review 모드), --models codex 단독 호출 가능
+
+### [2026-04-20] copies ↔ ref 정확 매칭 + 라운드로빈 정렬 중요
+- 관찰: 카피를 ref별 그룹으로 생성(ref A용 8개, ref B용 8개…) 후 그대로 순차 처리하면 같은 ref 8장 연속 생성됨. 라운드로빈 재정렬(id 1=ref1, id 2=ref2…) 해야 순차 ID가 매번 다른 ref 사용
+- 조건: N ref × M copy/ref 배치 생성 후 순차 실행
+- 출처: 볼륨필인 "같은 레퍼런스 계속 첨부되는거같은데"
+- confidence: high
