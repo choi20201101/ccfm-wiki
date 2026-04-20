@@ -59,6 +59,15 @@ Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
 
+### 🔥 시장조사 플레이북 — [[domains/market-research-playbook]] (NEW 2026-04-20)
+**"시장조사 해줘" 요청 시 바로 이 구조로 진행할 것.**
+- 시드키워드 → 연관 1,158개 → 6개월 트렌드 → 저점폭증 필터
+- 다음카페(Kakao) + 네이트판 + 유튜브 + 메타광고 라이브러리 병렬 수집
+- 7대 인사이트(통념·근거·권위·배경·장소·물건·욕망) 매칭
+- 영상기획용 11개 MD 자동 생성 (각 <150줄, 쉬운말 치환표 내장)
+- Gemini Deep Research: 공식 API 없음 → 하이브리드 전략 명시
+- 성공 케이스: [[sources/src-market-research-pipeline-2026-04]] (주름·유쎄라블)
+
 ---
 
 ## 📘 참조 지식 (Reference)
@@ -91,6 +100,7 @@ Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
 - [[sources/src-instarup]] — IG 자동 업로드 (instagrapi+APScheduler)
 - [[sources/src-community]] · [[sources/src-instar]] · [[sources/src-youtube]] — 크롤러 모듈
 - [[sources/src-cafe-crawler]] · [[sources/src-naverapi]] — 네이버 크롤러/API
+- [[sources/src-market-research-pipeline-2026-04]] — **주름/유쎄라블 시장조사 → 영상기획 11파일** (2026-04-20)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 
 ### QSCV — 서비스 품질 매뉴얼 (2025-07 베이스라인)

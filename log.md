@@ -68,3 +68,29 @@
 - `wiki/tacit/creative-patterns.md` 에 6개 패턴 추가 (타입 진단형 후킹, B/A 우회 12종, 나이 단정 회피, 시각 템플릿 선언, O 마스킹, 인종 강제)
 - `wiki/tacit/coding-lessons.md` 에 6개 교훈 추가 (gpt-image 첫입력 fidelity, 백그라운드 조기종료, bash rm 영구삭제, rate limit 30분캡, Codex 크로스리뷰, 라운드로빈 정렬)
 - 결과: 다음 프로젝트 시작 시 `projects/<new>/` 템플릿 복제 + 규칙 MD 6종 제품별 맞춤 → 동일 퀄리티 유지 가능
+
+## [2026-04-20] playbook | 시장조사 파이프라인 플레이북 등록 (주름/유쎄라블 성공 케이스)
+
+### 등록 배경
+사용자 요청: "시장조사하는 것 구조 전체를 wiki에 등록해서 최근 성공 사례로 하고, 이거 요청 시장조사 요청하면 이것 형태로 바로 구조화해서 할 수 있게 업데이트"
+
+### 추가 파일
+- `wiki/sources/src-market-research-pipeline-2026-04.md` — 주름·유쎄라블 시장조사 전체 케이스 스터디
+  - 소비자 발언 17,690건 수집 (다음카페 + 네이트판 + 유튜브)
+  - 연관키워드 1,158개 6개월 트렌드 → 저점폭증 32건 발굴
+  - 메타 광고 500+ 카피 경쟁사 역설계
+  - 영상기획 MD 11파일 (각 <150줄, 쉬운말 치환)
+- `wiki/domains/market-research-playbook.md` — **재사용 플레이북 (글로벌 지식)**
+  - "시장조사 해줘" 요청 시 즉시 참조하는 runbook
+  - 9단계 체크리스트 + 쉬운 말 치환 규칙 + 브랜드 제외 체크
+  - Gemini Deep Research API 현황 + 하이브리드 전략 명시
+
+### Gemini Deep Research API 조사 결과
+- 2026-04 기준 **공식 API 미제공** (Gemini Advanced 앱 전용 기능)
+- 대안: Gemini 2.5 Pro + `google_search` grounding tool (Vertex AI / AI Studio)
+- 실무 권장: 앱에서 수동 생성 후 폴더 투입 → Claude가 읽어 통합
+
+### 쉬운 말 치환표 (중요)
+- "지방 세포 증식" → "꺼진 자리 깨우기" (⚠️ 살찐다 오해 방지)
+- "인텔리전트 미니멀리즘" → "한 병으로 끝"
+- 향후 시장조사 시 전문용어 감수에 활용
