@@ -1020,3 +1020,41 @@ jq '.models | to_entries | map(select(.value.success | not)) | .[].key' meta.jso
 - 조건: N ref × M copy/ref 배치 생성 후 순차 실행
 - 출처: 볼륨필인 "같은 레퍼런스 계속 첨부되는거같은데"
 - confidence: high
+
+## 볼륨필인 v2 추가 교훈 (2026-04-21)
+
+### [2026-04-21] 레퍼런스 원본 텍스트 동적 금지 목록이 효과적
+- 관찰: "레퍼런스 텍스트 무시" 일반 지시만으론 GPT가 자주 ref 텍스트를 그대로 복제. 각 ref MD 에서 본문 Copy 섹션의 따옴표 문구를 자동 추출해 "이 문구 절대 금지" 목록으로 프롬프트에 박으면 효과 큼.
+- 조건: ref 분석 MD가 원본 카피 텍스트를 보존하고 있을 때
+- 구현: `_extract_ref_texts()` 로 `## Copy` 섹션의 `"..."` 패턴 추출 → 프롬프트 "❌" 목록 생성
+- confidence: high
+
+### [2026-04-21] 첨부 순서는 목표에 따라 달라야 — 제품 drift 우선이면 pd 첫 번째
+- 관찰: v1 에선 ref 첫 번째 (타이포 fidelity). 하지만 제품 drift 문제가 더 크면 pd0 을 첫 번째로.
+- 조건: OpenAI 문서 기반 — gpt-image 는 첫 입력 이미지를 가장 높은 fidelity로 보존
+- 결론: 프로젝트 우선순위에 따라 결정 (제품 무결성 > 레이아웃 fidelity > 얼굴)
+- confidence: high
+
+### [2026-04-21] ChatGPT web UI rate limit 관리 — 1탭 · 45s gap 안정
+- 관찰: 2탭 병렬 + 30s gap 은 빠르지만 rate limit 반복 트리거. 1탭 + 45s gap 이 rate limit 트리거 최소화.
+- 조건: ChatGPT Plus/Pro 계정 + 장기 자동 생성
+- 타협: 속도 ½로 줄어도 총 생산량은 rate limit backoff 감소로 비슷하거나 더 나음
+- confidence: high
+
+### [2026-04-21] 카피 수량 캡은 프롬프트만으로 부족, 후검수 필요
+- 관찰: 프롬프트에 "정확히 N개" 강조해도 GPT는 자주 초과. 캡을 낮추고 프롬프트에 self-count 지시 + QC 단계에서 검증 필요.
+- 조건: 텍스트 많은 광고 소재 생성
+- 권장 캡: 메인 ≤ 2, 서브 ≤ 3, 배지 ≤ 1 (공격적)
+- confidence: high
+
+### [2026-04-21] 의사·의료진 ref 이미지 → 자동 치환 가드 필수
+- 관찰: ref 에 의사·흰 가운·청진기·병원 배경 있으면 GPT가 최종 이미지에도 그대로 넣음. Meta 광고 정책 즉시 반려.
+- 조건: 의료·뷰티 카테고리 ref 포함
+- 해결: enforce 블록 ④-a "ref의 의료진 요소는 최종 이미지에서 제거, 일반 모델로 교체" 명시
+- confidence: high
+
+### [2026-04-21] QC 파이프라인 2축 추가 — category_mismatch + reference_copy_bleed
+- 관찰: v1 QC 6축으론 제품 카테고리 불일치 (치약 ad → 앰플 ad 인데 "무시무시한 치약" 문구 잔존) 감지 못함
+- 해결: category_mismatch (카테고리 다른 이미지·텍스트) + reference_copy_bleed (레퍼런스 카피 잔존) 2축 추가
+- 둘 다 hard fail → 자동 재생성
+- confidence: high
