@@ -102,6 +102,7 @@ Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
 - [[sources/src-cafe-crawler]] · [[sources/src-naverapi]] — 네이버 크롤러/API
 - [[sources/src-market-research-pipeline-2026-04]] — **주름/유쎄라블 시장조사 → 영상기획 11파일** (2026-04-20)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
+- [[sources/src-claude-skills-inventory-2026-04-22]] — **Claude Code 스킬/커맨드 인벤토리** (20 스킬 + 18 커맨드 스냅샷, 2026-04-22)
 
 ### QSCV — 서비스 품질 매뉴얼 (2025-07 베이스라인)
 - [[qscv/index|qscv]] — 14개 문서 / 47 청크

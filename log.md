@@ -1,5 +1,11 @@
 # CCFM Wiki Log
 
+## [2026-04-22] ingest | Claude Code 스킬/커맨드 인벤토리 스냅샷
+- `~/.claude/skills/` 20개 + `~/.claude/commands/` 18개 스냅샷을 [[sources/src-claude-skills-inventory-2026-04-22]]에 기록
+- 다른 기기 이전용 백업 패키지: `Desktop/claude-skills-package-20260422.zip` (286KB)
+- 파이프라인: bob → dd → harness → eval → learnings (5단 순환)
+- index.md §소스 섹션에 링크 추가
+
 ## [2026-04-15] update | goglecc — 다이어트 B/A "예쁜 얼굴 + 통통 몸" V15 확정
 - 사용자 승인: "만족스러운 결과가 나왔어" (15회 반복 후)
 - 최종 파이프라인: Higgsfield Soul (strength 0.85 After + 0.6 Before_raw) + `fal-ai/face-swap`
