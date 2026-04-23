@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "raw_skills_diet_b2a_scripts_compose_py"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L60",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_mosaic"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L22",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_video1"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L71",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_video_23"
     },
@@ -125,7 +125,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L189",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_main"
     },
@@ -134,7 +134,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_rationale_1"
     },
@@ -143,7 +143,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 17,
+      "community": 18,
       "community_label": "기타: detect_face.py",
       "id": "raw_skills_diet_b2a_scripts_detect_face_py"
     },
@@ -152,7 +152,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L16",
-      "community": 17,
+      "community": 18,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_try_opencv_detect"
     },
@@ -161,7 +161,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L40",
-      "community": 17,
+      "community": 18,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_main"
     },
@@ -170,7 +170,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 17,
+      "community": 18,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_rationale_1"
     },
@@ -179,7 +179,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 23,
+      "community": 24,
       "community_label": "기타: export.py",
       "id": "raw_skills_diet_b2a_scripts_export_py"
     },
@@ -188,7 +188,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L26",
-      "community": 23,
+      "community": 24,
       "community_label": "기타: export.py",
       "id": "export_main"
     },
@@ -197,7 +197,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 23,
+      "community": 24,
       "community_label": "기타: export.py",
       "id": "export_rationale_1"
     },
@@ -207,7 +207,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "raw_skills_diet_b2a_scripts_kling_client_py"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L24",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_read_keys"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L36",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_token"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L43",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_submit"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L69",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_poll"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L95",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_download"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L104",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_save_state"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L108",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_main"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
       "community": 10,
-      "community_label": "AI 아바타/영상 툴",
+      "community_label": "기타: kling_client.py",
       "id": "kling_client_rationale_1"
     },
     {
@@ -368,7 +368,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 18,
+      "community": 19,
       "community_label": "기타: make_overlays.py",
       "id": "raw_skills_diet_b2a_scripts_make_overlays_py"
     },
@@ -377,7 +377,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L13",
-      "community": 18,
+      "community": 19,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_stroked"
     },
@@ -386,7 +386,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L31",
-      "community": 18,
+      "community": 19,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_main"
     },
@@ -395,7 +395,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 18,
+      "community": 19,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_rationale_1"
     },
@@ -404,7 +404,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 19,
+      "community": 20,
       "community_label": "기타: qa_check.py",
       "id": "raw_skills_diet_b2a_scripts_qa_check_py"
     },
@@ -413,7 +413,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L11",
-      "community": 19,
+      "community": 20,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_probe"
     },
@@ -422,7 +422,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L20",
-      "community": 19,
+      "community": 20,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_main"
     },
@@ -431,7 +431,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 19,
+      "community": 20,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_rationale_1"
     },
@@ -440,7 +440,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "community_label": "기타: run_all.py",
       "id": "raw_skills_diet_b2a_scripts_run_all_py"
     },
@@ -449,7 +449,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L20",
-      "community": 24,
+      "community": 25,
       "community_label": "기타: run_all.py",
       "id": "run_all_main"
     },
@@ -458,7 +458,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 25,
       "community_label": "기타: run_all.py",
       "id": "run_all_rationale_1"
     },
@@ -467,7 +467,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 26,
       "community_label": "기타: validate_input.py",
       "id": "raw_skills_diet_b2a_scripts_validate_input_py"
     },
@@ -476,7 +476,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L12",
-      "community": 25,
+      "community": 26,
       "community_label": "기타: validate_input.py",
       "id": "validate_input_main"
     },
@@ -485,7 +485,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 26,
       "community_label": "기타: validate_input.py",
       "id": "validate_input_rationale_1"
     },
@@ -494,7 +494,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 29,
+      "community": 30,
       "community_label": "기타: build_sets.py",
       "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
     },
@@ -503,7 +503,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 29,
+      "community": 30,
       "community_label": "기타: build_sets.py",
       "id": "build_sets_rationale_1"
     },
@@ -666,7 +666,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L1",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L47",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_make_corner_masks"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L61",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_remove_logo"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L90",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_process_image"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L109",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_batch_process"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L48",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_rationale_48"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L62",
       "community": 15,
-      "community_label": "기타: logo_remover.py",
+      "community_label": "로고 제거 기술",
       "id": "logo_remover_rationale_62"
     },
     {
@@ -728,7 +728,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "community_label": "기타: analyze_bgm.py",
       "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py"
     },
@@ -737,7 +737,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L13",
-      "community": 20,
+      "community": 21,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_analyze"
     },
@@ -746,7 +746,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L57",
-      "community": 20,
+      "community": 21,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_main"
     },
@@ -755,7 +755,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_rationale_1"
     },
@@ -764,7 +764,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "community_label": "기타: build_prompts.py",
       "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py"
     },
@@ -773,7 +773,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L21",
-      "community": 26,
+      "community": 27,
       "community_label": "기타: build_prompts.py",
       "id": "build_prompts_write"
     },
@@ -782,7 +782,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 27,
       "community_label": "기타: build_prompts.py",
       "id": "build_prompts_rationale_1"
     },
@@ -791,7 +791,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 27,
+      "community": 28,
       "community_label": "기타: check_session.py",
       "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py"
     },
@@ -800,7 +800,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L13",
-      "community": 27,
+      "community": 28,
       "community_label": "기타: check_session.py",
       "id": "check_session_main"
     },
@@ -809,7 +809,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 27,
+      "community": 28,
       "community_label": "기타: check_session.py",
       "id": "check_session_rationale_1"
     },
@@ -908,7 +908,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 21,
+      "community": 22,
       "community_label": "기타: gen_scales.py",
       "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py"
     },
@@ -917,7 +917,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L27",
-      "community": 21,
+      "community": 22,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_run_one"
     },
@@ -926,7 +926,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L58",
-      "community": 21,
+      "community": 22,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_main"
     },
@@ -935,7 +935,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 21,
+      "community": 22,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_rationale_1"
     },
@@ -1025,7 +1025,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
@@ -1034,7 +1034,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L29",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_get_boxes"
     },
@@ -1043,7 +1043,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L42",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_stroked"
     },
@@ -1052,7 +1052,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L71",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_run"
     },
@@ -1061,7 +1061,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L76",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_build_overlays"
     },
@@ -1070,7 +1070,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L95",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_compose_v1"
     },
@@ -1079,7 +1079,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L135",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_compose_v23"
     },
@@ -1088,7 +1088,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L30",
-      "community": 4,
+      "community": 5,
       "community_label": "기타: compose.py",
       "id": "compose_rationale_30"
     },
@@ -1097,7 +1097,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L1",
-      "community": 28,
+      "community": 29,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "scripts_inject_diet_b2a_v2_aliases_py"
     },
@@ -1106,7 +1106,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L46",
-      "community": 28,
+      "community": 29,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "inject_diet_b2a_v2_aliases_main"
     },
@@ -1115,7 +1115,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L1",
-      "community": 28,
+      "community": 29,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "inject_diet_b2a_v2_aliases_rationale_1"
     },
@@ -1165,11 +1165,56 @@
       "id": "inject_iboss_entities_rationale_1"
     },
     {
+      "label": "inject_korean_aliases.py",
+      "file_type": "code",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L1",
+      "community": 17,
+      "community_label": "기타: inject_korean_aliases.py",
+      "id": "scripts_inject_korean_aliases_py"
+    },
+    {
+      "label": "yaml_aliases_block()",
+      "file_type": "code",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L99",
+      "community": 17,
+      "community_label": "기타: inject_korean_aliases.py",
+      "id": "inject_korean_aliases_yaml_aliases_block"
+    },
+    {
+      "label": "inject()",
+      "file_type": "code",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L104",
+      "community": 17,
+      "community_label": "기타: inject_korean_aliases.py",
+      "id": "inject_korean_aliases_inject"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L123",
+      "community": 17,
+      "community_label": "기타: inject_korean_aliases.py",
+      "id": "inject_korean_aliases_main"
+    },
+    {
+      "label": "Inject Korean aliases into wiki page frontmatter.  Why: English slugs like `src-",
+      "file_type": "rationale",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L1",
+      "community": 17,
+      "community_label": "기타: inject_korean_aliases.py",
+      "id": "inject_korean_aliases_rationale_1"
+    },
+    {
       "label": "regen_graph_report.py",
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 23,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "scripts_regen_graph_report_py"
     },
@@ -1178,7 +1223,7 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L46",
-      "community": 22,
+      "community": 23,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_pick_label"
     },
@@ -1187,7 +1232,7 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L62",
-      "community": 22,
+      "community": 23,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_main"
     },
@@ -1196,7 +1241,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 23,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_rationale_1"
     },
@@ -1205,7 +1250,7 @@
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_export_canvas_rusolve.py",
       "source_location": "L1",
-      "community": 30,
+      "community": 31,
       "community_label": "루솔브 퍼포먼스 캔버스 코드",
       "id": "export_canvas_rusolve_rationale_1"
     },
@@ -1218,7 +1263,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "entity_ccfm"
     },
@@ -1231,7 +1276,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "person_choi_jaemyung"
     },
@@ -1244,7 +1289,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable"
     },
@@ -1257,7 +1302,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_rusolve"
     },
@@ -1270,7 +1315,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "entity_smilegate"
     },
@@ -1283,7 +1328,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "entity_naver"
     },
@@ -1296,7 +1341,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "person_baek_youngmoo"
     },
@@ -1309,7 +1354,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "person_shin_donghyup"
     },
@@ -1322,7 +1367,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "person_kang_yonggil"
     },
@@ -1335,7 +1380,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "person_han_taeyoung"
     },
@@ -1348,7 +1393,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "person_yoon_jimin"
     },
@@ -1361,7 +1406,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_hk"
     },
@@ -1374,7 +1419,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "entity_merable_tw"
     },
@@ -1387,7 +1432,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "entity_wooyoung_acc"
     },
@@ -1400,7 +1445,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_tfda"
     },
@@ -1413,7 +1458,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_bpom"
     },
@@ -1426,7 +1471,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "regulation_halal"
     },
@@ -1439,7 +1484,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_shopline"
     },
@@ -1452,7 +1497,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_q10"
     },
@@ -1465,7 +1510,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_xchannel"
     },
@@ -1478,7 +1523,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "platform_tiktokshop"
     },
@@ -1491,7 +1536,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_coupang"
     },
@@ -1504,7 +1549,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_naver_gfa"
     },
@@ -1517,7 +1562,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "concept_spa"
     },
@@ -1530,7 +1575,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_transfer_pricing"
     },
@@ -1543,7 +1588,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_dual_engine"
     },
@@ -1556,7 +1601,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "concept_ayz_model"
     },
@@ -1569,7 +1614,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "concept_ai_cell"
     },
@@ -1582,7 +1627,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "concept_marketing_team1"
     },
@@ -1595,7 +1640,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_taiwan_market"
     },
@@ -1608,7 +1653,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_sea_tiktok"
     },
@@ -1621,7 +1666,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_japan_market"
     },
@@ -1634,7 +1679,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "domain_ma_exit"
     },
@@ -1647,7 +1692,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "domain_org_restructure"
     },
@@ -1660,7 +1705,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "domain_finance"
     },
@@ -1673,7 +1718,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 6,
       "community_label": "조직개편 & HR",
       "id": "domain_hr_admin"
     },
@@ -1686,7 +1731,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_vibe_coding"
     },
@@ -1699,7 +1744,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "domain_ai_automation"
     },
@@ -1712,7 +1757,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "domain_content_ai"
     },
@@ -1725,7 +1770,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "domain_marketing_automation"
     },
@@ -1738,8 +1783,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_da_creative"
     },
     {
@@ -1751,8 +1796,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_viral"
     },
     {
@@ -1764,8 +1809,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "domain_psychology"
     },
     {
@@ -1777,7 +1822,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_ffmpeg"
     },
@@ -1790,7 +1835,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_gemini_vision"
     },
@@ -1803,7 +1848,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_elevenlabs"
     },
@@ -1816,7 +1861,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_whisper"
     },
@@ -1829,7 +1874,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_kling"
     },
@@ -1842,7 +1887,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_omnihuman"
     },
@@ -1855,7 +1900,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_creatify_aurora"
     },
@@ -1868,7 +1913,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_rhubarb"
     },
@@ -1881,7 +1926,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_fal_ai"
     },
@@ -1894,8 +1939,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tool_opencv"
     },
     {
@@ -1907,8 +1952,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tool_lama"
     },
     {
@@ -1920,7 +1965,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tool_afx"
     },
@@ -1933,7 +1978,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "skill_pipeline"
     },
@@ -1946,8 +1991,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "source_gemini_logo_remover"
     },
     {
@@ -1959,8 +2004,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_1sec_cut"
     },
     {
@@ -1972,8 +2017,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_first_frame_face"
     },
     {
@@ -1985,7 +2030,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_tts_speed"
     },
@@ -1998,8 +2043,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_ba_correction"
     },
     {
@@ -2011,7 +2056,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_product_bottom_third"
     },
@@ -2024,7 +2069,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "tacit_safezone_remeasure"
     },
@@ -2037,7 +2082,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_indo_hijab"
     },
@@ -2050,7 +2095,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_jp_gothic"
     },
@@ -2063,8 +2108,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "tacit_lama_vs_opencv"
     },
     {
@@ -2076,7 +2121,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "tacit_hk_margin"
     },
@@ -2089,7 +2134,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_universal_safezone"
     },
@@ -2102,7 +2147,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_bob_dd_plan"
     },
@@ -2115,8 +2160,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_product_avoidance"
     },
     {
@@ -2128,7 +2173,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 3,
       "community_label": "콘텐츠 AI 자동화 (FFmpeg·Whisper·TTS)",
       "id": "concept_7element_extraction"
     },
@@ -2141,7 +2186,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "decision_rusolve_launch_2026"
     },
@@ -2154,8 +2199,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "decision_opencv_over_lama"
     },
     {
@@ -2167,7 +2212,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_marketing_subscription"
     },
@@ -2180,7 +2225,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_distribution_subscription"
     },
@@ -2193,7 +2238,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "community_label": "해외 시장 (대만/일본/동남아)",
       "id": "concept_brand_business"
     },
@@ -2206,7 +2251,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "source_iboss_wiki"
     },
@@ -2219,7 +2264,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_index_201"
     },
@@ -2232,7 +2277,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_40부작"
     },
@@ -2245,7 +2290,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_100억_10부작"
     },
@@ -2258,7 +2303,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_구글애즈_60억"
     },
@@ -2271,7 +2316,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_정육점"
     },
@@ -2284,8 +2329,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "iboss_series_공감콘텐츠"
     },
     {
@@ -2297,7 +2342,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "iboss_series_스토어팜"
     },
@@ -2310,7 +2355,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "iboss_series_ai_automation"
     },
@@ -2323,7 +2368,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_nanobanana"
     },
@@ -2336,7 +2381,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_veo3"
     },
@@ -2349,7 +2394,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_midjourney"
     },
@@ -2362,7 +2407,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_higgsfield"
     },
@@ -2375,7 +2420,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_seedream"
     },
@@ -2388,7 +2433,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "tool_akool"
     },
@@ -2401,7 +2446,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_usp_desire"
     },
@@ -2414,8 +2459,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_empathy_7"
     },
     {
@@ -2427,8 +2472,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_rolling_balkan"
     },
     {
@@ -2440,8 +2485,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 7,
-      "community_label": "로고 제거 기술",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_persuasion_9"
     },
     {
@@ -2453,7 +2498,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_priority_5step"
     },
@@ -2466,8 +2511,8 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 2,
+      "community_label": "크리에이티브 & 심리 패턴",
       "id": "concept_empathy_over_quality"
     },
     {
@@ -2479,7 +2524,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "concept_repurchase_over_newacq"
     },
@@ -2492,7 +2537,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_ai_execution_gap"
     },
@@ -2505,7 +2550,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "concept_tacit_ai_collab"
     },
@@ -2518,7 +2563,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_jeongyukjeom_rebuy"
     },
@@ -2531,7 +2576,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "community_label": "바이브코딩 & 에이전트 스택",
       "id": "case_ai_studio_8000"
     },
@@ -2544,7 +2589,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "case_ad_spend_2500"
     },
@@ -2557,7 +2602,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_google_ads"
     },
@@ -2570,7 +2615,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_meta_ads"
     },
@@ -2583,7 +2628,7 @@
       "captured_at": "2026-04-13",
       "author": "최재명 (근육돌이)",
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "community_label": "iboss 201건 지식베이스 (최재명)",
       "id": "platform_shortform"
     },
@@ -2596,8 +2641,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_ko_main"
     },
     {
@@ -2609,8 +2654,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_ko_factory"
     },
     {
@@ -2622,8 +2667,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_ko_b2a_auto"
     },
     {
@@ -2635,8 +2680,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_ko_weightloss"
     },
     {
@@ -2648,8 +2693,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_pipeline"
     },
     {
@@ -2661,8 +2706,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_multilang"
     },
     {
@@ -2674,8 +2719,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_short"
     },
     {
@@ -2687,8 +2732,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_bdh"
     },
     {
@@ -2700,8 +2745,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_diet"
     },
     {
@@ -2713,8 +2758,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_b2a"
     },
     {
@@ -2726,8 +2771,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_reels"
     },
     {
@@ -2739,8 +2784,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_shorts"
     },
     {
@@ -2752,8 +2797,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_transform"
     },
     {
@@ -2765,8 +2810,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_weightloss"
     },
     {
@@ -2778,8 +2823,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_loss"
     },
     {
@@ -2791,8 +2836,8 @@
       "captured_at": "2026-04-14",
       "author": null,
       "contributor": null,
-      "community": 3,
-      "community_label": "크리에이티브 & 심리 패턴",
+      "community": 4,
+      "community_label": "AI 아바타/영상 툴",
       "id": "diet_b2a_v2_alias_word_ba"
     }
   ],
@@ -4776,6 +4821,78 @@
       "confidence_score": 1.0,
       "source": "inject_iboss_entities_make_edge",
       "target": "inject_iboss_entities_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "scripts_inject_korean_aliases_py",
+      "_tgt": "inject_korean_aliases_yaml_aliases_block",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_korean_aliases_py",
+      "target": "inject_korean_aliases_yaml_aliases_block"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "scripts_inject_korean_aliases_py",
+      "_tgt": "inject_korean_aliases_inject",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_korean_aliases_py",
+      "target": "inject_korean_aliases_inject"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_src": "scripts_inject_korean_aliases_py",
+      "_tgt": "inject_korean_aliases_main",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_korean_aliases_py",
+      "target": "inject_korean_aliases_main"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_src": "inject_korean_aliases_rationale_1",
+      "_tgt": "scripts_inject_korean_aliases_py",
+      "confidence_score": 1.0,
+      "source": "scripts_inject_korean_aliases_py",
+      "target": "inject_korean_aliases_rationale_1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_src": "inject_korean_aliases_inject",
+      "_tgt": "inject_korean_aliases_yaml_aliases_block",
+      "confidence_score": 1.0,
+      "source": "inject_korean_aliases_yaml_aliases_block",
+      "target": "inject_korean_aliases_inject"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts\\inject_korean_aliases.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "inject_korean_aliases_main",
+      "_tgt": "inject_korean_aliases_inject",
+      "confidence_score": 1.0,
+      "source": "inject_korean_aliases_inject",
+      "target": "inject_korean_aliases_main"
     },
     {
       "relation": "contains",
