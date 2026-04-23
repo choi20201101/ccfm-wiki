@@ -254,6 +254,377 @@ def clean_visual(v):
 - "elevator mirror selfie" → 강제로 2명
 - 정면보다 측면/3/4 앵글이 얼굴 일관성 더 잘 유지
 
+## 17. Day별 변화 시드 생성 — **얼굴형 시드 분리 패턴** (2026-04-21 볼륨필인 추가)
+
+### 문제
+동일 인물 Day1~Day14 변화 영상에서 face seed만 사용하면:
+- Day1의 볼꺼짐이 Gemini 기본 경향(얼굴 부드럽게)으로 약하게 그려짐
+- Day2부터 이미 플럼핑되어 조기 회복 (사용자 피드백 "볼꺼짐 없이 그냥 바뀜")
+
+### 해결 — 시드를 2종류로 분리
+1. **face/** = 얼굴 정체성 시드 (원본 셀카 2장)
+2. **bfex_split/before/** = 얼굴형(고민 상태) 시드 1장 — 사용자가 제공한 참조 이미지의 Before 부분만 크롭
+3. Gemini edit에 3장 입력 + 프롬프트에 "FIRST TWO = identity blend, LAST = ONLY shape guide for cheek hollow depth"
+
+### 효과
+- 측면 프로필 bfex(세로 그림자 진함) 사용 시 가장 극적
+- 사용자 "이정도 극적인 느낌" 기준 달성
+
+### 프롬프트 필수 문구
+```
+"SEVERE dramatic volume loss: vertical shadow groove from cheekbone to jaw,
+ pronounced nasolabial folds, drooping mouth corners, skull-like cheekbones,
+ looks 5-10 years older than actual age"
+```
+
+### Day 2~6 조기 회복 방지 (핵심)
+```
+"CRITICAL FOR EARLY DAYS (2-6): her face volume and hollow cheek depth should
+ look ALMOST IDENTICAL to Day 1 reference — DO NOT plump, DO NOT fill hollow,
+ DO NOT smooth nasolabial folds"
+```
++ Day 2-6 generation에 bfex shape reference 재주입.
+
+## 18. Apply 씬 — **그래픽 도트 금지**, 촉촉 웻룩만
+
+### 실패 (v6-v7)
+- "5-7 purple ampoule dots on cheek like rejuran spots" → Gemini가 **스티커·이모지** 같은 그래픽 도트 생성
+- 사용자 피드백 "그래픽 이미지 올린거처럼 됨 ㅋㅋ"
+
+### 성공 (v8)
+도트 개념 완전 제거. 대신:
+```
+"On sunken left cheek, the ampoule has JUST been applied and is visible ONLY as
+ a GLOSSY DEWY WET PATCH of skin — freshly moisturized-looking with subtle
+ specular highlight. NO purple color, NO pigment. Recognizable only by its
+ slightly wetter/shinier look. Skin pores visible THROUGH the sheen.
+ Fingertip mid-tap on this wet area.
+ ABSOLUTELY NO graphic dots, NO cartoon droplets, NO painted shapes."
+```
+→ 실제 세럼 바른 직후 피부 광택처럼 자연스러움.
+
+## 19. Kling i2v — 모션 중 얼굴 스무딩 방지
+
+### 문제
+Day1 시드는 볼꺼짐 극적이지만, Kling i2v 5초 모션 중 얼굴이 '예뻐지며' 플럼핑.
+
+### 해결 negative_prompt
+```
+cheek plumping in motion, face smoothing during clip, volume appearing,
+hollow filling in, beautification filter, skin smoothing, face younger,
+wrinkles removed, cheeks filling up, hollow disappearing, skull line disappearing mid-clip
+```
+
+Day1 prompt에도 명시:
+```
+"CRITICAL: preserve DEEPLY sunken cheeks and vertical shadow groove throughout
+ the entire clip — do NOT smooth, plump, or beautify her face.
+ Keep the skull-line silhouette every single frame."
+```
+
+## 20. Speaking 클립 기법 — 립싱크 없이 vlog 느낌
+
+### 목적
+사용자 요청: "1~3일차 보여주고 아바타가 말하는 장면 점점 좋아지나요? 하면서"
+
+### 구현 — **아바타 립싱크 없이 표정만**
+- Day7 시드 → Kling i2v "mouth slightly opens as if asking a question, curious engaged expression, slight head tilt"
+- Day11 시드 → Kling i2v "opens mouth as if emphasizing a word, nods once, warm knowing half-smile"
+
+### 효과
+- 2초짜리 클립 × 2회 인터리브로 vlog 느낌 성공
+- OmniHuman/Aurora 아바타 ($0.14~0.16/s) 없이 Kling i2v ($0.05/s)만으로 해결
+- 나레이션은 기존 TTS가 이어지지만 시청자는 '말하는 장면'으로 인지
+
+## 21. 3인 릴레이 Trio 패턴 — "저도 해결했어요!"
+
+### 구조
+- 3명(30대/40대/50대) Day1 각 2초 = 6초 페인 릴레이
+- 공통 제품 reveal (1명 대표) + apply (1명 대표)
+- 3명 Day14 각 2초 "저도/저도/저도 해결" 릴레이
+- **triple_split 엔딩** — 3분할 좌우 (360×1920 × 3) Day14 스틸 + 하단 "저도/저도/해결!" PIL 배너
+- CTA 2초
+
+### 효과
+- 단일 testimonial보다 공감 자극 2배
+- 연령 폭 30·40·50대 전부 커버 → 타겟층 넓힘
+- TTS만 바꿔 10 variants 생성 가능 (전연령/필러거부/가격비교/주변반응/일자별변화/보르피린성분/약국권위/이벤트준비/다이어트후)
+
+### 주의
+- triple_split PIL 배너는 **malgunbd.ttf** (한글 지원) 필수. arialbd.ttf 쓰면 □□□ 박스.
+- triple_split 구간(15-18s) 자막은 Hook 스타일(MarginV 620 상단)으로 올려 PIL 배너와 분리
+
+## 22. 구조 해시 배정 — **같은 자산, 다양한 스토리**
+
+### 패턴
+```python
+def pick_structure(set_id: str) -> str:
+    return STRUCTURE_NAMES[hash(set_id + "struct") % len(STRUCTURE_NAMES)]
+```
+set_id에 따라 결정론적으로 9개 구조 중 하나 배정 → 재현성 + 자연스러운 분포.
+
+### 9개 구조 (15s × 6 + 20s × 3)
+- A_classic / B_shock_open / C_14first / D_product_open / E_montage_open / F_5beat (15s)
+- G_vlog_20s (speaking × 2) / H_story_20s / I_diary_20s (20s)
+
+### 리믹스
+기존 시드·클립·TTS 재사용하고 compose 단계에서만 다른 구조 적용 → **1분/편** 추가 생성 가능. 비용 $0.
+
+## 23. Day14 복장 풀 다양화 — **피로도 방지**
+
+### 문제
+초기 OUTFIT_14가 고정된 리스트 → 모든 영상 Day14 엔딩이 **같은 burgundy silk blouse**.
+사용자 피드백 "마지막 복장이 완전 똑같아서".
+
+### 해결
+`setscene.outfit_for(set_id, day)` — 일자별 풀에서 set_id 해시로 선택.
+Day14 finale pool 10종: cream silk / burgundy / powder-blue / terracotta / camel turtleneck / deep forest / beige trench / dusty pink / navy blazer / ivory cashmere.
+
+### 교훈
+**광고 40편 기획 시 '엔딩 복장'도 배리에이션 축**. 스토리·씬 구성만큼 시각적 피로도 결정자.
+
+## 24. CTA 청크 풀 — **"14일 챌린지 참여" 반복 방지**
+
+### 문제
+모든 스크립트 마지막 2청크가 "1+1 할인" + "14일 챌린지 참여"로 동일 → 광고 피로도.
+
+### 해결
+```python
+CTA_PRICE = [...10종...]   # 1+1 69% / 48% 할인 / 55ml / 당일출발 / ...
+CTA_ACTION = [...12종...]  # 14일 챌린지 / 30일 환불 / 3만 포인트 / 간미연템 / ...
+
+def pick_cta(set_id):
+    return [CTA_PRICE[hash(set_id+"cta1") % 10],
+            CTA_ACTION[hash(set_id+"cta2") % 12]]
+```
+각 세트마다 10×12=120 조합 중 1개. 40편에 동일 CTA 조합 반복될 확률 거의 없음.
+
+## 25. TTS/자막 분리 — **숫자 오독 방지** (핵심 기법)
+
+### 문제
+ElevenLabs multilingual_v2가 한국어 숫자 오독:
+- "14일" → "열네일" (X)
+- "1+1" → "원 플러스 원" (읽긴 읽지만 어색)
+- "5살" → "오살" (X)
+
+### 해결 — chunk를 dict로 분리
+```python
+# scripts_ko.json
+{"sub": "14일 후엔", "tts": "십사일 후엔"}
+{"sub": "1+1 할인", "tts": "원플러스원 할인"}
+{"sub": "5살 어려", "tts": "다섯살 어려"}
+```
+`chunk_util.py`의 `chunk_tts()` / `chunk_sub()` 헬퍼로 각각 추출.
+자막은 눈에 예쁜 표기, 오디오는 자연스러운 발음. 둘 다 최적.
+
 ---
 
 *작성: 2026-04-14. 메라블 피코샷 크림 33편 생성 경험 기반.*
+*확장: 2026-04-21 볼륨필인 앰플 33편 + Trio 10편 경험 (§17-25).*
+
+## 26. 참조 이미지 모자이크 제거 인페인팅 (2026-04-23 추가)
+
+### 문제
+사용자가 개인정보 보호 모자이크(블러) 씌워진 얼굴 참조 이미지를 제공할 때, bfex shape guide로 쓰면 Gemini가 **모자이크 아트팩트까지 복사**함. 결과물의 눈이 블러 처리되어 나옴.
+
+### 해결 — Gemini edit으로 인페인팅
+```
+"Keep EVERYTHING exactly the same — same face shape, cheekbones, skin, hair, clothing, background, pose, lighting.
+ONLY replace the blurred eye region with natural clear Korean eyes.
+[eye characteristics: double/monolid, dark brown iris, natural lashes, tired under-eye].
+The rest of the face must NOT change."
+```
+
+결과물을 `skull_unmask.png` 같은 ASCII 명명으로 저장 → 이후 파이프라인에서 bfex 참조로 사용.
+
+### 이점
+- 원본의 **실제 구조 정보(해골형/볼꺼짐/주름)는 그대로 유지**
+- 눈 영역만 자연스러운 새 눈으로 교체
+- 전체 재생성보다 훨씬 원본 충실도 높음
+
+## 27. "shadow/hollow/dark" 키워드가 Gemini 그래픽 패치 유발 (금지)
+
+### 문제 관측 (볼륨필인 샘플 v4~v8 반복 실패)
+프롬프트에 `"deep shadow on cheeks"`, `"dark hollows"`, `"shadowed mid-cheek"` 등 명시 시:
+→ Gemini가 **검은 타원 패치**를 볼에 그림 (makeup contour 같은 그래픽)
+→ 사용자 피드백: "그래픽 이미지 올린거처럼 됨"
+
+### 해결 — 금지 단어 & 대체 용어
+❌ 금지: shadow, hollow, dark, shadowed, shadow pools, painted shadow
+
+✅ 대체:
+- "inverted triangle face outline"
+- "cheekbones protruding as visible bone ridges"
+- "mid-cheek indented inward"
+- "sculpted angular face structure"
+- "natural bone prominence"
+- "physics-correct lighting on bone structure"
+
+### 추가 네거티브 프롬프트
+```
+"no painted shadow patches on cheeks, no makeup contour, no graphic overlays"
+```
+
+### 왜 일어나는가 (추정)
+Gemini 2.5 Flash Image는 "shadow"라는 단어를 Photoshop/makeup overlay로 해석하는 경향. "bone structure"로 쓰면 natural physics lighting으로 렌더.
+
+## 28. Before/After 동일 장소 + 옷만 변경 원칙
+
+### 사용자 피드백 (2026-04-23)
+"해결된 얼굴과 같은 장소에서 찍는 느낌으로 해줘 옷만 변경되도록"
+"14일동안 변화할 수 있는 느낌으로"
+
+### 이전 실패 패턴
+Day1과 Day14의 장소·가구·커튼·조명이 다름 → 서로 다른 날·다른 셋업 느낌 → 변화의 연속성 낮음.
+
+### 성공 패턴
+- **같은 공간** (same bedroom dresser, same curtains, same mirror, same camera angle)
+- **같은 헤어스타일** (Day1~Day14 공통 "low messy bun" or "half-up ponytail" — 14일 만에 머리 바꾸는 건 부자연스러움)
+- **옷만 변경** (Day1 홈웨어 → Day14 spring blouse 등, 일자별 outfit pool 로테이션)
+
+### 효과
+- 같은 거울 앞에서 매일 찍은 **일상 브이로그** 느낌
+- 변화 자체에 시선 집중 (배경 노이즈 제거)
+- 진정성·신뢰도 상승
+
+### 프롬프트 패턴
+```
+"SAME location, SAME curtains, SAME furniture, SAME camera angle as reference.
+SAME hair style (low messy bun).
+ONLY outfit and face volume changes between before/after."
+```
+
+### 시즌 맞추기
+봄(4월)이면 turtleneck/cashmere 금지, spring blouse·cotton tee·linen shirt 등 light-weight fabric만.
+
+## 29. 헤어·메이크업 드리프트 방지 (부수 발견)
+
+14일 progression에서 Day14가 갑자기 메이크업한 얼굴이 되면 "다른 사람" 느낌.
+
+### 규칙
+- Day1~Day6: "no makeup, natural bare skin" (고민 스테이트)
+- Day7~Day10: "subtle tinted lip, minimal blush" (회복 중)
+- Day11~Day14: "natural K-beauty makeup (soft blush, tinted lip)" (회복 완료)
+
+메이크업을 점진적으로 추가 → Day14 변신이 자연스러움 (확 달라진게 아니라 **점점 밝아진 본인**).
+
+---
+
+*확장: 2026-04-23 볼륨필인 Day1 인페인팅 성공 사례 기반 (§26-29).*
+
+## 30. "silhouette/outline" 키워드 = Gemini가 검은 선 드로잉 유발 (금지)
+
+### 문제 관측 (2026-04-23 14일 progression Day13)
+프롬프트에 `"copy the rounded/soft/egg-shape face silhouette from reference"` 사용 →
+Gemini가 얼굴 턱 라인을 따라 **검은 선을 실제로 드로잉**. 사용자 피드백: "Day13 얼굴에 검정색 선이 들어가있는데?"
+
+### 해결 — 금지 단어 & 대체 용어
+❌ 금지: silhouette, outline, face line, edge line, shape line
+
+✅ 대체:
+- "cheek volume"
+- "cheek fullness / plumpness"
+- "bone curvature"
+- "natural face anatomy"
+- "how plump her cheeks should look"
+
+### 네거티브 프롬프트
+```
+"no drawn edges, no graphic lines, no visible outline drawn on face"
+```
+
+### 종합 금지 키워드 리스트 (§27 + §30)
+이제 Gemini Image Edit 프롬프트에서 절대 금지:
+- shadow / dark / hollow
+- silhouette / outline / face line
+- 모두 그래픽 패치 또는 검은 선으로 렌더링됨
+
+## 31. Day14 옷 변경 강제 패턴 (2026-04-23)
+
+### 문제
+Day1을 앵커로 Day14 생성 시 Gemini가 **Day1과 같은 옷을 유지**하는 경우 발생. 사용자 피드백: "B 영상 마지막 에프터랑 비포랑 얼굴이 같음 이상함" (얼굴뿐 아니라 옷도 같음).
+
+### 해결 — 명시적 negation
+Day14 prompt에 구체적 차이 + 명시적 부정:
+```
+"OUTFIT CHANGED to: a fresh cream silk blouse with a delicate small bow tie at the neckline
+ (spring-weight, NOT a white T-shirt, NOT the same as Day 1)."
+```
+
+`NOT ...` 구문으로 직접 부정하면 Gemini가 따름.
+
+## 32. 피부 세포 3D 애니메이션 기법 (B/A 비주얼 임팩트)
+
+### 구조
+1. **cells_shrunken.png** — 쭈글쭈글 세포 클러스터 (Gemini text-to-image)
+   - 프롬프트: "3D medical visualization of dehydrated shriveled skin cells, raisin-like wrinkled surface, gray-purple"
+2. **cells_plump.png** — 탱탱 세포 클러스터 (Gemini text-to-image)
+   - 프롬프트: "3D medical visualization of healthy plump skin cells, round juicy pink-lavender grapes, glossy hydrated"
+3. **cells_morph.mp4** — Kling i2v 쭈글 → 탱탱 (5초)
+   - 입력: cells_shrunken.png
+   - 프롬프트: "cells rapidly PLUMP UP AND FILL OUT, swelling into round juicy grape-like cells, subtle light burst"
+
+### 영상 내 활용
+나레이션 "세포가 파바박 차올라요"와 **cell_morph 클립 싱크** → 강한 시각적 임팩트. B/A 설득력 2배.
+
+### 비용
+- Gemini text-to-image × 2장: ~$0.08
+- Kling i2v 5s × 1: $0.35
+- 총 ~$0.45로 고급 의학 애니메이션 효과 재현
+
+## 33. Dramatic Product Reveal Kling 기법
+
+### 목적
+제품 씬을 단순 정적 홀드 대신 **럭셔리 CM 같은 dramatic reveal**로 연출.
+
+### 레시피
+1. **product_dramatic.png** 시드 생성 (Gemini edit):
+   - 입력: product_hold.png (원본 제품 누끼)
+   - 프롬프트 핵심:
+     - "hero product shot, slightly tilted, floating in ethereal luxury atmosphere"
+     - "soft rim lighting, subtle light burst behind cap, sparkle particles floating"
+     - "pastel gradient bokeh background (pink-lavender)"
+     - "Chanel/Dior-level luxury commercial quality"
+     - "product label UNCHANGED from reference"
+2. **Kling i2v 회전 모션**:
+   - 프롬프트: "product rotates gently and tilts toward camera, catching rim light, sparkle particles floating"
+
+### 효과
+"볼륨필인 앰플을 만나면" 나레이션 타이밍에 제품이 빛나며 회전 → "이 제품이 답이구나" 강한 각인.
+
+## 34. 14일 progression 성공 영상 표준 구조 (17s locked in)
+
+### 레퍼런스 구조 (2026-04-23 확정)
+```
+0-2.5s   Day1 Kling (해골형 모션)           + "피부 세포 쭈글쭈글 탄력이 죽어"
+2.5-4.5s 제품 dramatic Kling (회전 + 스파클) + "볼륨필인 앰플을 만나면"
+4.5-7.5s 세포 파바박 Kling (쭈글 → 탱탱)    + "세포가 파바박 차올라요"
+7.5-13s  14일 몽타주 (14 stills 크로스페이드) + "푹꺼진 볼 해골형 얼굴이 14일 만에 이렇게 변화"
+13-15s   Day14 Kling (탱글 미소 모션)
+15-17s   Before/After 좌우 분할 + CTA
+```
+
+### 검증된 나레이션 리듬
+총 8 청크 × 14초 타깃 (atempo 자동 조정):
+1. "피부 세포가 쭈글쭈글"
+2. "탄력이 죽어가요"
+3. "볼륨필인 앰플을 만나면"  ← 제품 등장 큐
+4. "세포가 파바박 차올라요"   ← 세포 morph 큐
+5. "푹꺼진 볼"                 ← 14일 몽타주 시작
+6. "해골형 얼굴이"
+7. "14일 만에"  (TTS "십사일")
+8. "이렇게 변화합니다"
+
+### 복제 가능성
+이 17초 구조는 **주름·기미·리프팅·여드름·탈모·다이어트** 모든 B/A 카테고리에 그대로 이식 가능:
+- Day1 해골형 → 주름 제품이면 "주름 가득한 얼굴"로 교체
+- cells_morph → 탈모 제품이면 "모낭 활성화" 애니메이션
+- Day1-14 progression → 카테고리별 14일 변화 시드 풀 교체
+- 나레이션 청크만 카테고리에 맞게 rewrite
+
+### 핵심 교훈
+**비주얼 4요소 모두 필요** — 인물 비포·제품 dramatic·과학 애니메이션·14일 몽타주. 1개라도 빠지면 설득력 급감.
+
+---
+
+*확장: 2026-04-23 볼륨필인 3인 × 세포 애니 × 14일 몽타주 성공 사례 (§30-34).*
