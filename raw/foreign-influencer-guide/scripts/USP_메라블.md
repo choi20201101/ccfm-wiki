@@ -1,3 +1,7 @@
+---
+aliases: ["Melable RubyRN PicoShot Cream — USP"]
+---
+
 # Melable RubyRN PicoShot Cream — USP
 
 ## 핵심 요약

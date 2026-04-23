@@ -1,3 +1,7 @@
+---
+aliases: ["GFA 매체 운영 매뉴얼"]
+---
+
 <!-- source: CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430.docx | chunk 1/7 | lines 1-200/1290 -->
 
 # GFA 매체 운영 매뉴얼

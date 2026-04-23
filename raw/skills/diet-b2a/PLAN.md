@@ -1,3 +1,7 @@
+---
+aliases: ["PLAN — 다이어트 Before/After 릴스 3종 자동 생성"]
+---
+
 # PLAN — 다이어트 Before/After 릴스 3종 자동 생성
 
 > bob 스펙 · SDD(Spec-Driven Development) 기반. 이 문서는 스킬이 무엇을 만들어야 하는지의 **단일 진실(single source of truth)** 이다.

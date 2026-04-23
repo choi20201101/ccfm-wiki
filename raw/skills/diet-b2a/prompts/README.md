@@ -1,3 +1,7 @@
+---
+aliases: ["prompts/"]
+---
+
 # prompts/
 
 Kling image2video에 보낼 프롬프트 텍스트. `scripts/kling_client.py`가 key별로 이 파일을 읽는다.

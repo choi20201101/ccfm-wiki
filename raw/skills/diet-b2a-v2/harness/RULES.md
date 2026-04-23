@@ -1,3 +1,7 @@
+---
+aliases: ["Harness RULES v2"]
+---
+
 # Harness RULES v2
 
 ## R1. 멱등

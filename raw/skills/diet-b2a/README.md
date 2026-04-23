@@ -1,3 +1,7 @@
+---
+aliases: ["diet-b2a — 다이어트 Before/After 릴스 자동화 스킬"]
+---
+
 # diet-b2a — 다이어트 Before/After 릴스 자동화 스킬
 
 Kling AI + ffmpeg + Pillow로 **다이어트 변신 3종 릴스**(좌우분할 / 우측 체중계 하드컷 / 좌측 체중계 하드컷)를 한 번에 생성.

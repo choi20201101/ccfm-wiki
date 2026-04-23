@@ -1,4 +1,5 @@
 ---
+aliases: ["🔥 i-boss MOC: 바이럴 (14건)"]
 type: moc
 category: viral
 source: iboss-choi-jaemyeong

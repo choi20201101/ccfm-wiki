@@ -1,4 +1,5 @@
 ---
+aliases: ["🤖 i-boss MOC: AI 자동화 (34건)"]
 type: moc
 category: ai-automation
 source: iboss-choi-jaemyeong

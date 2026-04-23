@@ -1,4 +1,5 @@
 ---
+aliases: ["최재명 대표 i-boss 201건 마스터 인덱스"]
 type: index
 source: iboss-choi-jaemyeong
 total_articles: 201

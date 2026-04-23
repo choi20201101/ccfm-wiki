@@ -1,4 +1,5 @@
 ---
+aliases: ["diet-b2a-v2"]
 name: diet-b2a-v2
 description: |
   다이어트 Before/After 릴스를 10세트 × 3포맷 × 2언어 = 60개 자동 생성하는 스킬.

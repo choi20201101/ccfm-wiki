@@ -1,3 +1,7 @@
+---
+aliases: ["ARCHITECTURE — 내부 기술·포맷"]
+---
+
 # ARCHITECTURE — 내부 기술·포맷
 
 ## 데이터 플로우

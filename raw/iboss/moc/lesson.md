@@ -1,4 +1,5 @@
 ---
+aliases: ["📚 i-boss MOC: 교훈 (10건)"]
 type: moc
 category: lesson
 source: iboss-choi-jaemyeong

@@ -1,4 +1,5 @@
 ---
+aliases: ["diet-b2a: 다이어트 Before/After 릴스 자동 생성 스킬"]
 name: diet-b2a
 description: |
   다이어트 Before/After 자극 릴스 3종(좌우분할·우측체중계·좌측체중계)을 Kling AI로 자동 생성하는 스킬.

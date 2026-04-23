@@ -1,4 +1,5 @@
 ---
+aliases: ["📣 i-boss MOC: 마케팅 (54건)"]
 type: moc
 category: marketing
 source: iboss-choi-jaemyeong

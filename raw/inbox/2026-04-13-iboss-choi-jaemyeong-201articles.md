@@ -1,4 +1,5 @@
 ---
+aliases: ["근육돌이(최재명) i-boss 201개 글 인사이트 인덱스"]
 type: raw
 captured_at: 2026-04-13
 source: i-boss.co.kr ab-6141 (근육돌이 = 최재명 대표 게시판)

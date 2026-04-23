@@ -1,4 +1,5 @@
 ---
+aliases: ["객단가_점검_체크리스트_Appendix"]
 type: raw
 source_file: 객단가 점검 체크리스트 Appendix.docx
 domain: qscv

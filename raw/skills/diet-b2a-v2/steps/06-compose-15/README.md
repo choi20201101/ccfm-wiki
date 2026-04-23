@@ -1,3 +1,7 @@
+---
+aliases: ["step-06 · README"]
+---
+
 # step-06 · README
 
 ## 실행

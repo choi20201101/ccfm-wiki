@@ -1,4 +1,5 @@
 ---
+aliases: ["CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430"]
 type: raw
 source_file: CCFM_마케팅사업부_Q_매체 매뉴얼_META_250430.docx
 domain: qscv

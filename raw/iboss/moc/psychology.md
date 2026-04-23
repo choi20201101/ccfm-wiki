@@ -1,4 +1,5 @@
 ---
+aliases: ["🧠 i-boss MOC: 심리 (22건)"]
 type: moc
 category: psychology
 source: iboss-choi-jaemyeong

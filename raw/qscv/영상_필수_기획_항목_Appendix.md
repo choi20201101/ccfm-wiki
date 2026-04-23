@@ -1,4 +1,5 @@
 ---
+aliases: ["영상_필수_기획_항목_Appendix"]
 type: raw
 source_file: 영상 필수 기획 항목 Appendix.docx
 domain: qscv

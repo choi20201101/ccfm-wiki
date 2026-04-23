@@ -1,4 +1,5 @@
 ---
+aliases: ["🎨 i-boss MOC: 크리에이티브 (15건)"]
 type: moc
 category: creative
 source: iboss-choi-jaemyeong

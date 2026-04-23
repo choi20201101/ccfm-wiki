@@ -1,3 +1,7 @@
+---
+aliases: ["Step 02 — Kling 4개 영상 생성"]
+---
+
 # Step 02 — Kling 4개 영상 생성
 
 ## 목적

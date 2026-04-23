@@ -1,4 +1,5 @@
 ---
+aliases: ["콘텐츠_기획_가이드_Appendix"]
 type: raw
 source_file: 콘텐츠 기획 가이드 Appendix.docx
 domain: qscv

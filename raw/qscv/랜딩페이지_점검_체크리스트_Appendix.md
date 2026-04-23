@@ -1,4 +1,5 @@
 ---
+aliases: ["랜딩페이지_점검_체크리스트_Appendix"]
 type: raw
 source_file: 랜딩페이지 점검 체크리스트 Appendix.docx
 domain: qscv

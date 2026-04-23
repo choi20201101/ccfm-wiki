@@ -1,4 +1,5 @@
 ---
+aliases: ["⚙️ i-boss MOC: 운영 (43건)"]
 type: moc
 category: operation
 source: iboss-choi-jaemyeong

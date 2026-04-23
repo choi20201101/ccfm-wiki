@@ -1,4 +1,5 @@
 ---
+aliases: ["퍼포먼스_캔버스_업데이트_및_재기획_Appendix"]
 type: raw
 source_file: 퍼포먼스 캔버스 업데이트 및 재기획 Appendix.docx
 domain: qscv

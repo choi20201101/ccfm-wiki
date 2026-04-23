@@ -1,3 +1,7 @@
+---
+aliases: ["step-03 · Gemini 시드 생성 (10장)"]
+---
+
 # step-03 · Gemini 시드 생성 (10장)
 
 ## 목적

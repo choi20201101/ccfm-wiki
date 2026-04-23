@@ -1,3 +1,7 @@
+---
+aliases: ["step-01 · README"]
+---
+
 # step-01 · README
 
 ## 산출물

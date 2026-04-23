@@ -1,3 +1,7 @@
+---
+aliases: ["[RAW] Gemini Logo Remover v3.0"]
+---
+
 # [RAW] Gemini Logo Remover v3.0
 > 수집일: 2026-04-12
 > 출처: CEO 직접 개발 + 테스트 결과

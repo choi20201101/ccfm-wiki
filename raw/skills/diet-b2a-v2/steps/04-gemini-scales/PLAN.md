@@ -1,3 +1,7 @@
+---
+aliases: ["step-04 · Gemini 체중계 kg 치환 (10장)"]
+---
+
 # step-04 · Gemini 체중계 kg 치환 (10장)
 
 ## 목적

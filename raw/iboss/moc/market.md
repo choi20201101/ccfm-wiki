@@ -1,4 +1,5 @@
 ---
+aliases: ["🌏 i-boss MOC: 시장 (1건)"]
 type: moc
 category: market
 source: iboss-choi-jaemyeong

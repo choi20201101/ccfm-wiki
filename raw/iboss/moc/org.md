@@ -1,4 +1,5 @@
 ---
+aliases: ["🏢 i-boss MOC: 조직 (1건)"]
 type: moc
 category: org
 source: iboss-choi-jaemyeong

@@ -1,4 +1,5 @@
 ---
+aliases: ["CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드"]
 type: raw
 source_file: CCFM_마케팅사업부_Q_퍼포먼스 사고 확장 가이드.docx
 domain: qscv

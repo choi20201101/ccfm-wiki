@@ -1,3 +1,7 @@
+---
+aliases: ["step-06 · 30 영상 ffmpeg 합성"]
+---
+
 # step-06 · 30 영상 ffmpeg 합성
 
 ## 목적

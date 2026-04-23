@@ -1,3 +1,7 @@
+---
+aliases: ["step-05 · Kling 40 클립 생성"]
+---
+
 # step-05 · Kling 40 클립 생성
 
 ## 목적

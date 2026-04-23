@@ -1,4 +1,5 @@
 ---
+aliases: ["⚖️ i-boss MOC: 판단 규칙 (7건)"]
 type: moc
 category: decision-rule
 source: iboss-choi-jaemyeong
