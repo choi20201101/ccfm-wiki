@@ -112,3 +112,20 @@ sources: [src-iboss-choi-jaemyeong]
 - [[wiki/tacit/viral-patterns]] — 바이럴
 - [[wiki/tacit/operational-heuristics]] — CRM·운영
 - [[da-creative]] · [[viral]] · [[psychology]] · [[ai-automation]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/marketing-automation|⚙️ 마케팅 자동화]]
+- [[domains/viral|🔥 바이럴]]
+- [[domains/psychology|🧠 심리]]
+- [[domains/da-creative|🎨 DA 크리에이티브]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+  - [[raw/iboss/moc/marketing|📣 마케팅]]
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/marketing #source/iboss #region/kr
+<!-- AUTO:tags-end -->

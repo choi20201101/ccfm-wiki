@@ -124,3 +124,20 @@ CLI 로그인(`codex login`/`gemini` 첫 실행/`claude login`) 또는 환경변
 
 ### 관련 페이지
 - [[tacit/coding-lessons]] 2026-04-17 항목 3개 (Windows .cmd shim, CLI 플래그 변경, 자동화 인터페이스)
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/content-ai-automation|🎬 콘텐츠 AI 자동화]]
+- [[domains/vibe-coding|💻 바이브 코딩]]
+- [[domains/org-restructure|🏢 조직개편 (A→Y/Z)]]
+- [[domains/marketing-automation|⚙️ 마케팅 자동화]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+  - [[raw/iboss/moc/ai-automation|🤖 AI 자동화]]
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/ai-automation #region/kr #source/iboss
+<!-- AUTO:tags-end -->

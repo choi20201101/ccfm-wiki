@@ -1424,3 +1424,11 @@ CCFM 마케팅사업부에서 쓰는 필수 마케팅 용어를 외우고 이해
 | 스펜딩 | 마케팅·광고비: 특정 채널(페이스북, 구글, 네이버 등)에 집행한 실제 지출 비용 |
 | 간접전환, 간접전환 ROAS | 메타, 구글, GFA 와 같은 플랫폼에서 제공하는 매출과 ROAS 지표 |
 | 직접전환, 직접전환 ROAS | GA, 카페24 접속통계 와 같은 애널리틱스 분석 툴에 UE, UTM 태그 값의 매출 기준으로 분석 하는 매출과 ROAS |
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/performance-thinking]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

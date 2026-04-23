@@ -771,3 +771,19 @@ v2에서 이어진 Haar 오검출 이슈를 **3단 방어**로 해결:
 - 부모 파이프라인: [[src-diet-b2a-v2]]
 
 *추가: 2026-04-16 (§14 talmo 탈모 B/A 파이프라인, [[src-talmo-b2a]])*
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/ai-automation|🤖 AI 자동화]]
+- [[domains/da-creative|🎨 DA 크리에이티브]]
+- [[domains/viral|🔥 바이럴]]
+- [[domains/vibe-coding|💻 바이브 코딩]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/creative #tech/ffmpeg #tech/gemini #tech/kling
+<!-- AUTO:tags-end -->

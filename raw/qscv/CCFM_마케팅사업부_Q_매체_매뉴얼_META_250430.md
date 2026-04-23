@@ -1032,3 +1032,11 @@ ASC 캠페인은 자동화 기반에 더 특화된 캠페인 전략으로 전체
 Q6. 제한된 머신러닝에도 성과가 잘 나오는 상황은 어떤 경우인가요?
 A.
 리타겟팅 캠페인이나 ASC처럼 이미 구매의사가 있는 타겟에만 노출될 때, 혹은 매우 강력한 소재로 CPC나 CTR이 극도로 좋을 때 성과가 나오곤 합니다. 하지만 이건 예외적 상황이고 일반적으로 성과가 장기적으로 유지되기 힘든 구조인 건 맞습니다.
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/media-meta]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

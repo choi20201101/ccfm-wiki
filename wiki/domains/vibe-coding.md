@@ -166,3 +166,18 @@ Phase 0~5를 건너뛰고 코딩했을 때 반복 관찰된 실패:
 - harness / harness-auto-rules — 환경 강제, 규칙 자동화
 - eval / eval-feedback-loop / eval-regression — 품질 평가·역류·회귀
 - learnings-engine / learnings-wrapup / learnings-confidence / cross-project-sync — 학습 누적·전파
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/ai-automation|🤖 AI 자동화]]
+- [[domains/content-ai-automation|🎬 콘텐츠 AI 자동화]]
+- [[domains/marketing-automation|⚙️ 마케팅 자동화]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/ai-automation #tech/claude-code
+<!-- AUTO:tags-end -->

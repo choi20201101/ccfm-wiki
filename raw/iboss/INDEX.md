@@ -260,3 +260,18 @@ captured_at: 2026-04-13
 - [2017-12-07] **[marketing]** [[ab-6141-31486]] — 교과서적인 SNS 페이지 활성화방법 7가지 와 컨텐츠 본질(?)
 - [2017-05-22] **[viral]** [[ab-6141-26827]] — 페이스북으로 본 SNS마케팅의 포인트 2탄 (0.1원 참여 페이스북 광고만들기)
 - [2017-05-22] **[viral]** [[ab-6141-26811]] — 페이스북으로 본 SNS마케팅의 포인트 1탄
+
+<!-- AUTO:iboss-moc-nav-begin -->
+## 🗂 카테고리별 MOC (빠른 탐색)
+
+- 📣 [[moc/marketing|마케팅]] — 54건 · 관련: [[wiki/domains/marketing]]
+- ⚙️ [[moc/operation|운영]] — 43건 · 관련: [[wiki/tacit/operational-heuristics]]
+- 🤖 [[moc/ai-automation|AI 자동화]] — 34건 · 관련: [[wiki/domains/ai-automation]]
+- 🧠 [[moc/psychology|심리]] — 22건 · 관련: [[wiki/domains/psychology]]
+- 🎨 [[moc/creative|크리에이티브]] — 15건 · 관련: [[wiki/domains/da-creative]]
+- 🔥 [[moc/viral|바이럴]] — 14건 · 관련: [[wiki/domains/viral]]
+- 📚 [[moc/lesson|교훈]] — 10건 · 관련: [[wiki/tacit/lessons-learned]]
+- ⚖️ [[moc/decision-rule|판단 규칙]] — 7건 · 관련: [[wiki/tacit/decision-rules]]
+- 🌏 [[moc/market|시장]] — 1건 · 관련: [[wiki/tacit/market-intuition]]
+- 🏢 [[moc/org|조직]] — 1건 · 관련: [[wiki/domains/org-restructure]]
+<!-- AUTO:iboss-moc-nav-end -->

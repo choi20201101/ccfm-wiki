@@ -44,3 +44,18 @@ _내용 추가 예정_
 - [[src-cafe-crawler]] — 네이버 카페 로그인/가입/크롤링 자동화 (Selenium + iframe JS 접근 + 수동 캡차 루프, 키워드 확장으로 10k+ 게시글 수집 & 키워드/감정 집계 리포트)
 - [[src-naverapi]] — 네이버 검색광고 API + Meta 광고 경쟁사 분석 파이프라인
 - [[src-community]] — 5개 한국 커뮤니티 통합 크롤러 (제목+본문+댓글, 10만건 검증)
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/marketing|📣 마케팅]]
+- [[domains/ai-automation|🤖 AI 자동화]]
+- [[domains/vibe-coding|💻 바이브 코딩]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/marketing #tech/naver-api #tech/crawling
+<!-- AUTO:tags-end -->

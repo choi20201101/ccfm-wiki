@@ -76,3 +76,20 @@ _내용 추가 예정_
 - [[da-creative]]
 - [[content-ai-automation]]
 - [[sea-tiktok]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/marketing|📣 마케팅]]
+- [[domains/psychology|🧠 심리]]
+- [[domains/da-creative|🎨 DA 크리에이티브]]
+- [[domains/content-ai-automation|🎬 콘텐츠 AI 자동화]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+  - [[raw/iboss/moc/viral|🔥 바이럴]]
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/marketing #source/iboss
+<!-- AUTO:tags-end -->

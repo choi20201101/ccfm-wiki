@@ -73,3 +73,18 @@ _내용 추가 예정_
 - [[viral]]
 - [[da-creative]]
 - [[org-restructure]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/marketing|📣 마케팅]]
+- [[domains/viral|🔥 바이럴]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+  - [[raw/iboss/moc/psychology|🧠 심리]]
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/reference #domain/marketing #source/iboss
+<!-- AUTO:tags-end -->

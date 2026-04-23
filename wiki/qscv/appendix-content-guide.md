@@ -43,3 +43,9 @@ sources: [raw/qscv/콘텐츠_기획_가이드_Appendix.md]
 
 ## 업데이트 메모
 _여기에 사용자가 실무 변경사항·예외 케이스·암묵지 추가_
+
+<!-- AUTO:raw-source-begin -->
+## 📄 원본 문서
+
+- 원본: [[raw/qscv/콘텐츠_기획_가이드_Appendix]]
+<!-- AUTO:raw-source-end -->

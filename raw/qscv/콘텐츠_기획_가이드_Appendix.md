@@ -64,3 +64,11 @@ CTR, CVR 등 주요 지표를 비교하여 효과적인 컨텐츠 발굴
 [예시]
 [IMG]
 [IMG]
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/appendix-content-guide]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

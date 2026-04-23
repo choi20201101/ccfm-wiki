@@ -54,3 +54,11 @@ USP 가 잘못 설정되어 있지 않은지
 인사이트 기반으로 새로 수립한 방향성
 새로 수립한 방향성 실행 계획 일정
 실행 이후 가설 검증에 대한 리뷰 예정
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/appendix-canvas-reupdate]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

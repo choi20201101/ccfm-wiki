@@ -1505,3 +1505,11 @@ GA4 기준 ‘전환 경로 보고서’ 확인
 확인 위치: GA4 > 광고 > 기여 분석 경 > 소스
 구글 Ads가 마지막 클릭은 아니었더라도, 유입, 중간 단계 등 구매 결정 과정 중간에 중요한 역할을 했을 수 있습니다
 [IMG]
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/media-google]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

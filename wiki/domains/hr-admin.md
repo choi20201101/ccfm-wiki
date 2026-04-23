@@ -35,3 +35,18 @@ _내용 추가 예정_
 ## 관련 페이지
 - [[org-restructure]]
 - [[finance]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/finance|💵 재무]]
+- [[domains/org-restructure|🏢 조직개편 (A→Y/Z)]]
+- [[domains/ma-exit|💰 M&A Exit]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/reference #domain/ops
+<!-- AUTO:tags-end -->

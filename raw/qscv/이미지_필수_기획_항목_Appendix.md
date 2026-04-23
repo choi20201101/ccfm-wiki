@@ -38,3 +38,11 @@ CTA : 고객이 얻을 수 있는 즉각적인 이점 제시
 설득 : 제품 탄생 배경 설명, 타제품과 지속력, 커버력 비교, 전후 이미지로 설득
 CTA : 3차 물량 완판으로 인한 예약판매 기간동안 49% 할인, 삼푸 무료 증정
 [IMG]
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/appendix-image-planning]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

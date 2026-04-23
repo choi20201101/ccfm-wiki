@@ -125,3 +125,19 @@ ChatGPT web UI 자동화로 광고 소재 대량 생산한 성공 사례. 전체
 - 얼굴형 타입 진단형 후킹이 먹힘 → [[creative-patterns]]
 - "시X" 마스킹 대신 "시O" (ㅅㅂ 연상 회피) → [[creative-patterns]]
 - B/A 직접 비교 12가지 위트 우회 → [[creative-patterns]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/content-ai-automation|🎬 콘텐츠 AI 자동화]]
+- [[domains/viral|🔥 바이럴]]
+- [[domains/marketing|📣 마케팅]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+  - [[raw/iboss/moc/creative|🎨 크리에이티브]]
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/creative #tech/gemini #tech/fal-ai
+<!-- AUTO:tags-end -->

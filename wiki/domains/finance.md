@@ -36,3 +36,17 @@ _내용 추가 예정_
 ## 관련 페이지
 - [[ma-exit]]
 - [[taiwan-market]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/ma-exit|💰 M&A Exit]]
+- [[domains/hr-admin|👥 HR/총무]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/reference #domain/ops
+<!-- AUTO:tags-end -->

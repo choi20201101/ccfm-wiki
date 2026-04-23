@@ -60,3 +60,9 @@ sources: [raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_25043
 
 ## 업데이트 메모
 _여기에 사용자가 실무 변경사항·예외 케이스·암묵지 추가_
+
+<!-- AUTO:raw-source-begin -->
+## 📄 원본 문서
+
+- 원본: [[raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430]]
+<!-- AUTO:raw-source-end -->

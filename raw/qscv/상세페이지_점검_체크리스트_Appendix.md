@@ -197,3 +197,11 @@ ex)
 FAQ, 하단 배너, 고객 후기, 신뢰마크 등을 통해 우려 해소가 잘 이루어지고 있는가?
 ex)
 [IMG]
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 예정 정리 위치: `wiki/qscv/appendix-detail.md` (아직 없음)
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->

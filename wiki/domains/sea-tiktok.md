@@ -28,3 +28,18 @@ _내용 추가 예정_
 ## 관련 페이지
 - [[taiwan-market]]
 - [[japan-market]]
+
+<!-- AUTO:domain-crosslinks-begin -->
+## 🔗 관련 도메인
+
+- [[domains/taiwan-market|🇹🇼 대만 시장]]
+- [[domains/japan-market|🇯🇵 일본 시장]]
+- [[domains/marketing|📣 마케팅]]
+
+## 📊 소스
+- [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:
+<!-- AUTO:domain-crosslinks-end -->
+
+<!-- AUTO:tags-begin -->
+**Tags**: #status/active #domain/strategy #region/sea #tech/tiktok
+<!-- AUTO:tags-end -->

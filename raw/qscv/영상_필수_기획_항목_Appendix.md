@@ -53,3 +53,11 @@ CTA : 고객이 얻을 수 있는 즉각적인 이점 제시
 CTA : 지금 구매시 40% 선착순 할인
 [IMG]
 [IMG]
+
+<!-- AUTO:related-docs-begin -->
+## 🔗 관련 문서
+
+- 정리본: [[wiki/qscv/appendix-video-planning]]
+- QSCV 전체: [[wiki/qscv/index]]
+- CCFM Wiki: [[wiki/index]]
+<!-- AUTO:related-docs-end -->
