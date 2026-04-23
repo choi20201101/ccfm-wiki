@@ -47,14 +47,17 @@
 - Gemini 레퍼런스 기반 한국어 프롬프트 포맷
 - diet-b2a 레이아웃 레퍼런스 (캔버스, 오버레이, 자막 폰트, 모자이크, 데드존)
 
-### 영상 생성 교훈 — [[tacit/video-gen-lessons]] (11KB)
-Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
+### 영상 생성 교훈 — [[tacit/video-gen-lessons]] (27KB, 34 섹션)
+Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - §1 Kling 1003 에러 = 시계 drift · §2 자막 싱크 성공 패턴
 - §3 중년 타겟 번역 원칙 · §4 상단 고정 카피 · §5 B-roll 할루시네이션 방지
 - §6 Gemini Vision 자동 Eval · §7 퍼포먼스 영상 3가지 스타일
 - §8 씬당 듀레이션 · §9 TTS 경로 · §10 비용 경험치
 - §11 FFmpeg filter 디버깅 · §14 Gemini 한국어 텍스트 이미지 불가
 - §15 ffmpeg 필터 함정 · §16 안 되면 스킵할 것들
+- **§17-19 볼륨필인 Day별 변화** — 얼굴형 시드 분리, 그래픽 도트 금지 웻룩, Kling 얼굴 스무딩 방지 (2026-04-21)
+- **§20-25 Trio 릴레이 · 구조 해시 · CTA 풀 · 숫자 오독 방지** (2026-04-21)
+- **§26-34 참조 이미지 인페인팅 · 금지 키워드(shadow/silhouette) · Day14 옷 변경 · 3D 세포 애니 · Kling reveal · 17s 표준 구조** (2026-04-23)
 
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
@@ -103,6 +106,10 @@ Kling/Gemini/ffmpeg 실전 이슈 16개 섹션.
 - [[sources/src-market-research-pipeline-2026-04]] — **주름/유쎄라블 시장조사 → 영상기획 11파일** (2026-04-20)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[sources/src-claude-skills-inventory-2026-04-22]] — **Claude Code 스킬/커맨드 인벤토리** (20 스킬 + 18 커맨드 스냅샷, 2026-04-22)
+- [[sources/src-volumefill-pipeline-2026-04-20]] — 볼륨필인 앰플 B/A 광고 소재 자동생성 파이프라인 (2026-04-20)
+- [[sources/src-volumefill-pipeline-v2-2026-04-21]] — 볼륨필인 파이프라인 v2 심화 (컷10종·카피3박자·QC 8축, 2026-04-21)
+- [[sources/src-volumefill-video-pipeline-2026-04-21]] — **볼륨필인 Day1→Day14 영상 릴스 공장** (얼굴형 시드 분리·Trio·33편, 2026-04-21)
+- [[sources/src-higgsfield-soul-api-2026-04-21]] — Higgsfield Soul Character API 실증 호출 레퍼런스 (엔드포인트·인증·flat JSON, 2026-04-21)
 
 ### QSCV — 서비스 품질 매뉴얼 (2025-07 베이스라인)
 - [[qscv/index|qscv]] — 14개 문서 / 47 청크

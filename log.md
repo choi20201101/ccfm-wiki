@@ -1,5 +1,16 @@
 # CCFM Wiki Log
 
+## [2026-04-23] graphify | 볼륨필인 영상 파이프라인 + Higgsfield Soul API 그래프 반영
+- 신규 소스 2종 untracked → wiki/index.md 소스 섹션에 등록
+  - [[sources/src-volumefill-video-pipeline-2026-04-21]] — 볼륨필인 Day1→Day14 릴스 공장 (33편, Trio 10편)
+  - [[sources/src-higgsfield-soul-api-2026-04-21]] — Soul Character API 실증 (엔드포인트·flat JSON)
+- [[tacit/video-gen-lessons]]: 16 → 34 섹션으로 확장 (§17-34 신규, 2026-04-21/23 추가분 반영)
+  - §17-19 얼굴형 시드 분리 · 웻룩 도트 · Kling 스무딩 방지
+  - §20-25 Trio 릴레이 · 구조 해시 · CTA 풀 · 숫자 오독 방지
+  - §26-34 인페인팅 · shadow/silhouette 금지어 · 17s 표준 구조
+- `graphify.watch._rebuild_code` 실행: 450 files · 260,642 words · 256 nodes · 328 edges · 31 communities
+- `scripts/regen_graph_report.py` 로 한국어 커뮤니티 라벨 재적용
+
 ## [2026-04-22] ingest | Claude Code 스킬/커맨드 인벤토리 스냅샷
 - `~/.claude/skills/` 20개 + `~/.claude/commands/` 18개 스냅샷을 [[sources/src-claude-skills-inventory-2026-04-22]]에 기록
 - 다른 기기 이전용 백업 패키지: `Desktop/claude-skills-package-20260422.zip` (286KB)
