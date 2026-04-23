@@ -1,0 +1,44 @@
+{
+  "boot": {
+    "delay": 1000
+  },
+  "resolver": {
+    "frontmatter": {
+      "path": [
+        "aliases"
+      ]
+    }
+  },
+  "features": {
+    "explorer": {
+      "enabled": true
+    },
+    "graph": {
+      "enabled": true
+    },
+    "header": {
+      "enabled": true
+    },
+    "tab": {
+      "enabled": true
+    },
+    "alias": {
+      "enabled": true
+    },
+    "backlink": {
+      "enabled": true
+    },
+    "search": {
+      "enabled": true
+    },
+    "starred": {
+      "enabled": true
+    },
+    "suggest": {
+      "enabled": true
+    },
+    "canvas": {
+      "enabled": true
+    }
+  }
+}
