@@ -1,4 +1,5 @@
 ---
+aliases: ["영상 생성 교훈", "Kling·Gemini 실전 이슈"]
 tags: [tacit, video-generation, ai-pipeline, skincare, melable]
 confidence: high
 source: 메라블 피코샷 크림 30+ 영상 제작 경험 (2026-04-13~14)

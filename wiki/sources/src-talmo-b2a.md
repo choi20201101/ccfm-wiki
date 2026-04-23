@@ -1,4 +1,5 @@
 ---
+aliases: ["탈모 루솔브 B/A 릴스"]
 type: source
 domain: content-ai-automation
 brand: rusolve

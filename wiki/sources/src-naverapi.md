@@ -1,4 +1,5 @@
 ---
+aliases: ["네이버 검색광고 API"]
 type: source
 domain: marketing-automation
 confidence: high

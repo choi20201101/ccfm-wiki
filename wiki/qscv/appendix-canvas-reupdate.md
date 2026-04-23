@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 캔버스 재기획"]
 type: source
 domain: qscv
 confidence: high

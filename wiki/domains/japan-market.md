@@ -1,4 +1,5 @@
 ---
+aliases: ["일본 시장"]
 type: domain
 domain: japan
 confidence: low

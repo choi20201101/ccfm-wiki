@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 루솔브 캔버스 v1"]
 type: decision
 domain: qscv
 brand: rusolve

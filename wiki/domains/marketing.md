@@ -1,4 +1,5 @@
 ---
+aliases: ["퍼포먼스 마케팅", "i-boss 본사"]
 type: domain
 domain: marketing
 confidence: high

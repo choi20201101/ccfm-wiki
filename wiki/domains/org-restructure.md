@@ -1,4 +1,5 @@
 ---
+aliases: ["조직개편", "A→Y/Z 모델"]
 type: domain
 domain: org
 confidence: low

@@ -1,4 +1,5 @@
 ---
+aliases: ["커뮤니티 크롤러"]
 type: source
 domain: marketing-automation
 confidence: high

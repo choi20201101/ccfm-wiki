@@ -1,4 +1,5 @@
 ---
+aliases: ["시장조사 플레이북"]
 type: domain
 domain: marketing-automation
 confidence: high

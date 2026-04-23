@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 객단가"]
 type: source
 domain: qscv
 confidence: high

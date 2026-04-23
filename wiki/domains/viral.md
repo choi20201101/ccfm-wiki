@@ -1,4 +1,5 @@
 ---
+aliases: ["바이럴 메커니즘"]
 type: domain
 domain: viral
 confidence: high

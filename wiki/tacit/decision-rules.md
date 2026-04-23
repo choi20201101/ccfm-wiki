@@ -1,4 +1,5 @@
 ---
+aliases: ["판단 기준", "의사결정 룰"]
 type: tacit
 category: decision-rule
 confidence: high

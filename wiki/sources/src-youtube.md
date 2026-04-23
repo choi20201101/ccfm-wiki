@@ -1,4 +1,5 @@
 ---
+aliases: ["유튜브 수집"]
 type: source
 domain: content-ai-automation
 confidence: high

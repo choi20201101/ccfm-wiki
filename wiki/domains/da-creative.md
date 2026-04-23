@@ -1,4 +1,5 @@
 ---
+aliases: ["DA 크리에이티브"]
 type: domain
 domain: da-creative
 confidence: low

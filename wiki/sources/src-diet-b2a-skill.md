@@ -1,4 +1,5 @@
 ---
+aliases: ["다이어트 B/A 스킬 v1"]
 type: source
 domain: content-ai-automation
 confidence: high

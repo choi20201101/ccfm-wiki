@@ -1,4 +1,5 @@
 ---
+aliases: ["Claude 스킬·커맨드 인벤토리 (2026-04-22)"]
 type: source
 domain: vibe-coding
 confidence: high

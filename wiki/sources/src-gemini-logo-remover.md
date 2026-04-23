@@ -1,4 +1,5 @@
 ---
+aliases: ["Gemini 로고 제거"]
 type: source
 domain: ai-automation
 confidence: high

@@ -1,4 +1,5 @@
 ---
+aliases: ["goglecc 씨드 이미지 큐레이션"]
 type: source
 domain: content-ai-automation
 confidence: medium

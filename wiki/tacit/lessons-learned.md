@@ -1,4 +1,5 @@
 ---
+aliases: ["실패 교훈", "회고 레슨"]
 type: tacit
 category: lesson
 confidence: medium

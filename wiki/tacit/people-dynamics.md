@@ -1,4 +1,5 @@
 ---
+aliases: ["사람 읽기", "커뮤니케이션 신호"]
 type: tacit
 category: people
 confidence: high

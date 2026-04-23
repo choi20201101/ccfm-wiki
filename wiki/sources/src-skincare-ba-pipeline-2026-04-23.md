@@ -1,4 +1,5 @@
 ---
+aliases: ["스킨케어 B/A 17초 파이프라인 (2026-04-23)"]
 type: source
 domain: content-ai-automation
 brand: melable

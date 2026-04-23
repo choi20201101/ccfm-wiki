@@ -1,4 +1,5 @@
 ---
+aliases: ["볼륨필인 B/A 파이프라인 v1 (2026-04-20)"]
 type: source
 domain: content-ai-automation
 confidence: high

@@ -1,4 +1,5 @@
 ---
+aliases: ["크리에이티브 패턴", "영상·이미지 감각"]
 type: tacit
 category: creative
 confidence: mixed

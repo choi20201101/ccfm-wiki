@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 퍼포먼스 사고 확장"]
 type: source
 domain: qscv
 confidence: high

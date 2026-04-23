@@ -1,4 +1,5 @@
 ---
+aliases: ["심리·설득 원칙"]
 type: tacit
 category: psychology
 confidence: high

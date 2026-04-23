@@ -1,4 +1,5 @@
 ---
+aliases: ["재무", "경영·재무·회계"]
 type: domain
 domain: finance
 confidence: low

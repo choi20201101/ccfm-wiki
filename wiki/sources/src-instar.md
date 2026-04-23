@@ -1,4 +1,5 @@
 ---
+aliases: ["인스타 수집"]
 type: source
 domain: content-ai-automation
 confidence: high

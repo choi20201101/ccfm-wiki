@@ -1,4 +1,5 @@
 ---
+aliases: ["볼륨필인 파이프라인 v2 심화 (2026-04-21)"]
 type: source
 domain: content-ai-automation
 confidence: high

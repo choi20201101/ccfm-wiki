@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 콘텐츠 기획"]
 type: source
 domain: qscv
 confidence: high

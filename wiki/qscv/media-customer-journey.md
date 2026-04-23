@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 미디어본부 고객여정"]
 type: source
 domain: qscv
 confidence: high

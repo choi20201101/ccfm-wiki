@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 인덱스"]
 type: domain
 domain: qscv
 confidence: high

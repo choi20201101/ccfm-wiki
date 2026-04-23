@@ -1,4 +1,5 @@
 ---
+aliases: ["시장 감각"]
 type: tacit
 category: market
 confidence: high

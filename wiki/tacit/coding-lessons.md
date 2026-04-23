@@ -1,4 +1,5 @@
 ---
+aliases: ["코딩 교훈", "자동화 시행착오"]
 type: tacit
 category: coding
 confidence: medium

@@ -1,3 +1,7 @@
+---
+aliases: ["Higgsfield Soul API (2026-04-21)"]
+---
+
 # Higgsfield Soul Character API — 실증 호출 레퍼런스
 
 **확인일**: 2026-04-21

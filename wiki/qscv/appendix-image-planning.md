@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 이미지 기획"]
 type: source
 domain: qscv
 confidence: high

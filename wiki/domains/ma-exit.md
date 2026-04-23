@@ -1,4 +1,5 @@
 ---
+aliases: ["M&A Exit", "스마일게이트 딜"]
 type: domain
 domain: ma
 confidence: low

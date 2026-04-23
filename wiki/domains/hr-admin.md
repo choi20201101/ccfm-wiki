@@ -1,4 +1,5 @@
 ---
+aliases: ["인사·총무"]
 type: domain
 domain: hr-admin
 confidence: low

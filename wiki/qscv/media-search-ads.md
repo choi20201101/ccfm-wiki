@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 검색광고"]
 type: source
 domain: qscv
 confidence: high

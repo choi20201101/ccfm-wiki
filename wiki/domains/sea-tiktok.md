@@ -1,4 +1,5 @@
 ---
+aliases: ["동남아 틱톡샵", "BPOM·할랄"]
 type: domain
 domain: sea
 confidence: low

@@ -1,4 +1,5 @@
 ---
+aliases: ["대만 시장", "TFDA"]
 type: domain
 domain: taiwan
 confidence: low

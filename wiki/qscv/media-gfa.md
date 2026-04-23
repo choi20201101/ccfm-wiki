@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] GFA"]
 type: source
 domain: qscv
 confidence: high

@@ -1,4 +1,5 @@
 ---
+aliases: ["바이브코딩"]
 type: domain
 domain: vibe-coding
 confidence: medium

@@ -1,4 +1,5 @@
 ---
+aliases: ["바이럴 감각", "밈·공유 패턴"]
 type: tacit
 category: viral
 confidence: high

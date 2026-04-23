@@ -1,4 +1,5 @@
 ---
+aliases: ["운영 노하우"]
 type: tacit
 category: operation
 confidence: high

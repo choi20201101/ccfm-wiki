@@ -1,4 +1,5 @@
 ---
+aliases: ["AI 자동화", "스킬 파이프라인"]
 type: domain
 domain: ai
 confidence: low

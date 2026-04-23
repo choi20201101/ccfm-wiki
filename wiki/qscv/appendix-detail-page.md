@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 상세페이지"]
 type: source
 domain: qscv
 confidence: high

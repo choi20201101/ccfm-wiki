@@ -1,4 +1,5 @@
 ---
+aliases: ["소비자 심리", "행동경제학"]
 type: domain
 domain: psychology
 confidence: high

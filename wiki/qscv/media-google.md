@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] Google"]
 type: source
 domain: qscv
 confidence: high

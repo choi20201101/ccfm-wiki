@@ -1,4 +1,5 @@
 ---
+aliases: ["마케팅 자동화"]
 type: domain
 domain: marketing-automation
 confidence: low

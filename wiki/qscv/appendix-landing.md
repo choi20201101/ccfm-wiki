@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] 랜딩"]
 type: source
 domain: qscv
 confidence: high

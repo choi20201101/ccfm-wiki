@@ -1,4 +1,5 @@
 ---
+aliases: ["시장조사 파이프라인 (주름·유쎄라블)"]
 type: source
 domain: marketing-automation
 confidence: high

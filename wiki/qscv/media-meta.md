@@ -1,4 +1,5 @@
 ---
+aliases: ["[QSCV] META"]
 type: source
 domain: qscv
 confidence: high

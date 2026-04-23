@@ -1,4 +1,5 @@
 ---
+aliases: ["볼륨필인 Day1→14 영상 공장 (2026-04-21)"]
 type: source
 domain: content-ai-automation
 brand: melable

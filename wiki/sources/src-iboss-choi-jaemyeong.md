@@ -1,4 +1,5 @@
 ---
+aliases: ["i-boss 201건 (최재명)"]
 type: source
 domain: marketing
 confidence: high

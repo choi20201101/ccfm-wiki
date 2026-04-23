@@ -1,4 +1,5 @@
 ---
+aliases: ["IG 자동 업로드"]
 name: src-instarup
 type: source
 project: instarup
