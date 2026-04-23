@@ -4,6 +4,10 @@
 .trash/
 .DS_Store
 
+# Obsidian 자동 생성 빈 파일 (데일리 노트 템플릿 전 상태, 무제 캔버스)
+무제*.canvas
+Untitled*.canvas
+
 # graphify: commit graph output for multi-machine sync, but ignore cache/logs
 graphify-out/cache/
 graphify-out/manifest.json
