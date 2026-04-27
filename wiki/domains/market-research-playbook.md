@@ -226,6 +226,7 @@ final_report = gemini("다음 노트를 narrative로 합성", notes)
 ## 🔗 관련 위키
 
 - [[src-market-research-pipeline-2026-04]] — 이 플레이북의 성공 원본 케이스
+- [[usp-performance-canvas-research]] — **대척점** 플레이북 (이쪽은 카테고리 단위, USP는 제품 1개 단위). 제품·랜딩 URL이 주어지면 USP 플레이북으로 라우팅
 - [[marketing-automation]] — 상위 도메인
 - [[src-naverapi]] — 네이버 API 인증·엔드포인트 상세
 - [[src-community]] — 커뮤니티 크롤러 모듈

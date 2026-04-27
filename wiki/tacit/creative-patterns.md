@@ -389,3 +389,11 @@ contradiction: none
 - 조건: 의료 시술 우회 표기 필요 시
 - 출처: 사용자 직접 지적
 - confidence: high
+
+---
+
+## 🔗 연결
+
+- [[usp-performance-canvas-research]] — 제품별 카피·시각 시드를 추출하는 표준 플레이북. 위 패턴들은 추출된 시드를 광고 컷으로 변환할 때 적용
+- [[da-creative]] · [[content-ai-automation]] — 패턴 적용처
+- [[market-research-playbook]] — 카테고리 트렌드에서 새 패턴 발견 시 본 파일에 누적

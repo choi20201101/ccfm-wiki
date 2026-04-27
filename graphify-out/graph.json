@@ -4,24 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "_run_pipeline.py",
-      "file_type": "code",
-      "source_file": "graphify-out\\_run_pipeline.py",
-      "source_location": "L1",
-      "community": 25,
-      "community_label": "기타: _run_pipeline.py",
-      "id": "graphify_out_run_pipeline_py"
-    },
-    {
-      "label": "Run full graphify pipeline on the wiki folder. UTF-8 safe.",
-      "file_type": "rationale",
-      "source_file": "graphify-out\\_run_pipeline.py",
-      "source_location": "L1",
-      "community": 25,
-      "community_label": "기타: _run_pipeline.py",
-      "id": "run_pipeline_rationale_1"
-    },
-    {
       "label": "_extract_and_chunk.py",
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
@@ -512,7 +494,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 25,
       "community_label": "기타: build_sets.py",
       "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
     },
@@ -521,7 +503,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 25,
       "community_label": "기타: build_sets.py",
       "id": "build_sets_rationale_1"
     },
@@ -1370,21 +1352,18 @@
       "community": 9,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_rationale_38"
+    },
+    {
+      "label": "Run full graphify pipeline on the wiki folder. UTF-8 safe.",
+      "file_type": "rationale",
+      "source_file": "graphify-out\\_run_pipeline.py",
+      "source_location": "L1",
+      "community": 26,
+      "community_label": "기타: Run full graphify pipeline on ",
+      "id": "run_pipeline_rationale_1"
     }
   ],
   "links": [
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out\\_run_pipeline.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_src": "run_pipeline_rationale_1",
-      "_tgt": "graphify_out_run_pipeline_py",
-      "confidence_score": 1.0,
-      "source": "graphify_out_run_pipeline_py",
-      "target": "run_pipeline_rationale_1"
-    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",

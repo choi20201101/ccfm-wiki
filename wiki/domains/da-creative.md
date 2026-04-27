@@ -132,6 +132,7 @@ ChatGPT web UI 자동화로 광고 소재 대량 생산한 성공 사례. 전체
 - [[domains/content-ai-automation|🎬 콘텐츠 AI 자동화]]
 - [[domains/viral|🔥 바이럴]]
 - [[domains/marketing|📣 마케팅]]
+- [[domains/usp-performance-canvas-research|🎯 USP 퍼포먼스 캔버스 조사]] — 제품 USP·페인 시드 → DA 크리에이티브로 변환
 
 ## 📊 소스
 - [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:

@@ -113,6 +113,10 @@ sources: [src-iboss-choi-jaemyeong]
 - [[wiki/tacit/operational-heuristics]] — CRM·운영
 - [[da-creative]] · [[viral]] · [[psychology]] · [[ai-automation]]
 
+### USP·시장조사 진입점
+- [[usp-performance-canvas-research]] — **제품 1개** USP 캔버스 조사 (랜딩 URL → 7파일, 5~15분)
+- [[market-research-playbook]] — **카테고리 단위** 시장조사 (트렌드·경쟁사·인사이트, 30분~수시간)
+
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
 

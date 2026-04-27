@@ -40,6 +40,10 @@ _내용 추가 예정_
 - [[da-creative]]
 - [[content-ai-automation]]
 
+### 조사 플레이북 (트리거 기반 자동 가동)
+- [[market-research-playbook]] — "시장조사 해줘" → 카테고리 단위 11파일 출력
+- [[usp-performance-canvas-research]] — "USP 조사해줘 [URL]" → 제품 1개 단위 7파일 출력
+
 ### 크롤링 도구
 - [[src-cafe-crawler]] — 네이버 카페 로그인/가입/크롤링 자동화 (Selenium + iframe JS 접근 + 수동 캡차 루프, 키워드 확장으로 10k+ 게시글 수집 & 키워드/감정 집계 리포트)
 - [[src-naverapi]] — 네이버 검색광고 API + Meta 광고 경쟁사 분석 파이프라인

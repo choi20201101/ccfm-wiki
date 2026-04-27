@@ -1,10 +1,10 @@
 # Graph Report - .  (2026-04-27)
 
 ## Corpus Check
-- Large corpus: 475 files · ~285,166 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- Large corpus: 474 files · ~284,991 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
-- 152 nodes · 191 edges · 27 communities detected
+- 151 nodes · 190 edges · 27 communities detected
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -34,8 +34,8 @@
 - [[_COMMUNITY_기타 build_prompts.py|기타: build_prompts.py]]
 - [[_COMMUNITY_기타 check_session.py|기타: check_session.py]]
 - [[_COMMUNITY_기타 inject_diet_b2a_v2_aliases.py|기타: inject_diet_b2a_v2_aliases.py]]
-- [[_COMMUNITY_기타 _run_pipeline.py|기타: _run_pipeline.py]]
 - [[_COMMUNITY_기타 build_sets.py|기타: build_sets.py]]
+- [[_COMMUNITY_기타 Run full graphify pipeline on|기타: Run full graphify pipeline on ]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `main()` - 7 edges
@@ -161,18 +161,18 @@ Nodes (1): Verify Gemini session is still valid. Non-headless to allow user to s
 Cohesion: 0.67
 Nodes (1): Inject Korean alias nodes for diet-b2a-v2 into the graphify graph.json.  Ratio
 
-### Community 25 - "기타: _run_pipeline.py"
-Cohesion: 1.0
-Nodes (1): Run full graphify pipeline on the wiki folder. UTF-8 safe.
-
-### Community 26 - "기타: build_sets.py"
+### Community 25 - "기타: build_sets.py"
 Cohesion: 1.0
 Nodes (1): Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.
 
+### Community 26 - "기타: Run full graphify pipeline on "
+Cohesion: 1.0
+Nodes (1): Run full graphify pipeline on the wiki folder. UTF-8 safe.
+
 ## Knowledge Gaps
-- **36 isolated node(s):** `Run full graphify pipeline on the wiki folder. UTF-8 safe.`, `QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG]`, `Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O`, `Step 05 — thumbnails + captions + zip.`, `Step 02 — Kling image2video: JWT, submit, poll, download, resume.` (+31 more)
+- **36 isolated node(s):** `QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG]`, `Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O`, `Step 05 — thumbnails + captions + zip.`, `Step 02 — Kling image2video: JWT, submit, poll, download, resume.`, `Shared helpers: config loading, path resolution, ffmpeg runner.` (+31 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `기타: _run_pipeline.py`** (2 nodes): `_run_pipeline.py`, `Run full graphify pipeline on the wiki folder. UTF-8 safe.`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `기타: build_sets.py`** (2 nodes): `Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.`, `build_sets.py`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `기타: Run full graphify pipeline on `** (1 nodes): `Run full graphify pipeline on the wiki folder. UTF-8 safe.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.

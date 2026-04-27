@@ -779,6 +779,7 @@ v2에서 이어진 Haar 오검출 이슈를 **3단 방어**로 해결:
 - [[domains/da-creative|🎨 DA 크리에이티브]]
 - [[domains/viral|🔥 바이럴]]
 - [[domains/vibe-coding|💻 바이브 코딩]]
+- [[domains/usp-performance-canvas-research|🎯 USP 퍼포먼스 캔버스 조사]] — 제품 카피 시드 → 영상기획 입력으로 연결
 
 ## 📊 소스
 - [[wiki/sources/src-iboss-choi-jaemyeong|i-boss 201건]] 카테고리별 MOC:

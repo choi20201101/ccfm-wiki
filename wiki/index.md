@@ -93,6 +93,8 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[domains/ai-automation]] — AI 스킬 파이프라인 (bob/dd/harness/eval/learnings)
 - [[domains/psychology]] — 소비자 심리, 설득, 조직심리, 행동경제학
 - [[domains/viral]] — 바이럴: 밈 구조, 시딩 전략, 알고리즘
+- [[domains/usp-performance-canvas-research]] — 🎯 USP 퍼포먼스 캔버스 조사 (랜딩 URL → 7파일, 트리거: "USP 조사해줘 [URL]")
+- [[domains/market-research-playbook]] — 🔥 시장조사 (카테고리 단위 11파일, 트리거: "시장조사 해줘")
 
 ### 암묵지
 - [[tacit/decision-rules]] — 판단 기준 (ROAS, 예산, 지표 해석, 시장·제품, AI 판단)
@@ -114,6 +116,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[sources/src-community]] · [[sources/src-instar]] · [[sources/src-youtube]] — 크롤러 모듈
 - [[sources/src-cafe-crawler]] · [[sources/src-naverapi]] — 네이버 크롤러/API
 - [[sources/src-market-research-pipeline-2026-04]] — **주름/유쎄라블 시장조사 → 영상기획 11파일** (2026-04-20)
+- [[sources/src-charde-melapeel-usp-2026-04-27]] — **샤르드 멜라케어 필크림 마스크 USP 캔버스 조사 7파일** (2026-04-27, USP 플레이북 첫 케이스)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[sources/src-claude-skills-inventory-2026-04-22]] — **Claude Code 스킬/커맨드 인벤토리** (20 스킬 + 18 커맨드 스냅샷, 2026-04-22)
 - [[sources/src-volumefill-pipeline-2026-04-20]] — 볼륨필인 앰플 B/A 광고 소재 자동생성 파이프라인 (2026-04-20)
