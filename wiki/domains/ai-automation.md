@@ -4,7 +4,7 @@ type: domain
 domain: ai
 confidence: low
 created: 2026-04-12
-updated: 2026-04-12
+updated: 2026-04-27
 sources: []
 ---
 
@@ -124,6 +124,160 @@ CLI 로그인(`codex login`/`gemini` 첫 실행/`claude login`) 또는 환경변
 
 ### 관련 페이지
 - [[tacit/coding-lessons]] 2026-04-17 항목 3개 (Windows .cmd shim, CLI 플래그 변경, 자동화 인터페이스)
+
+## AI CLI 인증 모드 표준 (2026-04-26 추가)
+
+mllm/Codex/Claude CLI를 호출할 때 **API 키 종량제가 아닌 구독·OAuth 인증을 우선**으로 한다. 같은 모델·같은 품질에 비용 0원 또는 정액제.
+
+### 표준 인증 매트릭스
+
+| CLI | 인증 | 결제 | 한도 | 자격 파일 |
+|---|---|---|---|---|
+| `codex` (GPT-5.x) | ChatGPT 구독 OAuth | Pro Lite 월 $150 정액 | 구독 한도 내 무제한 | `~/.codex/auth.json` (`auth_mode: chatgpt`) |
+| `gemini` (2.5 Pro) | Google 계정 OAuth | **무료** | 60 req/min, 1,000 req/day | `~/.gemini/oauth_creds.json` |
+| `claude` | Claude Code 구독 OAuth | Pro/Max 정액 | 구독 한도 내 | Claude 자체 관리 |
+
+확신도: high (실측, 2026-04-26 ceo@mkm20201101.com 계정에서 검증)
+
+### 신규 컴퓨터 세팅 절차
+
+**Codex (ChatGPT 구독):**
+```bash
+codex login
+# → 브라우저 OAuth → ~/.codex/auth.json 생성 (auth_mode: chatgpt)
+```
+
+**Gemini (구글 OAuth, 무료):**
+```powershell
+# 1) 기존 API 키 환경변수 제거 (이게 있으면 OAuth 메뉴 안 뜸)
+[System.Environment]::SetEnvironmentVariable('GEMINI_API_KEY', $null, 'User')
+# 2) 새 터미널 열고
+gemini
+# → 메뉴에서 "Login with Google" 선택
+# → 브라우저 OAuth → ~/.gemini/oauth_creds.json 생성
+```
+
+**Claude:**
+```bash
+claude login   # 또는 Claude Code 첫 실행 시 자동 안내
+```
+
+### 검증
+
+```bash
+# Codex
+cat ~/.codex/auth.json | grep auth_mode   # "chatgpt" 이어야 함
+
+# Gemini
+ls ~/.gemini/oauth_creds.json             # 존재해야 함
+gemini -p "auth method?"                   # OAuth 인증 확인 응답
+```
+
+### 운영 규칙
+
+- **mllm-* 스킬, multi-llm-orchestrator는 코드 변경 없음** — 그냥 CLI 호출이라 env 없으면 자동으로 OAuth로 fallback
+- **`GEMINI_API_KEY` 환경변수가 설정돼 있으면 무조건 API 키 모드**가 됨. OAuth로 가려면 반드시 unset 필요
+- **헤비 워크로드(mllm-consensus N라운드)에서 rate limit 자주 걸리면** Gemini만 임시로 API 키 모드 복귀 검토 — 단, 비용 다시 발생
+- OAuth 토큰은 가끔 만료 → `gemini`/`codex` 단독 실행 한 번으로 재로그인
+
+### 다른 컴퓨터/Claude Desktop 앱에서
+
+- 같은 컴퓨터의 다른 터미널·Claude Desktop 앱: User scope env가 깨끗하면 자동으로 OAuth 사용 (별도 작업 불필요)
+- 다른 컴퓨터: 위 "신규 컴퓨터 세팅 절차" 반복. OAuth 자격은 컴퓨터별로 발급되는 게 정상 (`oauth_creds.json` 공유 비추천 — 보안 리스크)
+
+### OAuth 영구성 (2026-04-26 보강)
+
+- **재인증 불필요**: `~/.gemini/oauth_creds.json`, `~/.codex/auth.json`은 refresh_token 기반으로 영구. 새 터미널·새 세션 열어도 자동 갱신
+- access_token은 1시간 만료지만 CLI가 자동 refresh
+- 보통 6개월~1년 또는 명시적 로그아웃·계정 비밀번호 변경 시까지 유효
+- "새 터미널마다 다시 로그인해야 하나?" 질문에 대한 정답: **아니요**. 단, 환경변수 주입 함정(아래)을 점검할 것
+
+### OAuth 무력화 함정 4곳 (2026-04-26 추가, confidence: high)
+
+OAuth 자격이 있어도 환경변수에 API 키가 깔리면 CLI는 OAuth보다 API 키를 우선 사용해서 종량제 모드로 fallback. 이게 일어나는 4곳을 모두 점검해야 진짜 OAuth 모드가 보장됨:
+
+1. **Claude Code `~/.claude/settings.json`의 `env` 블록** ⚠️ 가장 흔한 함정
+   - Claude Code가 새 bash 세션 spawn할 때마다 이 블록의 키들을 자동 주입
+   - 점검: `grep -nE "(GEMINI_API_KEY|OPENAI_API_KEY)" ~/.claude/settings.json`
+   - 정리: `env` 블록 통째 제거하거나 두 키만 삭제
+
+2. **Windows User scope 환경변수 (HKCU\Environment)**
+   - `setx`나 시스템 속성으로 영구 등록된 API 키
+   - 점검 (PowerShell): `[Environment]::GetEnvironmentVariable("OPENAI_API_KEY", "User")`
+   - 삭제: `[Environment]::SetEnvironmentVariable("OPENAI_API_KEY", $null, "User")`
+
+3. **Shell profile (`~/.bashrc`, `~/.bash_profile`, `~/.profile`, `~/.zshrc`)**
+   - `export GEMINI_API_KEY=...` 한 줄 박혀있을 수 있음
+   - 점검: `grep -nE "(GEMINI|OPENAI|ANTHROPIC)_API_KEY" ~/.bashrc ~/.bash_profile ~/.profile ~/.zshrc 2>/dev/null`
+
+4. **Claude Desktop `%APPDATA%\Claude\claude_desktop_config.json`**
+   - MCP 서버 정의에 `env` 블록 추가하면 Desktop 앱이 그 환경변수로 MCP 자식 프로세스를 spawn
+   - **추가하지 말 것** — Desktop 앱 자체는 별도 OAuth, MCP 서버는 자체 인증 사용해야 함
+   - 점검: `cat "$APPDATA/Claude/claude_desktop_config.json" | grep -A2 env`
+
+### 진단 한 줄 명령 (Bash, Windows)
+
+```bash
+echo "=== ENV ==="; for k in OPENAI_API_KEY GEMINI_API_KEY ANTHROPIC_API_KEY GOOGLE_API_KEY; do v=${!k}; [ -n "$v" ] && echo "$k=SET" || echo "$k=unset"; done
+echo "=== Claude Code settings ==="; grep -nE "(GEMINI|OPENAI|ANTHROPIC)_API_KEY" ~/.claude/settings.json 2>/dev/null || echo "  clean"
+echo "=== Shell profiles ==="; grep -nE "(GEMINI|OPENAI|ANTHROPIC)_API_KEY" ~/.bashrc ~/.bash_profile ~/.profile 2>/dev/null || echo "  clean"
+echo "=== HKCU (PowerShell 별도) ==="; powershell -Command '[Environment]::GetEnvironmentVariable("OPENAI_API_KEY","User"); [Environment]::GetEnvironmentVariable("GEMINI_API_KEY","User")' 2>/dev/null
+echo "=== Claude Desktop ==="; grep -nE "(GEMINI|OPENAI|ANTHROPIC)_API_KEY" "$APPDATA/Claude/claude_desktop_config.json" 2>/dev/null || echo "  clean"
+echo "=== OAuth 자격 ==="; ls -la ~/.gemini/oauth_creds.json ~/.codex/auth.json 2>&1
+```
+
+### Gemini 모델별 OAuth 한도 차등 (2026-04-26 실측)
+
+같은 OAuth 계정이라도 모델마다 무료 한도 다름. Preview 모델은 매우 빡빡:
+
+| 모델 | OAuth 무료 한도 | 권장 용도 |
+|---|---|---|
+| `gemini-2.5-flash` | 넉넉 (대량 OK) | mllm 1차 답변, 대량 평가 |
+| `gemini-2.5-pro` | 중간 | 정밀 분석 |
+| `gemini-3.1-pro-preview` | **매우 빡빡** (몇 회만 호출해도 429) | 실험·1회성만 |
+
+→ orchestrator/mllm-* 스킬 기본은 `gemini-2.5-flash` 권장. Preview는 fallback chain에 포함하되 1순위 X. 429 (`RetryableQuotaError: You have exhausted your capacity`) 발생 시 Flash로 자동 fallback 로직 추천.
+
+### 회고: 이 표준이 어떻게 발견됐나
+- 2026-04-26 사용자가 "코덱스랑 제미나이 셋이서 평가" 요청 → orchestrator 호출 시 Gemini 429 실패
+- 원인 추적: `GEMINI_API_KEY`/`OPENAI_API_KEY` 환경변수가 설정돼 있어 API 키 모드로 fallback. OAuth 자격 파일은 둘 다 정상 존재
+- 진짜 출처: `~/.claude/settings.json`의 `env` 블록이 매 Claude Code 세션마다 API 키 주입 (HKCU도 OPENAI_API_KEY 영구 등록)
+- 조치: settings.json `env` 블록 제거 + HKCU OPENAI_API_KEY 삭제 → 다음 세션부터 OAuth 자동 사용
+- 교훈: OAuth 자격 존재 ≠ OAuth 사용 보장. 환경변수 4곳을 모두 점검해야 함
+
+## 3-CLI 컨텍스트 브릿지 (2026-04-26 추가)
+
+세 CLI(Claude / Codex / Gemini)가 각자 별도 자동 로드 파일을 읽기 때문에, 사용자 핵심 컨텍스트(메모리, 한국어 선호, AI CLI 인증 표준, 스킬 카탈로그)를 세 파일에 동기화해두면 어느 CLI 를 호출해도 동일한 컨텍스트로 동작한다. 멀티 LLM 토론·교차 검증 시 일관성 핵심.
+
+확신도: high (실측, 2026-04-26 검증 — codex/gemini 둘 다 자동 로드 + 사용자 정보 정확히 응답)
+
+### 자동 로드 파일 (CLI 별)
+| CLI | 자동 로드 경로 | 비고 |
+|---|---|---|
+| Claude (Claude Code) | `~/.claude/CLAUDE.md` | 글로벌 + 프로젝트별 `CLAUDE.md` 함께 로드 |
+| Codex | `~/.codex/AGENTS.md` | 프로젝트 디렉토리에 `AGENTS.md` 있으면 추가 로드 |
+| Gemini | `~/.gemini/GEMINI.md` | 현재 디렉토리부터 위로 walk 하며 `GEMINI.md` 추가 로드 |
+
+### 동기화해야 할 코어 섹션
+세 파일 모두 다음을 포함해야 함:
+1. **사용자 정보 / 응답 규칙** (언어, 이메일, 일자 기준)
+2. **개인화 메모리 파일 경로** (Claude memory, MEMORY.md, 위키 entry)
+3. **AI CLI 인증 모드 표준** (위 매트릭스)
+4. **스킬 카탈로그** (트리거 키워드 + SKILL.md 경로)
+5. **위키 작성 규약** (덮어쓰기 금지 등)
+6. **메모리 자동 기록 규칙**
+7. **형제 파일 참조** (다른 두 CLI 의 자동 로드 경로 명시)
+
+### 신규 컴퓨터 / 신규 CLI 추가 시 절차
+1. 해당 CLI 의 자동 로드 경로 확인 (CLI 문서 또는 `<cli> -p "어떤 컨텍스트 파일을 자동 로드하나"`)
+2. Claude `CLAUDE.md` 의 코어 섹션을 베이스로 해당 CLI 형식에 맞게 변환
+3. 형제 파일 섹션에 새 CLI 경로 추가
+4. 검증: `<cli> -p "사용자 이메일과 응답 언어가 뭐로 적혀 있어?"` → 정확히 답하면 OK
+
+### 운영 규칙
+- 한 파일만 수정하면 다른 두 파일 동기화 누락 → 멀티 LLM 결과 불일치. 사용자 핵심 정보 변경 시 세 파일 동시 갱신
+- 스킬 카탈로그는 `~/.claude/skills/` 추가/삭제 시마다 세 파일 동시 갱신
+- 추가 비용 0원 (각 CLI 가 토큰 사용에 미미한 영향 — 보통 2~5KB 추가 컨텍스트)
 
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
