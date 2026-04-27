@@ -71,6 +71,16 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - Gemini Deep Research: 공식 API 없음 → 하이브리드 전략 명시
 - 성공 케이스: [[sources/src-market-research-pipeline-2026-04]] (주름·유쎄라블)
 
+### 🔥 USP 퍼포먼스 캔버스 조사 — [[domains/usp-performance-canvas-research]] (NEW 2026-04-27)
+**"USP 조사해줘 [URL]" / "퍼포먼스 캔버스 조사 [URL]" 요청 시 바로 이 구조로 진행할 것.**
+- 단일 랜딩페이지 URL → 7파일 분할 MD + 인덱스 (5~15분)
+- 1단계 WebFetch (캔버스 카피·이미지 URL·JSON-LD) → 2단계 curl 일괄 다운로드
+- 3단계 PIL 리사이즈 ≤1500px (subagent 2000px 거부 회피) → 4단계 Agent OCR (3장 병렬·형식 강제)
+- 5단계 리뷰 위젯 메타+OCR 후기카드로 대체 (SnapReview/CREMA 등 비동기 위젯 한계)
+- 6·7단계 담당자 사전 자료 통합 + 페이지↔담당자 매핑표 (퍼포먼스 카피 시드 발사대)
+- **시장조사 플레이북과 차이**: 카테고리 단위 vs 제품 1개 단위
+- 성공 케이스: [[sources/src-charde-melapeel-usp-2026-04-27]] (샤르드 멜라케어 필크림 마스크)
+
 ---
 
 ## 📘 참조 지식 (Reference)
