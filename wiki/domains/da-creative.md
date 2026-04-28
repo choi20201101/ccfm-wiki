@@ -247,8 +247,15 @@ K-뷰티 퍼포먼스 표준 룩 — `eq + colorbalance + curves` FFmpeg 체인.
 - `scripts/v7_composite_fal_nano.py` — 인물+제품 합성기
 - `scripts/v18_prepare.py` — TTS + 타임라인 (flow_end 처리)
 - `scripts/v18_render.py` — Kling i2v + b-roll cache + 합본
+- `scripts/v18_resubtitle.py` — 자막만 재생성 (Kling 재호출 X)
+- `scripts/v19_personas_3hero.py` — 페르소나 다양화 hero 3개 (fresh)
 - `.orchestra/v18{a,b,c}_script.json` — 12-cut JSON 스키마 표준
 - `specs/renderer-pipeline.md`, `specs/stack.md`, `.harness/video-orchestra.yaml` — codify 완료
+
+### 재사용 가능 패키지 (Desktop/performance-video-pipeline/)
+
+bob 구조 spec 4종 + 스크립트 템플릿 6종 + harness yaml 별도 정리 (다른 캠페인 적용용).
+상세 케이스 + 의사결정 회고: [[src-performance-video-pipeline-v18-2026-04-28]]
 
 ### 금지 (harness rules)
 

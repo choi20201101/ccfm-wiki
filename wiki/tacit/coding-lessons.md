@@ -4,7 +4,7 @@ type: tacit
 category: coding
 confidence: medium
 first_observed: 2026-04-13
-last_confirmed: 2026-04-14
+last_confirmed: 2026-04-27
 sources:
   - C:/Users/gguy/Desktop/MD (멀티 프로젝트 MD/스킬 시행착오 회고)
   - 협업 메뉴얼/바이브 코딩시행착오 케이스 CCFM.pdf
@@ -1124,3 +1124,97 @@ html,body{
 **시너지 변형**: `nurse/reports/report_synergy.html` — 3 시나리오 비교 카드 + KPI 테이블 + Funnel 4단
 
 **confidence**: high (사용자 승인, dig 스킬 lint 통과)
+
+---
+
+## [2026-04-27] Google Images 원본 크롤링 시행착오 (씨드 이미지 수집)
+
+작업: 사용자가 준 Google Images 검색 URL("예쁜 외국인", 이후 "예쁜 여자 외국인")에서 단독 인물 셀카 100장 수집 → Gemini Vision 검토 → 폴더 저장. 작업 디렉토리 `C:\Users\Administrator\Desktop\face\`.
+
+### 실패 사례 (참고용)
+
+**1. icrawler 라이브러리 (`GoogleImageCrawler`)**
+- 시도: `keyword`, `max_num=250`으로 호출.
+- 결과: `parser.py worker_exec`에서 `TypeError: 'NoneType' object is not iterable` → 0장 저장.
+- 원인: Google Images의 HTML 구조가 변경되어 icrawler 0.6.10의 파서가 결과 페이지를 읽지 못함.
+- 교훈: **Google Images에서 icrawler/google-images-download 류 라이브러리는 더 이상 동작 안 함.** 1차 시도하지 말 것.
+
+**2. headless Playwright + 단순 `<img>.src` 수집**
+- 시도: `playwright.chromium.launch(headless=True)`로 검색 페이지 접속 → 스크롤 → `document.querySelectorAll('img').src` 수집.
+- 결과: `<img>` 태그 0개. 페이지 내용이 거의 비어 있음.
+- 원인: headless + 자동화 플래그로 Google이 봇 감지 → 결과를 렌더링 안 함.
+- 교훈: **Google Images는 headless를 거의 항상 차단.** non-headless + stealth 필수.
+
+**3. `<img>.src` 만 긁어서 저장**
+- 시도: 페이지 전체 `<img>` src 모아서 `requests.get`으로 다운로드.
+- 결과: 대부분 `data:image/jpeg;base64,...` 또는 `encrypted-tbn0.gstatic.com` 호스트 — **모두 200~400px 썸네일**. 원본이 아님.
+- 교훈: 사용자가 "씨드(seed)"용으로 수집할 때는 **원본 해상도가 필요**. 썸네일·페이지 스크린샷 캡쳐로 저장하면 안 됨. **반드시 원본 사이트 호스트 URL을 추출해 직접 다운로드**해야 함 (= 우클릭 → 다른 이름으로 저장과 동일).
+
+**4. `a[href*='/imgres']` anchor 의 `imgurl` 파라미터 (fast path)**
+- 시도: 페이지의 `<a href='/imgres?...&imgurl=...'>` 링크에서 `imgurl` 쿼리 파싱 → 원본 URL.
+- 결과: 썸네일 213개 로드되었는데 anchor는 15~20개만 존재.
+- 원인: Google Images 새 레이아웃에서 대부분의 썸네일이 `<a href='/imgres'>` 로 감싸져 있지 않고 click 핸들러로만 동작함.
+- 교훈: imgres anchor 방식은 fast path지만 충분하지 않음. **fallback 으로 thumbnail 클릭 → 사이드 패널 원본 추출 필수.**
+
+**5. 잘못된 thumbnail 셀렉터**
+- 시도: `g-img img`, `div[role='link'] img`, `a[jsname] img` 등 짐작 셀렉터로 page.locator.
+- 결과: clickable thumbnails 0개.
+- 교훈: **현재 Google Images에서 가장 안정적인 썸네일 셀렉터는 `img[src*="encrypted-tbn"]`** — Google이 호스팅하는 썸네일 이미지 자체를 직접 클릭. nth(idx) 로 순서대로 위→아래 순회.
+
+### 성공 패턴
+
+**셋업**
+```python
+from playwright.async_api import async_playwright
+from playwright_stealth import Stealth   # 봇 감지 우회
+
+browser = await p.chromium.launch(
+    headless=False,                                    # 필수: Google은 headless 차단
+    args=["--disable-blink-features=AutomationControlled"],
+)
+ctx = await browser.new_context(
+    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ... Chrome/131.0.0.0",
+    viewport={"width": 1600, "height": 950},
+    locale="ko-KR",
+)
+page = await ctx.new_page()
+await Stealth().apply_stealth_async(page)
+```
+
+**썸네일 로드 (위→아래)**
+- `window.scrollTo(0, document.body.scrollHeight)` 로 끝까지 내림
+- "결과 더보기" 버튼 셀렉터: `input[type=button][value='결과 더보기']` 또는 `.mye4qd`
+- 한 번 클릭 후 2초 대기 → 새 thumbnails 로드됨
+- `img[src*="encrypted-tbn"]` 카운트로 진행 상황 확인
+
+**썸네일 클릭 → 원본 URL 추출 (핵심)**
+1. `page.locator("img[src*='encrypted-tbn']").nth(idx)` 로 idx번째 썸네일
+2. `scroll_into_view_if_needed()` → `click()`
+3. 사이드 패널이 열림. 패널의 `<img>` 중 `naturalWidth >= 250 && naturalHeight >= 250 && src` 가 google CDN(encrypted-tbn, gstatic.com, googleusercontent.com/branding) 가 아닌 것 = 원본 호스트 URL
+4. 그 URL을 `requests.get(url, headers={"Referer": "https://www.google.com/", "User-Agent": "Mozilla/5.0..."})` 로 다운로드
+5. `Esc` 키로 패널 닫기 → 다음 썸네일로
+
+**캡쳐(reCAPTCHA) 처리**
+- 감지: `document.body.innerText` 에 "로봇이 아닙니다" / "I'm not a robot" / "비정상적인 트래픽" 포함되거나, `iframe[src*="recaptcha"]` 존재
+- non-headless 이므로 사용자가 직접 풀 수 있음 → 콘솔에 "[CAPTCHA] solve in browser..." 출력 후 2초 폴링으로 5분간 대기
+- 캡쳐 사라지면 자동 재개. 자동 풀이 시도 금지(2captcha 등 외부 서비스 필요).
+
+**진행 가시성 (사용자 요구)**
+- "스크롤만 하고 다운 안 받느냐" 라는 항의 → 클릭 → 원본 추출 → **즉시** `requests.get` + 저장 → 다음으로 진행하는 인터리브 구조 필수.
+- `print(f"[{clicks} clicks | idx {idx}] saved {n}/{TARGET}: {filename}")` 한 줄씩 진행 보여주기.
+
+**저장 규칙**
+- 파일명: `img_{idx:04d}_{md5_short}.{ext}` — md5 prefix 로 자연스럽게 dedup
+- 너무 작은 응답(<15KB) 스킵 (placeholder/icon)
+- Content-Type 으로 ext 결정, 못 정하면 URL 확장자, 그것도 없으면 `.jpg`
+
+### 핵심 교훈 정리
+1. **Google Images 크롤링은 비용 높음.** 캡쳐 우회 + 클릭 일일이 + 패널 대기 등 복잡. 가능하면 Bing Images / Yandex / Pexels 등 친절한 소스 우선 검토.
+2. **사용자가 "씨드용 이미지"라 하면 원본 절대 사수.** 썸네일·스크린샷 절대 금지.
+3. **non-headless + stealth + Referer 헤더** 3종 세트가 Google 통과 핵심.
+4. **`img[src*="encrypted-tbn"]` 가 가장 안정적인 thumbnail 셀렉터** (2026-04 기준).
+5. **사이드 패널의 가장 큰 non-google `<img>` 가 원본** — `naturalWidth*Height` 정렬해서 max 선택.
+6. **클릭→다운로드 인터리브** — 사용자가 진행 상황을 실시간으로 볼 수 있어야 함. 일괄 수집 후 일괄 다운로드는 UX 최악.
+7. **캡쳐는 자동 풀이 금지** — 사용자에게 맡기고 폴링 대기.
+- confidence: high
+- source: 2026-04-27 face/ 작업 중 직접 시행착오
