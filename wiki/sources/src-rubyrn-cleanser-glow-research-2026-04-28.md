@@ -62,7 +62,17 @@ sources:
 
 ## 재사용 자산
 - 본 캔버스 04 — 카피 25선, 후킹 자막, 이미지 프롬프트 5종, 컬러 팔레트
+- 캔버스 05 — 100만뷰+ 영상 10건 자막 본문 + 썸네일 시각 분석 + 차용 어법 매트릭스
+- 캔버스 06 — 민간 미용 속설 200+ (쌀뜨물·꿀·감자·오이·우유 등 25개 핵심 통념)
 - 위 발화 풀은 **다른 스킨케어 광채 카테고리에도 70% 재사용 가능** (잡티 우회 어법, 자연광 무드, "PDRN 흡수 의심" 인사이트는 광채 카테고리 공통)
+
+## 추가 1차 자료 (2026-04-28 후속 수집)
+- 영상 자막 srt: `naver-competitor-finder/scripts/video_deep/subs/*.ko.srt` (10건)
+- 영상 썸네일 jpg: `naver-competitor-finder/scripts/video_deep/thumbs/*.jpg` (10건)
+- 영상 메타: `naver-competitor-finder/scripts/video_deep/meta.json`
+- 민간 속설 추출본: `naver-competitor-finder/scripts/folk_beliefs.json` (60+ 성분 컨텍스트)
+- 미용 속설 phrase: `naver-competitor-finder/scripts/folk_belief_phrases.json`
+- 다음카페 5,377건 (확장 키워드 60개), 네이트판 888건 (민간 미용법 시드 18개)
 
 ## 실수·학습
 - 검색광고 API: hintKeywords에 공백 있는 키워드는 400 반려 → 공백 제거 시드로 재호출 필요 (재발 방지: 시드 정의 단계에서 공백 제거)
