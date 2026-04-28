@@ -2,9 +2,9 @@
 aliases: ["DA 크리에이티브"]
 type: domain
 domain: da-creative
-confidence: low
+confidence: medium
 created: 2026-04-12
-updated: 2026-04-14
+updated: 2026-04-28
 sources: []
 ---
 
@@ -125,6 +125,140 @@ ChatGPT web UI 자동화로 광고 소재 대량 생산한 성공 사례. 전체
 - 얼굴형 타입 진단형 후킹이 먹힘 → [[creative-patterns]]
 - "시X" 마스킹 대신 "시O" (ㅅㅂ 연상 회피) → [[creative-patterns]]
 - B/A 직접 비교 12가지 위트 우회 → [[creative-patterns]]
+
+---
+
+## 퍼포먼스 영상 제작 표준 파이프라인 (2026-04-28, confidence: high)
+
+K-뷰티 퍼포먼스 광고 24초 3버전 동시 제작에서 검증된 표준 파이프라인. `메라블 루비알엔 클렌저 v18a/b/c` 작업으로 전 과정 codify 완료.
+
+### 1. 파이프라인 6단계
+
+```
+[1] 시드 이미지 (Edit)        → fal.ai nano-banana-pro/edit (canonical)
+[2] 인물+제품 합성             → fal.ai nano-banana-pro/edit (실사 reference 동반)
+[3] 스크립트/타임라인 (JSON)   → cut별 chunk + flow_end 플래그 + i2v_prompt
+[4] TTS (Adam/Jini)            → ElevenLabs synthesize_with_timestamps
+[5] i2v (이미지→영상)          → Kling v3, 시드별 5s 클립
+[6] 합본 (자막+컬러+오디오)    → FFmpeg + ASS 자막 burn-in
+```
+
+### 2. 시드 이미지 canonical: **fal.ai nano-banana-pro/edit**
+
+- gpt-image-2는 character-locked edit 시 **금지**: "babyface" / "doe eyes" / "young Korean woman" + selfie 조합에서 OpenAI safety가 `sexual` 위반으로 차단
+- Gemini 직호출(`gemini-3-pro-image-preview`)은 CG/렌더드 질감으로 떨어져서 **합성 부자연**
+- **fal.ai nano-banana-pro/edit**: 모더레이션이 더 관대 + 실사 질감 보존 우수
+- Fallback chain: `fal-ai/gemini-3-pro-image/edit` → `fal-ai/nano-banana/edit`
+- gpt-image-2는 **fresh hero (Text-to-Img) 전용**으로만 잔존
+
+### 3. 제품 합성 시 **실사 사진 동반 필수**
+
+- ❌ 누끼(rubi.png) 단독 reference → 질감 이질감, "CG로 붙인 느낌"
+- ✅ 실사 사진(`pd/1212.png` 같이 손에 든 진짜 사진) 같이 첨부 → 자연스러운 실사 합성
+- 비율 명시 필수: "compact stocky shape with width-to-height ratio about 1 : 1.5 (not elongated)"
+- 손 모양 명시: "Fingers CURLED INWARD forming vertical C-shape grip, thumb on the front"
+
+### 4. 자막 연출: **Word-rhythm Cumulative Reveal with Emphasis Highlight**
+
+업계명: **카라오케 자막 / 워드 리빌 자막 / 틱톡-릴스 자막**
+
+| 요소 | 명칭 | 구현 |
+|---|---|---|
+| 포맷 | **ASS (Advanced SubStation Alpha)** | FFmpeg `subtitles=` 필터로 burn-in |
+| 어절 분할 | **kiwipiepy 형태소 분석** | 한국어 어절 잘림 0건 강제 |
+| 단어별 등장 | **Per-word fade-in** | `\fad(100,0)` 100ms 페이드 |
+| 누적 리빌 | **Cumulative reveal** | 단어가 사라지지 않고 쌓이며 한 줄 완성 |
+| 강조 | **Emphasis keyword highlight** | 특정 단어만 색/굵기 변경 |
+
+**검증된 강조 키워드 (K-뷰티 퍼포먼스)**:
+> 샤갈, PDRN, 비타C, 메라블, 루비알엔, 광채, 시술급, 79%, 50배, 솔직히, 진짜, 충격, 검색, 1일차, 3일차, 5일차, 7일
+
+### 5. Show-first-then-explain 24초 3-Phase 구조
+
+```
+Phase 1 (10s, 5컷): Day1 → Day3 → Day5 → Day7 변화 노출 + Bridge "비법 알려드릴게요"
+Phase 2 (10s, 5컷): 설명 (가성비/공감/anti-마케팅) + 같은 Day1/3/7 b-roll 인서트
+CTA    (4s, 2컷):   결론 감탄 + 브랜드 검색
+```
+
+같은 시드 이미지를 **Phase 1과 Phase 2 양쪽에서 재사용** (b-roll로 같은 day1/3/7) → 인지 강화 + Kling 호출 비용 절감.
+
+### 6. **flow_end** JSON 플래그 — TTS 문장 흐름 제어
+
+자연 연결/분리를 cut 단위로 명시 제어:
+
+```json
+{
+  "cut_id": 4,
+  "script_chunk": "7일째 샤갈 광채 됐어요",
+  "flow_end": true,    // ← 여기까지가 한 문장, period 자동 삽입
+  "i2v_prompt": "..."
+}
+```
+
+- `flow_end: true` 인 cut 뒤에만 마침표 `.` 삽입 → ElevenLabs가 문장 break
+- 나머지 cut은 연결어미(~고/~서/~더니/~잖아)로 자연 흐름
+- **검증된 break point**: Phase1 reveal(cut 4), Bridge(cut 5), Phase2 reveal(cut 10), 감탄(cut 11)
+
+### 7. B-roll 시드 재사용 (in-project clip cache)
+
+```python
+inproject_cache: dict[str, Path] = {}
+for cut in timeline:
+    cached = inproject_cache.get(cut["seed"])
+    if cached and cached.is_file():
+        shutil.copy2(cached, out)  # Kling 호출 skip
+        continue
+    # else Kling 호출 후
+    inproject_cache[cut["seed"]] = out
+```
+
+- 12 cuts 중 8개만 Kling 호출, 4개는 캐시 reuse
+- 같은 day1/3/7 영상이 Phase1과 Phase2에서 **완전히 동일한 모션**으로 재등장 → 일관성
+
+### 8. 컬러 그레이드: **Warm Rose-Gold**
+
+K-뷰티 퍼포먼스 표준 룩 — `eq + colorbalance + curves` FFmpeg 체인.
+
+### 9. 음성 표준: **Adam Dominant Firm**
+
+- voice_id: `pNInz6obpgDQGcFmaJgB` (외국인 남성 한국어, 신뢰감 + 침착)
+- 여성 페르소나 자기증언일 때는 `Jini` (`0oqpliV6dVSr9XomngOW`)
+- ElevenLabs `synthesize_with_timestamps` 사용 → 어절 단위 타임코드 자동 생성
+
+### 10. K-뷰티 SNS 감탄사 톤
+
+업계 검증된 자연 감탄사 (광고 톤 NOT, 친구 톤):
+> 샤갈, 헐, 와, 어머, 어머나, 미쳤다, 대박, 봐봐, 진짜로, 솔직히, 인생 바뀜
+
+### 11. 3버전 angle 분기 표준
+
+같은 BEFORE/AFTER 골격 + 다른 Phase 2 설명 angle:
+
+| 버전 | Angle | Hook | Phase 2 핵심 |
+|---|---|---|---|
+| A | 가성비/시술 비교 | "피부과 50만 원짜리가" | "거품 한 번 → 50배 싸요" |
+| B | 공감/자기고백 | "30 넘으니 갑자기 기미가" | "한 달 검색하다 만나고 → 인생 바뀜" |
+| C | Anti-마케팅/솔직후기 | "광고 다 거짓말이잖아요" | "광고 같죠 검색해 봐요" |
+
+### 적용 파일 (video20260425 프로젝트)
+
+- `src/codex_workers/seed_image_fal_nano.py` — canonical seed 생성기
+- `scripts/v7_composite_fal_nano.py` — 인물+제품 합성기
+- `scripts/v18_prepare.py` — TTS + 타임라인 (flow_end 처리)
+- `scripts/v18_render.py` — Kling i2v + b-roll cache + 합본
+- `.orchestra/v18{a,b,c}_script.json` — 12-cut JSON 스키마 표준
+- `specs/renderer-pipeline.md`, `specs/stack.md`, `.harness/video-orchestra.yaml` — codify 완료
+
+### 금지 (harness rules)
+
+- ❌ Character-locked seed image edit 시 gpt-image-2 사용
+- ❌ Seed prompt에 "babyface" / "doe eyes" / "young Korean girl"
+- ❌ 제품 합성 시 누끼 이미지 단독 reference
+- ❌ 자막 어절 잘림 (kiwipiepy 강제)
+- ❌ character_id 없는 Kling 호출
+
+관련: [[content-ai-automation]], [[creative-patterns]], [[ai-automation]]
 
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
