@@ -1059,3 +1059,68 @@ jq '.models | to_entries | map(select(.value.success | not)) | .[].key' meta.jso
 - 해결: category_mismatch (카테고리 다른 이미지·텍스트) + reference_copy_bleed (레퍼런스 카피 잔존) 2축 추가
 - 둘 다 hard fail → 자동 재생성
 - confidence: high
+
+---
+
+### [2026-04-28] 네이버 검색량 역산 공식 (DataLab + SearchAd API)
+
+**문제**: 데이터랩 API는 *상대비율*, 검색광고 API는 *현재월 절대량*만 제공. 과거 24개월 절대 검색량을 알고 싶을 때.
+
+**공식**: 현재월 절대량 × (해당월 비율 / 현재월 비율) = 추정 절대량
+
+```python
+def reverse_calc_monthly(trend_ratios: dict, current_total: int) -> dict:
+    if not trend_ratios or not current_total: return {}
+    months = sorted(trend_ratios.keys())
+    ref = months[-1]  # 검색광고 API 측정월(최근월)
+    ref_ratio = trend_ratios.get(ref, 0)
+    if ref_ratio == 0: return {}
+    return {m: round((trend_ratios.get(m, 0) / ref_ratio) * current_total)
+            for m in months}
+```
+
+**한계**:
+- 오차 ±20% (상대비율의 정밀도 제약)
+- 브랜드명이 일반명사와 겹치면 노이즈 큼 (예: "에스티핏=압박스타킹" → 브랜드 외 검색 포함)
+- 현재월 검색량이 0이면 역산 불가 → 대표 키워드 선정 시 가장 검색량 많은 동의어 우선
+
+**팁**:
+- 데이터랩 API는 일반 검색(`/v1/datalab/search`)을 쓰는 게 *쇼핑인사이트*보다 브랜드 검색 행동에 적합
+- 키워드 그룹당 동의어 5개까지 묶을 수 있음 (예: "널핏","Nurfit","널싱화") — 노이즈 줄이기에 유용
+- DataLab Client ID는 일일 1,000건 제한 — 950건마다 라운드로빈 권장
+
+**출처**: `naver-competitor-finder/nurse/fetch_brand_trends.py`, [[sources/src-nurse-shoes-2026-04-28]]
+**confidence**: high (널핏·우포스 등 12개 브랜드 실측에서 합리적 결과)
+
+---
+
+### [2026-04-28] Toss UI HTML 시각 리포트 단일 페이지 템플릿
+
+**용도**: 시장조사·분석 보고서를 클릭 한 번 열리는 단일 HTML로 납품 (PDF/Word 대체).
+
+**핵심 CSS 토큰**:
+```css
+:root{
+  --primary:#3182F6; --primary-dark:#1B64DA; --primary-soft:#E8F2FF;
+  --text-primary:#191F28; --text-secondary:#4E5968; --text-tertiary:#8B95A1;
+  --success:#1AC069; --error:#F04452; --warn:#F59E0B;
+  --border:#E5E8EB; --surface:#F2F4F6; --surface-2:#F9FAFB;
+  --radius:12px; --radius-lg:20px;
+  --font-display:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;
+}
+html,body{
+  font-family:var(--font-display); line-height:1.6;
+  letter-spacing:-0.02em; word-break:keep-all;
+}
+```
+
+**Pretendard CDN**: `https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css`
+
+**섹션 표준 (시장조사용 11블록)**: HERO(KPI 4-strip) → CATEGORY → PAIN POINTS → SEARCH TREND → PERSONA → BRAND DEEP DIVE → WHITESPACE → AUTHORITY → CONVENTION → HOOKING COPY → ACTION PLAN(Timeline)
+
+**판정**: 화수디자인 한국어판([[domains/da-creative]] dig 스킬)의 `harness/AGENTS.md` 강제 규칙 통과 (lang=ko, Pretendard, keep-all, AI 슬롭 회피).
+
+**참조 샘플**: `naver-competitor-finder/nurse/reports/report.html` (51KB, 단일 HTML, 외부 의존 폰트 1개만)
+**시너지 변형**: `nurse/reports/report_synergy.html` — 3 시나리오 비교 카드 + KPI 테이블 + Funnel 4단
+
+**confidence**: high (사용자 승인, dig 스킬 lint 통과)

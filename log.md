@@ -132,3 +132,11 @@
   - "통념 얹기 vs 깨기" A/B 분기 ([[psychology-insights]])
 - 플레이북 [[market-research-playbook]] 업데이트: 9단계 체크리스트 → 4단 20단계로 확장
 - 산출 MD: 4단 → 6개 (`canvas/04~06.md` 분리, 총 1,813줄)
+
+## [2026-04-28] ingest | 간호사 신발 시장조사 + 착한구두 시너지 (브랜드 시장 단위 변형 모드)
+- sources/src-nurse-shoes-2026-04-28.md 신규 (4단 파이프라인, 11시트 Excel, Toss UI HTML, 시너지 매트릭스)
+- domains/market-research-playbook.md §9 (변형 모드: 브랜드 시장 단위 + 자사몰 분석 + 진입 권고) append
+- tacit/coding-lessons.md §검색량 역산 공식 + §Toss UI HTML 템플릿 append
+- tacit/operational-heuristics.md §브랜드 시너지 3 시나리오 매트릭스 append
+- index.md 핵심 지식 섹션 추가
+- 핵심 도구: nurse/fetch_brand_trends.py (DataLab+SearchAd 역산), nurse/generate_excel_report.py

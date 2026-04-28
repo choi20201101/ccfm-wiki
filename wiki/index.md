@@ -119,6 +119,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[sources/src-charde-melapeel-usp-2026-04-27]] — **샤르드 멜라케어 필크림 마스크 USP 캔버스 조사 7파일** (2026-04-27, USP 플레이북 첫 케이스)
 - [[sources/src-rubyrn-cleanser-glow-research-2026-04-28]] — **루비알엔 앰플클렌저 광채/톤업 시장조사** (네이버 API + Daum/네이트판/YouTube 크롤, PDRN 흡수 의심 인사이트, 2026-04-28)
 - [[sources/src-rubyrn-glow-deep-research-success-2026-04-28]] — 🏆 **시장조사 4단 심화 신 표준** (1·2단 + 영상 자막+썸네일 + 민간 속설, 사용자 승인 표준, 2026-04-28)
+- [[sources/src-nurse-shoes-2026-04-28]] — 🆕 **브랜드 시장 단위 변형 모드** (간호사 신발 55개 + 자사몰 12개 + 착한구두 시너지 3 시나리오, 검색량 역산 + Excel 11시트 + Toss UI HTML, 2026-04-28)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[sources/src-claude-skills-inventory-2026-04-22]] — **Claude Code 스킬/커맨드 인벤토리** (20 스킬 + 18 커맨드 스냅샷, 2026-04-22)
 - [[sources/src-volumefill-pipeline-2026-04-20]] — 볼륨필인 앰플 B/A 광고 소재 자동생성 파이프라인 (2026-04-20)
