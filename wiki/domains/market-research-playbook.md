@@ -14,7 +14,12 @@ sources:
 # 시장조사 플레이북 (Market Research Playbook)
 
 > **🔥 글로벌 지식**: 사용자가 "시장조사 해줘" 계열 요청 시 **바로 이 파일 구조대로 진행**할 것.
-> 참조 성공사례: [[src-market-research-pipeline-2026-04]]
+> 참조 성공사례:
+> - [[src-market-research-pipeline-2026-04]] — 1·2단 (주름/유쎄라블)
+> - **[[src-rubyrn-glow-deep-research-success-2026-04-28]] — 1~4단 심화 (광채/PDRN, 신 표준)** ⭐
+>
+> ⭐ **2026-04-28 업데이트**: 본 플레이북은 이제 **4단 심화** 구조. 3단(영상 자막+썸네일) + 4단(민간 속설) 추가됨.
+> 시장조사 요청 받으면 묻지 말고 4단까지 진행 — 본 케이스가 사용자 승인 표준.
 
 ---
 
@@ -114,6 +119,80 @@ python analyze_pattern.py --title {주제} # 훅·CTA·키워드 집계
 
 ---
 
+## 3-F. 영상 자막+썸네일 1차 분석 (3단, 2026-04-28 신 표준) ⭐
+
+> 영상 메타·댓글만으로는 **"실제 영상 안에서 한 말"** 못 잡음. yt-dlp + Claude Read 조합이 답.
+
+### 도구
+- `yt-dlp` Python 모듈 (이미 설치됨: `python -c "import yt_dlp"` 확인)
+- 자체 스크립트: [[src-rubyrn-glow-deep-research-success-2026-04-28]] §A (`deep_video_analysis.py`)
+
+### 실행
+```bash
+python deep_video_analysis.py
+# TARGETS = [(name, url), ...] 리스트만 카테고리에 맞게 수정
+# 자동: 자막 srt + 썸네일 jpg + 메타 json
+```
+
+### 시각 분석 (Claude Read)
+- 다운받은 jpg를 Read 도구로 직접 읽음 → vision으로 텍스트·구도·소품·표정 추출
+- OCR 불필요 (한국어 손글씨까지 읽힘)
+- 권장: **조회수 TOP 5만 분석** (시간 절약, 다른 후킹 유형 분포 우선)
+
+### 산출
+- `scripts/video_deep/subs/*.ko.srt` (자막)
+- `scripts/video_deep/thumbs/*.jpg` (썸네일)
+- `scripts/video_deep/meta.json` (조회수·duration·like·comment_count)
+- → MD: `canvas/05_viral_video_deep_analysis.md`
+
+---
+
+## 3-G. 민간 속설/통념 정제 (4단, 2026-04-28 신 표준) ⭐
+
+### 의도
+한국 소비자 머릿속 깊이 박힌 미용 통념 (쌀뜨물=미백, 꿀=보습 등) → **"통념 얹기" 카피**의 직접 인풋.
+
+### 시드 키워드 (60+ 성분 + 14 카테고리)
+```python
+INGREDIENTS = ['쌀뜨물','우유','달걀','오이','꿀','녹차','토마토','감자','당근','호박',
+               '요거트','벌꿀','율무','식초','두부','버섯','인삼','홍삼','녹두','석류',
+               '상백피','쑥','막걸리','블루베리','수박','복숭아','자몽','아보카도',
+               '다시마','미역','감초','유자','매실','참기름','커피','뽕잎','계피',
+               '강황','국화','대추','잣','호두','파인애플','연꽃','연잎','코코넛',
+               '오트밀','시금치','약쑥','어성초']
+
+CATEGORIES = ['민간요법','녹차 미백','미백','할머니 미용','꿀팩','토마토 피부',
+              '당근 피부','피부 천연','달걀팩','우유팩','감자팩','꿀 피부',
+              '바나나팩','꿀템','오이팩','쌀뜨물','찐꿀템','꿀광 만드는법']
+```
+
+### 실행
+```bash
+# 시드 변경 후 재크롤
+python -u collect_daum_kakao.py --keywords "{60개 성분}" --months 12
+python -u collect_community.py --keywords "{18개 카테고리}" --sites natepann --months 24
+
+# 정제 (정규식 패턴)
+python -c "..."  # 본 케이스 참조: scripts/folk_beliefs.json 추출 코드
+```
+
+### 카피 직변환 공식
+```
+[옛 비법 호명] + [그 비법의 한계 인지] + [신제품의 진화 약속]
+
+예: "엄마는 쌀뜨물로, 저는 PDRN 30병으로"
+    "감자 갈 시간 30분 → 거품 30초"
+    "이영애가 감자팩이었다면, 우리는 PDRN 30병"
+```
+
+### 산출
+- `scripts/folk_beliefs.json` (성분별 컨텍스트 60+)
+- `scripts/folk_belief_phrases.json` (명시 phrase)
+- `scripts/folk_titles_by_cat.json` (카테고리별 발화)
+- → MD: `canvas/06_folk_beliefs_for_glow.md` (속설 200+ + 카피 80선)
+
+---
+
 ## 4️⃣ 표준 출력 구조 (영상기획용 · 11파일)
 
 출력: `{bol_video}/see/00~11.md` (각 <150줄 엄수)
@@ -208,18 +287,40 @@ final_report = gemini("다음 노트를 narrative로 합성", notes)
 
 ---
 
-## 9️⃣ 실행 체크리스트 (신규 시장조사 요청 받았을 때)
+## 9️⃣ 실행 체크리스트 (2026-04-28 4단 심화 표준) ⭐
 
+> 사용자 승인 표준 ([[src-rubyrn-glow-deep-research-success-2026-04-28]]).
+> 시장조사 요청 받으면 **묻지 말고** 1~4단 모두 진행.
+
+### 1단 — 검색·트렌드
 - [ ] 1. 입력 확인 (주제·제품·출력위치·용도)
-- [ ] 2. Python/Playwright 환경 체크
+- [ ] 2. Python/Playwright 환경 체크 + `import yt_dlp` 확인
 - [ ] 3. `api.txt` scope 검증 (네이버 검색·카카오·인스타)
-- [ ] 4. 시드 키워드 20개 정의 → `find_by_related_keywords.py` 실행
-- [ ] 5. 다음카페·네이트판·유튜브 병렬 수집 (instagrapi 실패 시 건너뜀)
-- [ ] 6. 7대 인사이트 매칭 + 브랜드 추출
-- [ ] 7. 메타 광고 라이브러리 크롤 (TOP 브랜드 xlsx 기반)
-- [ ] 8. 사용자에게 브랜드 제외 컨펌 (유명 브랜드 체크)
-- [ ] 9. 11개 MD 파일 출력 (각 <150줄, 쉬운 말 치환)
-- [ ] 10. 위키 업데이트 (새 케이스 → `sources/src-market-research-{주제}-{날짜}.md`)
+- [ ] 4. 시드 키워드 20개 정의 (공백 제거 필수) → `find_by_related_keywords.py` / `keywordstool` 실행
+- [ ] 5. YoY 트렌드 추출 (24개월 윈도우, 데이터랩)
+
+### 2단 — 소비자 발화 (라이트 크롤)
+- [ ] 6. 다음카페·네이트판·유튜브 병렬 수집
+- [ ] 7. 7대 인사이트 매칭 (analyze_insights.py) + 브랜드 추출
+- [ ] 8. 메타 광고 라이브러리 크롤 (TOP 브랜드 xlsx 기반)
+
+### 3단 — viral 영상 1차 분석 (NEW) ⭐
+- [ ] 9. YouTube 검색 결과 중 조회수 10만+ 영상 10건 선정 (제목 키워드 매칭 필터 필수)
+- [ ] 10. `deep_video_analysis.py`로 자막 srt + 썸네일 jpg 일괄 다운로드
+- [ ] 11. 썸네일 시각 분석 (Claude Read 도구로 jpg 직접 읽기) — TOP 5만
+- [ ] 12. 자막 본문 추출 + 후킹 구조 분해 + 차용 어법 매트릭스
+
+### 4단 — 민간 속설/통념 (NEW) ⭐
+- [ ] 13. 60+ 성분 + 14 카테고리 시드로 다음카페·네이트판 재크롤
+- [ ] 14. 정규식 정제 (`folk_beliefs.json` 패턴) — unique 발화 1,000+ 목표
+- [ ] 15. "통념 얹기" 카피 50선 직변환 + 자막 인서트 [대괄호] 풀
+- [ ] 16. 사용자에게 브랜드 제외 컨펌 (유명 브랜드 체크)
+
+### 산출 + 위키
+- [ ] 17. **6개 MD** 파일 출력 (01~03 캔버스 + **04 검색·트렌드 / 05 영상 1차 / 06 속설**)
+- [ ] 18. 위키 인제스트 (`sources/src-market-research-{주제}-{날짜}.md`)
+- [ ] 19. tacit 패턴 신규 발견 시 `viral-patterns` / `psychology-insights` / `creative-patterns` append
+- [ ] 20. `wiki/log.md` 엔트리 + git commit + push
 
 ---
 

@@ -118,3 +118,17 @@
 - 성과: 24시간 200+ 이미지 자동 생성, 사용자 만족 "매우 좋아짐"
 - tacit/creative-patterns.md: 7개 패턴 추가
 - tacit/coding-lessons.md: 5개 교훈 추가
+
+## [2026-04-28] ingest | 시장조사 4단 심화 신 표준 (루비알엔 광채 클렌저 케이스)
+- `wiki/sources/src-rubyrn-glow-deep-research-success-2026-04-28.md` 생성 — 🏆 사용자 승인 표준
+- `wiki/sources/src-rubyrn-cleanser-glow-research-2026-04-28.md` (1·2단 부분 자료)
+- 새 단계 추가:
+  - **3단 영상 1차 분석**: yt-dlp로 자막 srt + 썸네일 jpg → Claude Read로 시각 분석 → 100만뷰+ 5건 후킹 5선 추출
+  - **4단 민간 속설/통념**: 60성분+14카테고리 시드로 unique 발화 1,195건 → "통념 얹기" 카피 80선 직변환
+- 1차 자료 규모: **약 12,800건** (검색 80kw + 카페 5,377 + 커뮤 7,390 + YT 65 + 영상자막 10 + 썸네일 10)
+- 핵심 인사이트:
+  - PDRN 흡수 의심 → 클렌저 차별화 무기 ([[viral-patterns]])
+  - "자연광 = 진실 판정" 합격선 ([[creative-patterns]])
+  - "통념 얹기 vs 깨기" A/B 분기 ([[psychology-insights]])
+- 플레이북 [[market-research-playbook]] 업데이트: 9단계 체크리스트 → 4단 20단계로 확장
+- 산출 MD: 4단 → 6개 (`canvas/04~06.md` 분리, 총 1,813줄)
