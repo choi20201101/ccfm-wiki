@@ -8,7 +8,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "raw_qscv_extract_and_chunk_py"
     },
@@ -17,7 +17,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L21",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_slugify"
     },
@@ -26,7 +26,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L27",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_iter_block_items"
     },
@@ -35,7 +35,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L41",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_paragraph_text"
     },
@@ -44,7 +44,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L64",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_table_to_md"
     },
@@ -53,7 +53,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L76",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_extract"
     },
@@ -62,7 +62,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L92",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_chunk_and_write"
     },
@@ -71,7 +71,7 @@
       "file_type": "code",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L118",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_main"
     },
@@ -80,7 +80,7 @@
       "file_type": "rationale",
       "source_file": "raw\\qscv\\_extract_and_chunk.py",
       "source_location": "L1",
-      "community": 2,
+      "community": 4,
       "community_label": "QSCV 문서 추출 코드",
       "id": "extract_and_chunk_rationale_1"
     },
@@ -89,7 +89,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "raw_skills_diet_b2a_scripts_compose_py"
     },
@@ -98,7 +98,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L60",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_mosaic"
     },
@@ -107,7 +107,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L22",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_video1"
     },
@@ -116,7 +116,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\compose.py",
       "source_location": "L71",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_video_23"
     },
@@ -125,7 +125,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L189",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_main"
     },
@@ -134,7 +134,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_rationale_1"
     },
@@ -143,7 +143,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 13,
+      "community": 15,
       "community_label": "기타: detect_face.py",
       "id": "raw_skills_diet_b2a_scripts_detect_face_py"
     },
@@ -152,7 +152,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L16",
-      "community": 13,
+      "community": 15,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_try_opencv_detect"
     },
@@ -161,7 +161,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L40",
-      "community": 13,
+      "community": 15,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_main"
     },
@@ -170,7 +170,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\detect_face.py",
       "source_location": "L1",
-      "community": 13,
+      "community": 15,
       "community_label": "기타: detect_face.py",
       "id": "detect_face_rationale_1"
     },
@@ -179,7 +179,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 19,
+      "community": 21,
       "community_label": "기타: export.py",
       "id": "raw_skills_diet_b2a_scripts_export_py"
     },
@@ -188,7 +188,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L26",
-      "community": 19,
+      "community": 21,
       "community_label": "기타: export.py",
       "id": "export_main"
     },
@@ -197,7 +197,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\export.py",
       "source_location": "L1",
-      "community": 19,
+      "community": 21,
       "community_label": "기타: export.py",
       "id": "export_rationale_1"
     },
@@ -206,7 +206,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "raw_skills_diet_b2a_scripts_kling_client_py"
     },
@@ -215,7 +215,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L24",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_read_keys"
     },
@@ -224,7 +224,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L36",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_token"
     },
@@ -233,7 +233,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L43",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_submit"
     },
@@ -242,7 +242,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L69",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_poll"
     },
@@ -251,7 +251,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L95",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_download"
     },
@@ -260,7 +260,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L104",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_save_state"
     },
@@ -269,7 +269,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L108",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_main"
     },
@@ -278,7 +278,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\kling_client.py",
       "source_location": "L1",
-      "community": 3,
+      "community": 5,
       "community_label": "기타: kling_client.py",
       "id": "kling_client_rationale_1"
     },
@@ -287,7 +287,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "raw_skills_diet_b2a_scripts_lib_py"
     },
@@ -296,7 +296,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L9",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_skill_root"
     },
@@ -305,7 +305,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L13",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_load_config"
     },
@@ -314,7 +314,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L20",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_rel"
     },
@@ -323,7 +323,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L28",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_out_dir"
     },
@@ -332,7 +332,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L34",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_run"
     },
@@ -341,7 +341,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L39",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_ffprobe_duration"
     },
@@ -350,7 +350,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_rationale_1"
     },
@@ -359,7 +359,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\lib.py",
       "source_location": "L21",
-      "community": 4,
+      "community": 6,
       "community_label": "기타: lib.py",
       "id": "lib_rationale_21"
     },
@@ -368,7 +368,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 14,
+      "community": 16,
       "community_label": "기타: make_overlays.py",
       "id": "raw_skills_diet_b2a_scripts_make_overlays_py"
     },
@@ -377,7 +377,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L13",
-      "community": 14,
+      "community": 16,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_stroked"
     },
@@ -386,7 +386,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L31",
-      "community": 14,
+      "community": 16,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_main"
     },
@@ -395,7 +395,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\make_overlays.py",
       "source_location": "L1",
-      "community": 14,
+      "community": 16,
       "community_label": "기타: make_overlays.py",
       "id": "make_overlays_rationale_1"
     },
@@ -404,7 +404,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 15,
+      "community": 17,
       "community_label": "기타: qa_check.py",
       "id": "raw_skills_diet_b2a_scripts_qa_check_py"
     },
@@ -413,7 +413,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L11",
-      "community": 15,
+      "community": 17,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_probe"
     },
@@ -422,7 +422,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L20",
-      "community": 15,
+      "community": 17,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_main"
     },
@@ -431,7 +431,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\qa_check.py",
       "source_location": "L1",
-      "community": 15,
+      "community": 17,
       "community_label": "기타: qa_check.py",
       "id": "qa_check_rationale_1"
     },
@@ -440,7 +440,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 20,
+      "community": 22,
       "community_label": "기타: run_all.py",
       "id": "raw_skills_diet_b2a_scripts_run_all_py"
     },
@@ -449,7 +449,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L20",
-      "community": 20,
+      "community": 22,
       "community_label": "기타: run_all.py",
       "id": "run_all_main"
     },
@@ -458,7 +458,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\run_all.py",
       "source_location": "L1",
-      "community": 20,
+      "community": 22,
       "community_label": "기타: run_all.py",
       "id": "run_all_rationale_1"
     },
@@ -467,7 +467,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 21,
+      "community": 23,
       "community_label": "기타: validate_input.py",
       "id": "raw_skills_diet_b2a_scripts_validate_input_py"
     },
@@ -476,7 +476,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L12",
-      "community": 21,
+      "community": 23,
       "community_label": "기타: validate_input.py",
       "id": "validate_input_main"
     },
@@ -485,7 +485,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a\\scripts\\validate_input.py",
       "source_location": "L1",
-      "community": 21,
+      "community": 23,
       "community_label": "기타: validate_input.py",
       "id": "validate_input_rationale_1"
     },
@@ -494,7 +494,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 27,
       "community_label": "기타: build_sets.py",
       "id": "raw_skills_diet_b2a_v2_scripts_build_sets_py"
     },
@@ -503,7 +503,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\build_sets.py",
       "source_location": "L1",
-      "community": 25,
+      "community": 27,
       "community_label": "기타: build_sets.py",
       "id": "build_sets_rationale_1"
     },
@@ -512,7 +512,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L1",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "raw_skills_diet_b2a_v2_scripts_detect_faces_py"
     },
@@ -521,7 +521,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L24",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_pick_best_face"
     },
@@ -530,7 +530,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L35",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_extract_frame"
     },
@@ -539,7 +539,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L47",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_detect_in_clip"
     },
@@ -548,7 +548,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L68",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_detect_for_set"
     },
@@ -557,7 +557,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L84",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_main"
     },
@@ -566,7 +566,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L1",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_1"
     },
@@ -575,7 +575,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L48",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_48"
     },
@@ -584,7 +584,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\detect_faces.py",
       "source_location": "L69",
-      "community": 5,
+      "community": 7,
       "community_label": "기타: detect_faces.py",
       "id": "detect_faces_rationale_69"
     },
@@ -593,7 +593,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L1",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "raw_skills_diet_b2a_v2_scripts_gemini_client_py"
     },
@@ -602,7 +602,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L23",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_new_client"
     },
@@ -611,7 +611,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L45",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_select_thinking_model"
     },
@@ -620,7 +620,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L109",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_clean_logo"
     },
@@ -629,7 +629,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L118",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_generate"
     },
@@ -638,7 +638,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L1",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_1"
     },
@@ -647,7 +647,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L46",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_46"
     },
@@ -656,7 +656,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\gemini_client.py",
       "source_location": "L110",
-      "community": 7,
+      "community": 9,
       "community_label": "기타: gemini_client.py",
       "id": "gemini_client_rationale_110"
     },
@@ -665,7 +665,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L1",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "raw_skills_diet_b2a_v2_scripts_logo_remover_py"
     },
@@ -674,7 +674,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L47",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_make_corner_masks"
     },
@@ -683,7 +683,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L61",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_remove_logo"
     },
@@ -692,7 +692,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L90",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_process_image"
     },
@@ -701,7 +701,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L109",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_batch_process"
     },
@@ -710,7 +710,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L48",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_rationale_48"
     },
@@ -719,7 +719,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\scripts\\logo_remover.py",
       "source_location": "L62",
-      "community": 8,
+      "community": 10,
       "community_label": "로고 제거 기술",
       "id": "logo_remover_rationale_62"
     },
@@ -728,7 +728,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 16,
+      "community": 18,
       "community_label": "기타: analyze_bgm.py",
       "id": "raw_skills_diet_b2a_v2_steps_00_bgm_analyze_analyze_bgm_py"
     },
@@ -737,7 +737,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L13",
-      "community": 16,
+      "community": 18,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_analyze"
     },
@@ -746,7 +746,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L57",
-      "community": 16,
+      "community": 18,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_main"
     },
@@ -755,7 +755,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\00-bgm-analyze\\analyze_bgm.py",
       "source_location": "L1",
-      "community": 16,
+      "community": 18,
       "community_label": "기타: analyze_bgm.py",
       "id": "analyze_bgm_rationale_1"
     },
@@ -764,7 +764,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 24,
       "community_label": "기타: build_prompts.py",
       "id": "raw_skills_diet_b2a_v2_steps_01_styles_prompts_build_prompts_py"
     },
@@ -773,7 +773,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L21",
-      "community": 22,
+      "community": 24,
       "community_label": "기타: build_prompts.py",
       "id": "build_prompts_write"
     },
@@ -782,7 +782,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\01-styles-prompts\\build_prompts.py",
       "source_location": "L1",
-      "community": 22,
+      "community": 24,
       "community_label": "기타: build_prompts.py",
       "id": "build_prompts_rationale_1"
     },
@@ -791,7 +791,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 23,
+      "community": 25,
       "community_label": "기타: check_session.py",
       "id": "raw_skills_diet_b2a_v2_steps_02_gemini_session_check_session_py"
     },
@@ -800,7 +800,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L13",
-      "community": 23,
+      "community": 25,
       "community_label": "기타: check_session.py",
       "id": "check_session_main"
     },
@@ -809,7 +809,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\02-gemini-session\\check_session.py",
       "source_location": "L1",
-      "community": 23,
+      "community": 25,
       "community_label": "기타: check_session.py",
       "id": "check_session_rationale_1"
     },
@@ -818,7 +818,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L1",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "raw_skills_diet_b2a_v2_steps_03_gemini_seeds_gen_seeds_py"
     },
@@ -827,7 +827,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L61",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_page_text"
     },
@@ -836,7 +836,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L68",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_was_refused"
     },
@@ -845,7 +845,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L73",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_try"
     },
@@ -854,7 +854,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L81",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_with_fallback"
     },
@@ -863,7 +863,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L91",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_run_one"
     },
@@ -872,7 +872,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L139",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_main"
     },
@@ -881,7 +881,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L1",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_1"
     },
@@ -890,7 +890,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L74",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_74"
     },
@@ -899,7 +899,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\03-gemini-seeds\\gen_seeds.py",
       "source_location": "L82",
-      "community": 1,
+      "community": 2,
       "community_label": "기타: gen_seeds.py",
       "id": "gen_seeds_rationale_82"
     },
@@ -908,7 +908,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 17,
+      "community": 19,
       "community_label": "기타: gen_scales.py",
       "id": "raw_skills_diet_b2a_v2_steps_04_gemini_scales_gen_scales_py"
     },
@@ -917,7 +917,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L27",
-      "community": 17,
+      "community": 19,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_run_one"
     },
@@ -926,7 +926,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L58",
-      "community": 17,
+      "community": 19,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_main"
     },
@@ -935,7 +935,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\04-gemini-scales\\gen_scales.py",
       "source_location": "L1",
-      "community": 17,
+      "community": 19,
       "community_label": "기타: gen_scales.py",
       "id": "gen_scales_rationale_1"
     },
@@ -944,7 +944,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L1",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "raw_skills_diet_b2a_v2_steps_05_kling_20clips_gen_kling_py"
     },
@@ -953,7 +953,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L35",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_read_keys"
     },
@@ -962,7 +962,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L45",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_token"
     },
@@ -971,7 +971,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L52",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_submit"
     },
@@ -980,7 +980,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L77",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_poll"
     },
@@ -989,7 +989,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L102",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_download"
     },
@@ -998,7 +998,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L110",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_save_state"
     },
@@ -1007,7 +1007,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L114",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_main"
     },
@@ -1016,7 +1016,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\05-kling-20clips\\gen_kling.py",
       "source_location": "L1",
-      "community": 6,
+      "community": 8,
       "community_label": "기타: gen_kling.py",
       "id": "gen_kling_rationale_1"
     },
@@ -1025,7 +1025,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "raw_skills_diet_b2a_v2_steps_06_compose_15_compose_py"
     },
@@ -1034,7 +1034,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L29",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_get_boxes"
     },
@@ -1043,7 +1043,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L42",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_stroked"
     },
@@ -1052,7 +1052,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L71",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_run"
     },
@@ -1061,7 +1061,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L76",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_build_overlays"
     },
@@ -1070,7 +1070,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L95",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_compose_v1"
     },
@@ -1079,7 +1079,7 @@
       "file_type": "code",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L135",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_compose_v23"
     },
@@ -1088,7 +1088,7 @@
       "file_type": "rationale",
       "source_file": "raw\\skills\\diet-b2a-v2\\steps\\06-compose-15\\compose.py",
       "source_location": "L30",
-      "community": 0,
+      "community": 1,
       "community_label": "AI 아바타/영상 툴",
       "id": "compose_rationale_30"
     },
@@ -1097,7 +1097,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_aliases_from_h1.py",
       "source_location": "L1",
-      "community": 10,
+      "community": 12,
       "community_label": "기타: inject_aliases_from_h1.py",
       "id": "scripts_inject_aliases_from_h1_py"
     },
@@ -1106,7 +1106,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_aliases_from_h1.py",
       "source_location": "L33",
-      "community": 10,
+      "community": 12,
       "community_label": "기타: inject_aliases_from_h1.py",
       "id": "inject_aliases_from_h1_extract_h1"
     },
@@ -1115,7 +1115,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_aliases_from_h1.py",
       "source_location": "L47",
-      "community": 10,
+      "community": 12,
       "community_label": "기타: inject_aliases_from_h1.py",
       "id": "inject_aliases_from_h1_inject"
     },
@@ -1124,7 +1124,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_aliases_from_h1.py",
       "source_location": "L73",
-      "community": 10,
+      "community": 12,
       "community_label": "기타: inject_aliases_from_h1.py",
       "id": "inject_aliases_from_h1_main"
     },
@@ -1133,7 +1133,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\inject_aliases_from_h1.py",
       "source_location": "L1",
-      "community": 10,
+      "community": 12,
       "community_label": "기타: inject_aliases_from_h1.py",
       "id": "inject_aliases_from_h1_rationale_1"
     },
@@ -1142,7 +1142,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 26,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "scripts_inject_diet_b2a_v2_aliases_py"
     },
@@ -1151,7 +1151,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L46",
-      "community": 24,
+      "community": 26,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "inject_diet_b2a_v2_aliases_main"
     },
@@ -1160,7 +1160,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\inject_diet_b2a_v2_aliases.py",
       "source_location": "L1",
-      "community": 24,
+      "community": 26,
       "community_label": "기타: inject_diet_b2a_v2_aliases.py",
       "id": "inject_diet_b2a_v2_aliases_rationale_1"
     },
@@ -1169,8 +1169,8 @@
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "community": 11,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 13,
+      "community_label": "기타: inject_iboss_entities.py",
       "id": "scripts_inject_iboss_entities_py"
     },
     {
@@ -1178,8 +1178,8 @@
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L119",
-      "community": 11,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 13,
+      "community_label": "기타: inject_iboss_entities.py",
       "id": "inject_iboss_entities_make_node"
     },
     {
@@ -1187,8 +1187,8 @@
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L134",
-      "community": 11,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 13,
+      "community_label": "기타: inject_iboss_entities.py",
       "id": "inject_iboss_entities_make_edge"
     },
     {
@@ -1196,8 +1196,8 @@
       "file_type": "code",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L149",
-      "community": 11,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 13,
+      "community_label": "기타: inject_iboss_entities.py",
       "id": "inject_iboss_entities_main"
     },
     {
@@ -1205,8 +1205,8 @@
       "file_type": "rationale",
       "source_file": "scripts\\inject_iboss_entities.py",
       "source_location": "L1",
-      "community": 11,
-      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "community": 13,
+      "community_label": "기타: inject_iboss_entities.py",
       "id": "inject_iboss_entities_rationale_1"
     },
     {
@@ -1214,7 +1214,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_korean_aliases.py",
       "source_location": "L1",
-      "community": 12,
+      "community": 14,
       "community_label": "기타: inject_korean_aliases.py",
       "id": "scripts_inject_korean_aliases_py"
     },
@@ -1223,7 +1223,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_korean_aliases.py",
       "source_location": "L99",
-      "community": 12,
+      "community": 14,
       "community_label": "기타: inject_korean_aliases.py",
       "id": "inject_korean_aliases_yaml_aliases_block"
     },
@@ -1232,7 +1232,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_korean_aliases.py",
       "source_location": "L104",
-      "community": 12,
+      "community": 14,
       "community_label": "기타: inject_korean_aliases.py",
       "id": "inject_korean_aliases_inject"
     },
@@ -1241,7 +1241,7 @@
       "file_type": "code",
       "source_file": "scripts\\inject_korean_aliases.py",
       "source_location": "L123",
-      "community": 12,
+      "community": 14,
       "community_label": "기타: inject_korean_aliases.py",
       "id": "inject_korean_aliases_main"
     },
@@ -1250,7 +1250,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\inject_korean_aliases.py",
       "source_location": "L1",
-      "community": 12,
+      "community": 14,
       "community_label": "기타: inject_korean_aliases.py",
       "id": "inject_korean_aliases_rationale_1"
     },
@@ -1259,7 +1259,7 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 18,
+      "community": 20,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "scripts_regen_graph_report_py"
     },
@@ -1268,7 +1268,7 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L46",
-      "community": 18,
+      "community": 20,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_pick_label"
     },
@@ -1277,7 +1277,7 @@
       "file_type": "code",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L62",
-      "community": 18,
+      "community": 20,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_main"
     },
@@ -1286,7 +1286,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\regen_graph_report.py",
       "source_location": "L1",
-      "community": 18,
+      "community": 20,
       "community_label": "그래프 인덱싱 스크립트",
       "id": "regen_graph_report_rationale_1"
     },
@@ -1295,7 +1295,7 @@
       "file_type": "code",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L1",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "scripts_rewrite_iboss_aliases_as_knowledge_py"
     },
@@ -1304,7 +1304,7 @@
       "file_type": "code",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L37",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_extract_concept"
     },
@@ -1313,7 +1313,7 @@
       "file_type": "code",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L63",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_build_knowledge_title"
     },
@@ -1322,7 +1322,7 @@
       "file_type": "code",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L94",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_rewrite"
     },
@@ -1331,7 +1331,7 @@
       "file_type": "code",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L122",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_main"
     },
@@ -1340,7 +1340,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L1",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_rationale_1"
     },
@@ -1349,7 +1349,7 @@
       "file_type": "rationale",
       "source_file": "scripts\\rewrite_iboss_aliases_as_knowledge.py",
       "source_location": "L38",
-      "community": 9,
+      "community": 11,
       "community_label": "본사 사업/마케팅 (최재명·네이버·GFA)",
       "id": "rewrite_iboss_aliases_as_knowledge_rationale_38"
     },
@@ -1358,9 +1358,399 @@
       "file_type": "rationale",
       "source_file": "graphify-out\\_run_pipeline.py",
       "source_location": "L1",
-      "community": 26,
+      "community": 28,
       "community_label": "기타: Run full graphify pipeline on ",
       "id": "run_pipeline_rationale_1"
+    },
+    {
+      "label": "i-boss 게시판 (근육돌이)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "source_iboss_wiki"
+    },
+    {
+      "label": "iboss 201건 인덱스 (2017-2026)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_index_201"
+    },
+    {
+      "label": "마케팅 핵심 이해 40부작 (2022)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_40부작"
+    },
+    {
+      "label": "100억 쇼핑몰 10부작 (2023)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_100억_10부작"
+    },
+    {
+      "label": "구글애즈 60억 10부작 (2023)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_구글애즈_60억"
+    },
+    {
+      "label": "강남 정육점 인사이트 (2024)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_정육점"
+    },
+    {
+      "label": "공감 콘텐츠 5부작 (2017-2020)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_공감콘텐츠"
+    },
+    {
+      "label": "스토어팜 억대 매출 8부작 (2018-2019)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "iboss_series_스토어팜"
+    },
+    {
+      "label": "AI 자동화 시리즈 (2025-2026)",
+      "file_type": "document",
+      "source_file": "raw/iboss/INDEX.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "iboss_series_ai_automation"
+    },
+    {
+      "label": "나노바나나 (Gemini Image Pro)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_nanobanana"
+    },
+    {
+      "label": "Veo3",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_veo3"
+    },
+    {
+      "label": "Midjourney 7",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_midjourney"
+    },
+    {
+      "label": "Higgsfield (사실적 인물)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_higgsfield"
+    },
+    {
+      "label": "Seedream 4.0",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_seedream"
+    },
+    {
+      "label": "AKOOL (AI 모델)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "tool_akool"
+    },
+    {
+      "label": "USP = 욕구 (기능 아님)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_usp_desire"
+    },
+    {
+      "label": "공감 마케팅 7요소",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_empathy_7"
+    },
+    {
+      "label": "롤링발칸 (월 500~2500 소재 테스트)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 29,
+      "community_label": "기타: 롤링발칸 (월 500~2500 소재 테스트)",
+      "id": "concept_rolling_balkan"
+    },
+    {
+      "label": "설득 9요소 (상호성·희소성·권위 등)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 30,
+      "community_label": "기타: 설득 9요소 (상호성·희소성·권위 등)",
+      "id": "concept_persuasion_9"
+    },
+    {
+      "label": "제품>상세>소재>타겟>매체 우선순위",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_priority_5step"
+    },
+    {
+      "label": "공감 > 퀄리티 (CPA 10배 차이)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_empathy_over_quality"
+    },
+    {
+      "label": "재구매·CRM > 신규 획득",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "concept_repurchase_over_newacq"
+    },
+    {
+      "label": "AI 실행 격차 10~100배 (2026-2027 변곡)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "concept_ai_execution_gap"
+    },
+    {
+      "label": "암묵지 추출 = AI 협업 엔진",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "concept_tacit_ai_collab"
+    },
+    {
+      "label": "강남 정육점 재구매율 86% 일매출 8억",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "case_jeongyukjeom_rebuy"
+    },
+    {
+      "label": "AI 무중단 스튜디오 일매출 8천만",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 3,
+      "community_label": "바이브코딩 & 에이전트 스택",
+      "id": "case_ai_studio_8000"
+    },
+    {
+      "label": "누적 광고비 2,500억 집행 경험",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "case_ad_spend_2500"
+    },
+    {
+      "label": "구글애즈 (PMax·Discovery·Video)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_google_ads"
+    },
+    {
+      "label": "메타 광고 (페이스북·인스타)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_meta_ads"
+    },
+    {
+      "label": "숏폼 (틱톡·릴스·쇼츠)",
+      "file_type": "document",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-04-13",
+      "author": "최재명 (근육돌이)",
+      "contributor": null,
+      "community": 0,
+      "community_label": "iboss 201건 지식베이스 (최재명)",
+      "id": "platform_shortform"
     }
   ],
   "links": [
@@ -3643,6 +4033,366 @@
       "confidence_score": 1.0,
       "source": "rewrite_iboss_aliases_as_knowledge_rewrite",
       "target": "rewrite_iboss_aliases_as_knowledge_main"
+    },
+    {
+      "relation": "indexes",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "source_iboss_wiki",
+      "_tgt": "iboss_index_201",
+      "confidence_score": 1.0,
+      "source": "source_iboss_wiki",
+      "target": "iboss_index_201"
+    },
+    {
+      "relation": "credibility_for",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ad_spend_2500",
+      "_tgt": "source_iboss_wiki",
+      "confidence_score": 1.0,
+      "source": "source_iboss_wiki",
+      "target": "case_ad_spend_2500"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_40부작",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_40부작"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_100억_10부작",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_100억_10부작"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_구글애즈_60억",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_구글애즈_60억"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_정육점",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_정육점"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_공감콘텐츠",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_공감콘텐츠"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_스토어팜",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_스토어팜"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_index_201",
+      "_tgt": "iboss_series_ai_automation",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "iboss_series_ai_automation"
+    },
+    {
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_meta_ads",
+      "_tgt": "iboss_index_201",
+      "confidence_score": 1.0,
+      "source": "iboss_index_201",
+      "target": "platform_meta_ads"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_40부작",
+      "_tgt": "concept_priority_5step",
+      "confidence_score": 1.0,
+      "source": "iboss_series_40부작",
+      "target": "concept_priority_5step"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_40부작",
+      "_tgt": "concept_usp_desire",
+      "confidence_score": 1.0,
+      "source": "iboss_series_40부작",
+      "target": "concept_usp_desire"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_100억_10부작",
+      "_tgt": "concept_repurchase_over_newacq",
+      "confidence_score": 1.0,
+      "source": "iboss_series_100억_10부작",
+      "target": "concept_repurchase_over_newacq"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_100억_10부작",
+      "_tgt": "concept_priority_5step",
+      "confidence_score": 1.0,
+      "source": "iboss_series_100억_10부작",
+      "target": "concept_priority_5step"
+    },
+    {
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_google_ads",
+      "_tgt": "iboss_series_구글애즈_60억",
+      "confidence_score": 1.0,
+      "source": "iboss_series_구글애즈_60억",
+      "target": "platform_google_ads"
+    },
+    {
+      "relation": "evidences",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_구글애즈_60억",
+      "_tgt": "case_ad_spend_2500",
+      "confidence_score": 1.0,
+      "source": "iboss_series_구글애즈_60억",
+      "target": "case_ad_spend_2500"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_정육점",
+      "_tgt": "case_jeongyukjeom_rebuy",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "case_jeongyukjeom_rebuy"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_정육점",
+      "_tgt": "concept_repurchase_over_newacq",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "concept_repurchase_over_newacq"
+    },
+    {
+      "relation": "amplifies",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "platform_shortform",
+      "_tgt": "iboss_series_정육점",
+      "confidence_score": 1.0,
+      "source": "iboss_series_정육점",
+      "target": "platform_shortform"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_공감콘텐츠",
+      "_tgt": "concept_empathy_over_quality",
+      "confidence_score": 1.0,
+      "source": "iboss_series_공감콘텐츠",
+      "target": "concept_empathy_over_quality"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_공감콘텐츠",
+      "_tgt": "concept_empathy_7",
+      "confidence_score": 1.0,
+      "source": "iboss_series_공감콘텐츠",
+      "target": "concept_empathy_7"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "concept_ai_execution_gap",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "concept_ai_execution_gap"
+    },
+    {
+      "relation": "articulates",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "concept_tacit_ai_collab",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "concept_tacit_ai_collab"
+    },
+    {
+      "relation": "documents",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "iboss_series_ai_automation",
+      "_tgt": "case_ai_studio_8000",
+      "confidence_score": 1.0,
+      "source": "iboss_series_ai_automation",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_nanobanana",
+      "confidence_score": 1.0,
+      "source": "tool_nanobanana",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_veo3",
+      "confidence_score": 1.0,
+      "source": "tool_veo3",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_midjourney",
+      "confidence_score": 1.0,
+      "source": "tool_midjourney",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_higgsfield",
+      "confidence_score": 1.0,
+      "source": "tool_higgsfield",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_seedream",
+      "confidence_score": 1.0,
+      "source": "tool_seedream",
+      "target": "case_ai_studio_8000"
+    },
+    {
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "source_file": "wiki/sources/src-iboss-choi-jaemyeong.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "case_ai_studio_8000",
+      "_tgt": "tool_akool",
+      "confidence_score": 1.0,
+      "source": "tool_akool",
+      "target": "case_ai_studio_8000"
     }
   ]
 }
