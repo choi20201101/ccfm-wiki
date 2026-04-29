@@ -1,0 +1,17 @@
+---
+source_file: "raw/qscv/chunks/CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk004.md"
+type: "document"
+community: "영상 필수 기획 항목 Appendix"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/영상_필수_기획_항목_Appendix
+---
+
+# 퍼포먼스 사고 확장 chunk4 (무의식/인식/설득)
+
+## Connections
+- [[무의식인식설득 3단 구조]] - `references` [EXTRACTED]
+- [[치알디니 7대 설득 요소 (상호성희소성권위일관성사회적증거호감숫자근거)]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/영상_필수_기획_항목_Appendix

@@ -1,0 +1,494 @@
+{
+  "colorGroups": [
+    {
+      "query": "tag:#community/\ubc14\uc774\ub7f4_\uc9c0\uc2dd",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/\uc601\uc0c1_\ud544\uc218_\uae30\ud68d_\ud56d\ubaa9_Appendix",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/inject_diet_b2a_v2_aliases.py",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/coding-lessons",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/\ub9c8\ucf00\ud305_40\ubd80\uc791_[13/40]_\uad11\uace0_3\ub2e8\uacc4_\uad6c\uc870\uc640_\ucea0\ud398\uc778_\ubaa9\ud45c",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/diet-b2a-v2_step-06_PLAN_30_\uc601\uc0c1_ffmpeg_\ud569\uc131",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/\uad50\uacfc\uc11c\uc801\uc778_SNS_\ud398\uc774\uc9c0_\ud65c\uc131\ud654\ubc29\ubc95_7\uac00\uc9c0\uc640_\ucee8\ud150\uce20_\ubcf8\uc9c8",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/\ud398\uc774\uc2a4\ubd81_\uc804\ud658\uc728_10%_\ub9cc\ub4dc\ub294_\ud575\uc2ec_5\uac00\uc9c0",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/compose.py",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/\uace0\uac1d\uc774_\uc9c0\uac11\uc744_\ud65c\uc9dd_\uc5f4\uc5b4\ubc84\ub9ac\ub294_3\uac00\uc9c0_\uc2ec\ub9ac_\uc870\uc791\ubc95",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Foreign_Influencer_Guide_README",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/AI_\ubaa8\ub378_\uc0dd\uc131_-_\ubaa8\ub378\ub8cc_0\uc6d0\uc758_\uc2dc\ub300",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/\ub124\uc774\ubc84_GFA",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/\uacbd\uc7c1\uc790_\ubd84\uc11d",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/CCFM_\ubbf8\ub514\uc5b4\ubcf8\ubd80_\uace0\uac1d\uc5ec\uc815\ud3b8_chunk002_(\uc601\uc0c1\uc81c\uc791\u00b7\uc131\uacfc\uc9c0\ud45c\u00b7\ud6c4\ud589\uc561",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/\uad6c\uae00\uc560\uc988_2\ub144\uac04_60\uc5b5_\uc368\ubcf8_\uacbd\ud5d8_1\ubd80_\uc778\ud2b8\ub85c",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/\uac15\ub0a8\uc5d0\uc11c_\uc815\uc721\uc810\uc73c\ub85c_\uc218\uc5b5_\ub9e4\ucd9c_\uc62c\ub9b0_\uc815\uc721\uc810_\ub300\ud45c\uc758_\uc778\uc0ac\uc774\ud2b8_2\ud0c4",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/\ub9c8\ucf00\ud305_40\ubd80\uc791_[16/40]_\uc7ac\uace0\uad00\ub9ac\uc640_\uc81c\ud488\uc218\uba85\uc8fc\uae30",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/gemini_client.py",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/diet-b2a_compose_(ffmpeg_filter_complex)",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/Set_10_v23_Before",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/\uba87\ubc31\uc5b5_\ub9e4\ucd9c_\uc2e4\ub825\uc790_\uacf5\ud1b5\uc810_7\uac00\uc9c0",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/100\uc5b5\ub300_\uc1fc\ud551\ubab0_\uc2dc\ub9ac\uc988_1\ud0c4",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Step_01_\u2014_\uc5d0\uc14b_\uc900\ube44_(\uc624\ubc84\ub808\uc774_PNG_+_\uc5bc\uad74\ubc15\uc2a4)",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Set7_before_prompts_(v1+v23,_fat/messy/n",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/\ub9c8\ucf00\ud305_40\ubd80\uc791_[15/40]_\uad11\uace0_\ub370\uc774\ud130_\ud1b5\ucc30\uacfc_\uac1c\uc120_\uc544\uc774\ub514\uc5b4",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/[QSCV_Appendix]_\uac1d\ub2e8\uac00_\uc810\uac80",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/\ubbf8\ub4dc\uc800\ub2c8\ub97c_\uc4f0\uba74_\ubaa8\ub378\ube44,_\ucd2c\uc601\ube44_1000\ub9cc\uc6d0_\uc544\ub08d\ub2c8\ub2e4",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/\uac80\uc0c9\uad11\uace0_\ub9e4\ub274\uc5bc_chunk1_(\ud0a4\uc6cc\ub4dc_\uc720\ud615_\ubd84\ub958)",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/_extract_and_chunk.py",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/detect_faces.py",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/gen_kling.py",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/GFA_\uc2e0\uaddc_\ud53c\ub4dc_\uc9c0\uba74\uacfc_\uc601\uc0c1_\uc9c0\uba74\uc758_\ub178\ud558\uc6b0_N\uac00\uc9c0_\uacf5\uc720\ub4dc\ub9bd\ub2c8\ub2e4",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/decision-rules",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/\ub9c8\ucf00\ud305_40\ubd80\uc791_[14/40]_\uad11\uace0_\ucd94\uc801_\uae30\uc900\uacfc_\ubc29\uc2dd",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/\uba85\uc808_\ub2e8_10\uc77c\ub9cc\uc5d0_1\uc5b5_\ub9e4\ucd9c_\ub9cc\ub4dc\ub294_5\uac00\uc9c0_\ubc29\ubc95",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/logo_remover.py",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/rewrite_iboss_aliases_as_knowledge.py",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/lessons-learned",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/Gemini_Session_Screenshot",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/inject_aliases_from_h1.py",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/inject_iboss_entities.py",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/inject_korean_aliases.py",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/1000\ub9cc_\uc870\ud68c\uc218_\ub098\uc628_\ubc14\uc774\ub7f4_\ubc95\uce59_\ud1b5\ud55c_\uae30\ud68d\ud558\ub294_\ubc29\ubc95",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/analyze_bgm.py",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/30\ubd84_\ud3b8\uc9d1_ROAS_300%_\uc601\uc0c1_\uafc0\ud301",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/\uc131\uacfc_100\ubc30_\uc624\ub974\ub294_\ubb38\uc81c\ud30c\uc545_\ubb38\uc81c\ud574\uacb0_\uae30\ubcf8\uae30",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/\ub098\ub178\ubc14\ub098\ub098\ub85c_\ubaa8\ub378\ub8cc_\uc6d4_1\uc5b5_\uc808\uac10",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/diet-b2a-v2_step-06_HOOK_\ud569\uc131_\ub2e8\uacc4\uc758_\ud488\uc9c8_\ub808\ubc84",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/check_session.py",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/inject_diet_b2a_v2_aliases.py",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/10\ubc30_\uc131\uc7a5\ud558\ub294_\uc0ac\uace0\uc640_\ubc29\ud5a5\uc131_11\uac00\uc9c0",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/\uc131\uacfc_2\ubc30_\ube68\ub9ac_\ub9cc\ub4dc\ub294_\ud37c\ud3ec\uba3c\uc2a4_\uce58\ud2b8\ud0a4",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/\uacb0\uad6d\uc5d0_\uc81c\ud488_\uc911\uc2ec_\uc0ac\uace0\uac00_\ud574\ub2f5\uc774\ub2e4_[\ud14c\ubb34_\uc54c\ub9ac_\uc8fc\ucda4?]",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/2500\uc5b5_\uc368\ubcf8_\ub9c8\ucf00\ud130\uc758_\ubb34\ubb3c_2025\ub144",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Gemini_Logo_Remover_v3.0_Report_(CEO_\uc9c1\uc811_",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/build_sets.py",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/QSCV_docx_extractor_and_chunker",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/\ub9c8\ucf00\ud130_\uc18c\ud1b5_6\uac00\uc9c0_\ubc29\ubc95",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/60\ucd08_GFA_\ubc18\ub824_\uc18c\uc7ac_\uc218\uc815_\uc571",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    },
+    {
+      "query": "tag:#community/META_\ub9e4\uccb4_\ub9e4\ub274\uc5bc_chunk6_(\uc9c0\uc6d0/FAQ)",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/USP_\ud37c\ud3ec\uba3c\uc2a4_\uce94\ubc84\uc2a4_\uc870\uc0ac_\ud50c\ub808\uc774\ubd81",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/\ubc14\uc774\ube0c\ucf54\ub529_&_\ud074\ub85c\ub4dc_\uc2a4\ud0ac",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/README.md_(CCFM_Wiki)",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/\ud37c\ud3ec\uba3c\uc2a4_\uc0ac\uace0_\ud655\uc7a5_chunk5",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/\ud37c\ud3ec\uba3c\uc2a4_\uc0ac\uace0_\ud655\uc7a5_chunk6",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    },
+    {
+      "query": "tag:#community/\ud37c\ud3ec\uba3c\uc2a4_\uc0ac\uace0_\ud655\uc7a5_chunk7",
+      "color": {
+        "a": 1,
+        "rgb": 11565729
+      }
+    },
+    {
+      "query": "tag:#community/lost2_\ub178\ud2b8\ubd81_\uc5f0\ub3d9_\ud14c\uc2a4\ud2b8",
+      "color": {
+        "a": 1,
+        "rgb": 16752039
+      }
+    },
+    {
+      "query": "tag:#community/graphify",
+      "color": {
+        "a": 1,
+        "rgb": 10253663
+      }
+    },
+    {
+      "query": "tag:#community/bdh_skill",
+      "color": {
+        "a": 1,
+        "rgb": 12234924
+      }
+    }
+  ]
+}

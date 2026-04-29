@@ -1,0 +1,16 @@
+---
+source_file: "raw/iboss/ab-6141-60119.md"
+type: "document"
+community: "구글애즈 2년간 60억 써본 경험 1부 인트로"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/구글애즈_2년간_60억_써본_경험_1부_인트로
+---
+
+# 콘텐츠 4가지 유형 (B&F·스토리·전문가·리얼리티)
+
+## Connections
+- [[구글 애즈 10억→30억 매출 7가지 - 1탄]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/구글애즈_2년간_60억_써본_경험_1부_인트로

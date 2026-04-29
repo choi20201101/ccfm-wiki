@@ -1,0 +1,16 @@
+---
+source_file: "raw/foreign-influencer-guide/scripts/USP_메라블.md"
+type: "document"
+community: "inject_diet_b2a_v2_aliases.py"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/inject_diet_b2a_v2_aliases.py
+---
+
+# B&A 타입: skin_pigmentation (기미·잡티)
+
+## Connections
+- [[메라블 루비알엔 피코샷 크림 (기미 타겟)]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/inject_diet_b2a_v2_aliases.py

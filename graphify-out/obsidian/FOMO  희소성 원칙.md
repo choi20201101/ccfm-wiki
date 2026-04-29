@@ -1,0 +1,17 @@
+---
+source_file: "raw/iboss/ab-6141-64291.md"
+type: "document"
+community: "강남에서 정육점으로 수억 매출 올린 정육점 대표의 인사이트 2탄"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/강남에서_정육점으로_수억_매출_올린_정육점_대표의_인사이트_2탄
+---
+
+# FOMO / 희소성 원칙
+
+## Connections
+- [[줄서는 정육점으로 만드는 필승 전략 1 억대 정육점 프로모션]] - `references` [EXTRACTED]
+- [[줄서는 정육점으로 만드는 필승 전략 2 억대 정육점의 비밀]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/강남에서_정육점으로_수억_매출_올린_정육점_대표의_인사이트_2탄

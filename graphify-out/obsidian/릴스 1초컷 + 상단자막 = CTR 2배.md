@@ -1,0 +1,17 @@
+---
+source_file: "wiki/tacit/viral-patterns.md"
+type: "document"
+community: "바이럴 지식"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/바이럴_지식
+---
+
+# 릴스 1초컷 + 상단자막 = CTR 2배
+
+## Connections
+- [[viral-patterns]] - `references` [EXTRACTED]
+- [[퍼포먼스 영상 7단 황금률]] - `conceptually_related_to` [INFERRED]
+
+#graphify/document #graphify/EXTRACTED #community/바이럴_지식

@@ -1,0 +1,16 @@
+---
+source_file: "raw/qscv/chunks/CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk005.md"
+type: "document"
+community: "영상 필수 기획 항목 Appendix"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/영상_필수_기획_항목_Appendix
+---
+
+# Google 매뉴얼 chunk5
+
+## Connections
+- [[Google 매체 운영 매뉴얼 (parent)]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/영상_필수_기획_항목_Appendix
