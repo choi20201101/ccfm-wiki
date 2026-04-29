@@ -1,7 +1,7 @@
 # CCFM Wiki Index
 
 > 🔥 = 활발 (커밋 4+) · 📘 = 참조용 (커밋 2-3) · 💤 = 미작성 스텁
-> 최종 정리: 2026-04-16
+> 최종 정리: 2026-04-29
 
 ---
 
@@ -71,6 +71,14 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - Gemini Deep Research: 공식 API 없음 → 하이브리드 전략 명시
 - 성공 케이스: [[sources/src-market-research-pipeline-2026-04]] (주름·유쎄라블)
 
+### 🔥 GPT 광고 소재 배치 생성 — [[domains/gptim-ad-creative-batch]] (NEW 2026-04-28)
+**"/gptim" / "광고 소재 N장 만들어줘" 요청 시 이 스킬로 진행.**
+- ChatGPT 비공식 백엔드(god-tibo-imagen) 활용, API 키 없이 ~/.codex/auth.json 재사용
+- 6질문 입력 → 매트릭스 → 스모크 5장 → 풀배치 (1장당 ~140초)
+- 시드 폴더 4종(face/pd/best/canvas) + 금지 카피/반려 사유 학습
+- 한국 GFA/카카오/네이버 매체 심의 룰 사전 차단
+- 검증 케이스: 메라블 루비알엔 앰플클렌저 100장 배치
+
 ### 🔥 USP 퍼포먼스 캔버스 조사 — [[domains/usp-performance-canvas-research]] (NEW 2026-04-27)
 **"USP 조사해줘 [URL]" / "퍼포먼스 캔버스 조사 [URL]" 요청 시 바로 이 구조로 진행할 것.**
 - 단일 랜딩페이지 URL → 7파일 분할 MD + 인덱스 (5~15분)
@@ -104,6 +112,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[tacit/operational-heuristics]] — 운영 노하우 (쿠팡 재고, 시즌 타이밍)
 - [[tacit/people-dynamics]] — 사람 읽기 (커뮤니케이션, 협상 신호)
 - [[tacit/viral-patterns]] — 바이럴 감각 (댓글 유도, 공유 메커니즘)
+- [[tacit/chatgpt-web-automation]] — 🆕 **ChatGPT 웹 UI 자동화 운영 룰** (playwright CDP, 셀렉터 자가진단, alt 텍스트가 가장 안정, 다운로드 동기화 함정, 2026-04-27)
 
 ### 소스
 - [[sources/src-iboss-choi-jaemyeong]] — i-boss 201건 (2017~2026) · 글별 상세: [[raw/iboss/INDEX]]
@@ -119,6 +128,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[sources/src-charde-melapeel-usp-2026-04-27]] — **샤르드 멜라케어 필크림 마스크 USP 캔버스 조사 7파일** (2026-04-27, USP 플레이북 첫 케이스)
 - [[sources/src-rubyrn-cleanser-glow-research-2026-04-28]] — **루비알엔 앰플클렌저 광채/톤업 시장조사** (네이버 API + Daum/네이트판/YouTube 크롤, PDRN 흡수 의심 인사이트, 2026-04-28)
 - [[sources/src-rubyrn-glow-deep-research-success-2026-04-28]] — 🏆 **시장조사 4단 심화 신 표준** (1·2단 + 영상 자막+썸네일 + 민간 속설, 사용자 승인 표준, 2026-04-28)
+- [[sources/src-performance-video-pipeline-v18-2026-04-28]] — 🆕 **퍼포먼스 영상 v18 검증** (메라블 루비알엔 앰플클렌저, 페르소나 1명 × 3 angle 동시 양산, 24초 세로, 2026-04-28)
 - [[sources/src-nurse-shoes-2026-04-28]] — 🆕 **브랜드 시장 단위 변형 모드** (간호사 신발 55개 + 자사몰 12개 + 착한구두 시너지 3 시나리오, 검색량 역산 + Excel 11시트 + Toss UI HTML, 2026-04-28)
 - [[sources/src-gemini-logo-remover]] — Gemini 로고 제거 (OpenCV TELEA+NS, 60~70점)
 - [[sources/src-claude-skills-inventory-2026-04-22]] — **Claude Code 스킬/커맨드 인벤토리** (20 스킬 + 18 커맨드 스냅샷, 2026-04-22)
