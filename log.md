@@ -140,3 +140,11 @@
 - tacit/operational-heuristics.md §브랜드 시너지 3 시나리오 매트릭스 append
 - index.md 핵심 지식 섹션 추가
 - 핵심 도구: nurse/fetch_brand_trends.py (DataLab+SearchAd 역산), nurse/generate_excel_report.py
+
+## [2026-04-29] ingest | rubyrn 24h 자율 파이프라인 운영 교훈
+
+- 백엔드: Playwright UI → god-tibo-imagen 사설 Codex API (안정성 급상승)
+- 버그: PNG-only skip 체크로 watcher 변환 후 같은 cid 중복 생성 (47장 손실 후 발견)
+- 운영: ScheduleWakeup 1시간 자가 감시 + autoloop 다중 실행 방지 + usage_limit 자동 대기
+- 배포: check_env.py + init_product.py 로 신상품 fork 자동화
+- 추가 위치: wiki/tacit/coding-lessons.md (8개 신규 교훈)

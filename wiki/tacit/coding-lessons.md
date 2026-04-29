@@ -4,12 +4,13 @@ type: tacit
 category: coding
 confidence: medium
 first_observed: 2026-04-13
-last_confirmed: 2026-04-27
+last_confirmed: 2026-04-29
 sources:
   - C:/Users/gguy/Desktop/MD (멀티 프로젝트 MD/스킬 시행착오 회고)
   - 협업 메뉴얼/바이브 코딩시행착오 케이스 CCFM.pdf
   - 협업 메뉴얼/바이브코딩_AI협업_지침_v2.0.md
   - C:/Users/gguy/Desktop/dance (diet-b2a-v2 Gemini 프롬프트 실전 검증 2026-04-14)
+  - C:/Users/gguy/Desktop/rubyrn-pipeline (24h 자율 광고 생성 파이프라인 운영 2026-04-29)
 ---
 
 # 코딩/자동화 교훈
@@ -1218,3 +1219,88 @@ await Stealth().apply_stealth_async(page)
 7. **캡쳐는 자동 풀이 금지** — 사용자에게 맡기고 폴링 대기.
 - confidence: high
 - source: 2026-04-27 face/ 작업 중 직접 시행착오
+
+
+## [2026-04-29] 24h 자율 광고 소재 생성 파이프라인 (rubyrn) 운영 교훈
+
+### 백엔드 선택
+- **Playwright UI 자동화 → god-tibo-imagen 사설 Codex 백엔드로 마이그레이션** 후 안정성 급상승.
+  - Playwright: ProseMirror composer 타이핑 race / 모달 폴링이 포커스 뺏기 / 60~90s/장 불안정. 디스플레이 상태에 의존.
+  - god-tibo-imagen: HTTP API 직접 호출. UI 의존 0. 110~250s/장이지만 24h 무인 가동 가능.
+- **모델 강제**: `gpt-5.5` + `reasoning_effort=high` (커스텀 패치) 가 멱등성·품질 핵심.
+
+### npm install 후 라이브러리 패치 휘발
+- `node_modules/god-tibo-imagen/src/codex/buildResponsesRequest.js` 의 `reasoning: null` → `reasoning: { effort: 'high' }` 패치는 **`npm install` 마다 덮어써짐**.
+- 해결: 패치 파일을 별도 `patches/buildResponsesRequest.js` 로 보관하고 `npm install` 후 `cp` 로 자동 복사하는 단계 강제.
+- Lesson: **npm 라이브러리 직접 수정은 ephemeral**. 항상 패치 보관 + 재적용 자동화 + 검증 (grep "CODEX_REASONING_EFFORT") 필요.
+
+### skip-if-exists 양쪽 포맷 체크 필수
+- 워크플로우: `mjs 배치` 가 PNG 저장 → `watcher` 가 1200 JPEG 변환 + 원본 PNG 삭제.
+- 버그: mjs 의 skip 로직이 PNG 만 체크 (`outputPath.png` 존재 여부) → watcher 가 변환·삭제 후 다음 사이클에서 "PNG 없음" 으로 판단해 같은 cid **재생성**.
+- 결과: 47장 중복 생성. `out/final/0560_*.jpg` (15:08) + `out/final/0560_*.png` (15:13) — JPG 후 PNG 가 새로 만들어짐.
+- 수정: `if (await fileExists(pngPath) || await fileExists(jpgPath)) { skip; }` 양쪽 체크.
+- Lesson: **파이프라인 단계별로 산출물 포맷 변환되면 skip 체크는 모든 가능 포맷 OR 검사**.
+
+### autoloop 다중 실행 방지 (운영 사고)
+- `nohup python autoloop.py &` 를 사용자가 여러 번 실행 → autoloop 3개 동시 가동.
+- 같은 `rubyrn_variants.json` 을 동시 처리 → 같은 cid 동시 호출 → 중복·돈낭비.
+- `wmic process where "name='python3.13.exe'" get ProcessId,CommandLine /format:csv | grep autoloop` 로 PID 다중 검출.
+- Lesson:
+  - 백그라운드 프로세스 시작 전 **반드시 wmic 으로 동일 프로세스 0개 확인**.
+  - autoloop 처럼 공유 자원 쓰는 워커는 lockfile 또는 process 검사 가드 추가.
+  - 모니터링 wakeup 마다 다중 실행 여부 체크.
+
+### Codex usage_limit_reached 자동 복구 패턴
+- `prolite` 플랜은 일정 사용량 도달 시 `{"type":"usage_limit_reached","resets_in_seconds":4720}` 반환.
+- mjs 의 retry 로직이 `429` 만 처리 → `HTTP_ERROR` (usage_limit) 는 fail 후 다음으로 넘어감 → 모든 1415 variants 가 5초씩 fail = 약 47분 낭비.
+- 해결:
+  - `_gti_progress.jsonl` tail 에서 `usage_limit_reached` 반복 감지 → autoloop 정지.
+  - `resets_in_seconds` 파싱 후 그 시간 + 1분 대기 → 재시작.
+  - `ScheduleWakeup` 으로 자동 모니터링.
+- Lesson: **사용량 한도는 transient 가 아니라 정해진 시간 기다려야 풀림**. 무한 retry 금지.
+
+### 24h 무인 모니터링 (ScheduleWakeup 패턴)
+- 사용자 수면 중에도 파이프라인 유지 필요. 메모리 `feedback_autonomous_monitoring.md` 와 결합.
+- 패턴: 1시간마다 `ScheduleWakeup` → progress.jsonl tail + 프로세스 체크 + 누적 JPG 카운트 + 중복 검사 → 정상이면 다음 1시간 예약, 문제 발견 시 자동 복구.
+- 12+시간 가동 결과: 시간당 50~67장 페이스 유지. 904 → 1148 (12시간) 증가.
+- 실제 자동 복구 트리거 사례:
+  - usage_limit 다발 → 30분 대기 ScheduleWakeup
+  - watcher 죽음 감지 시 단일 인스턴스 재시작
+  - 중복 PNG-JPG pair 발견 시 PNG 정리 (JPG는 보존)
+
+### Windows 콘솔 인코딩 안전화
+- Python 스크립트 출력에 한글·emoji 있으면 cp949 인코딩 에러 (`UnicodeEncodeError: 'cp949' codec can't encode character`).
+- 해결: 스크립트 상단에 무조건 추가:
+```python
+import io, sys
+try:
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", line_buffering=True)
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", line_buffering=True)
+except Exception:
+    pass
+```
+- Lesson: **Git Bash/Windows 콘솔 양쪽에서 동작하려면 utf-8 wrapper 필수**. Korean print + emoji 사용 시 우회 불가.
+
+### 환경 점검 스크립트 (check_env.py) 패턴
+- 신규 PC 세팅 시 5개 항목 자동 검사:
+  1. Python 3.10+ + Pillow
+  2. Node.js 18+
+  3. Codex CLI 설치·로그인 (PATH + npm 글로벌 + ~/.codex/bin 다중 검사)
+  4. god-tibo-imagen npm 패키지
+  5. reasoning 패치 적용 여부
+- exit code: 0 (OK) / 1 (차단) / 2 (경고+autofix 제안)
+- Codex 검출은 `shutil.which("codex")` 만으로 부족 → npm 글로벌 (`%APPDATA%\npm\codex.cmd`), `~/.codex/bin/codex` 등도 검사.
+- auth.json 키명은 환경마다 다름 (`OPENAI_API_KEY` / `access_token` / `id_token` / `chatgpt`) → 다양한 키명 OR 검사.
+
+### 핵심 교훈 정리
+1. **UI 자동화보다 백엔드 API**가 24h 가동에 압도적 안정. UI 의존성은 좀비처럼 불안정.
+2. **npm 패치는 휘발됨** — 별도 보관 + 재적용 자동화 + 검증 셋트.
+3. **skip-if-exists 는 모든 출력 포맷 OR 체크** — 파이프라인 변환 후 출력 포맷 바뀌면 다음 사이클에서 재생성.
+4. **백그라운드 워커는 반드시 다중 실행 가드**. wmic/lockfile/portfile 등.
+5. **API 사용 한도는 transient 아님** — `resets_in_seconds` 파싱 후 정확히 대기.
+6. **장시간 자율 운영은 ScheduleWakeup 시간당 자가 감시 + 자동 복구 패턴 표준**.
+7. **Windows 한글 출력은 무조건 utf-8 wrapper**. 인코딩 폭탄.
+8. **신규 PC 배포는 check_env.py 같은 진단 도구 1개로 통합** — 사람한테 5개 항목 일일이 확인 시키지 말 것.
+
+- confidence: high
+- source: 2026-04-28 ~ 04-29 rubyrn 24h 자율 파이프라인 직접 운영 + 디버깅 + 팀 배포용 스킬 추출
