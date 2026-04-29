@@ -1220,6 +1220,7 @@ await Stealth().apply_stealth_async(page)
 - confidence: high
 - source: 2026-04-27 face/ 작업 중 직접 시행착오
 
+---
 
 ## [2026-04-29] 24h 자율 광고 소재 생성 파이프라인 (rubyrn) 운영 교훈
 
@@ -1304,3 +1305,129 @@ except Exception:
 
 - confidence: high
 - source: 2026-04-28 ~ 04-29 rubyrn 24h 자율 파이프라인 직접 운영 + 디버깅 + 팀 배포용 스킬 추출
+
+---
+
+## [2026-04-29] 키워드 기반 YouTube/Instagram 썸네일 레퍼런스 수집
+
+광고 레퍼런스용 썸네일 100장+ 일괄 수집 워크플로우 (예: "기미" 카테고리 100장).
+
+### 1. YouTube — yt-dlp + `sp` 파라미터 (날짜 필터 핵심)
+
+**핵심 트릭**: YouTube 검색 URL에 `sp` 파라미터로 업로드 날짜 필터를 직접 박는다. 영상별 풀 메타데이터 fetch 없이 검색 결과에서 view_count + 최근 업로드 모두 처리.
+
+```python
+SP_THIS_MONTH = "EgIIBA%253D%253D"   # 이번 달 (≈30일)
+url = f"https://www.youtube.com/results?search_query={quote(kw)}&sp={SP_THIS_MONTH}"
+ydl_opts = {"quiet": True, "extract_flat": True, "skip_download": True, "ignoreerrors": True}
+with YoutubeDL(ydl_opts) as ydl:
+    info = ydl.extract_info(url, download=False)
+    for e in info.get("entries", []):
+        if (e.get("view_count") or 0) >= 100_000:
+            download_thumbnail(e["id"])  # i.ytimg.com 직접 GET
+```
+
+**`sp` 파라미터 인코딩표** (URL-encoded base64):
+| 필터 | sp 값 |
+|---|---|
+| 지난 1시간 | `EgIIAQ%253D%253D` |
+| 오늘 | `EgIIAg%253D%253D` |
+| 이번 주 | `EgIIAw%253D%253D` |
+| 이번 달 | `EgIIBA%253D%253D` |
+| 올해 | `EgIIBQ%253D%253D` |
+
+**3개월 필터는 YouTube에 없음** — `sp=` 는 이번 달/올해만 지원. 3개월 필요하면 "이번 달" 결과만 받고 60일 추가 정밀 필터(영상별 풀 fetch)는 비용 큼.
+
+**썸네일 폴백 4단계** — 모든 영상이 maxresdefault 가지고 있지 않다:
+```python
+for url in (
+    f"https://i.ytimg.com/vi/{vid}/maxresdefault.jpg",
+    f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg",
+    f"https://i.ytimg.com/vi/{vid}/sddefault.jpg",
+    f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg",
+): ...
+```
+응답 5KB 미만이면 placeholder. 다음 폴백 시도.
+
+**`extract_flat=True` 의 한계** — search 결과에서는 `id`, `title`, `view_count` 만 안정적으로 옴. `upload_date`는 안 옴. 날짜 필터는 위처럼 `sp=` 로 서버사이드에서 해결.
+
+### 2. Instagram — instaloader 차단 (2026-04 기준)
+
+**instaloader 익명은 사실상 막혔다**:
+```
+JSON Query to api/v1/tags/web_info/: 403 Forbidden
+"fail" status, message "login_required"
+```
+top_posts / get_posts / hashtag.from_name 모두 401/403. 어떤 User-Agent 위장도 무용지물. 2026 들어 Instagram이 hashtag explore API를 anonymous에서 완전 차단.
+
+**우회**: DrissionPage(또는 Playwright)로 공개 explore 페이지를 브라우저 렌더링. 로그인 모달이 뜨지만 그 뒤로 thumbnail이 일부 로드된다.
+
+```python
+from DrissionPage import ChromiumPage, ChromiumOptions
+co = ChromiumOptions()
+co.set_argument("--lang=ko-KR")
+co.set_argument("--disable-blink-features=AutomationControlled")
+co.set_user_data_path(str(Path.home() / ".drission_insta_anon"))  # 본인 프로필 격리
+page = ChromiumPage(co)
+page.get(f"https://www.instagram.com/explore/tags/{tag}/")
+# 로그인 모달 닫기 시도 → 스크롤 → <img> src 수집
+```
+
+**썸네일 필터링** — `cdninstagram.com` 또는 `fbcdn.net` 호스트만 허용, `t51.2885-19` 경로(프로필 사진)는 제외, `static.cdninstagram.com/rsrc.php` (UI 자산)도 제외. 이런 가벼운 필터 없으면 UI 아이콘과 사이드바 이미지가 같이 다운된다.
+
+**조회수 필터 불가** — DrissionPage 우회는 페이지 DOM에서 src만 긁기 때문에 조회수/좋아요 메타데이터는 못 얻음. "인기 게시물" 정렬은 Instagram이 알아서 함. 그 이상 필터 원하면 로그인 필수.
+
+### 3. 워크플로우 함정 (실시간으로 부딪힘)
+
+**키워드 노이즈** — 동음이의어/인물명 함정:
+- "흑자" → 재정/사업 콘텐츠 ("흑자 헬스", "흑자 전환")
+- "한관종" → 너무 medical, 일반 콘텐츠 거의 없음
+- 인물명 단독 ("함익병") → 의사가 다른 분야(부동산·주식) 출연한 영상 다 잡힘 → "함익병 피부과", "함익병 기미" 형태로 토픽 한정 필수
+- "햇빛" → AKMU 뮤직비디오 가사 매칭 (주근깨 키워드 검색 시 노이즈)
+
+검색 매칭만으로는 노이즈 10~15% 불가피. 정확도 원하면 "키워드 + 토픽 한정 단어"(예: 인물 + 분야).
+
+**2단계 vs 인터리브** — 사용자가 즉각 항의:
+> "수집이 다운받아지면서 되야하는거아냐?"
+
+2단계(Stage 1: 모든 후보 수집 → Stage 2: 다운로드)는 UX 최악. 키워드 1개 처리할 때마다 즉시 다운로드해서 폴더에 떨어뜨리는 인터리브 구조가 정답. crash 시에도 부분 결과 보존됨. (Google Images 크롤링 §6과 같은 교훈, 2번 부딪힘.)
+
+**풀 메타데이터 fetch는 절대 피하라** — 영상별 `extract_info(watch_url)` 는 1~2초/건. 30개 후보 × 30개 키워드 = 15~30분. ThreadPoolExecutor 병렬화로 줄일 수 있지만, 그 전에 "정말 필요한가?" 자문. `sp=` 파라미터로 서버사이드 필터가 가능하면 풀 fetch 자체가 불필요.
+
+**Bash `&` 백그라운드 트랩 (Windows Git Bash)**:
+```bash
+python script.py > log.txt 2>&1 &   # ❌ bash subshell 종료 시 child도 죽음
+```
+Claude Code의 Bash 도구에서 `command &` 로 백그라운드 보내면 도구 호출이 끝날 때 자식 프로세스도 같이 죽음. 5번째 키워드에서 의문의 종료 발생. 해결: Bash 도구의 `run_in_background: true` 파라미터 사용 (Claude가 직접 child 관리).
+
+**썸네일 사이즈 검증** — 5KB 미만은 placeholder/UI 자산. 무조건 reject 후 다음 폴백 URL로:
+```python
+if r.status_code != 200 or len(r.content) < 5_000:
+    return False
+```
+
+### 4. 검증된 키워드 카테고리 (기미/잡티 케이스)
+
+100장 채우려면 단일 키워드로는 부족. 카테고리별로 분산:
+1. **Core skincare 용어** — 기미, 잡티, 색소침착, 검버섯, 주근깨, 여드름 자국
+2. **피부과 의사 채널** — "함익병 피부과", "이지함 기미", "여에스더 미백" (이름 + 분야)
+3. **뷰티 인플루언서** — 디렉터파이, 회사원A, 라뮤끄, 김달콤, 이사배 잡티
+4. **루틴/비포애프터** — "한달 미백", "기미 비포애프터", "내돈내산 미백"
+5. **브랜드/제품 리뷰** — 도미나크림, 멜라논크림, 멜라토닝, 화이테오라 + "후기"
+6. **올리브영/다이소** — "올리브영 미백", "다이소 미백 화장품"
+7. **메이크업 커버** — "잡티 컨실러", "기미 커버 메이크업"
+8. **쇼츠 변형** — "기미 쇼츠", "잡티 쇼츠"
+
+50~70개 키워드면 이번 달 + 10만뷰 조건으로 100장 수집 가능. 단일 카테고리만 쓰면 30~40장에서 막힘.
+
+### 핵심 교훈 정리
+1. **YouTube `sp=EgIIBA%253D%253D` (이번 달) 으로 서버사이드 필터** — 영상별 풀 fetch 없이 시간 90% 절약.
+2. **Instagram 익명 API는 죽었다** — instaloader는 폐기, DrissionPage 브라우저 렌더링으로만 가능. 단 조회수 필터는 포기.
+3. **인터리브 다운로드 강제** — 검색→필터→즉시 다운→다음 키워드. 2단계는 UX 적이고 crash 취약.
+4. **인물명/제품명 단독 검색 금지** — "함익병" 단독 → 부동산 영상까지 잡힘. "함익병 피부과"처럼 토픽 한정.
+5. **키워드 카테고리 분산** — 8개 카테고리 × 5~10 키워드 = 100장 안정 확보. 단일 카테고리 한계는 30~40장.
+6. **썸네일 폴백 4단계 (maxres→hq→sd→mq)** + 5KB 미만 reject.
+7. **Claude Code Bash `&` 백그라운드 금지** — `run_in_background: true` 파라미터 사용. 자식 프로세스 죽는 함정.
+8. **모호 키워드 사전 차단** — "흑자"(=재정), "한관종"(=의학용어) 같은 동음이의/희귀어 제거.
+- confidence: high
+- source: 2026-04-29 Desktop/기미_썸네일_수집/ 직접 시행착오 (총 226장 수집: YouTube 100+117장, Instagram 109장)

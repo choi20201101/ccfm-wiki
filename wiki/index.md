@@ -18,6 +18,8 @@
 - §4 Desktop/MD 멀티 프로젝트 시행착오 — Gemini, PSD, Meta, TTS, 바이브코딩 전반
 - §5 i-boss 201건 AI 자동화 교훈 — 프롬프트 설계, 5 Why, AI 도입 로드맵
 - §6 다국어 릴스 자막/더빙 체크리스트 — STT 모델, TTS 모델, 폰트, 길이 매칭
+- §7 Google Images 씨드용 원본 다운로더 (2026-04-27) — non-headless+stealth+Referer, 사이드패널 원본 추출
+- §8 키워드 기반 YouTube/Instagram 썸네일 수집 (2026-04-29) — yt-dlp `sp=` 날짜필터, instaloader 폐기/DrissionPage 우회, 인터리브 다운로드
 
 ### 크리에이티브 패턴 — [[tacit/creative-patterns]] (16KB, 10커밋)
 영상/이미지/레이아웃 실전 감각.
