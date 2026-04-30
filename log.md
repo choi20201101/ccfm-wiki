@@ -1,5 +1,15 @@
 # CCFM Wiki Log
 
+## [2026-04-30] ingest | GFA-Setting max-mode 교차 감사 (Codex 5.5 max + Claude 서브에이전트)
+
+- 두 독립 evaluator 병렬 감사 후 file:line 직접 검증 → 수렴/발산 정리
+- **두 감사 모두 수렴(가장 신뢰)**: antd CDP 트러스트 약속 위반, secrets=[] 마스킹 무력화, partial 자동정리 0, naive datetime, 죽은 코드(mappings/models 빌더/prompts/requests 등) 6개 항목
+- **Codex 5.5 max 추가 발견(검증됨)**: `browser.py:79` auto_handle_alert(accept=True) 의도외 confirm 자동수락, `ad_sets.py:410-416` 달력 월이동 미지원, operations 내부 _pause 환경변수 무시(.env delay 옵션 무력화), `(x=10,y=10)` 고정좌표 click, 새 그룹명 충돌 사전조회 0, 진단 dump 폼값 평문 저장
+- **Claude 서브에이전트 추가 발견(검증됨)**: `materials.py:672` urlMoved 정규식(`/done|/complete`) word-boundary 없음 → `/da/dashboard?type=complete` false-positive, `exceptions.GFAAPIError/GFAUploadError` 정의만 0 사용, `dd/step-01.../output/` 56 git-tracked prototype 잔재
+- **거짓 클레임 기각**: 서브에이전트의 "`_assembled/.venv` git tracked" → 루트 `.gitignore:2` `**/.venv/` 매치로 ignored 확인 (`git check-ignore -v` 통과)
+- **최종 분류**: 릴리스 차단 5건(antd 트러스트/마스킹/partial 출력/urlMoved 정규식/auto_handle_alert) + v0.2 차단 5건(timezone/_pause 환경변수/fingerprint/그룹명 충돌/달력 월이동) + 백로그 6건(죽은 코드/dd output/셀렉터 중앙화/dump 디렉토리·마스킹/단독 보호 파일/실브라우저 스모크)
+- 갱신: [[domains/gfa-setting-automation]] §최종 max-mode 교차 감사
+
 ## [2026-04-30] ingest | GFA-Setting 위키 보강 — 코덱스 2차 감사 + UI 깨짐 대응 플레이북
 
 - 코덱스(gpt-5) CLI 2차 감사: 죽은 코드 + 방향성 위험

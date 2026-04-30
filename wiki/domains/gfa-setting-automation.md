@@ -161,6 +161,61 @@ E2E 4시간 troubleshooting 핵심 교훈 ([[tacit/coding-lessons]] 후보):
 - E2E dry-run (2026-04-30): **N=3 atomic 성공**, 모두 `/create/complete` 진입 (테스트 캠페인 1327677, CCFM-인완-네리티아 계정)
 - 상세: 저장소 `_assembled/E2E_TEST_REPORT.md`
 
+## 🔬 최종 max-mode 교차 감사 (2026-04-30) — Codex GPT-5.5 max + Claude 서브에이전트 병렬
+
+> 두 독립 evaluator 가 같은 코드를 별도 컨텍스트에서 감사. 수렴/발산 클레임 직접 file:line 검증 후 정리.
+
+### 두 감사 모두 수렴한 사실 (가장 신뢰도 높음)
+1. **antd CDP 트러스트 약속 위반** — README.md:62 / SKILL.md:53 약속과 달리 `ad_sets.py:73,99,133-140,169-171,336-342`, `materials.py:63,89-96,124-126,255` 에 `dispatchEvent` + `Object.getOwnPropertyDescriptor(...HTMLInputElement.prototype, 'value').set` 잔존. **N=3 dry-run 통과는 hydrate 트리거(라디오/[확인])만 트러스트화된 결과**, 다른 click/input 은 antd 마이너 업데이트에 silent partial fail 직격 가능.
+2. **로그 마스킹 무력화** — `cli.py:60` `configure_logging(level=..., secrets=[])` 빈 리스트 → settings 에 `gfa_web_login_pw: SecretStr` 정의(`settings.py:31-33`)에도 마스킹 미주입.
+3. **partial 자동 정리·재시도 0** — `group_setup.py:264-276,319-322` 가 `partial.append + continue` 만, CLI 출력에서도 빠짐(`cli.py:111`).
+4. **시작시각 naive datetime** — `group_setup.py:202-204` `now() + timedelta(minutes=50)` 가 timezone 표기 없음. 시계 drift / 타임존 혼선 시 즉시 상영 또는 과거시간 거부.
+5. **죽은 코드 일치** — `mappings/*` (ADR-013 이후 0 import), `models.py:76,83,133,141` 의 `AgeRange/AdSetCreateParams/InterestCode/PurchaseIntentCode`, `prompts.py:83-101` 의 `prompt_group_count/confirm_group_creation` (group 수는 자동 계산이라 호출 0), `pyproject.toml:14,19,28,32` 의 `requests/tenacity/responses/types-requests` 의존성.
+6. **테스트 mock 중심** — `test_operations_*` 가 DOM 없는 MagicMock. 163/163 + 85% 커버리지는 **로직 정합 보장이지 GFA UI 깨짐 보장 아님**.
+
+### Codex GPT-5.5 max 가 추가로 발견 (검증됨)
+- **`browser.py:79` `set.auto_handle_alert(on_off=True, accept=True)`** — 의도치 않은 confirm/beforeunload(데이터 손실 경고 등)도 **자동 수락**. 사용자 작업 중 실수 가능성 ↑.
+- **달력 월 이동 미지원** (`ad_sets.py:410-416`) — 에러 메시지에 박혀있음(`"현재 표시 월이 다를 가능성 — 월 이동 미지원"`). 자정 직전 실행 + 시작=다음달 1일 케이스 (드물지만) 깨짐.
+- **operations 내부 `_pause` 가 환경변수 무시** — `.env` 의 `ACTION_MIN/MAX_DELAY` 는 `browser.human_delay()` 한 곳에서만 적용. `ad_sets._pause(3.0,6.0)` (`ad_sets.py:41`), modal close `(5.0,8.0)`, inter-group `(8.0,12.0)` (`group_setup.py:298`) 은 하드코딩 → **사용자가 봇탐지 강화하려고 delay 늘려도 대부분 무시됨**.
+- **마우스 경로 시뮬 0 / 고정 좌표** (`ad_sets.py:504-510`) — CDP 보강 click 이 항상 `(x=10, y=10)`. 사람 마우스 트레이스 없음.
+- **새 그룹명 충돌 사전조회 0** (`group_setup.py:212-215`) — 같은 base_name 재실행 시 `test_01` 중복 생성 가능. GFA 가 막아주면 실패, 안 막아주면 동명 그룹 누적.
+- **진단 dump 에 폼 값 평문 저장** (`materials.py:747-756, 810-813`) — `descriptionText/profileName` 등 실 광고 데이터 dump JSON 에 그대로. 다중 작업자 환경에서 디스크 노출 면 ↑.
+
+### Claude 서브에이전트가 추가로 발견 (검증됨)
+- **`urlMoved` 정규식 false-positive 위험** (`materials.py:672`) — `/\\/done|\\/complete/.test(url)` 에 word boundary 없음. URL `/da/dashboard?type=complete` 등 query string 매치 가능 → 실제는 저장 안 됐는데 saved=True. **운영 시 미세 흔적 누락 위험**.
+- **`exceptions.GFAAPIError`, `GFAUploadError`** — `exceptions.py:10,39` 정의만, src 내 raise/import 0건. ADR-011 (REST→브라우저) 이후 사어.
+- **`dd/step-01-환경셋업_API클라이언트/output/`** — git tracked 56 파일 (대부분 README/dom dump/script prototype 잔재). 디스크 484MB 중 venv/.browser_profile 은 .gitignore 로 차단됨, **순수 git 부담은 작지만 (.git 579KB) prototype 잔재가 그대로 trunk 에 노출**.
+
+### Claude 서브에이전트의 거짓 클레임 (검증 후 기각)
+- ❌ "`_assembled/.venv` 가 git tracked, 다른 PC 절대경로 박힘" → **거짓**. 루트 `.gitignore:2` 의 `**/.venv/` 패턴이 매치, `git check-ignore -v _assembled/.venv` 통과. 다른 PC 영향 없음.
+
+### 최종 분류 (두 감사 합산)
+
+**🚨 릴리스 차단 (v0.1.x 패치 권고)**
+- antd CDP 트러스트 위반 — 코드 일괄 교체 또는 SKILL/README 표현 완화 (현실에 맞춤)
+- 로그 마스킹 secrets 빈 배열 — settings 비밀 후보 자동 주입
+- partial(orphan group) CLI 출력 누락
+- `urlMoved` 정규식 false-positive — `/\/(done|complete)$/` 또는 정확 비교
+- `auto_handle_alert(accept=True)` — 데이터 손실 confirm 만 reject 하도록 분기 또는 옵션화
+
+**⚠️ v0.2 차단 (다음 릴리스 전 필수)**
+- 시작시각 timezone-aware (`zoneinfo.ZoneInfo("Asia/Seoul")`) + 시계 drift 검증
+- operations `_pause` 가 환경변수 반영 — 봇탐지 강화 옵션 실효화
+- fingerprint/마우스 경로 시뮬 (현재 봇탐지 단순 균등 sleep + 고정좌표)
+- 새 그룹명 충돌 사전조회 + 자동 suffix bump
+- 달력 월 이동 지원 또는 다음달 시작 차단
+
+**📋 백로그**
+- 죽은 코드 일괄 제거 (`mappings/`, models 빌더 4종, prompts 미사용 2종, exceptions 2종, requests/tenacity/responses/types-requests)
+- `dd/step-01-...output/` 56 파일 → `_archive/` 분리
+- 셀렉터 중앙화 (`selectors.py`)
+- 진단 dump 디렉토리 옵션화 + 폼 값 마스킹
+- `_assembled/.gitignore` + `.pre-commit-config.yaml` 단독 신설 (떼어 갈 때 보호)
+- 테스트 일부를 실 브라우저 스모크로 보강
+
+### 종합 결론
+v0.1.0 은 happy path (N=3, 정상 GFA UI) 동작 검증됨. 그러나 **문서 약속 vs 코드 정합 (antd 트러스트, 마스킹, partial 표시)** 과 **edge case 견고성 (timezone, urlMoved 정규식, auto-confirm)** 에 5개 릴리스 차단급 균열. 운영은 가능하지만 SKILL.md/README.md 의 안전 약속을 글자 그대로 신뢰하면 안 됨 — 본 §최종 감사 항목을 운영 매뉴얼 일부로 취급.
+
 ## ⚠️ 코덱스 2차 감사 — 죽은 코드 + 방향성 위험 (2026-04-30)
 
 ### 죽은 코드 (직접 검증 완료, 0 import / 0 호출)
