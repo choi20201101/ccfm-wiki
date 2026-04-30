@@ -820,6 +820,50 @@ rubiv_v2_revised_pkg/   (~64.5MB)
 - confidence: high
 - source: 2026-04-30 루비알엔 v2 빌드 ([[wiki/tacit/video-gen-lessons|§36-42]])
 
+## 16. rubiv v3 해골 변신 광고 — 레퍼런스 분석 + 마스터 시트 + 후편집 (2026-04-30)
+
+레퍼런스 광고를 자기 제품으로 재구성하는 표준 7단 파이프라인. 7가지 신규 교훈 (상세 [[wiki/tacit/video-gen-lessons|§43-49]]).
+
+### 케이스 컨텍스트
+- 레퍼런스: 유쎄라블 볼륨필인 META 광고 (50s, 해골 변신 모티프)
+- 재구성: 루비알엔 PDRN 앰플 클렌저로 클렌저 USP 전면 재작성
+- 결과: rubiv_v3_skull_fx.mp4 (29.6s, 16컷, AE 25.0, 패키지 110MB)
+
+### 7단 파이프라인
+```
+1. 레퍼런스 영상 → 프레임 100장 + audio + scene cuts (모두 5MB 이하)
+   ↓ Gemini Vision + Codex 협업 분석
+2. 분석 산출물 → transcript / scenes_breakdown / sync_table / patterns
+   ↓ Codex 서사 재구성 (제품 USP 입력)
+3. 기획서 (00_hub.md + 01~08 split, 각 100줄 이하)
+   ↓ 사용자 컨펌
+4. 마스터 시트 2장 (yellow + pink) — Stage A 캐릭터 일관성
+   ↓ 사용자 컨펌
+5. 16 시드 PNG (마스터 reference + 실제 제품 reference)
+   - 캐릭터 컷 10개 → edit_b64.mjs (마스터 ref)
+   - 제품 컷 3개 → edit_b64.mjs (pd1.png 실제 제품 ref)
+   - 캐릭터+제품 합성 1개 → edit_multi.mjs (2 ref)
+   - 인포/도장/리뷰 2개 → generate.mjs (fresh)
+   ↓ 텍스처 후보정 (얼룩덜룩 / dewy)
+6. Kling i2v 16 모션 (5워커 병렬, ~13분)
+   ↓ build_video_v2.py (SPEED=1.0 MAX_SIL=0.35 균등 페이스)
+7. 완성 mp4 → post_fx_v3.py 컷별 줌/페이드/플래시 → final_fx.mp4
+   ↓ build_aep.py (AE 25.0)
+8. 패키지 폴더 (Desktop/rubiv_v3_skull_pkg/{cuts,audio,final,seeds})
+```
+
+### 7대 교훈 요약
+1. **레퍼런스 분석** — fps=2 프레임 + audio + scenedetect, Gemini+Codex 협업.
+2. **2단계 마스터 시트** — yellow/pink 1장씩 먼저 → edit_b64.mjs 로 전 컷 생성. base64 dataURL 변환 필수.
+3. **실제 제품 reference** — 자연어 프롬프트만으로는 임의 화장품. pd1.png 첨부 필수.
+4. **GPT-5.5 한국어 OK** — Gemini 와 달리 한국어 도장/타이포 정확. (§14 예외 케이스)
+5. **In-place 후보정** — 같은 이미지 reference + 새 프롬프트로 덮어쓰기. 텍스처 키워드 효과적.
+6. **균등 페이스 매트릭스** — SPEED=1.0 + MAX_SIL=0.35 = 16컷 30s 자연 분포.
+7. **컷별 후편집 효과** — 줌(scale+crop eval=frame), 페이드, 플래시 매핑 룰. build/fx 단계 분리.
+
+- confidence: high
+- source: 2026-04-30 루비알엔 v3 해골 변신 광고 ([[wiki/tacit/video-gen-lessons|§43-49]])
+
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
 

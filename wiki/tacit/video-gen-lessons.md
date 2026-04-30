@@ -1063,3 +1063,199 @@ atempo 매트릭스도 감정 곡선에 맞춰야 함. 균일하게 빠르게 X.
 
 - confidence: high
 - source: 2026-04-30 v09 회고 — Day5(1.24s) < Day3(1.55s) 가속 깨짐 / Day7 광채 1.60s 절정 약함 / CTA 1.30s 너무 짧음 진단
+
+---
+
+## 43. 레퍼런스 영상 분석 → 재구성 파이프라인 (2026-04-30, 루비알엔 v3 해골 변신)
+
+기존 광고를 자기 제품으로 재구성할 때 표준 분석 흐름.
+
+### 43.1 영상 → 분석 가능 자산 분해
+```bash
+# 1) 프레임 100장 (2fps) — Gemini Vision 입력용
+ffmpeg -i ref.mp4 -vf "fps=2,scale=540:960" -qscale:v 3 frames/f_%03d.jpg
+# 2) 오디오 (16kHz mono) — STT 용
+ffmpeg -i ref.mp4 -vn -ac 1 -ar 16000 -b:a 128k audio.mp3
+# 3) scene cut 자동 감지
+ffmpeg -i ref.mp4 -filter:v "select='gt(scene,0.30)',showinfo" -f null - 2>&1 | grep pts_time
+```
+50초 영상 → 100장 프레임(~5MB) + 1MB 오디오 + 13개 cut 타임스탬프. 각 산출물 모두 5MB 이하라 Gemini 첨부 안전.
+
+### 43.2 멀티 LLM 협업 분담
+- **Gemini Vision** (`gemini -p` 또는 Python SDK): 씬별 비주얼/자막/모션 분석. 영상 직접 첨부.
+- **Codex (gpt-5.5 high)**: 분석 결과 → 새 제품 USP에 맞춘 서사 재구성·카피 작성. Codex 한도 걸리면 Gemini 로 fallback.
+
+### 43.3 산출물 표준
+- `transcript.json` — 더빙 전사 (start/end/text/tone/breath_after)
+- `scenes_breakdown.json` — N개 씬별 분석
+- `sync_table.md` — 자막↔더빙 동기화 표
+- `patterns.md` — 컷·색감·음악 패턴
+- `기획서_full.md` (300줄 이하) + `plan/00_hub.md` 인덱스 + `01_story.md` ~ `08_build.md` (각 100줄 이하 hub-and-spoke 패턴)
+
+## 44. 캐릭터 일관성 — 2단계 마스터 시트 전략 (2026-04-30, 루비알엔 v3)
+
+캐릭터(해골/마스코트) 가 여러 컷에 등장할 때 일관성 확보 표준.
+
+### 44.1 Stage A — 마스터 시트 1회 생성
+ACT 1 상태(예: 누런 해골) + ACT 3 상태(핑크 광채 해골) 마스터 1장씩 먼저 만들고 사용자 컨펌.
+```bash
+node scripts/generate.mjs "<full visual prompt for yellow master>"
+# → out/yellow_master.png
+```
+
+### 44.2 Stage B — 모든 씬을 마스터 reference 로 생성
+god-tibo-imagen 의 edit 기능 사용. 단 원본 `edit.mjs` 는 **로컬 파일 절대경로를 그대로 보내서 400 에러** ("Invalid 'image_url'. Expected a valid URL").
+
+**해결: data:URL base64 변환 패치본 `edit_b64.mjs`:**
+```js
+const buf = await readFile(inputAbs);
+const dataUrl = `data:image/${mime};base64,${buf.toString('base64')}`;
+await provider.generateImage({ prompt, model, images: [dataUrl], outputPath });
+```
+이러면 ChatGPT Codex 백엔드가 reference 를 정상 인식.
+
+### 44.3 Multi-image edit (캐릭터 + 제품 합성)
+S14 같이 "캐릭터가 제품을 들고 있는" 컷은 reference 2장 동시. `edit_multi.mjs`:
+```js
+const dataUrls = refs.map(r => `data:image/${mime};base64,${b64}`);
+provider.generateImage({ prompt, model, images: dataUrls, outputPath });
+```
+호출: `node edit_multi.mjs <out> "프롬프트" <pink_master.png> <pd1.png>`
+
+### 44.4 In-place 후보정 (덮어쓰기 edit)
+1차 결과 텍스처가 매끈하면 같은 이미지를 reference + 새 프롬프트로 호출하면 그 자리에 덮어씀.
+효과적인 키워드:
+- yellow 거친: `얼룩덜룩 mottled blotchy uneven yellow patches with darker brown spots, NOT plastic smooth`
+- pink 자연: `dewy pearlescent rose-pink mottling, natural sheen, real luminous skin texture, NOT plastic-smooth glossy white`
+
+### 44.5 캐릭터 무관 컷 분류
+모든 컷 캐릭터 일관성 강제할 필요 없음. 별도 fresh 생성:
+- 인포그래픽 (PDRN 진피)
+- 스마트폰 mockup (리뷰)
+- 도장 (환불 보장)
+- 마크로 손바닥 (앰플)
+→ generate.mjs 로 fresh, reference 불필요.
+
+## 45. 실제 제품 사진 reference 필수 (2026-04-30, 루비알엔 v3)
+
+### 증상
+"RubyRN ampoule cleanser bottle (frosted magenta-pink glass...)" 식으로 자연어로만 설명하면 GPT 가 임의의 화장품 병을 그림. 사용자: **"루비알엔 제품이 아님"**.
+
+### 해결
+실제 제품 누끼 사진 (`pd/pd1.png`) 을 reference 로 첨부 + "Use this exact RubyRN bottle (red-pink liquid, white label 'x melable' logo, 'RubyRN Ampoule Cleanser' text, 'PDRN+Vitamin C / Glutathione+Niacinamide' subtext, 150ml)" 프롬프트.
+
+### 적용 컷
+- 제품 hero (S04)
+- 손바닥에 짜는 컷 (S05) — 제품 부분 노출 필요
+- 캐릭터가 제품 들고 있는 컷 (S14) — multi-image (캐릭터 마스터 + 제품)
+
+### 검증 패턴
+1차 생성 후 결과 mp4/png 직접 보면서 "라벨 텍스트 = 실제 제품과 일치하는지" 확인. 다르면 즉시 재생성.
+
+## 46. GPT-5.5 image gen 은 한국어 텍스트 정확히 그림 (2026-04-30)
+
+기존 §14 ("Gemini는 한국어 텍스트를 이미지에 못 그림") 의 예외 케이스. GPT-5.5 (god-tibo-imagen 백엔드) 는 한국어 도장/타이포 한 번에 정확히 생성.
+
+### 검증 케이스
+프롬프트: `한국어 도장 이미지: 마젠타 핑크 색상의 둥근 도장, 도장 안에 굵은 한국어 글씨로 '30일 환불 보장' 명확하고 정확하게 렌더링`
+→ 1번 생성에 한글 정확, 잉크 튐 효과 자연. ([[wiki/sources/src-rubiv-v3-skull-2026-04-30]])
+
+### 룰
+- Gemini imagen → 영문 강제 (§14 그대로 유효)
+- GPT-5.5 (god-tibo-imagen) → 한국어 OK, 단 프롬프트도 한국어로 명확히
+- 두 백엔드 모두 동시에 갖고 있으면 텍스트 들어가는 컷은 GPT-5.5 로 보낼 것
+
+## 47. 리듬감 — SPEED + MAX_SIL 조합 표 (2026-04-30, 루비알엔 v3)
+
+§35.3 라인별 차등 atempo 의 단순화 버전. 균등 페이스가 필요할 때.
+
+### 검증 매트릭스 (16컷 30s 기준)
+
+| 페이스 의도 | SPEED | MAX_SIL | 결과 |
+|------------|-------|---------|------|
+| 너무 빠름 (앞부분 루즈, 뒷부분 가속) | 1.05 | 0.20 | 26.8s, ACT 3 1.5s/컷 (헐떡) |
+| **균등 자연 페이스** ✅ | 1.00 | 0.35 | 29.6s, ACT 3 2.0s/컷 (인지 가능) |
+| 여유로운 페이스 | 0.95 | 0.45 | 35s+, 광고 길이 초과 우려 |
+
+### 검증된 컷 길이 분포 (균등 페이스)
+- ACT 0/1 (HOOK/PAIN): 0.9~2.0s
+- ACT 2 mid (TRANSFORM): 2.0~2.85s
+- ACT 3 PROOF: 1.85~2.10s
+- CTA: 1.5s
+
+### 사용자 신호 → 조정 방향
+- "앞은 느린데 뒤가 갑자기 빠름" → SPEED 낮추고 MAX_SIL 높임
+- "전체적으로 늘어짐" → SPEED 1.05~1.10
+- "긴급함이 필요" → SPEED 1.05 + 라인별 차등 (§35.3)
+
+## 48. 후편집 효과 (post_fx) — 줌·페이드·플래시 (2026-04-30, 루비알엔 v3)
+
+빌드 완료 mp4 에 **컷별** 시네마틱 효과 추가 후처리 스크립트 패턴.
+
+### 48.1 줌 (시간 가변 스케일 + 센터 크롭)
+```python
+zexpr = f'{s_start}+({s_end}-{s_start})*t/{dur:.3f}'
+vf = (
+  f"scale=w='{W}*({zexpr})':h='{H}*({zexpr})':eval=frame,"
+  f"crop={W}:{H}:(iw-{W})/2:(ih-{H})/2,setsar=1"
+)
+```
+- 줌인: `s_start=1.0, s_end=1.06`
+- 줌아웃 settle: `s_start=1.05, s_end=1.0`
+- 강도 1.04~1.10 권장 (그 이상이면 화질 손상 시각적으로 보임)
+
+### 48.2 페이드
+```
+fade=t=in:st=0:d=0.3
+fade=t=out:st={DUR-0.4}:d=0.4
+```
+
+### 48.3 셔터 플래시 (셀카·카메라 컷)
+```
+eq=brightness='if(between(t,0.38,0.44),0.6,0)'
+```
+0.06s 짧은 brightness 펄스로 카메라 플래시 모방.
+
+### 48.4 매핑 룰 (검증된 패턴)
+| 역할 | 효과 |
+|------|------|
+| HOOK / PAIN / PROOF (감정 강조) | 줌인 1.04~1.10 |
+| 제품 등장 / CTA | 줌아웃 settle 1.05→1.0 |
+| 거품 reveal / TRANSFORM 시작 | 줌아웃 1.08→1.0 |
+| REVEAL (광채 등장) | 줌인 1.0→1.10 + 페이드인 0.15s |
+| 마지막 CTA | 줌아웃 + 페이드아웃 0.4s |
+| 인포그래픽 / 마크로 / stamp | 정적 (효과 없음) |
+| 셀카 / 카메라 컷 | 플래시 추가 |
+
+### 48.5 워크플로 분리
+- 1단계: build_video_v2.py 로 컷별 mp4 (효과 없음) + audio + subs 생성
+- 2단계: post_fx_*.py 로 cut_NN.mp4 → cut_fx_NN.mp4 (효과 적용) → concat → audio mux + subs burn → final_fx.mp4
+
+이렇게 분리하면 효과만 다르게 여러 버전 (A/B 테스트) 빠르게 만들 수 있음.
+
+## 49. 패키지 폴더 구조 — seeds 까지 보관 (2026-04-30, 루비알엔 v3)
+
+§42 (.aep 패키징) 확장. 후속 재생성·바리에이션 작업 위해 시드 PNG 도 패키지에 보관.
+
+### 표준 구조
+```
+Desktop/rubiv_v3_skull_pkg/  (~110MB)
+├ cuts/    16개 cut_NN.mp4 (각 1~3s, 컷 raw)
+├ audio/   full.mp3 (TTS+silence_compress) + raw + sfx_track
+├ final/   .aep (AE 25.0) + .jsx + 완성 mp4 (원본) + final_fx.mp4 (효과 적용)
+│          + subs.ass + cues.json + script.json + _ae_build.log
+└ seeds/   16 시드 PNG + 마스터 v1 (yellow/pink) + 마스터 v2 (mottled/dewy)
+```
+
+### seeds/ 보관 이유
+- 시드 PNG 가 있으면 모션만 다시 (Kling i2v 만 재실행) 가능
+- 마스터 v1/v2 가 있으면 캐릭터 추가 컷 (예: 광고 시리즈 2탄) 일관성 유지
+- 비용: PNG 16~20장 ~30MB. 이 정도 늘어도 OK.
+
+### 작업 모드
+1. 신규 변형 만들 때: `seeds/` 의 마스터 reference + edit_b64.mjs 로 새 컷 생성
+2. 모션만 다시: `seeds/SXX.png` → `gen_motion_v3.py` (Kling i2v) → 새 mp4
+3. 효과만 다시: `cuts/cut_NN.mp4` → `post_fx_*.py` 로 새 후처리
+
+- confidence: high
+- source: 2026-04-30 루비알엔 v3 해골 변신 광고 빌드 (29.6s 16컷, AE 25.0, 패키지 110MB)

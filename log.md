@@ -1,5 +1,19 @@
 # CCFM Wiki Log
 
+## [2026-04-30] ingest | 루비알엔 v3 해골 변신 광고 — 7단 파이프라인 7대 교훈 (§43-49)
+
+- 케이스: 유쎄라블 META 광고(50s) → 루비알엔 PDRN 클렌저(29.6s 16컷) 재구성
+- 7대 신규 교훈:
+  - §43 레퍼런스 영상 분석 (fps=2 프레임 + audio + scenedetect, Gemini+Codex 협업)
+  - §44 캐릭터 일관성 2단계 마스터 시트 + edit_b64.mjs (base64 dataURL 패치)
+  - §45 실제 제품 사진 reference 필수 (자연어만으론 임의 화장품 그림)
+  - §46 GPT-5.5 이미지젠은 한국어 텍스트 정확 (§14 Gemini 예외 케이스)
+  - §47 리듬감 SPEED+MAX_SIL 매트릭스 (1.0 / 0.35 = 16컷 30s 균등 분포)
+  - §48 후편집 효과 (post_fx_v3.py — 컷별 줌/페이드/플래시 매핑 룰)
+  - §49 패키지 폴더 seeds/ 보관 (재생성·바리에이션 작업용)
+- 추가 위치: wiki/tacit/video-gen-lessons.md §43-49, wiki/domains/content-ai-automation.md §16
+- 산출 패키지: C:\Users\gguy\Desktop\rubiv_v3_skull_pkg\ (110MB, AE 25.0)
+
 ## [2026-04-30] ingest | ggttt-imagen CCFM 커스텀 + 모델 강제 룰 정리
 - 신규 페이지 [[domains/ggttt-imagen]] 추가 (god-tibo-imagen 우회 이미지 생성, BDH 구조)
 - 깃허브 원본 위험 7종 → CCFM 커스텀 가드레일 정리표
