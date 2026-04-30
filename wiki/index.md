@@ -82,6 +82,13 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - 한국 GFA/카카오/네이버 매체 심의 룰 사전 차단
 - 검증 케이스: 메라블 루비알엔 앰플클렌저 100장 배치
 
+### 🔥 ggttt-imagen — GPT 우회 이미지 생성 (CCFM 커스텀) — [[domains/ggttt-imagen]] (NEW 2026-04-30)
+**"이미지 만들어줘" / "imagen" / "그림 그려줘" 요청 시 진입.**
+- `god-tibo-imagen` 깃허브 원본을 그대로 안 쓰고 보안·재현성 룰을 덧씌운 CCFM 커스텀
+- 두 핀: **(1) Codex CLI 최신** + **(2) `gpt-5.5-pro` + `reasoning_effort=max` 강제** → 어떤 에이전트가 돌려도 거의 동일 결과
+- 보안 가드: `CODEX_BASE_URL` openai.com 화이트리스트, path traversal 차단, 입력 50MB 상한, 로그 60자 truncate, `--debug` 금지
+- 같은 룰이 imagen / gptim / rubyrn-pipeline 세 스킬에 공통 적용
+
 ### 🔥 USP 퍼포먼스 캔버스 조사 — [[domains/usp-performance-canvas-research]] (NEW 2026-04-27)
 **"USP 조사해줘 [URL]" / "퍼포먼스 캔버스 조사 [URL]" 요청 시 바로 이 구조로 진행할 것.**
 - 단일 랜딩페이지 URL → 7파일 분할 MD + 인덱스 (5~15분)

@@ -1,7 +1,7 @@
-# Graph Report - .  (2026-04-29)
+# Graph Report - .  (2026-04-30)
 
 ## Corpus Check
-- Large corpus: 2043 files · ~391,604 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- Large corpus: 2044 files · ~399,894 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
 
 ## Summary
 - 1486 nodes · 2106 edges · 73 communities detected
@@ -106,26 +106,6 @@
   raw/foreign-influencer-guide/README.md → CLAUDE.md
 - `video1()` --calls--> `rel()`  [INFERRED]
   raw\skills\diet-b2a\scripts\compose.py → raw\skills\diet-b2a\scripts\lib.py
-
-## Hyperedges (group relationships)
-- **공감 콘텐츠 시리즈 통합 테마** —  [EXTRACTED 1.00]
-- **스토어팜 매출 억대 시리즈 통합** —  [EXTRACTED 1.00]
-- **GFA/CPC 최적화 클러스터** —  [EXTRACTED 1.00]
-- **40가지 심리법칙 시리즈 (1-4탄)** —  [EXTRACTED 1.00]
-- **광고 빈도/리타게팅 운영 클러스터** —  [INFERRED 0.90]
-- **정육점 오프라인 매출 사례 클러스터** —  [INFERRED 0.85]
-- **AI 이미지·영상 생성 스택 (이커머스 매출화)** —  [INFERRED 0.90]
-- **USP·포지셔닝·근거 설계 클러스터** —  [INFERRED 0.90]
-- **무의식·설득 심리 클러스터** —  [INFERRED 0.90]
-- **i-boss 201건 카테고리 분류 시스템** —  [EXTRACTED 1.00]
-- **QSCV 고객여정 매뉴얼 시스템 (퍼포먼스 캔버스 중심)** —  [EXTRACTED 1.00]
-- **CCFM 마케팅사업부 매체 매뉴얼 묶음 (GFA/META/Google/검색)** —  [EXTRACTED 1.00]
-- **diet-b2a v1 5-step pipeline (asset → kling → compose → qa → export)** —  [EXTRACTED 1.00]
-- **diet-b2a-v2 bdh pipeline (00 BGM → 01 styles → 02..07)** —  [EXTRACTED 1.00]
-- **set1 prompt bundle (Super Shy / NewJeans, 4 prompts)** —  [EXTRACTED 1.00]
-- **wiki 도메인 허브 (15 도메인)** —  [INFERRED 1.00]
-- **활성 도메인 (status/active)** —  [INFERRED 1.00]
-- **영상 자동화 핵심 스택 (diet-b2a / talmo / 외국인 / v18)** —  [INFERRED 0.90]
 
 ## Communities
 
