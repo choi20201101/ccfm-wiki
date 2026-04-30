@@ -186,3 +186,10 @@
   - §42 .aep 패키징 (절대경로 import 회피, 환경변수로 빌드 경로 강제)
 - 추가 위치: wiki/tacit/video-gen-lessons.md §36-42, wiki/domains/content-ai-automation.md §15
 - 산출 패키지: C:\Users\gguy\Desktop\rubiv_v2_revised_pkg\ (64.5MB)
+
+## [2026-04-30] ingest | B&A 표현 타이밍·감정 곡선 (v09 회고 §36)
+
+- 핵심: B&A는 **공감→충격→안도→환희** 4단계 감정 곡선. 컷 길이가 곡선 따라야.
+- v09 진단: Day5(1.24s) < Day3(1.55s) 가속 거꾸로 / Day7 광채 1.60s 절정 약함 / CTA 1.30s 못 읽음
+- 7대 규칙: Before>Trigger / Day1<3<5<7 가속 / After 길게 / Trigger 첫 0.5초 / CTA 2.5s+ / atempo도 감정 곡선 / 자막 폰트도 곡선
+- 추가 위치: wiki/tacit/video-gen-lessons.md §36
