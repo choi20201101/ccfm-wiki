@@ -1,5 +1,21 @@
 # CCFM Wiki Log
 
+## [2026-04-30] ingest | GFA-Setting 위키 보강 — 코덱스 2차 감사 + UI 깨짐 대응 플레이북
+
+- 코덱스(gpt-5) CLI 2차 감사: 죽은 코드 + 방향성 위험
+  - 죽은 코드 (직접 grep 검증): `mappings/` 폴더, `models.py:76,83,133,141` 의 4개 빌더 클래스, `pyproject.toml` 의 `requests/responses` 의존, `dd/step-01.../output/` 중복본 — 모두 src import 0건
+  - 방향성: DrissionPage 단일 장애점, 셀렉터 분산(README 중앙화 약속과 불일치), 진단 dump cwd 직쓰기, partial rollback 0, 소재 이미지 전용, 테스트 mock 중심
+  - v0.2 우선순위 7개 명문화 (죽은 코드 제거 → 셀렉터 중앙화 → diag 디렉토리화 → orphan 자동 정리 → CLI partial 출력 → secrets 주입 → 단독 보호 파일)
+- UI 깨짐 대응 플레이북 8단계 추가:
+  - diag dump 5종으로 깨짐 구간 식별 (참조 hydrate / remove images / image modal ok / set name / set url)
+  - antd CSS-in-JS hash 클래스 금지, ARIA role + data 속성 + 텍스트 매치 우선
+  - hydrate 트리거는 무조건 DP CDP 트러스트 click (이게 root cause 함정)
+  - 텍스트 input 은 `ele.input(text, clear=True)` (CDP keyboard)
+  - `is_saved` 는 URL `/create/complete` 우선 (selector false negative 회피)
+  - N=1 → N=2~3 단계 검증 후 운영 사용
+  - 자주 깨지는 4지점: 모달 클래스, 이미지 카드 wrapper, 버튼 텍스트, DatePicker 셀
+- 갱신: [[domains/gfa-setting-automation]] 본문 (§코덱스 2차 감사, §UI 변경 대응 플레이북)
+
 ## [2026-04-30] ingest | GFA-Setting 스킬 v0.1.0 — 네이버 GFA 광고 세팅 자동화 + 코덱스 감사
 
 - 신규 도메인: [[domains/gfa-setting-automation]] — `gfa-setting <광고계정ID>` 7개 입력값 → N개 광고 그룹+소재 atomic 등록

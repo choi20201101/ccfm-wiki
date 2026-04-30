@@ -161,13 +161,93 @@ E2E 4시간 troubleshooting 핵심 교훈 ([[tacit/coding-lessons]] 후보):
 - E2E dry-run (2026-04-30): **N=3 atomic 성공**, 모두 `/create/complete` 진입 (테스트 캠페인 1327677, CCFM-인완-네리티아 계정)
 - 상세: 저장소 `_assembled/E2E_TEST_REPORT.md`
 
+## ⚠️ 코덱스 2차 감사 — 죽은 코드 + 방향성 위험 (2026-04-30)
+
+### 죽은 코드 (직접 검증 완료, 0 import / 0 호출)
+- **`_assembled/src/gfa_setting/mappings/`** (interests.py, purchase_intents.py) — ADR-013 으로 폐기됐는데 파일·클래스 잔존. src 어디서도 import 0건.
+- **`_assembled/src/gfa_setting/models.py:76,83,133,141`** — `AgeRange / AdSetCreateParams / InterestCode / PurchaseIntentCode` 클래스. 27 파라미터 빌더 시절 잔재. 다른 src 파일에서 사용 0건.
+- **`_assembled/pyproject.toml:14,28`** — `requests`, `responses>=0.25` 의존성. REST API 시절 잔재. `_assembled/src` 에서 `import requests` / `import responses` 0건.
+- **`dd/step-01-환경셋업_API클라이언트/output/`, `dd/_assembled/`** — DD 빌드 단계별 산출물 중복본. 운영 코드는 `_assembled/` 만 사용.
+
+### 방향성 위험 (앞으로 발등 찍힐 결정)
+- **DrissionPage 단일 장애점** (`browser.py:25,66,75`) — 라이브러리/Chrome 자체 깨지면 전체 다운. fallback 0.
+- **셀렉터 분산** (`ad_sets.py:331,393,550`, `materials.py:59,239,550,573`) — README 의 "중앙 관리" 약속과 불일치. GFA UI 한 번 바뀌면 여러 파일 동시 수정 강제.
+- **진단 dump 가 cwd 직쓰기** — 운영 누적 시 작업 디렉토리 오염. `diag/` 같은 별도 디렉토리 분리 필요.
+- **partial 은 기록만, rollback·retry 0** (`group_setup.py:266,275,284`) — orphan group 매 운영 누적 구조.
+- **소재가 이미지 전용** (`materials.py:273,826`) — 영상/문구/프로필 override 추가 시 이 모듈 통째로 리팩터.
+- **테스트가 mock 중심** (`test_operations_ad_sets.py:35,40`, `test_operations_materials.py:46,49`) — DOM 없는 MagicMock 으로 검증, UI 변경 감지 불가. **163/163 통과는 로직 정합 보장이지 GFA UI 안 깨짐 보장 아님**.
+
+### v0.2 첫 작업 우선순위 (권장)
+1. **죽은 코드 제거** — `mappings/` 폴더 + `models.py` 의 4개 빌더 클래스 + `requests/responses` 의존성 → 패키지 슬림화
+2. **셀렉터 중앙화** — `selectors.py` 한 파일로 모음 → UI 변경 시 한 곳만 수정
+3. **진단 dump 디렉토리 옵션화** — `GFA_DIAG_DIR=./diag/` 환경변수
+4. **orphan group 자동 감지/삭제** — 다음 실행 시 partial 흔적 청소 플로우
+5. **CLI 종료 출력에 partial/orphan ID 표시** — 코덱스 1차 감사 [높음] 대응
+6. **`configure_logging` secrets 주입** — `cli.py:60` 빈 리스트 → settings 의 비밀 후보 자동 주입
+7. **`_assembled/.gitignore` + `.pre-commit-config.yaml` 단독 부재 해결** — `_assembled/` 만 떼어 가도 보호되도록
+
+## 🚨 UI 변경 / 셀렉터 깨짐 대응 플레이북
+
+GFA UI 가 antd 업데이트나 마크업 리팩터로 바뀌면 N=1 dry-run 부터 깨진다. 다음 절차로 잡는다.
+
+### 1. 어느 단계에서 깨졌는지 빠르게 식별
+실행 디렉토리에 자동 생성되는 진단 dump 로 구간 좁히기:
+
+| dump 파일 | 의미 | 이 dump 가 비어있다면 |
+|---|---|---|
+| `diag_form_01_after_reference_hydrate_<ts>.json` | 참조 그룹/소재 hydrate 직후 폼 상태 | 참조 모달 → [확인] 단계 셀렉터 깨짐. `ad_sets.py:open_reference_modal/apply_name_filter/select_first_radio/confirm_modal` 의심 |
+| `diag_form_02_after_remove_images_<ts>.json` | "모두 삭제하기" 클릭 후 | `materials.py:remove_all_reference_images` 의 button 텍스트 매치 깨짐 |
+| `diag_form_03_after_image_modal_ok_<ts>.json` | + 이미지 추가 모달 닫은 직후 | `materials.py:open_image_upload_modal / upload_image_files` 의 file input 또는 카드 셀렉터 깨짐 |
+| `diag_form_04_after_set_name_<ts>.json` | 광고 소재 이름 set 후 | `materials.py:set_creative_name` input 셀렉터 깨짐 |
+| `diag_form_05_after_set_url_<ts>.json` | 랜딩 URL set 후 | `materials.py:set_landing_url` input 셀렉터 깨짐 |
+| `diag_save_failed_<ts>.html` | [저장] 실패 시 페이지 HTML | save 버튼 텍스트 변경 또는 antd 검증 실패 |
+| `diag_calendar_no_cell_<ts>.html` | 시작일시 캘린더 진입 실패 | DatePicker 셀 셀렉터 깨짐 |
+
+→ **JSON 의 어느 필드가 `null`/빈문자열인지** 가 정확한 깨짐 지점.
+
+### 2. 로그의 "진단 [...]:" 라인 보기
+`cli.py` 가 stdout 으로 한 줄 요약 출력. 시점별 폼 상태(name/link/profile/imgCount/inputs/textareas/radios) 를 한 줄로 찍음 — dump JSON 풀로 열기 전 빠른 스캔용.
+
+### 3. 실제 GFA 페이지에서 셀렉터 새로 따기
+1. Chrome DevTools 열기 (자동화 중인 그 브라우저 그대로 사용 가능)
+2. 깨진 element 우클릭 → Inspect
+3. **antd CSS-in-JS 해시 클래스(`.css-3hsv0d` 같은)는 절대 셀렉터로 쓰지 말 것** — 빌드마다 바뀜. 이 함정에 4시간 박힌 적 있음 (E2E_TEST_REPORT §1).
+4. 안정한 후보 (우선순위):
+   - `[role="dialog"]`, `[role="combobox"]`, `[role="checkbox"]` 등 **ARIA role**
+   - `name="..."`, `data-...` 속성
+   - 버튼은 **텍스트 매치** (`.includes('확인')`, `.includes('+ 새 광고그룹')`)
+   - 이미지 카드는 **`img.parentElement` + alt 매칭** (`materials.py:upload_image_files` 패턴 그대로)
+5. modal 내부 element 찾을 때는 **반드시 modal scope 부터 좁힐 것** (`document.querySelector('[role="dialog"]') 안에서`). 페이지 전역 검색은 false-match 함정 (E2E_TEST_REPORT §2 — `0/8021200` 매치 사고).
+
+### 4. hydrate 트리거는 무조건 DP CDP 트러스트 click
+참조 그룹/소재 모달의 라디오 선택 + [확인] 클릭은 **반드시 `session.page.ele(...).click()` (DrissionPage CDP, `isTrusted=true`)** 사용. JS `dispatchEvent('click')` 이나 `Object.getOwnPropertyDescriptor(...HTMLInputElement.prototype, 'value').set` 은 React state 부분 sync 되어 **이름만 hydrate, 광고 문구/프로필/이미지 비어있는 silent partial fail** 발생 (E2E_TEST_REPORT §3 — root cause). 이게 가장 자주 박히는 함정.
+
+### 5. 텍스트 input 은 `ele.input(text, clear=True)`
+native value setter (`Object.getOwnPropertyDescriptor` 패턴) 는 antd Form store sync 가 부분 실패. CDP keyboard 입력 (`ele.input()`) 이 안전 (E2E_TEST_REPORT §4).
+
+### 6. `is_saved` 검증은 URL 우선
+[저장] 후 `/create/complete` 로 URL 이동했으면 saved=True. 페이지 마크업의 `completeActive` selector 매칭은 selector 변경에 취약 — false negative 발생함 (E2E_TEST_REPORT §5).
+
+### 7. 셀렉터 수정 후 검증 순서
+1. 단위 테스트 `pytest -k <변경 함수>` 통과 확인 (mock 이라 로직만 보장)
+2. **N=1 dry-run** 으로 실 브라우저 1회 — diag dump 5개 모두 정상값 채워졌는지 확인
+3. **N=2~3 dry-run** 으로 그룹 사이 transition 검증
+4. orphan group 모두 GFA 콘솔에서 수동 삭제 후 운영 사용
+
+### 8. 자주 깨지는 지점 우선순위
+1. **antd 모달 .ad-cms-modal 클래스** — 가장 자주 변경됨. `[role="dialog"]` 로 fallback.
+2. **이미지 카드 wrapper** — CSS-in-JS hash. `img.parentElement` (50~400px bbox) 로 회피.
+3. **버튼 텍스트** — "확인" / "다음" / "저장" / "+ 새 광고그룹" / "기존 광고 그룹 불러오기" / "모두 삭제하기" / "+ 이미지 추가". 한 글자 변경에도 매치 깨짐. 부분 매치 (`.includes`) 권장.
+4. **DatePicker 셀** — 캘린더 마크업이 antd minor 업데이트마다 자주 흔들림.
+
 ## 미해결 / 향후 작업
 
 - 영상 소재 (`.mp4` 등) 미지원 — 이미지 (`.jpg/.jpeg/.png/.gif/.webp`) 만
 - 광고 문구 사용자 override 미지원 — 참조 그대로
 - 부분 실패 자동 재시도 0회 (다음 그룹 진행)
 - 동명 라이브러리 이미지 다중 매치 시 첫 N개 사용 — 라이브러리 정리 권고
-- 코덱스 감사 치명/높음 항목 후속 패치 (문서-코드 정합 / partial 출력 / secrets 주입 / 단독 .gitignore·pre-commit)
+- 코덱스 1차 감사 치명/높음 항목 후속 패치 (문서-코드 정합 / partial 출력 / secrets 주입 / 단독 .gitignore·pre-commit)
+- 코덱스 2차 감사 v0.2 우선순위 (위 §v0.2 첫 작업 우선순위)
 
 ## 관련 페이지
 
