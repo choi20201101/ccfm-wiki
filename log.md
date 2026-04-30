@@ -1,5 +1,17 @@
 # CCFM Wiki Log
 
+## [2026-04-30] ingest | ggttt-imagen CCFM 커스텀 + 모델 강제 룰 정리
+- 신규 페이지 [[domains/ggttt-imagen]] 추가 (god-tibo-imagen 우회 이미지 생성, BDH 구조)
+- 깃허브 원본 위험 7종 → CCFM 커스텀 가드레일 정리표
+  - 모델 미강제 → `gpt-5.5-pro` + `reasoning_effort=max` 강제 (폴백 5.5/high)
+  - `CODEX_BASE_URL` 변조 → openai.com 화이트리스트 차단
+  - path traversal → cwd escape 거부 + 입력 확장자/50MB 상한
+  - 로그 누출 → 60자 이상 자동 truncate
+  - `--debug` 덤프 → 사용 금지
+- 동일 룰을 imagen / gptim / rubyrn-pipeline 세 글로벌 스킬에 공통 적용
+- 핵심 인사이트: **Codex CLI 최신 + 모델/effort 강제** 두 핀만 박으면 어떤 에이전트가 호출해도 거의 동일한 결과 (멱등성)
+- index.md "🔥 핵심 지식" 섹션에 노출
+
 ## [2026-04-23] graphify | 볼륨필인 영상 파이프라인 + Higgsfield Soul API 그래프 반영
 - 신규 소스 2종 untracked → wiki/index.md 소스 섹션에 등록
   - [[sources/src-volumefill-video-pipeline-2026-04-21]] — 볼륨필인 Day1→Day14 릴스 공장 (33편, Trio 10편)
@@ -148,3 +160,10 @@
 - 운영: ScheduleWakeup 1시간 자가 감시 + autoloop 다중 실행 방지 + usage_limit 자동 대기
 - 배포: check_env.py + init_product.py 로 신상품 fork 자동화
 - 추가 위치: wiki/tacit/coding-lessons.md (8개 신규 교훈)
+
+## [2026-04-30] ingest | 한국 퍼포먼스 광고 영상 21초 + AE 핸드오프 end-to-end 자동화
+
+- 케이스: 루비알엔 PDRN 앰플 클렌저 광고 v09 (1080x1920, 21.54s)
+- 파이프라인: ElevenLabs char-level TTS → ffmpeg atempo 라인별 속도 → 13 segs 합성 → 워드팝 자막(45 word-pops) → AE 25.0 .aep 빌드 → 핸드오프 패키지 18.2MB
+- 핵심 함정 11개 정리: amix normalize=1 볼륨 죽음 / ASS 핑크박스+핑크텍스트 투명 / AE 텍스트 sourceRectAtTime 앵커 보정 / AE 버전별 .aep 호환 / 핸드오프는 별도 절대경로 재빌드
+- 추가 위치: wiki/tacit/coding-lessons.md ([2026-04-30] 섹션, 11단계 + 10대 교훈)

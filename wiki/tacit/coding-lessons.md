@@ -1431,3 +1431,85 @@ if r.status_code != 200 or len(r.content) < 5_000:
 8. **모호 키워드 사전 차단** — "흑자"(=재정), "한관종"(=의학용어) 같은 동음이의/희귀어 제거.
 - confidence: high
 - source: 2026-04-29 Desktop/기미_썸네일_수집/ 직접 시행착오 (총 226장 수집: YouTube 100+117장, Instagram 109장)
+
+## [2026-04-30] 한국 퍼포먼스 광고 영상 (1080x1920 21초) 파이프라인 + AE 핸드오프 패키지 자동화
+
+### 성공 시나리오
+루비알엔 PDRN 앰플 클렌저 광고 영상 v09를 한 번의 파이프라인으로 mp4 + AE 프로젝트(.aep) + 동료 전달용 footage 패키지까지 end-to-end 자동 생성. 13개 라인 TTS → 13개 비주얼 segs → 자막 워드팝 → 합성 → AE 빌드 → 핸드오프 zip-ready.
+
+### 핵심 단계와 교훈
+
+#### 1. ElevenLabs TTS with-timestamps 활용
+- **`with-timestamps` 엔드포인트** — 일반 TTS 대신 `https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps` 호출하면 char-level 타임스탬프(`alignment.character_start_times_seconds` / `_end_times_seconds`) 포함 응답.
+- 이 char-level 타임스탬프를 공백 경계로 묶어 **단어별 (st, et) 추출** → 워드팝 자막의 정확한 보이스 동기화 가능.
+- 한국어 보이스 ID `kOmJJUJlrXyyjxhtmCoP` (2030 인플루언서) 가 PDRN/뷰티 톤에 맞음. Adam 같은 영어 보이스로 한국어 시키면 발음 깨짐.
+
+#### 2. ffmpeg atempo로 라인별 속도 미세조정
+- Codex 합의 결과 — TTS API의 `voice_settings.speed`만으로는 라인별 길이 조정 부족. **`atempo=1.07~1.23` 후처리**로 피치 유지하며 라인별 시간 압축.
+- 같이 atempo 비율로 char timestamps도 `t / sp` 비례 조정 — 자막 동기화 깨지면 안 됨.
+- 예: S05 (수치 30→1) atempo=1.20, S10 (+166% 광채) atempo=1.23, S01 후킹 atempo=1.14.
+
+#### 3. ffmpeg amix 볼륨 함정
+- **`amix` 기본 `normalize=1`이 N개 입력으로 나눠서 -40dB 됨** (13개 라인 amix하면 거의 안 들림).
+- 해결: `amix=inputs=N:duration=longest:dropout_transition=0:normalize=0` + `alimiter=limit=0.95` 클리핑 방지. 평균 -19.4dB / 최대 -3.0dB로 정상화.
+
+#### 4. ffmpeg subtitles 필터 Windows 콜론 함정
+- ASS 파일 경로에 콜론(`C:\...`)이 있으면 ffmpeg `subtitles=` 필터가 파싱 실패.
+- 해결: ffmpeg를 `cwd=WORK`로 실행하고 **상대 경로** `subtitles=subs_v9.ass` 사용.
+
+#### 5. 워드팝(TikTok/Reels) 자막 — 1단어씩 표시
+- 큰 폰트(180-260pt)도 **단어 1개씩만 표시**하면 절대 안 잘림. 한 줄에 여러 단어 + 큰 폰트는 가로 오버플로 필연.
+- 각 단어를 별개 `Dialogue:` 줄로 만들고 `\fscx40\fscy40\t(0,140,\fscx112\fscy112)\t(140,260,\fscx100\fscy100)\fad(50,80)` 바운스 + 페이드.
+- 다음 단어 시작 시각까지 = 현재 단어 종료 시각 (틈 없음).
+
+#### 6. ASS 색상 함정 — 핑크 박스에 핑크 텍스트 = 투명
+- BorderStyle 3 + BackColour `&H00B469FF` (핑크 박스) 위에 `\1c&H00B469FF&` (핑크 텍스트) 입히면 **글자가 박스에 묻혀 안 보임**. 빈 핑크 박스만 떠 있는 것처럼 보임.
+- 박스 스타일 라인은 accent 컬러 None으로 두고 PrimaryColour(흰색) 그대로 쓰거나, accent를 박스와 대비되는 색(흰/노랑)으로.
+
+#### 7. 자막 burn vs AE 둘 다 만들기 — 스펙 일치 강제
+- v8 단계에서 영상에 자막 burn했는데 AE 프로젝트에서 자막 스펙이 따로 놀면 동료가 받았을 때 "영상이랑 다른데?" 발생.
+- **같은 LINE_SPECS / STYLE 매핑**을 ASS 빌더(`build_v9_subs.py`)와 AE 빌더(`build_ae_v9.py`)가 공유. 단 AE는 PostScript font name 필요 (`Pretendard-Black`, 공백 없는 형태).
+- AE 폰트는 `fontTools.ttLib`로 `nameID 6` 추출해 PostScript name 확보.
+
+#### 8. AE 텍스트 레이어 위치 — sourceRectAtTime로 앵커 보정
+- AE point text의 anchorPoint 기본값은 좌상단(0,0). `position.setValue([540, y])` 그대로 쓰면 글자 시작점이 540에 와서 오른쪽으로 쏠림.
+- 해결: 텍스트 생성 직후 `t.sourceRectAtTime(d.st + 0.001, false)`로 bbox 받아 `anchorPoint = [sr.left + sr.width/2, sr.top + sr.height/2]` 세팅 → 그제야 [540, y]가 진짜 가운데 정렬.
+
+#### 9. AE 버전별 .aep 호환 — afterfx.exe 경로로 강제
+- AE 2026이 저장한 .aep는 AE 2025에서 못 열 수 있음. 동료가 25를 쓰면 25로 저장해야 함.
+- `Path(r"C:\Program Files\Adobe\Adobe After Effects 2025\Support Files\afterfx.exe")` 우선 사용, 없으면 2026 fallback.
+- `afterfx.exe -r script.jsx` 호출하면 AE GUI가 열려 JSX 실행. log 파일 폴링으로 완료 감지 (`for _ in range(60): if out_aep.exists(): break; time.sleep(5)`).
+
+#### 10. 핸드오프 패키지 = 별도 빌드, 절대경로 재할당
+- AE는 항상 절대경로로 footage 임포트. 따라서 작업 폴더(`work/`) 경로의 .aep를 그냥 보내면 동료 PC에서 "missing footage".
+- 해결: `pack_handoff_v9.py`가
+  1. `Desktop/rubi_v09_handoff/Footage/` 폴더 만들고 13 segs + audio 복사
+  2. **새 JSX를 핸드오프 폴더 경로로 생성**해서 AE 재실행 → .aep가 핸드오프/Footage/ 가리킴
+  3. `Final/rubi_v09.mp4` (자막 burn 완성본) 함께 동봉
+  4. `README.txt`에 폰트(Pretendard-Black, ExtraBold) + 컴포지션명(Rubi_v09) + 여는 법 명시
+- 동료가 폴더 통째 같은 경로에 두고 .aep 더블클릭 → footage 자동 링크.
+
+#### 11. 카메라 컷 부재 시 PIL 합성으로 대체
+- "광채 폭발" 컷처럼 적당한 영상 소스가 없을 때 `gen_glow_stat_v9.py`로 PIL frames 생성 후 ffmpeg concat:
+  - `vivid_bg(t)` 그라디언트 배경
+  - `radial_bloom(t)` 다층 가우시안 헤일로
+  - `god_rays(t)` 24방향 회전 광선 (`pieslice` + GaussianBlur 28)
+  - `lens_flares(t)` 6개 컬러 플레어
+  - `sparkles(t)` 십자 광선 별 파티클
+  - `brighten_face` ImageEnhance Brightness 1.18 / Color 1.25 / Contrast 1.08 + 블룸 합성 (`ImageChops.lighter`)
+- N프레임을 PNG 시퀀스로 저장 후 `ffmpeg -framerate 30 -i f%03d.png` → mp4. 30fps × 2초 = 60장이면 충분.
+
+### 핵심 교훈 정리
+1. **char-level timestamps는 with-timestamps 엔드포인트** — 단어팝 자막의 정확한 보이스 동기화 필수.
+2. **amix normalize=1이 볼륨 죽임** — N입력 amix 시 반드시 `normalize=0` + alimiter.
+3. **워드팝 = 안 잘리는 큰 폰트** — 폰트 220pt+ 써도 1단어씩이면 절대 오버플로 안 남.
+4. **ASS 박스 색 = 텍스트 색이면 투명** — accent 컬러 매핑 시 배경/박스 색 충돌 체크 필수.
+5. **AE 텍스트는 sourceRectAtTime 앵커 보정** — 안 하면 좌상단 기준으로 글자 쏠림.
+6. **AE 버전 호환은 afterfx.exe 경로로 강제** — 동료 환경 맞춰 25/26 선택.
+7. **핸드오프 = 별도 빌드** — work/ 경로 .aep 그냥 못 보냄. footage 복사 + 새 JSX로 .aep 재생성.
+8. **자막 burn 영상 + AE 프로젝트 동시 빌드 시 LINE_SPECS 공유** — 스펙 어긋나면 동료가 혼란.
+9. **카메라 컷 없으면 PIL로 합성** — 후광/글로우 컷은 god_rays + multi-layer halo로 충분히 임팩트.
+10. **ffmpeg subtitles는 cwd 상대경로로** — Windows 절대경로 콜론 파싱 실패 우회.
+
+- confidence: high
+- source: 2026-04-30 Desktop/rubi (rubi_v09 광고 영상 + AE 25.0 핸드오프 패키지 18.2MB end-to-end 자동 생성 완료)
