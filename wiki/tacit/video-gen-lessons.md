@@ -763,3 +763,195 @@ dur = float(r.stdout.strip())
 
 - confidence: high
 - source: 2026-04-30 rubi_v09 광고 (1080x1920 21.54s, 13 라인 TTS, 45 워드팝, atempo 차등 적용 후 광고 21초 제한 통과)
+
+---
+
+## 36. 컷 길이 = 다음 cue start 까지 (NOT TTS 발화 길이) (2026-04-30, 루비알엔 v2 24컷)
+
+§35.1 의 자매 교훈. 24컷 빌드에서 별개로 터진 같은 패밀리 버그.
+
+### 증상
+24컷 영상 빌드 시 마지막 5.5초 TTS(S22~S24) 통째로 잘림. 영상 48.7s, 오디오 54.1s. mux의 `-shortest` 가 영상 길이로 오디오 트림.
+
+### 원인
+컷 mp4 길이를 `cue['end'] - cue['start']` (= TTS 순수 발화) 로 잡음 → 발화 사이 자연스러운 호흡(0.1~0.5s × 23개 ≈ 5.5s)이 비디오 트랙에 안 잡혀 비디오가 오디오보다 짧아짐.
+
+### 해결
+```python
+for idx, c in enumerate(cues):
+    nxt = cues[idx+1]['start'] if idx+1 < len(cues) else total
+    dur = max(0.6, nxt - c['start'])
+```
+컷이 다음 cue 시작까지 늘어나면서 자동으로 음성 총 길이와 일치.
+
+### §35.1 과의 차이
+§35.1: 씬 길이를 미리 박아두면 발화가 씬을 넘어감 (overflow).
+§36: 씬 길이를 발화 정확 길이로 잡으면 호흡 갭이 누락되어 underflow + `-shortest` 잘림.
+**둘 다 정답: cue start 기반 가변 길이.**
+
+## 37. 자막↔TTS 텍스트 강제 일치 + 숫자 한글화 (2026-04-30, 루비알엔)
+
+### 증상
+자막 "1+2 세트 55%" 위에 음성 "원 플러스 투 세트, 오십오 퍼센트 할인" 이 깔림. 시청자가 자막을 보면서 음성을 들으면 단어 매칭 실패 → 인지 부조화 → 신뢰도 하락.
+
+### 룰
+**자막 텍스트와 TTS 발화 단어 1:1 일치 강제.** 의역·축약·확장 금지.
+
+### 숫자/기호 → 한글 변환 (TTS 입력용)
+| 자막 표기 | TTS 입력 |
+|----------|---------|
+| `+166%` | "백육십육 퍼센트" |
+| `+107%` | "백칠 퍼센트" |
+| `-91%` | "구십일 퍼센트" |
+| `25,000건` | "이만 오천 건" |
+| `1+2` | "원 플러스 투" 또는 "일 더하기 이" |
+| `30초` | "삼십 초" |
+| `30일` | "삼십 일" |
+| `PDRN` | "피디알엔" |
+
+ElevenLabs multilingual_v2 가 한글 발음을 정확히 읽으려면 한글로 입력 필수. 영문/숫자 그대로 두면 영어식 또는 어색한 발음.
+
+## 38. 묵음 압축은 silencedetect 트림, cut/rejoin 금지 (2026-04-30, 루비알엔)
+
+### 실패한 방식
+TTS를 라인별로 잘라서 0.18s gap 으로 다시 이어붙임 → 잘린 부분의 잔향(reverb tail)이 끊겨 "뚝뚝" 끊어지는 음성. 사용자 피드백: "음성이 뚝뚝 끊어지는 느낌".
+
+### 성공한 방식
+`ffmpeg silencedetect=n=-38dB:d=0.22` 로 묵음 구간만 검출 → `max_sil` 초과분만 트림 → 음성 신호는 절대 건드리지 않음. 발화 prosody 100% 보존.
+
+```python
+for (sst, sen) in silences:
+    if (sen - sst) <= max_sil:
+        continue  # 짧은 호흡은 그대로
+    plan.append({'kind':'audio','a':cursor,'b':sst})
+    plan.append({'kind':'silence','a':sst,'b':sen,'new_dur':max_sil})
+    cursor = sen
+```
+
+`max_sil=0.18` 이 너무 공격적이면 0.25 / 0.30 으로 완화. -38dB threshold 는 Adam 보이스 기준 안정적.
+
+## 39. ffmpeg input seek 함정 — afade 가 절대 타임스탬프로 동작 (2026-04-30, 루비알엔)
+
+### 증상 (디버깅에 1시간 소비)
+silence_compress 결과 mp3 에서 **첫 세그먼트만 정상**, 나머지 세그먼트 23개 모두 `-91dB` 묵음. 라인 1만 들리고 라인 2~24가 통째로 사라짐. 자막은 정상이라 사용자가 "어떻게 하고 계세요 음성 안 나옴" 으로 인지.
+
+### 원인
+세그먼트 추출 명령:
+```bash
+ffmpeg -i in.mp3 -ss 2.419 -to 3.857 -af "afade=t=out:st=1.430:d=0.008" out.wav
+```
+`-ss/-to` 가 `-i` **뒤**에 있어도 input seek 로 동작하지만, **타임스탬프는 입력 절대값을 유지**. afade 필터가 보는 시간은 0이 아닌 2.419s 부터. `st=1.430` 은 입력 t=1.430s 의미 → 추출 구간(2.419~3.857) 내내 fade-out 발동 → 묵음 출력. 첫 세그먼트만 a=0 이라 우연히 작동.
+
+### 해결 (둘 중 하나)
+1. `-ss/-to` 를 `-i` **앞**으로 이동 → seek 후 타임스탬프 0 부터.
+2. 또는 `asetpts=PTS-STARTPTS` 필터 추가해서 명시적 리셋.
+
+```python
+subprocess.run(['ffmpeg','-y',
+    '-ss', f'{a:.3f}', '-to', f'{b:.3f}', '-i', in_mp3,    # ← input 앞
+    '-af', 'asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.005,'
+           f'afade=t=out:st={(b-a)-0.008:.3f}:d=0.008',
+    '-c:a','pcm_s16le','-ar','44100','-ac','2', out_wav],
+    check=True)
+```
+
+### 검증 패턴
+세그먼트 추출 직후 `ffmpeg -i seg.wav -af volumedetect -f null -` 로 mean_volume 확인. -91dB 면 무조건 추출 명령 의심. 또는 `silencedetect -n -50dB -d 0.05` 로 전 구간 묵음인지 체크.
+
+## 40. atempo + cue scale 동시 적용 — 영상 페이스 가속 (2026-04-30, 루비알엔)
+
+자막/TTS 가 늘어진다는 피드백 시 (사용자: "자막 속도감이 너무 늦어서 10% 빠르게"):
+```python
+SPEED = 1.10
+subprocess.run(['ffmpeg','-i', tts_mp3,
+                '-filter:a', f'atempo={SPEED:.3f}',
+                '-c:a','libmp3lame','-b:a','192k', tts_fast],
+               check=True)
+for c in cues:
+    c['start'] /= SPEED
+    c['end']   /= SPEED
+```
+음성과 자막 동기화 유지하면서 전체 페이스만 압축. atempo 0.5~2.0 범위 무손실, 그 이상은 체이닝(`atempo=1.5,atempo=1.5` = 2.25). §35.3 의 라인별 차등 atempo 와 보완 관계.
+
+**핵심: mp3 만 atempo 하고 cue 시간은 그대로 두면 자막 어긋남.** 반드시 동시 적용.
+
+## 41. AE .aep 자동 빌드 — Adobe 는 Python API 가 없다 (2026-04-30, 루비알엔)
+
+### 표준 방식
+1. `win32com.client.Dispatch('AfterFX.Application').DoScript(jsx_text)` — COM 등록 안 되어 있으면 실패 빈도 높음. AE 26 에서 빈번히 `-2147221005 잘못된 클래스 문자열` 발생.
+2. 폴백: `subprocess.Popen([AfterFX.exe, '-r', jsx_path])` — AE 실행 + ExtendScript 자동 실행 + 완료 시 alert dialog. Python 측은 .aep 파일 생성 폴링.
+
+### 버전 지정 (AE 25 = 2025, AE 26 = 2026)
+설치된 AE 바이너리 경로 우선순위로 제어:
+```python
+AE_EXES = [
+    r'C:\Program Files\Adobe\Adobe After Effects 2025\Support Files\AfterFX.exe',
+    r'C:\Program Files\Adobe\Adobe After Effects 2026\Support Files\AfterFX.exe',
+]
+exe = next(p for p in AE_EXES if os.path.exists(p))
+```
+.aep 는 forward-incompatible. 25.0 으로 저장하려면 25.0 바이너리로 실행 필수. ExtendScript 의 `app.project.save()` 는 현재 실행 중인 AE 버전 포맷으로만 저장.
+
+### Font 호환
+PostScript 이름 (공백 제거) 사용: `Pretendard-Bold`, `NotoSansKR-Black`. AE 가 못 찾으면 "유효하지 않은 문자가 포함되어 있습니다" 에러. setFontSafe(td, candidates) 헬퍼로 fallback 처리:
+```js
+function setFontSafe(td, candidates, layerName) {
+  for (var i=0; i<candidates.length; i++) {
+    try { td.font = candidates[i]; return true; } catch(e) {}
+  }
+  return false;
+}
+```
+
+### sourceRectAtTime 자동 fit
+긴 자막(예: "누렇게 뜬 얼굴" 158pt) 이 화면 폭 1080 넘으면 잘림. width 측정 후 fontSize 동적 축소:
+```js
+var fitR = TAG.sourceRectAtTime(cs+0.01, false);
+if (fitR.width > 980) {
+  var newSize = Math.floor(SIZE * 980 / fitR.width);
+  td.fontSize = newSize;  // 158 → 122
+}
+```
+
+### Comp 길이 안전망
+`comp.duration = total + 1/FPS` 로 1프레임 여유. workAreaDuration 은 try/catch (out-of-range 에러 빈번).
+
+## 42. .aep 패키징 — 절대경로 import 회피 (2026-04-30, 루비알엔)
+
+### 문제
+.aep 는 import 자산 경로를 **절대경로로 베이킹**. 다른 PC 로 .aep 만 보내면 "missing media" 폭탄. 자산을 다른 폴더로 옮겨도 마찬가지.
+
+### 해결: 환경변수로 빌드 경로 강제 + 미리 자산 복사
+```bash
+AEP_CUTS_DIR="C:/.../pkg/cuts" \
+AEP_AUDIO_PATH="C:/.../pkg/audio/full.mp3" \
+AEP_OUT_DIR="C:/.../pkg/final" \
+python build_aep.py
+```
+build_aep.py 내부:
+```python
+cuts_dir   = os.environ.get('AEP_CUTS_DIR', WORK)
+audio_path = os.environ.get('AEP_AUDIO_PATH', default_audio)
+out_dir    = os.environ.get('AEP_OUT_DIR', FINAL)
+```
+
+### 패키지 폴더 구조 (배포 단위)
+```
+rubiv_v2_revised_pkg/
+├ cuts/    cut_00.mp4 ~ cut_23.mp4    (24개 컷)
+├ audio/   full_v2_revised.mp3        (TTS+압축본)
+│          full_v2_revised_raw.mp3    (원본)
+│          sfx_track.mp3
+└ final/   rubiv_v2_revised.aep       (← 이 폴더 기준 절대경로 import)
+           rubiv_v2_revised.jsx       (재실행용)
+           rubiv_v2_revised.mp4       (완성본)
+           subs.ass, cues.json, script.json, _ae_build.log
+```
+.aep 가 그 폴더 내부 경로로만 import 하므로 폴더째 다른 PC 로 이동해도 그대로 열림. 단, 받는 쪽도 동일한 절대경로(`C:\Users\...\rubiv_v2_revised_pkg\`)에 두어야 함. 더 견고한 방법은 AE 의 "Collect Files" 또는 .aepx 텍스트 포맷 후처리.
+
+- confidence: high
+- source: 2026-04-30 루비알엔 v2 24컷 빌드 (49.7s 영상, AE 25.0 .aep 자동화, 패키지 64.5MB)
+
+---
+
+*확장: 2026-04-30 루비알엔 24컷 v2 빌드 — 컷·자막·TTS·페이스·AE·패키징 7대 보완 교훈 (§36-42).*

@@ -173,3 +173,16 @@
 - 핵심 발견: **씬 길이 고정(2초씩) ≠ 정답**. TTS 실측 길이 + atempo 차등으로 씬 길이 결정해야 더빙 안 잘림.
 - 11개 정리 항목: 단방향 의존 파이프라인 / 라인별 atempo 매트릭스 / char→word→dialogue / 워드팝 / ffprobe 실측 / GAP 0.05 / 씬 종류별 길이 가이드 / 박스-텍스트 색 충돌
 - 추가 위치: wiki/tacit/video-gen-lessons.md §35 (10대 규칙 포함)
+
+## [2026-04-30] ingest | 루비알엔 v2 24컷 빌드 + AE 25.0 자동화 7대 보완 교훈
+
+- v09 21초 광고와 별개 트랙(24컷 49.7s) 에서 다시 발견된 7개 함정·기법:
+  - §36 컷 길이 = 다음 cue start (NOT 발화 길이) — `-shortest` 가 오디오 자르는 변종 버그
+  - §37 자막↔TTS 텍스트 강제 일치 + 숫자 한글 변환 매핑 (`+166%` → "백육십육 퍼센트")
+  - §38 silencedetect 트림 (cut/rejoin 금지 — 잔향 끊김)
+  - §39 ffmpeg input seek 함정: `-ss` 가 `-i` 뒤면 afade `st` 가 절대 타임스탬프 → 첫 세그먼트 외 묵음 (1시간 디버깅)
+  - §40 atempo + cue scale 동시 적용 (mp3만 가속하면 자막 어긋남)
+  - §41 AE 자동 빌드 (COM 폴백 → AfterFX.exe -r) + AE 25/26 버전 지정
+  - §42 .aep 패키징 (절대경로 import 회피, 환경변수로 빌드 경로 강제)
+- 추가 위치: wiki/tacit/video-gen-lessons.md §36-42, wiki/domains/content-ai-automation.md §15
+- 산출 패키지: C:\Users\gguy\Desktop\rubiv_v2_revised_pkg\ (64.5MB)

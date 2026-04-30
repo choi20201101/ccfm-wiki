@@ -772,6 +772,54 @@ v2에서 이어진 Haar 오검출 이슈를 **3단 방어**로 해결:
 
 *추가: 2026-04-16 (§14 talmo 탈모 B/A 파이프라인, [[src-talmo-b2a]])*
 
+## 15. rubiv v2 24컷 빌드 + AE 25.0 .aep 자동화 (2026-04-30, 루비알엔)
+
+24컷 vertical(1080×1920) 광고 빌드 파이프라인 + After Effects 프로젝트 자동 생성 통합. 7가지 핵심 교훈 (상세는 [[wiki/tacit/video-gen-lessons#36. 컷 길이 = 다음 cue start 까지|video-gen-lessons §36-42]]).
+
+### 핵심 흐름
+```
+script.json (24 라인 TTS+sub+style+scene)
+  ↓ ElevenLabs Adam multilingual_v2 (with-timestamps)
+full_raw.mp3 + alignment.json
+  ↓ silence_compress (silencedetect, max_sil 초과만 트림)
+full_compressed.mp3 + cue 시간 매핑
+  ↓ atempo SPEED=1.10 + cue 시간 1/SPEED 스케일
+full_fast.mp3 (페이스 가속)
+  ↓ 컷 길이 = 다음 cue start 까지 (NOT 발화 길이)
+24개 cut_NN.mp4 (Kling motion 16 + 강줌 정지 8)
+  ↓ concat + SFX amix + ASS subtitle burn
+rubiv_v2_revised.mp4
+  ↓ build_aep.py → AfterFX.exe -r jsx (AE 2025 우선)
+rubiv_v2_revised.aep + .jsx (편집 가능)
+  ↓ 환경변수로 빌드 경로 강제 (AEP_CUTS_DIR/AUDIO/OUT)
+rubiv_v2_revised_pkg/{cuts,audio,final}/ (배포 단위)
+```
+
+### 7대 교훈 요약
+1. **컷 길이 = 다음 cue start** (TTS 발화 길이로 잡으면 발화 사이 호흡 누락 + `-shortest` 로 오디오까지 잘림). §35.1 (씬 고정 금지)의 자매 케이스.
+2. **자막↔TTS 텍스트 강제 일치** + 숫자/기호 한글 변환 (`+166%` → "백육십육 퍼센트").
+3. **silencedetect 트림** (cut/rejoin 금지 — 잔향 끊김).
+4. **ffmpeg input seek 함정**: `-ss` 가 `-i` 뒤에 있으면 afade `st` 가 절대 타임스탬프로 해석 → 첫 세그먼트 외 전부 묵음. `-ss` 를 `-i` 앞으로 또는 `asetpts=PTS-STARTPTS`.
+5. **atempo + cue scale 동시 적용**: `mp3 atempo=1.10` + `cue['start']/=1.10`.
+6. **AE 자동 빌드**: COM 실패 빈번 → `AfterFX.exe -r jsx` 서브프로세스 폴백. AE 25/26 버전은 AE_EXES 리스트 순서로 제어.
+7. **.aep 패키징**: 절대경로 import 회피 위해 환경변수로 빌드 경로 강제, 빌드 전 자산을 그 폴더로 복사.
+
+### 산출물 구조
+```
+rubiv_v2_revised_pkg/   (~64.5MB)
+├ cuts/   24개 cut_NN.mp4 (각 1.4~6.2s)
+├ audio/  full_v2_revised.mp3 + raw + sfx_track
+└ final/  .aep (AE 25.0) + .jsx + 완성 mp4 + subs.ass + cues.json + script.json
+```
+
+### 검증된 사양
+- 49.7s 영상, 24컷, 24 라인 TTS, atempo=1.10
+- 자막: ASS word-popup, 흰색+stroke, y=1620, 자동 fit (sourceRectAtTime → fontSize 동적 축소)
+- AE: Pretendard-Bold/Black + NotoSansKR-Bold/Black 믹스, setFontSafe fallback
+
+- confidence: high
+- source: 2026-04-30 루비알엔 v2 빌드 ([[wiki/tacit/video-gen-lessons|§36-42]])
+
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
 
