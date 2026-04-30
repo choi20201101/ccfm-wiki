@@ -629,3 +629,137 @@ Day14 prompt에 구체적 차이 + 명시적 부정:
 ---
 
 *확장: 2026-04-23 볼륨필인 3인 × 세포 애니 × 14일 몽타주 성공 사례 (§30-34).*
+
+---
+
+## 35. 컷편집·자막·TTS 매칭 — 21초 광고 v09 정리 (2026-04-30)
+
+> 18-21초 vertical 광고 만들 때 가장 자주 깨지는 부분: **씬 길이를 고정값으로 박지 않고 보이스에 맞춰 자르는 것**. 그리고 **자막은 보이스 char-level 타임스탬프 위에 1단어씩 얹는 것**.
+
+### 35.1 절대 금지 — "씬 = 2초 고정"
+- 처음에 SCENES = `[(0,2), (2,4), (4,6)...]` 식으로 박아두고 TTS만 따로 만들면 **8/13 라인이 씬 경계 넘김** (총 5.86s 오버플로). "더빙 끝나기 전에 다음 씬으로 넘어감" 발생.
+- 해결: **TTS 길이 → 씬 길이** 단방향 의존. 씬은 보이스가 결정한다.
+
+### 35.2 정석 파이프라인 (단방향 의존)
+```
+대본(13 라인)
+  ↓ ElevenLabs with-timestamps
+tts/SXX.mp3 + tts/SXX.json (char timestamps)
+  ↓ ffprobe로 실제 길이 측정
+SXX_dur (실측 — API 응답 길이 ≠ 실제 mp3 길이)
+  ↓ atempo 라인별 (1.07~1.23) 라인이 너무 길면 압축
+tts_v8/SXX.mp3 + 비례 조정된 timestamps
+  ↓ 누적 + GAP=0.05s
+timeline = [(SXX, st, et, dur), ...]
+  ↓ 비주얼 segs를 (et - st) 길이로 렌더 (씬 = TTS 길이 + GAP)
+seg_NN.mp4 (각 씬마다 길이 다름)
+  ↓ concat
+silent.mp4
+  ↓ 워드팝 자막 (단어별 timestamp)
+subs.ass
+  ↓ ffmpeg subtitles + amix audio
+final.mp4
+```
+**핵심: 씬 길이는 TTS 길이로 결정. 절대 역방향 안 됨.**
+
+### 35.3 라인별 속도 매트릭스 (코덱스 합의 결과)
+씬이 너무 길어 광고 18초 안에 안 들어오면, **라인별로 atempo 차등 적용**해서 압축:
+- 후킹/CTA 같이 임팩트 필요 → atempo 1.00~1.07 (천천히)
+- 정보 전달 라인 → atempo 1.10~1.20 (빠르게)
+- 긴급/숫자 강조 → atempo 1.20~1.23 (최대 압축)
+
+루비알엔 v09 실측:
+| 라인 | 내용 | atempo | 결과 길이 |
+|------|------|--------|-----------|
+| S01 후킹 | 1.14 | 2.28s |
+| S02-S03 도입 | 1.00 | 1.30+1.35s |
+| S04 후기 | 1.13 | 1.78s |
+| S05 30→1 수치 | 1.20 | 2.09s |
+| S06 1일차 | 1.00 | 0.74s |
+| S07-S08 3,5일차 | 1.18, 1.10 | 1.55+1.24s |
+| S09 7일차 광채 | 1.07 | 1.60s |
+| S10 +166% | 1.23 | 2.19s |
+| S11 핑크광 | 1.00 | 1.25s |
+| S12 가격 | 1.20 | 2.21s |
+| S13 CTA | 1.00 | 1.30s |
+| **총합** | | | **21.54s** |
+
+균일 1.00 (총 25.4s) → 라인별 차등 (21.54s). 광고 플랫폼 21초 제한 안에 들어옴.
+
+### 35.4 자막 = char-level → word-level → dialogue-per-word
+- ElevenLabs `with-timestamps` 응답의 `alignment.characters` + `character_start_times_seconds`/`_end_times_seconds`을 받아 **공백 경계로 단어 묶기**.
+- 각 단어가 별개의 `Dialogue:` 줄. 시작 = `scene_st + word.st - 0.05` (살짝 일찍 등장), 끝 = 다음 단어 시작 (틈 없음).
+- 마지막 단어만 `+ 0.30s` 여유.
+
+```python
+def split_words_with_times(align):
+    words = []; cur = ""; cur_st = None
+    for ch, st, et in zip(align["characters"],
+                          align["character_start_times_seconds"],
+                          align["character_end_times_seconds"]):
+        if ch.strip() == "":
+            if cur: words.append((cur_st, et, cur)); cur=""; cur_st=None
+        else:
+            if cur_st is None: cur_st = st
+            cur += ch; cur_end = et
+    if cur: words.append((cur_st, cur_end, cur))
+    return words
+```
+
+### 35.5 워드팝 = 무조건 안 잘림
+- TikTok/Reels 스타일 큰 폰트(180-260pt) 쓰면서도 한 화면 1단어만 표시 → **가로 오버플로 절대 발생 안 함**.
+- 등장 애니: `\fscx40\fscy40\t(0,140,\fscx112\fscy112)\t(140,260,\fscx100\fscy100)\fad(50,80)` (40% → 112% 바운스 → 100% 안착, 50ms 페이드인 80ms 페이드아웃).
+- 한 줄에 여러 단어를 큰 폰트로 띄우면 가로폭 1080 넘어 잘림. **무조건 1단어**.
+
+### 35.6 atempo 시 timestamps도 같이 압축
+TTS json 그대로 두고 mp3만 atempo하면 자막 동기화 깨짐. **반드시 char timestamp도 비례 조정**:
+```python
+data["alignment"]["character_start_times_seconds"] = [t / sp for t in starts]
+data["alignment"]["character_end_times_seconds"]   = [t / sp for t in ends]
+```
+
+### 35.7 ffprobe로 실측 길이 사용 — TTS API 응답 신뢰 금지
+- ElevenLabs API 응답의 `character_end_times_seconds[-1]`이 실제 mp3 길이와 미세하게 다름 (codec 인코딩 오차).
+- 무조건 ffprobe `-show_entries format=duration`으로 실측 후 timeline 계산.
+```python
+r = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration",
+                    "-of","default=noprint_wrappers=1:nokey=1", str(mp3)],
+                   capture_output=True, text=True)
+dur = float(r.stdout.strip())
+```
+
+### 35.8 GAP — 씬 사이 0.05s 호흡
+- TTS 끝나자마자 다음 씬이 0.00s에 시작하면 너무 답답.
+- GAP = 0.05s (50ms) 추가 → 씬 전환 자연스럽고 보이스는 끊기지 않음.
+- GAP=0.10 이상 두면 광고 21초 제한 빠듯하므로 0.05 권장.
+
+### 35.9 씬 종류별 길이 가이드 (실측)
+| 씬 종류 | 권장 길이 | 이유 |
+|---------|-----------|------|
+| 후킹 | 1.8~2.5s | 너무 짧으면 못 읽음, 길면 스크롤됨 |
+| 정보 전달 | 1.0~1.5s | TTS 길이만큼만 |
+| 일차 진행 (Day1, 3, 5, 7) | 0.8~1.2s | 빠른 컷 |
+| 광채 폭발 / 임팩트 | 1.5~1.8s | 임팩트 살릴 시간 |
+| 스탯 (+166% 등) | 2.0~2.5s | 숫자 인지 시간 |
+| 가격 | 2.0~2.3s | 숫자 + CTA 인지 |
+| 최종 CTA | 1.2~1.5s | "구매하세요" 짧고 굵게 |
+
+### 35.10 마지막 카피 박스 — 색 충돌 체크
+- BoxPink 스타일에 핑크 accent 텍스트 입히면 **글자 안 보이고 빈 박스만 뜸**. 사용자가 "마지막 핑크박스만 보임"이라고 함 = 정확히 이 버그.
+- ASS BorderStyle 3 + BackColour = 박스. 위에 PrimaryColour나 `\1c` accent 색이 박스 색과 같으면 투명.
+- 핑크 박스 위 = 흰 텍스트 (None accent), 노란 박스 위 = 검정 텍스트, 검정 박스 위 = 흰/핑크/노랑.
+
+### 35.11 핵심 정리 — 컷편집 타이밍 10대 규칙
+1. **씬 길이는 TTS 길이가 결정** — 2초 고정 절대 금지.
+2. **TTS는 `with-timestamps` 엔드포인트** — char-level 타임스탬프 받아둬야 자막 동기화 가능.
+3. **ffprobe로 실측 길이** — API 응답 신뢰 금지.
+4. **라인별 atempo 차등** — 광고 길이 제한 맞추되 임팩트 라인은 천천히.
+5. **atempo 적용 시 timestamps도 비례 압축** — 안 하면 자막 어긋남.
+6. **GAP 0.05s** — 씬 사이 호흡, 더 길게 두면 안 됨.
+7. **자막 = 1단어씩** — 큰 폰트(220pt+) 쓰면서도 안 잘림.
+8. **단어 시작 -0.05s 일찍 등장** — 보이스보다 살짝 먼저 보여야 자연스러움.
+9. **다음 단어 시작 = 현재 단어 끝** — 틈 없는 연속 표시.
+10. **박스 색 vs 텍스트 색 충돌 체크** — accent 매핑 시 배경/박스 색과 다른 색 강제.
+
+- confidence: high
+- source: 2026-04-30 rubi_v09 광고 (1080x1920 21.54s, 13 라인 TTS, 45 워드팝, atempo 차등 적용 후 광고 21초 제한 통과)

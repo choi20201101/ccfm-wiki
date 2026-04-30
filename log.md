@@ -167,3 +167,9 @@
 - 파이프라인: ElevenLabs char-level TTS → ffmpeg atempo 라인별 속도 → 13 segs 합성 → 워드팝 자막(45 word-pops) → AE 25.0 .aep 빌드 → 핸드오프 패키지 18.2MB
 - 핵심 함정 11개 정리: amix normalize=1 볼륨 죽음 / ASS 핑크박스+핑크텍스트 투명 / AE 텍스트 sourceRectAtTime 앵커 보정 / AE 버전별 .aep 호환 / 핸드오프는 별도 절대경로 재빌드
 - 추가 위치: wiki/tacit/coding-lessons.md ([2026-04-30] 섹션, 11단계 + 10대 교훈)
+
+## [2026-04-30] ingest | 컷편집·자막·TTS 매칭 타이밍 정리 (v09 회고)
+
+- 핵심 발견: **씬 길이 고정(2초씩) ≠ 정답**. TTS 실측 길이 + atempo 차등으로 씬 길이 결정해야 더빙 안 잘림.
+- 11개 정리 항목: 단방향 의존 파이프라인 / 라인별 atempo 매트릭스 / char→word→dialogue / 워드팝 / ffprobe 실측 / GAP 0.05 / 씬 종류별 길이 가이드 / 박스-텍스트 색 충돌
+- 추가 위치: wiki/tacit/video-gen-lessons.md §35 (10대 규칙 포함)
