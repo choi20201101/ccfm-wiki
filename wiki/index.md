@@ -65,6 +65,14 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
 
+### 🔥 GFA 광고 세팅 자동화 — [[domains/gfa-setting-automation]] (NEW 2026-04-30)
+**"GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" 요청 시 진입.**
+- `gfa-setting <광고계정ID>` → 7개 입력값 → N개 광고 그룹+소재 atomic 등록
+- DrissionPage 브라우저 자동화 (네이버 OpenAPI 차단 우회), 참조 그룹 UI 복제로 27 파라미터 빌더 제거
+- v0.1.0: 단위 163/163 + ruff/mypy strict 0 + N=3 E2E 성공 (CCFM-인완-네리티아)
+- 코덱스 감사 결과 잔존 이슈 명문화 (antd 안전가정 문서-코드 불일치, partial 출력 누락, secrets 마스킹 무력화)
+- 어느 컴퓨터에서든: `git clone Min-Gil-Sang/GFA-Setting` → `_assembled` → `pip install -e .[dev]` → `cp .env.example .env` → 최초 1회 수동 로그인 → `gfa-setting <ID>`
+
 ### 🔥 시장조사 플레이북 — [[domains/market-research-playbook]] (NEW 2026-04-20)
 **"시장조사 해줘" 요청 시 바로 이 구조로 진행할 것.**
 - 시드키워드 → 연관 1,158개 → 6개월 트렌드 → 저점폭증 필터

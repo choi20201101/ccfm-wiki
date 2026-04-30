@@ -31,6 +31,7 @@ updated: 2026-04-29
 | "광고 자율 24시간 / 신상품 파이프라인" | 스킬 `rubyrn-pipeline` | 7질문 → init_product 자동생성 |
 | "원온원" / "1:1 면담" | 스킬 `1on1` | 녹음+화자분리 → Notion DB 저장 |
 | "시장조사" 통합 리포트 (Word) | 스킬 `market-research` | 5개 서브에이전트 병렬, 광고 요소 8종 |
+| "GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" | [[domains/gfa-setting-automation]] + CLI `gfa-setting <광고계정ID>` | 7개 입력값 → N개 그룹+소재 atomic, DrissionPage, N=3 검증 |
 
 ---
 

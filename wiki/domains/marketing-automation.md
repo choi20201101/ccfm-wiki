@@ -14,8 +14,14 @@ sources: []
 네이버 GFA/SA, Meta, Google 광고 자동화. 리포트 자동화, 입찰 최적화, 크리에이티브 A/B 테스트 자동화.
 
 ## 광고 플랫폼 자동화
-_내용 추가 예정_
-- 네이버 GFA 리포트 자동화
+
+### 네이버 GFA 세팅 자동화 (스킬)
+- [[domains/gfa-setting-automation]] — **GFA-Setting v0.1.0** (2026-04-30 N=3 dry-run 성공). NAS 폴더 이미지 → N개 광고 그룹+소재 atomic 등록.
+- 진입점: `gfa-setting <광고계정ID>`. 7개 입력값(콘텐츠 경로/캠페인 ID/참조 그룹·소재/베이스 이름/per_ad/랜딩 URL) 받아 자동 진행.
+- 구현: DrissionPage 브라우저 자동화 (ADR-011). 참조 그룹 UI 복제로 27 파라미터 빌더 회피 (ADR-013).
+- 코덱스 감사 잔존 이슈(2026-04-30): antd 안전가정 문서-코드 불일치(치명), CLI partial 누락(높음), 마스킹 secrets=[](높음). 상세는 도메인 페이지.
+
+### 기타
 - Meta Marketing API
 - Google Ads 자동화
 - 쿠팡 무단판매자 모니터링 (Playwright)

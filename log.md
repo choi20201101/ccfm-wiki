@@ -1,5 +1,18 @@
 # CCFM Wiki Log
 
+## [2026-04-30] ingest | GFA-Setting 스킬 v0.1.0 — 네이버 GFA 광고 세팅 자동화 + 코덱스 감사
+
+- 신규 도메인: [[domains/gfa-setting-automation]] — `gfa-setting <광고계정ID>` 7개 입력값 → N개 광고 그룹+소재 atomic 등록
+- 신규 소스: [[sources/src-gfa-setting-skill-2026-04-30]] — v0.1.0 빌드 스냅샷 (bob → dd → harness → 구현 → 코덱스 감사)
+- 진입 절차 명문화: git clone Min-Gil-Sang/GFA-Setting → `_assembled` → pip install -e .[dev] → .env → 최초 1회 수동 로그인 → CLI 실행
+- 코덱스(gpt-5) CLI 감사 결과 반영:
+  - **치명**: README/SKILL antd 안전가정과 코드 불일치 (`ad_sets.py:73,99,133,169,336`, `materials.py:63,89,124,255` dispatchEvent/native setter 잔존)
+  - **높음**: CLI partial(orphan group) 출력 누락(`cli.py:111`), `configure_logging(secrets=[])` 마스킹 무력화(`cli.py:60`), `_assembled/.gitignore`/`.pre-commit-config.yaml` 단독 부재
+  - **중간**: N>20 차단 느슨, +50분 rollover 타임존 미검증, `_NN` 끝자리 한정
+  - **낮음**: 설치 경로 가정, `.browser_profile` 상대경로, mock 중심 테스트의 실브라우저 보장 한계
+- 4시간 troubleshooting 교훈 4가지: 이미지 카드 selector(antd CSS-in-JS hash), modal scope 카운트 정규식, 참조 hydrate 부분 실패(DP CDP 트러스트 click), `is_saved` urlMoved 단독 인정
+- 교차 링크: [[domains/marketing-automation]] §광고 플랫폼 자동화, [[index]] §🔥 핵심, [[HOTSHEET]] 트리거 표
+
 ## [2026-04-30] ingest | 루비알엔 v3 해골 변신 광고 — 7단 파이프라인 7대 교훈 (§43-49)
 
 - 케이스: 유쎄라블 META 광고(50s) → 루비알엔 PDRN 클렌저(29.6s 16컷) 재구성
