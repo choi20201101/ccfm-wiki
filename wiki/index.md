@@ -186,7 +186,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[domains/taiwan-market]] — 대만: TFDA, 샵라인, Merable TW ⬜
 - [[domains/sea-tiktok]] — 동남아: 틱톡샵, BPOM, 할랄 ⬜
 - [[domains/japan-market]] — 일본: Q10, X채널 ⬜
-- [[domains/ma-exit]] — M&A: 스마일게이트 딜, SPA ⬜
+- [[domains/ma-exit]] — M&A: Exit 도메인, SPA ⬜
 - [[domains/org-restructure]] — 조직개편: A→Y/Z, AI Cell ⬜
 - [[domains/finance]] — 재무/회계: 다법인 세무, 이전가격 ⬜
 - [[domains/hr-admin]] — 인사/총무: 보상구조, 채용 ⬜

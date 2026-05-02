@@ -1,5 +1,5 @@
 ---
-aliases: ["M&A Exit", "스마일게이트 딜"]
+aliases: ["M&A Exit", "Exit 도메인"]
 type: domain
 domain: ma
 confidence: low
@@ -11,7 +11,7 @@ sources: []
 # M&A Exit
 
 ## 개요
-스마일게이트 딜, SPA, 네이버 계약 승계 관련 도메인.
+Exit 거래, SPA, 네이버 계약 승계 관련 도메인.
 
 ## 딜 구조
 _내용 추가 예정_
