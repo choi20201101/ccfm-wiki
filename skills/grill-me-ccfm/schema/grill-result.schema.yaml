@@ -35,13 +35,13 @@ direction:
   # reuse_skills: ["bob", "dd"]
   
   # [strategy 필수]
-  # decision_type: "M&A"
+  # decision_type: "신규시장 진출"
   # reversibility: "hard"
-  # stakeholders: ["우영회계법인", "백영무 부장"]
-  
+  # stakeholders: ["회계 검토팀", "법무 자문"]
+
   # [personal 필수]
-  # context: "출산 D-25"
-  # consultant: "산부인과 의사 권고 있음"
+  # context: "마감 D-7"
+  # consultant: "전문가 권고 있음"
 
 # ─── 금기사항 (Don't List) ⭐ 콘텐츠 모드 핵심 ──
 dont_list:
@@ -100,9 +100,9 @@ deliverables:
 
 # ─── 컨텍스트 힌트 ────────────────────────────
 context_hints:
-  - "강용길 부장 컴플라이언스 사전 검수 필수"
-  - "M&A 클로징 5/30 전 송출 가능해야 함"
-  - "출산 예정일 5/27 — 본인 가용성 제한적"
+  - "컴플라이언스 사전 검수 필수"
+  - "외부 일정 마감 전 완료 필요"
+  - "본인 가용성 제한적인 기간 있음"
 
 # ─── 다음 단계 ────────────────────────────────
 ambiguity_remaining: []           # [REQUIRED] 비어있어야 다음 단계 진입 가능

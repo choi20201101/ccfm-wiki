@@ -9,7 +9,7 @@ git clone → `install-*.ps1` 한 번 실행 → Claude Code + Desktop 양쪽에
 
 | 스킬 | 트리거 키워드 | 설치 스크립트 |
 |------|--------------|---------------|
-| [grill-me-ccfm](grill-me-ccfm/) | `grill해줘`, `꼼꼼하게 캐물어`, `방향 잡아줘`, `하지 말아야 할 거 정리`, M&A·출산·신규시장 (강제 발동) | `install-grill-me-ccfm.ps1` |
+| [grill-me-ccfm](grill-me-ccfm/) | `grill해줘`, `꼼꼼하게 캐물어`, `방향 잡아줘`, `하지 말아야 할 거 정리`, 신규 시장·조직개편 등 되돌리기 어려운 결정 (강제 발동) | `install-grill-me-ccfm.ps1` |
 
 ---
 

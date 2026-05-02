@@ -68,7 +68,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
 
 ### 🔥 grill-me-ccfm — 결정 분기 캐묻기 스킬 (NEW 2026-05-02)
-**"grill해줘" / "방향 잡아줘" / "하지 말아야 할 거" / M&A·출산·신규시장 입력 시 자동 발동.**
+**"grill해줘" / "방향 잡아줘" / "하지 말아야 할 거" / 신규 시장·조직개편 등 되돌리기 어려운 결정 입력 시 자동 발동.**
 - bob 앞단 자동 게이트 (`scripts/ambiguity_scorer.py` 점수 ≥ 5)
 - 4모드: coding / content / strategy / personal
 - Content 모드: 시장×제품 조합 자동 규제 체크 → Don't List 자동 제시 (대만 화장품 예: 의사 등장·효능 단정·B/A 비교·간체 사용 금지)
