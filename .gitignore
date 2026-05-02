@@ -13,6 +13,8 @@ graphify-out/cache/
 graphify-out/manifest.json
 graphify-out/cost.json
 .graphify_*.json
+graphify-out/.graphify_python
+graphify-out/archive/
 
 # wiki/ 단독 vault로 열 때 생기는 로컬 옵시디언 설정
 wiki/.obsidian/
