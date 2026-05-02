@@ -245,6 +245,38 @@ echo "=== OAuth 자격 ==="; ls -la ~/.gemini/oauth_creds.json ~/.codex/auth.jso
 - 조치: settings.json `env` 블록 제거 + HKCU OPENAI_API_KEY 삭제 → 다음 세션부터 OAuth 자동 사용
 - 교훈: OAuth 자격 존재 ≠ OAuth 사용 보장. 환경변수 4곳을 모두 점검해야 함
 
+### Codex CLI 한도 체계 — 5h vs weekly 구분법 (2026-05-01 실측, confidence: high)
+
+ChatGPT 구독 OAuth로 Codex CLI 호출 시 한도 두 가지가 동시 적용됨. 막혔을 때 **갱신 시각으로 어느 쪽인지 즉시 구분 가능**.
+
+**진단 룰**: `try again at <date>` 메시지의 시각 차이를 본다.
+- 차이 < 5h → **5시간 롤링 윈도우** 소진 (모델별 별도 풀)
+- 차이 ≥ 1일 → **주간 캡** 소진 (수치 미공개, 풀 공유)
+
+**ProLite = Pro $100/월 (Pro 5x)**: JWT의 `chatgpt_plan_type: prolite`는 OpenAI 공식 가격 페이지의 Pro $100 (Pro 5x) 와 동일 등급. "Pro Lite"라는 명칭은 공식 페이지엔 없고 JWT/내부에서만 쓰임.
+
+| 모델 | Pro 5x 5h 한도 | 비고 |
+|---|---|---|
+| GPT-5.5 | 80–400 메시지 | 2026-05-31까지 ×2 부스트 → 160–800 |
+| GPT-5.4 | 100–500 메시지 | 2026-05-31까지 ×2 부스트 → 200–1000 |
+| GPT-5.3-Codex (= gpt-5-codex) | 600–3000 local + 200–1200 cloud | Plus와 동일 |
+| Code Reviews | 400–1000 | 별도 풀 |
+
+**비용 드라이버는 메시지 수가 아니라 reasoning 시간**. `reasoning effort: xhigh` (codex CLI 기본) 로 무거운 작업 한 번이 5h 윈도우의 20%+ 먹을 수 있음. weekly 캡은 5h 캡보다 먼저 터지는 경우 많음.
+
+**실측 사례 (2026-05-01)**:
+- 사용자 OAuth 로그인 직후 `codex exec --model gpt-5.5 "ping"` 호출 → 즉시 한도 초과
+- 갱신 시각: `May 5th, 2026 2:58 PM` (~4일 후) → **weekly 캡 확정**
+- gpt-5.4로 fallback 시도해도 동일 시각 차단 → 모델 간 weekly 풀 공유 추정
+- 원인: 직전 며칠간 codex로 무거운 코딩 세션 다수 (xhigh 기본값 + 장시간 agentic run)
+
+**막혔을 때 운영**:
+1. 갱신 시각 메모 → 그 사이엔 Gemini OAuth (Flash) / Claude / mllm fallback
+2. 세션 중 `/status` 로 남은 한도 확인 (codex CLI 내부 명령)
+3. 평소 `reasoning effort` 를 `medium` 으로 낮추면 weekly 소진 속도 절반 이하
+
+**관련 운영 규칙 갱신**: AI CLI 인증 모드 표준 매트릭스의 codex 행에 "헤비 워크로드 시 weekly 캡 주의, xhigh 기본값 위험" 보강 필요.
+
 ## 3-CLI 컨텍스트 브릿지 (2026-04-26 추가)
 
 세 CLI(Claude / Codex / Gemini)가 각자 별도 자동 로드 파일을 읽기 때문에, 사용자 핵심 컨텍스트(메모리, 한국어 선호, AI CLI 인증 표준, 스킬 카탈로그)를 세 파일에 동기화해두면 어느 CLI 를 호출해도 동일한 컨텍스트로 동작한다. 멀티 LLM 토론·교차 검증 시 일관성 핵심.

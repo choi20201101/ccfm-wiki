@@ -1338,3 +1338,156 @@ prompt = "The pink cleanser bottle with white label gently rotates..."
 
 - confidence: high
 - source: 2026-04-30 slime_v03 S05/S07 Kling 1차 거부 → 브랜드명 빼고 재시도 성공
+
+
+## §41 — Seedance 2.0 / Veo3 / Sora2 보이스 일관성 (다중 컷 시나리오)
+
+**문제**: i2v 모델로 5초씩 여러 컷을 뽑을 때 동일 화자 보이스 유지 불가.
+
+### 현재(2026-05) 업계 공통 한계
+Seedance 2.0의 audio param은 `generate_audio: bool` 하나뿐. Veo3, Sora2도 동일.
+- ❌ `voice_id`, `voice_reference`, `speaker_seed` — 모두 미지원
+- 같은 프롬프트 두 번 호출 → 다른 사람 목소리 (랜덤 화자)
+- 프롬프트에 "30대 차분한 남성" 명시해도 카테고리만 맞을 뿐 음색·억양·발음 습관은 매번 다름 (30~50% 일관성)
+
+### 해결책 4지선다 + 권장도
+
+| 방법 | 일관성 | 자연스러움 | 한계 | 권장 |
+|---|---|---|---|---|
+| A. 한 generation에 15초 다 담기 (natural cuts) | 100% | ★★★★★ | 15초 천장, 시작 이미지 1장 고정 | 단발성 ≤15s |
+| B. Lip-sync 후처리 (sync-labs/veed/latentsync) | 95% (영) / 80~90% (한) | ★★★ | 입 픽셀 재합성, 양순음 P/B/M 어색, 측면샷 X | 원본 음성 자체가 없을 때만 |
+| **C. Voice Conversion 후처리 (RVC/ElevenLabs Voice Changer)** | **95~100%** | **★★★★★** | 원본 톤·감정·속도가 그대로 이식됨 | **★ 1순위** |
+| D. 영상 무음 + TTS 풀 합성 + lip-sync | 100% | ★★★ | 입모양·감정 모두 어색 가능 | 시리즈 캐릭터 풀 양산 |
+
+### Voice Conversion이 베스트인 이유
+입모양을 손대지 않고 음성만 바꿈 → 영상 변형 0, 자연스러움 최상.
+원본 영상의 호흡·타이밍·감정 모두 보존.
+
+### 권장 워크플로 (방법 C)
+```
+[1] Seedance 2.0 i2v (generate_audio=true 그대로 둠)
+       ↓ 영상 + 랜덤 보이스
+[2] ffmpeg로 음성만 추출 (.wav)
+       ↓
+[3] RVC / ElevenLabs Voice Changer 로 동일 target voice 변환
+       ↓ 일관 보이스 음성
+[4] ffmpeg로 영상에 새 오디오 합치기 (-c:v copy → 영상 손실 0)
+       ↓ 최종
+```
+
+### 도구 우선순위 (한국어 기준)
+1. **ElevenLabs Voice Changer** — 상용 1티어, voice_id 라이브러리 영구 재사용. ~$0.05/컷
+2. **RVC (Retrieval-based VC)** — 오픈소스, 로컬 GPU 무료. Huggingface에 한국어 voice 모델 다수
+3. Seed-VC — 30초 reference로 zero-shot
+4. OpenVoice v2 — MIT 라이선스, 무료 상업용
+5. fal-ai/playht/voice-conversion — API 통합형
+
+### 비용 (30초 광고 = 5초×6컷)
+| 방법 | Seedance | TTS/VC | Lip-sync | 합계 |
+|---|---|---|---|---|
+| A. 한 방 15s | $0.6 | - | - | $0.6 (15s 한정) |
+| B. Lip-sync | $1.2 | $0.1 | $0.9~1.5 | $2.2~2.8 |
+| **C. Voice Conversion (ElevenLabs)** | $1.2 | $0.30 | - | **$1.5** |
+| C-무료 (RVC 로컬) | $1.2 | $0 | - | **$1.2** |
+
+### 의사결정 트리
+```
+영상 ≤ 15초 + 단발성?
+  YES → A (한 방 15s)
+  NO ↓
+원본 영상 톤·감정 살리고 싶음?
+  YES → C (Voice Conversion) ★
+  NO  → B (Lip-sync)
+```
+
+### Seedance 프롬프트 팁 (방법 C 전제)
+- 정면샷: `front-facing, mouth clearly visible, looking at camera`
+- 톤 지정: `calm tone` / `energetic` (방법 C에서 톤이 그대로 이식되므로 이 단계가 결정적)
+- 클로즈업 회피: 상반신샷 위주가 자막·후처리 모두 자연스러움
+
+- confidence: high
+- source: 2026-05-02 fal.ai Seedance 2.0 image-to-video 모델 페이지 직접 확인 + 광고 영상 합성 실측
+
+
+## §42 — 광고 영상 후처리 합성 표준 (원본 음성 + ASS 자막 + 16:9)
+
+**언제 적용**: 두 개 이상의 i2v 결과물(또는 같은 화자 컷들)을 합쳐 광고/릴스로 만들 때.
+
+### 절대 규칙 4개
+
+1. **원본 음성을 우선 시도** — TTS 합성은 마지막 수단. 한국어 무료 TTS(edge-tts SunHi/JiMin 등)는 광고 톤에서 기계음 명확. 원본이 있고 화자가 같으면 원본 그대로가 자연스러움 100%.
+
+2. **freeze 화면 금지** — TTS가 영상보다 길어서 마지막 프레임 `tpad=stop_mode=clone`으로 패딩하면 광고로서 치명적 어색. TTS 길이를 영상에 맞춰 줄이거나, 영상을 다시 뽑거나, 그냥 원본 음성을 써라.
+
+3. **자막 timestamp는 STT word-level에서** — TTS 음성의 word boundary를 신뢰하지 마라. edge-tts ko-KR voice는 WordBoundary 이벤트 자체를 안 내보낸다. 대신 faster-whisper로 음성을 STT 돌려 word timestamp를 받아라 (TTS 음성도 깨끗해서 STT 품질 매우 좋음). 다만 원본 음성이 있으면 그걸로 STT가 베스트.
+
+4. **ASS 자막은 phrase 단위로 청크 묶기** — 단어 1개씩 휙휙 바꾸면 못 읽는다. 1.0~1.8초 / 18자 이내로 phrase 묶어서 fade in/out + pop-in 애니메이션.
+
+### 검증된 ASS 스타일 (1920×1080, 한국어)
+```
+Style: Tok, Malgun Gothic, 88, &H00FFFFFF, &H000000FF, &H00000000, &H64000000, 1, 0, 0, 0, 100, 100, 0, 0, 1, 6, 3, 2, 80, 80, 200, 1
+```
+- 흰 글자 + 검정 outline 6px + shadow 3px → 어떤 배경에서도 가독성
+- 하단 중앙 (MarginV=200)
+- per-line override: `{\fad(80,80)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}` (페이드 + pop-in)
+
+### 청크 분할 알고리즘 (검증된 디폴트)
+```python
+MAX_CHUNK_SEC = 1.8
+MAX_CHARS = 18
+TAIL_PAD = 0.35   # 끝을 살짝 늘려 가독성 ↑ (다음 청크 시작 전까지만)
+```
+- 시간 또는 글자 수 둘 중 하나 초과하면 새 청크
+- 청크 끝점을 +0.35초 늘리되 다음 청크 시작 −0.02초까지만
+
+### ffmpeg 합성 단일 커맨드 (16:9 1080p)
+```
+ffmpeg -y -i src.mp4 \
+  -filter_complex "[0:v]scale=1920:1080:force_original_aspect_ratio=decrease:flags=lanczos,\
+                   pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black,\
+                   subtitles=clip.ass[v]" \
+  -map "[v]" -map 0:a \
+  -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -r 24 \
+  -c:a aac -b:a 192k \
+  out.mp4
+```
+- `subtitles` 필터 path는 **상대경로** 권장 (윈도우 콜론 escape 함정 회피). cwd 로 work 폴더 이동 후 실행.
+- `fontsdir` 옵션은 윈도우에서 `C:` 콜론 파싱 충돌 → 제거. 시스템 fontconfig가 Malgun Gothic 자동 인식.
+
+### 컷별 합성 후 concat
+```
+ffmpeg -y -f concat -safe 0 -i list.txt -c copy final.mp4
+```
+- 컷별 mp4가 모두 동일 codec/해상도/fps이면 `-c copy`로 무손실 concat. 재인코딩 X.
+
+### 스킵하면 망가지는 5가지
+1. ❌ TTS 사용 → 기계음 광고
+2. ❌ TTS 음성 STT로 timestamp 추정 → 자막 부정확
+3. ❌ 영상보다 긴 TTS에 freeze 패딩 → 정지 화면 광고
+4. ❌ 단어 1개씩 자막 → 못 읽음
+5. ❌ `subtitles` 필터에 절대경로 + `fontsdir` 옵션 → 윈도우에서 파싱 에러
+
+### 폴더 구조 표준 (재사용 패턴)
+```
+v_output/
+├── final_16x9_v2.mp4
+├── README.md
+├── preview_v2_01~04.jpg
+├── 원본음성_들어보세요/      ← 화자 비교 검수용
+├── work/                    ← 중간 산출물
+│   ├── clipNN_stt.json
+│   ├── clipNN_v2.ass
+│   └── clipNN_v2_final.mp4
+└── scripts/
+    ├── stt.py
+    └── v2_compose.py        ← 자막+합성+concat 한 방
+```
+
+### 처리 시간 / 비용
+- faster-whisper small int8 (CPU): 15초 영상 STT 약 5초
+- ffmpeg 합성 + concat: 30초 영상당 약 10초
+- 전체: 30초 광고 1편 ~2분 (모델 다운 제외), 비용 $0
+
+- confidence: high
+- source: 2026-05-02 bj/v 영상 2개 (루비아렌 광고 컷) 합성 작업. v1(TTS+freeze) 실패 → v2(원본음성+정확STT+freeze제거) 성공
+- related: §3 자막 싱크의 진실, §41 Seedance 보이스 일관성
