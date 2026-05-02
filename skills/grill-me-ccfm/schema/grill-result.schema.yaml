@@ -1,0 +1,117 @@
+# grill-result.yaml 표준 스키마
+# Version: 1.0
+# 
+# grill-me-ccfm 종료 시 생성되는 핸드오프 파일.
+# bob 스킬이 진입부에서 자동 로드.
+#
+# 모든 필드는 [REQUIRED] / [OPTIONAL] / [MODE-SPECIFIC] 표시.
+
+# ─── 메타 정보 ────────────────────────────────
+version: "1.0"                    # [REQUIRED] 스키마 버전
+mode: content                     # [REQUIRED] coding | content | strategy | personal
+topic: "메라블 대만 인스타 릴스"    # [REQUIRED] 한 줄 요약
+session_at: "2026-05-02T15:30:00+09:00"  # [REQUIRED] ISO 8601
+duration_min: 22                  # [REQUIRED] grill 소요 시간(분)
+question_count: 14                # [REQUIRED] 주고받은 질문 수
+
+# ─── 방향성 (Direction) ────────────────────────
+# 모드별로 필수 필드가 다름. 아래는 통합 표.
+
+direction:
+  # [content/strategy 필수]
+  brand: Merable                  # 브랜드명 또는 "internal"(내부) 또는 "client:XXX"
+  product: "루비알엔 앰플클렌저"    # 제품/서비스명 (없으면 null)
+  
+  # [content 필수]
+  channel: "Instagram Reels"       # 송출 채널
+  market: TW                       # KR / TW / ID / VN / TH / etc
+  goal: "인지+전환"                 # 캠페인 목표
+  target: "20대 후반~30대 중반 여성, 클렌저 고관여층"
+  tone: "전문가스러운데 친근"
+  
+  # [coding 필수]
+  # environment: "Windows gguy"
+  # repo: "ccfm-wiki"
+  # reuse_skills: ["bob", "dd"]
+  
+  # [strategy 필수]
+  # decision_type: "M&A"
+  # reversibility: "hard"
+  # stakeholders: ["우영회계법인", "백영무 부장"]
+  
+  # [personal 필수]
+  # context: "출산 D-25"
+  # consultant: "산부인과 의사 권고 있음"
+
+# ─── 금기사항 (Don't List) ⭐ 콘텐츠 모드 핵심 ──
+dont_list:
+  - id: D1                        # 자동 부여 ID (D1, D2, ...)
+    rule: "의사/약사/약국 등장 금지"
+    source: "대만 화장품 광고 규제"
+    severity: critical            # critical | high | medium | low
+    auto_check: true              # 산출물에서 자동 검증 가능?
+    
+  - id: D2
+    rule: "효능 단정형 카피 금지 (예: '여드름이 사라집니다')"
+    source: "TFDA 가이드라인"
+    severity: critical
+    auto_check: false             # 의미 검증 필요 → 사람 리뷰
+    
+  - id: D3
+    rule: "Before/After 비교 컷 금지"
+    source: "대만+한국 공통 화장품법"
+    severity: high
+    auto_check: true
+    
+  - id: D4
+    rule: "한자 간체 사용 금지 (반드시 번체)"
+    source: "대만 시장"
+    severity: critical
+    auto_check: true
+
+# ─── 구현 디테일 ──────────────────────────────
+implementation:
+  # 콘텐츠 모드
+  duration_sec: 30
+  cut_rhythm: "1초 컷"
+  subtitle_style: "상단고정 + 음성싱크 하단"
+  safe_zone: "900x1120 (대만 인스타)"
+  tools:
+    image_gen: "Gemini"
+    video_gen: "Kling 3.0"
+    edit: "FFmpeg"
+    tts: "ElevenLabs (대만식 만다린)"
+  variations: 3                   # A/B/C 변형 개수
+  
+  # 코딩 모드 (예시)
+  # language: "Python 3.11"
+  # frameworks: ["pandas", "playwright"]
+  # idempotent: true
+  # error_handling: "재시도 3회 후 알림"
+
+# ─── 산출물 정의 ──────────────────────────────
+deliverables:
+  - type: "콘티"
+    format: "Markdown"
+    quantity: 1
+  - type: "영상"
+    format: "MP4 1080x1920"
+    quantity: 3
+
+# ─── 컨텍스트 힌트 ────────────────────────────
+context_hints:
+  - "강용길 부장 컴플라이언스 사전 검수 필수"
+  - "M&A 클로징 5/30 전 송출 가능해야 함"
+  - "출산 예정일 5/27 — 본인 가용성 제한적"
+
+# ─── 다음 단계 ────────────────────────────────
+ambiguity_remaining: []           # [REQUIRED] 비어있어야 다음 단계 진입 가능
+                                  # 채워져 있으면 grill 재진입
+
+next_step: bob                    # bob | dd | direct_execution | hold
+
+# ─── ADR 자동 저장 ────────────────────────────
+adr:
+  save_to_wiki: true              # ccfm-wiki/14-decisions/ 에 저장
+  filename: "2026-05-02-merable-tw-reels-direction.md"
+  related_decisions: []           # 관련 과거 결정 ADR ID

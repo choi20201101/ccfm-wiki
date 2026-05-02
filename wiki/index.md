@@ -61,9 +61,20 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - **§17-19 볼륨필인 Day별 변화** — 얼굴형 시드 분리, 그래픽 도트 금지 웻룩, Kling 얼굴 스무딩 방지 (2026-04-21)
 - **§20-25 Trio 릴레이 · 구조 해시 · CTA 풀 · 숫자 오독 방지** (2026-04-21)
 - **§26-34 참조 이미지 인페인팅 · 금지 키워드(shadow/silhouette) · Day14 옷 변경 · 3D 세포 애니 · Kling reveal · 17s 표준 구조** (2026-04-23)
+- **§41 Seedance 2.0 / Veo3 / Sora2 보이스 일관성** (2026-05-02) — 4지선다 비교, Voice Conversion(RVC/ElevenLabs)이 1순위, lip-sync는 2순위, 의사결정 트리·비용 표
+- **§42 광고 영상 후처리 합성 표준** (2026-05-02) — 원본음성 + ASS 자막 burn-in + 16:9 1080p, freeze 화면 금지·청크 1.8s/18자·subtitles 필터 윈도우 함정. Reference: `Desktop/bj/v_output/scripts/v2_compose.py`
 
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
+
+### 🔥 grill-me-ccfm — 결정 분기 캐묻기 스킬 (NEW 2026-05-02)
+**"grill해줘" / "방향 잡아줘" / "하지 말아야 할 거" / M&A·출산·신규시장 입력 시 자동 발동.**
+- bob 앞단 자동 게이트 (`scripts/ambiguity_scorer.py` 점수 ≥ 5)
+- 4모드: coding / content / strategy / personal
+- Content 모드: 시장×제품 조합 자동 규제 체크 → Don't List 자동 제시 (대만 화장품 예: 의사 등장·효능 단정·B/A 비교·간체 사용 금지)
+- 산출물: `grill-result.yaml` (Direction + Don't List 분리 추적) → bob/dd/직접실행으로 핸드오프
+- 글로벌 동기화: `ccfm-wiki/skills/grill-me-ccfm/` 원본 → 새 PC에서 `install-grill-me-ccfm.ps1` 한 줄로 `~/.claude/skills/` 설치 (Code + Desktop 공통)
+- 기존 스킬과 경계: bob-auto-spec(Spec 초안) ≠ grill-me-ccfm(방향성+Don't List). 보완 관계.
 
 ### 🔥 GFA 광고 세팅 자동화 — [[domains/gfa-setting-automation]] (NEW 2026-04-30)
 **"GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" 요청 시 진입.**
