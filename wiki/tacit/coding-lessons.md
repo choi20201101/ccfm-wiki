@@ -4,7 +4,7 @@ type: tacit
 category: coding
 confidence: medium
 first_observed: 2026-04-13
-last_confirmed: 2026-04-29
+last_confirmed: 2026-05-03
 sources:
   - C:/Users/gguy/Desktop/MD (멀티 프로젝트 MD/스킬 시행착오 회고)
   - 협업 메뉴얼/바이브 코딩시행착오 케이스 CCFM.pdf
@@ -1586,3 +1586,63 @@ node C:/Users/gguy/Desktop/ggttt/scripts/edit_multi.mjs <out.png> "<prompt>" <re
 
 - confidence: high
 - source: 2026-04-30 slime_v03 시드 캐릭터 생성 시 OPENAI_API_KEY 만료 → ggttt + gpt-5.4로 우회 성공
+
+---
+
+## [2026-05-03] 광고 이미지 → 편집 가능 PSD 역분해 (20/100점 실패)
+
+### 시도 목적
+완성된 한국 화장품 광고 1254×1254 JPG 10장을 인물·제품·카피·이펙트 별 PSD 레이어로 자동 분해해서 캔바·미리캔버스처럼 2차 편집 가능하게 만들기. "캔바 매직그랩 같은 형태" 요구.
+
+### 결론 — 본질적으로 안 되는 작업
+**완성된 합성 광고를 디자이너 원본 PSD로 역분해하는 것은 픽셀 데이터만으로는 불가능.** 디자이너가 사용한 그룹/클리핑/마스크/효과 레이어/그라데이션 의도는 결과 픽셀에 안 남는다. 무슨 모델로 갈아도 이 벽은 안 깨짐. 사용자 자체 평가 20/100.
+
+### 시도한 파이프라인 진화 (실패 모음)
+
+| 라운드 | 검출 | 매팅 | 인페인트 | 결과 |
+|---|---|---|---|---|
+| 1 | YOLOv8x-seg(COCO) | rembg isnet-general-use | cv2.inpaint TELEA | 화장품 튜브 미검출(COCO에 화장품 없음), 머리카락 hard binary, 합성하면 1.33% 픽셀 손실 |
+| 2 | GroundingDINO tiny + SAM2.1 hiera tiny | (위와 동일) | (동일) | **박스 모양 마스크** 반환 — 객체 윤곽 X. 인물 area 720k가 캔버스 박스 그대로 |
+| 3 | YOLOv8x-seg(person만) + rembg | rembg | cv2.inpaint | "박스 마스크" 해결, 1.33% 손실 |
+| 4 (최종) | YOLOv8x-seg + BiRefNet seed partition | **BiRefNet** (ZhengPeng7/BiRefNet) | **LaMa** (simple-lama-inpainting) | Magic Grab 품질, 24s/image CPU, 재구성 100%(residual layer 추가). 그래도 사용자 평가 20점 |
+
+### Multi-LLM 협업 패턴 (잘 됨)
+**Codex 5.5 (API 키) + Claude general-purpose 서브에이전트 + Claude main** 삼자 병렬:
+- Codex: 기술 스택 분석 + drop-in 코드 (`lift_subjects()` 인스턴스 분리 로직)
+- 서브에이전트: 실제 `pip install` 검증 + 1장 스모크 → 환경 함정 5개 발견·우회
+- Main: 두 답변 통합
+
+서브에이전트가 install 검증한 게 결정적 — Codex 코드만으로는 환경 함정 못 잡음.
+
+### 환경 함정 (Windows 10 / Python 3.14.2 / torch 2.11.0+cpu / transformers 5.5.3)
+1. **`briaai/RMBG-2.0` gated** (401) → `ZhengPeng7/BiRefNet` 사용 (같은 아키텍처, 비-gated)
+2. **`IOPaint` import 시 `omegaconf`/`AnyText` deps 지옥** → `simple-lama-inpainting==0.1.2` 사용
+3. **`simple-lama-inpainting` deps 중 pillow source build가 Py3.14에서 실패** → `pip install --no-deps` (pillow 이미 설치됨)
+4. **BiRefNet weights가 fp16** → CPU에서 "Input float vs bias Half" 에러. `model.float()` 캐스팅 필수
+5. **SimpleLama가 mult-of-8로 패딩** → 1254×1254 입력이 1256×1256 출력. `out.crop((0,0,W,H))` 필수
+6. **transformers Sam2Model이 sam2_video 체크포인트 호환 경고** → image용 체크포인트 명시 필요. 또는 `ultralytics.SAM("sam2.1_t.pt")` 사용
+7. **Codex CLI OAuth 한도** (5월 5일까지) → `~/.codex/auth.json` 백업 → `codex login --with-api-key` (stdin) → 작업 → `mv` 복원
+8. **API 키 채팅창 노출 사고** — 사용자가 PowerShell `! $env:OPENAI_API_KEY = ""` prefix 모르고 그냥 키 붙여넣음 → 키 폐기 권고. 다음에는 명시적으로 입력 방법 먼저 안내
+9. **Gemini CLI sandbox 미강제** — Gemini가 멋대로 `decompose.py`를 직접 다시 씀. 다음에는 `--sandbox read-only` 또는 read-only 모드 강제
+
+### 결과 한계 (왜 20점인가)
+1. **Matte fringe** — BiRefNet soft alpha의 가장자리 픽셀 RGB에 원래 배경색이 anti-aliased로 섞여 있음. 다른 배경에 옮기면 옛 색이 fringe로 떠 보임. `cv2.inpaint`로 semi-alpha 영역 RGB 재추정(defringe) 적용 시 70-80% 개선, 100% 안 됨
+2. **레이어 폭발** — 일러스트 잎 한 조각, 별 한 개, 광선 한 줄까지 다 별도 레이어 → 27장 PSD 됨. `consolidate_instances(max_products=2)` + 잔여 → `_effects` 한 장으로 통합해 13장으로 줄임. 하지만 "원본 디자이너 의도의 레이어 그룹"은 못 살림
+3. **객체 픽셀 단위 겹침** — 인물 손가락이 제품 튜브 잡고 있는 부분 — 어느 레이어에 줄지 결정만 가능, "둘 다 깨끗"은 본질적으로 불가능
+4. **그림자/광원 분리 불가** — 인물 그림자가 인물 레이어 일부인지 별도 효과인지 픽셀에서 못 구분
+5. **머리카락 1-2px 깨짐** — VitMatte 같은 trimap 매팅으로 줄일 수 있지만 완전 제거 X
+
+### 100% 재구성 트릭 (가능은 하나 의미 한계)
+모든 가시 레이어 합성 → 원본과 픽셀 diff > 25 영역만 alpha=255로 만든 `_residual` 레이어를 마지막에 추가하면 `_recon_check.py` miss 0.00% 보장. 단 residual은 의미론적 레이어가 아니라 머리카락 잔털·광선·OCR 누락 손글씨가 다 섞인 catch-all이라 디자인 도구로는 못 쓴다.
+
+### 다음 시도 시 권장 경로
+- **인터랙티브 매직그랩 (1-객체)** — 배치 자동 분해 포기, 사용자 클릭 시드 → SAM2 마스크 → BiRefNet refine → LaMa fill. 캔바·iOS 본래 동작. 이게 현실적 천장
+- **분해 말고 새 합성** — ChatGPT/Gemini 이미지 API로 "이 카피 + 이 인물 + 이 제품 보장" 새 광고 합성이 분해 후 편집보다 빠르고 깨끗
+- **Adobe Firefly Generative Fill / Photoshop API** — 자체 모델 학습한 상용. 자체 구현보다 결과 좋음
+
+### 핵심 코드 (재사용 가능)
+`C:/Users/Administrator/Desktop/123/im/magicgrab.py` — BiRefNet 매팅 + LaMa 인페인트 lazy-loaded singleton helper. 다른 프로젝트에서 한 객체 들어내기에 그대로 쓸 수 있음 (24s/image CPU).
+`C:/Users/Administrator/Desktop/123/im/decompose_clean.py` — 위 + defringe + consolidation. 광고 분해는 못해도 단일 객체 lift 워크플로 베이스로 활용 가능.
+
+- confidence: high
+- source: 2026-05-02~05-03 한국 화장품 광고 10장 PSD 분해 시도, Codex 5.5 + Claude 서브에이전트 + Claude main 협업, 최종 사용자 평가 20/100
