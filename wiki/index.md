@@ -64,6 +64,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - **§26-34 참조 이미지 인페인팅 · 금지 키워드(shadow/silhouette) · Day14 옷 변경 · 3D 세포 애니 · Kling reveal · 17s 표준 구조** (2026-04-23)
 - **§41 Seedance 2.0 / Veo3 / Sora2 보이스 일관성** (2026-05-02) — 4지선다 비교, Voice Conversion(RVC/ElevenLabs)이 1순위, lip-sync는 2순위, 의사결정 트리·비용 표
 - **§42 광고 영상 후처리 합성 표준** (2026-05-02) — 원본음성 + ASS 자막 burn-in + 16:9 1080p, freeze 화면 금지·청크 1.8s/18자·subtitles 필터 윈도우 함정. Reference: `Desktop/bj/v_output/scripts/v2_compose.py`
+- **§50 루비알엔 v6_hero 4대 함정** (2026-05-04) — ChatGPT 웹 자동화로 god-tibo-imagen 한도 우회(네트워크 가로채기·캐릭터시트 부산물 필터), build_video_v2 cut 캐시 삭제 룰, TTS 리듬 baseline=SPEED 1.05+MAX_SIL 0.30, 광고 QA 3대(제품 누끼·한글 무결·TTS 늘어짐) 필수 검수
 
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
@@ -142,7 +143,7 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - [[tacit/operational-heuristics]] — 운영 노하우 (쿠팡 재고, 시즌 타이밍)
 - [[tacit/people-dynamics]] — 사람 읽기 (커뮤니케이션, 협상 신호)
 - [[tacit/viral-patterns]] — 바이럴 감각 (댓글 유도, 공유 메커니즘)
-- [[tacit/chatgpt-web-automation]] — 🆕 **ChatGPT 웹 UI 자동화 운영 룰** (playwright CDP, 셀렉터 자가진단, alt 텍스트가 가장 안정, 다운로드 동기화 함정, 2026-04-27)
+- [[tacit/chatgpt-web-automation]] — 🆕 **ChatGPT 웹 UI 자동화 운영 룰** (playwright CDP §1-6 / 영구 프로필+네트워크 가로채기 §7, 셀렉터 자가진단, alt 텍스트가 가장 안정, 다운로드 동기화 함정, 캐릭터 시트 부산물 필터, 2026-04-27 + 2026-05-04)
 
 ### 소스
 - [[sources/src-iboss-choi-jaemyeong]] — i-boss 201건 (2017~2026) · 글별 상세: [[raw/iboss/INDEX]]

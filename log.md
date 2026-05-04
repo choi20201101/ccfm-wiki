@@ -1,5 +1,15 @@
 # CCFM Wiki Log
 
+## [2026-05-04] ingest | 루비알엔 v6_hero 액션 광고 4대 함정 — ChatGPT 웹 우회 + cut 캐시 + TTS 리듬 + 광고 QA
+
+- 출처: 2026-05-04 루비알엔 v6_hero (12컷 원펀맨 톤 액션 영웅 광고) 재작업. 1차 빌드 후 사용자 컴플레인 4건 동시 발생 → 풀 재빌드 케이스
+- **(A) ChatGPT 웹 자동화로 god-tibo-imagen API 한도 우회** — `playwright launch_persistent_context` + 시스템 Chrome (`channel='chrome'`) + 자동화 감지 우회 인자. 이미지 다운로드는 `page.on('response')` **네트워크 가로채기로만 작동** (DOM `<img>`, conversation API 모두 실패). ChatGPT가 매번 캐릭터 시트(고정 `4883567 bytes`) + 실제 장면 둘 다 생성 → 캐릭터 시트 명시 제외 + ref hash/size 제외 + 2MB 미만 제외 + 남은 것 중 가장 큰 것 = 실제 장면. 한국어 프롬프트로 "캐릭터 시트나 여러 패널 절대 안 됨, 단일 장면 일러스트만" 강하게 명시
+- **(B) build_video_v2 cut 캐시 함정** — `make_cut_motion()` 첫 줄 `if exists: return out` 때문에 SCRIPT/SPEED 변경 후 재빌드해도 옛날 cut_XX.mp4 그대로 사용. 재빌드 시 `_work_v{N}/cut_*.mp4` + `03_audio/full_v{N}*` + `03_audio/cues_v{N}*` 반드시 삭제 (디렉토리 통째 rm -rf 는 'busy' 자주 남, 파일 단위로)
+- **(C) TTS 리듬 baseline 재확정** — 액션/임팩트 광고는 **SPEED=1.05 + MAX_SIL=0.30** (검증: v6 1.05+0.30 → 23.5s ✓). SPEED 0.8대로 길이 늘리면 무조건 "늘어진다" 컴플레인. 진단법: cue ratio `(end-start)/(raw_end-raw_start)` 1.15 초과면 음성 자체가 늘어진 것
+- **(D) 광고 QA 3대 필수 (사용자 명시 피드백)** — ① 제품 누끼 = 실제 제품 (`pd1.png` 직접 ref, `product_master.png` 는 스타일 통일용일뿐 누끼 보존용 아님), ② 한글 텍스트 무결 (이미지 프롬프트에 한국어 텍스트 그리기 요구하면 깨짐 70%+, 자막은 ffmpeg ASS 단계로만), ③ TTS 늘어짐 금지
+- 갱신: [[tacit/video-gen-lessons]] §50, [[tacit/chatgpt-web-automation]] §7 (영구 프로필 + 네트워크 가로채기 패턴, CDP 모델과 비교)
+- 코드 위치: `pipeline/open_chatgpt.py`, `pipeline/gen_via_chatgpt.py`, `pipeline/dl_via_network.py`, `pipeline/_chrome_profile/`
+
 ## [2026-05-03] ingest | 샤르드 cid 3001~6000 18축 자동 광고 시스템 정본 — 자극 카피 7대 후킹
 
 - 출처: 샤르드 CHARDE 멜라케어 필크림 마스크 cid 3001~6000 광고 3000장 운영 (2026-04-30~05-03)

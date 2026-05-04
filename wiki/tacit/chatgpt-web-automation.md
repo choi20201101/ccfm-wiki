@@ -126,3 +126,120 @@ grep -n "generated_img\|menu_thinking\|menu_pro" chatgpt_client.py
 - 2026-04-27 srd 샤르드 멜라케어 필크림 마스크 광고 100장 자동 생성 운영 1차
 - 발견자: 운영자 + Claude Opus 4.7 (1M context)
 - 코드 경로: `C:\Users\Administrator\Desktop\srd\scripts\chatgpt_client.py`, `run_worker.py`
+
+---
+
+## 7. 영구 프로필 + 네트워크 가로채기 패턴 (2026-05-04, 루비알엔 v6_hero)
+
+§1~6은 CDP 9222 디버그 포트로 이미 떠있는 Chrome 에 attach 하는 srd 운영 모델. v6 케이스는 다른 모델 — **`launch_persistent_context` 영구 프로필** + **`page.on('response')` 네트워크 가로채기**. 사용자가 한 번 로그인 후 매번 자동 실행.
+
+### 시스템 Chrome 필수 (번들 chromium 흰화면 함정)
+
+번들 chromium 으로 띄우면 `chatgpt.com` 흰화면에서 멈춤 (현상: 로그인 화면도 안 뜸). 시스템 Chrome 사용 + 자동화 감지 우회 인자 필수:
+
+```python
+ctx = p.chromium.launch_persistent_context(
+    PROFILE_DIR,
+    headless=False,
+    channel='chrome',  # 시스템 Chrome 사용
+    viewport=None, no_viewport=True,
+    args=['--start-maximized', '--disable-blink-features=AutomationControlled'],
+    ignore_default_args=['--enable-automation'],
+)
+```
+
+`PROFILE_DIR` 은 git ignore 한 폴더. 한 번 로그인하면 쿠키 영구 저장 → 다음 실행부터 자동 인증.
+
+### 다운로드 — 셀렉터 다 실패, 네트워크 캡처가 유일 정답
+
+§1~2 의 `img[alt="생성된 이미지"]` 셀렉터는 v6 시점 (2026-05-04) 의 ChatGPT UI 에서 **0개 매칭**. ChatGPT 가 생성 이미지를 `<img>` 태그로 렌더하지 않는 모드로 변경됨 (canvas/picture/blob 형태). 추가로 시도한 모든 방식 실패:
+- `[data-message-author-role="assistant"] img` — 0개
+- `picture > source` srcset — 매칭 안 됨
+- `getComputedStyle(el).backgroundImage` — 빈 string
+- `/backend-api/conversation/{id}` — `Conversation not found` (auth 또는 endpoint 변경)
+- 이미지 클릭으로 lightbox 열기 → download 버튼 — `pointer events intercepted` 빈발
+- 사이드바 chat 클릭 → URL navigate — splash overlay intercept
+
+**유일하게 작동:** `page.on('response')` 로 모든 응답을 가로채서 `image/png` content-type + 50KB 이상 body 저장:
+
+```python
+captured = []
+def on_response(resp):
+    try:
+        ct = resp.headers.get('content-type', '')
+        if 'image' not in ct.lower(): return
+        if 'svg' in ct or 'avatar' in resp.url or 'profile' in resp.url: return
+        body = resp.body()
+        if len(body) < 50000: return
+        captured.append({'url': resp.url, 'len': len(body), 'ct': ct, 'body': body})
+    except Exception: pass
+page.on('response', on_response)
+```
+
+### 캐릭터 시트 함정 — 매번 부산물로 같이 생성됨
+
+**ChatGPT 는 매 이미지 생성 요청마다 (1) 사용자가 요청한 장면 + (2) 캐릭터 시트(고정 사이즈 4883567 bytes, 영웅 캐릭터의 4-패널 reference) 둘 다 만든다.** 캐릭터 시트가 항상 더 크게 응답되므로 단순 `sort by len reverse` 후 첫번째 = 무조건 캐릭터 시트.
+
+필터링 로직:
+```python
+HERO_HASH = hashlib.md5(open(HERO_REF, 'rb').read()).hexdigest()
+PD_HASH = hashlib.md5(open(PD_REF, 'rb').read()).hexdigest()
+HERO_SIZE = os.path.getsize(HERO_REF)
+PD_SIZE = os.path.getsize(PD_REF)
+CHARSHEET_SIZE = 4883567
+
+candidates = []
+for c in pngs_sorted_by_len_desc:
+    h = hashlib.md5(c['body']).hexdigest()
+    if h == HERO_HASH or h == PD_HASH: continue  # ref 자체
+    if c['len'] in (HERO_SIZE, PD_SIZE): continue  # ref 사이즈
+    if c['len'] == CHARSHEET_SIZE: continue        # 캐릭터 시트 부산물
+    if c['len'] < 2_000_000: continue              # ref 썸네일
+    candidates.append(c)
+target = candidates[0]  # 남은 것 중 가장 큰 = 실제 장면
+```
+
+### 프롬프트 — "캐릭터 시트 만들지 마"를 강하게 명시해도 만든다
+
+ChatGPT GPT-4o image gen 은 캐릭터 reference 를 첨부하면 자동으로 character sheet 를 부산물로 만드는 경향. 한국어로:
+
+> "다음 장면을 그려줘. 캐릭터 시트나 여러 패널 절대 안 됨. 오직 하나의 장면 일러스트만. ... 전체 화면을 가득 채우는 한 장의 큰 일러스트. 작은 패널 분할 금지. 텍스트/라벨/사이드바/도표 금지."
+
+이렇게 강하게 명시해도 캐릭터 시트는 매번 같이 나옴. 그래서 위 필터링 로직이 우회 방법이 됨.
+
+### 완료 신호
+
+`button[data-testid="stop-button"], button[aria-label*="중지"]` 가 사라지면 생성 완료. 사라진 후 **+8초 안정화 대기** 필수 (이미지 src 동기화 시간).
+
+```python
+# 1) stop 버튼 등장 대기 (생성 시작 확인)
+for _ in range(20):
+    if page.locator('button[data-testid="stop-button"]').count() > 0: break
+    time.sleep(1)
+# 2) stop 버튼 사라짐 대기 (생성 완료)
+end = time.time() + 480  # 최대 8분
+while time.time() < end:
+    if page.locator('button[data-testid="stop-button"]').count() == 0: break
+    time.sleep(3)
+time.sleep(8)  # src 안정화
+```
+
+### 검증 사례
+
+2026-05-04 루비알엔 v6_hero 광고 S06/S07/S11 (제품 등장 3컷) 재생성. god-tibo-imagen API 한도 초과 상황에서 ChatGPT 웹 자동화로 우회. 3컷 모두 melable RubyRN Ampoule Cleanser 라벨/색상/모양 정확히 보존하며 액션 포즈 생성 성공. 컷당 사이클 약 5분 (첨부→프롬프트→생성→캡처).
+
+### 코드 경로
+
+- `C:/Users/gguy/Desktop/rubiv/pipeline/open_chatgpt.py` — 로그인 세션만 띄우기
+- `C:/Users/gguy/Desktop/rubiv/pipeline/gen_via_chatgpt.py` — 첨부+프롬프트+네트워크 캡처+필터링
+- `C:/Users/gguy/Desktop/rubiv/pipeline/dl_via_network.py` — 다운로드만 (이미 채팅에 있는 이미지)
+- `C:/Users/gguy/Desktop/rubiv/pipeline/_chrome_profile/` — 영구 프로필 (gitignore)
+
+### CDP 모델 vs 영구 프로필 모델 — 언제 뭘 쓸까
+
+| 모델 | 시나리오 | 장점 | 단점 |
+|---|---|---|---|
+| CDP 9222 (§1~6) | 이미 떠있는 Chrome 에 attach. 운영자가 수동 모니터링 병행 | 사용자 시각 감독 가능, 셀렉터 진단 즉시 | Chrome 항상 떠있어야, 좀비 워커 위험 |
+| 영구 프로필 (§7) | 일회성 자동 실행 (한도 우회 등). 한 번 로그인 후 unattended | unattended 가능, CDP 셋업 불필요 | 셀렉터 깨지면 진단 어려움, 응답 캡처 의존 |
+
+샤르드 같은 대량 운영 = CDP. 우회 일회성 작업 (v6_hero S06/S07/S11) = 영구 프로필.

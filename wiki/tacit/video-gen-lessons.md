@@ -1491,3 +1491,103 @@ v_output/
 - confidence: high
 - source: 2026-05-02 bj/v 영상 2개 (루비아렌 광고 컷) 합성 작업. v1(TTS+freeze) 실패 → v2(원본음성+정확STT+freeze제거) 성공
 - related: §3 자막 싱크의 진실, §41 Seedance 보이스 일관성
+
+---
+
+## §50 — 루비알엔 v6_hero 액션 광고 (2026-05-04) — 4대 함정과 처방
+
+40초 목표 원펀맨 톤 액션 영웅 광고 (12컷, "루비알엔 맨" vs "얼룩 괴물" 진심펀치). 1차 빌드 후 사용자 피드백 4건이 동시에 떨어져 풀 재작업한 케이스. 다음 액션 광고에 그대로 통하는 처방 정리.
+
+### A. ChatGPT 웹 자동화로 god-tibo-imagen 한도 우회 (네트워크 가로채기 패턴)
+
+**상황:** S06/S07/S11 제품 컷 재생성 필요한데 god-tibo-imagen API 가 `usage_limit_reached` (prolite plan, 24h 후 리셋). 사용자: "GPT 이미지 크롬 플레이라이트로 해서 생성하면 됨, 크롬 창 띄우면 로그인해줄게."
+
+**해결 — 영구 프로필 + 네트워크 가로채기 조합 (CDP 9222 안 씀):**
+
+1. `playwright.chromium.launch_persistent_context()` 로 영구 프로필 (`pipeline/_chrome_profile/`) 사용. 사용자가 한 번만 로그인하면 이후 자동.
+2. **시스템 Chrome 필수** — `channel='chrome'` 안 쓰면 번들 chromium 흰화면 멈춤. 자동화 감지 우회 인자 필수:
+   ```python
+   args=['--start-maximized', '--disable-blink-features=AutomationControlled']
+   ignore_default_args=['--enable-automation']
+   ```
+3. **이미지 다운로드는 `page.on('response')` 네트워크 가로채기로만 가능.** 시도해서 실패한 방식:
+   - DOM `<img>` 셀렉터 (alt 등): ChatGPT가 생성 이미지를 `<img>` 태그로 렌더하지 않음 (canvas / picture / blob form)
+   - `/backend-api/conversation/{id}` API: `Conversation not found` 반환 (auth/format issue)
+   - 사이드바 클릭/lightbox: pointer events intercepted 빈발
+4. **ChatGPT 가 매 생성마다 캐릭터 시트 + 실제 장면 둘 다 만든다.** 캐릭터 시트는 항상 `4883567 bytes` 고정 사이즈 (4MB 이상)로 가장 크게 응답되므로 단순 "largest" 정렬은 무조건 캐릭터 시트를 가져옴. 필터링:
+   - `CHARSHEET_SIZE = 4883567` 명시 제외
+   - `< 2MB` 제외 (보통 ref 썸네일)
+   - ref 파일 hash/size 제외 (hero, pd1)
+   - 남은 것 중 가장 큰 것 = 실제 장면
+
+5. **stop 버튼 사라짐 = 완료 신호:**
+   ```python
+   page.locator('button[data-testid="stop-button"], button[aria-label*="중지"]').count() == 0
+   ```
+   사라진 후 +8초 안정화 대기 필수 (이미지 src 동기화).
+
+6. 프롬프트는 한국어로 강하게 명시: **"캐릭터 시트나 여러 패널 절대 안 됨. 오직 하나의 장면 일러스트만. 전체 화면을 가득 채우는 한 장의 큰 일러스트. 작은 패널 분할 금지. 텍스트/라벨/사이드바/도표 금지"** — 약하게 쓰면 무시당함.
+
+검증: v6_hero S06/S07/S11 3컷 모두 melable RubyRN 라벨 정확히 보존하며 액션 포즈 생성 성공. 컷당 사이클 ~5분.
+
+코드 위치: `pipeline/open_chatgpt.py` (세션 띄우기), `pipeline/gen_via_chatgpt.py` (생성+네트워크캡처), `pipeline/dl_via_network.py` (다운만).
+
+→ 별도 페이지: [[tacit/chatgpt-web-automation]] 의 §6 으로 보강됨.
+
+### B. build_video_v2 cut 캐시 함정 — 30분 디버깅 손실
+
+`build_video_v2.py:292` 의 `make_cut_motion()` 첫 줄: `if os.path.exists(out): return out`. SCRIPT/SCENE/SPEED 변경 후 재빌드해도 옛날 `cut_XX.mp4` 그대로 사용됨.
+
+**증상:** v6 SPEED 1.10 으로 빌드했는데 영상 길이가 옛날과 동일 (43.4s). cut_XX.mp4 timestamp 보니 4일 전. cue JSON 은 새로 생성됐는데 컷 mp4 만 캐시된 상태.
+
+**처방 — 재빌드 시 반드시 삭제 (디렉토리 통째로 rm -rf 는 'Device or resource busy' 자주 남, 파일 단위로):**
+```bash
+cd pipeline/_work_v{N}_*/
+rm -f cut_*.mp4 video_only.mp4 video_fx.mp4 sfx_track.mp3 \
+      full_audio*.mp3 sil_seg_*.wav sil_concat.txt subs.ass concat.txt
+rm -rf fx_cuts
+cd ..
+rm -f 03_audio/full_v{N}*.mp3 03_audio/_alignment_v{N}*.json 03_audio/cues_v{N}*.json
+```
+
+근본 fix: `make_cut_motion` 에 `cue['start']` + `cue['end']` 해시를 outname 에 박아두면 자동 무효화. 시간 없으면 매뉴얼 삭제 운영.
+
+### C. TTS 늘어짐 진단 — SPEED 와 MAX_SIL 누가 범인?
+
+사용자: "TTS가 너무 늘어지고 느림. 좀더 리듬감 있게."  
+→ 진단: 문장 길이가 짧아서 패딩으로 늘어진 것인지, 음성 자체가 느린 것인지 cue JSON 으로 분리.
+
+```python
+# cue JSON 에서 컷별 ratio 계산
+ratio = (cue['end'] - cue['start']) / (cue['raw_end'] - cue['raw_start'])
+# ratio = 1.0 → 음성 그대로
+# ratio > 1.2 → SPEED 가 너무 낮음 (atempo < 0.85)
+# ratio ≈ 1.0 + sum(silence) > raw_dur → MAX_SIL 이 너무 큼
+```
+
+v6_hero 사례:
+- 1차: SPEED=0.82 + MAX_SIL=0.85 → 43.4s (ratio 1.21+) → "늘어진다" 컴플레인
+- 2차: SPEED=1.10 + MAX_SIL=0.30 → 21.5s → "너무 빠르다, 5%만 모션 잘 보이게"
+- 3차: **SPEED=1.05 + MAX_SIL=0.30 → 23.5s → 사용자 OK** ("오 잘됐다")
+
+**액션 광고 baseline = SPEED=1.05 + MAX_SIL=0.30** 으로 시작. 호흡 강조 컷 있으면 라인별 SPEED 차등 (§35.3).
+
+문장이 짧아서 길이 부족하면 컷 추가 / BGM intro·outro 로 채울 것. SPEED 0.8 대로 떨어뜨려 강제 늘리면 무조건 "늘어진다" 컴플레인.
+
+### D. 광고 QA — 빌드 전후 매번 검수해야 할 3가지
+
+사용자 명시 피드백 (2026-05-04): "**제품 일관성, 한글이 영어/이상한 언어로 나오는거, TTS 늘어짐 — 절대로 안 되게.**"
+
+| QA 항목 | 검수 방법 | 대표 실패 |
+|---|---|---|
+| 제품 누끼 = 실제 제품 | 빌드 후 제품 컷 sample frame → "melable", "RubyRN Ampoule Cleanser" 라벨 식별 가능? | v6 처음에 product_master 를 빨강 오라로 재해석한 것 들고 있었음 → "다른 제품으로 합성됐다" 컴플레인 |
+| 텍스트 한글 무결 | ASS 자막 + 이미지 내 텍스트 모두. 영어/일본어/깨진 한글 0건 | 이미지 프롬프트에 "Korean text bubble '~'" 넣으면 GPT 가 잘못된 한글/일본어 그리기 쉬움 |
+| TTS 페이스 | cue ratio < 1.15 + 사용자 시청 | SPEED 너무 낮으면 호흡 늘어짐 |
+
+**제품 일관성 — 핵심 룰:** 제품 등장 컷 (hero가 들고있는 컷, 짜는 컷, victory 컷) 은 반드시 `pd1.png` 를 직접 ref로 사용. `product_master.png` 는 **스타일 통일용일 뿐 누끼 보존용 아님** (이미 generative 변형이 들어가 있음). edit_multi.mjs 호출 시 (hero_master + pd1) 조합.
+
+**한글 깨짐 회피:** 이미지 프롬프트에 한국어 텍스트 그리기 요구하면 GPT가 깨뜨릴 확률 70%+. 제품 라벨 한글은 pd1.png ref 픽셀 보존, 자막은 ffmpeg ASS 합성 단계에서만. 프롬프트 끝에 "텍스트/라벨/사이드바/도표 금지" 명시.
+
+- confidence: high (4건 모두 단일 세션 내 발견 + 사용자 직접 검증)
+- source: 2026-05-04 루비알엔 v6_hero 액션 광고 재작업 (43s → 23.5s, S06/S07/S11 제품컷 재생성)
+- related: §47 SPEED+MAX_SIL 표, §45 실제 제품 사진 reference 필수, [[tacit/chatgpt-web-automation]]
