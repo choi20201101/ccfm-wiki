@@ -35,6 +35,7 @@ updated: 2026-04-29
 | "시댄스 보이스 일관성" / "Seedance/Veo/Sora 다중 컷 보이스 통일" | [[tacit/video-gen-lessons]] §41 | 4지선다 → Voice Conversion(RVC/ElevenLabs)이 1순위, lip-sync는 2순위 |
 | "영상 합치기" / "AI 영상 컷 후처리" / "릴스 자막 합성" / "16:9 합성" | [[tacit/video-gen-lessons]] §42 | 원본음성+ASS 자막+freeze 금지 표준, scripts: `bj/v_output/scripts/v2_compose.py` |
 | "grill해줘" / "꼼꼼하게 캐물어" / "방향 잡아줘" / "하지 말아야 할 거" / 신규 시장·조직개편·콘텐츠 규제 등 되돌리기 어려운 결정 | [[domains/grill-me-ccfm]] + 스킬 `grill-me-ccfm` | bob 앞단 자동 게이트, ambiguity score ≥ 5 자동 발동, 4모드(coding/content/strategy/personal), 글로벌 동기화 (`ccfm-wiki/skills/`) |
+| "코덱스 깡통" / "메모리 자동 grounding" / "PRE-WORK 프로토콜" / 다른 PC 셋업 / `📚 참조:` 의미 | [[domains/codex-grounding-protocol]] + `skills/codex-grounding/` | 3-CLI 호출 시 메모리·위키 인덱스 강제 매칭, mllm 5모드 prompt prepend, marker-based idempotent install (`install-codex-grounding.ps1`) |
 
 ---
 

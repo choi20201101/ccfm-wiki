@@ -1,5 +1,19 @@
 # CCFM Wiki Log
 
+## [2026-05-05] ingest | Codex grounding protocol — 3-CLI 깡통 응답 방지 시스템
+
+- 출처: 사용자 요청 "코덱스 호출될 때 메모리 인덱스랑 wiki 지식 교훈 기반으로 피드백/리뷰. 깡통 코덱스 의미없으니 강제 설정"
+- **문제**: Claude/Codex/Gemini 3-CLI 가 각자 dotfile(`CLAUDE.md`/`AGENTS.md`/`GEMINI.md`) 자동 로드하지만, 메모리/위키를 **읽으라고 강제하는 절차** 없어 LLM이 "기억나는 대로" 답변. 사용자가 거른 함정(`feedback_*.md`) 반복.
+- **해결 (3-layer defense in depth)**:
+  - **Layer 1 — 헬퍼**: `~/.codex/scripts/context-bootstrap.mjs` (Node.js). prompt → 한국어 조사 trim + stop word 필터 → MEMORY.md/HOTSHEET.md 토큰 매칭 → `<context_grounding>` 블록 출력.
+  - **Layer 2 — dotfile MANDATORY PRE-WORK PROTOCOL**: 3개 dotfile 최상단에 marker(`<!-- BEGIN: codex-grounding-protocol v1 -->`) 으로 감싼 4단계 절차(헬퍼 → fallback grep → 매칭 파일 로드 → `📚 참조:` 첫 줄 표시).
+  - **Layer 3 — orchestrator.py inject**: `multi-llm-orchestrator/scripts/orchestrator.py` 의 ask/review/fix/debate/consensus 5모드 모두에서 `_grounded(prompt, source)` 헬퍼로 `<context_grounding>` 블록을 prompt 앞에 prepend. 비활성화: env `MLLM_SKIP_GROUNDING=1`.
+- **Opus 4.7 review로 즉시 반영된 P0/P1**:
+  - P0: `orchestrator.py` 가 forwarding 시 grounding 미주입 → 5모드 모두 깡통이었음. `build_grounding()` 헬퍼 + `_grounded()` 래퍼 추가하고 ask/review/fix/debate r1/consensus r0 patch.
+  - P1: 한국어 조사 미분리(`feedback이` → 매칭 실패). `KOR_PARTICLES` regex로 token 끝에서 trim. 의문/명령형 어미("어떻게"/"뭐야"/"해줘"/"만들어줘") stop word 추가.
+- **다른 컴퓨터 portability**: 헬퍼는 `$USERPROFILE`/`$HOME` 자동 해석. env `CCFM_WIKI_ROOT`, `CCFM_MEMORY_INDEX` 또는 `~/.codex/AGENTS.local.md` 의 `KEY=...` 1줄로 override. 1줄 install: `git clone <wiki> && cd skills && .\install-codex-grounding.ps1` (marker-based idempotent, 백업 자동).
+- 갱신: [[domains/codex-grounding-protocol]] (신규 도메인 페이지), [[HOTSHEET]] 트리거 행 추가, `skills/codex-grounding/` 신규(헬퍼 + 3개 protocol fragment + install ps1), `skills/README.md` 표 추가.
+
 ## [2026-05-04] ingest | 루비알엔 v6_hero 액션 광고 4대 함정 — ChatGPT 웹 우회 + cut 캐시 + TTS 리듬 + 광고 QA
 
 - 출처: 2026-05-04 루비알엔 v6_hero (12컷 원펀맨 톤 액션 영웅 광고) 재작업. 1차 빌드 후 사용자 컴플레인 4건 동시 발생 → 풀 재빌드 케이스
