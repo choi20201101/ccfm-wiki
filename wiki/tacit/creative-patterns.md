@@ -4,7 +4,7 @@ type: tacit
 category: creative
 confidence: mixed
 first_observed: 2026-04-12
-last_confirmed: 2026-04-13
+last_confirmed: 2026-05-05
 contradiction: none
 ---
 
@@ -451,6 +451,149 @@ contradiction: none
 - **적용**: `existing_copies = [c for c in all_existing if c.id < START_CID or c.id in ckpt_done]`
 - 일반화: 사용자가 명시적 결과물에 손댄 흔적이 있으면 (분류·태그·이름 변경) 자동 폐기/갈아엎기 절대 X
 - confidence: high (사용자 디렉션 2026-04-29 + 2026-05-03 재확인)
+
+---
+
+## [2026-05-04] "번역 영상" 톤 자막 — 외국어 나레이션 + 한글 직역 자막 패턴
+
+영문 더빙(영문 다큐 톤) + 한글 자막 영상에서 "TikTok/릴스 자동 번역 자막" 처럼 보이게 하는 표준 패턴. B29 메라블 PDRN 다큐(102s/60s) 작업에서 6번 빌드 반복 후 정착.
+
+### 핵심 룰
+
+**1. 영문/한글 phrase를 짝맞춰 동시 표시 (가장 중요)**
+- 컷별로 `phrases.en[i]` ↔ `phrases.kr[i]` 1:1 짝지어 같은 시간대에 표시
+- 영문은 컷 헤드라인 1단어("INVESTIGATION")로 두면 번역 자막 톤 X — 실제 나레이션의 phrase("88% of women in their 30s+")로 작성해야 직역 톤
+- 컷 시간을 phrase 수만큼 등분 (보통 1.5~3초/phrase) → SNS 리듬감
+- **이유**: 번역 영상의 본질은 "들리는 외국어 ↔ 그 직역"이 동기화된 것. 영문 헤드라인은 동기 X
+- **적용**: TTS 호출 시 컷별 phrase 배열을 별도 데이터 파일(예: `b29_phrases.mjs`)로 분리해 빌드 스크립트에서 import
+
+**2. 자막 위치 — 화면 하단 X, 화면 중앙 위 (60~70% 지점)**
+- ASS Alignment=2(bottom-center) + MarginV 280 → 화면 하단(1640px). 어두운 배경(책상/제품 그림자)에 검정 박스 묻힘
+- MarginV 800/680(영문/한글)으로 올려서 화면 1100~1240 위치 = 인물·제품 위 → contrast 살아남
+- **반례**: 첫 빌드에 MarginV 280으로 한 결과 어두운 컷에서 박스 안 보이고 흰 글자만 떠 있는 형태. 18s 컷(밝은 배경)은 보였는데 4s 컷(어두운 책장)은 박스 묻힘
+
+**3. ASS BorderStyle=3 + scale animation 충돌 — fade만 사용**
+- `\fad(60,60)` 단순 페이드는 박스 렌더링과 호환
+- `\t(0,150,\fscx110\fscy110)` pop-in scale은 BorderStyle=3 박스 그리기와 충돌해서 첫 phrase 시작 직후 박스가 사라지는 현상 발생 (libass 버그/한계)
+- **룰**: 릴스 톤 효과는 fade만. scale pop-in 원하면 burn-in 후 ffmpeg drawtext로 후처리
+
+**4. 폰트 — Windows 기본 폰트만 (Impact / Malgun Gothic)**
+- 영문: `Impact` (Windows 기본). Arial Black은 일부 시스템에 없어서 fallback 시 박스 깨짐
+- 한글: `Malgun Gothic` (Windows 기본). NotoSansCJKkr은 fallback 시 BorderStyle 처리 깨질 수 있음
+- **룰**: 직원 PC에서도 동작해야 하는 ass 자막은 비기본 폰트 금지
+
+**5. 박스 패딩 트릭 — 텍스트 양끝 공백 추가**
+- `   text   ` 처럼 양끝에 공백 3개 추가 → 박스가 텍스트 너비보다 넓게 그려져 패딩 효과
+- ASS Outline 값(box padding)만으로는 좌우 패딩 부족할 때 보완
+
+**6. 시선 흐름 — 영문 먼저, 한글 살짝 늦게**
+- 영문 fade-in 60ms, 한글 fade-in 100ms → 영문이 먼저 박혀서 시선 잡고 한글이 따라옴
+- 사용자가 영문을 인식하기 전에 한글이 먼저 뜨면 "한글만 본다" 패턴. 번역 자막 효과 X
+
+### 표준 ASS 스타일 (B29 정착본)
+
+```
+Style: EnReels,Impact,52,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,2,0,3,20,0,2,50,50,800,1
+Style: KrReels,Malgun Gothic,54,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,1,0,0,0,100,100,0,0,3,20,0,2,60,60,680,1
+```
+- BorderStyle=3 (opaque box) + Outline=20 (박스 패딩) + BackColour 검정 opaque + 흰 글씨
+- Alignment=2 + MarginV 800(영문)/680(한글) → 화면 중앙 위, 영문 위·한글 아래 60px 간격
+
+### Dialogue 효과 표준
+```
+{\fad(60,60)}   ${enT}      ← 영문, 양끝 공백 3개
+{\fad(100,60)}   ${krT}     ← 한글, fade in 살짝 늦게
+```
+
+### 일반화
+
+이 패턴은 다음 시나리오에 그대로 재사용 가능:
+- 외국어 나레이션 + 한글 자막 (D/C 다국어 더빙)
+- 한국어 나레이션 + 외국어 자막 (대만/일본/동남아 진출용)
+- 다큐·교양·뉴스 톤 콘텐츠 (TikTok 자동 번역 자막처럼 보이게)
+
+confidence: high (B29 6회 iteration + 사용자 검증 완료)
+
+연결: [[da-creative]] 자막 박스 묻힘 트랩 · [[content-ai-automation]] 다국어 콘텐츠 빌드 자동화 · [[sea-tiktok]] 동남아 진출 시 동일 패턴 재사용
+
+---
+
+## [2026-05-05] 의인화 동물 캐릭터 SNS 광고 — 3-head-tall chibi + 워터컬러 톤 + social proof 컷 분배
+
+confidence: high
+sources: [[wiki/sources/src-merable-b30-capybara-2026-05-05]] — B30 카피바라 다큐 영상 빌드 (5회 iteration 학습)
+
+### 핵심 발견
+
+**SNS 동물 캐릭터 광고는 "사실적 동물" 또는 "어른형 의인화" 두 함정 사이에서 3-head-tall chibi 마스코트가 광고 친화적 sweet spot.**
+
+ChatGPT 시드 생성 prompt에 다음을 명시 안 하면 5회 iteration 필요:
+
+| 누락 시 결과 | 해결 표현 |
+|---|---|
+| 네 발 야생 동물 | "BIPEDAL — TWO LEGS, NEVER on four legs" |
+| 7-8등신 어른형 (uncanny) | "3-HEAD-TALL CHIBI proportions — large rounded head ≈ 1/3 of body, short stubby arms and legs" |
+| 알몸 동물 | "wears soft simple clothing — pastel cardigan over cream dress" |
+| 동물 발 | "mitten-like rounded paws" |
+| 무표정 | "BIG sparkly eyes with eyelashes, soft pink cheeks, full human-style facial expression range" |
+| 일관성 없음 | "young woman in [animal] form" / "kawaii mascot character" 페르소나 명시 |
+| 사실 톤 | "Studio Ghibli watercolor / Sanrio mascot / Sylvanian Families" 비교군 2-3개 명시 |
+
+처음부터 7개 모두 박은 prompt = 1회 통과.
+
+### 광고 영상 컷 배경에 social proof 분배
+
+다큐·감정 광고 톤 깨지 않게 abstract pictogram만 사용해서 컷 배경에 살짝씩 박는다 (전면 광고 카드 X):
+
+| 신호 | 어떻게 | 효과 |
+|---|---|---|
+| 통계 (88%/165%) | 빈 파이/바차트 픽토그램 (숫자 X) | "흔한 고민/검증" |
+| Peer 무관심 | 친구 캐릭터 다른 fur color로 등장 | "내 얘기" 공감 |
+| Peer 추천 | 언니/친구 silhouette 발견 컷 | "추천의 신뢰" |
+| 클리닉/매거진 | 빈 매거진/카드 픽토그램 배경 인서트 | "전문성" |
+| 후기 | 빈 review bubble + 별 sparkle | "남들도 좋아함" |
+| 단체 사진 | 친구들 그룹샷 + 본인 뒷줄 | 사회적 위축 |
+
+> **핵심 룰**: 자막은 ASS 별도 합성. 이미지 prompt에선 "abstract pictogram, no readable text/numbers" 강제. ChatGPT는 한글·영문 못 박아서 abstract shape으로만 가능.
+
+### CTA 보강 — BEFORE/AFTER 교차 montage
+
+마지막 컷 단순 보틀+"검색하세요"로는 결정 push 약함. **추가 cut N+1을 4-segment 교차 montage로**:
+
+```
+cut N : 보틀 + "검색하세요. <브랜드>" (3-4s)
+cut N+1: BEFORE/AFTER 교차 + "<주인공>도 성공했습니다. <브랜드>." (3-5s)
+  segment 1: BEFORE 클립 강한 zoom 1.0→1.30 center
+  segment 2: AFTER 클립 zoom 1.0→1.20 center
+  segment 3: BEFORE (반복) zoom 1.10→1.40 (강조)
+  segment 4: AFTER (반복) zoom 1.10→1.30 (마무리)
+```
+
+각 segment 0.6-1.0s. 마지막은 AFTER로 끝 (시청자 마지막 인상 = 변화·성공). 새 시드 X — 기존 cut3·4(BEFORE)와 cut12·13(AFTER) 클립 재활용으로 비용·시간 절약.
+
+### 영상 톤별 TTS atempo+PAUSE 매핑
+
+같은 ElevenLabs Adam multilingual_v2라도 영상 결에 따라:
+
+| 결 | atempo | PAUSE_MS | 검증 |
+|---|---|---|---|
+| BBC 다큐 | 1.0 | 200ms | B29 D |
+| 다큐 압축 / 정보 | 1.21 | 200ms | B29 C / B27 / B28 |
+| 릴스 감정 | 1.30 | 50ms | B30 |
+| 틱톡 초고속 | 1.40+ | 0~30ms | (한국어 한계 — 알아듣기 어려움) |
+
+PAUSE 200ms→50ms 로 줄이면 14컷 영상 1-1.5초 가량 단축. atempo 1.30이 한국어 자연 한계.
+
+### 원천 사례
+
+B30 메라블 카피바라 다큐 (60s 15컷, 메인 + 친구 카피바라들 다양한 fur color, social proof + BEFORE/AFTER montage CTA). 5회 iteration:
+1. 첫 시드 → 네 발 야생 카피바라
+2. → 7등신 어른 의인화 (uncanny)
+3. → 3등신 chibi ✅
+4. 14컷 1차 → social proof 디테일 부족 + 너무 늘어짐
+5. v3 → atempo 1.30 + sub-cut split 제거 + cut15 montage CTA + cut7 강한 줌인
+
+연결: [[da-creative]] 캐릭터 일관성 락 · [[content-ai-automation]] generate.mjs 새 영상 추가 4곳 동기 (buildPrompt + attach + prereq + cseed) · [[market-research-playbook]] B 시리즈 형제 영상 톤 차별화
 
 ---
 
