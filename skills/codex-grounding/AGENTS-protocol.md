@@ -8,20 +8,20 @@
 
 ### Step 1. context-bootstrap 헬퍼 호출 (1차 매칭)
 ```bash
-node "C:/Users/Administrator/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt 그대로>"
+node "~/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt 그대로>"
 ```
 - 출력은 `<context_grounding>` 블록. memory/wiki 후보 + 매칭된 hit count + matched tokens.
 - 헬퍼가 없거나 실패하면 Step 2 의 fallback 으로 직접 grep.
 
 ### Step 2. fallback / 검증 (헬퍼 출력이 의심스럽거나 0건일 때)
 ```bash
-cat C:/Users/Administrator/.claude/projects/C--Users-Administrator/memory/MEMORY.md
+cat ~/.claude/projects/C--Users-<your-username>/memory/MEMORY.md
 cat C:/Users/gguy/ccfm-wiki/wiki/HOTSHEET.md   # 또는 $CCFM_WIKI_ROOT/wiki/HOTSHEET.md
 ```
 사용자 요청에서 도메인/도구/기술 키워드를 추출하고 인덱스 줄 설명과 직접 매칭한다.
 
 ### Step 3. 매칭된 파일 직접 로드
-- **memory hits**: `C:/Users/Administrator/.claude/projects/C--Users-Administrator/memory/<file>.md` 전부 읽기
+- **memory hits**: `~/.claude/projects/C--Users-<your-username>/memory/<file>.md` 전부 읽기
 - **wiki hits**: `C:/Users/gguy/ccfm-wiki/wiki/domains/<file>.md` / `wiki/tacit/<file>.md` / `wiki/sources/<file>.md` 등 wikilink 가 가리키는 파일 전부 읽기
 - 너무 많으면 hits=상위 3개만 깊게 읽고 나머지는 인덱스 한 줄만 참고
 
@@ -48,10 +48,10 @@ cat C:/Users/gguy/ccfm-wiki/wiki/HOTSHEET.md   # 또는 $CCFM_WIKI_ROOT/wiki/HOT
 ### 동작 검증 명령어 (사용자가 의심할 때)
 ```bash
 # 1. 헬퍼가 살아있나?
-node "C:/Users/Administrator/.codex/scripts/context-bootstrap.mjs" "테스트" --verbose
+node "~/.codex/scripts/context-bootstrap.mjs" "테스트" --verbose
 
 # 2. 인덱스 파일이 실제로 있나?
-test -f "C:/Users/Administrator/.claude/projects/C--Users-Administrator/memory/MEMORY.md" && echo MEMORY_OK
+test -f "~/.claude/projects/C--Users-<your-username>/memory/MEMORY.md" && echo MEMORY_OK
 test -f "$CCFM_WIKI_ROOT/wiki/HOTSHEET.md" && echo HOTSHEET_OK
 ```
 
@@ -61,7 +61,7 @@ test -f "$CCFM_WIKI_ROOT/wiki/HOTSHEET.md" && echo HOTSHEET_OK
 | 항목 | env 변수 | local override 파일 | 기본 후보 |
 |---|---|---|---|
 | 위키 루트 | `CCFM_WIKI_ROOT` | `~/.codex/AGENTS.local.md` 의 `CCFM_WIKI_ROOT=...` 줄 | `gguy/ccfm-wiki` → `$HOME/ccfm-wiki` → `$HOME/Desktop/ccfm-wiki` |
-| 메모리 인덱스 | `CCFM_MEMORY_INDEX` | (없음) | `$HOME/.claude/projects/C--Users-Administrator/memory/MEMORY.md` |
+| 메모리 인덱스 | `CCFM_MEMORY_INDEX` | (없음) | `$HOME/.claude/projects/C--Users-<현재 OS 사용자>/memory/MEMORY.md (helper 가 자동 감지)` |
 
 `~/.codex/AGENTS.local.md` 예시 (없으면 새로 만들면 된다):
 ```

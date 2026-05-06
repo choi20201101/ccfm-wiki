@@ -8,13 +8,13 @@ substantive 요청 (인사·trivial 단일 명령 제외) 을 받으면 **답변
 
 ### Step 1. context-bootstrap 헬퍼 호출
 ```bash
-node "C:/Users/Administrator/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt>"
+node "~/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt>"
 ```
 출력은 `<context_grounding>` 블록 — memory/wiki 후보 + 매칭 hit count.
 
 ### Step 2. fallback (헬퍼 없는 다른 컴퓨터)
 ```bash
-cat C:/Users/Administrator/.claude/projects/C--Users-Administrator/memory/MEMORY.md
+cat ~/.claude/projects/C--Users-<your-username>/memory/MEMORY.md
 cat <CCFM_WIKI_ROOT>/wiki/HOTSHEET.md
 ```
 키워드 매칭은 직접 grep.

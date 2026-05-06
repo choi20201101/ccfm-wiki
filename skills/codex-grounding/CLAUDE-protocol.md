@@ -8,7 +8,7 @@ substantive 사용자 요청을 받으면 (인사·trivial 단일 명령 제외)
 
 1. **헬퍼 호출** (1차 매칭, 빠르고 정확):
    ```bash
-   node "C:/Users/Administrator/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt>"
+   node "~/.codex/scripts/context-bootstrap.mjs" "<원본 사용자 prompt>"
    ```
    출력: `<context_grounding>` 블록 (memory/wiki hits + 매칭 토큰)
 

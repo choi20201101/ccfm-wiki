@@ -30,10 +30,11 @@ import process from "node:process";
 
 const HOME = process.env.USERPROFILE || process.env.HOME || "C:/Users/Administrator";
 
-// Memory index 경로: env override 우선, 없으면 Administrator 기본 경로
+// Memory index 경로: env override 우선, 없으면 현재 사용자 프로필 기반 자동 감지
+// (HOME 의 마지막 세그먼트로 C--Users-<username> 폴더 추정)
 const MEMORY_INDEX =
   process.env.CCFM_MEMORY_INDEX ||
-  path.join(HOME, ".claude/projects/C--Users-Administrator/memory/MEMORY.md");
+  path.join(HOME, `.claude/projects/C--Users-${path.basename(HOME)}/memory/MEMORY.md`);
 const MEMORY_DIR = path.dirname(MEMORY_INDEX);
 
 // 위키 루트: env override → AGENTS.local.md 의 CCFM_WIKI_ROOT → 기본값 후보 (gguy / Administrator / Desktop)
