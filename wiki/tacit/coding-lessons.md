@@ -1646,3 +1646,42 @@ node C:/Users/gguy/Desktop/ggttt/scripts/edit_multi.mjs <out.png> "<prompt>" <re
 
 - confidence: high
 - source: 2026-05-02~05-03 한국 화장품 광고 10장 PSD 분해 시도, Codex 5.5 + Claude 서브에이전트 + Claude main 협업, 최종 사용자 평가 20/100
+
+---
+
+## [2026-05-11] wmux/wmux-orchestrator 흡수 — 멀티 에이전트 안정화 6패턴
+
+레포: [amirlehmam/wmux](https://github.com/amirlehmam/wmux) + [amirlehmam/wmux-orchestrator](https://github.com/amirlehmam/wmux-orchestrator).
+"Claude Code on Windows 가시성 레이어" + dependency-aware wave 멀티 에이전트 오케스트레이터.
+**본체(Electron UI)는 무시**하고 orchestrator의 패턴 6개만 우리 바이브 코딩 시스템(bob/dd/harness/eval)에 흡수.
+
+### 흡수 결정 매트릭스
+
+| # | 패턴 | 적용 스킬 | 핵심 효과 |
+|---|------|----------|----------|
+| 1 | Shared Contract (`_shared/contract.md`) | dd, parallel, subagent | 멀티 에이전트 네이밍 드리프트 사전 차단 |
+| 2 | step별 `allowed_files`/`excluded_files` frontmatter | dd | 같은 wave 두 에이전트 파일 충돌 사전 차단 |
+| 3 | Auto-fix 권한 화이트리스트 | eval, review | 리뷰어 폭주 방지 (missing imports/type/unused/syntax만 OK, 로직/아키텍처 금지) |
+| 4 | 3단 권고 시그널 (READY/NEEDS REVIEW/SIGNIFICANT ISSUES) | eval, review | 사용자 결정 비용 ↓ |
+| 5 | Wave-DAG 병렬 실행 (wave 내 병렬, wave 간 직렬) | dd-executor | 의존성 안전성 + 병렬성 동시 확보 |
+| 6 | 환경 감지 → 모드 분기 + 혼용 금지 | multi-llm-orchestrator | full-trio/codex-claude/solo-degraded/fallback 4모드, 세션 중 혼용 금지 |
+
+### 핵심 인사이트 (암묵지로 추출)
+- **Coupling 발견 3가지 해결법**: ①에이전트 병합 ②다른 wave로 분리 ③shared contract 생성 — 셋 중 하나는 반드시 선택
+- **자동수정 권한 경계는 좁고 명시적이어야 한다** — 리뷰어가 "이왕 보는 김에" 로직까지 손대면 멀티 에이전트 신뢰성 붕괴. wmux는 import/type/unused/syntax만 허용
+- **혼용 금지 원칙** — wmux 모드(visible pane) vs subagent 모드는 한 세션에서 섞으면 안 됨. 우리도 Codex/Claude/Gemini 조합을 세션 도중 바꾸지 않고 모드 1개 고정
+- **가시성(visibility) vs 학습루프**: wmux는 visible pane으로 가시성 ↑, 우리는 learnings로 학습성 ↑. 둘은 직교축 — 둘 다 필요
+
+### 도입 안 한 것 (참고만)
+Electron UI / CDP 브라우저 프록시 / Named pipe IPC / OSC 9 알림 / 셸 통합. 이유: 우리는 CLI 기반, 인프라 비용 > 효용.
+
+### 적용 위치 (현재 시점 검증 필요)
+- `~/.claude/skills/dd/SKILL.md` — "Shared Contract & 파일 경계" 섹션
+- `~/.claude/skills/dd-executor/SKILL.md` — "Wave 기반 병렬 실행" 섹션
+- `~/.claude/skills/eval/SKILL.md` — "Auto-fix 권한 경계" + 3단 시그널
+- `~/.claude/skills/multi-llm-orchestrator/SKILL.md` — "환경 감지 → 모드 분기"
+- `~/.claude/commands/parallel.md`, `subagent.md`, `review.md`
+
+- confidence: low (1회, 가설 — 실전 검증 전)
+- source: 2026-05-11 wmux 레포 분석 후 6개 스킬·커맨드 갱신. Codex CLI quota 한도(다음 가능 2026-05-12 10:39)로 단독 분석, 추후 교차검증 필요.
+- 검증 다음 단계: 멀티 에이전트 태스크 1건에 contract.md + allowed_files + wave 적용해보고 네이밍 드리프트 발생 여부 측정

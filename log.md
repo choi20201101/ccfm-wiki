@@ -1,5 +1,15 @@
 # CCFM Wiki Log
 
+## [2026-05-11] ingest | wmux/wmux-orchestrator 흡수 (멀티 에이전트 안정화 6패턴)
+
+- 외부 레포: amirlehmam/wmux + wmux-orchestrator (Claude Code 가시성 + dependency-aware wave)
+- 본체(Electron UI)는 무시, orchestrator의 6패턴만 흡수
+- 6패턴: Shared Contract / allowed_files frontmatter / Auto-fix 권한 화이트리스트 / 3단 권고 시그널 / Wave-DAG 실행 / 환경 감지 + 혼용 금지
+- 적용 스킬: dd, dd-executor, eval, multi-llm-orchestrator + commands(parallel, subagent, review)
+- 핵심 인사이트: ①Coupling 해결 3가지(병합/wave분리/contract) ②자동수정 권한은 좁고 명시적이어야 ③모드 혼용 금지(가시성과 학습성은 직교축)
+- confidence: low (1회, 가설) — 실전 검증 전, Codex CLI quota 한도로 단독 분석
+- 추가 위치: wiki/tacit/coding-lessons.md §2026-05-11, wiki/domains/vibe-coding.md (🆕 최근 흡수 섹션)
+
 ## [2026-05-05] ingest | Codex grounding protocol — 3-CLI 깡통 응답 방지 시스템
 
 - 출처: 사용자 요청 "코덱스 호출될 때 메모리 인덱스랑 wiki 지식 교훈 기반으로 피드백/리뷰. 깡통 코덱스 의미없으니 강제 설정"

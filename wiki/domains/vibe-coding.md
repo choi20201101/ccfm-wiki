@@ -167,6 +167,19 @@ Phase 0~5를 건너뛰고 코딩했을 때 반복 관찰된 실패:
 - eval / eval-feedback-loop / eval-regression — 품질 평가·역류·회귀
 - learnings-engine / learnings-wrapup / learnings-confidence / cross-project-sync — 학습 누적·전파
 
+## 🆕 최근 흡수 (2026-05-11) — wmux/wmux-orchestrator 6패턴
+
+외부 레포 [amirlehmam/wmux-orchestrator](https://github.com/amirlehmam/wmux-orchestrator)의 멀티 에이전트 안정화 패턴 6개를 흡수.
+
+1. **Shared Contract** (`_shared/contract.md`) — 멀티 에이전트 네이밍 드리프트 차단
+2. **`allowed_files`/`excluded_files`** step frontmatter — 파일 충돌 사전 차단
+3. **Auto-fix 권한 화이트리스트** — 리뷰어는 import/type/unused/syntax만 자동수정 (로직·아키텍처 금지)
+4. **3단 권고 시그널** — READY TO COMMIT / NEEDS USER REVIEW / SIGNIFICANT ISSUES FOUND
+5. **Wave-DAG 실행** — depends_on을 DAG로 보고 wave 내 병렬·wave 간 직렬
+6. **환경 감지 모드 분기 + 혼용 금지** — full-trio / codex-claude / solo-degraded / fallback
+
+상세 교훈: [[tacit/coding-lessons|코딩 교훈 2026-05-11 항목]]
+
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
 
