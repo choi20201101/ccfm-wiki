@@ -51,6 +51,13 @@
 - Gemini 레퍼런스 기반 한국어 프롬프트 포맷
 - diet-b2a 레이아웃 레퍼런스 (캔버스, 오버레이, 자막 폰트, 모자이크, 데드존)
 
+### 오늘의유머 → 광고 소재 마이닝 — [[domains/todayhumor-mining-playbook]] (신규, 2026-05-12)
+- 한국 커뮤니티 위트 코드 → 브랜드 광고 아이디어 1:1 자동 변환 (게시물 1개 = 폴더 1개 = 아이디어 1개)
+- 파이프라인: crawl_index → run.py(workers=3) → Gemini SDK Vision → idea.md + Imagen 프롬프트 + 카피 5종
+- 피코세라 검증: brand_fit=high 84.5% (614/1469 시점), humor_axis 반전·공감·의외성 TOP
+- 핵심 노하우: 후킹 패턴 A~F 하드코딩, 시그니처 표현 추출, 폴더 자급자족 구조, SDK 직호출(CLI 함정 회피)
+- 트리거: "오유 마이닝", "humor mining", "커뮤니티 위트 → 광고"
+
 ### 영상 생성 교훈 — [[tacit/video-gen-lessons]] (27KB, 34 섹션)
 Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - §1 Kling 1003 에러 = 시계 drift · §2 자막 싱크 성공 패턴

@@ -36,6 +36,7 @@ updated: 2026-04-29
 | "영상 합치기" / "AI 영상 컷 후처리" / "릴스 자막 합성" / "16:9 합성" | [[tacit/video-gen-lessons]] §42 | 원본음성+ASS 자막+freeze 금지 표준, scripts: `bj/v_output/scripts/v2_compose.py` |
 | "grill해줘" / "꼼꼼하게 캐물어" / "방향 잡아줘" / "하지 말아야 할 거" / 신규 시장·조직개편·콘텐츠 규제 등 되돌리기 어려운 결정 | [[domains/grill-me-ccfm]] + 스킬 `grill-me-ccfm` | bob 앞단 자동 게이트, ambiguity score ≥ 5 자동 발동, 4모드(coding/content/strategy/personal), 글로벌 동기화 (`ccfm-wiki/skills/`) |
 | "코덱스 깡통" / "메모리 자동 grounding" / "PRE-WORK 프로토콜" / 다른 PC 셋업 / `📚 참조:` 의미 | [[domains/codex-grounding-protocol]] + `skills/codex-grounding/` | 3-CLI 호출 시 메모리·위키 인덱스 강제 매칭, mllm 5모드 prompt prepend, marker-based idempotent install (`install-codex-grounding.ps1`) |
+| "오유 마이닝" / "humor mining" / "오늘의유머에서 광고 소재" / "커뮤니티 위트 → 광고" | [[domains/todayhumor-mining-playbook]] | 추천 N+ 게시물 1:1 = 폴더 1개 = 아이디어 1개. crawl_index → run.py(workers=3) → SDK 직호출. 브랜드 후킹 패턴 A~F + 시그니처 표현 추출. 피코세라 614/1469 검증(brand_fit=high 84.5%) |
 
 ---
 

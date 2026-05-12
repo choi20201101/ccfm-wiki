@@ -1,5 +1,19 @@
 # CCFM Wiki Log
 
+## [2026-05-12] ingest | todayhumor-mining-playbook — 오늘의유머 → 광고 소재 1:1 변환 파이프라인
+
+- 출처: picosera/new/todayhumor_ideas/ 실전 운영 (2026-05-11~12 진행, 614/1469 시점 중단)
+- 위치: wiki/domains/todayhumor-mining-playbook.md
+- 핵심: Best of Best 추천 N+ 게시물 → Gemini SDK Vision → 게시물 1개 = 폴더 1개 = 아이디어 1개 (idea.md + src + gen)
+- 브랜드 보이스 주입: 후킹 패턴 A~F(시간/비용·생활페인·충동전환·숫자임상·후기인용·페르소나) + 식약처 금지 표현 + 시그니처 표현 추출
+- 운영 성과: brand_fit=high 519/614 (84.5%), humor_axis TOP=반전(272), 공감(66), 의외성(61)
+- 교훈 cross-ref (tacit/coding-lessons.md 추가):
+  - [2026-05-12] Gemini CLI는 자동화 파이프라인에 부적합 → SDK 직호출 (confidence: high)
+  - [2026-05-12] Windows Git Bash + nohup/&는 신뢰 X → schtasks `cmd.exe /c` 래퍼 (confidence: high)
+  - [2026-05-12] 오늘의유머 리스트 파서 `tr.list_tr_humordata` + `td.subject a` 정답 (confidence: high)
+- cross-ref: domains/marketing-automation.md, domains/da-creative.md, HOTSHEET 트리거 추가
+- confidence: high (실제 614건 안정 처리, brand_fit high 비율 84.5%)
+
 ## [2026-05-11] ingest | wmux/wmux-orchestrator 흡수 (멀티 에이전트 안정화 6패턴)
 
 - 외부 레포: amirlehmam/wmux + wmux-orchestrator (Claude Code 가시성 + dependency-aware wave)

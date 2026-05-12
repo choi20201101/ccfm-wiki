@@ -26,6 +26,9 @@ sources: []
 - Google Ads 자동화
 - 쿠팡 무단판매자 모니터링 (Playwright)
 
+## 커뮤니티 → 광고 소재 마이닝
+- [[domains/todayhumor-mining-playbook]] — **오늘의유머 위트 코드 → 광고 아이디어 1:1 변환 파이프라인** (2026-05-12 피코세라 사례 검증, brand_fit=high 84.5%). crawl_index → run.py(workers=3) → SDK 직호출. 게시물 1개 = 폴더 1개 = 아이디어 1개. 트리거 "오유 마이닝" / "humor mining".
+
 ## 리포트/대시보드
 _내용 추가 예정_
 - 구글시트 + n8n 자동화
