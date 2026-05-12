@@ -1706,3 +1706,86 @@ words = [{"w": w.word, "s": w.start, "e": w.end}
 - confidence: high (단일 세션 4번 wrong build → transcribe 도입 후 1발 OK + 사용자 "오 이거 잘했다" 명시 칭찬)
 - source: 2026-05-08 박사대화_루비알엔클렌저_70s v01→v05 재제작
 - related: §42 후처리 표준, §41 Voice Conversion vs TTS 비교, [[tacit/lipsync-multi-face-trap]]
+
+---
+
+## §52 — Whisper word-end + tail 0.15s = 한국어 종결어미 voiced decay 짤림 (2026-05-12 v06)
+
+### 한 줄 요약
+§51 패턴(Whisper transcribe → 의도 대사 cut)을 적용하더라도 **tail buffer가 0.15s면 한국어 종결어미 voiced decay가 잘려서 "컷마다 뒤에 말이 끝이 짤렸다"는 컴플레인 받음**. 0.40s가 적정 기본값.
+
+### 발생 경위
+2026-05-12, §51로 잘 자른 v05 패키지에 담당자 피드백: *"마지막 v05 버전에 자꾸 컷마다 뒤에 말이 끝이 짤려있어서 이상하다."*
+
+원인 분석:
+- v05 `cut_overrides_v05.json`의 `intended_end`는 Whisper word-level의 마지막 단어 `.end` timestamp를 **그대로** 사용
+- `tail = 0.15s`만 더해서 ffmpeg trim → 잘려나간 영역에 한국어 종결어미("...요.", "...어요", "...죠.")의 voiced decay 0.3~0.4s가 포함됨
+
+Whisper word `.end`는 phoneme 종료가 아닌 **stress/audible 종료**에 가깝다. 한국어 종결어미 모음(ㅛ, ㅓ)은 후속 voiced decay가 길어서 `.end` 시각에서 더 들린다.
+
+### 측정 (v05 패키지에서)
+
+| 컷 | intended_end (.end) | 시댄스 ORIG 길이 | 가용 tail room | v05가 쓴 tail |
+|----|---------------------|-------------------|------------------|---------------|
+| C1 | 6.92s | 7.06s | 0.14s | 0.15s (cap) |
+| C2 | 6.86s | 7.06s | 0.20s | 0.15s |
+| C3 | 6.60s | 7.06s | 0.46s | 0.15s ❌ 가용 0.30s 놓침 |
+| C4 | 8.68s | 9.06s | 0.38s | 0.15s ❌ |
+| C5 | 6.62s | 7.06s | 0.44s | 0.15s ❌ |
+| C6 | 6.94s | 7.06s | 0.12s | 0.15s (cap) |
+| C7 | 7.58s | 8.06s | 0.48s | 0.15s ❌ |
+| C8 | 6.72s | 7.06s | 0.34s | 0.15s ❌ |
+| C9 | 5.92s | 6.06s | 0.14s | 0.15s (cap) |
+| C10 | 3.70s | 7.06s | 3.36s | 0.15s ❌ |
+
+10컷 중 6컷이 시댄스 ORIG에 0.3~0.5s 여유 있는데도 0.15s만 쓴 상태였음. 3컷(C1/C6/C9)은 ORIG 자체가 짧아 추가 여유 없음.
+
+### 처방 (v06 빌드)
+
+**컷별 tail = `min(orig_dur - intended_end - 0.02, 0.40)`**
+- 0.02s = 스트림 끝에서 마진 (안전)
+- 0.40s = 한국어 종결어미 voiced decay 최대치 + 자연 호흡
+
+결과: 6컷 모두 0.32~0.40s로 회복. 3컷(C1/C6/C9)은 ORIG 한계까지 0.10~0.18s (재생성 없이는 더 못 늘림). 담당자 OK ("오 잘된거같음!").
+
+### 자동화 코드 패턴
+
+```python
+TARGET_TAIL = 0.40
+SAFETY_FROM_ORIG_END = 0.02
+
+orig_dur = ffprobe_dur(seedance_orig_mp4)
+to = min(intended_end + TARGET_TAIL, orig_dur - SAFETY_FROM_ORIG_END)
+applied_tail = to - intended_end  # 메타데이터 기록용
+```
+
+### 추가 함정 (자막 retiming)
+
+v05→v06에서 각 컷 길이가 0~0.25s 늘어났음. **`subs_v##.ass` dialog 시각은 v05 cumulative timeline에 묶여 있어서 재계산 필수**.
+
+```python
+# 각 dialog의 start가 어느 컷 범위에 속하는지 찾고
+# 그 컷의 (v06_cumstart - v05_cumstart) 만큼 shift
+idx = cut_idx(dialog.start)  # v05 cumstarts 기준
+shift = v06_cumstarts[idx] - v05_cumstarts[idx]
+dialog.start += shift; dialog.end += shift
+```
+
+이렇게 안 하면 v06 mp4에 v05 자막이 점점 빨라지는 어긋남 발생.
+
+### 적용 체크리스트 (다음 BJ/박사대화 광고 빌드 시)
+
+1. Whisper word-level transcribe → `intended_end` 추출 — §51대로
+2. **tail buffer 0.40s 기본값 사용** (이 §52의 핵심) — 시댄스 ORIG 한계까지 capping
+3. 컷 재빌드 시 자막 retiming도 자동화 (per-cut shift)
+4. cut_overrides_v##.json에 `applied_tail` 메타데이터 기록 → 다음 회 디버깅 빨라짐
+
+### 메모리·메타 교훈
+
+- **Whisper word.end ≠ phoneme 종료** — 한국어 voiced decay는 그 뒤에도 0.3~0.4s 더 있다.
+- "끝이 짤린 것 같다" 피드백 → 99% tail buffer 문제. 의도 cut 알고리즘은 멀쩡한 상태.
+- 시댄스 ORIG 길이가 intended_end + 0.4s를 못 채우면 ORIG 자체가 한계 → 사용자에게 명시 (재생성 필요).
+
+- confidence: high (담당자 v05 컴플레인 → v06 tail 0.40s 확장 → "오 잘된거같음!" 1발 OK)
+- source: 2026-05-12 박사대화_루비알엔클렌저_70s v06 재빌드
+- related: §51 Whisper transcribe + 정밀 cut, §42 후처리 표준
