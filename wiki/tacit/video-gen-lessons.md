@@ -1591,3 +1591,118 @@ v6_hero 사례:
 - confidence: high (4건 모두 단일 세션 내 발견 + 사용자 직접 검증)
 - source: 2026-05-04 루비알엔 v6_hero 액션 광고 재작업 (43s → 23.5s, S06/S07/S11 제품컷 재생성)
 - related: §47 SPEED+MAX_SIL 표, §45 실제 제품 사진 reference 필수, [[tacit/chatgpt-web-automation]]
+
+
+## §51 — 시댄스/AI 영상기 native audio "환각 발화" 트랩 (2026-05-08)
+
+> 시댄스(Seedance) 같은 native-audio video gen 모델은 **의도한 한국어 대사 + garbage 발화** (메타 설명·중국어/잡음·랜덤 한국어 prefix) 를 같이 생성한다. 이것을 raw 그대로 자르고 붙이면 "이상한 단어/장면이 다 들어가 있는" 결과물이 됨.
+
+### 사용자 컴플레인 원문
+> "엥 입이 일그러지도록 립싱크하는게 아니라 그냥 시댄스로 자연스럽게 뽑힌 영상으로 합쳐야하는데? 잘못됨"
+> "존댓말.. 이런거 들어가있고 중국어같은 알수없는 말하는 구간 까지 다합쳣어"
+> "진짜 뒤지기 싫음녀 제대로 좀 처 알아들어"
+
+→ **3번 wrong build 후 transcribe 도입해서 해결**. 이 트랩에 시간 30분+ 손실.
+
+### 관찰된 garbage 패턴 (10컷 중 3컷에서 발견)
+
+| 컷 | garbage 위치 | 실제 음성 |
+|----|-------------|-----------|
+| C1 | 시작 0–1.5s | "**존댓말**, 오늘은 요즘 화제가 되고…" (메타 발화 prefix) |
+| C2 | 시작 0–3.7s | "**잠정 2척이 된다요. 송도환이라서**, 혹시 루비알엔이라고…" (랜덤 잡담 prefix) |
+| C9 | 시작 0–2.4s | "**그제한 감독을 온록 스테인 사연합니다**, 14일 얼룩 챌린지도…" (가장 긴 garbage prefix) |
+
+C8/C10 같이 끝부분에도 짧은 잡음·무음이 붙는 경우 있음. **시작·끝 양쪽 모두 검사 필수.**
+
+### 함정 — 하지 말 것
+
+1. **silencedetect만 믿고 자르기 ❌** — garbage도 음성이라 silence가 아님. silencedetect는 trailing silence(끝 무음)만 잡지 prefix garbage는 못 잡음.
+2. **Gemini Vision으로 mouth-close 분석 ❌** — 입은 garbage 발화 동안에도 움직이고 있음. 시각만으론 의도/garbage 구분 불가.
+3. **TTS를 raw video 위에 덮어씌우기 ❌** — 사용자 말: "왜 자꾸 이상한 TTS 음성을 입힌건데?" — native 발화의 자연스러움이 망가지고 입 모양도 안 맞음.
+4. **Lipsync API로 입 모양 재합성 ❌** — 사용자 말: "입이 일그러지도록 립싱크하는게 아니라" — 입이 부자연스럽게 변형됨.
+5. **video 길이 = audio 길이 가정 ❌** — Seedance는 7s/9s 같은 fixed-length 출력에 garbage로 padding 함.
+
+### 정답 절차 — Whisper transcribe + 의도 대사 매칭
+
+```
+1. ffmpeg -vn -acodec libmp3lame로 각 컷 오디오 추출
+2. faster-whisper (small도 충분, medium/large는 download 오래걸림) word-level transcribe
+   - 모델: WhisperModel("small", device="cpu", compute_type="int8")
+   - language="ko", word_timestamps=True
+3. 의도 대사(motion_prompts.yaml의 Korean dialog)와 transcript 단어 비교
+4. 의도 첫 단어의 start time = clip_start (- 0.1s lead pad)
+5. 의도 마지막 단어의 end time = clip_end (+ 0.15s tail breath)
+6. ffmpeg -ss/-to로 정밀 trim → concat
+```
+
+### 매칭 알고리즘 함정
+
+- Whisper는 phonetic substitution이 흔함:
+  - 피디알엔에 → "피디아렌의"
+  - 글루타치온까지 → "글루크라 논까지"
+  - 클렌저 → "클랜더"
+  - 루비알엔 → "루비아렌"
+  - 멜라블 → "멜랍을"
+  - 세정 → "세경"
+  - 얼룩 → "온록"
+- `target in cum` 같은 strict substring matching은 q=0 자주 나옴 → **SequenceMatcher 또는 word-level 매칭** 필요.
+- **실용해법**: transcripts.json을 먼저 저장 → 사람이 word 배열 보고 의도 첫·마지막 단어를 직접 골라 cut_overrides.json 작성. 알고리즘 매칭 실패해도 진행 가능.
+
+### 코드 스켈레톤
+
+```python
+from faster_whisper import WhisperModel
+model = WhisperModel("small", device="cpu", compute_type="int8")
+segs, _ = model.transcribe(audio_path, language="ko", word_timestamps=True)
+words = [{"w": w.word, "s": w.start, "e": w.end}
+         for seg in segs if seg.words for w in seg.words]
+# words 출력 후 사람이 보고 의도 첫·마지막 단어를 골라 cut window 결정
+```
+
+### 표준 파이프라인 (BJ/박사대화 톤 광고)
+
+```
+[02_원본영상_시댄스/*.mp4]
+  → 오디오 추출 (mp3)
+  → faster-whisper word-level transcribe → transcripts.json
+  → 의도 대사와 word 비교 → cut_overrides.json (사람 큐레이션)
+  → ffmpeg trim (-ss intended_start - 0.1, -to intended_end + 0.15)
+  → 1920×1080 + tv_frame.png overlay
+  → concat → 자막 burn → 최종 mp4
+```
+
+**속도/비용**: faster-whisper small CPU = 컷당 5–15초, 10컷 ≈ 1–3분. 시간 가치 대비 매우 cheap.
+
+### 파일·폴더 표준 (재현용)
+
+| 파일 | 용도 |
+|------|------|
+| `transcripts.json` | 컷별 word-level 받아쓰기 (Whisper 출력) |
+| `intended_dialog.json` | motion_prompts.yaml에서 추출한 의도 한국어 대사 |
+| `cut_overrides_v##.json` | `{cid: {intended_start, intended_end, note}}` — 사람이 큐레이션한 cut 시점 |
+| `timings_v##.json` | 빌드 후 실제 사용된 cut 시간들 (검증용) |
+
+### 사용자 핸드오프 패키지 표준 폴더링
+
+```
+박사대화_..._v05_PACKAGE/
+├── 01_최종영상/         # 자막 포함/없음 mp4
+├── 02_AE프로젝트/       # .aep (AE 2025)
+├── 03_컷별영상_av/      # 1080p+frame 처리된 av 컷 (AE 입력)
+├── 04_원본소스_시댄스/  # raw 시댄스 (재컷용)
+├── 05_그래픽_자막/      # tv_frame.png + .ass
+├── 06_분석데이터/       # transcripts/cut_overrides/timings JSON
+└── README.md            # 사용법 + 컷 시점 표
+```
+
+`.aep`는 **패키지 내부 절대 경로로 빌드** (build_ae_*.py에서 PKG 변수 분리). 패키지 옮기면 AE에서 풋티지 relink 필요 — README에 명시.
+
+### 메모리·메타 교훈
+
+- **AI 영상기 출력 = "주석이 섞인 raw"**. 의도 대사만 살리는 후처리 필수.
+- **Native audio**의 자연스러움은 lipsync/TTS 더빙으로 절대 못 따라옴 → 자르기로 garbage 제거가 정답.
+- **사용자가 "잘 자르고 붙이면 되는데"** 라고 짧게 말하면, 그건 "Whisper transcribe → 의도 대사 매칭 → 정밀 cut" 절차를 의미한다. 단순 "전체 길이 사용"이나 "silencedetect"로 가면 다시 컴플레인 받음.
+
+- confidence: high (단일 세션 4번 wrong build → transcribe 도입 후 1발 OK + 사용자 "오 이거 잘했다" 명시 칭찬)
+- source: 2026-05-08 박사대화_루비알엔클렌저_70s v01→v05 재제작
+- related: §42 후처리 표준, §41 Voice Conversion vs TTS 비교, [[tacit/lipsync-multi-face-trap]]
