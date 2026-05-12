@@ -1,0 +1,7 @@
+﻿{
+  "flow_gen_dir": "C:/Users/{WINDOWS_USER}/Desktop/클로드/flow-gen-pkg",
+  "python": "{PYTHON_PATH}",
+  "desktop_work_dir": "C:/Users/{WINDOWS_USER}/Desktop/클로드/m5-work",
+  "m5_input_dir": "//192.168.0.103/01_마케팅사업부_직원/{NAS_USER}/3팀 영상 자동화/M5/input",
+  "m5_output_dir": "//192.168.0.103/01_마케팅사업부_직원/{NAS_USER}/3팀 영상 자동화/M5/output"
+}

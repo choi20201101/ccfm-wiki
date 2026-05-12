@@ -1,0 +1,2030 @@
+CLAUDE.md
+log.md
+README.md
+_COMMUNITY_Community 1.md
+graphify-out\GRAPH_REPORT.md
+graphify-out\obsidian\(번외) 돈벌어다주는 킬링컨텐츠 롤링발칸.md
+graphify-out\obsidian\0.1%만 성공하면 되는 최강 성공 방법.md
+graphify-out\obsidian\0.1원 참여 광고 (3초 조회당 0.1원).md
+graphify-out\obsidian\0.5~1초 빠른 장면전환.md
+graphify-out\obsidian\01. 기획서 — 외국인 인플루언서 자동화.md
+graphify-out\obsidian\02. 훅 패턴 모음 — 29개 창의 스크립트.md
+graphify-out\obsidian\03. 파이프라인 기술 문서.md
+graphify-out\obsidian\04. 자막 가이드 — 한국어 중심 이중 자막.md
+graphify-out\obsidian\05. 레퍼런스 분석 — ex 10개 영상.md
+graphify-out\obsidian\06. 실전 실패 & 교훈.md
+graphify-out\obsidian\07. 비용 & 시간 실측.md
+graphify-out\obsidian\0원 단골 만들기 (말 한마디).md
+graphify-out\obsidian\100% 환불제도 (전환율 1.7→3%).md
+graphify-out\obsidian\1000만 조회수 나온 바이럴 법칙 통한 기획하는 방법.md
+graphify-out\obsidian\1000편 시나리오 ~$6,050  9일.md
+graphify-out\obsidian\100만 조회 릴스 데이터 본질.md
+graphify-out\obsidian\100만뷰+ 클렌징톤업 후킹 패턴 5선.md
+graphify-out\obsidian\100억 매출 명심 사항 (제품·시기·리프레이밍).md
+graphify-out\obsidian\100억 쇼핑몰 시리즈 체크리스트.md
+graphify-out\obsidian\100억대 매출 만드는 컨텐츠 빙산의 일각 18가지.md
+graphify-out\obsidian\100억대 쇼핑몰 시리즈 1탄.md
+graphify-out\obsidian\100원 파격 프로모션 + 객단가 유지.md
+graphify-out\obsidian\1080x1920 916 30~45초 H.264+AAC 표준.md
+graphify-out\obsidian\10배 성장하는 사고와 방향성 11가지.md
+graphify-out\obsidian\11파일 영상기획 출력 구조.md
+graphify-out\obsidian\14일 progression 17s 표준 구조.md
+graphify-out\obsidian\18단계 콘텐츠 기획 구조.md
+graphify-out\obsidian\1그룹 최대 10소재 테스트.md
+graphify-out\obsidian\1등 모방 금지 — 2~3위 급성장 학습.md
+graphify-out\obsidian\1등 아닌 2~3위 급성장 브랜드 추적.md
+graphify-out\obsidian\1억 효율 디자인 법칙 돈버는 디자인 1탄.md
+graphify-out\obsidian\1일 기준 추적 + 실시간 대시보드.md
+graphify-out\obsidian\1편 ~$7.90 (Avatar $4.60 + i2v $2 + Gemini $0.21 + TTS $1.10).md
+graphify-out\obsidian\21배 성장한 신입마케터의 미친인사이트.md
+graphify-out\obsidian\2500억 써본 마케터의 무물 2025년.md
+graphify-out\obsidian\28 매출 법칙.md
+graphify-out\obsidian\29 페르소나 매트릭스 (genderethnicityagevibesetting).md
+graphify-out\obsidian\29개 훅 유형 카탈로그.md
+graphify-out\obsidian\2~3등 낙수효과 전략.md
+graphify-out\obsidian\3-CLI 컨텍스트 브릿지 (CLAUDEAGENTSGEMINI.md).md
+graphify-out\obsidian\30분 편집 ROAS 300% 영상 꿀팁.md
+graphify-out\obsidian\320억 광고비 써보고 느낀 쇼핑몰 인사이트 7가지.md
+graphify-out\obsidian\3가지 타겟 조합 (넓은맞춤유사).md
+graphify-out\obsidian\3대 욕구 (성수면식).md
+graphify-out\obsidian\3인 릴레이 Trio — 저도 해결했어요!.md
+graphify-out\obsidian\3종 영상 레이아웃 (좌우분할우체중계좌체중계).md
+graphify-out\obsidian\3중 자극 (도파민·공포·무의식).md
+graphify-out\obsidian\3초 내 끝까지 볼지 결정.md
+graphify-out\obsidian\3초 후킹 (영상 초반 시선 잡기).md
+graphify-out\obsidian\3층 아키텍처 (rawwikiCLAUDE.md).md
+graphify-out\obsidian\4 B-roll 씬 (PAINPRODUCTAPPLYCTA).md
+graphify-out\obsidian\4050대 여성 볼꺼짐 연상 키워드 120개.md
+graphify-out\obsidian\40가지 마케팅 질문 답변 (USP 재검증·타겟 세분화).md
+graphify-out\obsidian\40가지 심리 법칙을 활용한 이커머스 사례 1탄.md
+graphify-out\obsidian\40가지 심리 법칙을 활용한 이커머스 사례 2탄.md
+graphify-out\obsidian\40가지 심리 법칙을 활용한 이커머스 사례 3탄.md
+graphify-out\obsidian\40가지 심리 법칙을 활용한 이커머스 사례 4탄.md
+graphify-out\obsidian\4년치 데이터 축적 가치.md
+graphify-out\obsidian\5 Why 기법.md
+graphify-out\obsidian\5 Why로 증상과 원인 분리.md
+graphify-out\obsidian\5대 원초 욕구 (식·안전·수면·성·인정).md
+graphify-out\obsidian\60분 릴스로 2000만원 매출 (109만 조회).md
+graphify-out\obsidian\60초 GFA 반려 소재 수정 앱.md
+graphify-out\obsidian\6가지 공유 법칙 (사회적 통화·계기성·감성·대중성·실용성·이야기성).md
+graphify-out\obsidian\7대 인사이트 (통념·근거·권위·배경·장소·물건·욕망).md
+graphify-out\obsidian\8020 법칙.md
+graphify-out\obsidian\8가지 크로스체크 지표.md
+graphify-out\obsidian\916 숏폼  11 정사각형.md
+graphify-out\obsidian\9년차 전체 전략 수립 가능.md
+graphify-out\obsidian\AB 테스트 설계.md
+graphify-out\obsidian\ab-6141-26811 — 페이스북 SNS마케팅 포인트 1탄.md
+graphify-out\obsidian\ab-6141-26827 — 0.1원 참여 페이스북 광고.md
+graphify-out\obsidian\ABO 광고세트 예산 최적화.md
+graphify-out\obsidian\After 몸매 핏 + 자연광 = 후킹 핵심 조합.md
+graphify-out\obsidian\AI 30%  프롬프트 10%  데이터 60% 비율.md
+graphify-out\obsidian\AI 70% 벽 — 암묵지·기준 명시화 필요.md
+graphify-out\obsidian\AI CLI OAuth 인증 표준 (CodexGeminiClaude).md
+graphify-out\obsidian\AI tell 제거 프롬프트 스택.md
+graphify-out\obsidian\AI 개발 100시간 아끼는 바이블.md
+graphify-out\obsidian\AI 광고로 일매출 8000만원 (SORA·MJ7·VEO3·AKOOL).md
+graphify-out\obsidian\AI 다루는 마케터 - 3년 뒤 사업 존폐.md
+graphify-out\obsidian\AI 딸깍으로 안 되는 이유 5가지.md
+graphify-out\obsidian\AI 멍청해지게 만드는 실수 6가지.md
+graphify-out\obsidian\AI 모델 생성 - 모델료 0원의 시대.md
+graphify-out\obsidian\AI 모델로 CTR 10배·CPC 300원 (무의식 활용).md
+graphify-out\obsidian\AI 못 쓰는 당신 때문에 직업 사라짐.md
+graphify-out\obsidian\AI 사실적 인물 + 씨드림4.0 가이드.md
+graphify-out\obsidian\AI 시대 AI 더 완벽하게 쓰는 방법.md
+graphify-out\obsidian\AI 시대 도태 안되는 4가지 방법.md
+graphify-out\obsidian\AI 아바타 영상 자동화 가이드 2026.md
+graphify-out\obsidian\AI 에이전트 빌딩 10가지 중급.md
+graphify-out\obsidian\AI 월100만원 시행착오 5가지.md
+graphify-out\obsidian\AI 이미지 레퍼런스 활용.md
+graphify-out\obsidian\AI 이미지 모델촬영 비용 절감.md
+graphify-out\obsidian\AI 이미지 생성 (DALL-E·Midjourney).md
+graphify-out\obsidian\AI 이미지 소재로 ROAS 달성.md
+graphify-out\obsidian\AI 이커머스 활용법 (생산성 2배, 순이익 1.5배).md
+graphify-out\obsidian\AI 자동화 3가지 모르면 포기.md
+graphify-out\obsidian\AI 자동화 암묵지 꼭 챙겨야하는 5가지 이유.md
+graphify-out\obsidian\AI 직감 (Intuition).md
+graphify-out\obsidian\AI 콘텐츠 매출 N배·비용 N배 감소.md
+graphify-out\obsidian\AI 활용 (GPTClaudePerplexityMidjourney).md
+graphify-out\obsidian\AI 활용 카피 법칙 DA 카피 사전 3탄.md
+graphify-out\obsidian\ai-automation.md
+graphify-out\obsidian\AI로 퍼포먼스 영상 기획 10배 빨리.md
+graphify-out\obsidian\AI를 위협이 아닌 업무 툴로.md
+graphify-out\obsidian\AI의 출연으로 인한 변화 AI 와 마케팅 광고 이커머스 시리즈 1탄.md
+graphify-out\obsidian\AKOOL AI (딥페이크).md
+graphify-out\obsidian\Analyze 3 reference BGM tracks BPM, drop (onset max energy) second, first-choru.md
+graphify-out\obsidian\analyze().md
+graphify-out\obsidian\analyze_bgm.py.md
+graphify-out\obsidian\Anthropic.md
+graphify-out\obsidian\Apply 씬 — 그래픽 도트 금지, 촉촉 웻룩만.md
+graphify-out\obsidian\ASC Advantage Shopping Campaign.md
+graphify-out\obsidian\ASS burn = filter_complex 마지막 (오버레이 안 가림).md
+graphify-out\obsidian\Attempt a single generation; return path or None..md
+graphify-out\obsidian\AX (Automation eXcellence) 팀.md
+graphify-out\obsidian\B&A 타입 skin_pigmentation (기미·잡티).md
+graphify-out\obsidian\B-roll 할루시네이션 방지 negative_prompt.md
+graphify-out\obsidian\B2A 가상 이미지 생성 (40kg80kg 변환).md
+graphify-out\obsidian\BA 얼굴 덜 가리면 감정 이입 큼.md
+graphify-out\obsidian\BA 얼굴 모자이크 박스 각각 잡기.md
+graphify-out\obsidian\BA 직접비교 대신 12가지 위트 우회.md
+graphify-out\obsidian\batch_process().md
+graphify-out\obsidian\bdh skill.md
+graphify-out\obsidian\bdh 파이프라인 (bob → dd → harness).md
+graphify-out\obsidian\Before & After 콘텐츠.md
+graphify-out\obsidian\Before & After 포맷.md
+graphify-out\obsidian\Before 어두움 + After 자연광 = 2배 임팩트.md
+graphify-out\obsidian\Before 저녁실내 vs After 낮 자연광 — 시간 내러티브.md
+graphify-out\obsidian\Before&After 3가지 우회 (스토리·실험·숫자).md
+graphify-out\obsidian\BeforeAfter (B&F) 시각화.md
+graphify-out\obsidian\BeforeAfter 동일 장소 + 옷만 변경 원칙.md
+graphify-out\obsidian\beforeafter 얼굴 y±30px 초과 시 박스 분리.md
+graphify-out\obsidian\BGM librosa analyzer (BPMdrop).md
+graphify-out\obsidian\BGM 배정 철학 (DW3 BPM129  BPM95).md
+graphify-out\obsidian\Build 5 sets config (model + bg + kg + audio) as setssetNconfig.json..md
+graphify-out\obsidian\build_knowledge_title().md
+graphify-out\obsidian\build_knowledge_title()_1.md
+graphify-out\obsidian\build_overlays().md
+graphify-out\obsidian\build_prompts.py.md
+graphify-out\obsidian\build_sets.py.md
+graphify-out\obsidian\CBO 캠페인 예산 최적화.md
+graphify-out\obsidian\CCFM Wiki Index (메인 허브).md
+graphify-out\obsidian\CCFM Wiki Schema (CLAUDE.md).md
+graphify-out\obsidian\CCFM 그룹사 법인별 매출 스케일.md
+graphify-out\obsidian\CCFM 디자인본부 Q 고객여정편 250424.md
+graphify-out\obsidian\CCFM 마케팅사업부 Q 매체 매뉴얼 GFA 250430.md
+graphify-out\obsidian\CCFM 마케팅사업부 Q 매체 매뉴얼 Google 250430.md
+graphify-out\obsidian\CCFM 마케팅사업부 Q 매체 매뉴얼 META 250430.md
+graphify-out\obsidian\CCFM 마케팅사업부 Q 매체 매뉴얼 검색광고 250430.md
+graphify-out\obsidian\CCFM 마케팅사업부 Q 퍼포먼스 사고 확장 가이드.md
+graphify-out\obsidian\CCFM 메타 비즈니스 파트너.md
+graphify-out\obsidian\CCFM 미디어본부 Q 고객여정편 250428.md
+graphify-out\obsidian\CCFM 미디어본부 고객여정편 chunk002 (영상제작·성과지표·후행액션).md
+graphify-out\obsidian\CCFM 최재명 CEO.md
+graphify-out\obsidian\Chain of Thought.md
+graphify-out\obsidian\ChatGPT  GPT 분석.md
+graphify-out\obsidian\ChatGPT UI 셀렉터 매주 깨짐 — 자가진단 1순위.md
+graphify-out\obsidian\ChatGPT Web (Playwright + CDP 9222).md
+graphify-out\obsidian\ChatGPT 웹 UI 자동화 lessons.md
+graphify-out\obsidian\ChatGPTGPT.md
+graphify-out\obsidian\check_session.py.md
+graphify-out\obsidian\Chrome 확장 크롤링 도구.md
+graphify-out\obsidian\chunk_and_write().md
+graphify-out\obsidian\Claude (AI).md
+graphify-out\obsidian\Claude AI.md
+graphify-out\obsidian\Claude Code 백그라운드 태스크 조용히 종료.md
+graphify-out\obsidian\Claude Code 스킬·커맨드 인벤토리 (2026-04-22).md
+graphify-out\obsidian\Claude Code.md
+graphify-out\obsidian\Claude 스킬·커맨드 인벤토리 2026-04-22.md
+graphify-out\obsidian\clean_logo().md
+graphify-out\obsidian\CLI 플래그·모델명 변경 대비 config.json 분리.md
+graphify-out\obsidian\CLI 환경 습득.md
+graphify-out\obsidian\Click the top model-picker and choose '2.5 Pro'  Thinking mode.     Gemini web.md
+graphify-out\obsidian\coding-lessons.md
+graphify-out\obsidian\Community label taxonomy (LABEL_RULES).md
+graphify-out\obsidian\Compose 30 final videos from raw Kling + scale + overlay + BGM..md
+graphify-out\obsidian\compose.py.md
+graphify-out\obsidian\compose.py_1.md
+graphify-out\obsidian\compose_v1().md
+graphify-out\obsidian\compose_v23().md
+graphify-out\obsidian\content-ai-automation.md
+graphify-out\obsidian\CPA (액션당비용).md
+graphify-out\obsidian\CPC (클릭당비용).md
+graphify-out\obsidian\CPC.md
+graphify-out\obsidian\CPCCPM 비용 최적화.md
+graphify-out\obsidian\CPC와 CTR의 관계.md
+graphify-out\obsidian\CPM (1000회 노출당 비용).md
+graphify-out\obsidian\CPV (Cost Per View).md
+graphify-out\obsidian\CPV (조회당비용).md
+graphify-out\obsidian\Creatify Aurora.md
+graphify-out\obsidian\Creative Autogen Framework (1000장 DA 자동 생산).md
+graphify-out\obsidian\Creative Tacit Cluster.md
+graphify-out\obsidian\creative-patterns.md
+graphify-out\obsidian\Cross-selling 전략.md
+graphify-out\obsidian\CTA 청크 풀 (10×12=120 조합).md
+graphify-out\obsidian\CTR (Click Through Rate).md
+graphify-out\obsidian\CTR (클릭률).md
+graphify-out\obsidian\CTR 10배 상승 컨텐츠 수술 비법 6가지 요소.md
+graphify-out\obsidian\CTR.md
+graphify-out\obsidian\CTR과 CVR 조화.md
+graphify-out\obsidian\CVR (Conversion Rate).md
+graphify-out\obsidian\CVR (전환율).md
+graphify-out\obsidian\CVR 미세 UX 개선 (리다이렉트카카오싱크).md
+graphify-out\obsidian\da-creative.md
+graphify-out\obsidian\DALL-E 3.md
+graphify-out\obsidian\Day14 복장 풀 다양화 — 피로도 방지.md
+graphify-out\obsidian\Day14 옷 변경 강제 — NOT … 명시 부정.md
+graphify-out\obsidian\DCO 동적 크리에이티브 최적화.md
+graphify-out\obsidian\DD Plan 10단계 (영상 자동화).md
+graphify-out\obsidian\decision-rules.md
+graphify-out\obsidian\DesktopMD 멀티 프로젝트 시행착오 회고.md
+graphify-out\obsidian\Detect faces in each set's seed images, store per-set mosaic box.  The seed be.md
+graphify-out\obsidian\Detect faces SEPARATELY for before and after clips.     CRITICAL Kling generat.md
+graphify-out\obsidian\detect_face.py.md
+graphify-out\obsidian\detect_faces.py.md
+graphify-out\obsidian\detect_for_set().md
+graphify-out\obsidian\Diet BeforeAfter video pipeline (skill).md
+graphify-out\obsidian\diet-b2a ARCHITECTURE.md (ffmpeg 필터·Kling API·상태).md
+graphify-out\obsidian\diet-b2a compose (ffmpeg filter_complex).md
+graphify-out\obsidian\diet-b2a export (thumbnails+captions+zip).md
+graphify-out\obsidian\diet-b2a face detection (OpenCV).md
+graphify-out\obsidian\diet-b2a Harness RULES.md (멱등성·R1~R10 가드레일).md
+graphify-out\obsidian\diet-b2a HOOK.md (훅 카피 30선·자막 슬롯).md
+graphify-out\obsidian\diet-b2a Kling image2video client.md
+graphify-out\obsidian\diet-b2a orchestrator (run_all).md
+graphify-out\obsidian\diet-b2a PLAN.md (bob 스펙·좌표·성공기준).md
+graphify-out\obsidian\diet-b2a promptsREADME.md (프롬프트 매핑).md
+graphify-out\obsidian\diet-b2a QA check (ffprobe).md
+graphify-out\obsidian\diet-b2a README (스킬 진입점30초 요약).md
+graphify-out\obsidian\diet-b2a shared lib (configpathrun).md
+graphify-out\obsidian\diet-b2a SKILL.md (스킬 메타·트리거).md
+graphify-out\obsidian\diet-b2a step-00 input-validate.md
+graphify-out\obsidian\diet-b2a stroked-text PNG overlays.md
+graphify-out\obsidian\diet-b2a USAGE.md (실행·트러블슈팅).md
+graphify-out\obsidian\diet-b2a v1 (4이미지+config5줄→3릴스).md
+graphify-out\obsidian\diet-b2a validate_input.md
+graphify-out\obsidian\diet-b2a 레이아웃 레퍼런스 (1080x1920).md
+graphify-out\obsidian\diet-b2a-v2 (10세트×3×2언어=60영상).md
+graphify-out\obsidian\diet-b2a-v2 build_sets (5 sets config).md
+graphify-out\obsidian\diet-b2a-v2 compose 30 final videos.md
+graphify-out\obsidian\diet-b2a-v2 Gemini wrapper client.md
+graphify-out\obsidian\diet-b2a-v2 HOOK — 15영상 훅 라이브러리.md
+graphify-out\obsidian\diet-b2a-v2 per-set face detection.md
+graphify-out\obsidian\diet-b2a-v2 PLAN — 15개 다이어트 BA 릴스 대량생성.md
+graphify-out\obsidian\diet-b2a-v2 README (10세트×3포맷×2언어=60영상).md
+graphify-out\obsidian\diet-b2a-v2 SKILL.md (트리거메타).md
+graphify-out\obsidian\diet-b2a-v2 Step 02 Gemini Session.md
+graphify-out\obsidian\diet-b2a-v2 step-06 HOOK 합성 단계의 품질 레버.md
+graphify-out\obsidian\diet-b2a-v2 step-06 PLAN 30 영상 ffmpeg 합성.md
+graphify-out\obsidian\diet-b2a-v2 step-06 README.md
+graphify-out\obsidian\download().md
+graphify-out\obsidian\download()_1.md
+graphify-out\obsidian\Dramatic Product Reveal Kling 회전+스파클.md
+graphify-out\obsidian\ElevenLabs TTS.md
+graphify-out\obsidian\ElevenLabs TTS_1.md
+graphify-out\obsidian\ElevenLabs turbo-v2.5 (Korean TTS).md
+graphify-out\obsidian\Excel 11시트 브랜드 진입 의사결정.md
+graphify-out\obsidian\export.py.md
+graphify-out\obsidian\Extract the knowledge label from a bullet. Prefer pre-colon part..md
+graphify-out\obsidian\extract().md
+graphify-out\obsidian\extract_concept() — bullet → concept label.md
+graphify-out\obsidian\extract_concept().md
+graphify-out\obsidian\extract_h1().md
+graphify-out\obsidian\Face mosaic anonymization box.md
+graphify-out\obsidian\fal-aiface-swap.md
+graphify-out\obsidian\fal.ai (KlingGemini proxy).md
+graphify-out\obsidian\fal.ai OmniHuman v1.5.md
+graphify-out\obsidian\fal.ai 플랫폼.md
+graphify-out\obsidian\fal.ai.md
+graphify-out\obsidian\FB 알고리즘 유기 후 광고 = 낮은 과금.md
+graphify-out\obsidian\ffmpeg (filter_complex hstackconcatoverlay).md
+graphify-out\obsidian\FFmpeg + ASS subtitles.md
+graphify-out\obsidian\ffmpeg drawbox·인덱스 하드코딩 함정.md
+graphify-out\obsidian\FFmpeg filter_complex 인덱스 동적 계산.md
+graphify-out\obsidian\ffmpeg filter_complex.md
+graphify-out\obsidian\ffmpeg force_original_aspect_ratio cover 무효.md
+graphify-out\obsidian\ffmpeg mosaic+overlay compose pattern.md
+graphify-out\obsidian\ffmpeg 같은 포즈 매칭 하드컷이 xfade보다 자연스러움.md
+graphify-out\obsidian\FFmpeg 컷편집 (xfade, Smart Trim).md
+graphify-out\obsidian\ffprobe_duration().md
+graphify-out\obsidian\filter_complex 한 스트림 여러번 쓰려면 split 필수.md
+graphify-out\obsidian\flow_end JSON 플래그 (TTS 문장 흐름).md
+graphify-out\obsidian\Flux LoRA 후처리도 AI sheen 잔존.md
+graphify-out\obsidian\FOMO  희소성 원칙.md
+graphify-out\obsidian\FOMO 손실회피 심리.md
+graphify-out\obsidian\force_original_aspect_ratio=cover 무효.md
+graphify-out\obsidian\Foreign Influencer Guide README.md
+graphify-out\obsidian\GA4  카페24 접속통계 (애널리틱스).md
+graphify-out\obsidian\GA4 (Google Analytics 4).md
+graphify-out\obsidian\GA4·머천트센터 채널 연동.md
+graphify-out\obsidian\GDN (구글 디스플레이 네트워크).md
+graphify-out\obsidian\GDN.md
+graphify-out\obsidian\Gemini '합성해줘' 인위적 합성감 — 간접 표현 사용.md
+graphify-out\obsidian\Gemini 2.5 Flash Image (nano-banana).md
+graphify-out\obsidian\Gemini 2.5 Flash Vision (auto QC).md
+graphify-out\obsidian\Gemini 3.md
+graphify-out\obsidian\Gemini after 시드는 before 결과 입력에 포함 금지.md
+graphify-out\obsidian\Gemini AI.md
+graphify-out\obsidian\Gemini Chrome 자동화.md
+graphify-out\obsidian\Gemini Deep Research 하이브리드 전략.md
+graphify-out\obsidian\Gemini logo remover (corner inpaint).md
+graphify-out\obsidian\Gemini Logo Remover v3.0 Report (CEO 직접 개발).md
+graphify-out\obsidian\Gemini preserved-face 인물 살찌우기 하드 리밋.md
+graphify-out\obsidian\Gemini safety 우회 — 레퍼런스+한국어 2줄 프롬프트.md
+graphify-out\obsidian\Gemini scale (kg) image generator.md
+graphify-out\obsidian\Gemini seed image generator (beforeafter).md
+graphify-out\obsidian\Gemini Session Screenshot.md
+graphify-out\obsidian\Gemini session validator (Playwright).md
+graphify-out\obsidian\Gemini Thinking 긴 프롬프트 타임아웃·크래시.md
+graphify-out\obsidian\Gemini Thinking 모델 강제 선택.md
+graphify-out\obsidian\Gemini Vision 자동 Eval 루프 JSON 응답 강제.md
+graphify-out\obsidian\Gemini Vision 자동 QC (할루시네이션 감지).md
+graphify-out\obsidian\Gemini Web UI (PRO).md
+graphify-out\obsidian\Gemini web UI imagegen via Playwright session.md
+graphify-out\obsidian\Gemini 거부 우회 3패턴 (AI 가상·의상·자극 제거).md
+graphify-out\obsidian\Gemini 레퍼런스 한국어 2줄 프롬프트 포맷.md
+graphify-out\obsidian\Gemini 로고 제거.md
+graphify-out\obsidian\Gemini 빠른 모델 셀렉터.md
+graphify-out\obsidian\Gemini 시드 reference로 동일 identity B-roll.md
+graphify-out\obsidian\Gemini 직호출  fal 프록시 (얼굴 보존·실사감).md
+graphify-out\obsidian\Gemini 채팅 히스토리 (다이어트 B2A 관련 세션들).md
+graphify-out\obsidian\Gemini 프롬프트 입력창.md
+graphify-out\obsidian\Gemini 한국어 텍스트 이미지 못 그림 — 영어 대체.md
+graphify-out\obsidian\gemini_client.py.md
+graphify-out\obsidian\Generate 20 Kling prompt files (5 sets × 4 keys) from styles.json..md
+graphify-out\obsidian\Generate beforeafter seeds for 5 sets via Gemini + auto logo removal..md
+graphify-out\obsidian\Generate per-set scale images with varied kg via Gemini + auto logo removal..md
+graphify-out\obsidian\generate().md
+graphify-out\obsidian\gen_kling.py.md
+graphify-out\obsidian\gen_scales.py.md
+graphify-out\obsidian\gen_seeds.py.md
+graphify-out\obsidian\get_boxes().md
+graphify-out\obsidian\GFA  메타  구글 광고.md
+graphify-out\obsidian\GFA (네이버 성과형 디스플레이).md
+graphify-out\obsidian\GFA (네이버 성과형 디스플레이)_1.md
+graphify-out\obsidian\GFA (네이버 성과형).md
+graphify-out\obsidian\GFA 11 피드 지면.md
+graphify-out\obsidian\GFA 11 피드영상 지면.md
+graphify-out\obsidian\GFA 11 피드지면 + 전환 캠페인 성과.md
+graphify-out\obsidian\GFA 1대1 피드지면 장단점 및 성과 폼.md
+graphify-out\obsidian\GFA 800억 노하우 Q&A 1차 답변.md
+graphify-out\obsidian\GFA GLAD시리즈 3탄 - GFA 타게팅.md
+graphify-out\obsidian\GFA 광고에 누적 800억 운영 후 최적화된 운영방법.md
+graphify-out\obsidian\GFA 네이버 성과형 DA 패션 쇼핑몰 소재 1만 개 등록 인사이트.md
+graphify-out\obsidian\GFA 매뉴얼 chunk1 - 매체 개요지면.md
+graphify-out\obsidian\GFA 매뉴얼 chunk2 - 키워드리타겟팅.md
+graphify-out\obsidian\GFA 매뉴얼 chunk3 - 캠페인 생성소재 검수.md
+graphify-out\obsidian\GFA 매뉴얼 chunk4 - 입찰예산전환학습.md
+graphify-out\obsidian\GFA 매뉴얼 chunk5.md
+graphify-out\obsidian\GFA 매뉴얼 chunk6.md
+graphify-out\obsidian\GFA 매뉴얼 chunk7.md
+graphify-out\obsidian\GFA 매체 반려 패턴 (단어이미지).md
+graphify-out\obsidian\GFA 매체 운영 매뉴얼 (parent).md
+graphify-out\obsidian\GFA 메인 지면.md
+graphify-out\obsidian\GFA 반려 소재 수정 앱.md
+graphify-out\obsidian\GFA 뷰티·건기식 CPC 300원 (무의식 자극 4요소).md
+graphify-out\obsidian\GFA 시리즈.md
+graphify-out\obsidian\GFA 신규 피드 지면과 영상 지면의 노하우 N가지 공유드립니다.md
+graphify-out\obsidian\GFA 전환추적스크립트 활용해서 효율 2배 올리는 방법.md
+graphify-out\obsidian\GFA 치트키 N배 효율 상승.md
+graphify-out\obsidian\GFA 치트키 카피 25가지 고성과 사례.md
+graphify-out\obsidian\GFA 피드 지면.md
+graphify-out\obsidian\GFA, 메타, 구글 광고에 대해서 궁금한 점 모든 질문 받습니다.md
+graphify-out\obsidian\GFA로 평소매출 3배~10배 올린 카피만드는 핵심 정보.md
+graphify-out\obsidian\goglecc 씨드 이미지 큐레이션 파이프라인.md
+graphify-out\obsidian\Google Ads (구글애즈).md
+graphify-out\obsidian\Google Ads 광고 플랫폼.md
+graphify-out\obsidian\Google Ads.md
+graphify-out\obsidian\Google Ads_1.md
+graphify-out\obsidian\Google Images headless 차단 → Bing 우회 + Negative curation.md
+graphify-out\obsidian\Google Performance Max.md
+graphify-out\obsidian\Google PMax 실적최대화 캠페인.md
+graphify-out\obsidian\Google VEO3.md
+graphify-out\obsidian\Google 고객일치 타겟팅.md
+graphify-out\obsidian\Google 매뉴얼 chunk1 - 매체개요포맷지면.md
+graphify-out\obsidian\Google 매뉴얼 chunk2 - 잠재고객맞춤세그먼트.md
+graphify-out\obsidian\Google 매뉴얼 chunk3 - 리타겟팅GA4전환설정.md
+graphify-out\obsidian\Google 매뉴얼 chunk4.md
+graphify-out\obsidian\Google 매뉴얼 chunk5.md
+graphify-out\obsidian\Google 매뉴얼 chunk6.md
+graphify-out\obsidian\Google 매뉴얼 chunk7.md
+graphify-out\obsidian\Google 매체 매뉴얼 chunk8 (고객일치지원FAQ).md
+graphify-out\obsidian\Google 매체 운영 매뉴얼 (parent).md
+graphify-out\obsidian\GPT 리뷰 자동 분석.md
+graphify-out\obsidian\gpt-image 첫 입력 이미지 fidelity 우위.md
+graphify-out\obsidian\gptim 8후킹축 × 12비주얼씬.md
+graphify-out\obsidian\gptim 스킬 (god-tibo-imagen).md
+graphify-out\obsidian\graphify-outgraph.html.md
+graphify-out\obsidian\graphify-outgraph.json.md
+graphify-out\obsidian\graphify-outGRAPH_REPORT.md
+graphify-out\obsidian\graphify.md
+graphify-out\obsidian\Haar cascade 얼굴 스티커 3단 방어 (talmo).md
+graphify-out\obsidian\haarcascade 세로 전신샷에서 턱복부 오인.md
+graphify-out\obsidian\HAIR_COLOR_SPEC 공통 블록으로 BA 머리색 통일.md
+graphify-out\obsidian\Harness RULES v2 (멱등안전 10규칙).md
+graphify-out\obsidian\Higgsfield Soul API (2026-04-21).md
+graphify-out\obsidian\Higgsfield Soul API 실전 스펙.md
+graphify-out\obsidian\Higgsfield Soul API.md
+graphify-out\obsidian\Higgsfield Soul Character API (2026-04-21).md
+graphify-out\obsidian\HOOK-PAIN-PRODUCT-PROOF-CTA 5단 구조.md
+graphify-out\obsidian\Hyperedge diet-b2a documentation set (README+SKILL+PLAN+HOOK+ARCH+USAGE+RULES).md
+graphify-out\obsidian\Hyperedge diet-b2a pipeline flow (00 validate → 01 overlayface → 02 Kling → 03 compose → 04 QA → 05 export).md
+graphify-out\obsidian\Hyperedge QSCV Appendix 체크리스트 세트 (객단가상세페이지랜딩영상기획이미지기획콘텐츠기획퍼포먼스캔버스).md
+graphify-out\obsidian\i-boss 201건 (최재명).md
+graphify-out\obsidian\i-boss MOC AI 자동화 (34건).md
+graphify-out\obsidian\i-boss MOC 교훈 (10건).md
+graphify-out\obsidian\i-boss MOC 마케팅 (54건).md
+graphify-out\obsidian\i-boss MOC 바이럴 (14건).md
+graphify-out\obsidian\i-boss MOC 시장 (1건).md
+graphify-out\obsidian\i-boss MOC 심리 (22건).md
+graphify-out\obsidian\i-boss MOC 운영 (43건).md
+graphify-out\obsidian\i-boss MOC 조직 (1건).md
+graphify-out\obsidian\i-boss MOC 크리에이티브 (15건).md
+graphify-out\obsidian\i-boss MOC 판단 규칙 (7건).md
+graphify-out\obsidian\i-boss.co.kr ab-6141 게시판.md
+graphify-out\obsidian\iboss 201건 지식베이스 (최재명).md
+graphify-out\obsidian\In-place replace the image with logo-stripped version..md
+graphify-out\obsidian\Inject aliases into frontmatter by extracting the first H1 title.  Why raw f.md
+graphify-out\obsidian\Inject H1 title into frontmatter aliases.md
+graphify-out\obsidian\Inject iboss (최재명 i-boss 201건) entities into the knowledge graph.  Why graphi.md
+graphify-out\obsidian\Inject Korean alias nodes for diet-b2a-v2 into the graphify graph.json.  Ratio.md
+graphify-out\obsidian\Inject Korean aliases into wiki page frontmatter.  Why English slugs like `sr.md
+graphify-out\obsidian\inject() — inject yaml aliases into a single file.md
+graphify-out\obsidian\inject().md
+graphify-out\obsidian\inject()_1.md
+graphify-out\obsidian\inject_aliases_from_h1.py.md
+graphify-out\obsidian\inject_diet_b2a_v2_aliases.py.md
+graphify-out\obsidian\inject_diet_b2a_v2_aliases.py_1.md
+graphify-out\obsidian\inject_iboss_entities.py.md
+graphify-out\obsidian\inject_iboss_entities.py_1.md
+graphify-out\obsidian\inject_korean_aliases.py.md
+graphify-out\obsidian\inject_korean_aliases.py_1.md
+graphify-out\obsidian\Instagram 릴스 멀티계정 자동 업로드.md
+graphify-out\obsidian\instagrapi 인스타 자동 업로드 (검증).md
+graphify-out\obsidian\instagrapi.md
+graphify-out\obsidian\iOS14 ATT 추적 정책.md
+graphify-out\obsidian\iter_block_items().md
+graphify-out\obsidian\Ken Burns 줌으로 Kling i2v 대체 (편당 $2 절약).md
+graphify-out\obsidian\key.txt 라벨 파서 관례 (멀티 API 키).md
+graphify-out\obsidian\Kling (클링).md
+graphify-out\obsidian\Kling 1003 에러 = JWT nbf 시계 drift (nbf=now-120).md
+graphify-out\obsidian\Kling 2.1 Pro image-to-video.md
+graphify-out\obsidian\Kling 20-clip batch generator.md
+graphify-out\obsidian\Kling AI (image2video).md
+graphify-out\obsidian\Kling AI API (image2video v1-6 std).md
+graphify-out\obsidian\Kling AI Avatar Pro.md
+graphify-out\obsidian\Kling AI Avatar v2 Pro (lip-sync).md
+graphify-out\obsidian\Kling Avatar v2 Pro 2~5분 = 병목.md
+graphify-out\obsidian\Kling i2v 10s 모드가 포즈 초단위 지시 준수율 높음.md
+graphify-out\obsidian\Kling i2v 모션 중 얼굴 스무딩 방지.md
+graphify-out\obsidian\Kling image2video API (JWT submitpolldownload).md
+graphify-out\obsidian\Kling image2video batch for all sets × 4 keys. Resume-safe..md
+graphify-out\obsidian\Kling JWT 매 폴링 루프마다 재발급.md
+graphify-out\obsidian\Kling negative_prompt (no mirrorcream-in-mouth).md
+graphify-out\obsidian\Kling prompt builder (5 sets x 4 keys).md
+graphify-out\obsidian\Kling TTS (45+ voices).md
+graphify-out\obsidian\Kling TTS·ElevenLabs 보이스 ID 호환성.md
+graphify-out\obsidian\Kling 직통 API 활성화 차단 (code 1003).md
+graphify-out\obsidian\Kling+Gemini 비포애프터 파이프라인.md
+graphify-out\obsidian\kling_client.py.md
+graphify-out\obsidian\Knowledge-based alias titles (vs article titles).md
+graphify-out\obsidian\Korean alias node injection (graph).md
+graphify-out\obsidian\LaMa가 항상 OpenCV보다 좋은 건 아님 (마스크5%).md
+graphify-out\obsidian\Leiden re-clustering after entity injection.md
+graphify-out\obsidian\lessons-learned.md
+graphify-out\obsidian\lib.py.md
+graphify-out\obsidian\lmarena.ai.md
+graphify-out\obsidian\load_config().md
+graphify-out\obsidian\log.md (CCFM Wiki Log).md
+graphify-out\obsidian\logo_remover.py.md
+graphify-out\obsidian\lost2 노트북 연동 테스트.md
+graphify-out\obsidian\LTV 극대화 회원가입 유도.md
+graphify-out\obsidian\main() — inject diet-b2a-v2 alias nodes.md
+graphify-out\obsidian\main() — inject iboss entities.md
+graphify-out\obsidian\main() — inject Korean aliases into wiki frontmatter.md
+graphify-out\obsidian\main() — regen GRAPH_REPORT.md
+graphify-out\obsidian\main() — rewrite iboss aliases.md
+graphify-out\obsidian\main().md
+graphify-out\obsidian\main()_1.md
+graphify-out\obsidian\main()_10.md
+graphify-out\obsidian\main()_11.md
+graphify-out\obsidian\main()_12.md
+graphify-out\obsidian\main()_13.md
+graphify-out\obsidian\main()_14.md
+graphify-out\obsidian\main()_15.md
+graphify-out\obsidian\main()_16.md
+graphify-out\obsidian\main()_17.md
+graphify-out\obsidian\main()_18.md
+graphify-out\obsidian\main()_19.md
+graphify-out\obsidian\main()_2.md
+graphify-out\obsidian\main()_20.md
+graphify-out\obsidian\main()_3.md
+graphify-out\obsidian\main()_4.md
+graphify-out\obsidian\main()_5.md
+graphify-out\obsidian\main()_6.md
+graphify-out\obsidian\main()_7.md
+graphify-out\obsidian\main()_8.md
+graphify-out\obsidian\main()_9.md
+graphify-out\obsidian\Make.md
+graphify-out\obsidian\make_corner_masks().md
+graphify-out\obsidian\make_edge().md
+graphify-out\obsidian\make_edge()_1.md
+graphify-out\obsidian\make_node().md
+graphify-out\obsidian\make_node()_1.md
+graphify-out\obsidian\make_overlays.py.md
+graphify-out\obsidian\market-intuition.md
+graphify-out\obsidian\marketing-automation.md
+graphify-out\obsidian\marketing.md
+graphify-out\obsidian\MBTI 16가지 감옥 탈출 이유.md
+graphify-out\obsidian\MBTI 자기 정의 함정.md
+graphify-out\obsidian\MBTI·자기정의 탈피 — 약점 개선 복리.md
+graphify-out\obsidian\MECE 기반 목표 세분화.md
+graphify-out\obsidian\MECE 원칙  Why 트리.md
+graphify-out\obsidian\MECE 원칙.md
+graphify-out\obsidian\MECE 원칙_1.md
+graphify-out\obsidian\Merable (메라블).md
+graphify-out\obsidian\Merable (뷰티 브랜드).md
+graphify-out\obsidian\META (FacebookInstagram) 광고 플랫폼.md
+graphify-out\obsidian\Meta Ads Library Playwright crawler.md
+graphify-out\obsidian\Meta Advantage+.md
+graphify-out\obsidian\META 광고 플랫폼.md
+graphify-out\obsidian\META 매체 매뉴얼 chunk1 (개요지면타겟팅).md
+graphify-out\obsidian\META 매체 매뉴얼 chunk2 (DB픽셀리타겟).md
+graphify-out\obsidian\META 매체 매뉴얼 chunk3 (소재머신러닝AB).md
+graphify-out\obsidian\META 매체 매뉴얼 chunk4 (CBOASC빈도지표).md
+graphify-out\obsidian\META 매체 매뉴얼 chunk5 (CTRCPCCPM스케일업).md
+graphify-out\obsidian\META 매체 매뉴얼 chunk6 (지원FAQ).md
+graphify-out\obsidian\Meta.md
+graphify-out\obsidian\Midjourney 7.md
+graphify-out\obsidian\MOC 교훈.md
+graphify-out\obsidian\MOC 마케팅.md
+graphify-out\obsidian\MOC 바이럴.md
+graphify-out\obsidian\MOC 심리.md
+graphify-out\obsidian\MOC 운영.md
+graphify-out\obsidian\MOC 판단 규칙.md
+graphify-out\obsidian\mosaic().md
+graphify-out\obsidian\Multi-LLM Orchestrator v2.0.1 (2026-04-17).md
+graphify-out\obsidian\Multi-LLM Orchestrator v2.0.1.md
+graphify-out\obsidian\n8n.md
+graphify-out\obsidian\NAS 폴더 구조 (광고주별).md
+graphify-out\obsidian\new_client().md
+graphify-out\obsidian\NotebookLM (노트북LM).md
+graphify-out\obsidian\OAuth 무력화 함정 4곳.md
+graphify-out\obsidian\Obsidian Korean alias strategy (no-rename).md
+graphify-out\obsidian\OmniHuman v1.5 (ByteDance).md
+graphify-out\obsidian\OpenAI Sora 2.md
+graphify-out\obsidian\OpenCV Haarcascade 얼굴 검출.md
+graphify-out\obsidian\OpenCV TELEA+NS 인페인팅 5050 블렌딩.md
+graphify-out\obsidian\operational-heuristics.md
+graphify-out\obsidian\Orchestrator — run steps 00→05 idempotently..md
+graphify-out\obsidian\out_dir().md
+graphify-out\obsidian\page_text().md
+graphify-out\obsidian\paragraph_text().md
+graphify-out\obsidian\PDRN 흡수 의심 — 통념 깨기 후킹.md
+graphify-out\obsidian\people-dynamics.md
+graphify-out\obsidian\Performance Video Tacit Chain.md
+graphify-out\obsidian\Perplexity (퍼플릭시티).md
+graphify-out\obsidian\phone_look.py — AI 이미지 핸드폰 느낌 후보정 7단.md
+graphify-out\obsidian\pick_label() — keyword-based community labeling.md
+graphify-out\obsidian\pick_label().md
+graphify-out\obsidian\PMF 최적화 (제품-시장 적합도).md
+graphify-out\obsidian\poll().md
+graphify-out\obsidian\poll()_1.md
+graphify-out\obsidian\POV상황극 훅.md
+graphify-out\obsidian\probe().md
+graphify-out\obsidian\process_image().md
+graphify-out\obsidian\Prompt v1_after_count (영상1 After 1-2-3 카운트).md
+graphify-out\obsidian\Prompt v1_before_count (영상1 Before 1-2-3 카운트).md
+graphify-out\obsidian\Prompt v23_after_dance (영상2·3 후반 K-pop 축하 춤).md
+graphify-out\obsidian\Prompt v23_before_rhythm (영상2·3 전반 팔 다운 리듬).md
+graphify-out\obsidian\psychology-insights.md
+graphify-out\obsidian\psychology.md
+graphify-out\obsidian\qa_check.py.md
+graphify-out\obsidian\QSCV Appendix 객단가 점검.md
+graphify-out\obsidian\QSCV Appendix 랜딩페이지 점검.md
+graphify-out\obsidian\QSCV Appendix 상세페이지 점검.md
+graphify-out\obsidian\QSCV Appendix 영상 필수 기획.md
+graphify-out\obsidian\QSCV Appendix 이미지 필수 기획.md
+graphify-out\obsidian\QSCV Appendix 콘텐츠 기획 가이드.md
+graphify-out\obsidian\QSCV Appendix 퍼포먼스 캔버스 재기획.md
+graphify-out\obsidian\QSCV docx extractor and chunker.md
+graphify-out\obsidian\QSCV docx → rawqscv 원본 md + chunk 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지도형은 IMG.md
+graphify-out\obsidian\QSCV GFA 매체 매뉴얼.md
+graphify-out\obsidian\QSCV Google 매체 매뉴얼.md
+graphify-out\obsidian\QSCV META 매체 매뉴얼.md
+graphify-out\obsidian\QSCV — CCFM 마케팅 서비스 품질 표준 인덱스.md
+graphify-out\obsidian\QSCV 검색광고 매체 매뉴얼.md
+graphify-out\obsidian\QSCV 디자인본부 고객여정.md
+graphify-out\obsidian\QSCV 미디어본부 고객여정.md
+graphify-out\obsidian\QSCV 퍼포먼스 사고 확장 가이드.md
+graphify-out\obsidian\Quick Capture (rawinbox).md
+graphify-out\obsidian\Re-generate GRAPH_REPORT.md with content-aware community labels.  Why graphif.md
+graphify-out\obsidian\README.md (CCFM Wiki).md
+graphify-out\obsidian\read_keys().md
+graphify-out\obsidian\read_keys()_1.md
+graphify-out\obsidian\Reference 누수 → aesthetic LoRA 해법.md
+graphify-out\obsidian\regen_graph_report.py.md
+graphify-out\obsidian\regen_graph_report.py_1.md
+graphify-out\obsidian\rel().md
+graphify-out\obsidian\remove_logo().md
+graphify-out\obsidian\Resolve a path relative to skill root..md
+graphify-out\obsidian\Return (before_box, after_box). Accept both legacy (flat dict per set)     and.md
+graphify-out\obsidian\Rewrite iboss file aliases from article titles to knowledge-based titles.  Why.md
+graphify-out\obsidian\rewrite() — rewrite single iboss md.md
+graphify-out\obsidian\rewrite().md
+graphify-out\obsidian\rewrite_iboss_aliases_as_knowledge.py.md
+graphify-out\obsidian\rewrite_iboss_aliases_as_knowledge.py_1.md
+graphify-out\obsidian\Rhubarb Lip Sync (로컬 대안).md
+graphify-out\obsidian\ROAS (광고 매출 효율).md
+graphify-out\obsidian\ROAS 잘나오는 GFA 형식 구도 1탄.md
+graphify-out\obsidian\ROAS 집착 → ROI 관점 전환.md
+graphify-out\obsidian\ROAS.md
+graphify-out\obsidian\ROAS매출효율.md
+graphify-out\obsidian\Run primary; if no image (refusal), retry with safe prompt and fewer uploads..md
+graphify-out\obsidian\run().md
+graphify-out\obsidian\run()_1.md
+graphify-out\obsidian\Runway Gen-4.md
+graphify-out\obsidian\run_all.py.md
+graphify-out\obsidian\run_one().md
+graphify-out\obsidian\run_one()_1.md
+graphify-out\obsidian\Rusolve (루솔브).md
+graphify-out\obsidian\Rusolve (탈모 브랜드 2026).md
+graphify-out\obsidian\Sample multiple frames, pick the largestmedian face box..md
+graphify-out\obsidian\save_state().md
+graphify-out\obsidian\save_state()_1.md
+graphify-out\obsidian\select_thinking_model().md
+graphify-out\obsidian\Set 10 v23 Before.md
+graphify-out\obsidian\Set 2 Apple Dance Prompt Group.md
+graphify-out\obsidian\Set 2 v1 After.md
+graphify-out\obsidian\Set 2 v1 Before.md
+graphify-out\obsidian\Set 2 v23 After.md
+graphify-out\obsidian\Set 2 v23 Before.md
+graphify-out\obsidian\Set 3 v1 After.md
+graphify-out\obsidian\Set 3 v1 Before.md
+graphify-out\obsidian\Set 3 v23 After.md
+graphify-out\obsidian\Set 3 v23 Before.md
+graphify-out\obsidian\Set 4 v1 After.md
+graphify-out\obsidian\Set 4 v1 Before.md
+graphify-out\obsidian\Set 4 v23 After.md
+graphify-out\obsidian\Set 4 v23 Before.md
+graphify-out\obsidian\Set 5 v1 After.md
+graphify-out\obsidian\Set 5 v1 Before.md
+graphify-out\obsidian\Set 5 v23 After.md
+graphify-out\obsidian\Set 5 v23 Before.md
+graphify-out\obsidian\Set 6 v1 After.md
+graphify-out\obsidian\Set 6 v1 Before.md
+graphify-out\obsidian\Set 6 v23 After.md
+graphify-out\obsidian\Set 6 v23 Before.md
+graphify-out\obsidian\Set 7 v1 After.md
+graphify-out\obsidian\set1 v1_after prompt (Super Shy after, 43kg).md
+graphify-out\obsidian\set1 v1_before prompt (Super Shy before, 85kg).md
+graphify-out\obsidian\set1 v23_after prompt (NewJeans burst dance, after).md
+graphify-out\obsidian\set1 v23_before prompt (suppressed sway, before).md
+graphify-out\obsidian\set10 v1_after prompt (sassy snap, after).md
+graphify-out\obsidian\set10 v1_before prompt (sassy snap, before).md
+graphify-out\obsidian\set10 v23_after prompt (Beyonce body roll, after).md
+graphify-out\obsidian\Set7 after prompts (ITZY K-pop flick choreography).md
+graphify-out\obsidian\Set7 before prompts (v1+v23, fatmessynight).md
+graphify-out\obsidian\Set8 after prompts (Oh Nanana dance, sultry confident).md
+graphify-out\obsidian\Set8 before prompts (fatmessynight, ocean wave choreography).md
+graphify-out\obsidian\Set9 after prompts (fashion runway model strut).md
+graphify-out\obsidian\Set9 before prompts (fatmessynight, head tilt + weight shift).md
+graphify-out\obsidian\shadowhollowdark 키워드 그래픽 패치 유발 — 금지.md
+graphify-out\obsidian\Shared helpers config loading, path resolution, ffmpeg runner..md
+graphify-out\obsidian\Show-first-then-explain 24초 3-Phase 구조.md
+graphify-out\obsidian\silhouetteoutline 키워드 검은선 드로잉 — 금지.md
+graphify-out\obsidian\simple-lama-inpainting (열위 비교 대상).md
+graphify-out\obsidian\skill_root().md
+graphify-out\obsidian\slugify().md
+graphify-out\obsidian\SORA (텍스트→영상 AI).md
+graphify-out\obsidian\SORA.md
+graphify-out\obsidian\Speaking 클립 — 립싱크 없이 표정만 vlog 느낌.md
+graphify-out\obsidian\SPEC.md 100줄 이내 유지.md
+graphify-out\obsidian\src 네이버 카페 크롤러 모듈.md
+graphify-out\obsidian\src-diet-b2a-v2 (다이어트 BA v2).md
+graphify-out\obsidian\Step 00 — validate inputs and config..md
+graphify-out\obsidian\Step 01 — generate stroked text PNG overlays from config.copy..md
+graphify-out\obsidian\Step 01 — 에셋 준비 (오버레이 PNG + 얼굴박스).md
+graphify-out\obsidian\Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O.md
+graphify-out\obsidian\Step 02 — Kling 4개 영상 생성.md
+graphify-out\obsidian\Step 02 — Kling image2video JWT, submit, poll, download, resume..md
+graphify-out\obsidian\Step 03 — 모자이크체중계자막 합성.md
+graphify-out\obsidian\Step 04 — QA 품질 검증.md
+graphify-out\obsidian\Step 04 — quality checks on the 3 output mp4s..md
+graphify-out\obsidian\Step 05 — thumbnails + captions + zip..md
+graphify-out\obsidian\Step 05 — 내보내기업로드 준비.md
+graphify-out\obsidian\step-00 HOOK — BGM 선곡 원리.md
+graphify-out\obsidian\step-00 README — bgm_report.json 스키마.md
+graphify-out\obsidian\step-01 HOOK — Kling 댄스 프롬프트 패턴.md
+graphify-out\obsidian\step-01 PLAN — 5세트 스타일&프롬프트.md
+graphify-out\obsidian\step-01 README — 산출 20개 prompt txt.md
+graphify-out\obsidian\step-02 HOOK — 세션 보호 원칙 (Gemini login session).md
+graphify-out\obsidian\step-02 README — check_session.py + login_once.py.md
+graphify-out\obsidian\step-03 HOOK — 시드가 영상 품질을 결정한다.md
+graphify-out\obsidian\step-03 PLAN — Gemini 시드 생성 (10장 beforeafter).md
+graphify-out\obsidian\step-03 README — gen_seeds.py 실행 가이드.md
+graphify-out\obsidian\step-04 HOOK — 체중계 숫자 변주 전략.md
+graphify-out\obsidian\step-04 PLAN — Gemini 체중계 kg 치환 (10장).md
+graphify-out\obsidian\step-04 README — gen_scales.py 실행 가이드.md
+graphify-out\obsidian\step-05 HOOK — 40클립 대량 생성 전략 (Kling concurrency).md
+graphify-out\obsidian\step-05 PLAN — Kling 40 클립 생성 (10세트 x 4 keys).md
+graphify-out\obsidian\step-05 README — gen_kling.py 실행 가이드.md
+graphify-out\obsidian\stroked().md
+graphify-out\obsidian\stroked()_1.md
+graphify-out\obsidian\submit().md
+graphify-out\obsidian\submit()_1.md
+graphify-out\obsidian\table_to_md().md
+graphify-out\obsidian\taiwan-market.md
+graphify-out\obsidian\talmo 탈모 BA 파이프라인 (루솔브).md
+graphify-out\obsidian\Thin wrapper around gemini-imagegengemini_auto.GeminiImageGen. Always applies.md
+graphify-out\obsidian\try_opencv_detect().md
+graphify-out\obsidian\TTS (Text-to-Speech).md
+graphify-out\obsidian\TTS자막 분리 — 숫자 오독 방지 dict 매핑.md
+graphify-out\obsidian\UE 태그  UTM 태그 (직접전환 추적).md
+graphify-out\obsidian\Up-selling  Cross-selling 전략.md
+graphify-out\obsidian\Up-selling 전략.md
+graphify-out\obsidian\USP (Unique Selling Point).md
+graphify-out\obsidian\USP (Unique Selling Proposition).md
+graphify-out\obsidian\USP (Unique Selling Proposition)_1.md
+graphify-out\obsidian\USP (Unique Selling Proposition)_2.md
+graphify-out\obsidian\USP = 욕구 (기능 아님).md
+graphify-out\obsidian\USP 고객 언어 캐치 (분모자 팬티).md
+graphify-out\obsidian\USP 유연한 재포지셔닝.md
+graphify-out\obsidian\USP 퍼포먼스 캔버스 조사 플레이북.md
+graphify-out\obsidian\USP_메라블.md — Melable RubyRN PicoShot Cream.md
+graphify-out\obsidian\USP는 단수형 (1~2개).md
+graphify-out\obsidian\UTM ROAS 단독 판단 금지 — 8종 크로스체크.md
+graphify-out\obsidian\UTM ROAS 단일지표 함정.md
+graphify-out\obsidian\UTM ROAS 단일지표 함정과 크로스체크.md
+graphify-out\obsidian\UTM 트래킹·전환 추적.md
+graphify-out\obsidian\UTM 파라미터.md
+graphify-out\obsidian\v1_after Synced Choreography Pattern.md
+graphify-out\obsidian\v23 Before Minimal Movement Pattern.md
+graphify-out\obsidian\validate_input.py.md
+graphify-out\obsidian\Veo 3.1.md
+graphify-out\obsidian\Verify Gemini session is still valid. Non-headless to allow user to see state..md
+graphify-out\obsidian\video-gen-lessons.md
+graphify-out\obsidian\video1().md
+graphify-out\obsidian\video_23().md
+graphify-out\obsidian\VIP 고객을 신제품 테스트 군으로 활용.md
+graphify-out\obsidian\viral-patterns.md
+graphify-out\obsidian\viral.md
+graphify-out\obsidian\Volumefill Program (v1+v2+video).md
+graphify-out\obsidian\VTR (영상 시청률).md
+graphify-out\obsidian\was_refused().md
+graphify-out\obsidian\Whisper word-level 타임스탬프 + TTS 매칭.md
+graphify-out\obsidian\wikidomainsai-automation.md
+graphify-out\obsidian\wikidomainsda-creative.md
+graphify-out\obsidian\wikidomainsmarketing.md
+graphify-out\obsidian\wikidomainsorg-restructure.md
+graphify-out\obsidian\wikidomainspsychology.md
+graphify-out\obsidian\wikidomainsviral.md
+graphify-out\obsidian\wikitacitoperational-heuristics.md
+graphify-out\obsidian\Windows .cmd shim 멀티라인 인자 → Gemini 인터랙티브 폴백.md
+graphify-out\obsidian\Windows cp949 — Python print em-dash 금지.md
+graphify-out\obsidian\Windows Python em-dash cp949 크래시.md
+graphify-out\obsidian\Word-rhythm 누적 자막 (ASS+kiwipiepy).md
+graphify-out\obsidian\write().md
+graphify-out\obsidian\XML 태그로 프롬프트 구조화.md
+graphify-out\obsidian\yaml_aliases_block().md
+graphify-out\obsidian\yaml_aliases_block()_1.md
+graphify-out\obsidian\YouTube Shorts.md
+graphify-out\obsidian\YouTube 대규모 수집 + Claude 서브에이전트 9패턴.md
+graphify-out\obsidian\YouTube 대규모 수집·분석 모듈.md
+graphify-out\obsidian\YouTube.md
+graphify-out\obsidian\yt-dlp.md
+graphify-out\obsidian\Z세대 슬랭 금지어 리스트 (풀스택소프트걸Y2K).md
+graphify-out\obsidian\_COMMUNITY_1000만 조회수 나온 바이럴 법칙 통한 기획하는 방법.md
+graphify-out\obsidian\_COMMUNITY_100억대 쇼핑몰 시리즈 1탄.md
+graphify-out\obsidian\_COMMUNITY_10배 성장하는 사고와 방향성 11가지.md
+graphify-out\obsidian\_COMMUNITY_2500억 써본 마케터의 무물 2025년.md
+graphify-out\obsidian\_COMMUNITY_30분 편집 ROAS 300% 영상 꿀팁.md
+graphify-out\obsidian\_COMMUNITY_60초 GFA 반려 소재 수정 앱.md
+graphify-out\obsidian\_COMMUNITY_AI 모델 생성 - 모델료 0원의 시대.md
+graphify-out\obsidian\_COMMUNITY_analyze_bgm.py.md
+graphify-out\obsidian\_COMMUNITY_bdh skill.md
+graphify-out\obsidian\_COMMUNITY_build_sets.py.md
+graphify-out\obsidian\_COMMUNITY_CCFM 미디어본부 고객여정편 chunk002 (영상제작·성과지표·후행액.md
+graphify-out\obsidian\_COMMUNITY_check_session.py.md
+graphify-out\obsidian\_COMMUNITY_coding-lessons.md
+graphify-out\obsidian\_COMMUNITY_compose.py.md
+graphify-out\obsidian\_COMMUNITY_decision-rules.md
+graphify-out\obsidian\_COMMUNITY_detect_faces.py.md
+graphify-out\obsidian\_COMMUNITY_diet-b2a compose (ffmpeg filter_complex).md
+graphify-out\obsidian\_COMMUNITY_diet-b2a-v2 step-06 HOOK 합성 단계의 품질 레버.md
+graphify-out\obsidian\_COMMUNITY_diet-b2a-v2 step-06 PLAN 30 영상 ffmpeg 합성.md
+graphify-out\obsidian\_COMMUNITY_Foreign Influencer Guide README.md
+graphify-out\obsidian\_COMMUNITY_Gemini Logo Remover v3.0 Report (CEO 직접.md
+graphify-out\obsidian\_COMMUNITY_Gemini Session Screenshot.md
+graphify-out\obsidian\_COMMUNITY_gemini_client.py.md
+graphify-out\obsidian\_COMMUNITY_gen_kling.py.md
+graphify-out\obsidian\_COMMUNITY_GFA 신규 피드 지면과 영상 지면의 노하우 N가지 공유드립니다.md
+graphify-out\obsidian\_COMMUNITY_graphify.md
+graphify-out\obsidian\_COMMUNITY_inject_aliases_from_h1.py.md
+graphify-out\obsidian\_COMMUNITY_inject_diet_b2a_v2_aliases.py.md
+graphify-out\obsidian\_COMMUNITY_inject_iboss_entities.py.md
+graphify-out\obsidian\_COMMUNITY_inject_korean_aliases.py.md
+graphify-out\obsidian\_COMMUNITY_lessons-learned.md
+graphify-out\obsidian\_COMMUNITY_logo_remover.py.md
+graphify-out\obsidian\_COMMUNITY_lost2 노트북 연동 테스트.md
+graphify-out\obsidian\_COMMUNITY_META 매체 매뉴얼 chunk6 (지원FAQ).md
+graphify-out\obsidian\_COMMUNITY_QSCV Appendix 객단가 점검.md
+graphify-out\obsidian\_COMMUNITY_QSCV docx extractor and chunker.md
+graphify-out\obsidian\_COMMUNITY_README.md (CCFM Wiki).md
+graphify-out\obsidian\_COMMUNITY_rewrite_iboss_aliases_as_knowledge.py.md
+graphify-out\obsidian\_COMMUNITY_Set 10 v23 Before.md
+graphify-out\obsidian\_COMMUNITY_Set7 before prompts (v1+v23, fatmessyn.md
+graphify-out\obsidian\_COMMUNITY_Step 01 — 에셋 준비 (오버레이 PNG + 얼굴박스).md
+graphify-out\obsidian\_COMMUNITY_USP 퍼포먼스 캔버스 조사 플레이북.md
+graphify-out\obsidian\_COMMUNITY__extract_and_chunk.py.md
+graphify-out\obsidian\_COMMUNITY_강남에서 정육점으로 수억 매출 올린 정육점 대표의 인사이트 2탄.md
+graphify-out\obsidian\_COMMUNITY_검색광고 매뉴얼 chunk1 (키워드 유형 분류).md
+graphify-out\obsidian\_COMMUNITY_결국에 제품 중심 사고가 해답이다 테무 알리 주춤.md
+graphify-out\obsidian\_COMMUNITY_경쟁자 분석.md
+graphify-out\obsidian\_COMMUNITY_고객이 지갑을 활짝 열어버리는 3가지 심리 조작법.md
+graphify-out\obsidian\_COMMUNITY_교과서적인 SNS 페이지 활성화방법 7가지와 컨텐츠 본질.md
+graphify-out\obsidian\_COMMUNITY_구글애즈 2년간 60억 써본 경험 1부 인트로.md
+graphify-out\obsidian\_COMMUNITY_나노바나나로 모델료 월 1억 절감.md
+graphify-out\obsidian\_COMMUNITY_네이버 GFA.md
+graphify-out\obsidian\_COMMUNITY_마케터 소통 6가지 방법.md
+graphify-out\obsidian\_COMMUNITY_마케팅 40부작 1340 광고 3단계 구조와 캠페인 목표.md
+graphify-out\obsidian\_COMMUNITY_마케팅 40부작 1440 광고 추적 기준과 방식.md
+graphify-out\obsidian\_COMMUNITY_마케팅 40부작 1540 광고 데이터 통찰과 개선 아이디어.md
+graphify-out\obsidian\_COMMUNITY_마케팅 40부작 1640 재고관리와 제품수명주기.md
+graphify-out\obsidian\_COMMUNITY_명절 단 10일만에 1억 매출 만드는 5가지 방법.md
+graphify-out\obsidian\_COMMUNITY_몇백억 매출 실력자 공통점 7가지.md
+graphify-out\obsidian\_COMMUNITY_미드저니를 쓰면 모델비, 촬영비 1000만원 아낍니다.md
+graphify-out\obsidian\_COMMUNITY_바이럴 지식.md
+graphify-out\obsidian\_COMMUNITY_바이브코딩 & 클로드 스킬.md
+graphify-out\obsidian\_COMMUNITY_성과 100배 오르는 문제파악 문제해결 기본기.md
+graphify-out\obsidian\_COMMUNITY_성과 2배 빨리 만드는 퍼포먼스 치트키.md
+graphify-out\obsidian\_COMMUNITY_영상 필수 기획 항목 Appendix.md
+graphify-out\obsidian\_COMMUNITY_퍼포먼스 사고 확장 chunk5.md
+graphify-out\obsidian\_COMMUNITY_퍼포먼스 사고 확장 chunk6.md
+graphify-out\obsidian\_COMMUNITY_퍼포먼스 사고 확장 chunk7.md
+graphify-out\obsidian\_COMMUNITY_페이스북 전환율 10% 만드는 핵심 5가지.md
+graphify-out\obsidian\_detect_in_clip().md
+graphify-out\obsidian\_extract_and_chunk.py.md
+graphify-out\obsidian\_extract_frame().md
+graphify-out\obsidian\_pick_best_face().md
+graphify-out\obsidian\_try().md
+graphify-out\obsidian\_with_fallback().md
+graphify-out\obsidian\가격 전략 7가지 (스키밍·심리가격).md
+graphify-out\obsidian\가격으로 조지는 대형마트 멱살 잡고 고객 우리 편 만드는 치트키.md
+graphify-out\obsidian\가설 검증 결과 분석.md
+graphify-out\obsidian\가설 검증 프로세스.md
+graphify-out\obsidian\가설 먼저 → 빠른 실행 검증.md
+graphify-out\obsidian\가설-검증-기록 반복.md
+graphify-out\obsidian\가설→실험→분석→피드백 루프.md
+graphify-out\obsidian\가족 같은 사람 인식 전환 (정육점).md
+graphify-out\obsidian\가족 구성 변화 (1인가구).md
+graphify-out\obsidian\가짜 리뷰 신호  4.2~4.7점 신뢰.md
+graphify-out\obsidian\간결한 카피3초 이해.md
+graphify-out\obsidian\간호사 신발 시장조사 + 착한구두 시너지 (2026-04-28).md
+graphify-out\obsidian\간호사 신발 시장조사 + 착한구두 시너지.md
+graphify-out\obsidian\감정 스토리텔링 (마리모 전설).md
+graphify-out\obsidian\감정적 유대감  가격 경쟁력.md
+graphify-out\obsidian\강남 정육점 사례.md
+graphify-out\obsidian\강남 정육점 수억 매출 인사이트 1탄.md
+graphify-out\obsidian\강남에서 정육점으로 수억 매출 올린 정육점 대표의 인사이트 2탄.md
+graphify-out\obsidian\강용길 (제품 컴플라이언스).md
+graphify-out\obsidian\강점 올인 약점 위임.md
+graphify-out\obsidian\객단가 (AOV).md
+graphify-out\obsidian\객단가 (AOV)_1.md
+graphify-out\obsidian\객단가 상승 옵션 2.5배 가격차.md
+graphify-out\obsidian\객단가 점검 체크리스트 Appendix.md
+graphify-out\obsidian\객단가 점검 체크리스트 Appendix_1.md
+graphify-out\obsidian\객단가.md
+graphify-out\obsidian\거울 셀피 = 무한 반사 할루시네이션.md
+graphify-out\obsidian\검색 광고.md
+graphify-out\obsidian\검색광고 (SA).md
+graphify-out\obsidian\검색광고 (네이버구글 SA).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk1 (키워드 유형 분류).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk2 (파워링크쇼핑검색).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk3 (브랜드검색공통설정).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk4 (운영기준사례).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk5 (캔버스 작성).md
+graphify-out\obsidian\검색광고 매뉴얼 chunk6 (설득 7요소).md
+graphify-out\obsidian\검색광고 시즌 전략 (한우선물세트).md
+graphify-out\obsidian\검색광고 캠페인 구조.md
+graphify-out\obsidian\검증 서브에이전트.md
+graphify-out\obsidian\게재 빈도 (Frequency).md
+graphify-out\obsidian\결과물_링크.md (샘플 결과 링크).md
+graphify-out\obsidian\결국에 제품 중심 사고가 해답이다 테무 알리 주춤.md
+graphify-out\obsidian\결함이 사실감 - 모공주근깨.md
+graphify-out\obsidian\경쟁사 분석 실전·본질 (급성장 기업 벤치마킹).md
+graphify-out\obsidian\경쟁자 분석.md
+graphify-out\obsidian\계정 다중화 전략 (5천 계정 × 10 + 9천 페이지).md
+graphify-out\obsidian\계층적 지시 (대→중→소→디테일).md
+graphify-out\obsidian\고객 관점 카피라이팅.md
+graphify-out\obsidian\고객 생애 가치 (LTV).md
+graphify-out\obsidian\고객 언어 추출.md
+graphify-out\obsidian\고객 여정 타겟.md
+graphify-out\obsidian\고객 욕구 기반 제품 네이밍.md
+graphify-out\obsidian\고객 욕구 반영 제품명 (예 우리아이 고단백 꽃등심).md
+graphify-out\obsidian\고객 질문에서 니즈 추출.md
+graphify-out\obsidian\고객 피드백 루프(댓글리뷰 분석).md
+graphify-out\obsidian\고객 피드백 제품 반영 (피규어 100종).md
+graphify-out\obsidian\고객이 지갑을 활짝 열어버리는 3가지 심리 조작법.md
+graphify-out\obsidian\고관여 vs 저관여 제품.md
+graphify-out\obsidian\골드필름 기술.md
+graphify-out\obsidian\공감 마케팅 7요소.md
+graphify-out\obsidian\공감 콘텐츠 마케팅.md
+graphify-out\obsidian\공감 콘텐츠 시리즈 1~5탄+마지막.md
+graphify-out\obsidian\공감 콘텐츠.md
+graphify-out\obsidian\공급망 다중공장 백업.md
+graphify-out\obsidian\공유 욕망 기반 바이럴.md
+graphify-out\obsidian\공장화 원칙 (30영상 서로 다른 훅).md
+graphify-out\obsidian\공짜 쿠폰 vs 2+1.md
+graphify-out\obsidian\공포 소구·신뢰 근거 (전문가뉴스연출).md
+graphify-out\obsidian\관심사 타겟팅.md
+graphify-out\obsidian\광고 3단계 구조 (캠페인-그룹-소재).md
+graphify-out\obsidian\광고 OFF 이후 자연유입 매출.md
+graphify-out\obsidian\광고 도메인 — 베스트 카피 복사 차단·반려어휘 명시.md
+graphify-out\obsidian\광고 디벨롭 사고 방법 (효율 2배).md
+graphify-out\obsidian\광고 매체 다각화.md
+graphify-out\obsidian\광고 매체 믹스 이해 4탄 (100억 시리즈).md
+graphify-out\obsidian\광고 세팅 운영 안 쓰는 이유 7가지.md
+graphify-out\obsidian\광고 영향도 순위 (제품상세소재타겟지면).md
+graphify-out\obsidian\광고 운영 7가지 핵심 요소.md
+graphify-out\obsidian\광고 추적 3방식 (쿠키AD IDUTM).md
+graphify-out\obsidian\광고비 2500억 운영 인사이트.md
+graphify-out\obsidian\광고효율 N배 상승 3단계 우선순위.md
+graphify-out\obsidian\광고효율 N배 상승 USP 분석.md
+graphify-out\obsidian\광고효율 N배 상승 하는 제품 USP 및 특징 분석 2부.md
+graphify-out\obsidian\광고효율의 90%는 제품.md
+graphify-out\obsidian\교과서적인 SNS 페이지 활성화방법 7가지와 컨텐츠 본질.md
+graphify-out\obsidian\구글 광고 6가지 유형.md
+graphify-out\obsidian\구글 광고.md
+graphify-out\obsidian\구글 써드파티 쿠키 중단 (2023).md
+graphify-out\obsidian\구글 애즈 10억→30억 매출 7가지 - 1탄.md
+graphify-out\obsidian\구글 애즈 10억→30억 매출 7가지 - 2탄.md
+graphify-out\obsidian\구글 애즈 검색광고 기능 4탄-1.md
+graphify-out\obsidian\구글 애즈 동영상 캠페인 4탄-2.md
+graphify-out\obsidian\구글 애즈 디스커버리 기능.md
+graphify-out\obsidian\구글 채널 전체 연결.md
+graphify-out\obsidian\구글디스커버리 CPC 100원 ROAS 300% 꿀팁 5탄-1.md
+graphify-out\obsidian\구글애즈 2년간 60억 써본 경험 1부 인트로.md
+graphify-out\obsidian\구글애즈 9010 예산 규칙.md
+graphify-out\obsidian\구글애즈 퍼포먼스맥스 (실적최대화) 6탄.md
+graphify-out\obsidian\구매의도 타겟팅.md
+graphify-out\obsidian\구조 해시 배정 — 같은 자산 다양한 스토리.md
+graphify-out\obsidian\궁금증 유발 (Curiosity Gap) 패턴.md
+graphify-out\obsidian\권위 훅 (beauty editor  pharmacist bestie).md
+graphify-out\obsidian\권위·근거 레이어링.md
+graphify-out\obsidian\근육돌이(최재명) i-boss 201개 글 인사이트 인덱스.md
+graphify-out\obsidian\긍정 디테일 묘사  네거티브 프롬프트.md
+graphify-out\obsidian\기본 상식 가격 대비 N% 저렴.md
+graphify-out\obsidian\기본기 우선  체력 우선.md
+graphify-out\obsidian\기본을 집착 수준으로 파기.md
+graphify-out\obsidian\기업가 정신 (가치 창조).md
+graphify-out\obsidian\기여기간 (1일 추적).md
+graphify-out\obsidian\기획-실행-복기-개선 사이클.md
+graphify-out\obsidian\나노바나나 (Nano Banana).md
+graphify-out\obsidian\나노바나나 (nano-banana).md
+graphify-out\obsidian\나노바나나 PRO 글씨 잘 쓰는 장점.md
+graphify-out\obsidian\나노바나나 PRO.md
+graphify-out\obsidian\나노바나나 프로 상상이 현실로.md
+graphify-out\obsidian\나노바나나로 모델료 월 1억 절감.md
+graphify-out\obsidian\나이 숫자 단정 금지, 놀라는 사람으로.md
+graphify-out\obsidian\내적 보상  외적 보상 (쿠폰할인).md
+graphify-out\obsidian\널핏 (Nurfit).md
+graphify-out\obsidian\네리티아 2탭 병렬 워커.md
+graphify-out\obsidian\네리티아 ChatGPT 웹 이미지 생성 파이프라인.md
+graphify-out\obsidian\네리티아 세럼 파운데이션.md
+graphify-out\obsidian\네이밍 변경으로 가격대 상향.md
+graphify-out\obsidian\네이버 GFA (성과형 DA).md
+graphify-out\obsidian\네이버 GFA 220억 + 구글 50억 + 페북 50억 인사이트.md
+graphify-out\obsidian\네이버 GFA CPC 100원대 만드는 비법 7가지.md
+graphify-out\obsidian\네이버 GFA.md
+graphify-out\obsidian\네이버 검색광고 (SA).md
+graphify-out\obsidian\네이버 검색광고 API (keywordstool).md
+graphify-out\obsidian\네이버 검색광고 API + Meta 광고 분석 모듈.md
+graphify-out\obsidian\네이버 검색광고 API + Meta 광고 분석 패턴.md
+graphify-out\obsidian\네이버 검색광고클릭초이스.md
+graphify-out\obsidian\네이버 데이터랩  검색키워드도구.md
+graphify-out\obsidian\네이버 데이터랩 키워드 분석.md
+graphify-out\obsidian\네이버 쇼핑데이터랩  썸트렌드.md
+graphify-out\obsidian\네이버 스토어팜스마트스토어.md
+graphify-out\obsidian\네이버 애드 부스트.md
+graphify-out\obsidian\네이버 카페 크롤링가입 자동화 패턴.md
+graphify-out\obsidian\네이버 플레이스.md
+graphify-out\obsidian\네이버성과형 CTR3% CPC200원 하루트래픽5만 비법.md
+graphify-out\obsidian\네이버페이 통합 추적.md
+graphify-out\obsidian\네이티브 광고 콘텐츠.md
+graphify-out\obsidian\네이티브톤.md
+graphify-out\obsidian\논타겟 확장 전략 (1000만+예산).md
+graphify-out\obsidian\다국어 릴스 자막더빙 체크 질문 7종.md
+graphify-out\obsidian\다국어 자막 — 언어별 폰트 매핑 필수 (msjhbd).md
+graphify-out\obsidian\다운로드 동기화 함정 — same chat 5회 retry, cid skip.md
+graphify-out\obsidian\다이어트 BA V15 — Higgsfield 0.85+0.6 + face-swap.md
+graphify-out\obsidian\다이어트 BA V15 확정 (Higgsfield+fal face-swap).md
+graphify-out\obsidian\다이어트 BA v2 대량생산.md
+graphify-out\obsidian\다이어트 BA 스킬 v1.md
+graphify-out\obsidian\다채널 퍼포먼스 믹스.md
+graphify-out\obsidian\단골 확보 3요소 (맛환경사람냄새).md
+graphify-out\obsidian\단일 LLM 의존 금지 — Gemini·GPT·Claude·Perplexity 조합.md
+graphify-out\obsidian\단일 캠페인 집중 전략.md
+graphify-out\obsidian\당근마켓 사례.md
+graphify-out\obsidian\당장 활용 가능한 이커머스 AI 방법들! AI 시리즈 3탄.md
+graphify-out\obsidian\대기 고객 100명 - 1가지만 바꾸면 줄서는 마법.md
+graphify-out\obsidian\대량 실험AB 테스트.md
+graphify-out\obsidian\대행사 사람중심 성장시스템.md
+graphify-out\obsidian\댓글 유도형 훅 공유율 3배 (CCFM 내부).md
+graphify-out\obsidian\데이터쇼핑 없이 매출 10배 10가지 꿀팁.md
+graphify-out\obsidian\도메인 AI 자동화.md
+graphify-out\obsidian\도메인 content-ai-automation.md
+graphify-out\obsidian\도메인 DA 크리에이티브.md
+graphify-out\obsidian\도메인 da-creative.md
+graphify-out\obsidian\도메인 GPT 광고 소재 배치 생성 (gptim).md
+graphify-out\obsidian\도메인 M&A Exit.md
+graphify-out\obsidian\도메인 marketing-automation.md
+graphify-out\obsidian\도메인 viral (바이럴 메커니즘).md
+graphify-out\obsidian\도메인 경영 재무 회계.md
+graphify-out\obsidian\도메인 대만 시장.md
+graphify-out\obsidian\도메인 동남아 TikTok.md
+graphify-out\obsidian\도메인 마케팅 자동화.md
+graphify-out\obsidian\도메인 시장조사 플레이북.md
+graphify-out\obsidian\도메인 심리학 & 인간 본질.md
+graphify-out\obsidian\도메인 인사 총무.md
+graphify-out\obsidian\도메인 일본 시장.md
+graphify-out\obsidian\도메인 전문성.md
+graphify-out\obsidian\도메인 조직개편 A→YZ.md
+graphify-out\obsidian\도메인 카테고리 확장 7→14 (2026-04-13).md
+graphify-out\obsidian\도메인 콘텐츠 AI 자동화.md
+graphify-out\obsidian\도메인 퍼포먼스 마케팅 (i-boss 본사).md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 (마지막).md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 1탄.md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 2탄.md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 3탄.md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 4탄.md
+graphify-out\obsidian\돈 벌게 해주는 공감되는 컨텐츠를 파세요 5탄.md
+graphify-out\obsidian\동네 정육점이 대형마트를 이기려면 어떻게 해야할까.md
+graphify-out\obsidian\동네별 페르소나 차이 (강남 정육점).md
+graphify-out\obsidian\동안 40s v018d UGC 퍼포먼스 광고 소재.md
+graphify-out\obsidian\디맨드젠.md
+graphify-out\obsidian\디벨롭 & 베리에이션.md
+graphify-out\obsidian\디벨롭(Develop) & 베리에이션(Variation) 후행액션.md
+graphify-out\obsidian\디스커버리 광고 지면.md
+graphify-out\obsidian\디스플레이 광고 (DA).md
+graphify-out\obsidian\디자인 4요소 (레이아웃·폰트·컬러·이미지).md
+graphify-out\obsidian\디자인본부 (CCFM).md
+graphify-out\obsidian\랜딩조회비용픽셀 추적.md
+graphify-out\obsidian\랜딩페이지 점검 체크리스트 Appendix (리뷰·CTA·모바일).md
+graphify-out\obsidian\랜딩페이지 최적화.md
+graphify-out\obsidian\럭키투데이기획전.md
+graphify-out\obsidian\레고 사례.md
+graphify-out\obsidian\레퍼런스를 영감 아닌 시각 템플릿으로 명시.md
+graphify-out\obsidian\루비 PDRN (한국 독점).md
+graphify-out\obsidian\루비알엔 광채 4단 시장조사 표준 (2026-04-28).md
+graphify-out\obsidian\루비알엔 광채 클렌저 시장조사 4단 심화.md
+graphify-out\obsidian\루비알엔 앰플클렌저 광채톤업 시장조사.md
+graphify-out\obsidian\리마케팅리타겟팅.md
+graphify-out\obsidian\리뷰 관리·전환율.md
+graphify-out\obsidian\리뷰 관리가 매출 좌우.md
+graphify-out\obsidian\리뷰 배치포토리뷰 전략.md
+graphify-out\obsidian\리타게팅 5% 이내.md
+graphify-out\obsidian\리타게팅 모수 세분화 (장바구니회원가입).md
+graphify-out\obsidian\리타게팅 효율 10배 올리는 10가지 방법.md
+graphify-out\obsidian\리타겟 과다 의존 간접전환 부풀림.md
+graphify-out\obsidian\리타겟팅.md
+graphify-out\obsidian\리프레이밍·포지셔닝 전환.md
+graphify-out\obsidian\릴레이 믹스업 포맷 (3~5s × 6~7 세그).md
+graphify-out\obsidian\릴스 1초컷 + 상단자막 = CTR 2배.md
+graphify-out\obsidian\릴스숏츠 600만 조회수 매장 매출 12배.md
+graphify-out\obsidian\릴스숏츠 기획.md
+graphify-out\obsidian\릴스숏츠 바이럴 참여형 이벤트.md
+graphify-out\obsidian\마라탕 분모자 트렌드 사례.md
+graphify-out\obsidian\마스로우 5단계 욕구.md
+graphify-out\obsidian\마이크로매니징 → 스킬 파일 → 자동화 3단.md
+graphify-out\obsidian\마케터 다차원 사고와 상상력.md
+graphify-out\obsidian\마케터 성장단계 3가지.md
+graphify-out\obsidian\마케터 소통 6가지 방법.md
+graphify-out\obsidian\마케터 소통 6원칙.md
+graphify-out\obsidian\마케터 연차별 체크리스트.md
+graphify-out\obsidian\마케터의 미래 역할 변화.md
+graphify-out\obsidian\마케팅 40부작 1340 광고 3단계 구조와 캠페인 목표.md
+graphify-out\obsidian\마케팅 40부작 1440 광고 추적 기준과 방식.md
+graphify-out\obsidian\마케팅 40부작 1540 광고 데이터 통찰과 개선 아이디어.md
+graphify-out\obsidian\마케팅 40부작 1640 재고관리와 제품수명주기.md
+graphify-out\obsidian\마케팅 40부작 1740 고객피드백 제품반영과 바이럴.md
+graphify-out\obsidian\마케팅 40부작 1840 제품 네이밍과 멀티채널 통합.md
+graphify-out\obsidian\마케팅 40부작 1940 DA광고 의존 함정과 제품특성 전략.md
+graphify-out\obsidian\마케팅 40부작 2040 페이스북 계정분리와 이미지 최적화.md
+graphify-out\obsidian\마케팅 40부작 2140 썸네일·페르소나 변경 효과.md
+graphify-out\obsidian\마케팅 40부작 2240 매체별 맞춤전략과 LTV 극대화.md
+graphify-out\obsidian\마케팅 40부작 2340 마케터 성장과 고객관점.md
+graphify-out\obsidian\마케팅 AI 필수 툴 6가지.md
+graphify-out\obsidian\마케팅 USP 만들기 (제품 분석 6단계).md
+graphify-out\obsidian\마케팅 마인드셋 5요소 (고객집착실행력도전정신팀워크책임감).md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 140 마케팅의 본질.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 240 고객관점 제품이해.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 340 온라인 소비자 구매여정.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 440 퍼널 구조 이해.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 540 5단계 퍼널 프레임워크.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 640 광고 지면 이해.md
+graphify-out\obsidian\마케팅 핵심 지식 40부작 740 광고 목적과 사이트 상황 분류.md
+graphify-out\obsidian\마케팅사업부 (CCFM).md
+graphify-out\obsidian\맞춤 세그먼트 (Google).md
+graphify-out\obsidian\맞춤 타겟 (리타겟팅).md
+graphify-out\obsidian\매슬로 욕구·욕망고통 자극.md
+graphify-out\obsidian\매슬로우 욕구 피라미드.md
+graphify-out\obsidian\매체별 톤매너 맞춤 전략.md
+graphify-out\obsidian\매출 2배 상승 DA 카피 사전 1탄.md
+graphify-out\obsidian\매크로 흐름  개인 노력.md
+graphify-out\obsidian\머신러닝 4단계 도달 (1000건 전환).md
+graphify-out\obsidian\머신러닝 광고 최적화.md
+graphify-out\obsidian\머신러닝 자동최적화.md
+graphify-out\obsidian\멀티 AI 모델 동시 구독.md
+graphify-out\obsidian\멀티 에이전트 병렬 개발.md
+graphify-out\obsidian\멀티샷 프롬프팅.md
+graphify-out\obsidian\메라블 루비알엔 앰플 클렌저.md
+graphify-out\obsidian\메라블 루비알엔 피코샷 크림 (기미 타겟).md
+graphify-out\obsidian\메라블 루비알엔 피코샷 크림.md
+graphify-out\obsidian\메라블 유쎄라블 2X 볼륨필인 앰플.md
+graphify-out\obsidian\메모리 룰만 믿지 말고 코드도 grep 확인.md
+graphify-out\obsidian\메인 키워드 (브랜드상품구매의도).md
+graphify-out\obsidian\메인 타겟 페르소나.md
+graphify-out\obsidian\메타 ABO→CBO 검증 전략.md
+graphify-out\obsidian\메타 광고 빈도수 2~4회.md
+graphify-out\obsidian\메타 머신러닝 (50건7일 학습).md
+graphify-out\obsidian\메타 머신러닝 활성화 기준 (7일 50전환).md
+graphify-out\obsidian\메타 빈도 2~4회 최적.md
+graphify-out\obsidian\메타 픽셀 (전환 추적).md
+graphify-out\obsidian\명절 단 10일만에 1억 매출 만드는 5가지 방법.md
+graphify-out\obsidian\몇백억 매출 실력자 공통점 7가지.md
+graphify-out\obsidian\모비온.md
+graphify-out\obsidian\무의식·의식·설득 3가지로 100억 매출.md
+graphify-out\obsidian\무의식·의식·설득 3단 구조.md
+graphify-out\obsidian\무의식인식설득 3단 구조.md
+graphify-out\obsidian\무의식적 스크롤첫인상 이미지.md
+graphify-out\obsidian\무조건 줄서게 만드는 신제품 기획 치트키 공개합니다!!.md
+graphify-out\obsidian\문화  트렌드  유행 레벨 구분.md
+graphify-out\obsidian\문화  트렌드  유행 시간 축.md
+graphify-out\obsidian\문화적 차이와 매출 영향.md
+graphify-out\obsidian\미끼 효과 (디코이).md
+graphify-out\obsidian\미드저니 (Midjourney).md
+graphify-out\obsidian\미드저니를 쓰면 모델비, 촬영비 1000만원 아낍니다.md
+graphify-out\obsidian\미디어본부 (CCFM).md
+graphify-out\obsidian\미디어본부 고객여정편 chunk1 (영상 기획).md
+graphify-out\obsidian\밍밍 카피 금지 — 상황+구체부위+의성어 3박자.md
+graphify-out\obsidian\바이럴 = 댓글·공유의 전염.md
+graphify-out\obsidian\바이럴 지식.md
+graphify-out\obsidian\바이브 코딩.md
+graphify-out\obsidian\바이브코딩 & 클로드 스킬.md
+graphify-out\obsidian\배송 파손 리스크.md
+graphify-out\obsidian\백그라운드 batch에  head 쓰면 SIGPIPE 죽음.md
+graphify-out\obsidian\백영무 (네이버 채널컨설팅).md
+graphify-out\obsidian\밴드웨건 효과.md
+graphify-out\obsidian\번체 중국어 자막 Microsoft JhengHei 사용.md
+graphify-out\obsidian\베블런 효과.md
+graphify-out\obsidian\볼륨필인 BA 파이프라인 v1 (2026-04-20).md
+graphify-out\obsidian\볼륨필인 Day1→14 영상 공장 (2026-04-21).md
+graphify-out\obsidian\볼륨필인 Day1→14 영상 공장 (2026-04-23).md
+graphify-out\obsidian\볼륨필인 v1 (2026-04-20).md
+graphify-out\obsidian\볼륨필인 v2 심화 (2026-04-21).md
+graphify-out\obsidian\볼륨필인 자동생성 파이프라인.md
+graphify-out\obsidian\볼륨필인 파이프라인 v2 심화 (2026-04-21).md
+graphify-out\obsidian\불경기에도 매출 터지는 제품 공통점 7가지.md
+graphify-out\obsidian\불만 고객 = 고마운 사람 재프레이밍.md
+graphify-out\obsidian\브랜드 검색량브랜딩.md
+graphify-out\obsidian\브랜드 시너지 3 시나리오 매트릭스.md
+graphify-out\obsidian\브랜드검색광고.md
+graphify-out\obsidian\브랜디드톤 vs 네이티브톤.md
+graphify-out\obsidian\브랜디트톤.md
+graphify-out\obsidian\블랙키위 (키워드 분석).md
+graphify-out\obsidian\비싼 API는 idempotent disk cache 필수.md
+graphify-out\obsidian\비용 경험치 ~$7.5030~45s 편.md
+graphify-out\obsidian\비주얼 마케팅 (사진영상 우위).md
+graphify-out\obsidian\비포-애프터  전후 비교 시연.md
+graphify-out\obsidian\빅마우스 법칙 (마이크로 인플루언서).md
+graphify-out\obsidian\빠른 실패 → 플라이휠.md
+graphify-out\obsidian\사람냄새 = 단골 3요소 핵심.md
+graphify-out\obsidian\사이트 전환율 6가지 사례와 가설검증.md
+graphify-out\obsidian\사이트 전환율 높이기 3탄 (100억 시리즈).md
+graphify-out\obsidian\사이트 컨디션 50%+ 전환율 결정.md
+graphify-out\obsidian\사회적 증거 훅 (24 sold-outs  98%).md
+graphify-out\obsidian\사회적 통념포지셔닝.md
+graphify-out\obsidian\산처럼 쌓는 진열 시각화.md
+graphify-out\obsidian\상단 검정바 빨강+노랑 Arial Black 86.md
+graphify-out\obsidian\상단 고정 카피 916 검정바 520px.md
+graphify-out\obsidian\상단 카피 2박스 분리 — 자막 밀도 최적.md
+graphify-out\obsidian\상단 카피 2줄 패턴 (페인+베네핏 빨강노랑).md
+graphify-out\obsidian\상세 타겟 (관심사행동인구통계).md
+graphify-out\obsidian\상세페이지 분석 및 USP 도출.md
+graphify-out\obsidian\상세페이지 점검 체크리스트 Appendix (USP·B&A·신뢰요소).md
+graphify-out\obsidian\상세페이지 점검 체크리스트 Appendix.md
+graphify-out\obsidian\상황극보다 정직한 일상.md
+graphify-out\obsidian\샤르드 멜라케어 필크림 마스크 USP 케이스.md
+graphify-out\obsidian\서브 키워드 (감성타겟가격문제해결).md
+graphify-out\obsidian\서브미리널 효과.md
+graphify-out\obsidian\설계 90% 코드는 출력물.md
+graphify-out\obsidian\설득 9요소 (상호성·희소성·권위·일관성·증거·호감·숫자·공포·쾌락).md
+graphify-out\obsidian\설득 9요소 (최재명 변형).md
+graphify-out\obsidian\설득의 7가지 심리학 (치알디니).md
+graphify-out\obsidian\성과 100배 오르는 문제파악 문제해결 기본기.md
+graphify-out\obsidian\성과 2배 빨리 만드는 퍼포먼스 치트키.md
+graphify-out\obsidian\성과지표 (CTRCVRCPV구간재생률).md
+graphify-out\obsidian\세부 키워드 전략.md
+graphify-out\obsidian\세상에서 가장 쉬운, 0원으로 단골만드는 방법.md
+graphify-out\obsidian\세이프존 (Safe Zone).md
+graphify-out\obsidian\세이프존(Safe Zone) 매체별 UI 회피.md
+graphify-out\obsidian\세일즈 법칙 12가지로 매출 10배 상승.md
+graphify-out\obsidian\세컨브레인 자동 동작 4규칙.md
+graphify-out\obsidian\세트 구성 객단가 2배 상승.md
+graphify-out\obsidian\소통 6가지 방법 (경청·복명복창·거절기술).md
+graphify-out\obsidian\손가락 1-2-3 시퀀스 좌우분할 최적.md
+graphify-out\obsidian\손실회피 + BeforeAfter 시각화.md
+graphify-out\obsidian\쇼핑 제품 피드 확장.md
+graphify-out\obsidian\쇼핑 프로모션 캠페인.md
+graphify-out\obsidian\쇼핑검색광고 품질지수.md
+graphify-out\obsidian\쇼핑검색광고.md
+graphify-out\obsidian\쇼핑몰 4가지 상황별 GFA통한 매출 N% 상승 전략.md
+graphify-out\obsidian\쇼핑몰 경영자 역량 10가지 100억 시리즈 6탄.md
+graphify-out\obsidian\쇼핑몰 보약 리뷰분석 잘하는 N가지 꿀팁.md
+graphify-out\obsidian\쇼핑몰 산업환경 10가지 100억 시리즈 3탄.md
+graphify-out\obsidian\숏폼 3요소 (숫자순서3초 후킹).md
+graphify-out\obsidian\숏폼 영상CAPCUT.md
+graphify-out\obsidian\숏폼은 이 3가지 없으면 망합니다.md
+graphify-out\obsidian\수동 CPC 입찰 (GFA).md
+graphify-out\obsidian\수치 단위 착각 방지 규칙.md
+graphify-out\obsidian\숫자 + 순서의 위력.md
+graphify-out\obsidian\쉬운 말 치환 규칙.md
+graphify-out\obsidian\스냅푸시  채널톡.md
+graphify-out\obsidian\스마일게이트 M&A 컨소시엄.md
+graphify-out\obsidian\스마트스토어.md
+graphify-out\obsidian\스마트채널 지면.md
+graphify-out\obsidian\스킨케어 BA 17초 파이프라인.md
+graphify-out\obsidian\스킬 파이프라인 (bob→dd→harness→eval→learnings).md
+graphify-out\obsidian\스킬 파이프라인 bob→dd→harness→eval→learnings.md
+graphify-out\obsidian\스타일 A 인플루언서 셀카 (자보티바 3종).md
+graphify-out\obsidian\스타일 B 인플루언서+제품 클로즈업 (루비알엔).md
+graphify-out\obsidian\스타일 C META 스토리3D 일러스트 (유쎄라블).md
+graphify-out\obsidian\스타일 D 정방 타이포 (위프 1초컷).md
+graphify-out\obsidian\스토리라인 구조 (문제→해결→근거→설득→CTA).md
+graphify-out\obsidian\스토리라인 구조 문제→해결→근거→설득→CTA.md
+graphify-out\obsidian\스토어팜 매출 억 만들기 (중급) 기초적인 이야기 6탄(럭키투데이).md
+graphify-out\obsidian\스토어팜 매출 억 만들기 (중급)기초적인 이야기 6탄.md
+graphify-out\obsidian\스토어팜 매출 억 만들기 (중급)기초적인 이야기 7탄.md
+graphify-out\obsidian\스토어팜 매출 억대 시리즈 1~8탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 (기초)중급적인 이야기 3탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 기초()중급적인 이야기 4탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 기초()중급적인 이야기 5탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 기초적인 이야기 1탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 기초적인 이야기 2탄.md
+graphify-out\obsidian\스토어팜 매출 억대로 만드는 마지막 이야기 8탄.md
+graphify-out\obsidian\습관 기제 (도파민·공포·무의식).md
+graphify-out\obsidian\시X 마스킹 대신 시O — 비속어 회피.md
+graphify-out\obsidian\시그니처 상품 개발 (수제 육회소스).md
+graphify-out\obsidian\시장 세분화.md
+graphify-out\obsidian\시장성 목표 분류 10가지 100억 시리즈 4탄.md
+graphify-out\obsidian\시장조사 4단 심화 표준.md
+graphify-out\obsidian\시장조사 파이프라인 (주름·유쎄라블).md
+graphify-out\obsidian\시장조사 플레이북 등록 (2026-04-20).md
+graphify-out\obsidian\시장흐름과 USP 시즌성 전략.md
+graphify-out\obsidian\시즌 상품 전략.md
+graphify-out\obsidian\식약처 규제 환경 영향.md
+graphify-out\obsidian\신동협 (AI Cell 리더 후보).md
+graphify-out\obsidian\신선도손질 과정 시각화.md
+graphify-out\obsidian\실사 인플루언서 — Gemini 직호출 기본값.md
+graphify-out\obsidian\실용가치 + 소셜화폐 = 공유 원칙.md
+graphify-out\obsidian\실적최대화 (PMax).md
+graphify-out\obsidian\썸네일 변경 전환율 2%+ 상승.md
+graphify-out\obsidian\썸네일 최적화.md
+graphify-out\obsidian\썸트렌드 (SNS 빅데이터).md
+graphify-out\obsidian\씨드림 4.0.md
+graphify-out\obsidian\씬 단위 2~3 청크 분할 (글자수 비례 시간).md
+graphify-out\obsidian\씬 전환 평균 2.5초 = 자연 리듬.md
+graphify-out\obsidian\아이템 선정 11가지 100억 시리즈 2탄.md
+graphify-out\obsidian\아이템 선정의 50% 비중.md
+graphify-out\obsidian\암묵지 (Tacit Knowledge).md
+graphify-out\obsidian\암묵지 (Tacit Knowledge)_1.md
+graphify-out\obsidian\양쪽 하단 코너를 인페인팅하여 로고 제거      1. TELEA 알고리즘 빠른 행진 기반 (텍스처에 강함)     2. NS 알고리즘.md
+graphify-out\obsidian\억 단위 변환 체크리스트 (1e8).md
+graphify-out\obsidian\억대 매출 정육점의 실패한 마케팅 공개합니다! 부위부위 정육점.md
+graphify-out\obsidian\억대 쇼핑몰 기초 체크리스트 5가지.md
+graphify-out\obsidian\억제 → 해방 릴스 구조 다이어트 변신 임팩트.md
+graphify-out\obsidian\얼굴 레퍼런스는 분위기만, 인종은 프롬프트 강제.md
+graphify-out\obsidian\얼굴 모자이크 박스 112x125 정책.md
+graphify-out\obsidian\얼굴 모자이크는 머리 영역만, 어깨 덮으면 추함.md
+graphify-out\obsidian\얼굴 시드 80% 유사 규칙 (딥페이크 방지).md
+graphify-out\obsidian\얼굴형 시드 분리 패턴 — face+bfex_split.md
+graphify-out\obsidian\얼굴형 타입 진단형 후킹 (중년 여성).md
+graphify-out\obsidian\엄마친구 3인칭 목격담 — GFA 우회.md
+graphify-out\obsidian\엄마할머니가 알려주신 어법 = 카피 반려 거의 없음.md
+graphify-out\obsidian\에셋화 (부품 단위 분리).md
+graphify-out\obsidian\에펠탑 효과 (7회 노출).md
+graphify-out\obsidian\엔트로픽 AI 활용 9가지 초꿀팁.md
+graphify-out\obsidian\엣지 케이스 테스트.md
+graphify-out\obsidian\역설계 인풋 설계.md
+graphify-out\obsidian\역할 부여 프롬프팅.md
+graphify-out\obsidian\연차별 체크리스트 (1-22-44+).md
+graphify-out\obsidian\영문 댄스명 자막 그대로 쓰면 조회수 손해.md
+graphify-out\obsidian\영상 5단계 구조 (후킹문제제기USP장점구매).md
+graphify-out\obsidian\영상 도구 용도별 분리 (RunwayWANVEO3Higgsfield).md
+graphify-out\obsidian\영상 디자이너 배정 프로세스.md
+graphify-out\obsidian\영상 비전 분석 1초 7요소 추출.md
+graphify-out\obsidian\영상 작업은 규칙화 금지, 질문 체크리스트화.md
+graphify-out\obsidian\영상 필수 기획 항목 Appendix (USP·페르소나·스토리라인).md
+graphify-out\obsidian\영상 필수 기획 항목 Appendix.md
+graphify-out\obsidian\영상 흐름 (후킹→스토리→USP→행동유도).md
+graphify-out\obsidian\오디언스 타겟팅.md
+graphify-out\obsidian\오디오 vs 자막 EN 축약 불일치.md
+graphify-out\obsidian\온라인 쇼핑몰 매출 마케팅구조 4가지 1탄 (100억 시리즈).md
+graphify-out\obsidian\외국인 인플루언서 33편 (fal.ai+Kling Avatar v2).md
+graphify-out\obsidian\외국인 인플루언서 가이드 (33편).md
+graphify-out\obsidian\외국인 인플루언서 리뷰 영상 자동화 (메라블 루비알엔 33편).md
+graphify-out\obsidian\욕구와 습관으로 매출 성장 카피 만들기.md
+graphify-out\obsidian\욕망고통욕구가 먹히는 이유 DA 카피 사전 2탄.md
+graphify-out\obsidian\우선순위 10단계 (제품고객시장USP...).md
+graphify-out\obsidian\원츠 vs 니즈.md
+graphify-out\obsidian\월 10억 매출 사회적 통념 부여 N일 안에 가능.md
+graphify-out\obsidian\월 10억 소진 30억 매출 8탄 인트로.md
+graphify-out\obsidian\월 50억 나노바나나 활용법 100가지.md
+graphify-out\obsidian\월 광고비 40억 GFA 영상+피드 노하우 9가지.md
+graphify-out\obsidian\유기 도달 90만 (공유 13,000).md
+graphify-out\obsidian\유니버설 세이프존 900x1120.md
+graphify-out\obsidian\유사 타겟 (Lookalike).md
+graphify-out\obsidian\유사 타겟.md
+graphify-out\obsidian\유행 댄스명을 프롬프트에 고유명사로 박기.md
+graphify-out\obsidian\유행편승의 함정 (골프 전용 → 종료시 급락).md
+graphify-out\obsidian\의료 시술 마스킹 X 대신 O (시O).md
+graphify-out\obsidian\이거 너무 기본 망하는 이유 5가지.md
+graphify-out\obsidian\이미지 우선의 클릭 결정.md
+graphify-out\obsidian\이미지 캐릭터 병치로 BA 우회 강화.md
+graphify-out\obsidian\이미지 테스트 9가지 패턴.md
+graphify-out\obsidian\이미지 필수 기획 항목 Appendix.md
+graphify-out\obsidian\이미지 필수 기획 항목 Appendix_1.md
+graphify-out\obsidian\이중 자막 레이아웃 (KO Malgun 78 + EN Arial 56).md
+graphify-out\obsidian\이커머스 AI 매출화 (5단계 활용도).md
+graphify-out\obsidian\이커머스 평균 수익률 10%대.md
+graphify-out\obsidian\이퓨모먼트 전환 카드 — 3씬 접착제.md
+graphify-out\obsidian\이해관계자 검토.md
+graphify-out\obsidian\익숙함의 법칙 (니즈 vs 원츠).md
+graphify-out\obsidian\인간 5가지 기본 욕구 (식·안전·수면·성·인정).md
+graphify-out\obsidian\인간의 6가지 기본 본능.md
+graphify-out\obsidian\인도네시아 크로스보더 실패 (배송7일 반품40%).md
+graphify-out\obsidian\인문학+심리학 마케팅 융합.md
+graphify-out\obsidian\인문학과 심리학이 마케팅에 필요한 이유 8가지.md
+graphify-out\obsidian\인스타 릴스 yt-dlp 우회 + 표준 envelope.md
+graphify-out\obsidian\인스타그램 릴스 수집·분석 모듈.md
+graphify-out\obsidian\인스트림 동영상.md
+graphify-out\obsidian\일매출 100→2000만원 (가격 전략 7가지).md
+graphify-out\obsidian\일매출 8억 네이버 성과형 DA + 구글 시너지 노출량 30억.md
+graphify-out\obsidian\입찰 전략 단계적 전환.md
+graphify-out\obsidian\입찰 최적화.md
+graphify-out\obsidian\자기연결 훅 (If you have...).md
+graphify-out\obsidian\자동화 친화 exit code + --json-output 메타 계약.md
+graphify-out\obsidian\자동화 효율 10배·비용 10배 절감 (AX팀).md
+graphify-out\obsidian\자막 싱크 — EN 실제 문장 쪼갬 + KO 의미 번역.md
+graphify-out\obsidian\자막 크기는 박스 겹치면 무조건 실패 — 폰트보다 여백.md
+graphify-out\obsidian\자막만 재burn (Avatar 재사용 1~2분).md
+graphify-out\obsidian\자연광이 진실 판정 기준 (댓글 814).md
+graphify-out\obsidian\자이가르니크 법칙.md
+graphify-out\obsidian\작업 세분화 (단계 쪼개기).md
+graphify-out\obsidian\재구매 CRM 전략.md
+graphify-out\obsidian\재구매·CRM 자동화 (스냅푸시채널톡데이터라이즈).md
+graphify-out\obsidian\재구매력 관점 10가지 체크리스트 100억 쇼핑몰 10탄.md
+graphify-out\obsidian\재구매율  CRM.md
+graphify-out\obsidian\재구매율 80% 만드는 비결 - 정육점 대표의 인사이트 3탄.md
+graphify-out\obsidian\재구매율 86% 강남 정육점 USP 노하우.md
+graphify-out\obsidian\재사용 가능한 크롤링·화면 자동화 패턴 (OCR 캡차·iframe·아카이브·rate limit).md
+graphify-out\obsidian\재입고 알람 리텐션 (100명→30명 구매).md
+graphify-out\obsidian\저점→폭증 트렌드 필터.md
+graphify-out\obsidian\전→후 하드컷은 같은 중립 포즈에서 자르기.md
+graphify-out\obsidian\전단지 대행 실패  우편함 광고.md
+graphify-out\obsidian\전문몰 틈새시장 포지셔닝.md
+graphify-out\obsidian\전문성 × AI 활용 = 대체불가 인재.md
+graphify-out\obsidian\전반 억제 → 후반 폭발 구조가 BA 해방감 최강.md
+graphify-out\obsidian\전환 50건 머신러닝 학습 기준.md
+graphify-out\obsidian\전환 추적 스크립트.md
+graphify-out\obsidian\전환 캠페인.md
+graphify-out\obsidian\전환수 최대화 입찰.md
+graphify-out\obsidian\전환율 2~7% 네이버 성과형 DA 미친거아니야 시리즈 1탄.md
+graphify-out\obsidian\전환율.md
+graphify-out\obsidian\정성적 신호 → 데이터 변화 선행.md
+graphify-out\obsidian\정수리 확대 플로팅 위젯 — 탈모 BA 임팩트 증폭.md
+graphify-out\obsidian\정육점 케이스 (재구매 86%).md
+graphify-out\obsidian\정확한 진단이 해결의 90%.md
+graphify-out\obsidian\제3자 리뷰 신뢰도 (내돈내산).md
+graphify-out\obsidian\제로 비용 효과  호혜성.md
+graphify-out\obsidian\제품 구도 360도 연구.md
+graphify-out\obsidian\제품 네이밍의 힘 (스킨이즘).md
+graphify-out\obsidian\제품 및 서비스 관점 10가지 100억 시리즈 5탄.md
+graphify-out\obsidian\제품 본질  USP.md
+graphify-out\obsidian\제품 수명주기 6-8개월.md
+graphify-out\obsidian\제품 시즌성.md
+graphify-out\obsidian\제품 우선주의.md
+graphify-out\obsidian\제품 중심 사고 (4요소).md
+graphify-out\obsidian\제품에 대한 이해 2탄 (100억 시리즈).md
+graphify-out\obsidian\존재하지 않는 Q-tipapplicator 생성.md
+graphify-out\obsidian\좀비 워커 — chrome 탭당 워커 1개 PID 점검.md
+graphify-out\obsidian\죽은 상권에서 월매출 2억 끌어올린 사례.md
+graphify-out\obsidian\줄서는 정육점으로 만드는 필승 전략 1 억대 정육점 프로모션.md
+graphify-out\obsidian\줄서는 정육점으로 만드는 필승 전략 2 억대 정육점의 비밀.md
+graphify-out\obsidian\줄서는 정육점으로 만드는 필승 전략 3 억대 정육점의 비밀.md
+graphify-out\obsidian\줄선 모습 = 시각적 사회증거.md
+graphify-out\obsidian\줄선 사진 멀티채널 증폭 (네이버플레이스인스타뉴스문자).md
+graphify-out\obsidian\중년(50~60대) 친화 한국어 어휘 풀.md
+graphify-out\obsidian\증상별 진단 스크립트 동선.md
+graphify-out\obsidian\지면별 믹스 시너지.md
+graphify-out\obsidian\직접전환 vs 간접전환.md
+graphify-out\obsidian\직접전환 vs 간접전환_1.md
+graphify-out\obsidian\착한구두 (45스페이스).md
+graphify-out\obsidian\참조 이미지 모자이크 제거 인페인팅.md
+graphify-out\obsidian\책 읽으면서 정리한 미친 아이디어 34가지.md
+graphify-out\obsidian\초과게재 현상.md
+graphify-out\obsidian\초기 공유 → 폭탄 심지 스노우볼.md
+graphify-out\obsidian\초보마케터 도핑기술 (경쟁사 성장 분석).md
+graphify-out\obsidian\초상권 위반 주의.md
+graphify-out\obsidian\초통령이 되어버린 정육점 이야기 - 대형마트 이기기 1탄.md
+graphify-out\obsidian\최고의 마케팅 대행사 구조.md
+graphify-out\obsidian\최소 일예산 30만원 기준.md
+graphify-out\obsidian\최재명 (근육돌이) - CCFM CEO.md
+graphify-out\obsidian\최재명 (근육돌이).md
+graphify-out\obsidian\최재명 대표 i-boss 201건 마스터 인덱스.md
+graphify-out\obsidian\최적의 빈도수 - DA광고 빈도 10가지.md
+graphify-out\obsidian\출산 3개월 전→뒤 시간축 압축 카피.md
+graphify-out\obsidian\치알디니 7대 설득 요소 (상호성희소성권위일관성사회적증거호감숫자근거).md
+graphify-out\obsidian\카카오 검색 API (다음카페).md
+graphify-out\obsidian\카카오 싱크 간편가입.md
+graphify-out\obsidian\카카오모먼트 300% 이상 5가지 방향성.md
+graphify-out\obsidian\카카오모멘트.md
+graphify-out\obsidian\카카오톡 채널.md
+graphify-out\obsidian\카탈로그 캠페인 + 리타겟팅.md
+graphify-out\obsidian\카피 공식 (타겟 구체화·숫자·호소문).md
+graphify-out\obsidian\카피 변형다변화.md
+graphify-out\obsidian\카피 수량 글로벌 하드 캡 (main≤2 sub≤3 badge≤1).md
+graphify-out\obsidian\카피의 신 GPTS (25가지 카피법칙).md
+graphify-out\obsidian\카피의 신 GPTS 공유 (25가지 카피법칙 학습).md
+graphify-out\obsidian\캠페인 목표 4가지 (전환방문도달조회).md
+graphify-out\obsidian\캠페인 성과 구성비 80~90% 소재·상세·제품.md
+graphify-out\obsidian\캠페인 예산 증액 속도.md
+graphify-out\obsidian\컨테이저스 6법칙+2.md
+graphify-out\obsidian\컨텐츠 제공 능력 10가지 체크리스트 100억 쇼핑몰 7탄.md
+graphify-out\obsidian\컨펌시트.md
+graphify-out\obsidian\컬처코드.md
+graphify-out\obsidian\컴플레인 고객 = 충성 고객 전환.md
+graphify-out\obsidian\컴플레인 고객이 충성 고객이 되니 매출 2배 오른다고.md
+graphify-out\obsidian\코스튬 시각효과 트래픽 유도.md
+graphify-out\obsidian\콘텐츠 4가지 유형 (B&F·스토리·전문가·리얼리티).md
+graphify-out\obsidian\콘텐츠 기획 가이드 Appendix (브랜디드톤·네이티브톤).md
+graphify-out\obsidian\콘텐츠 기획 가이드 Appendix.md
+graphify-out\obsidian\콘텐츠 본질 4요소(이슈정보스토리비범).md
+graphify-out\obsidian\콘텐츠가 세팅의 99배 중요.md
+graphify-out\obsidian\콘텐츠가 핵심 (광고 예산  콘텐츠).md
+graphify-out\obsidian\콘텐츠소재 품질.md
+graphify-out\obsidian\쿠팡 로켓그로스 전환 시 2주 재고 확보.md
+graphify-out\obsidian\쿠팡이츠배민스토어.md
+graphify-out\obsidian\크로스 플랫폼 시너지 (FB·빙글·카카오·네이버 카페).md
+graphify-out\obsidian\크림 통 입 근처 = 먹는 장면 오인.md
+graphify-out\obsidian\키워드 매칭 전략.md
+graphify-out\obsidian\킬링 콘텐츠  위닝 소재.md
+graphify-out\obsidian\킬링 콘텐츠 + 롤링발칸.md
+graphify-out\obsidian\킬링 콘텐츠롤링발칸.md
+graphify-out\obsidian\타게팅, 컨텐츠, SNS 마케팅의 실무관점 본질.md
+graphify-out\obsidian\타겟 ROAS 입찰.md
+graphify-out\obsidian\타겟 세분화명확화.md
+graphify-out\obsidian\타겟팅  유사·맞춤 타겟.md
+graphify-out\obsidian\타겟팅 한계론(콘텐츠가 우선).md
+graphify-out\obsidian\타입캐스트 AI 음성 더빙.md
+graphify-out\obsidian\탈모 루솔브 BA 릴스.md
+graphify-out\obsidian\탈모 루솔브 BA 파이프라인 (2026-04-16).md
+graphify-out\obsidian\탈모 정수리 클로즈업 = 공포 방아쇠.md
+graphify-out\obsidian\테마 100억대 매출 10부작 시리즈.md
+graphify-out\obsidian\테마 가설검증과 데이터 통찰.md
+graphify-out\obsidian\테마 고객 집착·고객 관점.md
+graphify-out\obsidian\테마 네이버 GFA 운영 마스터리.md
+graphify-out\obsidian\테마 마케팅 핵심 지식 40부작 시리즈.md
+graphify-out\obsidian\테마 제품 본질 우선주의.md
+graphify-out\obsidian\테무  알리 (초저가 플랫폼).md
+graphify-out\obsidian\테무·알리 저가 대응 — 품질·물류 적자로 동시 하락.md
+graphify-out\obsidian\튜토리얼 annotation 컷 (보라 점선·화살표).md
+graphify-out\obsidian\트래픽 캠페인.md
+graphify-out\obsidian\특징 vs USP (문제 해결).md
+graphify-out\obsidian\파워링크.md
+graphify-out\obsidian\파워컨텐츠.md
+graphify-out\obsidian\판다랭크  아이템스카우트.md
+graphify-out\obsidian\팔란티어와 AI시대 마케터 생존.md
+graphify-out\obsidian\패턴 깨기 효과.md
+graphify-out\obsidian\패턴 이미지 효과.md
+graphify-out\obsidian\퍼널 구조 (인지-고려-방문-구매-재구매).md
+graphify-out\obsidian\퍼널 단계별 이탈율 분석.md
+graphify-out\obsidian\퍼널 진단 (CTRCVRLTV).md
+graphify-out\obsidian\퍼포먼스 3대 원칙 (제품상세소재타겟매체 등).md
+graphify-out\obsidian\퍼포먼스 7요소 (체력·회전·점프·코치·기술·장비·환경).md
+graphify-out\obsidian\퍼포먼스 광고 7씬 15초 구조.md
+graphify-out\obsidian\퍼포먼스 광고 질문답변 37가지 했습니다!.md
+graphify-out\obsidian\퍼포먼스 마케팅 7가지 요소.md
+graphify-out\obsidian\퍼포먼스 마케팅 믹스 월 매출 40억.md
+graphify-out\obsidian\퍼포먼스 마케팅.md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk1 (마인드셋).md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk2 (가설실험분석).md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk3 (CBOABODCOAI).md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk4 (무의식인식설득).md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk5.md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk6.md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk7.md
+graphify-out\obsidian\퍼포먼스 사고 확장 chunk8 (지표 사전).md
+graphify-out\obsidian\퍼포먼스 영상 7단 황금률.md
+graphify-out\obsidian\퍼포먼스 영상 v18 표준 파이프라인 (24초 3 angle).md
+graphify-out\obsidian\퍼포먼스 영상 꿀팁 1탄 성공 영상 6가지 특징.md
+graphify-out\obsidian\퍼포먼스 영상 꿀팁 2탄 효과적 후킹 6가지.md
+graphify-out\obsidian\퍼포먼스 영상 꿀팁 3탄 흐름과 편집.md
+graphify-out\obsidian\퍼포먼스 영상 파이프라인 v18 (메라블).md
+graphify-out\obsidian\퍼포먼스 영상 패턴 3종 (인플루언서·META·타이포).md
+graphify-out\obsidian\퍼포먼스 캔버스 (전략 설계도).md
+graphify-out\obsidian\퍼포먼스 캔버스 v1 — 루솔브.md
+graphify-out\obsidian\퍼포먼스 캔버스 업데이트 및 재기획 Appendix.md
+graphify-out\obsidian\퍼포먼스 캔버스 업데이트 및 재기획 Appendix_1.md
+graphify-out\obsidian\퍼포먼스 캔버스 업데이트.md
+graphify-out\obsidian\퍼포먼스 캔버스 활용법 (기획·고객정의·근거).md
+graphify-out\obsidian\퍼포먼스 캔버스.md
+graphify-out\obsidian\퍼포먼스 캔버스_1.md
+graphify-out\obsidian\퍼포먼스맥스 캠페인.md
+graphify-out\obsidian\페르소나 = 컨텐츠.md
+graphify-out\obsidian\페르소나 변경 포지셔닝 전환.md
+graphify-out\obsidian\페북이 망했다 아니 당신의 제품이 망한거다!.md
+graphify-out\obsidian\페이스북 계정 3개 분리 운영.md
+graphify-out\obsidian\페이스북 광고.md
+graphify-out\obsidian\페이스북 광고_1.md
+graphify-out\obsidian\페이스북 전환율 10% 만드는 핵심 5가지.md
+graphify-out\obsidian\페이스북인스타그램 광고.md
+graphify-out\obsidian\폴링 루프 멱등성 상태파일 + 파일크기 이중 체크.md
+graphify-out\obsidian\프로세스 exit ≠ 논리 완료.md
+graphify-out\obsidian\프롬프트 3요소 (역할구체정보조건값).md
+graphify-out\obsidian\프롬프트 엔지니어링  GPT 카피.md
+graphify-out\obsidian\프롬프트의 이해와 활용 200%하는법 AI 시리즈 2탄.md
+graphify-out\obsidian\프리미엄 로그분석.md
+graphify-out\obsidian\플랫폼 친화성채널별 톤.md
+graphify-out\obsidian\플랫폼·매체 탓 금지 — 제품·콘텐츠 먼저.md
+graphify-out\obsidian\플러스친구 CRM.md
+graphify-out\obsidian\플럭스 콘텍스트 (Flux Context).md
+graphify-out\obsidian\피부 세포 3D 애니메이션 (cells_morph 5s).md
+graphify-out\obsidian\픽셀 데이터 모수 축적.md
+graphify-out\obsidian\픽셀 설치행동 추적.md
+graphify-out\obsidian\핑거루트 다이어트 사례.md
+graphify-out\obsidian\하단 좌우 코너에 타원형 마스크 생성.md
+graphify-out\obsidian\하루 매출 1억 만드는 욕구 기반 마케팅 5가지 이야기.md
+graphify-out\obsidian\한국 미용 통념 활용 — 통념 얹기  깨기.md
+graphify-out\obsidian\한국 커뮤니티 5사이트 통합 크롤링 매트릭스.md
+graphify-out\obsidian\한국 커뮤니티 통합 크롤러 모듈.md
+graphify-out\obsidian\한국어 자막 — 중년 타겟 번역 원칙.md
+graphify-out\obsidian\한글 텍스트는 이미지 AI에 넣지 말 것.md
+graphify-out\obsidian\한정 N개·N개 판매완료 구체 카피.md
+graphify-out\obsidian\할루시네이션 검증 체크포인트.md
+graphify-out\obsidian\핵심 USP.md
+graphify-out\obsidian\핵심 키맨 네트워크 (법무·세무·마케팅).md
+graphify-out\obsidian\헤어 쓸어올림 제스처 = 자신감 시각 코드.md
+graphify-out\obsidian\헤어·메이크업 점진적 추가 (Day1~14 진행).md
+graphify-out\obsidian\현금흐름 관리.md
+graphify-out\obsidian\현대인의 무의식을 이용하면 10배 성장 가능.md
+graphify-out\obsidian\현수교 법칙.md
+graphify-out\obsidian\현재 계절·기온 박은 의상 = 요즘 느낌.md
+graphify-out\obsidian\형식지 (Explicit Knowledge).md
+graphify-out\obsidian\호기심 갭 훅 (Curiosity gap).md
+graphify-out\obsidian\화장품 효능 표현 카피 검수 기준.md
+graphify-out\obsidian\확장 키워드 (경쟁사공포시즌쇼핑).md
+graphify-out\obsidian\확증 편향.md
+graphify-out\obsidian\후광의 법칙.md
+graphify-out\obsidian\후킹 6가지 기법.md
+graphify-out\obsidian\후킹핵심 키워드 상단 배치.md
+graphify-out\obsidian\휴면 고객 재활성화.md
+raw\foreign-influencer-guide\01_계획서.md
+raw\foreign-influencer-guide\02_훅_패턴_모음.md
+raw\foreign-influencer-guide\03_파이프라인_기술.md
+raw\foreign-influencer-guide\04_자막_가이드.md
+raw\foreign-influencer-guide\05_레퍼런스_분석.md
+raw\foreign-influencer-guide\06_실패_교훈.md
+raw\foreign-influencer-guide\07_비용_시간.md
+raw\foreign-influencer-guide\README.md
+raw\foreign-influencer-guide\examples\결과물_링크.md
+raw\foreign-influencer-guide\scripts\USP_메라블.md
+raw\iboss\ab-6141-26811.md
+raw\iboss\ab-6141-26827.md
+raw\iboss\ab-6141-31486.md
+raw\iboss\ab-6141-42157.md
+raw\iboss\ab-6141-42174.md
+raw\iboss\ab-6141-42228.md
+raw\iboss\ab-6141-42306.md
+raw\iboss\ab-6141-42409.md
+raw\iboss\ab-6141-42437.md
+raw\iboss\ab-6141-48296.md
+raw\iboss\ab-6141-48302.md
+raw\iboss\ab-6141-48343.md
+raw\iboss\ab-6141-48381.md
+raw\iboss\ab-6141-48412.md
+raw\iboss\ab-6141-48507.md
+raw\iboss\ab-6141-48530.md
+raw\iboss\ab-6141-48732.md
+raw\iboss\ab-6141-49382.md
+raw\iboss\ab-6141-49972.md
+raw\iboss\ab-6141-50157.md
+raw\iboss\ab-6141-50485.md
+raw\iboss\ab-6141-51505.md
+raw\iboss\ab-6141-52194.md
+raw\iboss\ab-6141-53162.md
+raw\iboss\ab-6141-53231.md
+raw\iboss\ab-6141-53300.md
+raw\iboss\ab-6141-54493.md
+raw\iboss\ab-6141-54883.md
+raw\iboss\ab-6141-55195.md
+raw\iboss\ab-6141-55468.md
+raw\iboss\ab-6141-55783.md
+raw\iboss\ab-6141-55826.md
+raw\iboss\ab-6141-55939.md
+raw\iboss\ab-6141-55959.md
+raw\iboss\ab-6141-56322.md
+raw\iboss\ab-6141-56329.md
+raw\iboss\ab-6141-56464.md
+raw\iboss\ab-6141-56539.md
+raw\iboss\ab-6141-56940.md
+raw\iboss\ab-6141-57315.md
+raw\iboss\ab-6141-57328.md
+raw\iboss\ab-6141-57340.md
+raw\iboss\ab-6141-57348.md
+raw\iboss\ab-6141-57358.md
+raw\iboss\ab-6141-57366.md
+raw\iboss\ab-6141-57375.md
+raw\iboss\ab-6141-57440.md
+raw\iboss\ab-6141-57450.md
+raw\iboss\ab-6141-57454.md
+raw\iboss\ab-6141-57472.md
+raw\iboss\ab-6141-57483.md
+raw\iboss\ab-6141-57485.md
+raw\iboss\ab-6141-57494.md
+raw\iboss\ab-6141-57502.md
+raw\iboss\ab-6141-57511.md
+raw\iboss\ab-6141-57519.md
+raw\iboss\ab-6141-57532.md
+raw\iboss\ab-6141-57563.md
+raw\iboss\ab-6141-57572.md
+raw\iboss\ab-6141-57590.md
+raw\iboss\ab-6141-57617.md
+raw\iboss\ab-6141-57859.md
+raw\iboss\ab-6141-57888.md
+raw\iboss\ab-6141-57945.md
+raw\iboss\ab-6141-58082.md
+raw\iboss\ab-6141-58180.md
+raw\iboss\ab-6141-58282.md
+raw\iboss\ab-6141-58392.md
+raw\iboss\ab-6141-58399.md
+raw\iboss\ab-6141-58785.md
+raw\iboss\ab-6141-58856.md
+raw\iboss\ab-6141-59228.md
+raw\iboss\ab-6141-59327.md
+raw\iboss\ab-6141-59335.md
+raw\iboss\ab-6141-59415.md
+raw\iboss\ab-6141-59455.md
+raw\iboss\ab-6141-59545.md
+raw\iboss\ab-6141-59587.md
+raw\iboss\ab-6141-59656.md
+raw\iboss\ab-6141-59725.md
+raw\iboss\ab-6141-59742.md
+raw\iboss\ab-6141-60119.md
+raw\iboss\ab-6141-60231.md
+raw\iboss\ab-6141-60483.md
+raw\iboss\ab-6141-60498.md
+raw\iboss\ab-6141-60509.md
+raw\iboss\ab-6141-61317.md
+raw\iboss\ab-6141-62380.md
+raw\iboss\ab-6141-62392.md
+raw\iboss\ab-6141-62439.md
+raw\iboss\ab-6141-62453.md
+raw\iboss\ab-6141-62523.md
+raw\iboss\ab-6141-62571.md
+raw\iboss\ab-6141-62582.md
+raw\iboss\ab-6141-62628.md
+raw\iboss\ab-6141-62632.md
+raw\iboss\ab-6141-62751.md
+raw\iboss\ab-6141-62787.md
+raw\iboss\ab-6141-62855.md
+raw\iboss\ab-6141-62896.md
+raw\iboss\ab-6141-62969.md
+raw\iboss\ab-6141-62972.md
+raw\iboss\ab-6141-63038.md
+raw\iboss\ab-6141-63041.md
+raw\iboss\ab-6141-63070.md
+raw\iboss\ab-6141-63100.md
+raw\iboss\ab-6141-63180.md
+raw\iboss\ab-6141-63241.md
+raw\iboss\ab-6141-63292.md
+raw\iboss\ab-6141-63419.md
+raw\iboss\ab-6141-63468.md
+raw\iboss\ab-6141-63578.md
+raw\iboss\ab-6141-63586.md
+raw\iboss\ab-6141-63595.md
+raw\iboss\ab-6141-63605.md
+raw\iboss\ab-6141-63664.md
+raw\iboss\ab-6141-63739.md
+raw\iboss\ab-6141-63745.md
+raw\iboss\ab-6141-63830.md
+raw\iboss\ab-6141-63873.md
+raw\iboss\ab-6141-63914.md
+raw\iboss\ab-6141-64145.md
+raw\iboss\ab-6141-64156.md
+raw\iboss\ab-6141-64171.md
+raw\iboss\ab-6141-64181.md
+raw\iboss\ab-6141-64215.md
+raw\iboss\ab-6141-64266.md
+raw\iboss\ab-6141-64291.md
+raw\iboss\ab-6141-64414.md
+raw\iboss\ab-6141-64433.md
+raw\iboss\ab-6141-64478.md
+raw\iboss\ab-6141-64494.md
+raw\iboss\ab-6141-64564.md
+raw\iboss\ab-6141-64585.md
+raw\iboss\ab-6141-64651.md
+raw\iboss\ab-6141-64775.md
+raw\iboss\ab-6141-64888.md
+raw\iboss\ab-6141-64928.md
+raw\iboss\ab-6141-65101.md
+raw\iboss\ab-6141-65109.md
+raw\iboss\ab-6141-65123.md
+raw\iboss\ab-6141-65146.md
+raw\iboss\ab-6141-65169.md
+raw\iboss\ab-6141-65207.md
+raw\iboss\ab-6141-65628.md
+raw\iboss\ab-6141-65645.md
+raw\iboss\ab-6141-65919.md
+raw\iboss\ab-6141-66027.md
+raw\iboss\ab-6141-66048.md
+raw\iboss\ab-6141-66067.md
+raw\iboss\ab-6141-66072.md
+raw\iboss\ab-6141-66096.md
+raw\iboss\ab-6141-66370.md
+raw\iboss\ab-6141-66415.md
+raw\iboss\ab-6141-66457.md
+raw\iboss\ab-6141-66468.md
+raw\iboss\ab-6141-66489.md
+raw\iboss\ab-6141-66611.md
+raw\iboss\ab-6141-66665.md
+raw\iboss\ab-6141-66718.md
+raw\iboss\ab-6141-66747.md
+raw\iboss\ab-6141-66778.md
+raw\iboss\ab-6141-66878.md
+raw\iboss\ab-6141-66975.md
+raw\iboss\ab-6141-66993.md
+raw\iboss\ab-6141-67286.md
+raw\iboss\ab-6141-67499.md
+raw\iboss\ab-6141-67591.md
+raw\iboss\ab-6141-67636.md
+raw\iboss\ab-6141-67733.md
+raw\iboss\ab-6141-67743.md
+raw\iboss\ab-6141-67760.md
+raw\iboss\ab-6141-67800.md
+raw\iboss\ab-6141-67905.md
+raw\iboss\ab-6141-67988.md
+raw\iboss\ab-6141-68027.md
+raw\iboss\ab-6141-68139.md
+raw\iboss\ab-6141-68218.md
+raw\iboss\ab-6141-68244.md
+raw\iboss\ab-6141-68342.md
+raw\iboss\ab-6141-68347.md
+raw\iboss\ab-6141-68399.md
+raw\iboss\ab-6141-68613.md
+raw\iboss\ab-6141-68652.md
+raw\iboss\ab-6141-68691.md
+raw\iboss\ab-6141-68851.md
+raw\iboss\ab-6141-68878.md
+raw\iboss\ab-6141-69144.md
+raw\iboss\ab-6141-69159.md
+raw\iboss\ab-6141-69176.md
+raw\iboss\ab-6141-69317.md
+raw\iboss\ab-6141-69323.md
+raw\iboss\ab-6141-69352.md
+raw\iboss\ab-6141-69500.md
+raw\iboss\ab-6141-69667.md
+raw\iboss\ab-6141-69679.md
+raw\iboss\ab-6141-69739.md
+raw\iboss\ab-6141-69831.md
+raw\iboss\ab-6141-70040.md
+raw\iboss\ab-6141-70057.md
+raw\iboss\ab-6141-70116.md
+raw\iboss\INDEX.md
+raw\iboss\moc\ai-automation.md
+raw\iboss\moc\creative.md
+raw\iboss\moc\decision-rule.md
+raw\iboss\moc\lesson.md
+raw\iboss\moc\market.md
+raw\iboss\moc\marketing.md
+raw\iboss\moc\operation.md
+raw\iboss\moc\org.md
+raw\iboss\moc\psychology.md
+raw\iboss\moc\viral.md
+raw\inbox\2026-04-13-iboss-choi-jaemyeong-201articles.md
+raw\qscv\CCFM_디자인본부_Q_고객여정편_250424.md
+raw\qscv\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430.md
+raw\qscv\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430.md
+raw\qscv\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430.md
+raw\qscv\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430.md
+raw\qscv\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드.md
+raw\qscv\CCFM_미디어본부_Q_고객여정편_250428.md
+raw\qscv\객단가_점검_체크리스트_Appendix.md
+raw\qscv\랜딩페이지_점검_체크리스트_Appendix.md
+raw\qscv\상세페이지_점검_체크리스트_Appendix.md
+raw\qscv\영상_필수_기획_항목_Appendix.md
+raw\qscv\이미지_필수_기획_항목_Appendix.md
+raw\qscv\콘텐츠_기획_가이드_Appendix.md
+raw\qscv\퍼포먼스_캔버스_업데이트_및_재기획_Appendix.md
+raw\qscv\chunks\CCFM_디자인본부_Q_고객여정편_250424__chunk001.md
+raw\qscv\chunks\CCFM_디자인본부_Q_고객여정편_250424__chunk002.md
+raw\qscv\chunks\CCFM_디자인본부_Q_고객여정편_250424__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk001.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk002.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk004.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk005.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk006.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430__chunk007.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk001.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk002.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk004.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk005.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk006.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk007.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430__chunk008.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk001.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk002.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk004.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk005.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430__chunk006.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk001.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk002.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk004.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk005.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430__chunk006.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk001.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk002.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk003.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk004.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk005.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk006.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk007.md
+raw\qscv\chunks\CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드__chunk008.md
+raw\qscv\chunks\CCFM_미디어본부_Q_고객여정편_250428__chunk001.md
+raw\qscv\chunks\CCFM_미디어본부_Q_고객여정편_250428__chunk002.md
+raw\qscv\chunks\객단가_점검_체크리스트_Appendix__chunk001.md
+raw\qscv\chunks\랜딩페이지_점검_체크리스트_Appendix__chunk001.md
+raw\qscv\chunks\상세페이지_점검_체크리스트_Appendix__chunk001.md
+raw\qscv\chunks\영상_필수_기획_항목_Appendix__chunk001.md
+raw\qscv\chunks\이미지_필수_기획_항목_Appendix__chunk001.md
+raw\qscv\chunks\콘텐츠_기획_가이드_Appendix__chunk001.md
+raw\qscv\chunks\퍼포먼스_캔버스_업데이트_및_재기획_Appendix__chunk001.md
+raw\reports\gemini-logo-remover-v3.md
+raw\skills\diet-b2a\ARCHITECTURE.md
+raw\skills\diet-b2a\HOOK.md
+raw\skills\diet-b2a\PLAN.md
+raw\skills\diet-b2a\README.md
+raw\skills\diet-b2a\SKILL.md
+raw\skills\diet-b2a\USAGE.md
+raw\skills\diet-b2a\harness\RULES.md
+raw\skills\diet-b2a\prompts\README.md
+raw\skills\diet-b2a\prompts\v1_after_count.txt
+raw\skills\diet-b2a\prompts\v1_before_count.txt
+raw\skills\diet-b2a\prompts\v23_after_dance.txt
+raw\skills\diet-b2a\prompts\v23_before_rhythm.txt
+raw\skills\diet-b2a\steps\00-input-validate.md
+raw\skills\diet-b2a\steps\01-asset-prep.md
+raw\skills\diet-b2a\steps\02-kling-generate.md
+raw\skills\diet-b2a\steps\03-overlay-compose.md
+raw\skills\diet-b2a\steps\04-qa.md
+raw\skills\diet-b2a\steps\05-export.md
+raw\skills\diet-b2a-v2\HOOK.md
+raw\skills\diet-b2a-v2\PLAN.md
+raw\skills\diet-b2a-v2\README.md
+raw\skills\diet-b2a-v2\SKILL.md
+raw\skills\diet-b2a-v2\harness\RULES.md
+raw\skills\diet-b2a-v2\steps\00-bgm-analyze\HOOK.md
+raw\skills\diet-b2a-v2\steps\00-bgm-analyze\README.md
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\HOOK.md
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\PLAN.md
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\README.md
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set1\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set1\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set1\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set1\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set10\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set10\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set10\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set10\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set2\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set2\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set2\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set2\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set3\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set3\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set3\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set3\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set4\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set4\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set4\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set4\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set5\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set5\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set5\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set5\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set6\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set6\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set6\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set6\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set7\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set7\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set7\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set7\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set8\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set8\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set8\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set8\v23_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set9\v1_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set9\v1_before.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set9\v23_after.txt
+raw\skills\diet-b2a-v2\steps\01-styles-prompts\prompts\set9\v23_before.txt
+raw\skills\diet-b2a-v2\steps\02-gemini-session\HOOK.md
+raw\skills\diet-b2a-v2\steps\02-gemini-session\README.md
+raw\skills\diet-b2a-v2\steps\03-gemini-seeds\HOOK.md
+raw\skills\diet-b2a-v2\steps\03-gemini-seeds\PLAN.md
+raw\skills\diet-b2a-v2\steps\03-gemini-seeds\README.md
+raw\skills\diet-b2a-v2\steps\04-gemini-scales\HOOK.md
+raw\skills\diet-b2a-v2\steps\04-gemini-scales\PLAN.md
+raw\skills\diet-b2a-v2\steps\04-gemini-scales\README.md
+raw\skills\diet-b2a-v2\steps\05-kling-20clips\HOOK.md
+raw\skills\diet-b2a-v2\steps\05-kling-20clips\PLAN.md
+raw\skills\diet-b2a-v2\steps\05-kling-20clips\README.md
+raw\skills\diet-b2a-v2\steps\06-compose-15\HOOK.md
+raw\skills\diet-b2a-v2\steps\06-compose-15\PLAN.md
+raw\skills\diet-b2a-v2\steps\06-compose-15\README.md
+skills\README.md
+skills\grill-me-ccfm\bob_entry_patch.md
+skills\grill-me-ccfm\SKILL.md
+wiki\AI-Avatar-Automation-Guide.md
+wiki\HOTSHEET.md
+wiki\index.md
+wiki\_sync-test.md
+wiki\수치-단위-착각-방지-규칙.md
+wiki\domains\ai-automation.md
+wiki\domains\content-ai-automation.md
+wiki\domains\da-creative.md
+wiki\domains\finance.md
+wiki\domains\gfa-setting-automation.md
+wiki\domains\ggttt-imagen.md
+wiki\domains\gptim-ad-creative-batch.md
+wiki\domains\grill-me-ccfm.md
+wiki\domains\hr-admin.md
+wiki\domains\japan-market.md
+wiki\domains\ma-exit.md
+wiki\domains\market-research-playbook.md
+wiki\domains\marketing-automation.md
+wiki\domains\marketing.md
+wiki\domains\org-restructure.md
+wiki\domains\psychology.md
+wiki\domains\sea-tiktok.md
+wiki\domains\taiwan-market.md
+wiki\domains\usp-performance-canvas-research.md
+wiki\domains\vibe-coding.md
+wiki\domains\viral.md
+wiki\qscv\appendix-aov.md
+wiki\qscv\appendix-canvas-reupdate.md
+wiki\qscv\appendix-content-guide.md
+wiki\qscv\appendix-detail-page.md
+wiki\qscv\appendix-image-planning.md
+wiki\qscv\appendix-landing.md
+wiki\qscv\appendix-video-planning.md
+wiki\qscv\canvas-rusolve-v1.md
+wiki\qscv\design-customer-journey.md
+wiki\qscv\index.md
+wiki\qscv\media-customer-journey.md
+wiki\qscv\media-gfa.md
+wiki\qscv\media-google.md
+wiki\qscv\media-meta.md
+wiki\qscv\media-search-ads.md
+wiki\qscv\performance-thinking.md
+wiki\sources\src-cafe-crawler.md
+wiki\sources\src-charde-cid-3001-6000-axis-system-2026-05-03.md
+wiki\sources\src-charde-melapeel-usp-2026-04-27.md
+wiki\sources\src-claude-skills-inventory-2026-04-22.md
+wiki\sources\src-codex-pricing-2026-05-01.md
+wiki\sources\src-community.md
+wiki\sources\src-creative-autogen-framework.md
+wiki\sources\src-diet-b2a-skill.md
+wiki\sources\src-diet-b2a-v2.md
+wiki\sources\src-dongan-40s-v018d.md
+wiki\sources\src-foreign-influencer-guide.md
+wiki\sources\src-gemini-logo-remover.md
+wiki\sources\src-gfa-setting-skill-2026-04-30.md
+wiki\sources\src-goglecc-seed-curation.md
+wiki\sources\src-higgsfield-soul-api-2026-04-21.md
+wiki\sources\src-iboss-choi-jaemyeong.md
+wiki\sources\src-instar.md
+wiki\sources\src-instarup.md
+wiki\sources\src-market-research-pipeline-2026-04.md
+wiki\sources\src-nari-2tab-parallel.md
+wiki\sources\src-nari-chatgpt-image.md
+wiki\sources\src-naverapi.md
+wiki\sources\src-nurse-shoes-2026-04-28.md
+wiki\sources\src-performance-video-pipeline-v18-2026-04-28.md
+wiki\sources\src-rubyrn-cleanser-glow-research-2026-04-28.md
+wiki\sources\src-rubyrn-glow-deep-research-success-2026-04-28.md
+wiki\sources\src-skincare-ba-pipeline-2026-04-23.md
+wiki\sources\src-talmo-b2a.md
+wiki\sources\src-volumefill-pipeline-2026-04-20.md
+wiki\sources\src-volumefill-pipeline-v2-2026-04-21.md
+wiki\sources\src-volumefill-video-pipeline-2026-04-21.md
+wiki\sources\src-youtube.md
+wiki\tacit\ae-aep-default-v25.md
+wiki\tacit\chatgpt-web-automation.md
+wiki\tacit\coding-lessons.md
+wiki\tacit\creative-patterns.md
+wiki\tacit\decision-rules.md
+wiki\tacit\lessons-learned.md
+wiki\tacit\lipsync-multi-face-trap.md
+wiki\tacit\market-intuition.md
+wiki\tacit\operational-heuristics.md
+wiki\tacit\people-dynamics.md
+wiki\tacit\psychology-insights.md
+wiki\tacit\ugc-before-after-proof.md
+wiki\tacit\video-gen-lessons.md
+wiki\tacit\viral-patterns.md
+wiki\tacit\yuri-ep02-bj-vlog-case.md
+raw\skills\diet-b2a-v2\steps\02-gemini-session\session_screenshot.png

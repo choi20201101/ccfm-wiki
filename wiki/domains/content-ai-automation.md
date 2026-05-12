@@ -864,6 +864,29 @@ rubiv_v2_revised_pkg/   (~64.5MB)
 - confidence: high
 - source: 2026-04-30 루비알엔 v3 해골 변신 광고 ([[wiki/tacit/video-gen-lessons|§43-49]])
 
+## 14. 🏆 3팀 영상 자동화 M1~M5 — 5단 NAS 파이프라인 (2026-05-12 위키 등록)
+
+영상 직원이 운영중인 풀스택 영상 광고 자동화. **상세**: [[sources/src-video-automation-m1-m5-2026-05-12]]
+
+| 모듈 | 역할 | 출력 |
+|---|---|---|
+| M1 (m1v2) | 웹폼 + 브랜드 에셋 + 영상분석 MD 패키징 | 3종 MD + 컨셉이미지 |
+| M2 | LLM 기획안 생성 (plan_rules + prompt_rules) | 04_기획안.md + scenes.json |
+| M3 | 제품이미지 매칭 + 파일명 표준화 + 3곳 분배 | M3/M4/M5 input 동시 |
+| M4 | pydub 컷편집 + Whisper STT + **XMEML** 빌드 | timeline.xml (Premiere import) |
+| M5a | Flow CDP 9222 → 씬당 2 이미지 | s01_1.jpg … |
+| M5c | Flow CDP 9223 → 씬당 4 mp4 | s01_1_a.mp4 … |
+
+**재현 핵심**: NAS 마운트 + Python/ffmpeg + Chrome 프로필 2개(9222/9223) + 스킬 6종 설치 + 한글↔영문 매핑 등록.
+
+**설계 원칙**: 단계 간 코드 결합 0 → NAS 폴더 + 폴더명 규칙(`YYYYMMDD_브랜드[_N]`) + `scenes.json` 단일 스키마로만 연결.
+
+**관련 교훈**:
+- [[tacit/coding-lessons]] §[2026-05-12] M1~M5 NAS 파이프라인 설계
+- [[tacit/operational-heuristics]] §[2026-05-12] NAS 큐 패턴
+
+---
+
 <!-- AUTO:domain-crosslinks-begin -->
 ## 🔗 관련 도메인
 

@@ -1740,3 +1740,31 @@ cmd.exe /c "schtasks /Create /TN <Name> /SC ONCE /SD 2026/05/12 /ST 09:00 /TR \"
 - source: 2026-05-11 오늘의유머 마이닝 파서 디버그
 - confidence: high (5+ 페이지 검증, mojibake → 정상 전환 확인)
 - cross-ref: [[domains/todayhumor-mining-playbook]] §crawl_index.py
+
+
+---
+
+### [2026-05-12] 영상 자동화 M1~M5 5단 NAS 파이프라인 — 단계 결합 0 설계
+관찰:
+- 5개 스킬(m1v2/m2/m3/m4/m5a/m5c) 사이에 코드 호출 0. 인터페이스는 **NAS 폴더 + `YYYYMMDD_브랜드[_N]` 폴더명 + scenes.json 단일 스키마**뿐.
+- 각 단계가 **NAS 다운 → Desktop 작업 → NAS 업 → done 이동**의 동일 4-stroke를 따름. 어디서 실패해도 그 단계만 재실행하면 됨 (idempotent by folder presence).
+- `scenes.json` 1개를 M2가 만들고 M3/M4/M5가 전부 같은 파일을 보고 합의 — 단일 진실 + 스키마 한 번만 합의하면 됨.
+- M4만 NAS에 Python 모듈 in-place 실행. `BASE_DIR = Path(__file__).parent` 상대경로 → Mac(`mps`) / Windows(`cpu` fallback) 동일 동작.
+- LLM의 비결정적 판단(ref slot 매핑)을 `slot_indices` 명시 필드로 박제 → 같은 입력 두 번 돌리면 같은 결과.
+
+**Windows/SMB/한글 함정 (정면돌파 표준):**
+- SMB `mv` 실패 → `cp -r` + `rm -rf` 통일
+- macOS NFD vs Windows NFC → `unicodedata.normalize("NFC", fname)` + `iterdir()` (glob 금지)
+- Premiere `.fcpxml` 미지원 → XMEML(`<xmeml version="4">`)로 출력, 정수 프레임(round(seconds*30)), 자막은 `forecolor`
+- Flow CDP는 `connect_over_cdp` 강제, `chromium.launch()` 절대 금지 → 9222(m5a) / 9223(m5c) 영구 분리
+- Flow `_wait_generation` 가상스크롤 5종 패턴: 매 루프 `scrollTo(0,0)` + 성공≥1 60s 무변화 / 실패≥1 60s 무변화 / 전체 0 120s 무감지 → 모두 조기탈출
+
+**프로세스 안전 룰**:
+- `run.py` 백그라운드 실행 중 소스 수정 절대 금지. 급한 패치는 `temp_fix.py` 등 별도 임시 스크립트로.
+- Chrome은 한 번 로그인하면 절대 종료 X. 브랜드 바뀌어도 같은 세션 재사용.
+
+**한글↔영문 매핑 테이블 (M3)**: 모미차/momicha · 나잇사렌/nightsaren · 로쌩/lossang · 메디티엔/meditn · 레피넬/refinelle · 엔케이365/NK365 · 프리우먼/freewoman — 한글로 1차 검색, 결과 없으면 영문으로 fallback.
+
+- source: 2026-05-12 3팀 영상 자동화 M1~M5 위키 등록 ([[sources/src-video-automation-m1-m5-2026-05-12]])
+- confidence: high (실운영중, 다중 브랜드 케이스 검증됨)
+- cross-ref: [[domains/content-ai-automation]] · [[tacit/video-gen-lessons]] · [[tacit/chatgpt-web-automation]]

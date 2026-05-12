@@ -1,7 +1,7 @@
 ---
 type: index
 purpose: quick-access
-updated: 2026-04-29
+updated: 2026-05-12
 ---
 
 # 🔥 CCFM Wiki Hotsheet — 트리거 → 진입점
@@ -37,6 +37,7 @@ updated: 2026-04-29
 | "grill해줘" / "꼼꼼하게 캐물어" / "방향 잡아줘" / "하지 말아야 할 거" / 신규 시장·조직개편·콘텐츠 규제 등 되돌리기 어려운 결정 | [[domains/grill-me-ccfm]] + 스킬 `grill-me-ccfm` | bob 앞단 자동 게이트, ambiguity score ≥ 5 자동 발동, 4모드(coding/content/strategy/personal), 글로벌 동기화 (`ccfm-wiki/skills/`) |
 | "코덱스 깡통" / "메모리 자동 grounding" / "PRE-WORK 프로토콜" / 다른 PC 셋업 / `📚 참조:` 의미 | [[domains/codex-grounding-protocol]] + `skills/codex-grounding/` | 3-CLI 호출 시 메모리·위키 인덱스 강제 매칭, mllm 5모드 prompt prepend, marker-based idempotent install (`install-codex-grounding.ps1`) |
 | "오유 마이닝" / "humor mining" / "오늘의유머에서 광고 소재" / "커뮤니티 위트 → 광고" | [[domains/todayhumor-mining-playbook]] | 추천 N+ 게시물 1:1 = 폴더 1개 = 아이디어 1개. crawl_index → run.py(workers=3) → SDK 직호출. 브랜드 후킹 패턴 A~F + 시그니처 표현 추출. 피코세라 614/1469 검증(brand_fit=high 84.5%) |
+| "/m1v2" / "/m2" / "/m3" / "/m4" / "/m5a" / "/m5c" / "영상 자동화 파이프라인" / "3팀 영상 NAS" | [[sources/src-video-automation-m1-m5-2026-05-12]] + 스킬 6종 | 웹폼 → Premiere XMEML + Flow MP4 5단 NAS 파이프라인. NAS 폴더 + `YYYYMMDD_브랜드[_N]` + `scenes.json` 단일 스키마. Chrome 9222(m5a)/9223(m5c) 영구 분리 |
 
 ---
 
@@ -61,10 +62,11 @@ updated: 2026-04-29
 
 ---
 
-## 📦 최근 풀 받은 신규 (2026-04-22 ~ 04-29)
+## 📦 최근 풀 받은 신규 (2026-04-22 ~ 05-12)
 
-지난 7일 GitHub에서 새로 들어온 항목 — 메인 인덱스에 이미 등록됨:
+지난 3주 GitHub에서 새로 들어온 항목 — 메인 인덱스에 이미 등록됨:
 
+- **[[sources/src-video-automation-m1-m5-2026-05-12]]** — 🏆 3팀 영상 자동화 M1~M5 5단 NAS 파이프라인 (재현 표준) ⭐
 - **[[sources/src-nurse-shoes-2026-04-28]]** — 간호사 신발 §9 변형 모드 표준 (브랜드 시장 단위, 비화장품)
 - **[[sources/src-rubyrn-glow-deep-research-success-2026-04-28]]** — 시장조사 4단 심화 신 표준 ⭐
 - **[[sources/src-rubyrn-cleanser-glow-research-2026-04-28]]** — 루비알엔 광채/톤업 (PDRN 흡수 의심)
@@ -94,4 +96,4 @@ updated: 2026-04-29
 cat graphify-out/GRAPH_REPORT.md | head -100
 ```
 
-마지막 갱신: **2026-04-29 (오늘)** — 7일 룰 통과, 별도 점검 불필요.
+마지막 갱신: **2026-05-12** — 1542 노트 / 2177 엣지 / 85 커뮤니티. God nodes TOP3: `creative-patterns`(50), `coding-lessons`(47), `video-gen-lessons`(35). 새 god node 후보: `도메인: 콘텐츠 AI 자동화`(15 엣지). 다음 점검: 5월 말.

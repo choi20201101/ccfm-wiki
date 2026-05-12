@@ -1,0 +1,29 @@
+{
+  "paths": {
+    "input_folder":  "./input/",
+    "output_folder": "./output/",
+    "sfx_folder":    "./input/sfx/"
+  },
+  "audio": {
+    "min_silence_len": 150,
+    "silence_thresh": -35,
+    "keep_silence": 50
+  },
+  "whisper": {
+    "model": "small",
+    "language": "ko",
+    "device": "mps"
+  },
+  "subtitle": {
+    "max_chars": 15,
+    "font": "Pretendard Bold",
+    "size": 55,
+    "color": "#FFFFFF",
+    "shadow": false
+  },
+  "sfx_map": {
+    "1-10":  "카테고리A",
+    "11-20": "카테고리B",
+    "21-30": "카테고리C"
+  }
+}

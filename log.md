@@ -305,3 +305,11 @@
 - v09 진단: Day5(1.24s) < Day3(1.55s) 가속 거꾸로 / Day7 광채 1.60s 절정 약함 / CTA 1.30s 못 읽음
 - 7대 규칙: Before>Trigger / Day1<3<5<7 가속 / After 길게 / Trigger 첫 0.5초 / CTA 2.5s+ / atempo도 감정 곡선 / 자막 폰트도 곡선
 - 추가 위치: wiki/tacit/video-gen-lessons.md §36
+
+## [2026-05-12] ingest | 3팀 영상 자동화 M1~M5 5단 NAS 파이프라인 성공 사례
+- raw: `raw/skills/video-automation-m1-m5/` (스킬 6종 + M4 코드 + 입력폼)
+- source: `wiki/sources/src-video-automation-m1-m5-2026-05-12.md`
+- domain: `wiki/domains/content-ai-automation.md` §14 추가
+- tacit: `wiki/tacit/coding-lessons.md` + `wiki/tacit/operational-heuristics.md` 신규 엔트리
+- index: 핵심지식에 🏆 항목 등록
+- 의도: 다른 PC/Mac에서 NAS 마운트만 하면 동일 파이프라인 재현 가능하도록 박제

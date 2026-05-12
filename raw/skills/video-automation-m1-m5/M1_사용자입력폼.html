@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M1 사용자 입력</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Pretendard', -apple-system, sans-serif;
+    background: #0f0f13;
+    color: #e8e8f0;
+    min-height: 100vh;
+    padding: 40px 16px;
+  }
+  .container { max-width: 600px; margin: 0 auto; }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    background: linear-gradient(135deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle { color: #555; font-size: 0.82rem; margin-bottom: 32px; }
+
+  .field {
+    background: #1a1a24;
+    border: 1px solid #2a2a3a;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 14px;
+  }
+  .field label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+  .required-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #a78bfa;
+    flex-shrink: 0;
+  }
+  input[type="text"] {
+    width: 100%;
+    background: #0f0f18;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    padding: 11px 14px;
+    color: #e8e8f0;
+    font-size: 0.92rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"]:focus { border-color: #7c6fff; }
+  textarea {
+    width: 100%;
+    background: #0f0f18;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    padding: 11px 14px;
+    color: #e8e8f0;
+    font-size: 0.9rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 90px;
+    outline: none;
+    line-height: 1.6;
+    transition: border-color 0.15s;
+  }
+  textarea:focus { border-color: #7c6fff; }
+
+  .file-zone {
+    border: 1.5px dashed #2a2a3a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .file-zone:hover { border-color: #5a4fff; background: #14141f; }
+  .file-zone.has-file { border-color: #4ade80; border-style: solid; }
+  .file-zone.dragging { border-color: #7c6fff; border-style: solid; background: #1a1430; }
+  .file-zone input[type="file"] { display: none; }
+  .file-zone-text { font-size: 0.85rem; color: #555; pointer-events: none; }
+  .file-zone-text span { color: #7c6fff; }
+  .file-name { font-size: 0.82rem; color: #4ade80; margin-top: 6px; pointer-events: none; }
+  .optional-tag {
+    font-size: 0.7rem;
+    background: #2a2a3a;
+    color: #666;
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #7c6fff, #4f8fff);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  button[type="submit"]:hover { opacity: 0.9; transform: translateY(-1px); }
+  button[type="submit"]:active { transform: translateY(0); }
+  button[type="submit"]:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+  .result-box {
+    display: none;
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .result-box.success {
+    background: #0d2018;
+    border: 1px solid #1a4a2e;
+    color: #4ade80;
+  }
+  .result-box.error {
+    background: #200d0d;
+    border: 1px solid #4a1a1a;
+    color: #f87171;
+  }
+  .result-box .icon { font-size: 1.3rem; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>M1 사용자 입력</h1>
+  <p class="subtitle">영상 기획 패키지 자동 생성 · 제출 후 자동으로 처리됩니다</p>
+
+  <form id="m1Form">
+    <div class="field">
+      <label><span class="required-dot"></span>브랜드명</label>
+      <input type="text" name="brand" id="brand" placeholder="예: 칼로커트" required>
+    </div>
+
+    <div class="field">
+      <label><span class="required-dot"></span>Q1 · 강조할 소구점</label>
+      <textarea name="q1" id="q1" placeholder="예: 식욕 억제 없이 체지방만 줄이는 성분 강조, 다이어트 실패 경험자 타겟" required></textarea>
+    </div>
+
+    <div class="field">
+      <label>Q2 · 분위기 / 연출 <span class="optional-tag">선택</span></label>
+      <textarea name="q2" id="q2" placeholder="예: 클린하고 신뢰감 있는 톤, 메타 세로형 30초"></textarea>
+    </div>
+
+    <div class="field">
+      <label>레퍼런스 이미지 <span class="optional-tag">선택</span></label>
+      <div class="file-zone" id="fileZone" onclick="document.getElementById('refImage').click()">
+        <input type="file" id="refImage" name="refImage" accept="image/*">
+        <div class="file-zone-text">드래그&amp;드롭 또는 클릭하여 선택 · <span>JPG, PNG, WEBP</span></div>
+        <div class="file-name" id="fileName"></div>
+      </div>
+    </div>
+
+    <button type="submit" id="submitBtn">제출하기</button>
+  </form>
+
+  <div class="result-box" id="resultBox">
+    <div class="icon" id="resultIcon"></div>
+    <div id="resultMsg"></div>
+  </div>
+</div>
+
+<script>
+  const SERVER = 'http://192.168.0.6:8080';
+
+  function setFile(file) {
+    const zone = document.getElementById('fileZone');
+    const nameEl = document.getElementById('fileName');
+    if (file) {
+      const input = document.getElementById('refImage');
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      input.files = dt.files;
+      zone.classList.add('has-file');
+      nameEl.textContent = file.name;
+    }
+  }
+
+  document.getElementById('refImage').addEventListener('change', function() {
+    const zone = document.getElementById('fileZone');
+    const nameEl = document.getElementById('fileName');
+    if (this.files.length > 0) {
+      zone.classList.add('has-file');
+      nameEl.textContent = this.files[0].name;
+    } else {
+      zone.classList.remove('has-file');
+      nameEl.textContent = '';
+    }
+  });
+
+  const fileZone = document.getElementById('fileZone');
+  fileZone.addEventListener('dragenter', function(e) {
+    e.preventDefault();
+    this.classList.add('dragging');
+  });
+  fileZone.addEventListener('dragover', function(e) {
+    e.preventDefault();
+  });
+  fileZone.addEventListener('dragleave', function(e) {
+    if (!this.contains(e.relatedTarget)) {
+      this.classList.remove('dragging');
+    }
+  });
+  fileZone.addEventListener('drop', function(e) {
+    e.preventDefault();
+    this.classList.remove('dragging');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) {
+      setFile(file);
+    }
+  });
+
+  document.getElementById('m1Form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const box = document.getElementById('resultBox');
+    const icon = document.getElementById('resultIcon');
+    const msg = document.getElementById('resultMsg');
+
+    btn.disabled = true;
+    btn.textContent = '제출 중...';
+    box.style.display = 'none';
+
+    try {
+      const fd = new FormData(this);
+      const res = await fetch(`${SERVER}/m1-submit`, {
+        method: 'POST',
+        body: fd,
+      });
+      const data = await res.json();
+
+      if (res.ok) {
+        box.className = 'result-box success';
+        icon.textContent = '✓';
+        msg.innerHTML = `제출 완료 · <strong>${data.timestamp}</strong><br>파이프라인이 자동으로 처리를 시작합니다.`;
+        this.reset();
+        document.getElementById('fileZone').classList.remove('has-file');
+        document.getElementById('fileName').textContent = '';
+      } else {
+        throw new Error(data.error || '알 수 없는 오류');
+      }
+    } catch (err) {
+      box.className = 'result-box error';
+      icon.textContent = '✕';
+      msg.textContent = `오류: ${err.message}`;
+    } finally {
+      box.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = '제출하기';
+    }
+  });
+</script>
+</body>
+</html>

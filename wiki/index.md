@@ -1,8 +1,27 @@
 # CCFM Wiki Index
 
 > 🔥 = 활발 (커밋 4+) · 📘 = 참조용 (커밋 2-3) · 💤 = 미작성 스텁
-> 최종 정리: 2026-04-29
+> 최종 정리: 2026-05-12
 > 🚀 **빠른 꺼내쓰기**: [[HOTSHEET]] (트리거 → 진입점 단축표)
+> 🕸️ **그래프**: 1542 노트 · 2177 엣지 · 85 커뮤니티 ([[graphify-out/GRAPH_REPORT|GRAPH_REPORT]])
+
+---
+
+## 🕸️ 그래프 진입점 (Graph-based Navigation)
+
+> 가장 많이 연결된 노드 = 위키에서 실제로 가장 자주 호출되는 지식. 모르면 여기서 시작.
+
+| Rank | God Node | 엣지 | 들어가는 곳 |
+|---|---|---|---|
+| 1 | 크리에이티브 패턴 | 50 | [[tacit/creative-patterns]] |
+| 2 | 코딩/자동화 교훈 | 47 | [[tacit/coding-lessons]] |
+| 3 | 영상 생성 교훈 | 35 | [[tacit/video-gen-lessons]] |
+| 4 | GFA 매체 | 23 | [[domains/gfa-setting-automation]] · [[qscv/media-gfa]] |
+| 5 | 심리/설득 | 19 | [[tacit/psychology-insights]] |
+| 6 | 위키 스키마 | 18 | [[../CLAUDE.md]] |
+| 7 | 콘텐츠 AI 자동화 | 15 | [[domains/content-ai-automation]] ⬅ 5단 NAS 파이프라인 등록(2026-05-12) |
+
+**활용 팁**: 새 작업 시작할 때 위 3개 god node에 30초만 훑기 → 이미 박제된 함정/패턴을 무료로 받음.
 
 ---
 
@@ -75,6 +94,13 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 
 ### 마케팅 자동화 — [[domains/marketing-automation]] (4커밋)
 - 네이버 카페 크롤러, 네이버 API, 인스타 수집, 유튜브, 커뮤니티 크롤링
+
+### 🏆 3팀 영상 자동화 M1~M5 (NEW 2026-05-12)
+**5단 NAS 파이프라인 — 웹폼 1번 → Premiere XMEML + Flow MP4까지 자동.**
+- **재현 1순위 사례**: 어떤 PC/Mac에서도 NAS 마운트 + Python/ffmpeg + Chrome 9222/9223 + 스킬 6종 설치로 즉시 가동
+- 설계 원칙: 단계 간 코드 결합 0, NAS 폴더 + `YYYYMMDD_브랜드[_N]` + `scenes.json` 단일 스키마
+- 정면돌파한 함정: SMB mv 실패, macOS NFD↔Windows NFC, Premiere fcpxml 미지원(XMEML로), Flow `connect_over_cdp` 강제, `_wait_generation` 가상스크롤 5종
+- 상세: [[sources/src-video-automation-m1-m5-2026-05-12]] · 원본: `raw/skills/video-automation-m1-m5/`
 
 ### 🔥 grill-me-ccfm — 결정 분기 캐묻기 스킬 (NEW 2026-05-02)
 **"grill해줘" / "방향 잡아줘" / "하지 말아야 할 거" / 신규 시장·조직개편 등 되돌리기 어려운 결정 입력 시 자동 발동.**
