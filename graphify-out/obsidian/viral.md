@@ -1,18 +1,34 @@
 ---
 source_file: "wiki/domains/viral.md"
 type: "document"
-community: "바이럴 지식"
+community: "da-creative · marketing · viral"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/da-creative_·_marketing_·_viral
 ---
 
 # viral
 
 ## Connections
-- [[i-boss 201건 (최재명)]] - `references` [EXTRACTED]
-- [[인스타그램 릴스 수집·분석 모듈]] - `references` [EXTRACTED]
-- [[한국 커뮤니티 통합 크롤러 모듈]] - `references` [EXTRACTED]
+- [[content-ai-automation]] - `wikilink` [EXTRACTED]
+- [[da-creative]] - `wikilink` [EXTRACTED]
+- [[domainscontent-ai-automation]] - `wikilink` [EXTRACTED]
+- [[domainsda-creative]] - `wikilink` [EXTRACTED]
+- [[domainsmarketing]] - `wikilink` [EXTRACTED]
+- [[domainspsychology]] - `wikilink` [EXTRACTED]
+- [[instagram-content-research]] - `wikilink` [EXTRACTED]
+- [[marketing]] - `wikilink` [EXTRACTED]
+- [[psychology]] - `wikilink` [EXTRACTED]
+- [[rawibossmocviral]] - `wikilink` [EXTRACTED]
+- [[sea-tiktok]] - `wikilink` [EXTRACTED]
+- [[src-cafe-crawler]] - `wikilink` [EXTRACTED]
+- [[src-community]] - `wikilink` [EXTRACTED]
+- [[src-diet-b2a-skill]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[src-instar]] - `wikilink` [EXTRACTED]
+- [[src-youtube]] - `wikilink` [EXTRACTED]
+- [[viral-patterns]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/da-creative_·_marketing_·_viral

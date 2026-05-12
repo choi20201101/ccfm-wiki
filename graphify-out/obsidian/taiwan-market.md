@@ -1,16 +1,23 @@
 ---
 source_file: "wiki/domains/taiwan-market.md"
 type: "document"
-community: "바이럴 지식"
+community: "src-iboss-choi-jaemyeong · org-restructure · sea-tiktok"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/src-iboss-choi-jaemyeong_·_org-restructure_·_sea-tiktok
 ---
 
 # taiwan-market
 
 ## Connections
-- [[Instagram 릴스 멀티계정 자동 업로드]] - `references` [EXTRACTED]
+- [[domainsjapan-market]] - `wikilink` [EXTRACTED]
+- [[domainssea-tiktok]] - `wikilink` [EXTRACTED]
+- [[finance]] - `wikilink` [EXTRACTED]
+- [[japan-market]] - `wikilink` [EXTRACTED]
+- [[sea-tiktok]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[src-instarup]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/src-iboss-choi-jaemyeong_·_org-restructure_·_sea-tiktok

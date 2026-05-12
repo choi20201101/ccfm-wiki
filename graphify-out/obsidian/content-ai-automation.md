@@ -1,26 +1,54 @@
 ---
 source_file: "wiki/domains/content-ai-automation.md"
 type: "document"
-community: "바이럴 지식"
+community: "content-ai-automation · creative-patterns · psychology-insights"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/content-ai-automation_·_creative-patterns_·_psychology-insights
 ---
 
 # content-ai-automation
 
 ## Connections
-- [[Creative Autogen Framework (1000장 DA 자동 생산)]] - `references` [EXTRACTED]
-- [[Instagram 릴스 멀티계정 자동 업로드]] - `references` [EXTRACTED]
-- [[goglecc 씨드 이미지 큐레이션 파이프라인]] - `references` [EXTRACTED]
-- [[네이버 검색광고 API + Meta 광고 분석 모듈]] - `references` [EXTRACTED]
-- [[다이어트 BA v2 대량생산]] - `references` [EXTRACTED]
-- [[다이어트 BA 스킬 v1]] - `references` [EXTRACTED]
-- [[스킨케어 BA 17초 파이프라인]] - `references` [EXTRACTED]
-- [[외국인 인플루언서 가이드 (33편)]] - `references` [EXTRACTED]
-- [[인스타그램 릴스 수집·분석 모듈]] - `references` [EXTRACTED]
-- [[탈모 루솔브 BA 릴스]] - `references` [EXTRACTED]
-- [[퍼포먼스 영상 파이프라인 v18 (메라블)]] - `references` [EXTRACTED]
+- [[HOOK]] - `wikilink` [EXTRACTED]
+- [[canvas-rusolve-v1]] - `wikilink` [EXTRACTED]
+- [[coding-lessons]] - `wikilink` [EXTRACTED]
+- [[creative-patterns]] - `wikilink` [EXTRACTED]
+- [[da-creative]] - `wikilink` [EXTRACTED]
+- [[domainsai-automation]] - `wikilink` [EXTRACTED]
+- [[domainsda-creative]] - `wikilink` [EXTRACTED]
+- [[domainsusp-performance-canvas-research]] - `wikilink` [EXTRACTED]
+- [[domainsvibe-coding]] - `wikilink` [EXTRACTED]
+- [[domainsviral]] - `wikilink` [EXTRACTED]
+- [[instagram-content-research]] - `wikilink` [EXTRACTED]
+- [[marketing-automation]] - `wikilink` [EXTRACTED]
+- [[psychology-insights]] - `wikilink` [EXTRACTED]
+- [[sourcessrc-video-automation-m1-m5-2026-05-12]] - `wikilink` [EXTRACTED]
+- [[src-claude-skills-inventory-2026-04-22]] - `wikilink` [EXTRACTED]
+- [[src-creative-autogen-framework]] - `wikilink` [EXTRACTED]
+- [[src-diet-b2a-skill]] - `wikilink` [EXTRACTED]
+- [[src-diet-b2a-v2]] - `wikilink` [EXTRACTED]
+- [[src-foreign-influencer-guide]] - `wikilink` [EXTRACTED]
+- [[src-gemini-logo-remover]] - `wikilink` [EXTRACTED]
+- [[src-goglecc-seed-curation]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[src-instar]] - `wikilink` [EXTRACTED]
+- [[src-instarup]] - `wikilink` [EXTRACTED]
+- [[src-naverapi]] - `wikilink` [EXTRACTED]
+- [[src-performance-video-pipeline-v18-2026-04-28]] - `wikilink` [EXTRACTED]
+- [[src-skincare-ba-pipeline-2026-04-23]] - `wikilink` [EXTRACTED]
+- [[src-talmo-b2a]] - `wikilink` [EXTRACTED]
+- [[src-volumefill-pipeline-2026-04-20]] - `wikilink` [EXTRACTED]
+- [[src-volumefill-pipeline-v2-2026-04-21]] - `wikilink` [EXTRACTED]
+- [[src-volumefill-video-pipeline-2026-04-21]] - `wikilink` [EXTRACTED]
+- [[src-youtube]] - `wikilink` [EXTRACTED]
+- [[tacitcoding-lessons]] - `wikilink` [EXTRACTED]
+- [[tacitoperational-heuristics]] - `wikilink` [EXTRACTED]
+- [[usp-performance-canvas-research]] - `wikilink` [EXTRACTED]
+- [[vibe-coding]] - `wikilink` [EXTRACTED]
+- [[video-gen-lessons]] - `wikilink` [EXTRACTED]
+- [[viral]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/content-ai-automation_·_creative-patterns_·_psychology-insights

@@ -1,21 +1,33 @@
 ---
 source_file: "wiki/domains/marketing-automation.md"
 type: "document"
-community: "바이럴 지식"
+community: "coding-lessons · ai-automation · market-research-playbook"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/coding-lessons_·_ai-automation_·_market-research-playbook
 ---
 
 # marketing-automation
 
 ## Connections
-- [[Instagram 릴스 멀티계정 자동 업로드]] - `references` [EXTRACTED]
-- [[간호사 신발 시장조사 + 착한구두 시너지]] - `references` [EXTRACTED]
-- [[네이버 검색광고 API + Meta 광고 분석 모듈]] - `references` [EXTRACTED]
-- [[루비알엔 앰플클렌저 광채톤업 시장조사]] - `references` [EXTRACTED]
-- [[시장조사 파이프라인 (주름·유쎄라블)]] - `references` [EXTRACTED]
-- [[한국 커뮤니티 통합 크롤러 모듈]] - `references` [EXTRACTED]
+- [[ai-automation]] - `wikilink` [EXTRACTED]
+- [[content-ai-automation]] - `wikilink` [EXTRACTED]
+- [[da-creative]] - `wikilink` [EXTRACTED]
+- [[domainsai-automation]] - `wikilink` [EXTRACTED]
+- [[domainsgfa-setting-automation]] - `wikilink` [EXTRACTED]
+- [[domainsmarketing]] - `wikilink` [EXTRACTED]
+- [[domainstodayhumor-mining-playbook]] - `wikilink` [EXTRACTED]
+- [[domainsvibe-coding]] - `wikilink` [EXTRACTED]
+- [[market-research-playbook]] - `wikilink` [EXTRACTED]
+- [[src-cafe-crawler]] - `wikilink` [EXTRACTED]
+- [[src-community]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[src-instarup]] - `wikilink` [EXTRACTED]
+- [[src-market-research-pipeline-2026-04]] - `wikilink` [EXTRACTED]
+- [[src-naverapi]] - `wikilink` [EXTRACTED]
+- [[usp-performance-canvas-research]] - `wikilink` [EXTRACTED]
+- [[vibe-coding]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/coding-lessons_·_ai-automation_·_market-research-playbook

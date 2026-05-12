@@ -1,16 +1,26 @@
 ---
 source_file: "wiki/domains/psychology.md"
 type: "document"
-community: "바이럴 지식"
+community: "da-creative · marketing · viral"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/da-creative_·_marketing_·_viral
 ---
 
 # psychology
 
 ## Connections
-- [[i-boss 201건 (최재명)]] - `references` [EXTRACTED]
+- [[da-creative]] - `wikilink` [EXTRACTED]
+- [[domainsmarketing]] - `wikilink` [EXTRACTED]
+- [[domainsviral]] - `wikilink` [EXTRACTED]
+- [[marketing]] - `wikilink` [EXTRACTED]
+- [[org-restructure]] - `wikilink` [EXTRACTED]
+- [[performance-thinking]] - `wikilink` [EXTRACTED]
+- [[psychology-insights]] - `wikilink` [EXTRACTED]
+- [[rawibossmocpsychology]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[viral]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/da-creative_·_marketing_·_viral

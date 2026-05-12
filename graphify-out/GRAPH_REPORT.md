@@ -1,533 +1,223 @@
-# Graph Report - .  (2026-05-12)
+# Graph Report - C:\Users\gguy\ccfm-wiki  (2026-05-12)
 
 ## Corpus Check
-- 38 files · ~441,239 words
+- 98 files · ~107,917 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1542 nodes · 2177 edges · 85 communities detected
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 233 edges (avg confidence: 0.83)
+- 286 nodes · 626 edges · 26 communities detected
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 3|Community 3]]
-- [[_COMMUNITY_Community 4|Community 4]]
-- [[_COMMUNITY_Community 5|Community 5]]
-- [[_COMMUNITY_Community 6|Community 6]]
-- [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 9|Community 9]]
-- [[_COMMUNITY_Community 10|Community 10]]
-- [[_COMMUNITY_Community 11|Community 11]]
-- [[_COMMUNITY_Community 12|Community 12]]
-- [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 14|Community 14]]
-- [[_COMMUNITY_Community 15|Community 15]]
-- [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
-- [[_COMMUNITY_Community 20|Community 20]]
-- [[_COMMUNITY_Community 21|Community 21]]
-- [[_COMMUNITY_Community 22|Community 22]]
-- [[_COMMUNITY_Community 23|Community 23]]
-- [[_COMMUNITY_Community 24|Community 24]]
-- [[_COMMUNITY_Community 25|Community 25]]
-- [[_COMMUNITY_Community 26|Community 26]]
-- [[_COMMUNITY_Community 27|Community 27]]
-- [[_COMMUNITY_Community 28|Community 28]]
-- [[_COMMUNITY_Community 29|Community 29]]
-- [[_COMMUNITY_Community 30|Community 30]]
-- [[_COMMUNITY_Community 31|Community 31]]
-- [[_COMMUNITY_Community 32|Community 32]]
-- [[_COMMUNITY_Community 33|Community 33]]
-- [[_COMMUNITY_Community 34|Community 34]]
-- [[_COMMUNITY_Community 35|Community 35]]
-- [[_COMMUNITY_Community 36|Community 36]]
-- [[_COMMUNITY_Community 37|Community 37]]
-- [[_COMMUNITY_Community 38|Community 38]]
-- [[_COMMUNITY_Community 39|Community 39]]
-- [[_COMMUNITY_Community 40|Community 40]]
-- [[_COMMUNITY_Community 41|Community 41]]
-- [[_COMMUNITY_Community 42|Community 42]]
-- [[_COMMUNITY_Community 43|Community 43]]
-- [[_COMMUNITY_Community 44|Community 44]]
-- [[_COMMUNITY_Community 45|Community 45]]
-- [[_COMMUNITY_Community 46|Community 46]]
-- [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
-- [[_COMMUNITY_Community 49|Community 49]]
-- [[_COMMUNITY_Community 50|Community 50]]
-- [[_COMMUNITY_Community 51|Community 51]]
-- [[_COMMUNITY_Community 52|Community 52]]
-- [[_COMMUNITY_Community 53|Community 53]]
-- [[_COMMUNITY_Community 54|Community 54]]
-- [[_COMMUNITY_Community 55|Community 55]]
-- [[_COMMUNITY_Community 56|Community 56]]
-- [[_COMMUNITY_Community 57|Community 57]]
-- [[_COMMUNITY_Community 58|Community 58]]
-- [[_COMMUNITY_Community 59|Community 59]]
-- [[_COMMUNITY_Community 60|Community 60]]
-- [[_COMMUNITY_Community 61|Community 61]]
-- [[_COMMUNITY_Community 62|Community 62]]
-- [[_COMMUNITY_Community 63|Community 63]]
-- [[_COMMUNITY_Community 64|Community 64]]
-- [[_COMMUNITY_Community 65|Community 65]]
-- [[_COMMUNITY_Community 66|Community 66]]
-- [[_COMMUNITY_Community 67|Community 67]]
-- [[_COMMUNITY_Community 68|Community 68]]
-- [[_COMMUNITY_Community 69|Community 69]]
-- [[_COMMUNITY_Community 70|Community 70]]
-- [[_COMMUNITY_Community 71|Community 71]]
-- [[_COMMUNITY_Community 72|Community 72]]
-- [[_COMMUNITY_Community 73|Community 73]]
-- [[_COMMUNITY_Community 74|Community 74]]
-- [[_COMMUNITY_Community 75|Community 75]]
-- [[_COMMUNITY_Community 76|Community 76]]
-- [[_COMMUNITY_Community 77|Community 77]]
-- [[_COMMUNITY_Community 78|Community 78]]
-- [[_COMMUNITY_Community 79|Community 79]]
-- [[_COMMUNITY_Community 80|Community 80]]
-- [[_COMMUNITY_Community 81|Community 81]]
-- [[_COMMUNITY_Community 82|Community 82]]
-- [[_COMMUNITY_Community 83|Community 83]]
-- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_coding-lessons · ai-automation · market-research-playbook|coding-lessons · ai-automation · market-research-playbook]]
+- [[_COMMUNITY_index · ..CLAUDE.md · graphify-outGRAPH_REPORT|index · ../CLAUDE.md · graphify-out/GRAPH_REPORT]]
+- [[_COMMUNITY_content-ai-automation · creative-patterns · psychology-insights|content-ai-automation · creative-patterns · psychology-insights]]
+- [[_COMMUNITY_index · canvas-rusolve-v1 · appendix-content-guide|index · canvas-rusolve-v1 · appendix-content-guide]]
+- [[_COMMUNITY_da-creative · marketing · viral|da-creative · marketing · viral]]
+- [[_COMMUNITY_src-iboss-choi-jaemyeong · org-restructure · sea-tiktok|src-iboss-choi-jaemyeong · org-restructure · sea-tiktok]]
+- [[_COMMUNITY_src-higgsfield-cli-claude-bypass-2026-05-12 · domainsai-automation · domainsmarketing-automation|src-higgsfield-cli-claude-bypass-2026-05-12 · domains/ai-automation · domains/marketing-automation]]
+- [[_COMMUNITY_HOTSHEET · AI-Avatar-Automation-Guide · domainsgptim-ad-creative-batch|HOTSHEET · AI-Avatar-Automation-Guide · domains/gptim-ad-creative-batch]]
+- [[_COMMUNITY_log · tacitcoding-lessons · src-goglecc-seed-curation|log · tacit/coding-lessons · src-goglecc-seed-curation]]
+- [[_COMMUNITY_src-rubyrn-glow-deep-research-success-2026-04-28 · src-rubyrn-cleanser-glow-research-2026-04-28 · CUsersgguyDesktopnaver-competitor-findercanvas04_glow_keyword_research|src-rubyrn-glow-deep-research-success-2026-04-28 · src-rubyrn-cleanser-glow-research-2026-04-28 · C:/Users/gguy/Desktop/naver-competitor-finder/canvas/04_glow_keyword_research.md]]
+- [[_COMMUNITY_ggttt-imagen · ai-automation · CUsersgguy.claudeskillsgptimSKILL|ggttt-imagen · ai-automation\ · C:\Users\gguy\.claude\skills\gptim\SKILL.md]]
+- [[_COMMUNITY_tacitchatgpt-web-automation · tacitoperational-heuristics · tacitvideo-gen-lessons|tacit/chatgpt-web-automation · tacit/operational-heuristics · tacit/video-gen-lessons]]
+- [[_COMMUNITY_src-codex-pricing-2026-05-01 · httpsallthings.howcodex-token-and-rate-limits-explained-for-chatgpt-plans · httpschatgpt.comcodexpricing (OpenAI 공식, 일부 region 403)|src-codex-pricing-2026-05-01 · https://allthings.how/codex-token-and-rate-limits-explained-for-chatgpt-plans/ · https://chatgpt.com/codex/pricing/ (OpenAI 공식, 일부 region 403)]]
+- [[_COMMUNITY_src-creative-autogen-framework · src-nari-2tab-parallel · CUsersAdministratorDesktopcreative-autogen|src-creative-autogen-framework · src-nari-2tab-parallel · C:/Users/Administrator/Desktop/creative-autogen/]]
+- [[_COMMUNITY_domainsda-creative · src-nurse-shoes-2026-04-28 · domainsmarket-research-playbook|domains/da-creative · src-nurse-shoes-2026-04-28 · domains/market-research-playbook]]
+- [[_COMMUNITY_grill-me-ccfm · ccfm-wikiskillsgrill-me-ccfm  (글로벌 동기화 원본) · ~.claudeskillsgrill-me-ccfmSKILL|grill-me-ccfm · ccfm-wiki/skills/grill-me-ccfm/  (글로벌 동기화 원본) · ~/.claude/skills/grill-me-ccfm/SKILL.md]]
+- [[_COMMUNITY_CLAUDE · 위키링크|CLAUDE · 위키링크]]
+- [[_COMMUNITY__sync-test|_sync-test]]
+- [[_COMMUNITY_src-higgsfield-soul-api-2026-04-21|src-higgsfield-soul-api-2026-04-21]]
+- [[_COMMUNITY_src-nari-chatgpt-image|src-nari-chatgpt-image]]
+- [[_COMMUNITY_ae-aep-default-v25|ae-aep-default-v25]]
+- [[_COMMUNITY_chatgpt-web-automation|chatgpt-web-automation]]
+- [[_COMMUNITY_lipsync-multi-face-trap|lipsync-multi-face-trap]]
+- [[_COMMUNITY_ugc-before-after-proof|ugc-before-after-proof]]
+- [[_COMMUNITY_yuri-ep02-bj-vlog-case|yuri-ep02-bj-vlog-case]]
+- [[_COMMUNITY_README|README]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `creative-patterns` - 50 edges
-2. `coding-lessons` - 47 edges
-3. `video-gen-lessons` - 35 edges
-4. `GFA (네이버 성과형 디스플레이)` - 23 edges
-5. `최재명 (근육돌이)` - 22 edges
-6. `psychology-insights` - 19 edges
-7. `CCFM Wiki Schema (CLAUDE.md)` - 18 edges
-8. `CCFM Wiki Index (메인 허브)` - 17 edges
-9. `03. 파이프라인 기술 문서` - 16 edges
-10. `도메인: 콘텐츠 AI 자동화` - 15 edges
+1. `index` - 80 edges
+2. `content-ai-automation` - 38 edges
+3. `HOTSHEET` - 35 edges
+4. `da-creative` - 33 edges
+5. `coding-lessons` - 29 edges
+6. `creative-patterns` - 28 edges
+7. `ai-automation` - 25 edges
+8. `src-iboss-choi-jaemyeong` - 25 edges
+9. `log` - 21 edges
+10. `index` - 19 edges
+11. `marketing` - 18 edges
+12. `viral` - 18 edges
+13. `market-research-playbook` - 17 edges
+14. `marketing-automation` - 17 edges
+15. `psychology-insights` - 17 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Kling+Gemini 비포애프터 파이프라인` --conceptually_related_to--> `다이어트 B/A V15 확정 (Higgsfield+fal face-swap)`  [INFERRED]
-  scripts/inject_diet_b2a_v2_aliases.py → log.md
-- `main()` --calls--> `run()`  [INFERRED]
-  raw\skills\diet-b2a\scripts\run_all.py → raw\skills\diet-b2a-v2\steps\06-compose-15\compose.py
-- `_extract_frame()` --calls--> `run()`  [INFERRED]
-  raw\skills\diet-b2a-v2\scripts\detect_faces.py → raw\skills\diet-b2a-v2\steps\06-compose-15\compose.py
-- `write()` --calls--> `download()`  [INFERRED]
-  raw\skills\diet-b2a-v2\steps\01-styles-prompts\build_prompts.py → raw\skills\diet-b2a-v2\steps\05-kling-20clips\gen_kling.py
-- `src-diet-b2a-v2 (다이어트 B/A v2)` --conceptually_related_to--> `Kling+Gemini 비포애프터 파이프라인`  [EXTRACTED]
-  wiki/sources/src-diet-b2a-v2.md → scripts/inject_diet_b2a_v2_aliases.py
+- `log` --wikilink--> `sources/src-gfa-setting-skill-2026-04-30`  [EXTRACTED]
+  log.md → wiki/domains/gfa-setting-automation.md
+- `log` --wikilink--> `market-research-playbook`  [EXTRACTED]
+  log.md → wiki/domains/market-research-playbook.md
+- `log` --wikilink--> `HOTSHEET`  [EXTRACTED]
+  log.md → wiki/HOTSHEET.md
+- `log` --wikilink--> `index`  [EXTRACTED]
+  log.md → wiki/qscv/index.md
+- `log` --wikilink--> `creative-patterns`  [EXTRACTED]
+  log.md → wiki/tacit/creative-patterns.md
+- `log` --wikilink--> `psychology-insights`  [EXTRACTED]
+  log.md → wiki/tacit/psychology-insights.md
+- `log` --wikilink--> `viral-patterns`  [EXTRACTED]
+  log.md → wiki/tacit/viral-patterns.md
+- `log` --wikilink--> `sources/src-higgsfield-cli-claude-bypass-2026-05-12`  [EXTRACTED]
+  log.md → wiki/HOTSHEET.md
 
 ## Communities
 
-### Community 0 - "Community 0"
-Cohesion: 0.02
-Nodes (149): 손가락 1-2-3 시퀀스 좌우분할 최적, 전→후 하드컷은 같은 중립 포즈에서 자르기, 얼굴 모자이크는 머리 영역만, 어깨 덮으면 추함, 자막 크기는 박스 겹치면 무조건 실패 — 폰트보다 여백, 전반 억제 → 후반 폭발 구조가 B/A 해방감 최강, B/A 얼굴 모자이크 박스 각각 잡기, Reference 누수 → aesthetic LoRA 해법, AI tell 제거 프롬프트 스택 (+141 more)
-
-### Community 1 - "Community 1"
-Cohesion: 0.03
-Nodes (97): 브랜드검색광고, Google PMax 실적최대화 캠페인, 파워링크, 쇼핑검색광고, 수동 CPC 입찰 (GFA), 전환수 최대화 입찰, 타겟 ROAS 입찰, ABO 광고세트 예산 최적화 (+89 more)
-
-### Community 2 - "Community 2"
-Cohesion: 0.03
-Nodes (86): 누적 광고비 2,500억 집행 경험, AI 무중단 스튜디오 일매출 8천만, 강남 정육점 재구매율 86% 일매출 8억, 3층 아키텍처 (raw/wiki/CLAUDE.md), 6가지 공유 법칙 (사회적 통화·계기성·감성·대중성·실용성·이야기성), 계정 다중화 전략 (5천 계정 × 10 + 9천 페이지), AI 실행 격차 10~100배 (2026-2027 변곡), 콘텐츠가 핵심 (광고 예산 < 콘텐츠) (+78 more)
-
-### Community 3 - "Community 3"
-Cohesion: 0.04
-Nodes (82): 광고효율 N배 상승 하는 제품 USP 및 특징 분석 2부, GFA 광고에 누적 800억 운영 후 최적화된 운영방법, GFA 800억 노하우 Q&A 1차 답변, GFA 치트키 N배 효율 상승, 광고 디벨롭 사고 방법 (효율 2배), 카카오모먼트 300% 이상 5가지 방향성, 100% 환불제도 (전환율 1.7→3%), 광고 3단계 구조 (캠페인-그룹-소재) (+74 more)
-
-### Community 4 - "Community 4"
-Cohesion: 0.04
-Nodes (70): 11파일 영상기획 출력 구조, Excel 11시트 브랜드 진입 의사결정, 3-CLI 컨텍스트 브릿지 (CLAUDE/AGENTS/GEMINI.md), 3종 영상 레이아웃 (좌우분할/우체중계/좌체중계), 7대 인사이트 (통념·근거·권위·배경·장소·물건·욕망), AI CLI OAuth 인증 표준 (Codex/Gemini/Claude), Word-rhythm 누적 자막 (ASS+kiwipiepy), 정육점 케이스 (재구매 86%) (+62 more)
-
-### Community 5 - "Community 5"
-Cohesion: 0.05
-Nodes (62): 교과서적인 SNS 페이지 활성화방법 7가지와 컨텐츠 본질, 40가지 마케팅 질문 답변 (USP 재검증·타겟 세분화), 카피의 신 GPTS 공유 (25가지 카피법칙 학습), 무의식·의식·설득 3가지로 100억 매출, 초보마케터 도핑기술 (경쟁사 성장 분석), 퍼포먼스 캔버스 활용법 (기획·고객정의·근거), 재구매율 86% 강남 정육점 USP 노하우, 60분 릴스로 2000만원 매출 (109만 조회) (+54 more)
-
-### Community 6 - "Community 6"
-Cohesion: 0.04
-Nodes (57): 29 페르소나 매트릭스 (gender/ethnicity/age/vibe/setting), ASS burn = filter_complex 마지막 (오버레이 안 가림), Kling Avatar v2 Pro 2~5분 = 병목, 4 B-roll 씬 (PAIN/PRODUCT/APPLY/CTA), Z세대 슬랭 금지어 리스트 (풀스택/소프트걸/Y2K), 씬 단위 2~3 청크 분할 (글자수 비례 시간), 1편 ~$7.90 (Avatar $4.60 + i2v $2 + Gemini $0.21 + TTS $1.10), 씬 전환 평균 2.5초 = 자연 리듬 (+49 more)
-
-### Community 7 - "Community 7"
+### Community 0 - "coding-lessons · ai-automation · market-research-playbook"
 Cohesion: 0.08
-Nodes (57): 최재명 (근육돌이), 인간 5가지 기본 욕구 (식·안전·수면·성·인정), 객단가, 기여기간 (1일 추적), 당근마켓 사례, 전환율, CPC, 콘텐츠/소재 품질 (+49 more)
+Nodes (39): b, c}, C:\Users\Administrator\Desktop\market-research-package\modules\cafe, C:\Users\Administrator\Desktop\market-research-package\modules\community, C:\Users\Administrator\Desktop\market-research-package\modules\naverapi, C:/Users/gguy/Desktop/bol/, C:/Users/gguy/Desktop/bol_video/see/, C:/Users/gguy/Desktop/dance (diet-b2a-v2 Gemini 프롬프트 실전 검증 2026-04-14) (+31 more)
 
-### Community 8 - "Community 8"
-Cohesion: 0.07
-Nodes (45): Generate 20 Kling prompt files (5 sets × 4 keys) from styles.json., write(), build_overlays(), compose_v1(), compose_v23(), get_boxes(), main(), mosaic() (+37 more)
-
-### Community 9 - "Community 9"
-Cohesion: 0.04
-Nodes (54): 핑거루트 다이어트 사례, 마라탕 분모자 트렌드 사례, 18단계 콘텐츠 기획 구조, 3대 욕구 (성/수면/식), 9:16 숏폼 / 1:1 정사각형, 고객 관점 카피라이팅, 가짜 리뷰 신호 / 4.2~4.7점 신뢰, GPT 리뷰 자동 분석 (+46 more)
-
-### Community 10 - "Community 10"
-Cohesion: 0.07
-Nodes (48): 억대 쇼핑몰 기초 체크리스트 5가지, 컨텐츠 제공 능력 10가지 체크리스트 [100억 쇼핑몰 7탄], GFA 치트키 카피 25가지 고성과 사례, CTR 10배 상승 컨텐츠 수술 비법 6가지 요소, 최고의 마케팅 대행사 구조, ROAS 잘나오는 GFA 형식 구도 1탄, 재구매력 관점 10가지 체크리스트 [100억 쇼핑몰 10탄], 매출 2배 상승 DA 카피 사전 1탄 (+40 more)
-
-### Community 11 - "Community 11"
-Cohesion: 0.09
-Nodes (46): 돈 벌게 해주는 공감되는 컨텐츠를 파세요 1탄, 돈 벌게 해주는 공감되는 컨텐츠를 파세요 2탄, 돈 벌게 해주는 공감되는 컨텐츠를 파세요 3탄, 페북이 망했다? 아니 당신의 제품이 망한거다!, 돈 벌게 해주는 공감되는 컨텐츠를 파세요 4탄, (번외) 돈벌어다주는 킬링컨텐츠 롤링발칸, 스토어팜 매출 억대로 만드는 기초적인 이야기 1탄, 스토어팜 매출 억대로 만드는 기초적인 이야기 2탄 (+38 more)
-
-### Community 12 - "Community 12"
-Cohesion: 0.04
-Nodes (46): ChatGPT UI 셀렉터 매주 깨짐 — 자가진단 1순위, 다운로드 동기화 함정 — same chat 5회 retry, cid skip, 좀비 워커 — chrome 탭당 워커 1개 PID 점검, 메모리 룰만 믿지 말고 코드도 grep 확인, 광고 도메인 — 베스트 카피 복사 차단·반려어휘 명시, 증상별 진단 스크립트 동선, 한국 커뮤니티 5사이트 통합 크롤링 매트릭스, Windows Python em-dash cp949 크래시 (+38 more)
-
-### Community 13 - "Community 13"
-Cohesion: 0.05
-Nodes (43): YouTube 대규모 수집 + Claude 서브에이전트 9패턴, marketing, psychology, 영상 작업은 규칙화 금지, 질문 체크리스트화, 5 Why로 증상과 원인 분리, 구글애즈 90:10 예산 규칙, 정확한 진단이 해결의 90%, 광고 영향도 순위 (제품>상세>소재>타겟>지면) (+35 more)
-
-### Community 14 - "Community 14"
+### Community 1 - "index · ../CLAUDE.md · graphify-out/GRAPH_REPORT"
 Cohesion: 0.06
-Nodes (39): 5 Why 기법, AI 이미지 레퍼런스 활용, 에셋화 (부품 단위 분리), Chain of Thought, CLI 환경 습득, 설계 90% 코드는 출력물, 도메인 전문성, 할루시네이션 검증 체크포인트 (+31 more)
+Nodes (34): ../CLAUDE.md, graphify-out/GRAPH_REPORT, qscv/appendix-aov, qscv/appendix-canvas-reupdate, qscv/appendix-content-guide, qscv/appendix-detail-page, qscv/appendix-image-planning, qscv/appendix-landing (+26 more)
 
-### Community 15 - "Community 15"
-Cohesion: 0.11
-Nodes (36): Before/After (B&F) 시각화, 성과지표 (CTR/CVR/CPV/구간재생률), USP (Unique Selling Proposition), 디벨롭(Develop) & 베리에이션(Variation) 후행액션, 브랜디드톤 vs 네이티브톤, 세이프존(Safe Zone) 매체별 UI 회피, 스토리라인 구조: 문제→해결→근거→설득→CTA, Up-selling / Cross-selling 전략 (+28 more)
+### Community 2 - "content-ai-automation · creative-patterns · psychology-insights"
+Cohesion: 0.13
+Nodes (32): C:/Users/gguy/Desktop/14일변화_3인/, C:/Users/gguy/Desktop/B&A_영상_플레이북/, C:/Users/gguy/Desktop/bolbna/, C:/Users/gguy/Desktop/gpt/projects/volumefill/, C:\Users\gguy\Desktop\MD\gemini-imagegen, C:\Users\gguy\Desktop\talmo, C:/Users/gguy/Desktop/세포영상_3편_3인/, domains/usp-performance-canvas-research (+24 more)
 
-### Community 16 - "Community 16"
-Cohesion: 0.07
-Nodes (32): 구글애즈 2년간 60억 써본 경험 1부 인트로, 구글 애즈 검색광고 기능 4탄-1, 구글 애즈 동영상 캠페인 4탄-2, 퍼포먼스 마케팅 믹스 월 매출 40억, 구글 애즈 디스커버리 기능, 구글디스커버리 CPC 100원 ROAS 300% 꿀팁 5탄-1, 구글애즈 퍼포먼스맥스 (실적최대화) 6탄, 월 10억 소진 30억 매출 8탄 인트로 (+24 more)
-
-### Community 17 - "Community 17"
-Cohesion: 0.07
-Nodes (31): 100원 파격 프로모션 + 객단가 유지, 컴플레인 고객 = 충성 고객 전환, 코스튬 시각효과 트래픽 유도, 고객 질문에서 니즈 추출, 감정적 유대감 > 가격 경쟁력, 전단지 대행 실패 / 우편함 광고, FOMO / 희소성 원칙, 공짜 쿠폰 vs 2+1 (+23 more)
-
-### Community 18 - "Community 18"
-Cohesion: 0.08
-Nodes (28): 퍼포먼스 7요소 (체력·회전·점프·코치·기술·장비·환경), 매체별 톤매너 맞춤 전략, 고객 피드백 제품 반영 (피규어 100종), 특징 vs USP (문제 해결), LTV 극대화 회원가입 유도, 9년차 전체 전략 수립 가능, 연차별 체크리스트 (1-2/2-4/4+), 우선순위 10단계 (제품>고객>시장>USP...) (+20 more)
-
-### Community 19 - "Community 19"
-Cohesion: 0.11
-Nodes (22): clean_logo(), generate(), new_client(), Thin wrapper around gemini-imagegen/gemini_auto.GeminiImageGen. Always applies, In-place replace the image with logo-stripped version., Click the top model-picker and choose '2.5 Pro' / Thinking mode.     Gemini web, select_thinking_model(), main() (+14 more)
-
-### Community 20 - "Community 20"
-Cohesion: 0.18
-Nodes (25): Set 2 Apple Dance Prompt Group, v1_after Synced Choreography Pattern, v23 Before Minimal Movement Pattern, Set 10 v23 Before, Set 2 v1 After, Set 2 v1 Before, Set 2 v23 After, Set 2 v23 Before (+17 more)
-
-### Community 21 - "Community 21"
-Cohesion: 0.09
-Nodes (23): 인간의 6가지 기본 본능, 기본을 집착 수준으로 파기, 확증 편향, 콘텐츠가 세팅의 99배 중요, 문화 > 트렌드 > 유행 레벨 구분, 빠른 실패 → 플라이휠, 가설 먼저 → 빠른 실행 검증, 매슬로우 욕구 피라미드 (+15 more)
-
-### Community 22 - "Community 22"
-Cohesion: 0.1
-Nodes (22): 100억대 쇼핑몰 시리즈 1탄, 아이템 선정 11가지 [100억 시리즈 2탄], 쇼핑몰 산업환경 10가지 [100억 시리즈 3탄], 시장성 목표 분류 10가지 [100억 시리즈 4탄], 제품 및 서비스 관점 10가지 [100억 시리즈 5탄], 쇼핑몰 경영자 역량 10가지 [100억 시리즈 6탄], 아이템 선정의 50% 비중, 전문몰 틈새시장 포지셔닝 (+14 more)
-
-### Community 23 - "Community 23"
-Cohesion: 0.17
-Nodes (22): Step 01 — 에셋 준비 (오버레이 PNG + 얼굴박스), Step 02 — Kling 4개 영상 생성, Step 03 — 모자이크/체중계/자막 합성, Step 04 — QA 품질 검증, Step 05 — 내보내기/업로드 준비, diet-b2a-v2 HOOK — 15영상 훅 라이브러리, diet-b2a-v2 PLAN — 15개 다이어트 B/A 릴스 대량생성, diet-b2a-v2 README (10세트×3포맷×2언어=60영상) (+14 more)
-
-### Community 24 - "Community 24"
-Cohesion: 0.18
-Nodes (18): 브랜디트톤, 퍼포먼스 캔버스 업데이트, 네이티브톤, 퍼포먼스 캔버스 (전략 설계도), 메인 타겟 페르소나, 치알디니 7대 설득 요소 (상호성/희소성/권위/일관성/사회적증거/호감/숫자근거), 스토리라인 구조 (문제→해결→근거→설득→CTA), 무의식/인식/설득 3단 구조 (+10 more)
-
-### Community 25 - "Community 25"
-Cohesion: 0.15
-Nodes (17): Set7 after prompts (ITZY K-pop flick choreography), Set7 before prompts (v1+v23, fat/messy/night), Set8 after prompts (Oh Nanana dance, sultry confident), Set8 before prompts (fat/messy/night, ocean wave choreography), Set9 after prompts (fashion runway model strut), Set9 before prompts (fat/messy/night, head tilt + weight shift), step-02 HOOK — 세션 보호 원칙 (Gemini login session), step-02 README — check_session.py + login_once.py (+9 more)
-
-### Community 26 - "Community 26"
+### Community 3 - "index · canvas-rusolve-v1 · appendix-content-guide"
 Cohesion: 0.14
-Nodes (16): 객단가 상승 옵션 2.5배 가격차, 8가지 크로스체크 지표, CVR 미세 UX 개선 (리다이렉트/카카오싱크), 퍼널 단계별 이탈율 분석, 가설 검증 프로세스, 페르소나 변경 포지셔닝 전환, 세트 구성 객단가 2배 상승, 썸네일 변경 전환율 2%+ 상승 (+8 more)
+Nodes (31): raw/qscv/, raw/qscv/CCFM_디자인본부_Q_고객여정편_250424.md, raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_GFA_250430.md, raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_Google_250430.md, raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_META_250430.md, raw/qscv/CCFM_마케팅사업부_Q_매체_매뉴얼_검색광고_250430.md, raw/qscv/CCFM_마케팅사업부_Q_퍼포먼스_사고_확장_가이드.md, raw/qscv/CCFM_미디어본부_Q_고객여정편_250428.md (+23 more)
 
-### Community 27 - "Community 27"
-Cohesion: 0.42
-Nodes (16): [QSCV Appendix] 객단가 점검, [QSCV Appendix] 퍼포먼스 캔버스 재기획, [QSCV Appendix] 콘텐츠 기획 가이드, [QSCV Appendix] 상세페이지 점검, [QSCV Appendix] 이미지 필수 기획, [QSCV Appendix] 랜딩페이지 점검, [QSCV Appendix] 영상 필수 기획, 퍼포먼스 캔버스 v1 — 루솔브 (+8 more)
+### Community 4 - "da-creative · marketing · viral"
+Cohesion: 0.16
+Nodes (22): C:\Users\Administrator\Desktop\market-research-package\modules\instar, C:\Users\Administrator\Desktop\market-research-package\modules\youtube, C:\Users\Administrator\Desktop\srd\scripts\pipeline.py, C:\Users\Administrator\Desktop\srd\scripts\_seed_copies.py, C:\Users\Administrator\Desktop\srd\state\copies.json, domains/content-ai-automation, domains/marketing, domains/psychology (+14 more)
 
-### Community 28 - "Community 28"
-Cohesion: 0.15
-Nodes (13): AI를 위협이 아닌 업무 툴로, AI 이미지 소재로 ROAS 달성, AI 이미지 모델/촬영 비용 절감, 프롬프트 3요소 (역할/구체정보/조건값), AI 30% / 프롬프트 10% / 데이터 60% 비율, DALL-E 3, ChatGPT / GPT 분석, 미드저니 (Midjourney) (+5 more)
+### Community 5 - "src-iboss-choi-jaemyeong · org-restructure · sea-tiktok"
+Cohesion: 0.19
+Nodes (22): domains/finance, domains/hr-admin, domains/japan-market, domains/ma-exit, domains/org-restructure, domains/sea-tiktok, domains/taiwan-market, i-boss.co.kr/ab-6141 (+14 more)
 
-### Community 29 - "Community 29"
-Cohesion: 0.36
-Nodes (10): _audio_duration(), _clipitem(), _color_param_elem(), _file_elem(), _frames(), _list_theme_sfx(), _param_elem(), _rate_elem() (+2 more)
+### Community 6 - "src-higgsfield-cli-claude-bypass-2026-05-12 · domains/ai-automation · domains/marketing-automation"
+Cohesion: 0.14
+Nodes (17): C:/Users/gguy/Desktop/GFA-Setting, domains/ai-automation, domains/gfa-setting-automation, domains/marketing-automation, github:Min-Gil-Sang/GFA-Setting, https://github.com/AKCodez/higgsfield-claude-skills, https://github.com/higgsfield-ai/skills, https://github.com/QalaLabs/claude-higgsfield-mcp (+9 more)
 
-### Community 30 - "Community 30"
-Cohesion: 0.31
-Nodes (10): 디스플레이 광고 (DA), 검색광고 (SA), 확장 키워드 (경쟁사/공포/시즌/쇼핑), 메인 키워드 (브랜드/상품/구매의도), 서브 키워드 (감성/타겟/가격/문제해결), 검색광고 매뉴얼 chunk1 (키워드 유형 분류), 검색광고 매뉴얼 chunk4 (운영기준/사례), 블랙키위 (키워드 분석) (+2 more)
+### Community 7 - "HOTSHEET · AI-Avatar-Automation-Guide · domains/gptim-ad-creative-batch"
+Cohesion: 0.13
+Nodes (15): domains/gptim-ad-creative-batch, domains/grill-me-ccfm, qscv/index\, sources/src-charde-melapeel-usp-2026-04-27, sources/src-foreign-influencer-guide, sources/src-performance-video-pipeline-v18-2026-04-28, tacit/decision-rules, tacit/lessons-learned (+7 more)
 
-### Community 31 - "Community 31"
-Cohesion: 0.39
-Nodes (8): chunk_and_write(), extract(), iter_block_items(), main(), paragraph_text(), QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG], slugify(), table_to_md()
+### Community 8 - "log · tacit/coding-lessons · src-goglecc-seed-curation"
+Cohesion: 0.18
+Nodes (13): C:/Users/gguy/Desktop/goglecc (이미지 수집 + negative curation + LoRA 파이프라인), domains/codex-grounding-protocol, domains/ggttt-imagen, sources/src-charde-cid-3001-6000-axis-system-2026-05-03, sources/src-claude-skills-inventory-2026-04-22, sources/src-higgsfield-cli-claude-bypass-2026-05-12, sources/src-higgsfield-soul-api-2026-04-21, sources/src-volumefill-video-pipeline-2026-04-21 (+5 more)
 
-### Community 32 - "Community 32"
-Cohesion: 0.33
-Nodes (8): detect_for_set(), _detect_in_clip(), _extract_frame(), main(), _pick_best_face(), Detect faces in each set's seed images, store per-set mosaic box.  The seed be, Sample multiple frames, pick the largest/median face box., Detect faces SEPARATELY for before and after clips.     CRITICAL: Kling generat
+### Community 9 - "src-rubyrn-glow-deep-research-success-2026-04-28 · src-rubyrn-cleanser-glow-research-2026-04-28 · C:/Users/gguy/Desktop/naver-competitor-finder/canvas/04_glow_keyword_research.md"
+Cohesion: 0.22
+Nodes (10): C:/Users/gguy/Desktop/bol/output/raw/, C:/Users/gguy/Desktop/bol/output/raw/community.jsonl, C:/Users/gguy/Desktop/bol/output/raw/daum_cafe.jsonl, C:/Users/gguy/Desktop/bol/output/raw/youtube.jsonl, C:/Users/gguy/Desktop/naver-competitor-finder/canvas/04_glow_keyword_research.md, C:/Users/gguy/Desktop/naver-competitor-finder/canvas/05_viral_video_deep_analysis.md, C:/Users/gguy/Desktop/naver-competitor-finder/canvas/06_folk_beliefs_for_glow.md, C:/Users/gguy/Desktop/naver-competitor-finder/scripts/video_deep/ (+2 more)
 
-### Community 33 - "Community 33"
-Cohesion: 0.39
-Nodes (8): download(), main(), poll(), Kling image2video batch for all sets × 4 keys. Resume-safe., read_keys(), save_state(), submit(), token()
+### Community 10 - "ggttt-imagen · ai-automation\ · C:\Users\gguy\.claude\skills\gptim\SKILL.md"
+Cohesion: 0.22
+Nodes (9): ai-automation\, C:\Users\gguy\.claude\skills\gptim\SKILL.md, C:\Users\gguy\.claude\skills\imagen\SKILL.md, C:\Users\gguy\.claude\skills\rubyrn-pipeline\SKILL.md, C:\Users\gguy\Desktop\ggttt\harness\AGENTS.md, C:\Users\gguy\Desktop\ggttt\README.md, gptim-ad-creative-batch\, ggttt-imagen (+1 more)
 
-### Community 34 - "Community 34"
+### Community 11 - "tacit/chatgpt-web-automation · tacit/operational-heuristics · tacit/video-gen-lessons"
 Cohesion: 0.25
-Nodes (7): build_paths(), detect_theme(), load_marker(), _nfc(), 프로젝트 폴더의 *_기획안.md 에서 SFX 테마 자동 감지      우선순위:     1) 명시적 테마 라인 (**테마**: 공포, **SFX, M4마커.json 또는 scenes.json → 정규화된 {scenes: [...]} 반환      - 05_브랜드_M3_M4마커.json: {, 볼륨 구조: input/YYYYMMDD_브랜드/, output/YYYYMMDD_브랜드/
+Nodes (8): raw/skills/video-automation-m1-m5/, tacit/chatgpt-web-automation, tacit/lipsync-multi-face-trap, tacit/operational-heuristics, tacit/video-gen-lessons, wiki/sources/src-rubiv-v3-skull-2026-04-30, src-video-automation-m1-m5-2026-05-12, video-gen-lessons
 
-### Community 35 - "Community 35"
-Cohesion: 0.33
-Nodes (8): check_ccfm_context(), count_decision_branches(), detect_mode(), main(), 결정 트리 분기 개수 추정 (단순 휴리스틱), CCFM 핵심 도메인 키워드가 명시됐는지 체크, 사용자 입력 모호도 점수 측정.          Returns:         {             "score": int,, score_input()
-
-### Community 36 - "Community 36"
+### Community 12 - "src-codex-pricing-2026-05-01 · https://allthings.how/codex-token-and-rate-limits-explained-for-chatgpt-plans/ · https://chatgpt.com/codex/pricing/ (OpenAI 공식, 일부 region 403)"
 Cohesion: 0.25
-Nodes (9): 메타 머신러닝 활성화 기준 (7일 50전환), 화장품 효능 표현 카피 검수 기준, GFA 1:1 피드/영상 지면, 메타 ABO→CBO 검증 전략, 논타겟 확장 전략 (1000만+예산), GFA / 메타 / 구글 광고, GFA 신규 피드 지면과 영상 지면의 노하우 N가지 공유드립니다, GFA, 메타, 구글 광고에 대해서 궁금한 점 모든 질문 받습니다 (+1 more)
+Nodes (8): https://allthings.how/codex-token-and-rate-limits-explained-for-chatgpt-plans/, https://chatgpt.com/codex/pricing/ (OpenAI 공식, 일부 region 403), https://community.openai.com/t/understanding-the-new-codex-limit-system-after-the-april-9-update/1378768, https://developers.openai.com/codex/pricing (OpenAI 공식), https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan, https://www.knightli.com/en/2026/04/15/codex-usage-limits-five-hour-weekly-credits/, 실측: ceo@mkm20201101.com Codex CLI v0.125.0 (2026-05-01 10:51 KST), src-codex-pricing-2026-05-01
 
-### Community 37 - "Community 37"
-Cohesion: 0.39
-Nodes (7): detect_projects(), _find_marker(), _find_tts(), main(), _nfc(), *M4마커*.json 또는 scenes.json 탐색, input/YYYYMMDD_브랜드[_N]/ 자동 감지
+### Community 13 - "src-creative-autogen-framework · src-nari-2tab-parallel · C:/Users/Administrator/Desktop/creative-autogen/"
+Cohesion: 0.29
+Nodes (7): C:/Users/Administrator/Desktop/creative-autogen/, C:/Users/Administrator/Desktop/gptimege/, C:/Users/Administrator/Desktop/nari/, feedback-reject-rules, raw/skills/creative-autogen/, src-creative-autogen-framework, src-nari-2tab-parallel
 
-### Community 38 - "Community 38"
-Cohesion: 0.39
-Nodes (7): _chunk_by_scene(), _extract_scene_words(), _format_srt_time(), 씬별 단어 리스트 반환: [ ["뚱보균이","내",...], ["이거","나",...], ... ], 씬 경계에서 무조건 끊고, 씬 내에서 max_chars 기준 추가 청킹, _save_srt(), step2_whisper_sub()
-
-### Community 39 - "Community 39"
-Cohesion: 0.25
-Nodes (8): 직접전환 vs 간접전환, 페이스북 계정 3개 분리 운영, 재입고 알람 리텐션 (100명→30명 구매), 광고 추적 3방식 (쿠키/AD ID/UTM), 페이스북 광고, 구글 써드파티 쿠키 중단 (2023), 마케팅 40부작 [14/40] 광고 추적 기준과 방식, 마케팅 40부작 [20/40] 페이스북 계정분리와 이미지 최적화
-
-### Community 40 - "Community 40"
-Cohesion: 0.25
-Nodes (8): 휴면 고객 재활성화, 산처럼 쌓는 진열 시각화, 명절 단 10일만에 1억 매출 만드는 5가지 방법, 죽은 상권에서 월매출 2억 끌어올린 사례, MOC 운영, 쿠팡이츠/배민스토어, 카카오톡 채널, 네이버 플레이스
-
-### Community 41 - "Community 41"
-Cohesion: 0.43
-Nodes (6): batch_process(), make_corner_masks(), process_image(), 하단 좌/우 코너에 타원형 마스크 생성, 양쪽 하단 코너를 인페인팅하여 로고 제거      1. TELEA 알고리즘: 빠른 행진 기반 (텍스처에 강함)     2. NS 알고리즘:, remove_logo()
-
-### Community 42 - "Community 42"
-Cohesion: 0.43
-Nodes (6): build_knowledge_title(), extract_concept(), main(), Rewrite iboss file aliases from article titles to knowledge-based titles.  Why, Extract the knowledge label from a bullet. Prefer pre-colon part., rewrite()
-
-### Community 43 - "Community 43"
-Cohesion: 0.38
-Nodes (7): B2A 가상 이미지 생성 (40kg/80kg 변환), Gemini Session Screenshot, diet-b2a-v2 Step 02: Gemini Session, Gemini Web UI (PRO), Gemini 채팅 히스토리 (다이어트 B2A 관련 세션들), Gemini 빠른 모델 셀렉터, Gemini 프롬프트 입력창
-
-### Community 44 - "Community 44"
-Cohesion: 0.6
-Nodes (4): extract_h1(), inject(), main(), Inject aliases into frontmatter by extracting the first H1 title.  Why: raw/ f
-
-### Community 45 - "Community 45"
-Cohesion: 0.6
-Nodes (4): main(), make_edge(), make_node(), Inject iboss (최재명 i-boss 201건) entities into the knowledge graph.  Why: graphi
-
-### Community 46 - "Community 46"
-Cohesion: 0.6
-Nodes (4): inject(), main(), Inject Korean aliases into wiki page frontmatter.  Why: English slugs like `sr, yaml_aliases_block()
-
-### Community 47 - "Community 47"
-Cohesion: 0.7
-Nodes (4): Backup-File(), Ensure-Dir(), Save-Utf8(), Update-MarkerSection()
-
-### Community 48 - "Community 48"
-Cohesion: 0.4
-Nodes (5): 내적 보상 > 외적 보상 (쿠폰/할인), 숏폼 3요소 (숫자/순서/3초 후킹), 공유 욕망 기반 바이럴, 1000만 조회수 나온 바이럴 법칙 통한 기획하는 방법, 숏폼은 이 3가지 없으면 망합니다
-
-### Community 49 - "Community 49"
-Cohesion: 0.67
-Nodes (3): analyze(), main(), Analyze 3 reference BGM tracks: BPM, drop (onset max energy) second, first-choru
-
-### Community 50 - "Community 50"
+### Community 14 - "domains/da-creative · src-nurse-shoes-2026-04-28 · domains/market-research-playbook"
 Cohesion: 0.5
-Nodes (4): 0.5~1초 빠른 장면전환, 영상 5단계 구조 (후킹>문제제기>USP>장점>구매), 타입캐스트 AI 음성 더빙, 30분 편집 ROAS 300% 영상 꿀팁
+Nodes (4): C:\Users\gguy\Desktop\naver-competitor-finder\nurse\, domains/da-creative, domains/market-research-playbook, src-nurse-shoes-2026-04-28
 
-### Community 51 - "Community 51"
+### Community 15 - "grill-me-ccfm · ccfm-wiki/skills/grill-me-ccfm/  (글로벌 동기화 원본) · ~/.claude/skills/grill-me-ccfm/SKILL.md"
 Cohesion: 0.5
-Nodes (4): MECE 원칙 / Why 트리, 기획-실행-복기-개선 사이클, 성과 100배 오르는 문제파악 문제해결 기본기, MOC 판단 규칙
+Nodes (4): ccfm-wiki/skills/grill-me-ccfm/  (글로벌 동기화 원본), ~/.claude/skills/grill-me-ccfm/SKILL.md, Matt Pocock 원본 grill-me 스킬, grill-me-ccfm
 
-### Community 52 - "Community 52"
-Cohesion: 0.67
-Nodes (4): 나노바나나로 모델료 월 1억 절감, 월 50억 나노바나나 활용법 100가지, lmarena.ai, 나노바나나 (nano-banana)
-
-### Community 53 - "Community 53"
-Cohesion: 0.5
-Nodes (4): BGM 배정 철학 (DW3 BPM129 / BPM95), 얼굴 모자이크 박스 112x125 정책, 공장화 원칙 (30영상 서로 다른 훅), diet-b2a-v2 step-06 HOOK 합성 단계의 품질 레버
-
-### Community 54 - "Community 54"
-Cohesion: 0.67
-Nodes (1): Verify Gemini session is still valid. Non-headless to allow user to see state.
-
-### Community 55 - "Community 55"
-Cohesion: 0.67
-Nodes (1): Inject Korean alias nodes for diet-b2a-v2 into the graphify graph.json.  Ratio
-
-### Community 56 - "Community 56"
-Cohesion: 0.67
-Nodes (3): 기본기 우선 / 체력 우선, MECE 기반 목표 세분화, 10배 성장하는 사고와 방향성 11가지
-
-### Community 57 - "Community 57"
-Cohesion: 0.67
-Nodes (3): 페르소나 = 컨텐츠, USP는 단수형 (1~2개), 성과 2배 빨리 만드는 퍼포먼스 치트키
-
-### Community 58 - "Community 58"
-Cohesion: 0.67
-Nodes (3): 제품 중심 사고 (4요소), 테무 / 알리 (초저가 플랫폼), 결국에 제품 중심 사고가 해답이다 [테무 알리 주춤?]
-
-### Community 59 - "Community 59"
-Cohesion: 0.67
-Nodes (3): 광고비 2500억 운영 인사이트, 2500억 써본 마케터의 무물 2025년, MOC 교훈
-
-### Community 60 - "Community 60"
-Cohesion: 0.67
-Nodes (3): Gemini Logo Remover v3.0 Report (CEO 직접 개발), simple-lama-inpainting (열위 비교 대상), OpenCV TELEA+NS 인페인팅 50:50 블렌딩
-
-### Community 61 - "Community 61"
+### Community 16 - "CLAUDE · 위키링크"
 Cohesion: 1.0
-Nodes (1): Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.
+Nodes (2): CLAUDE, 위키링크
 
-### Community 62 - "Community 62"
+### Community 17 - "_sync-test"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): _sync-test
 
-### Community 63 - "Community 63"
+### Community 18 - "src-higgsfield-soul-api-2026-04-21"
 Cohesion: 1.0
-Nodes (2): 소통 6가지 방법 (경청·복명복창·거절기술), 마케터 소통 6가지 방법
+Nodes (1): src-higgsfield-soul-api-2026-04-21
 
-### Community 64 - "Community 64"
+### Community 19 - "src-nari-chatgpt-image"
 Cohesion: 1.0
-Nodes (2): GFA 반려 소재 수정 앱, 60초 GFA 반려 소재 수정 앱
+Nodes (1): src-nari-chatgpt-image
 
-### Community 65 - "Community 65"
+### Community 20 - "ae-aep-default-v25"
 Cohesion: 1.0
-Nodes (2): CCFM 메타 비즈니스 파트너, META 매체 매뉴얼 chunk6 (지원/FAQ)
+Nodes (1): ae-aep-default-v25
 
-### Community 66 - "Community 66"
+### Community 21 - "chatgpt-web-automation"
 Cohesion: 1.0
-Nodes (2): Claude 스킬·커맨드 인벤토리 2026-04-22, 바이브코딩 & 클로드 스킬
+Nodes (1): chatgpt-web-automation
 
-### Community 67 - "Community 67"
+### Community 22 - "lipsync-multi-face-trap"
 Cohesion: 1.0
-Nodes (2): 샤르드 멜라케어 필크림 마스크 USP 케이스, USP 퍼포먼스 캔버스 조사 플레이북
+Nodes (1): lipsync-multi-face-trap
 
-### Community 68 - "Community 68"
+### Community 23 - "ugc-before-after-proof"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): ugc-before-after-proof
 
-### Community 69 - "Community 69"
+### Community 24 - "yuri-ep02-bj-vlog-case"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): yuri-ep02-bj-vlog-case
 
-### Community 70 - "Community 70"
+### Community 25 - "README"
 Cohesion: 1.0
-Nodes (0): 
-
-### Community 71 - "Community 71"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 72 - "Community 72"
-Cohesion: 1.0
-Nodes (1): Kling image2video API (JWT submit/poll/download)
-
-### Community 73 - "Community 73"
-Cohesion: 1.0
-Nodes (1): ffmpeg mosaic+overlay compose pattern
-
-### Community 74 - "Community 74"
-Cohesion: 1.0
-Nodes (1): Gemini web UI imagegen via Playwright session
-
-### Community 75 - "Community 75"
-Cohesion: 1.0
-Nodes (1): Diet Before/After video pipeline (skill)
-
-### Community 76 - "Community 76"
-Cohesion: 1.0
-Nodes (1): Face mosaic anonymization box
-
-### Community 77 - "Community 77"
-Cohesion: 1.0
-Nodes (1): README.md (CCFM Wiki)
-
-### Community 78 - "Community 78"
-Cohesion: 1.0
-Nodes (1): 퍼포먼스 사고 확장 chunk5
-
-### Community 79 - "Community 79"
-Cohesion: 1.0
-Nodes (1): 퍼포먼스 사고 확장 chunk6
-
-### Community 80 - "Community 80"
-Cohesion: 1.0
-Nodes (1): 퍼포먼스 사고 확장 chunk7
-
-### Community 81 - "Community 81"
-Cohesion: 1.0
-Nodes (1): lost2 노트북 연동 테스트
-
-### Community 82 - "Community 82"
-Cohesion: 1.0
-Nodes (1): graphify
-
-### Community 83 - "Community 83"
-Cohesion: 1.0
-Nodes (1): bdh skill
-
-### Community 84 - "Community 84"
-Cohesion: 1.0
-Nodes (1): 설득 9요소 (상호성·희소성·권위 등)
+Nodes (1): README
 
 ## Knowledge Gaps
-- **623 isolated node(s):** `QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG]`, `Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O`, `Step 05 — thumbnails + captions + zip.`, `Step 02 — Kling image2video: JWT, submit, poll, download, resume.`, `Shared helpers: config loading, path resolution, ffmpeg runner.` (+618 more)
+- **148 isolated node(s):** `_sync-test`, `gptim-ad-creative-batch`, `todayhumor-mining-playbook`, `src-higgsfield-soul-api-2026-04-21`, `src-nari-chatgpt-image` (+143 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 61`** (2 nodes): `Build 5 sets config (model + bg + kg + audio) as sets/setN/config.json.`, `build_sets.py`
+- **Thin community `CLAUDE · 위키링크`** (2 nodes): `CLAUDE`, `위키링크`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 62`** (2 nodes): `step1_audio_cut.py`, `step1_audio_cut()`
+- **Thin community `_sync-test`** (1 nodes): `_sync-test`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 63`** (2 nodes): `소통 6가지 방법 (경청·복명복창·거절기술)`, `마케터 소통 6가지 방법`
+- **Thin community `src-higgsfield-soul-api-2026-04-21`** (1 nodes): `src-higgsfield-soul-api-2026-04-21`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 64`** (2 nodes): `GFA 반려 소재 수정 앱`, `60초 GFA 반려 소재 수정 앱`
+- **Thin community `src-nari-chatgpt-image`** (1 nodes): `src-nari-chatgpt-image`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (2 nodes): `CCFM 메타 비즈니스 파트너`, `META 매체 매뉴얼 chunk6 (지원/FAQ)`
+- **Thin community `ae-aep-default-v25`** (1 nodes): `ae-aep-default-v25`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 66`** (2 nodes): `Claude 스킬·커맨드 인벤토리 2026-04-22`, `바이브코딩 & 클로드 스킬`
+- **Thin community `chatgpt-web-automation`** (1 nodes): `chatgpt-web-automation`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 67`** (2 nodes): `샤르드 멜라케어 필크림 마스크 USP 케이스`, `USP 퍼포먼스 캔버스 조사 플레이북`
+- **Thin community `lipsync-multi-face-trap`** (1 nodes): `lipsync-multi-face-trap`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 68`** (1 nodes): `__init__.py`
+- **Thin community `ugc-before-after-proof`** (1 nodes): `ugc-before-after-proof`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 69`** (1 nodes): `__init__.py`
+- **Thin community `yuri-ep02-bj-vlog-case`** (1 nodes): `yuri-ep02-bj-vlog-case`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 70`** (1 nodes): `__init__.py`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 71`** (1 nodes): `install-grill-me-ccfm.ps1`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 72`** (1 nodes): `Kling image2video API (JWT submit/poll/download)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 73`** (1 nodes): `ffmpeg mosaic+overlay compose pattern`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 74`** (1 nodes): `Gemini web UI imagegen via Playwright session`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 75`** (1 nodes): `Diet Before/After video pipeline (skill)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 76`** (1 nodes): `Face mosaic anonymization box`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 77`** (1 nodes): `README.md (CCFM Wiki)`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 78`** (1 nodes): `퍼포먼스 사고 확장 chunk5`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 79`** (1 nodes): `퍼포먼스 사고 확장 chunk6`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 80`** (1 nodes): `퍼포먼스 사고 확장 chunk7`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 81`** (1 nodes): `lost2 노트북 연동 테스트`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 82`** (1 nodes): `graphify`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 83`** (1 nodes): `bdh skill`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 84`** (1 nodes): `설득 9요소 (상호성·희소성·권위 등)`
+- **Thin community `README`** (1 nodes): `README`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `creative-patterns` connect `Community 0` to `Community 12`, `Community 13`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `coding-lessons` connect `Community 12` to `Community 0`, `Community 13`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `i-boss 201건 (최재명)` connect `Community 13` to `Community 0`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `creative-patterns` (e.g. with `Creative Tacit Cluster` and `Performance Video Tacit Chain`) actually correct?**
-  _`creative-patterns` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 2 inferred relationships involving `video-gen-lessons` (e.g. with `Creative Tacit Cluster` and `Performance Video Tacit Chain`) actually correct?**
-  _`video-gen-lessons` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `QSCV docx → raw/qscv/ 원본 md + chunk/ 200줄 청크 분할 - 표 셀도 텍스트로 추출 - 이미지/도형은 [IMG]`, `Step 01b (optional) — detect face in after.png and save face_box.json.  Uses O`, `Step 05 — thumbnails + captions + zip.` to the rest of the system?**
-  _623 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.02 - nodes in this community are weakly interconnected._
+- **Why does `index` connect `index · ../CLAUDE.md · graphify-out/GRAPH_REPORT` to `coding-lessons · ai-automation · market-research-playbook`, `content-ai-automation · creative-patterns · psychology-insights`, `da-creative · marketing · viral`, `src-iboss-choi-jaemyeong · org-restructure · sea-tiktok`, `src-higgsfield-cli-claude-bypass-2026-05-12 · domains/ai-automation · domains/marketing-automation`, `HOTSHEET · AI-Avatar-Automation-Guide · domains/gptim-ad-creative-batch`, `log · tacit/coding-lessons · src-goglecc-seed-curation`, `tacit/chatgpt-web-automation · tacit/operational-heuristics · tacit/video-gen-lessons`, `domains/da-creative · src-nurse-shoes-2026-04-28 · domains/market-research-playbook`?**
+  _High betweenness centrality (0.290) - this node is a cross-community bridge._
+- **Why does `content-ai-automation` connect `content-ai-automation · creative-patterns · psychology-insights` to `coding-lessons · ai-automation · market-research-playbook`, `index · canvas-rusolve-v1 · appendix-content-guide`, `da-creative · marketing · viral`, `src-iboss-choi-jaemyeong · org-restructure · sea-tiktok`, `src-higgsfield-cli-claude-bypass-2026-05-12 · domains/ai-automation · domains/marketing-automation`, `log · tacit/coding-lessons · src-goglecc-seed-curation`, `tacit/chatgpt-web-automation · tacit/operational-heuristics · tacit/video-gen-lessons`, `src-creative-autogen-framework · src-nari-2tab-parallel · C:/Users/Administrator/Desktop/creative-autogen/`, `domains/da-creative · src-nurse-shoes-2026-04-28 · domains/market-research-playbook`?**
+  _High betweenness centrality (0.154) - this node is a cross-community bridge._
+- **Why does `ai-automation` connect `coding-lessons · ai-automation · market-research-playbook` to `content-ai-automation · creative-patterns · psychology-insights`, `da-creative · marketing · viral`, `src-iboss-choi-jaemyeong · org-restructure · sea-tiktok`, `src-higgsfield-cli-claude-bypass-2026-05-12 · domains/ai-automation · domains/marketing-automation`, `log · tacit/coding-lessons · src-goglecc-seed-curation`, `ggttt-imagen · ai-automation\ · C:\Users\gguy\.claude\skills\gptim\SKILL.md`, `src-codex-pricing-2026-05-01 · https://allthings.how/codex-token-and-rate-limits-explained-for-chatgpt-plans/ · https://chatgpt.com/codex/pricing/ (OpenAI 공식, 일부 region 403)`?**
+  _High betweenness centrality (0.111) - this node is a cross-community bridge._
+- **What connects `_sync-test`, `gptim-ad-creative-batch`, `todayhumor-mining-playbook` to the rest of the system?**
+  _148 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `coding-lessons · ai-automation · market-research-playbook` be split into smaller, more focused modules?**
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `index · ../CLAUDE.md · graphify-out/GRAPH_REPORT` be split into smaller, more focused modules?**
+  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
+- **Should `content-ai-automation · creative-patterns · psychology-insights` be split into smaller, more focused modules?**
+  _Cohesion score 0.13 - nodes in this community are weakly interconnected._
+- **Should `index · canvas-rusolve-v1 · appendix-content-guide` be split into smaller, more focused modules?**
+  _Cohesion score 0.14 - nodes in this community are weakly interconnected._

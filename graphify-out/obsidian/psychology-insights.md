@@ -1,34 +1,33 @@
 ---
 source_file: "wiki/tacit/psychology-insights.md"
 type: "document"
-community: "바이럴 지식"
+community: "content-ai-automation · creative-patterns · psychology-insights"
+location: "L1"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/바이럴_지식
+  - community/content-ai-automation_·_creative-patterns_·_psychology-insights
 ---
 
 # psychology-insights
 
 ## Connections
-- [[3중 자극 (도파민·공포·무의식)]] - `references` [EXTRACTED]
-- [[5대 원초 욕구 (식·안전·수면·성·인정)]] - `references` [EXTRACTED]
-- [[BA 얼굴 덜 가리면 감정 이입 큼]] - `references` [EXTRACTED]
-- [[Before 어두움 + After 자연광 = 2배 임팩트]] - `references` [EXTRACTED]
-- [[Creative Tacit Cluster]] - `references` [INFERRED]
-- [[i-boss 201건 (최재명)]] - `references` [EXTRACTED]
-- [[다이어트 BA v2 대량생산]] - `references` [EXTRACTED]
-- [[루비알엔 광채 클렌저 시장조사 4단 심화]] - `references` [EXTRACTED]
-- [[루비알엔 앰플클렌저 광채톤업 시장조사]] - `references` [EXTRACTED]
-- [[볼륨필인 BA 파이프라인 v1 (2026-04-20)]] - `references` [EXTRACTED]
-- [[볼륨필인 Day1→14 영상 공장 (2026-04-21)]] - `cites` [EXTRACTED]
-- [[설득 9요소 (상호성·희소성·권위·일관성·증거·호감·숫자·공포·쾌락)]] - `references` [EXTRACTED]
-- [[억제 → 해방 릴스 구조 다이어트 변신 임팩트]] - `references` [EXTRACTED]
-- [[엄마할머니가 알려주신 어법 = 카피 반려 거의 없음]] - `references` [EXTRACTED]
-- [[출산 3개월 전→뒤 시간축 압축 카피]] - `references` [EXTRACTED]
-- [[탈모 루솔브 BA 릴스]] - `references` [EXTRACTED]
-- [[탈모 정수리 클로즈업 = 공포 방아쇠]] - `references` [EXTRACTED]
-- [[한국 미용 통념 활용 — 통념 얹기  깨기]] - `references` [EXTRACTED]
-- [[헤어 쓸어올림 제스처 = 자신감 시각 코드]] - `references` [EXTRACTED]
+- [[ai-automation]] - `wikilink` [EXTRACTED]
+- [[content-ai-automation]] - `wikilink` [EXTRACTED]
+- [[creative-patterns]] - `wikilink` [EXTRACTED]
+- [[log]] - `wikilink` [EXTRACTED]
+- [[market-research-playbook]] - `wikilink` [EXTRACTED]
+- [[marketing]] - `wikilink` [EXTRACTED]
+- [[psychology]] - `wikilink` [EXTRACTED]
+- [[sourcessrc-rubyrn-cleanser-glow-research-2026-04-28]] - `wikilink` [EXTRACTED]
+- [[src-diet-b2a-skill]] - `wikilink` [EXTRACTED]
+- [[src-diet-b2a-v2]] - `wikilink` [EXTRACTED]
+- [[src-iboss-choi-jaemyeong]] - `wikilink` [EXTRACTED]
+- [[src-rubyrn-cleanser-glow-research-2026-04-28]] - `wikilink` [EXTRACTED]
+- [[src-rubyrn-glow-deep-research-success-2026-04-28]] - `wikilink` [EXTRACTED]
+- [[src-talmo-b2a]] - `wikilink` [EXTRACTED]
+- [[src-volumefill-pipeline-2026-04-20]] - `wikilink` [EXTRACTED]
+- [[src-volumefill-video-pipeline-2026-04-21]] - `wikilink` [EXTRACTED]
+- [[viral-patterns]] - `wikilink` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/바이럴_지식
+#graphify/document #graphify/EXTRACTED #community/content-ai-automation_·_creative-patterns_·_psychology-insights
