@@ -1,5 +1,23 @@
 # CCFM Wiki Log
 
+## [2026-05-12] ingest | Higgsfield CLI ↔ Claude Code 연동 가능성 + ggttt 식 우회 불가 (3중 교차검증)
+
+- 출처: 사용자 질문 "higgsfield.ai/cli 클로드 연동? ggttt 같은 우회? Seedance 2.0 + 웹 SaaS?"
+- **3중 평가 절차**: Claude(Opus 4.7) 초안 → Codex frontier(gpt-5.4 xhigh) cross-check → general-purpose 서브에이전트 가혹 eval
+- **핵심 결론**:
+  - Q1 연동: ✅ 공식 `@higgsfield/cli` + `npx skills add higgsfield-ai/skills` 또는 공식 MCP (`https://mcp.higgsfield.ai`). 단 npm 패키지 first publish 2026-05-02 (10일 된 베타, 9일에 18 릴리즈) → 프로덕션 의존 위험
+  - Q2 ggttt 우회: ❌ 불가. Higgsfield 는 자체 OAuth + 자체 크레딧제, ChatGPT entitlement 재활용 표면 없음. 합법 무료 경로는 가입 보너스 + 월 150cr 무료 티어 (메라블 광고 1편 330cr 못 함)
+  - Q3 Seedance 2.0: ✅ 지원. **단 plan 자격 충돌**(본문 "모든 플랜" vs FAQ "Team 전용") + CLI 스키마에 `--seed` 미노출 → `perf-ad-library` 컷별 재현성 워크플로에 치명. 약관상 입력/출력 학습 활용 가능 → 브랜드 자산 PoC 금지
+- **수정한 Claude 초안 오류**:
+  - MCP 출시일 "2026-04-30 확정" → "2026-04-말~5-08, 공식 1차 못 박기 어려움"
+  - "Higgsfield = 어그리게이터 마진" → "OpenAI/Google/ByteDance 파트너 위에 자체 모델 + proprietary reasoning engine"
+  - 월 가격 "$20+" → 직접 검증 안 됨, credit-based 만 확실
+  - `QalaLabs/claude-higgsfield-mcp` → 실재 미확인. `AKCodez/higgsfield-claude-skills` 만 검증됨
+  - "ggttt 우회 절대 불가" → "현재 공개 표면 기준 불가" (단정 톤 약화, 실용 결론 동일)
+- **권고**: fal.ai Seedance 직접 호출 유지. Higgsfield 는 신모델 탐색/Marketing Studio/Brand Kit/Virality Predictor 보조 실험만. 첫 액션 = 무료 가입 + 퍼블릭 도메인 이미지로 Seedance 5초 1클립 fal.ai 1:1 비교
+- 갱신: [[sources/src-higgsfield-cli-claude-bypass-2026-05-12]] (10개 섹션, 교차검증 결과 포함), [[HOTSHEET]] 트리거 행 추가
+- 메타: 본 PC OAuth 환경에서 `gpt-5.5-pro` 거부 확인(ChatGPT 계정 불가). codex 차상위 = frontier(5.4 xhigh) 가 실용 최대치
+
 ## [2026-05-12] ingest | todayhumor-mining-playbook — 오늘의유머 → 광고 소재 1:1 변환 파이프라인
 
 - 출처: picosera/new/todayhumor_ideas/ 실전 운영 (2026-05-11~12 진행, 614/1469 시점 중단)
