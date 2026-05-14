@@ -33,7 +33,7 @@ updated: 2026-05-12
 | "광고 자율 24시간 / 신상품 파이프라인" | 스킬 `rubyrn-pipeline` | 7질문 → init_product 자동생성 |
 | "원온원" / "1:1 면담" | 스킬 `1on1` | 녹음+화자분리 → Notion DB 저장 |
 | "시장조사" 통합 리포트 (Word) | 스킬 `market-research` | 5개 서브에이전트 병렬, 광고 요소 8종 |
-| "GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" | [[domains/gfa-setting-automation]] + CLI `gfa-setting <광고계정ID>` | 7개 입력값 → N개 그룹+소재 atomic, DrissionPage, N=3 검증 |
+| "GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" | [[domains/gfa-setting-automation]] + CLI `gfa-setting <광고계정ID>` | 계정 1회 검증 → **멀티 잡 큐(잡 N개 일괄 입력 → 30초 cooldown 순차 실행)** → 각 잡 = 7입력값으로 그룹+소재 atomic. 새 rwc 캘린더 대응, `GFA_DEBUG_PAUSE_ON_ERROR=1` 라이브 디버깅 |
 | "시댄스 보이스 일관성" / "Seedance/Veo/Sora 다중 컷 보이스 통일" | [[tacit/video-gen-lessons]] §41 | 4지선다 → Voice Conversion(RVC/ElevenLabs)이 1순위, lip-sync는 2순위 |
 | "영상 합치기" / "AI 영상 컷 후처리" / "릴스 자막 합성" / "16:9 합성" | [[tacit/video-gen-lessons]] §42 | 원본음성+ASS 자막+freeze 금지 표준, scripts: `bj/v_output/scripts/v2_compose.py` |
 | "시댄스/Seedance 자르고 붙이기" / "이상한 단어·중국어 들어감" / "존댓말 prefix" / "AI 영상 native audio garbage" | [[tacit/video-gen-lessons]] §51 | Whisper(small) word-level transcribe → 의도 대사(motion_prompts) 매칭 → cut_overrides.json 큐레이션 → ffmpeg -ss/-to 정밀 trim. silencedetect/Gemini Vision/TTS 덮어쓰기/lipsync 4가지 모두 ❌ |

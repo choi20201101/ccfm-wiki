@@ -1,5 +1,12 @@
 # CCFM Wiki Log
 
+## [2026-05-14] ingest | GFA-Setting v0.1.x — 멀티 잡 큐 + rwc 캘린더 + 디버그 pause
+- 소스: `C:\Users\gguy\Desktop\GFA-Setting` master HEAD (commit 75472ff + 미커밋 작업트리)
+- domain: `wiki/domains/gfa-setting-automation.md` 에 §v0.1.x 업데이트 (2026-05-13~14) 신설 — (A) rwc 가상 스크롤 캘린더 대응 + `GFA_DEBUG_PAUSE_ON_ERROR=1` 라이브 디버깅, (B) 멀티 잡 큐 (입력 페이즈 `collect_group_setup_spec` + 실행 페이즈 `execute_group_setup`, `GroupSetupSpec` frozen dataclass, `JOB_COOLDOWN_SECONDS=30`, 잡 단위 격리)
+- 플레이북: §"UI 변경 / 셀렉터 깨짐 대응" 에 §0 디버그 pause 모드 추가 + §8.4 rwc 캘린더 사례 추가
+- index/HOTSHEET: GFA 카드 v0.1.x 변경 반영 (멀티 잡 큐 / 30초 cooldown / rwc / 디버그 모드)
+- 의도: 단일 잡 흐름이 v0.1.0 의 한계였음 — 같은 계정에 콘텐츠/캠페인 다른 잡들이 자주 발생 → 입력 한 번에 끝내고 잡 단위 commit. 첫 GFABrowserError 살린 채 DOM 검사할 수 있어야 셀렉터 깨짐 디버깅 속도가 단축됨.
+
 ## [2026-05-14] ingest | 피코세라 1차 하네스 (광고 소재 검수 루브릭) + ad-bdh 스킬
 - raw: `raw/skills/picosera-harness/` (rubric-v1.md + SUMMARY.md)
 - source: `wiki/sources/src-picosera-harness-v1-2026-05-14.md` — 체크리스트 25항목 + 17규칙 (0~5점)

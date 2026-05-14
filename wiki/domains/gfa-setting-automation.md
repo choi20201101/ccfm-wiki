@@ -4,7 +4,7 @@ type: domain
 domain: marketing-automation
 confidence: medium
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-14
 sources: [src-gfa-setting-skill-2026-04-30]
 ---
 
@@ -12,6 +12,7 @@ sources: [src-gfa-setting-skill-2026-04-30]
 
 > 네이버 성과형 디스플레이(GFA) 광고 그룹+소재 atomic 자동 등록 Claude 스킬.
 > v0.1.0 (2026-04-30) — N=3 dry-run 성공.
+> v0.1.x (2026-05-13~14) — 새 UI(rwc 캘린더) 대응 + 디버그 pause 모드 + 멀티 잡 큐.
 > 트리거: `GFA-Setting`, `GFA 세팅`, `GFA 광고 세팅`, `NAS 소재 GFA 업로드`, `네이버 광고 자동 세팅`, `GFA 그룹 생성`, `광고 소재 자동 등록`.
 
 ## 1줄 요약 (꺼내쓰기용)
@@ -19,7 +20,70 @@ sources: [src-gfa-setting-skill-2026-04-30]
 ```
 gfa-setting <광고계정ID>
 ```
-→ 7개 입력값(콘텐츠 경로/캠페인 ID/참조 그룹/베이스 이름/참조 소재/per_ad/랜딩 URL) 받아서 N개 광고 그룹+소재를 한 번에 생성.
+→ 계정 1회 검증 → **여러 잡(콘텐츠/캠페인/참조/소재) 일괄 입력** → 최종 confirm → 잡 #1 commit → 30초 cooldown → 잡 #2 commit → … → 종료 요약.
+한 잡 = 7개 입력값(콘텐츠 경로/캠페인 ID/참조 그룹/베이스 이름/참조 소재/per_ad/랜딩 URL) → N개 광고 그룹+소재.
+
+## v0.1.x 업데이트 (2026-05-13 ~ 2026-05-14)
+
+> 두 개의 후속 패치. v0.1.0 → master HEAD 사이의 운영상 큰 변화 두 가지.
+
+### A. 새 UI(rwc 캘린더) 대응 + 디버그 pause 모드 — 2026-05-13 (commit `75472ff`)
+
+GFA 콘솔의 광고 그룹 시작일시 입력 UI 가 antd DatePicker(readonly input + 클릭 → 캘린더 팝업) **→ rwc(react-window-calendar 류) 가상 스크롤 캘린더 + 별도 form 시간 input 분리 마크업**으로 교체됨. 기존 셀렉터 전부 깨짐.
+
+**변경**:
+- `operations/ad_sets.py:set_start_datetime` 전면 재작성 — picker trigger 가 input 이 아니라 **button**으로 바뀐 마크업 대응.
+- 신규 헬퍼: `_find_start_datetime_trigger`, `_find_form_time_input`, `_set_time_input_value`, `_scroll_rwc_calendar_to`.
+- 새 흐름: **trigger button click → rwc 셀까지 가상 스크롤 → 셀 click → form 시간 입력 → Tab commit**.
+- `debug.py` 신규 (`_assembled/src/gfa_setting/debug.py`) — 환경변수 `GFA_DEBUG_PAUSE_ON_ERROR=1` 시 `GFABrowserError` 발생 즉시 `input()` 대기. **사용자가 DevTools 로 DOM 검사 → 셀렉터 새로 따기 → 종료**까지 브라우저가 살아있음. 셀렉터 깨짐 디버깅의 결정적 단축.
+- `flows/group_setup.py`, `cli.py`: debug 모드일 때 per-group swallow 대신 즉시 raise 로 전파 (조용히 실패 → 다음 그룹 진행 패턴이 디버깅 시 방해됨).
+- 검증: 2026-05-13 새 UI 흐름 dry-run 성공.
+
+**운영 노트**:
+- 셀렉터 깨짐 의심 시 `GFA_DEBUG_PAUSE_ON_ERROR=1 gfa-setting <id>` 로 실행. 첫 에러 지점에서 멈추고 DevTools 사용 가능.
+- rwc 캘린더는 **가상 스크롤** — 셀이 DOM 에 없으면 스크롤로 먼저 만들어줘야 click 됨. `_scroll_rwc_calendar_to` 가 그 역할.
+
+### B. 멀티 잡 큐 (입력 일괄 → 순차 실행) — 2026-05-14 (working tree, 미커밋)
+
+같은 광고 계정 안에서 **콘텐츠/캠페인/참조 그룹/소재가 서로 다른 여러 잡**을 한 명령으로 입력해 두고 순차 실행. 다른 계정으로 가려면 새 명령.
+
+**흐름**:
+1. **계정 1회 검증** (CLI 인자 — 다른 계정은 새 명령)
+2. **입력 페이즈** (`_collect_input_phase` in `cli.py`):
+   잡 #1 입력 (콘텐츠 경로 → 캠페인 ID 검증 → 그룹 spec 입력 → 통합 확인) → `잡을 더 추가하시겠습니까? [y/N]` → `y` 면 잡 #2 입력 → … → `N` 으로 입력 종료
+3. **큐 요약 출력** → `총 N개 잡을 순차 실행합니다. 시작? [Y/n]` (`confirm_run_all`)
+4. **실행 페이즈**: 잡 #1 commit → 30초 cooldown → 잡 #2 commit → …
+5. **종료 요약**: `성공 X / 실패 Y (총 N잡 실행 시도)`
+
+**아키텍처 변경**:
+- `flows/group_setup.py` 의 단일 `run_group_setup_flow` 가 **입력 페이즈(`collect_group_setup_spec`)** + **실행 페이즈(`execute_group_setup`)** 둘로 분리.
+- `GroupSetupSpec` (frozen dataclass) — 입력 페이즈 산출물. 한 잡의 모든 입력값(`ctx / reference_group_name / base_name / reference_creative_name / materials_per_ad / landing_url_template / distributed / image_count / group_count`)을 freeze 해 담음.
+- **시작일시는 spec 에 포함 X** — 큐가 길어질 수 있어서 `execute_group_setup` 진입 시점에 `now + 50분` 으로 매번 재계산.
+- 기존 `run_group_setup_flow` 는 `collect → execute` 의 얇은 wrapper 로 유지 (backward compat).
+- `verify_account_with_retry`, `verify_campaign_with_retry` 가 `_` 접두 private → public 으로 승격 (cli 가 직접 호출).
+- 신규 prompts (`prompts.py`): `prompt_continue_with_next_job` (기본 N, 무한 입력 방지), `confirm_run_all` (기본 Y, 입력 다 끝났으면 보통 실행).
+- `cli.py:42` `JOB_COOLDOWN_SECONDS = 30` — 잡 간 cooldown. 봇 탐지 trade-off, 변경 시 본 페이지의 [§운영 제약](#운영-제약-계정-정지-위험) 참조.
+
+**격리 정책**:
+- 입력 페이즈에서 한 잡 입력이 실패(취소·이미지 0장·검증 실패)해도 큐는 멈추지 않고 다음 잡 추가 여부를 묻는다. **실패한 잡만 큐에서 제외**.
+- 실행 페이즈에서 한 잡 실행이 실패해도 다음 잡으로 계속. **잡 단위 격리**.
+- 전체 잡 실패 + 성공 0 → exit 1. 그 외 정상 종료(exit 0).
+- `KeyboardInterrupt` (Ctrl+C) — 깔끔히 빠져나오면서 그 시점까지의 성공/실패 요약 출력.
+
+**`GroupSetupResult` 변경**:
+- `cancelled=True` 제거. 입력 페이즈에서 취소/무효는 `collect_group_setup_spec` 가 `None` 반환 → cli 가 큐에서 제외. 실행 페이즈는 항상 created/partial/failed 만 추적.
+- 단일 잡 wrapper(`run_group_setup_flow`)는 backward compat 위해 spec=None 시 `GroupSetupResult(cancelled=True)` 그대로 반환.
+
+**테스트** (`_assembled/tests/test_cli.py`):
+- `test_cli_happy_path_single_job` — 잡 1개 정상.
+- `test_cli_happy_path_multi_job` — 잡 3개 순차 실행.
+- `test_cli_account_verify_fails_exits_2` — 계정 검증 실패 → exit 2.
+- `test_cli_no_jobs_collected_exits_0` — 입력 페이즈에서 잡 0개 → 정상 종료.
+- `test_cli_user_declines_run_all_exits_0` — 최종 confirm 에서 N → 실행 안 함.
+- `test_cli_execute_browser_error_exits_1` — 모든 잡 실패 → exit 1.
+- `time.sleep` 은 monkeypatch 로 무력화 (cooldown 대기로 테스트 늘어지지 않게).
+
+**.gitignore**: `.claude/settings.local.json` 추가 — PC 별 권한 허용 목록은 sync 하지 않음.
 
 ## 저장소 / 진입점
 
@@ -245,6 +309,18 @@ v0.1.0 은 happy path (N=3, 정상 GFA UI) 동작 검증됨. 그러나 **문서 
 
 GFA UI 가 antd 업데이트나 마크업 리팩터로 바뀌면 N=1 dry-run 부터 깨진다. 다음 절차로 잡는다.
 
+### 0. (v0.1.x 권장 1순위) `GFA_DEBUG_PAUSE_ON_ERROR=1` 로 라이브 디버깅
+첫 `GFABrowserError` 발생 시 브라우저가 살아있는 채로 `input()` 대기. **DevTools 열어서 깨진 element 의 새 셀렉터 직접 따고** 종료. dump 파일 보기 전 가장 빠른 단축.
+
+```bash
+# Windows PowerShell
+$env:GFA_DEBUG_PAUSE_ON_ERROR=1; gfa-setting 2380197
+# bash
+GFA_DEBUG_PAUSE_ON_ERROR=1 gfa-setting 2380197
+```
+
+debug 모드일 때 cli·group_setup 의 per-group swallow 가 꺼지고 즉시 raise — 첫 에러 지점이 살아 있는 그 페이지에 그대로 멈춤.
+
 ### 1. 어느 단계에서 깨졌는지 빠르게 식별
 실행 디렉토리에 자동 생성되는 진단 dump 로 구간 좁히기:
 
@@ -293,7 +369,7 @@ native value setter (`Object.getOwnPropertyDescriptor` 패턴) 는 antd Form sto
 1. **antd 모달 .ad-cms-modal 클래스** — 가장 자주 변경됨. `[role="dialog"]` 로 fallback.
 2. **이미지 카드 wrapper** — CSS-in-JS hash. `img.parentElement` (50~400px bbox) 로 회피.
 3. **버튼 텍스트** — "확인" / "다음" / "저장" / "+ 새 광고그룹" / "기존 광고 그룹 불러오기" / "모두 삭제하기" / "+ 이미지 추가". 한 글자 변경에도 매치 깨짐. 부분 매치 (`.includes`) 권장.
-4. **DatePicker 셀** — 캘린더 마크업이 antd minor 업데이트마다 자주 흔들림.
+4. **DatePicker 셀** — 캘린더 마크업이 antd minor 업데이트마다 자주 흔들림. **2026-05-13 antd DatePicker → rwc(가상 스크롤 캘린더) + form 시간 input 분리로 통째로 교체된 사례 있음** — picker trigger 가 input 이 아니라 button 으로 변하면 input.placeholder 매치 셀렉터부터 깨짐. 가상 스크롤 셀은 DOM 에 없으면 스크롤 먼저, 그다음 click. `operations/ad_sets.py:_find_start_datetime_trigger / _scroll_rwc_calendar_to / _find_form_time_input / _set_time_input_value` 참고.
 
 ## 미해결 / 향후 작업
 

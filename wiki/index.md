@@ -112,11 +112,12 @@ Kling/Gemini/ffmpeg 실전 이슈 전체 집합.
 - 글로벌 동기화: `ccfm-wiki/skills/grill-me-ccfm/` 원본 → 새 PC에서 `install-grill-me-ccfm.ps1` 한 줄로 `~/.claude/skills/` 설치 (Code + Desktop 공통)
 - 기존 스킬과 경계: bob-auto-spec(Spec 초안) ≠ grill-me-ccfm(방향성+Don't List). 보완 관계.
 
-### 🔥 GFA 광고 세팅 자동화 — [[domains/gfa-setting-automation]] (NEW 2026-04-30)
+### 🔥 GFA 광고 세팅 자동화 — [[domains/gfa-setting-automation]] (NEW 2026-04-30, UPDATED 2026-05-14)
 **"GFA 세팅" / "GFA 광고 세팅" / "NAS 소재 GFA 업로드" 요청 시 진입.**
-- `gfa-setting <광고계정ID>` → 7개 입력값 → N개 광고 그룹+소재 atomic 등록
+- `gfa-setting <광고계정ID>` → 계정 1회 검증 → **멀티 잡 큐 입력 페이즈** (잡마다 콘텐츠/캠페인/참조/소재 입력, `잡 더? [y/N]` 반복) → 최종 confirm → 실행 페이즈 (잡 #N commit → 30초 cooldown → 잡 #N+1)
 - DrissionPage 브라우저 자동화 (네이버 OpenAPI 차단 우회), 참조 그룹 UI 복제로 27 파라미터 빌더 제거
-- v0.1.0: 단위 163/163 + ruff/mypy strict 0 + N=3 E2E 성공 (CCFM-인완-네리티아)
+- v0.1.0 (2026-04-30): 단위 163/163 + ruff/mypy strict 0 + N=3 E2E 성공 (CCFM-인완-네리티아)
+- v0.1.x (2026-05-13~14): **새 UI rwc 캘린더 대응** (antd DatePicker → 가상 스크롤 캘린더 + form 시간 input 분리), **디버그 pause 모드** (`GFA_DEBUG_PAUSE_ON_ERROR=1` 시 첫 에러 지점에서 라이브 디버깅), **멀티 잡 큐** (입력/실행 페이즈 분리, GroupSetupSpec frozen dataclass, 잡 단위 격리)
 - 코덱스 감사 결과 잔존 이슈 명문화 (antd 안전가정 문서-코드 불일치, partial 출력 누락, secrets 마스킹 무력화)
 - 어느 컴퓨터에서든: `git clone Min-Gil-Sang/GFA-Setting` → `_assembled` → `pip install -e .[dev]` → `cp .env.example .env` → 최초 1회 수동 로그인 → `gfa-setting <ID>`
 
