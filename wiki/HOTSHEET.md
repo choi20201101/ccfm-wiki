@@ -24,6 +24,8 @@ updated: 2026-05-12
 | "외국인 인플루언서 영상" | [[sources/src-foreign-influencer-guide]] | fal.ai + Kling Avatar v2 Pro, 33편 |
 | "AI 아바타 / OmniHuman / Aurora / Rhubarb" | [[AI-Avatar-Automation-Guide]] | 아바타 자동화 종합 가이드 |
 | "DA 크리에이티브 / API 선택 / Gemini 직호출" | [[domains/da-creative]] | API 선택 원칙(2026-04-14 확정), 레퍼런스 포맷 |
+| "피코세라 하네스 기준으로 필터링해줘" / "소재 점수 분류" / "소재 검수" | [[sources/src-picosera-harness-v1-2026-05-14]] §3 | 비전 체크리스트 25 → 17규칙 → 0~5점. 비전은 서브에이전트 격리 |
+| "ad-bdh" / "광고 소재 검수 파이프라인" / "루브릭 교체" | [[domains/ai-automation]] + 스킬 `ad-bdh` | bob→dd→harness, 루브릭=교체 가능 YAML, 멀티패스 |
 | "컷편집 / ffmpeg / Smart Trim / xfade" | [[domains/content-ai-automation]] §1 + [[tacit/video-gen-lessons]] §11·§15 | 7씬 구조, filter 디버깅 함정 |
 | "viral / 밈 구조 / 시딩 전략 / 알고리즘" | [[domains/viral]] (실행/전략) + [[tacit/viral-patterns]] (감각) | 실행은 domain, 휴리스틱은 tacit |
 | "QSCV / 서비스 품질 / 고객여정 / 매체 기준" | [[qscv/index\|qscv]] | 14문서 47청크, 디자인·미디어·매체별 |

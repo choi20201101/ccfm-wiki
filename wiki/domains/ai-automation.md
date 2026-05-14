@@ -17,7 +17,22 @@ sources: []
 _내용 추가 예정_
 
 ## DA 자동화
-_내용 추가 예정_
+
+### ad-bdh 스킬 — 광고 소재 검수 파이프라인 (2026-05-14 추가)
+
+광고 소재를 표준 폴더로 정리하고 **교체 가능한 루브릭**으로 자동 분류·검수하는
+브랜드 무관 스킬. 피코세라 1차 하네스([[sources/src-picosera-harness-v1-2026-05-14]])를 일반화.
+경로: `~/.claude/skills/ad-bdh/`.
+
+- **BDH 3단**: bob(브랜드 셋업 7질문 → brand-config.yaml) → dd(수집·빌드·생성·검수 5 step 분해)
+  → harness(루브릭 강제 + 서브에이전트 검수)
+- **핵심 설계 — 루브릭은 코드가 아닌 파일**: `rubric.v1.yaml`(checklist/anchors/rules 3블록).
+  기준이 바뀌면 `rubric.v2.yaml` 새로 추가, 결과는 `_소재검수/v1/`·`/v2/`로 분리 저장 →
+  1차를 덮어쓰지 않고 비교 가능. 다른 관점은 별도 프로파일(멀티패스).
+- **스크립트**: `classify.py`(루브릭 YAML 읽는 데이터 드리븐 엔진, 코드 불변) ·
+  `score_vision.py`(루브릭 기반 비전 호출) · `organize.py`(폴더계약 00~05 정리) ·
+  `hooks/on_creative_created.py`(소재 생성 감지 → 검수 큐 적재)
+- **검수 트리거**: hook 자동(settings.json) + 수동("ad-bdh 검수") 둘 다. 비전 판단은 서브에이전트 격리.
 
 ## 러닝스 누적
 _내용 추가 예정_

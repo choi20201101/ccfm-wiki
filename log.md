@@ -1,5 +1,13 @@
 # CCFM Wiki Log
 
+## [2026-05-14] ingest | 피코세라 1차 하네스 (광고 소재 검수 루브릭) + ad-bdh 스킬
+- raw: `raw/skills/picosera-harness/` (rubric-v1.md + SUMMARY.md)
+- source: `wiki/sources/src-picosera-harness-v1-2026-05-14.md` — 체크리스트 25항목 + 17규칙 (0~5점)
+- domain: `wiki/domains/da-creative.md` "소재 검수 하네스" 섹션 / `wiki/domains/ai-automation.md` "ad-bdh 스킬"
+- tacit: `wiki/tacit/creative-patterns.md` "소재 점수 판정 기준" 추가 (confidence: medium)
+- index/HOTSHEET: "피코세라 하네스 기준으로 필터링해줘" 트리거 등록
+- 의도: 트리거 한 줄로 소재를 1차 루브릭으로 분류·필터링. 기준은 v2로 교체 가능(멀티패스).
+
 ## [2026-05-12] ingest | Higgsfield CLI ↔ Claude Code 연동 가능성 + ggttt 식 우회 불가 (3중 교차검증)
 
 - 출처: 사용자 질문 "higgsfield.ai/cli 클로드 연동? ggttt 같은 우회? Seedance 2.0 + 웹 SaaS?"
