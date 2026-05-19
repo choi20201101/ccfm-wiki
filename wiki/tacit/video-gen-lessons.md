@@ -1,13 +1,31 @@
 ---
 aliases: ["영상 생성 교훈", "Kling·Gemini 실전 이슈"]
-tags: [tacit, video-generation, ai-pipeline, skincare, melable]
+tags: [tacit, video-generation, ai-pipeline, skincare, melable, seedance, elevenlabs]
 confidence: high
-source: 메라블 피코샷 크림 30+ 영상 제작 경험 (2026-04-13~14)
+source: 메라블 피코샷 크림 30+ 영상 제작 + seebio 라디오 빌드 (2026-04-13 ~ 2026-05-19)
 ---
 
 # AI 영상 자동화 파이프라인 — 실전 교훈
 
 > 30편 제작 / 실패 / 재생성 / 자막 재번역을 통해 얻은 암묵지
+
+## [2026-05-19] seebio 비오티아 라디오 빌드 (시댄스 + ElevenLabs + AE)
+
+상세 페이지: [[domains/seebio-radio-pipeline]]
+
+### 핵심 암묵지
+- **TTS 전면 교체는 시댄스 lip-sync를 망가뜨림** — S2S(eleven_multilingual_sts_v2)가 정답. TTS는 surgical splice(단어 1개 0.5초)에만 사용.
+- **시댄스 한국어 발음은 자주 깨짐** (두피→두비, 머리카락→머리카리, 휑해→흰해). 같은 prompt로도 매 생성마다 다름 → **재생성이 가장 효과적** (R5 1순위 trim 다음).
+- **Whisper 자체도 오인식** (84.2% → 83.2%). 자막은 기획안 원문(YAML) + Whisper 타이밍 alignment로 (SequenceMatcher).
+- **보이스 청취 선정 필수** — "professional" 라벨이어도 실제 들으면 어색한 경우 많음. 후보 4~5개 S2S 샘플 만들어 사용자에게 직접 들려주고 고르게 함. Anna Kim/Eunhye/40대 전문가 등 시도 후 청취로 결정.
+- **플로팅 배너는 방송 로고 제외 전부 금지** — CG 인서트, 제품 PIP, 화자 라벨 다 빼는 게 깔끔. 사용자가 매번 "다 빼"라고 함.
+- **AEP 자산 완전 분리 강제** — 최종 mp4 하나만 import하면 "이거 다 합쳐져있네?" 컴플레인. 컷별 영상 + 로고 + 자막 텍스트 레이어 모두 별도. `comp.layers.addText()` per chunk.
+- **자막 청크 사이 공백 금지** — 마지막 청크 종료 ~ 다음 청크 시작 사이 0.04초 외엔 무공백. 청크는 다음 청크 직전까지 표시.
+- **EBU R128 -16 LUFS 정규화 필수** — 컷별 화자 음량 편차 해소 (loudnorm filter).
+- **자막은 한 줄 8~12자** — TikTok/릴스 스펙, 두 줄은 너무 답답하다고 사용자가 컴플레인.
+- confidence: high (사용자가 명시적으로 "이정도 이하 결과는 절대로 나오게 해선 안됨" baseline으로 지정)
+
+---
 
 ## 1. Kling API 1003 에러 — **실제 원인은 시계 drift였음**
 

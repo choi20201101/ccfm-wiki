@@ -346,3 +346,10 @@
 - tacit: `wiki/tacit/coding-lessons.md` + `wiki/tacit/operational-heuristics.md` 신규 엔트리
 - index: 핵심지식에 🏆 항목 등록
 - 의도: 다른 PC/Mac에서 NAS 마운트만 하면 동일 파이프라인 재현 가능하도록 박제
+
+## [2026-05-19] ingest | seebio 비오티아 라디오 빌드 — 영상 광고 baseline 등록
+- source: `C:\Users\gguy\Desktop\seebio\pd\con1\build\` (사용자 직접 작업)
+- domain: `wiki/domains/seebio-radio-pipeline.md` 신규 (8단계 파이프라인 + 베이스라인 사양)
+- tacit: `wiki/tacit/video-gen-lessons.md` 에 [2026-05-19] 엔트리 추가
+- 의도: 사용자가 "이정도 이하 결과는 절대로 나오게 해선 안됨" 품질 baseline으로 지정. 시댄스+ElevenLabs+AE 파이프라인 재사용 위해 박제.
+- 함정 누적: TTS 전면 교체 금지 (lip-sync 깨짐), 보이스 청취 선정 필수, 플로팅 배너 금지 (로고만), AEP 자산 완전 분리, 자막 8~12자 한 줄, 청크간 공백 금지, EBU R128 정규화
