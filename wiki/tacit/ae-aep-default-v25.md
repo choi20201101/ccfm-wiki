@@ -131,3 +131,28 @@ cp Desktop/wiki_pending/ae-aep-default-v25-2026-05-03.md \
    ccfm-wiki/wiki/tacit/coding-lessons.md  # §AE-25-기본 append
 git -C ccfm-wiki add . && git commit -m "tacit: AE .aep 자동 빌드 기본 25.0 + jsx 패턴"
 ```
+
+---
+
+## [2026-05-05] AE 헤드리스 빌드 splash/welcome 모달 함정 (5번째 함정)
+
+confidence: high (박사대화 v05/v06 빌드 실제 timeout)
+
+AfterFX 헤드리스 빌드 (`AfterFX.exe -r script.jsx`)가 영문 savePath로 회피해도 **splash/welcome screen 모달 때문에 무한 정지**하는 함정.
+
+### Why
+박사대화 작업(2026-05-05)에서 AE 25.0과 26.0 둘 다 5분 timeout 내 .aep 생성 실패. 원인: **AE 첫 실행 시 splash / license / welcome screen이 모달로 떠있으면 jsx 자동 실행 안 됨**. 영문 savePath로 회피했어도 splash 모달은 별개 함정.
+
+박사_피부역노화 v02(2026-05-03)때는 영문 savePath로 즉시 성공했지만 같은 PC에서 v05/v06 작업 시 실패. AE 라이센스 갱신 시점/welcome screen 캐시 차이 추정.
+
+### How to apply
+
+1. **첫 시도**: 표준 패턴 (영문 savePath, taskkill 잔존 정리, `Popen + sleep loop`로 .aep 파일 생성 감지). 5분 timeout
+2. **실패 시 옵션**:
+   - (a) **GUI 1회 실행** — AE를 사용자가 한 번 띄워서 splash 닫고 빈 프로젝트 상태로 만든 후 다시 jsx Run. 이걸 README에 명시해서 브랜드팀에 인계
+   - (b) **background 길게 두기** — `Popen` + `run_in_background=true`로 무한 대기. 박사대화 작업에서 1시간 후 .aep 우연히 완료된 사례 있음
+   - (c) **AE 26.0으로 fallback** — 25.0이 안되면 26.0 시도. 단 직원 인계용은 25.0 호환 권장
+3. **패키지 README에 가이드 명시** — .aep 자동 생성 실패 시에도 jsx 들어 있으니 사용자가 GUI에서 Run 한 번이면 1분 안에 .aep 생성. zip에 jsx + fcpxml + mp4 모두 포함이라 .aep 없어도 사용 가능
+4. **mp4가 가장 빠른 옵션** — 편집 불필요하면 `00_완성영상/<final>.mp4` 그대로 사용 (모든 효과 burn-in 완료)
+
+기존 4함정 (footage lock 등) 외 **5번째 함정** = splash modal.

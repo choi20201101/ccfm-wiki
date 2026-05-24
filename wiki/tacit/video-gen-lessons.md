@@ -1807,3 +1807,51 @@ dialog.start += shift; dialog.end += shift
 - confidence: high (담당자 v05 컴플레인 → v06 tail 0.40s 확장 → "오 잘된거같음!" 1발 OK)
 - source: 2026-05-12 박사대화_루비알엔클렌저_70s v06 재빌드
 - related: §51 Whisper transcribe + 정밀 cut, §42 후처리 표준
+
+## §53 — 한국어 텍스트(채팅창·USP·자막)는 시드에 박지 말고 별도 PNG 합성 (2026-04-26)
+
+confidence: high (율이 BJ 광고 v01→v04 4회 학습)
+
+BJ 영상의 채팅창·USP 카피·자막 등 **한국어 텍스트가 들어가는 모든 요소**는 시드/시댄스 단계에 박지 말고 합성 단계에서 별도로 처리한다.
+
+### Why
+- nano-banana-pro · gemini-3-pro-image · 시댄스가 한국어 글리프 못 그림 → 시드/영상에 깨진 글자 박힘
+- 율이 v01-v04에서 우측 채팅창 영역에 깨진 한국어 노출 → 마스킹 + ASS 오버레이 후처리 추가 작업
+- 시드 prompt에 "Korean chat overlay box with usernames and comments" 명시하면 모델이 무리해서 깨진 글씨 박아넣음
+
+### How to apply
+
+1. **시드 prompt에는 인물·옷·조명·배경·소품만 명시.** 텍스트/UI/한국어 라벨 명시 금지.
+2. **채팅창은 합성 단계에서**:
+   - GPT image_gen (Adobe MCP / 직접 OpenAI API)로 한국어 박힌 채팅창 PNG 생성, 또는
+   - PIL로 채팅 박스 PNG 생성, 또는
+   - ASS 자막 트랙 (Malgun Gothic) — 시간 흐름 효과까지 가능
+3. **USP 카피·하단 자막도 동일** — PIL/ASS로 별도 layer
+4. **시드/시댄스 출력에 텍스트가 박혀버린 영역**은 ffmpeg `drawbox`로 마스킹 후 한국어 PNG/ASS 덮어쓰기
+
+cross-ref: §54 (GPT burn-in 함정) · [[creative-patterns]] B30 social proof 컷 분배 (pictogram만, 텍스트는 ASS)
+
+## §54 — GPT-5.4 image gen burn-in 텍스트 함정 (2026-05-05)
+
+confidence: high (박사대화 v05/v06 마스터 시드 재현 사례)
+
+GPT-5.4 (codex CLI imagegen)로 한국 TV 토크쇼 풍 인물 portrait 생성하면 **자동으로 burn-in 텍스트 합성**됨. 자막·좌하단 네임플레이트·채널 로고(채널A/MBC/KBS)·**가짜 자격 정보** ("연세대학교 의과대학 졸업" 등)까지 임의 생성.
+
+### Why
+"Korean health TV talk show interview scene" 같은 키워드가 들어가면 GPT가 학습 데이터의 한국 다큐 스타일 그대로 재현. 이전 박사_피부역노화 v02(2026-05-03)에서 "닥터 김영자/前 서울대병원" 자동 반영으로 실제 큰일날 뻔한 패턴 재현.
+
+### How to apply
+
+1. **negative 강력 + 구체적**:
+   ```
+   ABSOLUTELY CRITICAL — DO NOT GENERATE: NO Korean text anywhere,
+   NO English text anywhere, NO name plates, NO lower-third graphics,
+   NO channel logos (no Channel A / no MBC / no KBS / no SBS / no any
+   broadcast network logo), NO subtitle text, NO program title text,
+   NO doctor credentials text, NO show name overlay, NO chyron, NO ticker
+   ```
+2. **"talk show" 키워드 빼기** — "talk show interview scene" → "documentary interview portrait" / "modern editorial portrait"
+3. **단 "editorial portrait" 또 다른 함정** — GPT가 "어두운 잡지 표지" 톤으로 가버려서 의상/배경 완전 다르게 해석. 톤 일관성 잡으려면 동료 ref 이미지 첨부
+4. **ref 이미지 첨부 필수** — 첫 마스터 잘 나왔으면 그걸 ref로 두 번째 마스터 만들기 ("paired companion portrait that matches the attached reference"). codex CLI는 `-i ref.png` 다중 첨부 지원 (이때 prompt는 stdin으로 전달, `-i`가 variadic이라 모호)
+
+cross-ref: §53 (한국어 별도 PNG 합성) · [[creative-patterns]] B30 의인화 캐릭터 prompt 7 specs · [[../reference_codex_imagegen_builtin]]

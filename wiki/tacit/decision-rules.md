@@ -124,3 +124,27 @@ contradiction: none
   - confidence는 낮게 시작(보통 low), 여러 케이스 누적되면 상향
 - 출처: 2026-04-13 DW1X3RRk_7Q 세션 피드백
 - confidence: high
+
+### [2026-05-05] 결과물 출력 전 항상 자체 검증 + 서브에이전트 eval
+
+**룰**: 코드/파일 변경 후 결과물을 사용자에게 보내기 전에 **반드시 자체 검증 + 서브에이전트 eval** 단계 거치기. 사용자가 매번 검수해서 누락/오류 잡아주는 건 비효율 + 신뢰 저하.
+
+**Why**: 박사대화 작업 v06에서 자막 regex가 prompt 변경에 깨져서 C1/C2/C4 자막 누락. 사용자가 영상 보고 발견. 사용자 명시: "아예 검증을 안하는 거 같은데? 검토랑 eval 항상 해야 하는데 왜 놓치지?" — Bob SDD+DDD의 eval 단계를 매번 빼먹은 패턴.
+
+**How to apply**:
+1. **자체 검증 (산출물 만든 직후)**
+   - 영상: `ffprobe`로 duration/codec/audio stream 확인
+   - 자막 ASS: 모든 컷 dialog 들어갔는지 — yaml/source와 cross-check (event 수 = 컷 수 이상)
+   - 패키지: 파일 수/사이즈, 핵심 파일 (.aep, .mp4, .ass) 존재 확인
+   - 패턴: "예상 vs 실제" 한 번 비교 — 다르면 즉시 디버깅
+2. **서브에이전트 eval (사용자에게 던지기 전)** — 복잡한 multi-step 산출물은 `general-purpose` 서브에이전트로 검증
+   - 체크리스트 prompt: 모든 컷 dialog 자막 / 자막 timing과 컷 timing / 강조어 색 적용 / codec·duration / 패키지 파일 누락 — 라인 번호와 함께 보고
+   - 서브에이전트가 grep/파싱/ffprobe 등으로 검증
+3. **눈으로 확인 못 하는 영역(영상 시각/음성)** 은 검증 한계 명시 + 사용자에게 그 부분만 confirm 요청
+   - "자막/timing/패키지 파일 자체 검증 OK. 발음/voice 일관성은 직접 청취 필요"
+4. **regex/parsing 코드 변경 시 우선 검증** — yaml/json/text 추출 regex는 source 변경 시 깨지기 쉬움. 새 source에 대해 최소 1번 unit test (스크립트 inline)
+
+**적용 예외**: 사용자가 "빨리 그냥 던져" 명시한 경우. 그 외엔 항상.
+
+- confidence: high
+- cross-ref: [[../tacit/coding-lessons]] §38 codex/ggttt · Bob SDD+DDD eval 단계

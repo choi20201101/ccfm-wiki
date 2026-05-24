@@ -175,3 +175,43 @@ contradiction: none
 
 **confidence**: high (5단 × 다중 브랜드 운영 검증)
 **cross-ref**: [[sources/src-video-automation-m1-m5-2026-05-12]] · [[tacit/coding-lessons]] §[2026-05-12]
+
+
+---
+
+### [2026-05-08] 사용자 Chrome 프로세스 전역 종료 금지
+
+**룰**: `Get-Process chrome | Stop-Process -Force` · `taskkill /IM chrome.exe` · `pkill chrome` 같은 전역 Chrome 종료 명령 절대 금지. 동등한 `chromium` / `chromedriver` 전역 종료도 동일. node·python·ffmpeg 같은 다른 광범위 프로세스도 사용자 확인 없이 일괄 kill 금지.
+
+**Why**: 2026-05-08 네이버 블로그 스크래퍼 디버깅 중 DrissionPage가 좀비 Chrome 잡으려는 줄 알고 모든 Chrome 프로세스를 한 번에 죽였더니 **사용자가 동시에 돌리던 다른 자동화 Chrome들도 다 같이 죽음**. 사용자는 항상 여러 Chrome 자동화를 병렬로 운용 중 — DrissionPage / Selenium / 사용자 수동 세션 등.
+
+**How to apply**:
+- DrissionPage 인스턴스 충돌 시: chrome 죽이지 말고 **격리된 user_data_dir + 고유 포트**로 새 인스턴스 띄우기
+  ```python
+  co.set_user_data_path(tempfile.mkdtemp(...))
+  co.set_local_port(9333)
+  ```
+- 추가 인자: `--no-first-run`, `--no-default-browser-check` (첫 실행 모달 회피)
+- 정 chrome 정리가 필요하면 PID 명시해서 그 인스턴스만 종료
+
+**confidence**: high (실제 사고)
+
+---
+
+### [2026-05-XX] User Temp 정리 background 실행이 자기 task output 삭제
+
+**룰**: User Temp(`$env:TEMP` = `C:\Users\<user>\AppData\Local\Temp`) 정리 명령은 가급적 **inline** 실행. `run_in_background`로 돌리면 그 task의 output 파일(`%TEMP%\claude\...\tasks\<id>.output`)이 같은 Temp 폴더 안이라 cleanup이 자기 output을 같이 쓸어버려서 결과를 못 읽는다.
+
+**Why**: Claude Code background task output 디렉토리는 `%TEMP%\claude\...` 경로 자동 생성. Temp 정리 명령이 자기 자식 디렉토리까지 sweep하면서 output도 같이 날아감. task-notification은 와도 Read로 결과 못 읽음.
+
+**How to apply**:
+- 가급적 inline 실행 (run_in_background 없이)
+- 굳이 background로 돌려야 하면 cleanup 스크립트가 `$env:TEMP\claude` 폴더는 명시적으로 제외:
+  ```powershell
+  Get-ChildItem $env:TEMP -Exclude 'claude' -Force | Remove-Item -Recurse -Force
+  ```
+- 또는 output을 D 드라이브 등 다른 위치로 redirect
+- output 없이도 검증 가능하도록 작업 끝에 디스크 여유 공간을 별도 명령으로 확인하는 follow-up 준비
+
+**confidence**: high (재현 가능)
+**cross-ref**: [[../sources/src-mode-hooks]] freeze 모드 보호 후보

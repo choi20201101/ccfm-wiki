@@ -1768,3 +1768,118 @@ cmd.exe /c "schtasks /Create /TN <Name> /SC ONCE /SD 2026/05/12 /ST 09:00 /TR \"
 - source: 2026-05-12 3팀 영상 자동화 M1~M5 위키 등록 ([[sources/src-video-automation-m1-m5-2026-05-12]])
 - confidence: high (실운영중, 다중 브랜드 케이스 검증됨)
 - cross-ref: [[domains/content-ai-automation]] · [[tacit/video-gen-lessons]] · [[tacit/chatgpt-web-automation]]
+
+## [2026-05-03] fal.ai vendor-prefixed endpoint 접두어 함정
+
+confidence: high (Seedance v2 + GPT Image 2 두 vendor 재확인)
+
+fal.ai에서 외부 vendor (ByteDance, OpenAI 등) 모델은 v2/신규 시리즈일수록 **`fal-ai/` 접두어 없이** vendor 슬러그로 직접 호출.
+
+| 모델 | endpoint 형식 |
+|---|---|
+| Seedance v1 (fal 내장) | `fal-ai/bytedance/seedance/v1/lite/image-to-video` |
+| Seedance v2 (vendor 외부) | `bytedance/seedance-2.0/fast/reference-to-video` (접두어 X) |
+| GPT Image 2 edit (OpenAI) | `openai/gpt-image-2/edit` (접두어 X) |
+| GPT Image 2 t2i (OpenAI) | `openai/gpt-image-2` (접두어 X) |
+
+**Why**: 2026-05-03 율이 BJ 광고 파일럿 + 2026-05-24 skin-ba-demo v7 양산 재확인. fal queue는 어떤 path든 `IN_QUEUE`를 돌려줘서 정상 응답으로 오해 유발하지만, 실제 처리 시점에 `Path /xxx not found` / `Application "openai" not found` 에러 raise. 변종 5종(`seedance-v2`, `seedance2`, `seedance/2.0`, `seedance/v2`, `seedance-2`) 모두 404. fal.ai 페이지 슬러그 그대로 써야 동작.
+
+**How to apply**:
+- v1 컨벤션(`fal-ai/<vendor>/<model>/v1/...`) 복붙 금지
+- subscribe 실패 시 큐 응답이 IN_QUEUE라도 신뢰하지 말고 `/requests/{id}` polling으로 본문 확인 (큐 ack ≠ endpoint 유효)
+- 새 fal 모델 추가 시 항상 fal.ai 페이지의 정확한 슬러그 우선
+- 검증된 endpoint: `bytedance/seedance-2.0/fast/reference-to-video` (720p/480p, 4-15s, 9 image + 3 audio + 3 video ref, $0.2419/s @ 720p fast)
+
+cross-ref: [[../reference/fal-ai-endpoints]] (없으면 생성)
+
+## [2026-05-02] PowerShell .ps1 한글 인코딩 — UTF-8 BOM 필수
+
+confidence: high (반복 함정)
+
+### 룰
+Windows PowerShell 5.1 환경에서 `.ps1` 파일에 한글이 들어가면 **반드시 UTF-8 with BOM**으로 저장.
+
+### Why
+- PowerShell 5.1 (`powershell.exe`)의 기본 파일 읽기 인코딩 = 시스템 ANSI 코드페이지 (한국어 Windows = cp949)
+- Claude Code의 Write tool은 UTF-8 **without BOM**으로 파일 작성
+- 결과: PS 5.1이 한글 바이트를 cp949로 잘못 디코딩 → 글자 깨짐 + 따옴표/괄호 매칭 깨져 ParserError
+
+증상 예시:
+```
+The string is missing the terminator: ".
+Missing closing '}' in statement block...
+```
+
+### How to apply
+한글 포함 ps1 작성 직후 BOM 변환:
+```powershell
+$path = "...\script.ps1"
+$content = Get-Content $path -Raw -Encoding UTF8
+$utf8Bom = New-Object System.Text.UTF8Encoding($true)
+[System.IO.File]::WriteAllText($path, $content, $utf8Bom)
+```
+
+또는 처음부터 한글을 영어로 작성 (BOM 불필요). PowerShell 7+ 만 쓰는 환경이면 BOM 없어도 OK (default UTF-8). 사용자 컴퓨터에 PS 7 보장 못 하면 BOM이 안전.
+
+## [2026-05-05] generate.mjs 새 영상 추가 시 4곳 동기 필수
+
+confidence: high (B30 1차 실행 14컷 모두 스킵 사례)
+
+`Phase_A/_gpt_automation/scripts/generate.mjs`에 새 영상 (B30, B31, …) 추가할 때 다음 4곳을 모두 동기. 한 곳 빠뜨리면 14컷 모두 스킵되거나 잘못된 ref 첨부.
+
+### 4곳 체크리스트
+
+1. **`buildPrompt()` 함수 분기** (~line 233)
+   - video별 PERSONA / 톤 / 출력 사양 분기
+   - B30처럼 캐릭터 시드 사용하는 경우 `Reference 1 = character seed` 명시
+
+2. **attach 분기** (main loop ~line 382)
+   - 어떤 ref PNG들을 첨부할지
+   - 인물 face seed 영상 vs B23-B29 (face 없이 product만) vs B30 (character seed + product)
+
+3. **prerequisite 체크 분기** (main loop ~line 365) — **가장 자주 빠뜨리는 곳**
+   - 시드 파일 존재 확인 (없으면 `continue`로 컷 스킵)
+   - attach 분기만 수정하면 prereq에서 person_seed/face_ref 못 찾고 모든 컷 스킵
+
+4. **CSEED_PROMPTS 등록** (cseed 모드)
+   - 캐릭터 시드 사용하는 새 영상이면 cseed prompt 추가
+
+### 함정 케이스 (B30 1차)
+attach·buildPrompt만 추가하고 prereq 분기 안 수정 → "missing seed/face for B30" 14번 출력, output 폴더 비어있음, `exit 0` (조용히 실패). 로그 봐야 알아차림 — mp4 생성 개수 직접 확인 필수.
+
+### How to apply
+- 새 영상 추가 시: buildPrompt → attach → prereq → CSEED_PROMPTS 순서로 4곳 다 수정 후 **1컷 probe**로 검증 (`generate.mjs id <video>_cut1`)
+- 코드 수정 후 첫 실행은 1-2컷만 (probe / id 모드)으로 한 후 14컷 일괄 (video 모드) 진입
+- background 작업 완료 알림 후 반드시 결과물(mp4 개수, 폴더 ls) 확인 — exit 0이 성공 아님
+
+## [2026-05-23] ASS BorderStyle 3 (opaque box) — OutlineColour가 박스 fill 색
+
+confidence: high (대만 광고 50편 첫 발견 + 즉시 색 재배치로 해결)
+
+libass ASS V4+ Style의 `BorderStyle=3` (opaque box) 모드에서 박스 색 매핑:
+- **PrimaryColour** = 글씨 색
+- **OutlineColour** = 박스 fill 색 ← 핵심
+- **BackColour** = 박스 외부 그림자 색 (`Shadow > 0`일 때만)
+- `Outline` 숫자값 = 박스 padding 두께 (글씨 둘레 여백)
+
+### Why
+2026-05-23 새벽 대만 광고 50편에 §35.10 BorderStyle 3 박스 적용했는데 BackColour를 박스 색으로 착각해서 OutlineColour를 PrimaryColour와 같은 색으로 설정. 결과:
+- TopRed = 흰박스 + 흰글씨 → 빈 박스만 보임
+- CTABox = 검정박스 + 검정글씨 → 사용자 컴플레인 "검정배경에 검정글씨 안 보임"
+
+색 재배치로 즉시 해결.
+
+### 올바른 예시 (대만 광고용)
+```
+Style: TopRed,    Microsoft JhengHei, 84,  &H00FFFFFF, &H00FFFFFF, &H001E1EE1, &H80000000, ..., 3, 10, 0, 8, ...
+Style: TopYellow, Microsoft JhengHei, 74,  &H00000000, &H00000000, &H0000F0FF, &H80000000, ..., 3, 10, 0, 8, ...
+Style: CTABox,    Microsoft JhengHei, 116, &H00000000, &H00000000, &H0000F0FF, &H80000000, ..., 3, 18, 0, 5, ...
+```
+- 빨강 박스 + 흰 글씨 / 노랑 박스 + 검정 글씨
+- BackColour는 어두운 반투명 그림자로 명도 대비 보조
+
+### How to apply
+- BorderStyle=3 ASS 만들 때 **OutlineColour ≠ PrimaryColour 강제**. 둘 다 같은 색이면 글씨 사라짐
+- 박스 색 바꾸려면 OutlineColour 수정 (BackColour 아님)
+- **빠른 검증**: 1편만 burn 후 ffmpeg로 ASS 적용 시간대 frame 추출해서 박스+글씨 둘 다 보이는지 확인. 50편 전체 합성 후 발견하면 재합성 비용
+- §35.10의 "PrimaryColour나 `\1c` accent 색이 박스 색과 같으면 투명" 경고가 이 함정 — 박스 색 = OutlineColour임을 명시했어야

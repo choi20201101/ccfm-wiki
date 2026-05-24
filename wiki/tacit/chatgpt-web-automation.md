@@ -243,3 +243,26 @@ time.sleep(8)  # src 안정화
 | 영구 프로필 (§7) | 일회성 자동 실행 (한도 우회 등). 한 번 로그인 후 unattended | unattended 가능, CDP 셋업 불필요 | 셀렉터 깨지면 진단 어려움, 응답 캡처 의존 |
 
 샤르드 같은 대량 운영 = CDP. 우회 일회성 작업 (v6_hero S06/S07/S11) = 영구 프로필.
+
+---
+
+## §8 [2026-05-22] Rate-limit 다층 카운터 — 분당/시간당/24h 누적, 임계 후 6h+ cool-down
+
+confidence: high (v3 batch 41/50 마감으로 실증)
+
+"GPT 크롬은 한도없어"는 부분 사실. ChatGPT 웹은 API 같은 명시적 quota는 없지만 **분당/시간당/24h 다층 rate-limit 카운터**가 백엔드에서 누적된다. 일정 임계 초과 시 `[data-testid='modal-conversation-history-rate-limit']` 모달 ("요청이 너무 많습니다") 발동.
+
+### Why
+
+2026-05-22 v3 batch가 14시간 연속 ~500컷 생성 → 새벽 cool-down 진입. 6:48-7:21 사이 modal dismiss + 재시도 10회 모두 실패. 패턴: dismiss는 되지만 곧바로 prompt 보내면 즉시 modal 재등장. "몇 분 후 다시 시도" 멘트와 달리 6h+ 유지. 41/50 마감.
+
+### How to apply
+
+- **페이스 조절**: 컷 사이 최소 25-30초 sleep. v3는 3초였고 빠르게 트리거
+- **일일 양산 한도**: 경험상 prolite 계정 12-15시간 연속 양산 ~400-500컷 = 임계점. 그 후 6h+ cool-down
+- **modal 처리**: `button:has-text('알겠습니다')` (한국어 UI) 클릭으로 dismiss. 영문 UI는 `Got it` / `OK` / `Dismiss`
+- **누적 감지 시**: 짧은 sleep(120s)은 무의미. 6h+ 대기하거나 다른 계정 / 다른 IP로 우회
+- **회복 확인 방법**: 페이지 로드 직후 `is_rate_limited(page)`가 False여도 prompt 보내면 다시 모달 뜰 수 있음. **첫 1샷 success 확인 후 본격 양산**
+- 대안 채널: codex CLI imagegen은 다른 OAuth 채널이라 회피 가능 ([[../reference/codex-imagegen-builtin]])
+
+cross-ref: [[video-gen-lessons]] §54 (GPT burn-in) · [[../sources/src-chatgpt-rate-limit-2026-05-22]] (없으면 생성)
