@@ -42,6 +42,17 @@ _내용 추가 예정_
 - [[da-creative]]
 
 
+## Gemini Omni (Omni Flash) — 영상 생성 모델 (2026-05-26 추가)
+→ [[src-gemini-omni-guide]] 참조
+
+Google Flow 안에서 동작하는 멀티모달 영상 모델. Gemini 추론 + DeepMind Nano Banana(이미지) + Veo(영상) + Genie(월드 시뮬레이션). Flow Ultra 계정 필요.
+
+**포지셔닝**: Seedance = 0→1 생성, **Omni = 기존 영상 수정·변형 + 누끼 이미지 합성 1스텝**.
+
+핵심 워크플로 9종 (영상 내 이미지 합성 / 행동·배경·복장·앵글 변경 / 목소리 변경 / 캐릭터 일관성 / 실무 적용). 한계: 글씨 표현, 제품 글자 왜곡, 스토리보드 해석 — 명확한 프롬프트로 보완.
+
+크레딧: v2v 40 / t2v 15~30. 누끼 1스텝 합성으로 [[da-creative]] 기존 2스텝 워크플로 단축 가능.
+
 ## Gemini 로고 제거 (2026-04-12 추가)
 → [[src-gemini-logo-remover]] 참조
 

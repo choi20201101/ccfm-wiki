@@ -1,5 +1,25 @@
 # CCFM Wiki Log
 
+## [2026-05-26] ingest | Gemini Omni (Omni Flash) 사용 가이드 — Google Flow 멀티모달 영상 모델
+- 소스: 노션 페이지 [Gemini Omni 가이드](https://synonymous-nation-db3.notion.site/Gemini-Omni-367239465f12805b9acdcb50907338a5)
+- 로컬 미러: `C:\Users\gguy\Desktop\omni\` (HTML 가이드 + 영상 34개·이미지 27개 + manifest.json, 약 125MB)
+- source: `wiki/sources/src-gemini-omni-guide.md` (전체 워크플로 9종 + 프롬프트 + 한계 정리)
+- 도메인 업데이트: [[ai-automation]] §Omni 항목 신설, [[da-creative]] §툴/플랫폼에 v2v 1스텝 합성 효과 등록
+- 핵심:
+  - **포지셔닝**: Seedance = 0→1 생성 / Omni = 기존 영상 수정·변형 + 누끼 1스텝 합성. 분업이 답.
+  - **워크플로 9종**: 영상 내 이미지 합성 / 행동·배경·복장·앵글 변경 / 목소리 변경 / 캐릭터 에셋 일관성 / 실무 (착한구두 럭셔리 패션 에디토리얼 5변주 케이스).
+  - **CCFM 임팩트**: 기존 [[da-creative]] 2스텝 워크플로(이미지 합성 → I2V) → 1스텝 압축. 캐릭터 에셋으로 B&A 시리즈 일관성 확보.
+  - **한계 3종**: 한국어 글씨/제품 글씨 왜곡/스토리보드 해석 — 후처리 또는 더 명확한 프롬프트로 회피.
+  - 영상 본 파일은 위키 레포에 푸시 X (125MB, LFS 미사용) → 로컬 미러로만 보관.
+
+## [2026-05-20] ingest | 위너소재 ffmpeg 트랜지션 + ChatGPT 이미지 레퍼런스 질문 답변 정리
+- 직원 → 대표 문의 2건: (1) ffmpeg 트랜지션 커스텀 가능 여부 (2) ChatGPT 이미지 레퍼런스 직접 입력 vs 자동 학습
+- raw: `raw/inbox/2026-05-20-winnersojae-higgsfield-chatgpt-image-questions.md` (원문 캡처)
+- source: `wiki/sources/src-winnersojae-feedback-2026-05-20.md` (위키 기반 답변 정리 + 직원 답신 초안)
+- 핵심 메시지:
+  - Q1: ffmpeg `xfade` 50종 + `custom` expression + GL Transitions로 충분히 커스텀 가능. 그러나 "빠른 템포에서 편집점 약함"은 트랜지션 문제가 아니라 [[tacit/video-gen-lessons]] §35·§36 의 "씬 길이를 TTS char-level timestamp에 동기화" 미적용 문제일 가능성 큼.
+  - Q2: ChatGPT 이미지는 진짜 학습 안 됨. 레퍼런스 직접 입력 유지 + "visual template, not inspiration" 명시 강화 + 다양성은 18축 cid 시드 결정론 풀 회전으로. "진짜 학습" 원하면 Flux LoRA(Higgsfield Brand Kit) 별도 검토.
+
 ## [2026-05-14] ingest | GFA-Setting v0.1.x — 멀티 잡 큐 + rwc 캘린더 + 디버그 pause
 - 소스: `C:\Users\gguy\Desktop\GFA-Setting` master HEAD (commit 75472ff + 미커밋 작업트리)
 - domain: `wiki/domains/gfa-setting-automation.md` 에 §v0.1.x 업데이트 (2026-05-13~14) 신설 — (A) rwc 가상 스크롤 캘린더 대응 + `GFA_DEBUG_PAUSE_ON_ERROR=1` 라이브 디버깅, (B) 멀티 잡 큐 (입력 페이즈 `collect_group_setup_spec` + 실행 페이즈 `execute_group_setup`, `GroupSetupSpec` frozen dataclass, `JOB_COOLDOWN_SECONDS=30`, 잡 단위 격리)
