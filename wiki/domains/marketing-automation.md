@@ -26,6 +26,9 @@ sources: [wiki/sources/src-geo-aeo-guide.md]
 - Google Ads 자동화
 - 쿠팡 무단판매자 모니터링 (Playwright)
 
+### 네이버 블로그 SEO 자동화 (naverpost)
+- [[domains/naverpost-seo-pipeline]] — **키워드→SERP→점수→RAG초안(Claude)→이미지(god-tibo-imagen)→에디터 자동채움→사람 검토 발행** 반자동 파이프라인. 캡차·최종 발행은 사람, 일 5개 한도. 경로 `C:\Users\gguy\Desktop\naverpost` (재구축 스펙+`docs/` 동봉). GEO/AEO 프레임(아래)과 연결 — 자동화는 롱테일 발행 효율, 인용 품질은 사람 검토·실사진.
+
 ## 커뮤니티 → 광고 소재 마이닝
 - [[domains/todayhumor-mining-playbook]] — **오늘의유머 위트 코드 → 광고 아이디어 1:1 변환 파이프라인** (2026-05-12 피코세라 사례 검증, brand_fit=high 84.5%). crawl_index → run.py(workers=3) → SDK 직호출. 게시물 1개 = 폴더 1개 = 아이디어 1개. 트리거 "오유 마이닝" / "humor mining".
 

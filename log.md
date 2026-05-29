@@ -1,5 +1,12 @@
 # CCFM Wiki Log
 
+## [2026-05-29] ingest | naverpost 네이버 블로그 SEO 반자동화 파이프라인 (재구축 스펙)
+- 페이지 신설: `wiki/domains/naverpost-seo-pipeline.md` — 키워드→SERP→점수→RAG초안(Claude)→이미지(god-tibo-imagen)→에디터 자동채움→사람 검토 발행. 나중에 "블로그 자동화 다시 하자" 시 이 페이지 + 프로젝트 `docs/`로 재구축.
+- 도메인 업데이트: [[marketing-automation]] §네이버 블로그 SEO 자동화 신설, [[index]] 기술/자동화에 링크.
+- 연관: [[ggttt-imagen]](이미지 엔진), [[sources/src-geo-aeo-guide]](발행 자동화 상위 프레임).
+- 상태: 에디터 자동채움(마크다운 정리 + 이미지 5장)·캡차 사람해결 동작 / 완전 자동발행의 게시판 선택은 사용자 보류 / 4.7 빌드 감사 86건 중 일부 미수정.
+- 원칙: 반자동(캡차·최종발행은 사람), 캡차 자동우회 금지(제거됨), 일 5개 한도.
+
 ## [2026-05-26] ingest | Gemini Omni (Omni Flash) 사용 가이드 — Google Flow 멀티모달 영상 모델
 - 소스: 노션 페이지 [Gemini Omni 가이드](https://synonymous-nation-db3.notion.site/Gemini-Omni-367239465f12805b9acdcb50907338a5)
 - 로컬 미러: `C:\Users\gguy\Desktop\omni\` (HTML 가이드 + 영상 34개·이미지 27개 + manifest.json, 약 125MB)

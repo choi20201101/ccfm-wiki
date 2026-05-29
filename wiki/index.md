@@ -46,7 +46,7 @@
 
 **조직/경영** · [[domains/org-restructure]] · [[domains/finance]] · [[domains/hr-admin]]
 
-**기술/자동화** · [[domains/ai-automation]] · [[domains/vibe-coding]] · [[domains/content-ai-automation]] · [[domains/marketing-automation]] · [[domains/codex-grounding-protocol]] · [[domains/gfa-setting-automation]] · [[domains/seebio-radio-pipeline]]
+**기술/자동화** · [[domains/ai-automation]] · [[domains/vibe-coding]] · [[domains/content-ai-automation]] · [[domains/marketing-automation]] · [[domains/codex-grounding-protocol]] · [[domains/gfa-setting-automation]] · [[domains/seebio-radio-pipeline]] · [[domains/naverpost-seo-pipeline]]
 
 **크리에이티브/마케팅** · [[domains/marketing]] · [[domains/da-creative]] · [[domains/viral]] · [[domains/ggttt-imagen]] · [[domains/gptim-ad-creative-batch]] · [[domains/skin-care-13cut-pattern]]
 
