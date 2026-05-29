@@ -19,3 +19,7 @@ graphify-out/archive/
 
 # wiki/ 단독 vault로 열 때 생기는 로컬 옵시디언 설정
 wiki/.obsidian/
+
+# Syncthing 동기화 부산물 (기기 간 동기화용, git 추적 제외)
+.stfolder/
+.stignore
