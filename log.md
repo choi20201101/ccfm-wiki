@@ -373,3 +373,12 @@
 - tacit: `wiki/tacit/video-gen-lessons.md` 에 [2026-05-19] 엔트리 추가
 - 의도: 사용자가 "이정도 이하 결과는 절대로 나오게 해선 안됨" 품질 baseline으로 지정. 시댄스+ElevenLabs+AE 파이프라인 재사용 위해 박제.
 - 함정 누적: TTS 전면 교체 금지 (lip-sync 깨짐), 보이스 청취 선정 필수, 플로팅 배너 금지 (로고만), AEP 자산 완전 분리, 자막 8~12자 한 줄, 청크간 공백 금지, EBU R128 정규화
+
+## [2026-05-29] ingest | GEO·AEO 실행 가이드 (현장 미팅 기반)
+- source: `raw/reports/2026-05-29-geo-aeo-guide.html` (사용자 제공 HTML, Downloads에서 복사)
+- 신규: `wiki/sources/src-geo-aeo-guide.md` — 원리/세팅/콘텐츠/키워드/플랫폼/측정/리스크 7파트 + 발행 자동화 적용 섹션
+- domain 업데이트: `wiki/domains/marketing-automation.md` 에 GEO/AEO 섹션 추가 (sources/updated 갱신)
+- tacit: `wiki/tacit/operational-heuristics.md` 에 GEO/AEO 운영 룰 5건 append (confidence: medium, 발화자 경험 기반)
+- index: Quick Access + Sources 에 src-geo-aeo-guide 등재
+- 의도: 사용자가 블로그/워드프레스/구글 글 발행 자동화 구축 시 이 개념을 기준 프레임으로 적용하기 위해 박제. "AEO/GEO 엄청 중요해지는 중, 필수".
+- ⚠️ 일부 항목(LLM별 웹서치 의존도·캐시 지속)은 발화자 체감 관찰 → 모델 업데이트로 변동 가능, 검증 여지.

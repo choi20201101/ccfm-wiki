@@ -33,6 +33,7 @@
 - [[tacit/video-gen-lessons]] — Kling/Veo/Omni 영상 생성 교훈.
 - [[tacit/operational-heuristics]] — 운영 판단 기준 (god node #4).
 - [[domains/gfa-setting-automation]] · [[qscv/media-gfa]] — 네이버 GFA 자동화/세팅.
+- [[sources/src-geo-aeo-guide]] — **GEO/AEO 실행 가이드**. 블로그/워드프레스/구글 글 발행 자동화의 기준 프레임 (필수).
 - [[domains/psychology]] · [[tacit/psychology-insights]] — 설득·소비자 심리.
 - [[수치-단위-착각-방지-규칙]] — 매출 데이터 억 단위 변환 시 법인별 스케일 착각 방지.
 - [[../CLAUDE.md]] — 위키 스키마 + 자동 동작 규칙(캡처/암묵지 추출/그래프 되먹임).
@@ -72,7 +73,7 @@
 
 ## 📚 소스 (Sources) — `wiki/sources/` (40+건)
 
-최근/핵심: [[sources/src-winnersojae-feedback-2026-05-20]] · [[sources/src-iboss-choi-jaemyeong]] · [[sources/src-gemini-omni-guide]] · [[sources/src-nari-chatgpt-image]] · [[sources/src-creative-autogen-framework]] · [[sources/src-foreign-influencer-guide]]
+최근/핵심: [[sources/src-geo-aeo-guide]] · [[sources/src-winnersojae-feedback-2026-05-20]] · [[sources/src-iboss-choi-jaemyeong]] · [[sources/src-gemini-omni-guide]] · [[sources/src-nari-chatgpt-image]] · [[sources/src-creative-autogen-framework]] · [[sources/src-foreign-influencer-guide]]
 리서치: [[research/2026-05-20_기미크림-퍼포먼스요소]]
 
 ---

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>GEO · AEO 실행 가이드 — CONCRETE FARMERS</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --paper:#0a0a0a; --paper2:#161616; --concrete:#1d1d1d; --concrete2:#242424;
+    --ink:#f5f4f1; --ink2:#d6d4cf; --dim:#9d9b95; --faint:#6a6862;
+    --mag:#ec008c; --mag-dark:#ff3da8; --mag-soft:rgba(236,0,140,.13);
+    --line:rgba(245,244,241,.15); --line2:rgba(245,244,241,.06);
+    --sans:"Pretendard",-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7;font-size:16px;letter-spacing:-.012em;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E")}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(90deg,var(--line2) 1px,transparent 1px);background-size:calc(100%/6) 100%;opacity:.55}
+  ::selection{background:var(--mag);color:#fff}
+
+  #bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--mag);z-index:100}
+  .mark{display:inline-block;flex-shrink:0}.mark svg{display:block}
+
+  .topbar{position:sticky;top:0;z-index:90;background:rgba(10,10,10,.86);backdrop-filter:blur(12px);border-bottom:2px solid var(--ink)}
+  .topbar-in{max-width:1100px;margin:0 auto;padding:0 22px;display:flex;align-items:center;gap:18px;height:62px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+  .logo .wm{font-weight:900;font-size:21px;letter-spacing:-.04em;color:var(--ink);line-height:1}
+  .logo .sub{font-weight:800;font-size:8.5px;letter-spacing:.22em;color:var(--dim);line-height:1;margin-top:3px}
+  nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-left:auto}
+  nav::-webkit-scrollbar{display:none}
+  nav a{font-weight:700;font-size:12px;letter-spacing:-.01em;color:var(--dim);text-decoration:none;padding:7px 11px;border-radius:7px;white-space:nowrap;transition:.2s}
+  nav a:hover{color:var(--ink);background:var(--concrete)}
+  nav a.on{color:#fff;background:var(--mag)}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+
+  .hero{padding:72px 0 30px;position:relative}
+  .hero .bigmark{position:absolute;top:0;right:-30px;opacity:.09;pointer-events:none;transform:rotate(8deg)}
+  .kick{display:inline-flex;align-items:center;gap:11px;font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mag);margin-bottom:24px}
+  .kick::before{content:"";width:30px;height:3px;background:var(--mag)}
+  h1{font-weight:900;font-size:clamp(42px,8.6vw,88px);line-height:.98;letter-spacing:-.045em}
+  h1 em{font-style:italic;color:var(--mag);font-weight:900}
+  h1 .l2{display:block}
+  .lede{font-size:clamp(16px,2.3vw,20px);color:var(--ink2);max-width:680px;margin-top:30px;line-height:1.62;font-weight:500}
+  .meta{display:flex;flex-wrap:wrap;gap:0;margin-top:42px;border:2px solid var(--ink);border-radius:14px;overflow:hidden}
+  .meta div{flex:1 1 150px;padding:16px 20px;border-right:2px solid var(--ink);font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+  .meta div:last-child{border-right:none}
+  .meta div span{display:block;color:var(--ink);font-size:15px;margin-top:7px;letter-spacing:-.01em;text-transform:none;font-weight:700}
+
+  .marquee{margin:36px 0 12px;border-top:2px solid var(--mag);border-bottom:2px solid var(--mag);background:var(--mag);overflow:hidden;white-space:nowrap;padding:11px 0}
+  .marquee .track{display:inline-block;animation:scroll 26s linear infinite;will-change:transform}
+  .marquee span{font-weight:900;font-size:15px;letter-spacing:.04em;color:#0a0a0a;text-transform:uppercase;padding:0 6px}
+  .marquee b{color:#fff;padding:0 18px;font-weight:900}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  .note{display:flex;gap:15px;background:var(--mag-soft);border:2px solid var(--mag);border-radius:14px;padding:18px 22px;margin:34px 0 60px;font-size:14px;color:var(--ink2);font-weight:500;line-height:1.6}
+  .note .ic{font-weight:900;color:var(--mag);flex-shrink:0;font-size:20px;line-height:1.2}
+  .note b{color:var(--ink);font-weight:800}
+  .chip{display:inline-block;font-weight:800;font-size:10px;letter-spacing:.06em;padding:2px 7px;border-radius:5px}
+
+  section{padding:48px 0;scroll-margin-top:74px}
+  .sec-head{display:flex;align-items:center;gap:18px;margin-bottom:18px;flex-wrap:wrap}
+  .num{font-weight:900;font-size:15px;color:#fff;background:var(--mag);border-radius:9px;padding:7px 13px;letter-spacing:-.02em;flex-shrink:0;line-height:1}
+  .sec-head h2{font-weight:900;font-size:clamp(27px,5vw,44px);line-height:1.06;letter-spacing:-.04em}
+  .sec-lede{color:var(--dim);font-size:clamp(15px,2vw,17px);max-width:720px;margin:0 0 28px;line-height:1.6;font-weight:500}
+
+  .acc{border-top:2px solid var(--ink)}
+  .item{border-bottom:2px solid var(--ink)}
+  .q{width:100%;background:none;border:none;color:var(--ink);text-align:left;cursor:pointer;padding:24px 48px 24px 0;font-family:var(--sans);font-size:clamp(16px,2.1vw,19px);font-weight:800;letter-spacing:-.02em;position:relative;display:flex;gap:14px;align-items:flex-start;line-height:1.4;transition:.2s}
+  .q .tag{font-weight:800;font-size:10px;letter-spacing:.05em;padding:4px 9px;border-radius:6px;flex-shrink:0;margin-top:3px;line-height:1.2;white-space:nowrap}
+  .tag.core{background:var(--mag);color:#fff}
+  .tag.base{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .tag.note2{background:var(--mag-soft);color:var(--mag-dark);border:1.5px solid var(--mag)}
+  .q::after{content:"";position:absolute;right:6px;top:26px;width:18px;height:18px;flex-shrink:0;background:linear-gradient(var(--mag),var(--mag)) center/100% 3px no-repeat,linear-gradient(var(--mag),var(--mag)) center/3px 100% no-repeat;transition:transform .3s}
+  .item.open .q::after{transform:rotate(45deg)}
+  .q:hover{color:var(--mag)}
+  .a{max-height:0;overflow:hidden;transition:max-height .42s ease}
+  .a-in{padding:0 48px 28px 0;color:var(--ink2);font-size:15px;line-height:1.74;font-weight:500}
+  .a-in p+p{margin-top:13px}
+  .a-in b{color:var(--ink);font-weight:800}
+  .a-in .hl{color:var(--mag-dark);font-weight:800}
+  .a-in .step{display:block;font-weight:800;color:var(--mag);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin:16px 0 6px}
+  .a-in ul{margin:11px 0 0;padding-left:0;list-style:none}
+  .a-in li{position:relative;padding:6px 0 6px 24px}
+  .a-in li::before{content:"";position:absolute;left:2px;top:13px;width:9px;height:9px;background:var(--mag);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+  .a-in .quote{margin-top:14px;padding:10px 14px;border-left:3px solid var(--mag);background:var(--paper2);color:var(--dim);font-size:13px;border-radius:0 8px 8px 0}
+
+  footer{background:var(--paper2);color:var(--ink);border-top:3px solid var(--mag);margin-top:54px;padding:60px 22px 68px;text-align:center;position:relative;overflow:hidden;z-index:1}
+  footer .fmark{margin:0 auto 22px}
+  footer .f1{font-weight:900;font-size:clamp(21px,3.6vw,30px);letter-spacing:-.03em;margin-bottom:14px;line-height:1.3}
+  footer .f1 em{font-style:italic;color:var(--mag)}
+  footer .f2{font-weight:800;font-size:11px;color:var(--faint);letter-spacing:.14em;text-transform:uppercase}
+
+  .rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .rv.in{opacity:1;transform:none}
+
+  @media(max-width:680px){
+    body{font-size:15px}
+    body::after{background-size:calc(100%/3) 100%}
+    .logo .sub{display:none}
+    .meta div{flex-basis:50%;border-bottom:2px solid var(--ink)}
+    .meta div:nth-child(odd){border-right:2px solid var(--ink)}
+    .meta div:nth-child(even){border-right:none}
+    .q{padding-right:38px}.a-in{padding-right:6px}
+  }
+  @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.marquee .track{animation:none}*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="logo" href="#top">
+      <span class="mark"><svg width="26" height="26" viewBox="0 0 100 100"><g stroke="#ec008c" stroke-width="11"><line x1="50" y1="8" x2="50" y2="84"/><line x1="14" y1="40" x2="86" y2="40"/><line x1="24" y1="16" x2="76" y2="64"/><line x1="76" y1="16" x2="24" y2="64"/></g></svg></span>
+      <span><span class="wm">CCFM</span><br><span class="sub">CONCRETE FARMERS</span></span>
+    </a>
+    <nav id="nav">
+      <a href="#how">원리</a><a href="#setup">세팅</a><a href="#content">콘텐츠</a><a href="#keyword">키워드</a><a href="#platform">플랫폼</a><a href="#measure">측정</a><a href="#caution">주의</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <span class="mark bigmark"><svg width="240" height="240" viewBox="0 0 100 100"><g stroke="#ec008c" stroke-width="9"><line x1="50" y1="8" x2="50" y2="84"/><line x1="14" y1="40" x2="86" y2="40"/><line x1="24" y1="16" x2="76" y2="64"/><line x1="76" y1="16" x2="24" y2="64"/></g></svg></span>
+    <div class="kick">GEO · AEO 실행 가이드</div>
+    <h1>GEO·AEO,<span class="l2"><em>이렇게 한다</em></span></h1>
+    <p class="lede">AI가 내 콘텐츠를 인용하고 노출시키게 만드는 실제 방법만 정리했다. 현장 미팅에서 나온 내용 중 '실행 방법'에 해당하는 부분만 추렸다.</p>
+    <div class="meta">
+      <div>출처<span>현장 미팅 녹취</span></div>
+      <div>정리일<span>2026.05.29</span></div>
+      <div>범위<span>실행 방법 7파트</span></div>
+      <div>기준<span>미팅 내용만 (검색 미포함)</span></div>
+    </div>
+  </header>
+
+  <div class="marquee">
+    <div class="track">
+      <span>CONCRETE FARMERS</span><b>✶</b><span>GEO</span><b>✶</b><span>AEO</span><b>✶</b><span>AI가 내 글을 인용하게 만들기</span><b>✶</b><span>아스팔트 위에서도 모내기</span><b>✶</b><span>CONCRETE FARMERS</span><b>✶</b><span>GEO</span><b>✶</b><span>AEO</span><b>✶</b><span>AI가 내 글을 인용하게 만들기</span><b>✶</b><span>아스팔트 위에서도 모내기</span><b>✶</b>
+    </div>
+  </div>
+
+  <div class="note rv">
+    <span class="ic">✶</span>
+    <div>이 가이드는 <b>현장 미팅에서 나온 실행 방법만</b> 추린 것이다(외부 검색 자료는 넣지 않았다). 일부 항목(LLM별 웹서치 의존도·캐시 지속 등)은 <b>발화자의 경험에 기반한 관찰</b>이라 검증의 여지가 있다. 태그: <span class="chip" style="background:var(--mag);color:#fff">핵심</span> 가장 중요 / <span class="chip" style="border:1.5px solid var(--ink)">기본</span> 기반 작업 / <span class="chip" style="background:var(--mag-soft);color:var(--mag-dark);border:1.5px solid var(--mag)">주의</span> 리스크.</div>
+  </div>
+
+  <!-- 1. 원리 -->
+  <section id="how">
+    <div class="sec-head rv"><span class="num">01</span><h2>먼저 — 인용의 원리</h2></div>
+    <p class="sec-lede rv">실행 방법이 왜 그렇게 설계되는지, 한 가지 원리만 잡고 가면 된다.</p>
+    <div class="acc rv">
+      <div class="item open"><button class="q"><span class="tag core">핵심</span>AI는 '학습 → 웹서치 보완'으로 답하고 출처를 붙인다</button><div class="a"><div class="a-in">
+        <p>LLM은 먼저 <b>학습된 데이터(RAG)에서 1차로 답을 가져오고</b>, 그걸 <b>웹서치로 보완하면서 출처를 붙인다.</b> 봇이 사이트를 긁어가는 행위 자체가 인용·학습이다.</p>
+        <p>중요한 건, <span class="hl">한 번 학습·인용되고 나면 그다음엔 다시 안 가져갈 수도 있다는 것</span>이다. 그래서 모든 실행 방법의 출발점은 하나다 — "AI가 굳이 내 콘텐츠를 긁어가서 노출시켜줄 이유"를 만드는 것.</p>
+        <div class="quote">"쟤네들이 왜 내 걸 긁어가야 될까. 노출시켜줘야 되니까는 명확하게 좋은 정보인데. 거기서부터 역순으로 생각하면." — 미팅 중</div>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 2. 세팅 -->
+  <section id="setup">
+    <div class="sec-head rv"><span class="num">02</span><h2>사이트 세팅 (기술)</h2></div>
+    <p class="sec-lede rv">콘텐츠를 쓰기 전에 깔아둬야 하는 기반 작업.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag core">핵심</span>스키마·데이터 구조를 '오늘의집'처럼 맞춘다</button><div class="a"><div class="a-in">
+        <p>커머스라면 이게 1순위다. 오늘의집은 <b>쿠팡만큼 인용이 많이 되는 사례</b>인데, 데이터 구조와 스키마가 잘 짜여 있기 때문이다.</p>
+        <span class="step">실행</span>
+        <ul>
+          <li>SEO 전문가에게 <b>"오늘의집의 데이터 구조·스키마를 우리 사이트에 적용해 달라"</b>고 요청한다.</li>
+          <li>또는 오늘의집 구조를 긁어서 <b>같은 형태로 교체</b>하는 방식도 가능하다(클로드 등으로 작업).</li>
+        </ul>
+        <p style="margin-top:13px"><b>단, 검증은 필수.</b> AI가 100% 완성해 주지는 않는다. 제대로 판단할 눈이 없으면 "적용했는데 실제론 안 먹히는" 경우가 생긴다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag base">기본</span>도메인 지수를 쌓는다 — 시간이 필요</button><div class="a"><div class="a-in">
+        <p>AI는 <b>도메인 지수를 실제로 많이 평가한다.</b> 단기 최적화로 해결되지 않고, 누적이 필요한 영역이다.</p>
+        <span class="step">쌓아야 할 것</span>
+        <ul>
+          <li><b>도메인 나이</b> — 오래된 도메인일수록 유리</li>
+          <li><b>링크 연결</b> — 외부와 어떻게 연결돼 있는가</li>
+          <li><b>지속 운영</b> — 현재도 살아서 업데이트되고 있는가</li>
+        </ul>
+        <p style="margin-top:13px">→ 그래서 시작이 빠를수록 좋다. "당장 최적화"로 며칠 만에 두 배 오르는 게 아니다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag base">기본</span>SEO 노출 영역(버블)을 연다</button><div class="a"><div class="a-in">
+        <p>SEO 버블(노출 영역)을 열어주면 봇이 들어온다. 안 보이던 사이트가 보이기 시작하고, 검색량이 어느 정도 있고 방문이 일어나면 초반에 많이 가져간다. <span class="hl">크롤링이 가능하도록 막혀 있지 않게 여는 것</span>이 전제다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag core">핵심</span>이미지를 신중하게 고른다 — 봇이 읽는다</button><div class="a"><div class="a-in">
+        <p>"봇은 이미지를 못 읽으니 alt(개체) 텍스트만 넣으면 된다"는 말이 있지만, <b>실제로는 봇이 이미지를 읽는다.</b> 비전 모델이 이미지 안에 무엇이 있는지까지 인식한다.</p>
+        <p>→ 따라서 <span class="hl">alt 텍스트에만 의존하지 말고, 이미지 자체를 콘텐츠에 맞게 신중히 선정</span>해야 한다. 아무 이미지나 넣으면 안 된다.</p>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 3. 콘텐츠 -->
+  <section id="content">
+    <div class="sec-head rv"><span class="num">03</span><h2>콘텐츠 작성</h2></div>
+    <p class="sec-lede rv">무엇을, 누가, 어떻게 쓰느냐가 인용 여부를 가른다.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag core">핵심</span>역순으로 설계한다 — '명확하게 좋은 정보'</button><div class="a"><div class="a-in">
+        <p>"AI가 왜 내 콘텐츠를 가져가서 노출시켜줘야 할까?"에서 거꾸로 생각하면 답이 나온다. 답은 <b>'명확하게 좋은 정보'</b>다.</p>
+        <p>AI는 이미 인간의 논리 구조를 이해하는 수준을 넘었고, 그 핵심은 <span class="hl">권위와 정확도</span>에 있다. 어설픈 콘텐츠는 가져가지 않는다는 전제로 만든다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag core">핵심</span>실제 사람이 쓴 글 + 실제 사진을 넣는다</button><div class="a"><div class="a-in">
+        <p>자동화로 긁어가게 해도 그건 <b>'인용'이 아니다.</b> AI가 쓴 글로 인식돼 걸러진다. 그래서 자동화 콘텐츠만으로는 한계가 분명하다.</p>
+        <span class="step">실행</span>
+        <ul>
+          <li>설계한 구조대로 잘 못 쓰더라도, <b>실제로 글을 쓸 수 있는 사람</b>을 둔다(프리랜서 작가 활용).</li>
+          <li>사람이 직접 쓴 글은 기존 AI 패턴과 달라서 인용 적격성이 올라간다.</li>
+          <li>결국 <b>사람이 직접 찍은 실제 사진</b>까지 넣어야 한다.</li>
+        </ul>
+        <p style="margin-top:13px"><b>함정:</b> 맡긴 작가가 다시 LLM으로 글을 쓸 수 있다 → 신뢰할 수 있는 사람과 일하거나, AI 글인지 걸러내는 장치가 필요하다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag base">기본</span>LLM별 글 유형에 맞춰 패턴을 만든다</button><div class="a"><div class="a-in">
+        <p>클로드·제미나이·GPT는 <b>성향에 따라 긁어가는 글의 유형이 다르다.</b> 그래서 한 가지 형식으로 쓰는 게 아니라, 타깃 모델이 잘 가져가는 형태에 맞춰 작성 패턴을 만들어 두는 것이 효율적이다.</p>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 4. 키워드 -->
+  <section id="keyword">
+    <div class="sec-head rv"><span class="num">04</span><h2>키워드 전략</h2></div>
+    <p class="sec-lede rv">메인 키워드 한 방보다, 세부 키워드 수십만 개.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag core">핵심</span>대화형 문장 키워드(롱테일)를 대량으로 잡는다</button><div class="a"><div class="a-in">
+        <p>이제는 단어가 아니라 <b>문장형 대화 질문</b>이 늘었다. 예를 들어 "두피 문신을 하고 싶은데 나는 M자 탈모가 있어서 하고 싶어" 같은 식이다.</p>
+        <p>이런 세부 키워드까지 다 잡으면 <span class="hl">100만 개 규모</span>가 되고, 각각 한 달에 한 번씩만 노출돼도 합치면 누적 유입이 매우 커진다. 메인 키워드는 경쟁이 세고 전환도 약하니, <b>세부·롱테일을 폭으로 가져가는 것</b>이 핵심이다.</p>
+        <span class="step">실행</span>
+        <ul>
+          <li>문장형 세부 키워드를 대량으로 수집·정리한다.</li>
+          <li>키워드별 콘텐츠를 <b>자동화로 월 단위로 지속 발행</b>하는 구조를 만든다.</li>
+        </ul>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 5. 플랫폼 -->
+  <section id="platform">
+    <div class="sec-head rv"><span class="num">05</span><h2>플랫폼별 접근</h2></div>
+    <p class="sec-lede rv">모델마다 가져가는 방식이 달라서, 같은 콘텐츠라도 접근을 나눠야 한다.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag core">핵심</span>제미나이 — 구글 SEO를 그대로 한다</button><div class="a"><div class="a-in">
+        <p>제미나이는 구글이 만든 모델이라 <b>구글 SEO의 영향이 가장 크다.</b> 구글 SEO를 잘 해둔 회사가 그대로 노출된다. → 제미나이를 노린다면 <span class="hl">구글 SEO와 스키마를 충실히</span> 하는 것이 곧 GEO다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag base">기본</span>퍼플렉시티 / 제미나이 — 웹서치 의존도 차이</button><div class="a"><div class="a-in">
+        <ul>
+          <li><b>퍼플렉시티</b> — 웹서치 의존이 높다. 실시간으로 웹을 보완하는 성격이라, 새로 올린 콘텐츠가 비교적 빨리 반영될 수 있다.</li>
+          <li><b>제미나이</b> — 웹서치 의존이 낮고 <b>캐시·반영 기간이 가장 길다</b>(업데이트가 제일 느리다). 한 번 자리 잡으면 오래 가지만, 반영도 느리다.</li>
+        </ul>
+        <p style="margin-top:13px;font-size:13.5px;color:var(--faint)">※ 발화자의 체감 기반 관찰. 모델 업데이트로 바뀔 수 있다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag core">핵심</span>네이버에 갇힌 경우 — 클론·허브 사이트로 우회</button><div class="a"><div class="a-in">
+        <p>스마트스토어는 네이버가 막아둬서 그 안에서는 GEO가 잘 안 된다. 그래서 <b>외부에 스키마가 완벽히 구현된 클론/허브 랜딩 사이트</b>를 만들어 우회한다.</p>
+        <span class="step">실행</span>
+        <ul>
+          <li>스마트스토어를 <b>스키마 완비된 클론 사이트</b>로 복제한다.</li>
+          <li>이 사이트(중간 허브)에서 <b>서브키워드·메인키워드를 모두 노출</b>시킨다.</li>
+          <li>트래픽이 모이면 <b>스마트스토어로 넘긴다.</b></li>
+          <li><b>UTM·사용자 정의 추적</b>을 붙여, 어떤 키워드로 들어와 얼마나 넘어가는지 전환을 확인한다.</li>
+        </ul>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 6. 측정 -->
+  <section id="measure">
+    <div class="sec-head rv"><span class="num">06</span><h2>측정 & 반복</h2></div>
+    <p class="sec-lede rv">노출이 늘었는지 확인하고, 다음 콘텐츠 주제를 정하는 루프.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag note2">주의</span>측정은 'API·스크린 모드'로 — 내 PC로 보면 안 된다</button><div class="a"><div class="a-in">
+        <p>결과값은 <b>로그인·개인화에 따라 사람마다 다르게</b> 나온다. 그래서 광고주가 본인 PC로 검색하면 본인 사이트가 안 뜬다.</p>
+        <p>→ 측정은 <span class="hl">API·스크린 모드로 지문을 보내, 나오는 값을 기준</span>으로 해야 한다. 또한 압도적으로 좋지 않으면 노출 자체가 안 되니, "안 보인다"가 곧 "실패"는 아니다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag base">기본</span>GA로 LLM 유입·키워드를 추적한다</button><div class="a"><div class="a-in">
+        <p>GA에서 <b>어떤 LLM이 유입됐는지</b> 확인할 수 있고, 키워드도 리퍼러로 잡힌다. 유입 출처 파악은 가능하니, 이를 기준으로 모니터링한다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag note2">주의</span>봇 트래픽 = 좋은 노출, 로 단정하지 않는다</button><div class="a"><div class="a-in">
+        <p>한 사이트는 누적 유입 544만 중 <b>절반이 AI 봇</b>이었다. 봇 방문은 추적되지만 그건 학습·인용이고, 한 번 학습·인용되면 다음엔 안 가져갈 수도 있다. <span class="hl">봇 유입량만으로 "노출이 잘 된다"고 판단하면 안 된다.</span></p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag core">핵심</span>노출 키워드 리포트 → 다음 주제 결정 → 반복</button><div class="a"><div class="a-in">
+        <p>측정에서 끝내지 않는 게 차별점이다. 실제 노출된 키워드를 <b>기간(계열)별 리포트</b>로 정리하고, <span class="hl">"그다음 콘텐츠를 무엇으로 할지"까지 도출</span>해 다시 발행한다. 이 루프를 계속 돌린다.</p>
+      </div></div></div>
+    </div>
+  </section>
+
+  <!-- 7. 주의 -->
+  <section id="caution">
+    <div class="sec-head rv"><span class="num">07</span><h2>주의사항</h2></div>
+    <p class="sec-lede rv">잘못하면 사이트가 통째로 날아가는 지점.</p>
+    <div class="acc rv">
+      <div class="item"><button class="q"><span class="tag note2">주의</span>구글은 어뷰징 판단 시 도메인을 살려주지 않는다</button><div class="a"><div class="a-in">
+        <p>구글은 어뷰징이라고 판단되면 <b>도메인을 영구적으로 죽인다</b>(복구 안 됨). 무리한 물량·어뷰징으로 밀어붙이는 건 도메인을 통째로 잃을 위험이 있다.</p>
+        <p>→ 결론은, <span class="hl">정확하게 쓰는 편이 오히려 빠르고 안전하다.</span></p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag note2">주의</span>어뷰징 한계는 '내구 테스트'로만 확인</button><div class="a"><div class="a-in">
+        <p>어느 정도까지 어뷰징하면 제재되는지는 사이트를 만들고 부수는 <b>내구 테스트</b>로 확인하는 영역이다. 메인 자산이 아니라 <span class="hl">버려도 되는 테스트 사이트</span>에서만 한계를 본다.</p>
+      </div></div></div>
+      <div class="item"><button class="q"><span class="tag note2">주의</span>자동화 콘텐츠만으로는 한계가 있다</button><div class="a"><div class="a-in">
+        <p>앞서 말한 대로 자동화로 찍어낸 글은 인용으로 인정되지 않고 걸러진다. 자동화는 <b>키워드 커버리지·발행 효율</b>까지만 쓰고, <span class="hl">인용을 노리는 핵심 콘텐츠는 사람이 직접</span> 쓰는 이원화가 필요하다.</p>
+      </div></div></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span class="mark fmark"><svg width="44" height="44" viewBox="0 0 100 100"><g stroke="#ec008c" stroke-width="11"><line x1="50" y1="8" x2="50" y2="84"/><line x1="14" y1="40" x2="86" y2="40"/><line x1="24" y1="16" x2="76" y2="64"/><line x1="76" y1="16" x2="24" y2="64"/></g></svg></span>
+  <div class="f1">정리하면 — <em>좋은 정보</em>·실제 사람·실제 사진, 그리고 시간이 쌓은 도메인.</div>
+  <div class="f2">CCFM · CONCRETE FARMERS — GEO/AEO 실행 가이드 (미팅 내용 기반)</div>
+</footer>
+
+<script>
+(function(){
+  var bar=document.getElementById('bar');
+  function prog(){var h=document.documentElement,b=document.body;var st=h.scrollTop||b.scrollTop;var sh=(h.scrollHeight||b.scrollHeight)-h.clientHeight;bar.style.width=(sh>0?(st/sh*100):0)+'%';}
+  window.addEventListener('scroll',prog,{passive:true});prog();
+
+  document.querySelectorAll('.q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=q.parentElement,panel=q.nextElementSibling,isOpen=item.classList.contains('open');
+      item.classList.toggle('open');
+      panel.style.maxHeight=isOpen?null:panel.scrollHeight+'px';
+    });
+  });
+  document.querySelectorAll('.item.open').forEach(function(item){var p=item.querySelector('.a');p.style.maxHeight=p.scrollHeight+'px';});
+
+  var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){rio.observe(el);});
+
+  var navLinks=Array.prototype.slice.call(document.querySelectorAll('#nav a'));
+  var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id='#'+e.target.id;navLinks.forEach(function(a){var on=a.getAttribute('href')===id;a.classList.toggle('on',on);if(on)a.scrollIntoView({block:'nearest',inline:'center',behavior:'smooth'});});}});},{rootMargin:'-45% 0px -50% 0px'});
+  navLinks.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)sio.observe(s);});
+
+  var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){document.querySelectorAll('.item.open .a').forEach(function(p){p.style.maxHeight=p.scrollHeight+'px';});},150);});
+})();
+</script>
+</body>
+</html>
