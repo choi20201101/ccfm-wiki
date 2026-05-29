@@ -382,3 +382,8 @@
 - index: Quick Access + Sources 에 src-geo-aeo-guide 등재
 - 의도: 사용자가 블로그/워드프레스/구글 글 발행 자동화 구축 시 이 개념을 기준 프레임으로 적용하기 위해 박제. "AEO/GEO 엄청 중요해지는 중, 필수".
 - ⚠️ 일부 항목(LLM별 웹서치 의존도·캐시 지속)은 발화자 체감 관찰 → 모델 업데이트로 변동 가능, 검증 여지.
+
+## [2026-05-29] update | GEO·AEO 가이드 보강 (사용자 코멘트 반영)
+- src-geo-aeo-guide.md: ①한국 시장 초기·경쟁낮음 + "노출 보장 아님→신뢰도·도메인 싸움" 단서 추가 ②AI 이미지 "걸러진다"는 직접 발화 아닌 합리적 추론임을 명시
+- domains/marketing-automation.md: GEO/AEO 키워드 항목에 한국 시장 단서 반영
+- tacit/operational-heuristics.md: 한국 GEO 초기성 룰 + AI 이미지 추론 단서 2건 append (confidence: medium)
