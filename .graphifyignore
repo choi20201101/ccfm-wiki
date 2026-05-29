@@ -1,0 +1,29 @@
+# graphify 인덱싱 제외 규칙 (gitignore 문법)
+# 목적: 비즈니스 지식베이스만 그래프화. 코드/스크립트/자기출력물 제외.
+
+# 1) graphify 자기 출력물 재인덱싱 방지 (비대화 피드백 루프 차단)
+graphify-out/
+
+# 2) 빌드/유틸 스크립트 — 지식이 아니라 도구
+scripts/
+
+# 3) 소스코드 전반 제외 (이 볼트는 코드베이스가 아니라 지식베이스)
+#    SKILL.md 같은 설명 문서는 .md 라서 그대로 인덱싱됨
+*.py
+*.ps1
+*.psm1
+*.js
+*.cjs
+*.mjs
+*.ts
+*.tsx
+*.jsx
+*.go
+*.rs
+*.sh
+*.bat
+
+# 4) Obsidian/동기화 부산물
+.obsidian/
+.stfolder/
+.trash/
