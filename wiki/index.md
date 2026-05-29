@@ -3,7 +3,7 @@
 > 🔥 = 허브(god node) · 🌐 = 교차 도메인 · 📄 = 미작성/스텁
 > 최종 정리: 2026-05-29
 > ⚡ **빠른 꺼내쓰기**: [[HOTSHEET]] (트리거 → 답 직입식 단축표)
-> 🕸️ **그래프**: 692 노드 · 1722 엣지 · 157 커뮤니티 ([[../graphify-out/GRAPH_REPORT|GRAPH_REPORT]])
+> 🕸️ **그래프**: 691 노드 · 1723 엣지 · 156 커뮤니티 ([[../graphify-out/GRAPH_REPORT|GRAPH_REPORT]])
 > 재빌드: `python scripts/build_wiki_graph.py` → `inject_iboss_entities.py` → `regen_graph_report.py`
 
 ---
@@ -34,6 +34,7 @@
 - [[tacit/operational-heuristics]] — 운영 판단 기준 (god node #4).
 - [[domains/gfa-setting-automation]] · [[qscv/media-gfa]] — 네이버 GFA 자동화/세팅.
 - [[domains/psychology]] · [[tacit/psychology-insights]] — 설득·소비자 심리.
+- [[수치-단위-착각-방지-규칙]] — 매출 데이터 억 단위 변환 시 법인별 스케일 착각 방지.
 - [[../CLAUDE.md]] — 위키 스키마 + 자동 동작 규칙(캡처/암묵지 추출/그래프 되먹임).
 
 ---
@@ -78,9 +79,9 @@
 
 ## 🔧 Lint / 정리 필요 (2026-05-29 진단)
 
-- **고립 파일 다수**: 157개 커뮤니티 중 **115개가 단일노드**(주로 `raw/` 캡처·iboss 원문). raw는 불변이라 정상이나, 가치 있는 raw는 `wiki/sources/`로 요약·링크해 그래프에 편입 권장.
+- **고립 파일 다수**: 문서 고아 111개 중 **108개가 `raw/`**(iboss 201건 원문 등). raw는 불변·MOC로 조직되므로 정상 — 건드리지 않음. 가치 있는 신규 raw만 `wiki/sources/`로 요약·링크.
 - **그래프 빌드 복원**: 마크다운→그래프 파이프라인(`scripts/build_wiki_graph.py`)을 신규 작성해 커밋. 이전엔 gitignore된 일회성 스크립트라 유실됐었음. 이제 재현 가능.
-- **테스트 잔재**: [[_sync-test]] 는 동기화 테스트용 — 삭제 후보.
+- **2026-05-29 정리 완료**: `_sync-test.md`(테스트 잔재) 삭제 · `수치-단위-착각-방지-규칙`(고아) → [[domains/finance]]에서 링크 연결.
 - **교차참조 보강 후보**: `domains/seebio-radio-pipeline`, `domains/skin-care-13cut-pattern` 등 신규 도메인의 인바운드 링크가 적음 → 관련 tacit/source에서 역링크 추가.
 - **graphify 한계**: 설치된 graphify의 `extract()`는 코드(AST) 전용·LLM 미사용. document 노드는 본 빌더가 생성하므로, 새 .md 추가 후엔 위 재빌드 3종을 실행해야 index/그래프가 갱신됨.
 
