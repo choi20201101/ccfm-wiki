@@ -19,6 +19,7 @@ updated: 2026-05-12
 | "시장조사 해줘" (브랜드 진입 검토, 비화장품) | [[domains/market-research-playbook]] §9 변형 모드 | Excel 11시트 + Toss UI HTML |
 | "USP 조사해줘 [URL]" / "퍼포먼스 캔버스 조사" | [[domains/usp-performance-canvas-research]] | 단일 랜딩페이지 → 7파일 (5~15분) |
 | "/gptim" / "광고 N장 만들어줘" | [[domains/gptim-ad-creative-batch]] + 스킬 `gptim` | 6질문 → 매트릭스 → 스모크 5장 → 풀배치 |
+| "Flow CLI / gflow / Veo 영상 생성 / 퍼포먼스 광고 컷편집" | [[domains/flow-cli-video-gen]] + 키트 `Desktop/flow/flow-ad-pipeline` | gflow i2v 생성 → 음성전사 → ≤2초 컷편집. 함정: 얼굴시드=i2v만, 한국어대사 명시, delogo, TTS금지 |
 | "B&A 영상 만들어" / 릴스 자동화 | [[domains/content-ai-automation]] §9-10 (diet-b2a) | bdh 완주 케이스, 60영상 |
 | "퍼포먼스 영상 v18" / 페르소나 다양화 | [[sources/src-performance-video-pipeline-v18-2026-04-28]] | 페르소나 1명 × 3 angle, 24초 세로 |
 | "외국인 인플루언서 영상" | [[sources/src-foreign-influencer-guide]] | fal.ai + Kling Avatar v2 Pro, 33편 |
