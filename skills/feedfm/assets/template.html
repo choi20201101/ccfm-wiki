@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<!--
+  feedfm 다크테마 피드백 양식 (퍼포먼스 캔버스)
+  팔레트: bg #0a0a0d · ink #f2f3f6 · pink #ff2d78 · mint(✔) #4edfa0
+  변경 금지 영역: <style> 전체, .sheet 구조.  교체 영역: {{...}} 플레이스홀더만.
+  PDF 1페이지 핏: .sheet zoom 값을 print 미디어쿼리에서 조절(보통 .68~.74).
+-->
+<style>
+  :root{
+    --bg:#0a0a0d; --card:#141419; --card2:#101015; --line:#26262e;
+    --ink:#f2f3f6; --sub:#8b909c; --dim:#6b7079;
+    --pink:#ff2d78; --pinkdim:#ff2d7833; --pinkglow:#ff2d7855;
+    --mint:#4edfa0; --note:#c9a23a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Pretendard","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+    color:var(--ink);background:#000;line-height:1.42;padding:12px;font-size:11.3px;}
+  .sheet{max-width:940px;margin:0 auto;background:var(--bg);border-radius:14px;
+    overflow:hidden;border:1px solid #1c1c22;}
+  /* header */
+  .hd{padding:18px 28px 10px;}
+  .hd h1{font-size:21px;font-weight:800;letter-spacing:-.5px;color:#fff;}
+  .hd h1 .pk{color:var(--pink);}
+  .hd .sub{font-size:12px;color:var(--sub);margin-top:5px;}
+  .hd .meta{font-size:11px;color:var(--dim);text-align:right;margin-top:-28px;}
+  .rule{height:2px;margin:10px 28px 0;
+    background:linear-gradient(90deg,var(--pink),transparent 80%);}
+  /* scores */
+  .scores{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:11px;padding:14px 28px 4px;}
+  .sc{padding:12px 15px;border-radius:11px;background:linear-gradient(160deg,var(--card),var(--card2));
+    border:1px solid var(--line);}
+  .sc.hot{border-color:var(--pink);box-shadow:0 0 0 1px var(--pinkglow),0 0 14px var(--pinkdim);}
+  .sc .lab{font-size:10.5px;color:var(--sub);font-weight:600;}
+  .sc .big{font-size:27px;font-weight:800;letter-spacing:-1px;margin:3px 0 3px;color:#fff;}
+  .sc .big small{font-size:13px;color:var(--sub);font-weight:600;}
+  .sc.hot .big{color:var(--pink);}
+  .sc .tag{font-size:10.5px;font-weight:700;color:var(--sub);}
+  .sc .tag.pk{color:var(--pink);}
+  /* banner */
+  .banner{margin:10px 28px 0;padding:10px 16px;border-radius:9px;font-size:11.6px;line-height:1.55;
+    background:#16121a;border-left:3px solid var(--pink);}
+  .banner.weak{background:#1a1014;}
+  .banner .h{font-weight:800;color:var(--pink);}
+  .banner b{font-weight:800;color:#fff;}
+  .banner .pk{color:var(--pink);font-weight:800;}
+  /* chips */
+  .chips{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:13px 28px 2px;}
+  .chip{display:flex;gap:9px;align-items:center;padding:7px 11px;border:1px solid var(--line);
+    border-radius:9px;background:var(--card2);}
+  .pill{font-size:10.5px;font-weight:800;color:var(--pink);border:1px solid var(--pink);
+    border-radius:20px;padding:2px 9px;white-space:nowrap;background:var(--pinkdim);}
+  .chip .txt{font-size:11px;color:var(--ink);}
+  .chip .txt b{font-weight:800;color:#fff;}
+  .chip .txt .pk{color:var(--pink);font-weight:800;}
+  /* sections */
+  .sec{padding:4px 28px 0;}
+  .sec h2{font-size:13px;font-weight:800;margin:13px 0 7px;padding-left:10px;color:#fff;
+    border-left:4px solid var(--pink);}
+  .practice{counter-reset:p;}
+  .practice .row{display:flex;gap:11px;padding:5px 0;border-bottom:1px dashed var(--line);}
+  .practice .row:last-child{border-bottom:none;}
+  .practice .n{counter-increment:p;font-weight:800;color:var(--pink);font-size:13px;min-width:16px;}
+  .practice .n::before{content:counter(p);}
+  .practice .c{font-size:11.5px;color:var(--ink);}
+  .practice .c b{font-weight:800;color:#fff;}
+  .practice .c .ref{font-size:10px;color:var(--pink);font-weight:700;
+    border:1px solid var(--pinkglow);padding:1px 7px;border-radius:10px;margin-left:5px;white-space:nowrap;}
+  /* detail */
+  .qblock{margin:8px 0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card2);
+    break-inside:avoid;}
+  .qhead{padding:7px 13px;background:var(--card);font-size:12px;font-weight:800;color:#fff;
+    display:flex;align-items:center;gap:9px;border-bottom:1px solid var(--line);}
+  .qhead .badge{font-size:9.5px;padding:2px 9px;border-radius:20px;font-weight:800;margin-left:auto;
+    color:var(--pink);border:1px solid var(--pink);background:var(--pinkdim);white-space:nowrap;}
+  .qhead .badge.good{color:var(--mint);border-color:var(--mint);background:#4edfa01a;}
+  .qbody{padding:5px 13px 7px;}
+  .ln{display:flex;gap:9px;padding:3.5px 0;font-size:11.2px;align-items:flex-start;
+    border-bottom:1px dotted #1e1e24;}
+  .ln:last-child{border-bottom:none;}
+  .mk{font-weight:800;min-width:14px;text-align:center;font-size:11.5px;line-height:1.42;}
+  .mk.ok{color:var(--mint);} .mk.no{color:var(--pink);} .mk.note{color:var(--sub);}
+  .ln .body{flex:1;color:var(--ink);}
+  .ln .body b{font-weight:800;color:#fff;}
+  .ln .body .pk{color:var(--pink);font-weight:800;}
+  .quote{background:#101015;border-left:3px solid var(--pink);padding:5px 10px;border-radius:5px;
+    font-size:10.7px;color:var(--sub);margin:4px 0 1px;line-height:1.55;}
+  .quote b{color:var(--pink);}
+  .quote i{color:var(--dim);font-style:normal;}
+  /* footer */
+  .footer{padding:11px 28px 18px;}
+  .footer .win{background:#0f1714;border:1px solid #1e3a2c;border-radius:10px;
+    padding:10px 15px;font-size:11.4px;color:#bfe9d4;line-height:1.55;}
+  .footer .win b{color:var(--mint);font-weight:800;}
+  @media print{
+    @page{size:A4 portrait;margin:0;}
+    body{background:#000;padding:0;}
+    .sheet{border:none;border-radius:0;max-width:none;zoom:.71;}
+    .footer{padding-bottom:6px;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="hd">
+    <h1>{{NAME}}님 · <span class="pk">퍼포먼스 캔버스</span> 진단 피드백</h1>
+    <div class="meta">{{DATE}}<br>제품: {{PRODUCT}}</div>
+    <div class="sub">{{SUBTITLE}}</div>
+  </div>
+  <div class="rule"></div>
+
+  <div class="scores">
+{{SCORES}}
+  </div>
+
+{{BANNERS}}
+
+  <div class="chips">
+{{CHIPS}}
+  </div>
+
+  <div class="sec">
+    <h2>다음 진단 전 연습 3가지</h2>
+    <div class="practice">
+{{PRACTICE}}
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>문항별 상세</h2>
+{{DETAIL}}
+  </div>
+
+  <div class="footer">
+    <div class="win">{{FOOTER}}</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -11,6 +11,7 @@ git clone → `install-*.ps1` 한 번 실행 → Claude Code + Desktop 양쪽에
 |------|--------------|---------------|
 | [grill-me-ccfm](grill-me-ccfm/) | `grill해줘`, `꼼꼼하게 캐물어`, `방향 잡아줘`, `하지 말아야 할 거 정리`, 신규 시장·조직개편 등 되돌리기 어려운 결정 (강제 발동) | `install-grill-me-ccfm.ps1` |
 | [codex-grounding](codex-grounding/) | (자동 발동) Claude/Codex/Gemini 호출 시 개인 메모리 + 위키 인덱스 grounding 강제 → 깡통 응답 방지 | `install-codex-grounding.ps1` |
+| [feedfm](feedfm/) | `/feedfm`, `퍼포먼스 캔버스 피드백`, `진단 피드백 만들어`, `응시자 피드백 문서` → 진단 답안+점수 → 다크테마(검정·흰·핑크) 1페이지 피드백 HTML+PDF (캔버스 채점 루브릭) | `install-feedfm.ps1` |
 
 ---
 
