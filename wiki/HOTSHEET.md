@@ -1,7 +1,7 @@
 ---
 type: index
 purpose: quick-access
-updated: 2026-05-12
+updated: 2026-05-29
 ---
 
 # 🔥 CCFM Wiki Hotsheet — 트리거 → 진입점
@@ -43,6 +43,7 @@ updated: 2026-05-12
 | "코덱스 깡통" / "메모리 자동 grounding" / "PRE-WORK 프로토콜" / 다른 PC 셋업 / `📚 참조:` 의미 | [[domains/codex-grounding-protocol]] + `skills/codex-grounding/` | 3-CLI 호출 시 메모리·위키 인덱스 강제 매칭, mllm 5모드 prompt prepend, marker-based idempotent install (`install-codex-grounding.ps1`) |
 | "오유 마이닝" / "humor mining" / "오늘의유머에서 광고 소재" / "커뮤니티 위트 → 광고" | [[domains/todayhumor-mining-playbook]] | 추천 N+ 게시물 1:1 = 폴더 1개 = 아이디어 1개. crawl_index → run.py(workers=3) → SDK 직호출. 브랜드 후킹 패턴 A~F + 시그니처 표현 추출. 피코세라 614/1469 검증(brand_fit=high 84.5%) |
 | "/m1v2" / "/m2" / "/m3" / "/m4" / "/m5a" / "/m5c" / "영상 자동화 파이프라인" / "3팀 영상 NAS" | [[sources/src-video-automation-m1-m5-2026-05-12]] + 스킬 6종 | 웹폼 → Premiere XMEML + Flow MP4 5단 NAS 파이프라인. NAS 폴더 + `YYYYMMDD_브랜드[_N]` + `scenes.json` 단일 스키마. Chrome 9222(m5a)/9223(m5c) 영구 분리 |
+| "Omni vs Veo" / "Omni Flash 베오 비교" / "Flow 영상모델 분기" / "i2v 어느 모델 써야 해" | [[tacit/video-gen-lessons]] §43 + [[sources/src-omni-vs-veo31-flow-2026-05-28]] | 뷰티·인물·제품 클로즈업=Omni, 키프레임·B-roll·대량=Veo 3.1, 2-패스(Veo 드래프트 0크레딧 → Omni 파이널 25크레딧)로 약 70% 절감 |
 
 ---
 

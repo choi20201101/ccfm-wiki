@@ -1,5 +1,32 @@
 # CCFM Wiki Log
 
+## [2026-05-29] ingest | naverpost 네이버 블로그 SEO 반자동화 파이프라인 (재구축 스펙)
+- 페이지 신설: `wiki/domains/naverpost-seo-pipeline.md` — 키워드→SERP→점수→RAG초안(Claude)→이미지(god-tibo-imagen)→에디터 자동채움→사람 검토 발행. 나중에 "블로그 자동화 다시 하자" 시 이 페이지 + 프로젝트 `docs/`로 재구축.
+- 도메인 업데이트: [[marketing-automation]] §네이버 블로그 SEO 자동화 신설, [[index]] 기술/자동화에 링크.
+- 연관: [[ggttt-imagen]](이미지 엔진), [[sources/src-geo-aeo-guide]](발행 자동화 상위 프레임).
+- 상태: 에디터 자동채움(마크다운 정리 + 이미지 5장)·캡차 사람해결 동작 / 완전 자동발행의 게시판 선택은 사용자 보류 / 4.7 빌드 감사 86건 중 일부 미수정.
+- 원칙: 반자동(캡차·최종발행은 사람), 캡차 자동우회 금지(제거됨), 일 5개 한도.
+
+## [2026-05-26] ingest | Gemini Omni (Omni Flash) 사용 가이드 — Google Flow 멀티모달 영상 모델
+- 소스: 노션 페이지 [Gemini Omni 가이드](https://synonymous-nation-db3.notion.site/Gemini-Omni-367239465f12805b9acdcb50907338a5)
+- 로컬 미러: `C:\Users\gguy\Desktop\omni\` (HTML 가이드 + 영상 34개·이미지 27개 + manifest.json, 약 125MB)
+- source: `wiki/sources/src-gemini-omni-guide.md` (전체 워크플로 9종 + 프롬프트 + 한계 정리)
+- 도메인 업데이트: [[ai-automation]] §Omni 항목 신설, [[da-creative]] §툴/플랫폼에 v2v 1스텝 합성 효과 등록
+- 핵심:
+  - **포지셔닝**: Seedance = 0→1 생성 / Omni = 기존 영상 수정·변형 + 누끼 1스텝 합성. 분업이 답.
+  - **워크플로 9종**: 영상 내 이미지 합성 / 행동·배경·복장·앵글 변경 / 목소리 변경 / 캐릭터 에셋 일관성 / 실무 (착한구두 럭셔리 패션 에디토리얼 5변주 케이스).
+  - **CCFM 임팩트**: 기존 [[da-creative]] 2스텝 워크플로(이미지 합성 → I2V) → 1스텝 압축. 캐릭터 에셋으로 B&A 시리즈 일관성 확보.
+  - **한계 3종**: 한국어 글씨/제품 글씨 왜곡/스토리보드 해석 — 후처리 또는 더 명확한 프롬프트로 회피.
+  - 영상 본 파일은 위키 레포에 푸시 X (125MB, LFS 미사용) → 로컬 미러로만 보관.
+
+## [2026-05-20] ingest | 위너소재 ffmpeg 트랜지션 + ChatGPT 이미지 레퍼런스 질문 답변 정리
+- 직원 → 대표 문의 2건: (1) ffmpeg 트랜지션 커스텀 가능 여부 (2) ChatGPT 이미지 레퍼런스 직접 입력 vs 자동 학습
+- raw: `raw/inbox/2026-05-20-winnersojae-higgsfield-chatgpt-image-questions.md` (원문 캡처)
+- source: `wiki/sources/src-winnersojae-feedback-2026-05-20.md` (위키 기반 답변 정리 + 직원 답신 초안)
+- 핵심 메시지:
+  - Q1: ffmpeg `xfade` 50종 + `custom` expression + GL Transitions로 충분히 커스텀 가능. 그러나 "빠른 템포에서 편집점 약함"은 트랜지션 문제가 아니라 [[tacit/video-gen-lessons]] §35·§36 의 "씬 길이를 TTS char-level timestamp에 동기화" 미적용 문제일 가능성 큼.
+  - Q2: ChatGPT 이미지는 진짜 학습 안 됨. 레퍼런스 직접 입력 유지 + "visual template, not inspiration" 명시 강화 + 다양성은 18축 cid 시드 결정론 풀 회전으로. "진짜 학습" 원하면 Flux LoRA(Higgsfield Brand Kit) 별도 검토.
+
 ## [2026-05-14] ingest | GFA-Setting v0.1.x — 멀티 잡 큐 + rwc 캘린더 + 디버그 pause
 - 소스: `C:\Users\gguy\Desktop\GFA-Setting` master HEAD (commit 75472ff + 미커밋 작업트리)
 - domain: `wiki/domains/gfa-setting-automation.md` 에 §v0.1.x 업데이트 (2026-05-13~14) 신설 — (A) rwc 가상 스크롤 캘린더 대응 + `GFA_DEBUG_PAUSE_ON_ERROR=1` 라이브 디버깅, (B) 멀티 잡 큐 (입력 페이즈 `collect_group_setup_spec` + 실행 페이즈 `execute_group_setup`, `GroupSetupSpec` frozen dataclass, `JOB_COOLDOWN_SECONDS=30`, 잡 단위 격리)
@@ -353,3 +380,17 @@
 - tacit: `wiki/tacit/video-gen-lessons.md` 에 [2026-05-19] 엔트리 추가
 - 의도: 사용자가 "이정도 이하 결과는 절대로 나오게 해선 안됨" 품질 baseline으로 지정. 시댄스+ElevenLabs+AE 파이프라인 재사용 위해 박제.
 - 함정 누적: TTS 전면 교체 금지 (lip-sync 깨짐), 보이스 청취 선정 필수, 플로팅 배너 금지 (로고만), AEP 자산 완전 분리, 자막 8~12자 한 줄, 청크간 공백 금지, EBU R128 정규화
+
+## [2026-05-29] ingest | GEO·AEO 실행 가이드 (현장 미팅 기반)
+- source: `raw/reports/2026-05-29-geo-aeo-guide.html` (사용자 제공 HTML, Downloads에서 복사)
+- 신규: `wiki/sources/src-geo-aeo-guide.md` — 원리/세팅/콘텐츠/키워드/플랫폼/측정/리스크 7파트 + 발행 자동화 적용 섹션
+- domain 업데이트: `wiki/domains/marketing-automation.md` 에 GEO/AEO 섹션 추가 (sources/updated 갱신)
+- tacit: `wiki/tacit/operational-heuristics.md` 에 GEO/AEO 운영 룰 5건 append (confidence: medium, 발화자 경험 기반)
+- index: Quick Access + Sources 에 src-geo-aeo-guide 등재
+- 의도: 사용자가 블로그/워드프레스/구글 글 발행 자동화 구축 시 이 개념을 기준 프레임으로 적용하기 위해 박제. "AEO/GEO 엄청 중요해지는 중, 필수".
+- ⚠️ 일부 항목(LLM별 웹서치 의존도·캐시 지속)은 발화자 체감 관찰 → 모델 업데이트로 변동 가능, 검증 여지.
+
+## [2026-05-29] update | GEO·AEO 가이드 보강 (사용자 코멘트 반영)
+- src-geo-aeo-guide.md: ①한국 시장 초기·경쟁낮음 + "노출 보장 아님→신뢰도·도메인 싸움" 단서 추가 ②AI 이미지 "걸러진다"는 직접 발화 아닌 합리적 추론임을 명시
+- domains/marketing-automation.md: GEO/AEO 키워드 항목에 한국 시장 단서 반영
+- tacit/operational-heuristics.md: 한국 GEO 초기성 룰 + AI 이미지 추론 단서 2건 append (confidence: medium)
