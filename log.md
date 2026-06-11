@@ -394,3 +394,10 @@
 - src-geo-aeo-guide.md: ①한국 시장 초기·경쟁낮음 + "노출 보장 아님→신뢰도·도메인 싸움" 단서 추가 ②AI 이미지 "걸러진다"는 직접 발화 아닌 합리적 추론임을 명시
 - domains/marketing-automation.md: GEO/AEO 키워드 항목에 한국 시장 단서 반영
 - tacit/operational-heuristics.md: 한국 GEO 초기성 룰 + AI 이미지 추론 단서 2건 append (confidence: medium)
+
+## [2026-06-11] maintenance | 구조 점검 + graphify 클린 리인덱싱
+- 풀 반영: [[domains/flow-cli-video-gen]] (6/9~10 타기기 작성)이 index 미등재 상태 발견 → 기술/자동화 도메인 줄에 링크 추가. feedfm 스킬은 이 PC ~/.claude/skills에 설치 완료.
+- 정리: 루트 잔재 삭제 — `_COMMUNITY_Community 1.md`(0B 옛 graphify 스텁, git rm) · `무제.canvas`/`무제 1.canvas`(빈 {}, gitignore 대상).
+- 그래프: build_wiki_graph → inject_iboss → regen 3종 클린 리빌드. 문서 448 + iboss 엔티티 30 = 478노드 · 1470엣지 · 119커뮤니티 (5/29 커밋본 대비 +1문서/+10엣지, 코드노드 0 = .graphifyignore 정상 작동).
+- 정정: index.md 헤더 통계(691·1723·156)는 5/29 정리 전 묵은 수치였음 → 실측값으로 교체. god node 테이블에 i-boss MOC 3종(마케팅 66·운영 59·AI자동화 46) 진입 반영.
+- 플래그: 고립 노드 135개(대부분 raw 원문·단건 tacit) — raw 고아 정상 정책 유지, 가치분만 sources 승격 대상.

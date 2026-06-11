@@ -1,9 +1,9 @@
 # CCFM Wiki Index
 
 > 🔥 = 허브(god node) · 🌐 = 교차 도메인 · 📄 = 미작성/스텁
-> 최종 정리: 2026-05-29
+> 최종 정리: 2026-06-11
 > ⚡ **빠른 꺼내쓰기**: [[HOTSHEET]] (트리거 → 답 직입식 단축표)
-> 🕸️ **그래프**: 691 노드 · 1723 엣지 · 156 커뮤니티 ([[../graphify-out/GRAPH_REPORT|GRAPH_REPORT]])
+> 🕸️ **그래프**: 478 노드 · 1470 엣지 · 119 커뮤니티 ([[../graphify-out/GRAPH_REPORT|GRAPH_REPORT]])
 > 재빌드: `python scripts/build_wiki_graph.py` → `inject_iboss_entities.py` → `regen_graph_report.py`
 
 ---
@@ -14,15 +14,17 @@
 
 | Rank | God Node | 연결 | 들어가는 곳 |
 |---|---|---|---|
-| 1 | i-boss 201건 지식베이스 (최재명) | 224 | [[sources/src-iboss-choi-jaemyeong]] · [[../raw/iboss/INDEX]] |
-| 2 | 퍼포먼스 마케팅 | 80 | [[domains/marketing]] |
-| 3 | AI 자동화 | 73 | [[domains/ai-automation]] |
-| 4 | 운영 노하우 | 53 | [[tacit/operational-heuristics]] |
-| 5 | DA 크리에이티브 | 52 | [[domains/da-creative]] |
-| 6 | 소비자 심리 | 41 | [[domains/psychology]] |
-| 7 | 바이럴 · 콘텐츠 AI | 40 | [[domains/viral]] · [[domains/content-ai-automation]] |
+| 1 | i-boss 201건 지식베이스 (최재명) | 223 | [[sources/src-iboss-choi-jaemyeong]] · [[../raw/iboss/INDEX]] |
+| 2 | 퍼포먼스 마케팅 | 81 | [[domains/marketing]] |
+| 3 | AI 자동화 | 75 | [[domains/ai-automation]] |
+| 4 | i-boss MOC: 마케팅 | 66 | [[../raw/iboss/moc/marketing]] |
+| 5 | i-boss MOC: 운영 | 59 | [[../raw/iboss/moc/operation]] |
+| 6 | 운영 노하우 | 54 | [[tacit/operational-heuristics]] |
+| 7 | DA 크리에이티브 | 53 | [[domains/da-creative]] |
+| 8 | i-boss MOC: AI 자동화 | 46 | [[../raw/iboss/moc/ai-automation]] |
+| 9 | 콘텐츠 AI 자동화 | 42 | [[domains/content-ai-automation]] |
 
-**최대 커뮤니티**: 크리에이티브&심리(121) · 바이브코딩&에이전트(67) · 해외시장(39) · iboss(38) · 본사 사업/마케팅(32) · 조직개편&HR(28)
+**최대 커뮤니티**: 크리에이티브&심리(84) · iboss(58) · 콘텐츠 AI 자동화(52) · 바이브코딩&에이전트(38) · 해외시장(34) · 본사 사업/마케팅(30) · 조직개편&HR(28)
 
 ---
 
@@ -46,7 +48,7 @@
 
 **조직/경영** · [[domains/org-restructure]] · [[domains/finance]] · [[domains/hr-admin]]
 
-**기술/자동화** · [[domains/ai-automation]] · [[domains/vibe-coding]] · [[domains/content-ai-automation]] · [[domains/marketing-automation]] · [[domains/codex-grounding-protocol]] · [[domains/gfa-setting-automation]] · [[domains/seebio-radio-pipeline]] · [[domains/naverpost-seo-pipeline]]
+**기술/자동화** · [[domains/ai-automation]] · [[domains/vibe-coding]] · [[domains/content-ai-automation]] · [[domains/marketing-automation]] · [[domains/codex-grounding-protocol]] · [[domains/gfa-setting-automation]] · [[domains/seebio-radio-pipeline]] · [[domains/naverpost-seo-pipeline]] · [[domains/flow-cli-video-gen]]
 
 **크리에이티브/마케팅** · [[domains/marketing]] · [[domains/da-creative]] · [[domains/viral]] · [[domains/ggttt-imagen]] · [[domains/gptim-ad-creative-batch]] · [[domains/skin-care-13cut-pattern]]
 
@@ -78,8 +80,10 @@
 
 ---
 
-## 🔧 Lint / 정리 필요 (2026-05-29 진단)
+## 🔧 Lint / 정리 필요 (최근 진단: 2026-06-11)
 
+- **2026-06-11 정리 완료**: 풀 수신분 [[domains/flow-cli-video-gen]] 인덱스 등재 · 루트 잔재 3개 삭제(`_COMMUNITY_Community 1.md` 빈 스텁, 무제 캔버스 2) · 그래프 클린 리빌드(478노드·1470엣지·119커뮤니티, 코드노드 0 = `.graphifyignore` 정상) · 헤더의 묵은 통계(691·1723·156, 5/29 정리 전 수치)를 실측값으로 정정.
+- **고립 노드 135개** (2026-06-11 리포트): 대부분 raw/ 원문 + 단건 tacit 페이지. raw 고아는 아래 정책대로 정상 — 가치 있는 것만 sources로 승격.
 - **고립 파일 다수**: 문서 고아 111개 중 **108개가 `raw/`**(iboss 201건 원문 등). raw는 불변·MOC로 조직되므로 정상 — 건드리지 않음. 가치 있는 신규 raw만 `wiki/sources/`로 요약·링크.
 - **그래프 빌드 복원**: 마크다운→그래프 파이프라인(`scripts/build_wiki_graph.py`)을 신규 작성해 커밋. 이전엔 gitignore된 일회성 스크립트라 유실됐었음. 이제 재현 가능.
 - **2026-05-29 정리 완료**: `_sync-test.md`(테스트 잔재) 삭제 · `수치-단위-착각-방지-규칙`(고아) → [[domains/finance]]에서 링크 연결.
